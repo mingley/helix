@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "scope": "Retained attempted numerical analyses, including failed secondary metrics; not alternate successful endpoints. Initial historical implementation snapshots were not captured where explicitly marked.",
+  "attempts": [
+    {
+      "original_path": "/tmp/helix-regulatory-rust-v1.json",
+      "original_bytes": 123025004,
+      "original_sha256": "a6a649cd09684bb4c7d0a724907c9fd73526b33b1f1576a48bc65d15e341b756",
+      "archive": "helix-regulatory-rust-v1.json.gz",
+      "archive_bytes": 7067956,
+      "archive_sha256": "b71a5b59b484256ce162124034b26516dc7975a4f3e4ef7d50a430606bb1702e",
+      "status": "superseded",
+      "reason": "Initial full run; superseded constant and reduction corrections. Historical implementation snapshot not captured."
+    },
+    {
+      "original_path": "/tmp/helix-regulatory-rust-v1-corrected.json",
+      "original_bytes": 123023842,
+      "original_sha256": "7134c2803523230c6ba3e34001e637534360ed3f22a1f650e83e56b1340a4279",
+      "archive": "helix-regulatory-rust-v1-corrected.json.gz",
+      "archive_bytes": 7067239,
+      "archive_sha256": "0600fdb429a290679a1bc59896ca5267c74d8109633711dd46e05adc2cdc958f",
+      "status": "superseded",
+      "reason": "Constant-vector correction; superseded constant aggregation and exact-source arithmetic. Historical implementation snapshot not captured."
+    },
+    {
+      "original_path": "/tmp/helix-regulatory-rust-v1-constant-safe.json",
+      "original_bytes": 123022982,
+      "original_sha256": "73f3b23a5557cc348fcf8cdef8e8a643405c7a07a1b9ff407a21da7c12b1d24a",
+      "archive": "helix-regulatory-rust-v1-constant-safe.json.gz",
+      "archive_bytes": 7067108,
+      "archive_sha256": "598d59fac05fe58bdda0a4c0e5b94925c4cb458527cdbdce25d9a2189f2f6a9e",
+      "status": "superseded",
+      "reason": "Constant-preserving aggregation;130 secondary-rank mismatches remained in paired comparison. Historical implementation snapshot not captured."
+    },
+    {
+      "original_path": "/tmp/helix-regulatory-rust-v1-exact-source.json",
+      "original_bytes": 134204566,
+      "original_sha256": "caf376dcb069893767f0b010afc2b5b56a7099f657890316a2977dfdbe34e507",
+      "archive": "helix-regulatory-rust-v1-exact-source.json.gz",
+      "archive_bytes": 7322196,
+      "archive_sha256": "924588d14eb136ce630565e65efdcaabe143f9801e598d3bb52753867633319d",
+      "status": "partial_agreement_not_full_success",
+      "reason": "Exact source-decimal observed ranks and identical-feature prediction cache;26 secondary-rank mismatches remain. Corresponding final implementation retained in code and independent snapshot."
+    },
+    {
+      "path": "/tmp/helix-independent-regulatory-v1-20261027",
+      "kind": "independent_full_run",
+      "status": "retained_superseded",
+      "reason": "Initial complete study; later fixed constant-group rank artifacts. Do not use its secondary ranks.",
+      "index_file": "artifacts.json",
+      "index_sha256": "02c26ce5ac1fc20fd52b23b775f902b78bd6df39eb6c8b0ab81ed6eec728ae25",
+      "implementation_snapshot_present": false,
+      "archive": "helix-independent-regulatory-v1-20261027.tar.gz",
+      "archive_bytes": 4103245,
+      "archive_sha256": "b2f2356c21b807bb8f6bdf0e9cbe239e26c87552ca4f7e653b5cbe535a4c9e26",
+      "members": [
+        {
+          "name": "artifacts.json",
+          "bytes": 754,
+          "sha256": "02c26ce5ac1fc20fd52b23b775f902b78bd6df39eb6c8b0ab81ed6eec728ae25"
+        },
+        {
+          "name": "features.json",
+          "bytes": 5698,
+          "sha256": "ba70374c199535ef5aa74e2f123fcf5bd7b79791a82ba9cf0c172bf7de8e0b40"
+        },
+        {
+          "name": "fits.json",
+          "bytes": 646202,
+          "sha256": "6e898c5aa29aad06186ec78f8e9c47b9706a64db435aa8734f57a92124149647"
+        },
+        {
+          "name": "folds.json",
+          "bytes": 4773310,
+          "sha256": "259526be76673c0b57ecbfecb86a0f9e3422db6ad816dd16e384efac0b157eec"
+        },
+        {
+          "name": "inputs.json",
+          "bytes": 639751,
+          "sha256": "f6d1ea0302acd6b71d6a8a7beecacc9dc67bd858e7ec8ad92bdff1fa33d7f5f8"
+        },
+        {
+          "name": "predictions.json",
+          "bytes": 46311970,
+          "sha256": "de9eff9d02332cf8271c0ec64d1385a25d2cbeec3c755e3a31ba128b6de367fe"
+        },
+        {
+          "name": "replication.json",
+          "bytes": 6810910,
+          "sha256": "1f4ba05b951f778e64798fcd1728efe93b2369267f1e9c112a1b70cd6ad0a739"
+        },
+        {
+          "name": "resampling.json",
+          "bytes": 1168359,
+          "sha256": "45685be12c72c45c4975c1edf9a56dafa9b64cb68d398f67381a4898aeeb4be7"
+        }
+      ]
+    },
+    {
+      "path": "/tmp/helix-independent-regulatory-v1-constant-safe",
+      "kind": "independent_full_run",
+      "status": "retained_superseded",
+      "reason": "Preserved constant-group means; later diagnosed exact decimal-mean ties and BLAS splitting of identical inputs.",
+      "index_file": "artifacts.json",
+      "index_sha256": "014f4ac08f1e7dcdc99d592d7535555f28ae67c5c11e7683308e446ef6fb6b00",
+      "implementation_snapshot_present": true,
+      "archive": "helix-independent-regulatory-v1-constant-safe.tar.gz",
+      "archive_bytes": 4127532,
+      "archive_sha256": "bccbd42d37ecfe10e616633be872aca230ba371ad1ecf51758f9299edeb02775",
+      "members": [
+        {
+          "name": "artifacts.json",
+          "bytes": 847,
+          "sha256": "014f4ac08f1e7dcdc99d592d7535555f28ae67c5c11e7683308e446ef6fb6b00"
+        },
+        {
+          "name": "features.json",
+          "bytes": 5698,
+          "sha256": "ba70374c199535ef5aa74e2f123fcf5bd7b79791a82ba9cf0c172bf7de8e0b40"
+        },
+        {
+          "name": "fits.json",
+          "bytes": 646202,
+          "sha256": "6e898c5aa29aad06186ec78f8e9c47b9706a64db435aa8734f57a92124149647"
+        },
+        {
+          "name": "folds.json",
+          "bytes": 4773310,
+          "sha256": "259526be76673c0b57ecbfecb86a0f9e3422db6ad816dd16e384efac0b157eec"
+        },
+        {
+          "name": "implementation.py",
+          "bytes": 56673,
+          "sha256": "b7452b61d494f4146ac9917fb027e1956045795eb9e4e936b2aaeeeab99db905"
+        },
+        {
+          "name": "inputs.json",
+          "bytes": 639751,
+          "sha256": "f6d1ea0302acd6b71d6a8a7beecacc9dc67bd858e7ec8ad92bdff1fa33d7f5f8"
+        },
+        {
+          "name": "predictions.json",
+          "bytes": 46311970,
+          "sha256": "de9eff9d02332cf8271c0ec64d1385a25d2cbeec3c755e3a31ba128b6de367fe"
+        },
+        {
+          "name": "replication.json",
+          "bytes": 6810722,
+          "sha256": "dad3dc03b5bbdcc063fb601fd5a376125e7e07aa039fc199af669ab4f1531140"
+        },
+        {
+          "name": "resampling.json",
+          "bytes": 1205945,
+          "sha256": "f34d93642d9ed5fcc2df583a3e80b051571cb00e3d870a99f4ddb70a4dc9f5e7"
+        }
+      ]
+    },
+    {
+      "path": "/tmp/helix-independent-regulatory-v1-exact-source",
+      "kind": "independent_full_run",
+      "status": "final_v1",
+      "reason": "Exact raw-decimal observed position ranks, unique unscaled-feature prediction cache, no epsilon or quantization.",
+      "index_file": "artifacts.json",
+      "index_sha256": "83e8f938260bbcb4f3dd73912eaee1637a3855aff9021a3f9eac17abea20ea88",
+      "implementation_snapshot_present": true,
+      "archive": "helix-independent-regulatory-v1-exact-source.tar.gz",
+      "archive_bytes": 4129020,
+      "archive_sha256": "a8aee87a00f34f7972db43c577a00b52825dfc95c21e3946a4d1faf461e7b70f",
+      "members": [
+        {
+          "name": "artifacts.json",
+          "bytes": 847,
+          "sha256": "83e8f938260bbcb4f3dd73912eaee1637a3855aff9021a3f9eac17abea20ea88"
+        },
+        {
+          "name": "features.json",
+          "bytes": 5698,
+          "sha256": "ba70374c199535ef5aa74e2f123fcf5bd7b79791a82ba9cf0c172bf7de8e0b40"
+        },
+        {
+          "name": "fits.json",
+          "bytes": 646202,
+          "sha256": "6e898c5aa29aad06186ec78f8e9c47b9706a64db435aa8734f57a92124149647"
+        },
+        {
+          "name": "folds.json",
+          "bytes": 4773310,
+          "sha256": "259526be76673c0b57ecbfecb86a0f9e3422db6ad816dd16e384efac0b157eec"
+        },
+        {
+          "name": "implementation.py",
+          "bytes": 58577,
+          "sha256": "d0a48b3ad6eac31c9e2023d487caac58a99e0a6743400fcf7219529395894a5f"
+        },
+        {
+          "name": "inputs.json",
+          "bytes": 639751,
+          "sha256": "f6d1ea0302acd6b71d6a8a7beecacc9dc67bd858e7ec8ad92bdff1fa33d7f5f8"
+        },
+        {
+          "name": "predictions.json",
+          "bytes": 46310708,
+          "sha256": "2c03d565d7dd7f95cb79a1366622c3a13588b519d6c0c9d83e67593c797f2db3"
+        },
+        {
+          "name": "replication.json",
+          "bytes": 6811492,
+          "sha256": "c3796ad7005291de2046ec2674599de11caa651bfd5b6b1f213d6482cf5277d3"
+        },
+        {
+          "name": "resampling.json",
+          "bytes": 1205842,
+          "sha256": "809f599b4ec42923b110903b8ca5ff0644e235d3bb75e7c8f76d2f8e8c8a869d"
+        }
+      ]
+    },
+    {
+      "path": "/tmp/helix-regulatory-independent-comparison-v1",
+      "kind": "implementation_comparison",
+      "status": "failed_secondary",
+      "reason": "Constant-safe comparison;130 exact Spearman mismatches. All prediction/loss/control checks agreed.",
+      "index_file": "comparison.json",
+      "index_sha256": "85fd87c9f7034baa00e3ae70241b704f53ddcae2c2798f1dcf7cb7770bcc10a0",
+      "implementation_snapshot_present": false,
+      "archive": "helix-regulatory-independent-comparison-v1.tar.gz",
+      "archive_bytes": 4860,
+      "archive_sha256": "c4dd2d4f52757d6703691db22337031a40c763437da82ff7cedd6654bb354be3",
+      "members": [
+        {
+          "name": "comparison.json",
+          "bytes": 30550,
+          "sha256": "85fd87c9f7034baa00e3ae70241b704f53ddcae2c2798f1dcf7cb7770bcc10a0"
+        }
+      ]
+    },
+    {
+      "path": "/tmp/helix-regulatory-independent-comparison-v1-exact-source",
+      "kind": "implementation_comparison",
+      "status": "final_v1_partial_agreement",
+      "reason": "All primary prediction/loss/control checks agree;26 exact secondary Spearman mismatches remain and comparison exits2.",
+      "index_file": "comparison.json",
+      "index_sha256": "20c0bf0b28c258608a56f65e3b590c7b9bb86fbffe025d355c62b785203fb9a7",
+      "implementation_snapshot_present": false,
+      "archive": "helix-regulatory-independent-comparison-v1-exact-source.tar.gz",
+      "archive_bytes": 1970,
+      "archive_sha256": "97b97dbd5859bbe58e742384e8a5536fae40084815faa24247e2649b13e95678",
+      "members": [
+        {
+          "name": "comparison.json",
+          "bytes": 8066,
+          "sha256": "20c0bf0b28c258608a56f65e3b590c7b9bb86fbffe025d355c62b785203fb9a7"
+        }
+      ]
+    },
+    {
+      "original_path": "/tmp/helix-rank-sensitivity-v1",
+      "archive": "original-rank-sensitivity.tar.gz",
+      "archive_bytes": 103599,
+      "archive_sha256": "ba5c49b16b8335a886f644a55478ffeac1c95340b2f8027ead4e25458a2da987",
+      "kind": "posthoc_sensitivity_original_execution",
+      "status": "not_a_parent_endpoint_replacement",
+      "members": [
+        {
+          "name": "all-metric-pairs.json",
+          "bytes": 1216162,
+          "sha256": "f98232a7571b5d6f5bfe097fd9fed372edb6d84f2841048cf231b3657a456bbf"
+        },
+        {
+          "name": "artifacts.json",
+          "bytes": 327,
+          "sha256": "b8a43b694eba11f1a95a93c0b6574e0415d9d31894a7770201d94caef279daa1"
+        },
+        {
+          "name": "raw-archive-checks.json",
+          "bytes": 153857,
+          "sha256": "e25682d010ead95b349c27ddd982ee39dddcfa03a8bbbd71021fac0902a49b25"
+        },
+        {
+          "name": "summary.json",
+          "bytes": 63793,
+          "sha256": "85d91f2295d9cb3678b3e6613fd7eb6bb9b08fbe91e7453b1a846d6700b2e676"
+        }
+      ]
+    }
+  ]
+}

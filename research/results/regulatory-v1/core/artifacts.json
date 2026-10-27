@@ -1,0 +1,17 @@
+{
+  "schema_version": 3,
+  "files": {
+    "cohort.json": "ad9054181272041bdd3c54c434f4ae6d98d6e5ac4269e3a358e5a8e1b118aa01",
+    "context.json": "e32edb8329667026def9f385483e9afb2f73629ad7eacd67be206caef1c70a5c",
+    "findings.md": "073de67805a4ea5d4927896e9380fc9fdad6937366cfd40d382097f15698ecae",
+    "forensics.json": "b2f9a2fed37d20cf9aca70ade36fb80adc7dea3a00fff1d07514e408fa4fdb90",
+    "inputs.json": "0671d3f149c5c9f46d32628a92b5aeb49062cd58712c374b48c50d3d04f715e2",
+    "ledger.json": "b24a9721d32ad8e8dcb7a7e50fcbcf2fa11c203786b1a235918a133020c148e4",
+    "motifs.json": "710e22d1872425baa1d8de52db495dcc6b6fa62720c2457279aa8274c0b1cd2b",
+    "proof.lean": "0353aa3a42414247886912c1776ec7684e6c1f788d5638bc6f7f2c20351d9890",
+    "protocol.json": "c8e97fabef2afe8ccaa5a01a7ef7bb952f9c9f15857e5c540af112a66e78cb58",
+    "resampling.json": "ee3c93f44a6e5db35170c9ebea62f36173b975f35d622d3f37f40858caf67678",
+    "study.json.gz": "955899957d2bb4540e382b6fc345eb002ddb6bddeb345e6f98c8f1bd0eec1f54",
+    "summary.json": "112c4bfdf3565a2b4220892a2f180e84f10fdbb0a97d5775882f5859baca4e51"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "files": {
+    "all-metric-pairs.json": "f98232a7571b5d6f5bfe097fd9fed372edb6d84f2841048cf231b3657a456bbf",
+    "raw-archive-checks.json": "e25682d010ead95b349c27ddd982ee39dddcfa03a8bbbd71021fac0902a49b25",
+    "summary.json": "ce806ffa09eaeef090273cfa6c1d67471ed5ab73121dc372362071b7b00a4f34"
+  }
+}

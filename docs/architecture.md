@@ -115,7 +115,7 @@ sources. Continuous predictions, primary losses and controls reproduce, while
 post-hoc finite-grid study is retained alongside that failure. This distinction
 is visible in machine-readable flags and the workflow's exit status. Read the
 [complete regulatory study](../research/regulatory-study.md) for the scientific
-result and limits. The proof covers guard arithmetic, same-input loss algebra
+result and limits. The proof covers guard arithmetic, same-input prediction uniqueness
 and finite-control resolution, not model coefficients or biological validity.
 
 Mechanism calculations remain limited to the named HBB GRCh38 transcript and

@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "matched": false,
+  "primary_predictions_losses_and_controls_matched": true,
+  "secondary_exact_rank_metrics_matched": false,
+  "protocol_sha256": "c8e97fabef2afe8ccaa5a01a7ef7bb952f9c9f15857e5c540af112a66e78cb58",
+  "independent_directory": "runs/regulatory-v1-04ac4bf-python",
+  "independent_artifacts_sha256": "60393dacb1c5325af8ca7c7a404146c249d97612653c05845994423b732b2de6",
+  "rust_study_path": "runs/regulatory-v1-04ac4bf-rust/study.json.gz",
+  "rust_study_sha256": "955899957d2bb4540e382b6fc345eb002ddb6bddeb345e6f98c8f1bd0eec1f54",
+  "rust_decoded_study_sha256": "379e4b5a2724c22ca8e64c50d7e650d5c1c52f92c134f5f726e71e67168213c1",
+  "prediction_absolute_tolerance": 1e-07,
+  "metric_absolute_tolerance": 1e-08,
+  "checked": {
+    "feature_schema": 6,
+    "evaluation_families": 1,
+    "fold_membership": 84,
+    "macro_mse": 24,
+    "macro_mae": 24,
+    "fit_dimensions": 168,
+    "fit_training_rows": 168,
+    "fit_means": 168,
+    "fit_scales": 168,
+    "fit_intercepts": 168,
+    "fit_coefficients": 168,
+    "target_accessions": 131112,
+    "target_fold": 131112,
+    "observations": 131112,
+    "predictions": 131112,
+    "per_assay_mse": 120,
+    "per_assay_mae": 120,
+    "per_assay_relative_mse_vs_mean": 120,
+    "spearman_rows": 120,
+    "spearman_positions": 120,
+    "prediction_target_inventory": 1,
+    "bootstrap_draws": 2,
+    "bootstrap_statistics": 6,
+    "bootstrap_intervals": 6,
+    "spatial_null_statistics": 6,
+    "spatial_null_model_mses": 12
+  },
+  "maximum_absolute_errors": {
+    "macro_mse": 3.0253577421035516e-15,
+    "macro_mae": 4.413136522884997e-15,
+    "fit_means": 8.992806499463768e-15,
+    "fit_scales": 1.9984014443252818e-13,
+    "fit_intercepts": 2.7755575615628914e-16,
+    "fit_coefficients": 2.824580846993996e-12,
+    "observations": 0.0,
+    "predictions": 7.728984119381721e-12,
+    "per_assay_mse": 1.0325074129013956e-14,
+    "per_assay_mae": 2.3148150063434514e-14,
+    "per_assay_relative_mse_vs_mean": 7.103206911551752e-13,
+    "spearman_rows": 0.00797822601173654,
+    "spearman_positions": 0.0019511191503849418,
+    "bootstrap_statistics": 9.032705139411235e-15,
+    "bootstrap_intervals": 6.935858137824269e-15,
+    "spatial_null_statistics": 1.3836154444391013e-14,
+    "spatial_null_model_mses": 1.3863910020006642e-14
+  },
+  "failure_count": 26,
+  "failures": [
+    {
+      "category": "spearman_rows",
+      "identity": "('primary_leave_element_out', 'motif', 'urn:mavedb:00000016-a-1')",
+      "independent": -0.03683115213098711,
+      "rust": -0.036831032887107304
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('primary_leave_element_out', 'motif', 'urn:mavedb:00000017-a-1')",
+      "independent": 0.026159842046697534,
+      "rust": 0.02615700835298849
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('primary_leave_element_out', 'motif', 'urn:mavedb:00000031-a-1')",
+      "independent": 0.07648893985488593,
+      "rust": 0.07648901064711494
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'chemistry', 'urn:mavedb:00000015-a-1')",
+      "independent": 0.053974967372820405,
+      "rust": 0.061953193384556945
+    },
+    {
+      "category": "spearman_positions",
+      "identity": "('hbb_to_external_transfer', 'chemistry', 'urn:mavedb:00000015-a-1')",
+      "independent": 0.042714960124834396,
+      "rust": 0.04285972498849836
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'chemistry', 'urn:mavedb:00000016-a-1')",
+      "independent": -0.06862981405675549,
+      "rust": -0.06942567816675328
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'chemistry', 'urn:mavedb:00000017-a-1')",
+      "independent": -0.04392873292673283,
+      "rust": -0.043562949932765035
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'chemistry', 'urn:mavedb:00000019-a-1')",
+      "independent": 0.15831489010848415,
+      "rust": 0.16161161056309611
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'chemistry', 'urn:mavedb:00000020-a-1')",
+      "independent": 0.08231941803238102,
+      "rust": 0.08631508784567667
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'chemistry', 'urn:mavedb:00000023-a-1')",
+      "independent": 0.02921302050527367,
+      "rust": 0.03471851022765336
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'chemistry', 'urn:mavedb:00000024-a-1')",
+      "independent": 0.05876300739240294,
+      "rust": 0.06529828059771936
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'chemistry', 'urn:mavedb:00000027-a-1')",
+      "independent": 0.04367604675038136,
+      "rust": 0.04107437867691413
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'chemistry', 'urn:mavedb:00000031-a-1')",
+      "independent": -0.048995447326004825,
+      "rust": -0.04443943724239042
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'coordinate', 'urn:mavedb:00000015-a-1')",
+      "independent": 0.051854881896768144,
+      "rust": 0.05194827502088904
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'coordinate', 'urn:mavedb:00000016-a-1')",
+      "independent": -0.0795965997603139,
+      "rust": -0.07960786637814062
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'coordinate', 'urn:mavedb:00000017-a-1')",
+      "independent": 0.06571138296304399,
+      "rust": 0.06572153192775301
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'coordinate', 'urn:mavedb:00000019-a-1')",
+      "independent": 0.20894129889914645,
+      "rust": 0.20900937688959598
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'coordinate', 'urn:mavedb:00000020-a-1')",
+      "independent": 0.06509992214371897,
+      "rust": 0.065182815839358
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'coordinate', 'urn:mavedb:00000023-a-1')",
+      "independent": 0.22754696792961854,
+      "rust": 0.22760924087073062
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'coordinate', 'urn:mavedb:00000024-a-1')",
+      "independent": 0.08802600465111687,
+      "rust": 0.08806188276597667
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'coordinate', 'urn:mavedb:00000027-a-1')",
+      "independent": 0.0033875602853934276,
+      "rust": 0.0033650773046958455
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'coordinate', 'urn:mavedb:00000031-a-1')",
+      "independent": 0.06648996331579711,
+      "rust": 0.0666110848582389
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'motif', 'urn:mavedb:00000016-a-1')",
+      "independent": -0.06224159973778202,
+      "rust": -0.06224099665214794
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'motif', 'urn:mavedb:00000017-a-1')",
+      "independent": -0.015941644114992787,
+      "rust": -0.01594556360370348
+    },
+    {
+      "category": "spearman_rows",
+      "identity": "('hbb_to_external_transfer', 'motif', 'urn:mavedb:00000031-a-1')",
+      "independent": -0.020042737094994437,
+      "rust": -0.02004357827377713
+    },
+    {
+      "category": "spearman_positions",
+      "identity": "('row_random_diagnostic', 'mean', 'urn:mavedb:00000018-a-1')",
+      "independent": -0.09626700483302393,
+      "rust": -0.09821812398340887
+    }
+  ],
+  "scope": "Independent numerical implementation agreement, not independent biological replication"
+}

@@ -1,0 +1,1716 @@
+{
+  "schema_version": 1,
+  "purpose": "Post-hoc numerical sensitivity; no v1 endpoint replacement",
+  "provenance": {
+    "sensitivity_protocol_sha256": "b968f0b3519b3890c36d2756ce97780f3a42effb8ee06b138e4cf395138b89ed",
+    "parent_protocol_sha256": "c8e97fabef2afe8ccaa5a01a7ef7bb952f9c9f15857e5c540af112a66e78cb58",
+    "rust_study_path": "/workspace/helix/runs/regulatory-v1-04ac4bf-rust/study.json.gz",
+    "rust_study_sha256": "955899957d2bb4540e382b6fc345eb002ddb6bddeb345e6f98c8f1bd0eec1f54",
+    "independent_directory": "/workspace/helix/runs/regulatory-v1-04ac4bf-python",
+    "independent_artifacts_sha256": "60393dacb1c5325af8ca7c7a404146c249d97612653c05845994423b732b2de6",
+    "source_cohort": {
+      "manifest_sha256": "200342ba098e4e302cb306af67f68b01fccf13291ad6650b7dcb1281d83ddae5",
+      "source_score_formatting": {
+        "fractional_digits_2": 16546,
+        "fractional_digits_1": 1922
+      }
+    },
+    "implementation_sha256": "31bc0e81ac0bfb9d440ce28021c77dfd1f4d768952efdb21ff454951413e013e",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "numpy_version": "2.3.5"
+  },
+  "matched_prediction_identities": 131112,
+  "raw_native_metric_checks": 480,
+  "all_levels": [
+    {
+      "level": "raw_exact",
+      "metric_pairs": 240,
+      "matched": 214,
+      "mismatched": 26,
+      "undefined_status_mismatches": 0,
+      "both_undefined": 36,
+      "maximum_defined_correlation_difference": 0.007978226011736575,
+      "worst_cases": [
+        {
+          "family": "hbb_to_external_transfer",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000015-a-1",
+          "resolution": "row",
+          "level": "raw_exact",
+          "targets": 888,
+          "rust_spearman": 0.06195319338455699,
+          "independent_spearman": 0.05397496737282041,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.007978226011736575,
+          "within_reporting_tolerance": false,
+          "rust_unique_predicted_codes": 12,
+          "independent_unique_predicted_codes": 12,
+          "observed_unique_exact_values": 122,
+          "maximum_raw_prediction_difference": 2.671474153004283e-16,
+          "rust_raw_prediction_range": [
+            -0.05919353899861285,
+            0.021392491712821014
+          ],
+          "independent_raw_prediction_range": [
+            -0.05919353899861271,
+            0.021392491712820746
+          ]
+        },
+        {
+          "family": "hbb_to_external_transfer",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000024-a-1",
+          "resolution": "row",
+          "level": "raw_exact",
+          "targets": 1772,
+          "rust_spearman": 0.06529828059771924,
+          "independent_spearman": 0.058763007392402936,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0065352732053163,
+          "within_reporting_tolerance": false,
+          "rust_unique_predicted_codes": 12,
+          "independent_unique_predicted_codes": 12,
+          "observed_unique_exact_values": 78,
+          "maximum_raw_prediction_difference": 2.671474153004283e-16,
+          "rust_raw_prediction_range": [
+            -0.05919353899861285,
+            0.021392491712821014
+          ],
+          "independent_raw_prediction_range": [
+            -0.05919353899861271,
+            0.021392491712820746
+          ]
+        },
+        {
+          "family": "hbb_to_external_transfer",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000023-a-1",
+          "resolution": "row",
+          "level": "raw_exact",
+          "targets": 945,
+          "rust_spearman": 0.0347185102276534,
+          "independent_spearman": 0.029213020505273676,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.005505489722379721,
+          "within_reporting_tolerance": false,
+          "rust_unique_predicted_codes": 12,
+          "independent_unique_predicted_codes": 12,
+          "observed_unique_exact_values": 248,
+          "maximum_raw_prediction_difference": 2.671474153004283e-16,
+          "rust_raw_prediction_range": [
+            -0.05919353899861285,
+            0.021392491712821014
+          ],
+          "independent_raw_prediction_range": [
+            -0.05919353899861271,
+            0.021392491712820746
+          ]
+        },
+        {
+          "family": "hbb_to_external_transfer",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000031-a-1",
+          "resolution": "row",
+          "level": "raw_exact",
+          "targets": 770,
+          "rust_spearman": -0.04443943724239035,
+          "independent_spearman": -0.048995447326004825,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.004556010083614476,
+          "within_reporting_tolerance": false,
+          "rust_unique_predicted_codes": 12,
+          "independent_unique_predicted_codes": 12,
+          "observed_unique_exact_values": 115,
+          "maximum_raw_prediction_difference": 2.671474153004283e-16,
+          "rust_raw_prediction_range": [
+            -0.05919353899861285,
+            0.021392491712821014
+          ],
+          "independent_raw_prediction_range": [
+            -0.05919353899861271,
+            0.021392491712820746
+          ]
+        },
+        {
+          "family": "hbb_to_external_transfer",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000020-a-1",
+          "resolution": "row",
+          "level": "raw_exact",
+          "targets": 854,
+          "rust_spearman": 0.08631508784567671,
+          "independent_spearman": 0.08231941803238102,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.003995669813295688,
+          "within_reporting_tolerance": false,
+          "rust_unique_predicted_codes": 12,
+          "independent_unique_predicted_codes": 12,
+          "observed_unique_exact_values": 59,
+          "maximum_raw_prediction_difference": 2.671474153004283e-16,
+          "rust_raw_prediction_range": [
+            -0.05919353899861285,
+            0.021392491712821014
+          ],
+          "independent_raw_prediction_range": [
+            -0.05919353899861271,
+            0.021392491712820746
+          ]
+        },
+        {
+          "family": "hbb_to_external_transfer",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000019-a-1",
+          "resolution": "row",
+          "level": "raw_exact",
+          "targets": 820,
+          "rust_spearman": 0.16161161056309617,
+          "independent_spearman": 0.15831489010848415,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0032967204546120177,
+          "within_reporting_tolerance": false,
+          "rust_unique_predicted_codes": 12,
+          "independent_unique_predicted_codes": 12,
+          "observed_unique_exact_values": 142,
+          "maximum_raw_prediction_difference": 2.671474153004283e-16,
+          "rust_raw_prediction_range": [
+            -0.05919353899861285,
+            0.021392491712821014
+          ],
+          "independent_raw_prediction_range": [
+            -0.05919353899861271,
+            0.021392491712820746
+          ]
+        },
+        {
+          "family": "hbb_to_external_transfer",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000027-a-1",
+          "resolution": "row",
+          "level": "raw_exact",
+          "targets": 1369,
+          "rust_spearman": 0.041074378676914096,
+          "independent_spearman": 0.04367604675038136,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0026016680734672615,
+          "within_reporting_tolerance": false,
+          "rust_unique_predicted_codes": 12,
+          "independent_unique_predicted_codes": 12,
+          "observed_unique_exact_values": 232,
+          "maximum_raw_prediction_difference": 2.671474153004283e-16,
+          "rust_raw_prediction_range": [
+            -0.05919353899861285,
+            0.021392491712821014
+          ],
+          "independent_raw_prediction_range": [
+            -0.05919353899861271,
+            0.021392491712820746
+          ]
+        },
+        {
+          "family": "row_random_diagnostic",
+          "model": "mean",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "raw_exact",
+          "targets": 187,
+          "rust_spearman": -0.09821812398340886,
+          "independent_spearman": -0.09626700483302393,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.001951119150384928,
+          "within_reporting_tolerance": false,
+          "rust_unique_predicted_codes": 38,
+          "independent_unique_predicted_codes": 33,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 2.0816681711721685e-17,
+          "rust_raw_prediction_range": [
+            -0.02568848758465011,
+            -0.019395248380129602
+          ],
+          "independent_raw_prediction_range": [
+            -0.02568848758465012,
+            -0.019395248380129595
+          ]
+        },
+        {
+          "family": "hbb_to_external_transfer",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000016-a-1",
+          "resolution": "row",
+          "level": "raw_exact",
+          "targets": 1793,
+          "rust_spearman": -0.06942567816675319,
+          "independent_spearman": -0.0686298140567555,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0007958641099976849,
+          "within_reporting_tolerance": false,
+          "rust_unique_predicted_codes": 12,
+          "independent_unique_predicted_codes": 12,
+          "observed_unique_exact_values": 83,
+          "maximum_raw_prediction_difference": 2.671474153004283e-16,
+          "rust_raw_prediction_range": [
+            -0.05919353899861285,
+            0.021392491712821014
+          ],
+          "independent_raw_prediction_range": [
+            -0.05919353899861271,
+            0.021392491712820746
+          ]
+        },
+        {
+          "family": "hbb_to_external_transfer",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000017-a-1",
+          "resolution": "row",
+          "level": "raw_exact",
+          "targets": 1154,
+          "rust_spearman": -0.043562949932764994,
+          "independent_spearman": -0.04392873292673283,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.00036578299396783365,
+          "within_reporting_tolerance": false,
+          "rust_unique_predicted_codes": 12,
+          "independent_unique_predicted_codes": 12,
+          "observed_unique_exact_values": 123,
+          "maximum_raw_prediction_difference": 2.671474153004283e-16,
+          "rust_raw_prediction_range": [
+            -0.05919353899861285,
+            0.021392491712821014
+          ],
+          "independent_raw_prediction_range": [
+            -0.05919353899861271,
+            0.021392491712820746
+          ]
+        }
+      ]
+    },
+    {
+      "level": "1e-12",
+      "metric_pairs": 240,
+      "matched": 240,
+      "mismatched": 0,
+      "undefined_status_mismatches": 0,
+      "both_undefined": 36,
+      "maximum_defined_correlation_difference": 0.0,
+      "worst_cases": [
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "mean",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-12",
+          "targets": 561,
+          "rust_spearman": -0.15505062768026825,
+          "independent_spearman": -0.15505062768026825,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 5,
+          "independent_unique_predicted_codes": 5,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 2.42861286636753e-17,
+          "rust_raw_prediction_range": [
+            -0.03059431524547801,
+            -0.006818181818181821
+          ],
+          "independent_raw_prediction_range": [
+            -0.030594315245478034,
+            -0.00681818181818182
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "mean",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-12",
+          "targets": 187,
+          "rust_spearman": -0.1847898946257115,
+          "independent_spearman": -0.1847898946257115,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 5,
+          "independent_unique_predicted_codes": 5,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 2.42861286636753e-17,
+          "rust_raw_prediction_range": [
+            -0.03059431524547801,
+            -0.006818181818181821
+          ],
+          "independent_raw_prediction_range": [
+            -0.030594315245478034,
+            -0.00681818181818182
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-12",
+          "targets": 561,
+          "rust_spearman": 0.025013699242201884,
+          "independent_spearman": 0.025013699242201884,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 60,
+          "independent_unique_predicted_codes": 60,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 4.649058915617843e-16,
+          "rust_raw_prediction_range": [
+            -0.08625906901697689,
+            0.0672516626070198
+          ],
+          "independent_raw_prediction_range": [
+            -0.08625906901697686,
+            0.06725166260701983
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-12",
+          "targets": 187,
+          "rust_spearman": -0.1556100798116186,
+          "independent_spearman": -0.1556100798116186,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 20,
+          "independent_unique_predicted_codes": 20,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 2.393918396847994e-16,
+          "rust_raw_prediction_range": [
+            -0.06948385745672325,
+            0.04598972490619862
+          ],
+          "independent_raw_prediction_range": [
+            -0.06948385745672327,
+            0.04598972490619868
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "coordinate",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-12",
+          "targets": 561,
+          "rust_spearman": 0.06538081449320986,
+          "independent_spearman": 0.06538081449320986,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 561,
+          "independent_unique_predicted_codes": 561,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 1.1934897514720433e-15,
+          "rust_raw_prediction_range": [
+            -0.1773608514101651,
+            0.2043973538178504
+          ],
+          "independent_raw_prediction_range": [
+            -0.17736085141016553,
+            0.2043973538178498
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "coordinate",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-12",
+          "targets": 187,
+          "rust_spearman": 0.020792629183266024,
+          "independent_spearman": 0.020792629183266024,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 187,
+          "independent_unique_predicted_codes": 187,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 9.992007221626409e-16,
+          "rust_raw_prediction_range": [
+            -0.15168115603612572,
+            0.1595519596369475
+          ],
+          "independent_raw_prediction_range": [
+            -0.15168115603612614,
+            0.15955195963694688
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "delta3mer",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-12",
+          "targets": 561,
+          "rust_spearman": 0.10607373000404931,
+          "independent_spearman": 0.10607373000404931,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 528,
+          "independent_unique_predicted_codes": 528,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 6.050715484207103e-15,
+          "rust_raw_prediction_range": [
+            -0.24277653518674971,
+            0.23306400948521716
+          ],
+          "independent_raw_prediction_range": [
+            -0.24277653518674983,
+            0.23306400948521694
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "delta3mer",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-12",
+          "targets": 187,
+          "rust_spearman": 0.05513921837747319,
+          "independent_spearman": 0.05513921837747319,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 177,
+          "independent_unique_predicted_codes": 177,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 5.6066262743570405e-15,
+          "rust_raw_prediction_range": [
+            -0.18357425651581386,
+            0.13634727627157353
+          ],
+          "independent_raw_prediction_range": [
+            -0.18357425651581386,
+            0.13634727627157348
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "motif",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-12",
+          "targets": 561,
+          "rust_spearman": -0.11614505023698891,
+          "independent_spearman": -0.11614505023698891,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 561,
+          "independent_unique_predicted_codes": 561,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 7.632783294297951e-16,
+          "rust_raw_prediction_range": [
+            -0.12172429801596259,
+            0.13954026500387914
+          ],
+          "independent_raw_prediction_range": [
+            -0.12172429801596261,
+            0.13954026500387923
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "motif",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-12",
+          "targets": 187,
+          "rust_spearman": -0.25190494636417254,
+          "independent_spearman": -0.25190494636417254,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 187,
+          "independent_unique_predicted_codes": 187,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 5.689893001203927e-16,
+          "rust_raw_prediction_range": [
+            -0.09330263988714495,
+            0.08829138809572701
+          ],
+          "independent_raw_prediction_range": [
+            -0.09330263988714504,
+            0.08829138809572708
+          ]
+        }
+      ]
+    },
+    {
+      "level": "1e-10",
+      "metric_pairs": 240,
+      "matched": 240,
+      "mismatched": 0,
+      "undefined_status_mismatches": 0,
+      "both_undefined": 36,
+      "maximum_defined_correlation_difference": 0.0,
+      "worst_cases": [
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "mean",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-10",
+          "targets": 561,
+          "rust_spearman": -0.15505062768026825,
+          "independent_spearman": -0.15505062768026825,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 5,
+          "independent_unique_predicted_codes": 5,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 2.42861286636753e-17,
+          "rust_raw_prediction_range": [
+            -0.03059431524547801,
+            -0.006818181818181821
+          ],
+          "independent_raw_prediction_range": [
+            -0.030594315245478034,
+            -0.00681818181818182
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "mean",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-10",
+          "targets": 187,
+          "rust_spearman": -0.1847898946257115,
+          "independent_spearman": -0.1847898946257115,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 5,
+          "independent_unique_predicted_codes": 5,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 2.42861286636753e-17,
+          "rust_raw_prediction_range": [
+            -0.03059431524547801,
+            -0.006818181818181821
+          ],
+          "independent_raw_prediction_range": [
+            -0.030594315245478034,
+            -0.00681818181818182
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-10",
+          "targets": 561,
+          "rust_spearman": 0.025013699242201884,
+          "independent_spearman": 0.025013699242201884,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 60,
+          "independent_unique_predicted_codes": 60,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 4.649058915617843e-16,
+          "rust_raw_prediction_range": [
+            -0.08625906901697689,
+            0.0672516626070198
+          ],
+          "independent_raw_prediction_range": [
+            -0.08625906901697686,
+            0.06725166260701983
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-10",
+          "targets": 187,
+          "rust_spearman": -0.1556100798116186,
+          "independent_spearman": -0.1556100798116186,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 20,
+          "independent_unique_predicted_codes": 20,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 2.393918396847994e-16,
+          "rust_raw_prediction_range": [
+            -0.06948385745672325,
+            0.04598972490619862
+          ],
+          "independent_raw_prediction_range": [
+            -0.06948385745672327,
+            0.04598972490619868
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "coordinate",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-10",
+          "targets": 561,
+          "rust_spearman": 0.06538081449320986,
+          "independent_spearman": 0.06538081449320986,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 561,
+          "independent_unique_predicted_codes": 561,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 1.1934897514720433e-15,
+          "rust_raw_prediction_range": [
+            -0.1773608514101651,
+            0.2043973538178504
+          ],
+          "independent_raw_prediction_range": [
+            -0.17736085141016553,
+            0.2043973538178498
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "coordinate",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-10",
+          "targets": 187,
+          "rust_spearman": 0.020792629183266024,
+          "independent_spearman": 0.020792629183266024,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 187,
+          "independent_unique_predicted_codes": 187,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 9.992007221626409e-16,
+          "rust_raw_prediction_range": [
+            -0.15168115603612572,
+            0.1595519596369475
+          ],
+          "independent_raw_prediction_range": [
+            -0.15168115603612614,
+            0.15955195963694688
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "delta3mer",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-10",
+          "targets": 561,
+          "rust_spearman": 0.10607373000404931,
+          "independent_spearman": 0.10607373000404931,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 528,
+          "independent_unique_predicted_codes": 528,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 6.050715484207103e-15,
+          "rust_raw_prediction_range": [
+            -0.24277653518674971,
+            0.23306400948521716
+          ],
+          "independent_raw_prediction_range": [
+            -0.24277653518674983,
+            0.23306400948521694
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "delta3mer",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-10",
+          "targets": 187,
+          "rust_spearman": 0.05513921837747319,
+          "independent_spearman": 0.05513921837747319,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 177,
+          "independent_unique_predicted_codes": 177,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 5.6066262743570405e-15,
+          "rust_raw_prediction_range": [
+            -0.18357425651581386,
+            0.13634727627157353
+          ],
+          "independent_raw_prediction_range": [
+            -0.18357425651581386,
+            0.13634727627157348
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "motif",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-10",
+          "targets": 561,
+          "rust_spearman": -0.11614505023698891,
+          "independent_spearman": -0.11614505023698891,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 561,
+          "independent_unique_predicted_codes": 561,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 7.632783294297951e-16,
+          "rust_raw_prediction_range": [
+            -0.12172429801596259,
+            0.13954026500387914
+          ],
+          "independent_raw_prediction_range": [
+            -0.12172429801596261,
+            0.13954026500387923
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "motif",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-10",
+          "targets": 187,
+          "rust_spearman": -0.25190494636417254,
+          "independent_spearman": -0.25190494636417254,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 187,
+          "independent_unique_predicted_codes": 187,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 5.689893001203927e-16,
+          "rust_raw_prediction_range": [
+            -0.09330263988714495,
+            0.08829138809572701
+          ],
+          "independent_raw_prediction_range": [
+            -0.09330263988714504,
+            0.08829138809572708
+          ]
+        }
+      ]
+    },
+    {
+      "level": "1e-8",
+      "metric_pairs": 240,
+      "matched": 240,
+      "mismatched": 0,
+      "undefined_status_mismatches": 0,
+      "both_undefined": 36,
+      "maximum_defined_correlation_difference": 0.0,
+      "worst_cases": [
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "mean",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-8",
+          "targets": 561,
+          "rust_spearman": -0.15505062768026825,
+          "independent_spearman": -0.15505062768026825,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 5,
+          "independent_unique_predicted_codes": 5,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 2.42861286636753e-17,
+          "rust_raw_prediction_range": [
+            -0.03059431524547801,
+            -0.006818181818181821
+          ],
+          "independent_raw_prediction_range": [
+            -0.030594315245478034,
+            -0.00681818181818182
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "mean",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-8",
+          "targets": 187,
+          "rust_spearman": -0.1847898946257115,
+          "independent_spearman": -0.1847898946257115,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 5,
+          "independent_unique_predicted_codes": 5,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 2.42861286636753e-17,
+          "rust_raw_prediction_range": [
+            -0.03059431524547801,
+            -0.006818181818181821
+          ],
+          "independent_raw_prediction_range": [
+            -0.030594315245478034,
+            -0.00681818181818182
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-8",
+          "targets": 561,
+          "rust_spearman": 0.025013699242201884,
+          "independent_spearman": 0.025013699242201884,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 60,
+          "independent_unique_predicted_codes": 60,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 4.649058915617843e-16,
+          "rust_raw_prediction_range": [
+            -0.08625906901697689,
+            0.0672516626070198
+          ],
+          "independent_raw_prediction_range": [
+            -0.08625906901697686,
+            0.06725166260701983
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-8",
+          "targets": 187,
+          "rust_spearman": -0.1556100798116186,
+          "independent_spearman": -0.1556100798116186,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 20,
+          "independent_unique_predicted_codes": 20,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 2.393918396847994e-16,
+          "rust_raw_prediction_range": [
+            -0.06948385745672325,
+            0.04598972490619862
+          ],
+          "independent_raw_prediction_range": [
+            -0.06948385745672327,
+            0.04598972490619868
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "coordinate",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-8",
+          "targets": 561,
+          "rust_spearman": 0.06538081449320986,
+          "independent_spearman": 0.06538081449320986,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 561,
+          "independent_unique_predicted_codes": 561,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 1.1934897514720433e-15,
+          "rust_raw_prediction_range": [
+            -0.1773608514101651,
+            0.2043973538178504
+          ],
+          "independent_raw_prediction_range": [
+            -0.17736085141016553,
+            0.2043973538178498
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "coordinate",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-8",
+          "targets": 187,
+          "rust_spearman": 0.020792629183266024,
+          "independent_spearman": 0.020792629183266024,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 187,
+          "independent_unique_predicted_codes": 187,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 9.992007221626409e-16,
+          "rust_raw_prediction_range": [
+            -0.15168115603612572,
+            0.1595519596369475
+          ],
+          "independent_raw_prediction_range": [
+            -0.15168115603612614,
+            0.15955195963694688
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "delta3mer",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-8",
+          "targets": 561,
+          "rust_spearman": 0.10607373000404931,
+          "independent_spearman": 0.10607373000404931,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 528,
+          "independent_unique_predicted_codes": 528,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 6.050715484207103e-15,
+          "rust_raw_prediction_range": [
+            -0.24277653518674971,
+            0.23306400948521716
+          ],
+          "independent_raw_prediction_range": [
+            -0.24277653518674983,
+            0.23306400948521694
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "delta3mer",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-8",
+          "targets": 187,
+          "rust_spearman": 0.05513921837747319,
+          "independent_spearman": 0.05513921837747319,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 177,
+          "independent_unique_predicted_codes": 177,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 5.6066262743570405e-15,
+          "rust_raw_prediction_range": [
+            -0.18357425651581386,
+            0.13634727627157353
+          ],
+          "independent_raw_prediction_range": [
+            -0.18357425651581386,
+            0.13634727627157348
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "motif",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-8",
+          "targets": 561,
+          "rust_spearman": -0.11614505023698891,
+          "independent_spearman": -0.11614505023698891,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 561,
+          "independent_unique_predicted_codes": 561,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 7.632783294297951e-16,
+          "rust_raw_prediction_range": [
+            -0.12172429801596259,
+            0.13954026500387914
+          ],
+          "independent_raw_prediction_range": [
+            -0.12172429801596261,
+            0.13954026500387923
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "motif",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-8",
+          "targets": 187,
+          "rust_spearman": -0.25190494636417254,
+          "independent_spearman": -0.25190494636417254,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 187,
+          "independent_unique_predicted_codes": 187,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 5.689893001203927e-16,
+          "rust_raw_prediction_range": [
+            -0.09330263988714495,
+            0.08829138809572701
+          ],
+          "independent_raw_prediction_range": [
+            -0.09330263988714504,
+            0.08829138809572708
+          ]
+        }
+      ]
+    },
+    {
+      "level": "1e-6",
+      "metric_pairs": 240,
+      "matched": 240,
+      "mismatched": 0,
+      "undefined_status_mismatches": 0,
+      "both_undefined": 36,
+      "maximum_defined_correlation_difference": 0.0,
+      "worst_cases": [
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "mean",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-6",
+          "targets": 561,
+          "rust_spearman": -0.15505062768026825,
+          "independent_spearman": -0.15505062768026825,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 5,
+          "independent_unique_predicted_codes": 5,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 2.42861286636753e-17,
+          "rust_raw_prediction_range": [
+            -0.03059431524547801,
+            -0.006818181818181821
+          ],
+          "independent_raw_prediction_range": [
+            -0.030594315245478034,
+            -0.00681818181818182
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "mean",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-6",
+          "targets": 187,
+          "rust_spearman": -0.1847898946257115,
+          "independent_spearman": -0.1847898946257115,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 5,
+          "independent_unique_predicted_codes": 5,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 2.42861286636753e-17,
+          "rust_raw_prediction_range": [
+            -0.03059431524547801,
+            -0.006818181818181821
+          ],
+          "independent_raw_prediction_range": [
+            -0.030594315245478034,
+            -0.00681818181818182
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-6",
+          "targets": 561,
+          "rust_spearman": 0.025013699242201884,
+          "independent_spearman": 0.025013699242201884,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 60,
+          "independent_unique_predicted_codes": 60,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 4.649058915617843e-16,
+          "rust_raw_prediction_range": [
+            -0.08625906901697689,
+            0.0672516626070198
+          ],
+          "independent_raw_prediction_range": [
+            -0.08625906901697686,
+            0.06725166260701983
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-6",
+          "targets": 187,
+          "rust_spearman": -0.1556100798116186,
+          "independent_spearman": -0.1556100798116186,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 20,
+          "independent_unique_predicted_codes": 20,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 2.393918396847994e-16,
+          "rust_raw_prediction_range": [
+            -0.06948385745672325,
+            0.04598972490619862
+          ],
+          "independent_raw_prediction_range": [
+            -0.06948385745672327,
+            0.04598972490619868
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "coordinate",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-6",
+          "targets": 561,
+          "rust_spearman": 0.06538431827839726,
+          "independent_spearman": 0.06538431827839726,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 559,
+          "independent_unique_predicted_codes": 559,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 1.1934897514720433e-15,
+          "rust_raw_prediction_range": [
+            -0.1773608514101651,
+            0.2043973538178504
+          ],
+          "independent_raw_prediction_range": [
+            -0.17736085141016553,
+            0.2043973538178498
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "coordinate",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-6",
+          "targets": 187,
+          "rust_spearman": 0.020792629183266024,
+          "independent_spearman": 0.020792629183266024,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 187,
+          "independent_unique_predicted_codes": 187,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 9.992007221626409e-16,
+          "rust_raw_prediction_range": [
+            -0.15168115603612572,
+            0.1595519596369475
+          ],
+          "independent_raw_prediction_range": [
+            -0.15168115603612614,
+            0.15955195963694688
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "delta3mer",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-6",
+          "targets": 561,
+          "rust_spearman": 0.10607373000404931,
+          "independent_spearman": 0.10607373000404931,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 528,
+          "independent_unique_predicted_codes": 528,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 6.050715484207103e-15,
+          "rust_raw_prediction_range": [
+            -0.24277653518674971,
+            0.23306400948521716
+          ],
+          "independent_raw_prediction_range": [
+            -0.24277653518674983,
+            0.23306400948521694
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "delta3mer",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-6",
+          "targets": 187,
+          "rust_spearman": 0.05513921837747319,
+          "independent_spearman": 0.05513921837747319,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 177,
+          "independent_unique_predicted_codes": 177,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 5.6066262743570405e-15,
+          "rust_raw_prediction_range": [
+            -0.18357425651581386,
+            0.13634727627157353
+          ],
+          "independent_raw_prediction_range": [
+            -0.18357425651581386,
+            0.13634727627157348
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "motif",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "1e-6",
+          "targets": 561,
+          "rust_spearman": -0.11612946712774429,
+          "independent_spearman": -0.11612946712774429,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 559,
+          "independent_unique_predicted_codes": 559,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 7.632783294297951e-16,
+          "rust_raw_prediction_range": [
+            -0.12172429801596259,
+            0.13954026500387914
+          ],
+          "independent_raw_prediction_range": [
+            -0.12172429801596261,
+            0.13954026500387923
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "motif",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "1e-6",
+          "targets": 187,
+          "rust_spearman": -0.25190494636417254,
+          "independent_spearman": -0.25190494636417254,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 187,
+          "independent_unique_predicted_codes": 187,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 5.689893001203927e-16,
+          "rust_raw_prediction_range": [
+            -0.09330263988714495,
+            0.08829138809572701
+          ],
+          "independent_raw_prediction_range": [
+            -0.09330263988714504,
+            0.08829138809572708
+          ]
+        }
+      ]
+    },
+    {
+      "level": "0.01",
+      "metric_pairs": 240,
+      "matched": 240,
+      "mismatched": 0,
+      "undefined_status_mismatches": 0,
+      "both_undefined": 36,
+      "maximum_defined_correlation_difference": 0.0,
+      "worst_cases": [
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "mean",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "0.01",
+          "targets": 561,
+          "rust_spearman": -0.22808231454319017,
+          "independent_spearman": -0.22808231454319017,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 3,
+          "independent_unique_predicted_codes": 3,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 2.42861286636753e-17,
+          "rust_raw_prediction_range": [
+            -0.03059431524547801,
+            -0.006818181818181821
+          ],
+          "independent_raw_prediction_range": [
+            -0.030594315245478034,
+            -0.00681818181818182
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "mean",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "0.01",
+          "targets": 187,
+          "rust_spearman": -0.263836240780392,
+          "independent_spearman": -0.263836240780392,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 3,
+          "independent_unique_predicted_codes": 3,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 2.42861286636753e-17,
+          "rust_raw_prediction_range": [
+            -0.03059431524547801,
+            -0.006818181818181821
+          ],
+          "independent_raw_prediction_range": [
+            -0.030594315245478034,
+            -0.00681818181818182
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "0.01",
+          "targets": 561,
+          "rust_spearman": 0.0219662357123177,
+          "independent_spearman": 0.0219662357123177,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 16,
+          "independent_unique_predicted_codes": 16,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 4.649058915617843e-16,
+          "rust_raw_prediction_range": [
+            -0.08625906901697689,
+            0.0672516626070198
+          ],
+          "independent_raw_prediction_range": [
+            -0.08625906901697686,
+            0.06725166260701983
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "chemistry",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "0.01",
+          "targets": 187,
+          "rust_spearman": -0.11961456384113206,
+          "independent_spearman": -0.11961456384113206,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 10,
+          "independent_unique_predicted_codes": 10,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 2.393918396847994e-16,
+          "rust_raw_prediction_range": [
+            -0.06948385745672325,
+            0.04598972490619862
+          ],
+          "independent_raw_prediction_range": [
+            -0.06948385745672327,
+            0.04598972490619868
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "coordinate",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "0.01",
+          "targets": 561,
+          "rust_spearman": 0.06447713894725725,
+          "independent_spearman": 0.06447713894725725,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 39,
+          "independent_unique_predicted_codes": 39,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 1.1934897514720433e-15,
+          "rust_raw_prediction_range": [
+            -0.1773608514101651,
+            0.2043973538178504
+          ],
+          "independent_raw_prediction_range": [
+            -0.17736085141016553,
+            0.2043973538178498
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "coordinate",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "0.01",
+          "targets": 187,
+          "rust_spearman": 0.020098245154502165,
+          "independent_spearman": 0.020098245154502165,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 30,
+          "independent_unique_predicted_codes": 30,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 9.992007221626409e-16,
+          "rust_raw_prediction_range": [
+            -0.15168115603612572,
+            0.1595519596369475
+          ],
+          "independent_raw_prediction_range": [
+            -0.15168115603612614,
+            0.15955195963694688
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "delta3mer",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "0.01",
+          "targets": 561,
+          "rust_spearman": 0.1067363581774527,
+          "independent_spearman": 0.1067363581774527,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 40,
+          "independent_unique_predicted_codes": 40,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 6.050715484207103e-15,
+          "rust_raw_prediction_range": [
+            -0.24277653518674971,
+            0.23306400948521716
+          ],
+          "independent_raw_prediction_range": [
+            -0.24277653518674983,
+            0.23306400948521694
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "delta3mer",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "0.01",
+          "targets": 187,
+          "rust_spearman": 0.056023337117789944,
+          "independent_spearman": 0.056023337117789944,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 28,
+          "independent_unique_predicted_codes": 28,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 5.6066262743570405e-15,
+          "rust_raw_prediction_range": [
+            -0.18357425651581386,
+            0.13634727627157353
+          ],
+          "independent_raw_prediction_range": [
+            -0.18357425651581386,
+            0.13634727627157348
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "motif",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "row",
+          "level": "0.01",
+          "targets": 561,
+          "rust_spearman": -0.11604312900754768,
+          "independent_spearman": -0.11604312900754768,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 25,
+          "independent_unique_predicted_codes": 25,
+          "observed_unique_exact_values": 74,
+          "maximum_raw_prediction_difference": 7.632783294297951e-16,
+          "rust_raw_prediction_range": [
+            -0.12172429801596259,
+            0.13954026500387914
+          ],
+          "independent_raw_prediction_range": [
+            -0.12172429801596261,
+            0.13954026500387923
+          ]
+        },
+        {
+          "family": "hbb_guarded_position_cv",
+          "model": "motif",
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "resolution": "position",
+          "level": "0.01",
+          "targets": 187,
+          "rust_spearman": -0.24417710508151425,
+          "independent_spearman": -0.24417710508151425,
+          "rust_defined": true,
+          "independent_defined": true,
+          "undefined_status_match": true,
+          "absolute_correlation_difference": 0.0,
+          "within_reporting_tolerance": true,
+          "rust_unique_predicted_codes": 19,
+          "independent_unique_predicted_codes": 19,
+          "observed_unique_exact_values": 100,
+          "maximum_raw_prediction_difference": 5.689893001203927e-16,
+          "rust_raw_prediction_range": [
+            -0.09330263988714495,
+            0.08829138809572701
+          ],
+          "independent_raw_prediction_range": [
+            -0.09330263988714504,
+            0.08829138809572708
+          ]
+        }
+      ]
+    }
+  ],
+  "v1_raw_exact_rank_passes": false,
+  "selected_quantum": null,
+  "interpretation": "Each coarse grid is a separately labeled supplemental rank estimand. No quantum is selected for v1 success and no biological inference/p-value is made."
+}

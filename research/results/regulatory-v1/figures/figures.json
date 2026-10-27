@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "input_study_manifest_sha256": "d5c788362bb0419dcdb6e273ffd6a8e193cadd7e89994928ae374601a78846cd",
+  "script_sha256": "750af4465573aff6c7438d2624b5fb4ebdd2f5452efb24a0f20441efc4463d9b",
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "files": {
+    "01-model-errors.svg": "14a69249e54905e888eb639f8ac4738a43272cf3528cff9184bc5cfdd303c386",
+    "01-model-errors.png": "d08c6086666853882028638d0dd2b1a85a857c748c52aa06592f1b1fb21dba1a",
+    "model-errors.csv": "5590f716a1801d1855165d086c82c627feb99fe716ffd7be9964845b70087644",
+    "02-planned-contrasts.svg": "98cf9b39696836d657534430b7b79b1607d39d62bcd9cf0a8a44740fa58b9d3f",
+    "02-planned-contrasts.png": "ee4a4101ebcb452485c72cf756667f9ea4e8135e0ef6a688e72f070e689753d5",
+    "planned-contrasts.csv": "a9ddc6b4a6de009b7663097027849a3a733f97749ef6c1604e7d971f87d3b83a",
+    "03-context-comparisons.svg": "bd0e3e772638a1f9a16eac529e43248c7caf3ad7cab77b10956f356f2018d0ba",
+    "03-context-comparisons.png": "6dd0f2a13507c3c50ba8d86cb25c88139edfc7a0f76f9706ea5a308c7128716d",
+    "context-comparisons.csv": "685735a4d9826fe19c3d9756ec53c7ad167caee8e056aa9b03c69de3137ed4cc",
+    "04-hbb-landscape.svg": "d334d6b64e5566bf76119213f2bce58d4f7e931e5796b2b12603ada3479c6ef6",
+    "04-hbb-landscape.png": "840fa7ae3bbc7e5a947176de140576a5633844c40105aa535d5bebdf88f042e3",
+    "05-source-identity-qc.svg": "5738b5f2b82619cf6d289bf2291ab5bd4c5632df37dd84ad75d914774c183632",
+    "05-source-identity-qc.png": "2e6af27cfd6c79d773c4848848b6bd34180c2f7a322be4297b6bd258a9b540e3"
+  },
+  "interpretation": "Standalone figures from committed source estimates and frozen analyses; no calibrated significance, new biological mechanism or causal context assignment is asserted."
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "method": "Independent original-TSV/whole-edited-sequence grouping with exact Decimal arithmetic; no shared reconciliation code",
+  "raw": {
+    "rows": 62,
+    "distinct_altered_sequences": 53,
+    "sum_squared_deviations": "4.480450",
+    "minimum_observed_label_mse": "0.07226532258064516129032258065",
+    "duplicate_groups": [
+      {
+        "positions": [
+          187,
+          186
+        ],
+        "tags": [
+          14,
+          1
+        ],
+        "one_below_ten_one_at_least_ten": true
+      },
+      {
+        "positions": [
+          158,
+          157
+        ],
+        "tags": [
+          98,
+          3
+        ],
+        "one_below_ten_one_at_least_ten": true
+      },
+      {
+        "positions": [
+          153,
+          152
+        ],
+        "tags": [
+          304,
+          3
+        ],
+        "one_below_ten_one_at_least_ten": true
+      },
+      {
+        "positions": [
+          138,
+          137
+        ],
+        "tags": [
+          336,
+          4
+        ],
+        "one_below_ten_one_at_least_ten": true
+      },
+      {
+        "positions": [
+          116,
+          114
+        ],
+        "tags": [
+          1844,
+          3
+        ],
+        "one_below_ten_one_at_least_ten": true
+      },
+      {
+        "positions": [
+          97,
+          96
+        ],
+        "tags": [
+          132,
+          1
+        ],
+        "one_below_ten_one_at_least_ten": true
+      },
+      {
+        "positions": [
+          93,
+          92
+        ],
+        "tags": [
+          1799,
+          2
+        ],
+        "one_below_ten_one_at_least_ten": true
+      },
+      {
+        "positions": [
+          85,
+          83
+        ],
+        "tags": [
+          1770,
+          3
+        ],
+        "one_below_ten_one_at_least_ten": true
+      },
+      {
+        "positions": [
+          11,
+          9
+        ],
+        "tags": [
+          4977,
+          3
+        ],
+        "one_below_ten_one_at_least_ten": true
+      }
+    ]
+  },
+  "predefined_quality_pass": {
+    "rows": 35,
+    "distinct_altered_sequences": 35,
+    "sum_squared_deviations": "0",
+    "minimum_observed_label_mse": "0",
+    "duplicate_groups": []
+  },
+  "scope": "Finite source-estimate identity diagnostic; no biological irreducibility or independent replication claim"
+}

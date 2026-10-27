@@ -13,3 +13,6 @@ research/forensic-sources/author-* -text -whitespace
 research/forensic-sources/*.xml -text -whitespace
 research/forensic-sources/*.html -text -whitespace
 research/forensic-sources/*.soft -text -whitespace
+# Preserve the hashed Matplotlib/CSV output exactly as generated.
+research/results/regulatory-v1/figures/*.svg -text whitespace=-trailing-space
+research/results/regulatory-v1/figures/*.csv -text whitespace=cr-at-eol
