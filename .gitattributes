@@ -5,3 +5,11 @@ datasets/hbb-reference/transcript.gb whitespace=-trailing-space
 datasets/hbb-reference/annotation.json whitespace=-trailing-space
 # Preserve the exact source CSV's CRLF bytes.
 datasets/hbb-promoter-assay/scores.csv -text whitespace=cr-at-eol
+datasets/regulatory-cohort/*.scores.csv -text whitespace=cr-at-eol
+datasets/regulatory-cohort/reference-*.json -text whitespace=-trailing-space
+datasets/regulatory-motifs/jaspar-about.html -text -whitespace
+# Retained upstream material is evidence, including its original whitespace.
+research/forensic-sources/author-* -text -whitespace
+research/forensic-sources/*.xml -text -whitespace
+research/forensic-sources/*.html -text -whitespace
+research/forensic-sources/*.soft -text -whitespace

@@ -1,0 +1,310 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "c8e97fabef2afe8ccaa5a01a7ef7bb952f9c9f15857e5c540af112a66e78cb58",
+  "software": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "implementation": "CPython",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "script_sha256": "d0a48b3ad6eac31c9e2023d487caac58a99e0a6743400fcf7219529395894a5f"
+  },
+  "input_manifest_sha256": {
+    "cohort": "200342ba098e4e302cb306af67f68b01fccf13291ad6650b7dcb1281d83ddae5",
+    "motifs": "2be48efb0bc084f29023a2ef13027195e8316ffdd86b8a1031e6fafe752b8fa8",
+    "hbb": "deb265e8bb5a4e4600a5bfd24f2cfa484d668b4ea8a2933e3ad4e781b6f32c03"
+  },
+  "primary_eligible_rows": 10365,
+  "primary_eligible_positions": 3485,
+  "hbb_rows": 561,
+  "independent_implementation": true,
+  "independent_biological_replication": false,
+  "final_status": {
+    "all_checks_matched": false,
+    "primary_predictions_losses_and_controls_matched": true,
+    "secondary_exact_rank_metrics_matched": false,
+    "failure_categories": {
+      "spearman_rows": 24,
+      "spearman_positions": 2
+    },
+    "checked": {
+      "feature_schema": 6,
+      "evaluation_families": 1,
+      "fold_membership": 84,
+      "macro_mse": 24,
+      "macro_mae": 24,
+      "fit_dimensions": 168,
+      "fit_training_rows": 168,
+      "fit_means": 168,
+      "fit_scales": 168,
+      "fit_intercepts": 168,
+      "fit_coefficients": 168,
+      "target_accessions": 131112,
+      "target_fold": 131112,
+      "observations": 131112,
+      "predictions": 131112,
+      "per_assay_mse": 120,
+      "per_assay_mae": 120,
+      "per_assay_relative_mse_vs_mean": 120,
+      "spearman_rows": 120,
+      "spearman_positions": 120,
+      "prediction_target_inventory": 1,
+      "bootstrap_draws": 2,
+      "bootstrap_statistics": 6,
+      "bootstrap_intervals": 6,
+      "spatial_null_statistics": 6,
+      "spatial_null_model_mses": 12
+    },
+    "maximum_absolute_errors": {
+      "macro_mse": 3.0253577421035516e-15,
+      "macro_mae": 4.413136522884997e-15,
+      "fit_means": 8.992806499463768e-15,
+      "fit_scales": 1.9984014443252818e-13,
+      "fit_intercepts": 2.7755575615628914e-16,
+      "fit_coefficients": 2.824580846993996e-12,
+      "observations": 0.0,
+      "predictions": 7.728984119381721e-12,
+      "per_assay_mse": 1.0325074129013956e-14,
+      "per_assay_mae": 2.3148150063434514e-14,
+      "per_assay_relative_mse_vs_mean": 7.103206911551752e-13,
+      "spearman_rows": 0.00797822601173654,
+      "spearman_positions": 0.0019511191503849418,
+      "bootstrap_statistics": 9.032705139411235e-15,
+      "bootstrap_intervals": 6.935858137824269e-15,
+      "spatial_null_statistics": 1.3836154444391013e-14,
+      "spatial_null_model_mses": 1.3863910020006642e-14
+    }
+  },
+  "macro_mse_by_family": {
+    "hbb_guarded_position_cv": {
+      "mean": 0.021933885766138132,
+      "chemistry": 0.02268307246173562,
+      "coordinate": 0.026119801221622496,
+      "delta3mer": 0.025027225998272846,
+      "motif": 0.024996569394243676,
+      "full": 0.029609654049114663
+    },
+    "hbb_to_external_transfer": {
+      "mean": 0.11672352208473755,
+      "chemistry": 0.11712480035712969,
+      "coordinate": 0.11557964489726157,
+      "delta3mer": 0.11853220496263644,
+      "motif": 0.11693560354604268,
+      "full": 0.11700972289724487
+    },
+    "primary_leave_element_out": {
+      "mean": 0.116392186609325,
+      "chemistry": 0.11689921010172477,
+      "coordinate": 0.11652876324891483,
+      "delta3mer": 0.11837089730585793,
+      "motif": 0.11682948733115306,
+      "full": 0.11798887466858123
+    },
+    "row_random_diagnostic": {
+      "mean": 0.021462133212199773,
+      "chemistry": 0.02172583646085375,
+      "coordinate": 0.020792209873482844,
+      "delta3mer": 0.020941712364387972,
+      "motif": 0.021855342783225217,
+      "full": 0.02043620509433936
+    }
+  },
+  "planned_comparisons": {
+    "hbb_guarded_position_cv": {
+      "delta3mer_vs_chemistry": {
+        "observed_improvement": -0.002344153536537226,
+        "bootstrap_interval": [
+          -0.004382480935815055,
+          0.00011995384594997616
+        ],
+        "spatial_null_tail": 0.08,
+        "holm_within_family": 0.24,
+        "bonferroni_six": 0.48
+      },
+      "motif_vs_chemistry": {
+        "observed_improvement": -0.002313496932508055,
+        "bootstrap_interval": [
+          -0.003915636905237962,
+          -0.0007471273180823181
+        ],
+        "spatial_null_tail": 1.0,
+        "holm_within_family": 1.0,
+        "bonferroni_six": 1.0
+      },
+      "full_vs_coordinate": {
+        "observed_improvement": -0.0034898528274921667,
+        "bootstrap_interval": [
+          -0.005699377385530359,
+          -0.0007148796380669104
+        ],
+        "spatial_null_tail": 0.27,
+        "holm_within_family": 0.54,
+        "bonferroni_six": 1.0
+      }
+    },
+    "primary_leave_element_out": {
+      "delta3mer_vs_chemistry": {
+        "observed_improvement": -0.0014716872041331541,
+        "bootstrap_interval": [
+          -0.002534150838920107,
+          -0.00013159331065466725
+        ],
+        "spatial_null_tail": 0.98,
+        "holm_within_family": 1.0,
+        "bonferroni_six": 1.0
+      },
+      "motif_vs_chemistry": {
+        "observed_improvement": 6.972277057171183e-05,
+        "bootstrap_interval": [
+          -0.0005804399377470509,
+          0.0006428538564839995
+        ],
+        "spatial_null_tail": 0.01,
+        "holm_within_family": 0.03,
+        "bonferroni_six": 0.06
+      },
+      "full_vs_coordinate": {
+        "observed_improvement": -0.001460111419666399,
+        "bootstrap_interval": [
+          -0.002537272575403595,
+          -0.0001646879088969787
+        ],
+        "spatial_null_tail": 0.95,
+        "holm_within_family": 1.0,
+        "bonferroni_six": 1.0
+      }
+    }
+  },
+  "context_pairs": [
+    {
+      "left": "urn:mavedb:00000023-a-2",
+      "right": "urn:mavedb:00000023-a-1",
+      "relationship": "library_repeat",
+      "matched_variants": 943,
+      "unmatched_left": 7,
+      "unmatched_right": 2,
+      "mse": 0.03393340402969247,
+      "mae": 0.11289501590668082,
+      "signed_mean_left_minus_right": -0.030965005302226938,
+      "pearson": 0.9726492588277443,
+      "spearman": 0.8647088177885728,
+      "finite_context_blind_mse_lower_bound": 0.008483351007423118
+    },
+    {
+      "left": "urn:mavedb:00000027-b-1",
+      "right": "urn:mavedb:00000027-a-1",
+      "relationship": "48h_vs_24h_context",
+      "matched_variants": 1368,
+      "unmatched_left": 11,
+      "unmatched_right": 1,
+      "mse": 0.05694334795321637,
+      "mae": 0.1639985380116959,
+      "signed_mean_left_minus_right": -0.02490497076023392,
+      "pearson": 0.8820306533252266,
+      "spearman": 0.7655459380069579,
+      "finite_context_blind_mse_lower_bound": 0.014235836988304093
+    },
+    {
+      "left": "urn:mavedb:00000031-b-1",
+      "right": "urn:mavedb:00000031-a-1",
+      "relationship": "GBM_vs_HEK293T_cell_context",
+      "matched_variants": 770,
+      "unmatched_left": 0,
+      "unmatched_right": 0,
+      "mse": 0.10288038961038962,
+      "mae": 0.22463636363636366,
+      "signed_mean_left_minus_right": -0.03744155844155845,
+      "pearson": 0.7590337541650136,
+      "spearman": 0.5926092779710743,
+      "finite_context_blind_mse_lower_bound": 0.025720097402597404
+    },
+    {
+      "left": "urn:mavedb:00000031-c-1",
+      "right": "urn:mavedb:00000031-d-1",
+      "relationship": "GABPA_knockdown_context",
+      "matched_variants": 769,
+      "unmatched_left": 0,
+      "unmatched_right": 0,
+      "mse": 0.03385409622886866,
+      "mae": 0.13087126137841354,
+      "signed_mean_left_minus_right": 0.026215864759427828,
+      "pearson": 0.9036628724961165,
+      "spearman": 0.851982378029125,
+      "finite_context_blind_mse_lower_bound": 0.008463524057217165
+    },
+    {
+      "left": "urn:mavedb:00000031-d-1",
+      "right": "urn:mavedb:00000031-b-1",
+      "relationship": "scrambled_control_context",
+      "matched_variants": 769,
+      "unmatched_left": 0,
+      "unmatched_right": 1,
+      "mse": 0.027762028608582574,
+      "mae": 0.11560468140442133,
+      "signed_mean_left_minus_right": 0.037425227568270485,
+      "pearson": 0.935159869201324,
+      "spearman": 0.8800863706620767,
+      "finite_context_blind_mse_lower_bound": 0.006940507152145644
+    }
+  ],
+  "rank_arithmetic": {
+    "observed_position_means": "Exact Fraction(raw CSV decimal score) sums/counts ranked directly; no float regrouping or epsilon.",
+    "predicted_identical_inputs": "Evaluate each identical unscaled feature row once per fit, then broadcast exactly; no score quantization.",
+    "predicted_position_means": "Preserve identical values exactly; otherwise NumPy arithmetic mean in ALT-sorted row order.",
+    "remaining_near_ties": "No epsilon or quantization. Cross-implementation rank mismatches remain failures if exact float rank inputs differ."
+  },
+  "attempts": [
+    {
+      "path": "/tmp/helix-independent-regulatory-v1-20261027",
+      "kind": "independent_full_run",
+      "status": "retained_superseded",
+      "reason": "Initial complete study; later fixed constant-group rank artifacts. Do not use its secondary ranks.",
+      "index_file": "artifacts.json",
+      "index_sha256": "02c26ce5ac1fc20fd52b23b775f902b78bd6df39eb6c8b0ab81ed6eec728ae25",
+      "implementation_snapshot_present": false
+    },
+    {
+      "path": "/tmp/helix-independent-regulatory-v1-constant-safe",
+      "kind": "independent_full_run",
+      "status": "retained_superseded",
+      "reason": "Preserved constant-group means; later diagnosed exact decimal-mean ties and BLAS splitting of identical inputs.",
+      "index_file": "artifacts.json",
+      "index_sha256": "014f4ac08f1e7dcdc99d592d7535555f28ae67c5c11e7683308e446ef6fb6b00",
+      "implementation_snapshot_present": true
+    },
+    {
+      "path": "/tmp/helix-independent-regulatory-v1-exact-source",
+      "kind": "independent_full_run",
+      "status": "final_v1",
+      "reason": "Exact raw-decimal observed position ranks, unique unscaled-feature prediction cache, no epsilon or quantization.",
+      "index_file": "artifacts.json",
+      "index_sha256": "83e8f938260bbcb4f3dd73912eaee1637a3855aff9021a3f9eac17abea20ea88",
+      "implementation_snapshot_present": true
+    },
+    {
+      "path": "/tmp/helix-regulatory-independent-comparison-v1",
+      "kind": "implementation_comparison",
+      "status": "failed_secondary",
+      "reason": "Constant-safe comparison;130 exact Spearman mismatches. All prediction/loss/control checks agreed.",
+      "index_file": "comparison.json",
+      "index_sha256": "85fd87c9f7034baa00e3ae70241b704f53ddcae2c2798f1dcf7cb7770bcc10a0",
+      "implementation_snapshot_present": false
+    },
+    {
+      "path": "/tmp/helix-regulatory-independent-comparison-v1-exact-source",
+      "kind": "implementation_comparison",
+      "status": "final_v1_partial_agreement",
+      "reason": "All primary prediction/loss/control checks agree;26 exact secondary Spearman mismatches remain and comparison exits2.",
+      "index_file": "comparison.json",
+      "index_sha256": "20c0bf0b28c258608a56f65e3b590c7b9bb86fbffe025d355c62b785203fb9a7",
+      "implementation_snapshot_present": false
+    }
+  ],
+  "limits": [
+    "HBB was previously explored; this is a retrospective within-element diagnostic.",
+    "Nine external promoter loci share one study and source processing; they are not nine independent studies.",
+    "Motif deltas are dual-strand sequence similarity changes, not binding or expression measurements.",
+    "Source target orientation is kept for chemistry/kmer baselines; dual-strand motif deltas are reverse-complement invariant.",
+    "The physical HBB insert is native-minus relative to the plus coordinate target; reporter TSS/transcript identity is not established.",
+    "Bootstrap intervals and stratified spatial-null tails are conditional robustness diagnostics, not calibrated biological significance."
+  ]
+}

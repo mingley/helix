@@ -1,195 +1,171 @@
 # Helix
 
-A Rust research laboratory for typed genomic claims, auditable evidence,
-conditional reasoning, and reproducible prediction experiments.
+Helix connects typed genomic representations, source provenance, conditional
+Lean reasoning and quantitative experiments. The Rust workspace contains
+**16 crates** and builds inspectable partial models of human genome function.
 
-The current [research objective](research/GOAL.md) is to recover a precise HBB
-sequence-to-mechanism model, expose its uncertainty, and connect it to measured
-regulatory evidence and a genome-wide annotation context. Six research and
-engineering subagents contributed independently checked components and source
-reviews. This is a partial model of human genome function, not a claim to have
-reverse engineered the genome.
+The current [regulatory study](research/regulatory-study.md) has a **negative
+primary predictive result**: none of five fixed nonconstant models beats the
+training-mean baseline across nine held-out promoter elements. It also exposes
+source-identity and numerical-reproducibility hazards. No new biological
+mechanism or globally first finding is claimed. The next goal is context-aware
+prediction on independent data, compared with context-appropriate mean and
+sequence-only baselines.
 
-## Explore the research workspace
+Start with the [research objective](research/GOAL.md),
+[study report](research/regulatory-study.md),
+[retained artifact snapshot](research/results/regulatory-v1/README.md), and
+[novelty review](research/regulatory-novelty-review.md).
 
-After the setup steps below:
+## Current evidence
 
-```bash
-source scripts/env.sh
-cargo run --locked -- research --out runs/hbb-research
-cargo run --locked -- audit runs/hbb-research
-```
+| Result | Scope |
+| --- | --- |
+| Primary macro MSE: mean 0.11639219; full model 0.11798887 | Nine selected promoter elements from one study; squared log2 reporter-effect units |
+| 62 HBB database equality rows reconcile to original deletions | 53 distinct edited targets before QC; 35 rows/35 identities after predefined QC |
+| 131,112 Rust/Python predictions agree within 7.73e−12 | Primary losses, fits and controls reproduce; this verifies computation |
+| 26 of 240 frozen exact-Spearman checks fail | Full frozen secondary-rank reproduction remains failed |
+| Every separately declared prediction grid matches 240/240 checks | Post-hoc numerical sensitivity; changes the rank estimand and does not repair v1 |
 
-The research command validates the named GRCh38/RefSeq/UniProt sequences,
-reconstructs HBB's 628-base transcript and 147-residue protein, enumerates all
-4,824 SNVs over its transcript locus, and recomputes consequences for the 54
-ClinVar records. It reports coding-only and all-region agreement, evaluates the
-computable portions of five hypotheses, audits evidence quality, and places the
-locus among 29,949 curated gene loci across the primary reference chromosomes.
-It also integrates 561 source-estimated SNV effects from a published HBB
-promoter/5-prime-UTR reporter assay, keeping the log2 expression endpoint and
-HEL 92.1.7 cell context distinct from clinical classifications.
+The raw deletion identity bound is not a biological noise floor. The motif model's
+tiny advantage over chemistry alone is uncertain and still loses to the mean.
+Known motif biology, assay-context effects and legacy deletion/equality problems
+have substantial prior art.
 
-The output includes a readable research narrative, a standalone interactive
-HTML explorer, full JSON annotations and saturation map, source commitments,
-an append-only run ledger and scoped Lean proof. Open the generated research.html
-locally; no server or remote scripts are needed.
+## Set up and reproduce the study
 
-Start with the [biological synthesis](research/hbb-mechanisms.md),
-[falsifiable hypotheses](research/hbb-hypotheses.json),
-[evidence audit](research/clinvar-audit.md),
-[genome context](research/genome-atlas.md), and
-[analysis protocol](experiments/hbb-mechanism-protocol.md).
-The [reporter dataset card](datasets/hbb-promoter-assay/README.md) and
-[assay protocol](experiments/hbb-promoter-assay-protocol.md) document the exact
-target mapping, score-set CC0 license, source regression assumptions, retained
-equality records and within-study replication limits.
-The original clinical heldout has been explored and is now development data.
-Its exact paired comparison gives p = 0.375; the earlier accuracy difference
-does not establish superiority or independent validation.
-
-The first vertical slice validates 54 frozen public ClinVar HBB variants against
-GRCh38, learns a consequence-based classification model from 29 records, predicts
-25 held-out records, checks conditional proofs with Lean 4, and saves an auditable
-experiment. No API keys, database service, GPU, or LLM is needed.
-
-**This is a working research foundation, not a completed discovery or clinically
-validated predictor.** Clinical classifications are not measurements of molecular
-function. Logical consistency does not establish biological truth.
-
-## Run
-
-Prerequisites: Linux x86-64, Bash, a C toolchain, curl, and Python 3. The cloud
-environment has these prerequisites. Setup installs Rust 1.90.0 and Lean 4.19.0.
+Validated environment: Linux x86-64, Rust 1.90.0, Lean 4.19.0 and CPython 3.12.
+Bash, curl and a C toolchain are prerequisites. No API keys, database, GPU or live
+LLM is required. Run from the repository root:
 
 ```bash
 bash scripts/setup.sh
-source scripts/env.sh
+bash scripts/setup_research.sh
+source scripts/research-env.sh
 bash scripts/check.sh
-cargo run --locked -- demo --out runs/first
-cargo run --locked -- audit runs/first
+bash scripts/check_study.sh runs/study-review
 ```
 
-Run commands from the repository root. Tools live outside the checkout:
-`/workspace/.tools` in cloud tasks, your local data directory otherwise.
-Set `HELIX_TOOLS_DIR` before sourcing `scripts/env.sh` to choose another location.
-Setup needs network access; normal demo, tests and audit use the frozen fixture
-and installed tools without data retrieval.
+Choose a new output prefix. The study command creates separate Rust, Python,
+comparison, figures and rank-sensitivity directories. It retains every fixed
+model, 99 spatial controls, 2,000 resamples, predictions, fitted preprocessing,
+source commitments and failed comparisons.
 
-Every run requires a new output directory; existing evidence is never overwritten.
+**The study check returns exit status 2 for the retained secondary-rank
+failures**, after producing its figures and diagnostics. Core software/source
+checks and successful primary numerical checks are separate from a complete
+frozen-study pass. The post-hoc all-grid agreement must not be substituted for
+the failed raw exact-rank endpoint.
 
-| Artifact | Contents |
-| --- | --- |
-| `report.json` | Dataset commitments, model, metrics, assumptions, proof status, limits |
-| `predictions.json` | Rational probabilities for model and prevalence baseline |
-| `evidence.json` | Versioned ClinVar accessions, source URLs and hashes, context |
-| `ledger.json` | Hash-chained discovery, support, questions, predictions, evaluation, update |
-| `proof.lean` | Conditional theorem and concrete probability obligations |
-| `artifacts.json` | SHA-256 commitments for the other artifacts |
+See the [independent implementation](research/independent-regulatory-replication/README.md),
+[frozen protocol](experiments/regulatory-prediction-v1.json),
+[statistical review](research/regulatory-statistical-review.md), and
+[rank sensitivity](research/rank-sensitivity-review.md).
+The published snapshot supports inspection without refitting.
 
-`audit` rechecks artifacts, revision ordering and the saved proof. Hashes provide
-integrity relative to a commitment, not signatures or authentication. Replacing
-all commitments can forge a different run. The report records the Git revision
-and dirty-state flag when available.
+Setup installs tools outside the checkout, under `/workspace/.tools` in cloud
+tasks or a local data directory otherwise. Set `HELIX_TOOLS_DIR` before activation
+to choose another location. Python research dependencies are hash-pinned in
+`requirements/research.lock`. Setup needs network access; normal analysis uses
+frozen local inputs. Existing run directories are never overwritten.
 
-Missing Lean is an error. For explicitly unverified exploration only:
+## Explore the HBB mechanism map
 
 ```bash
-cargo run --locked -- demo --out runs/unverified --skip-proof
+source scripts/env.sh
+cargo run --locked -- research --out runs/hbb-review
+cargo run --locked -- audit runs/hbb-review
 ```
 
-That report says `explicitly_skipped` and has no checked proof artifact.
-The agent has a default 1,000-operation record budget, hard-capped at 100,000.
-Insufficient `--max-steps` fails.
+This reconstructs HBB's named 628-base transcript and 147-residue protein,
+enumerates 4,824 SNVs over its transcript locus, independently recomputes
+consequences for 54 ClinVar records, audits their evidence, and places the locus
+in a primary-human-chromosome annotation context. It integrates the HBB reporter
+assay while keeping clinical labels and molecular endpoints separate.
+
+The output contains a readable narrative, JSON annotations and saturation map,
+source commitments, a revision ledger, scoped Lean proofs, and a standalone
+`research.html` explorer. Open the HTML locally; no server or remote scripts
+are needed. An optional Node.js interaction smoke check is:
+
+```bash
+node scripts/check_research_viewer.cjs runs/hbb-review/research.html
+```
+
+Read the [biological synthesis](research/hbb-mechanisms.md),
+[falsifiable questions](research/hbb-hypotheses.json),
+[evidence audit](research/clinvar-audit.md),
+[genome atlas](research/genome-atlas.md), and
+[reporter dataset card](datasets/hbb-promoter-assay/README.md).
+
+The reported reporter DNA design includes native HBB sequence in native-minus
+orientation, while the coordinate target is plus-genomic. Its exact reporter
+transcript start/isoform remains unmeasured. Native UTR annotation alone cannot
+establish an RNA-processing or uAUG mechanism.
+
+## Original clinical demo
+
+```bash
+cargo run --locked -- demo --out runs/clinical-review
+cargo run --locked -- audit runs/clinical-review
+```
+
+This reproduces the original 29/25-record clinical partition. Both partitions
+have since been explored and are development data. The earlier 96% versus 84%
+accuracy difference does not establish superiority or independent validation;
+its exact paired comparison is p=0.375 under assumptions not established here.
+
+Missing Lean is an error. `--skip-proof` is an explicitly unverified demo mode,
+and the saved report records that status. Clinical classifications are curated
+assertions, not direct measurements of molecular function.
 
 ## Scientific contracts
 
-| Layer | Checks | Does not establish |
+| Layer | Establishes within its scope | Remaining boundary |
 | --- | --- | --- |
-| Rust types | Assembly separation, chromosome bounds, valid probabilities | Empirical truth |
-| Ingestion | Coordinates, FASTA alleles, supported SNVs, source metadata and hashes | Indel normalization or liftover |
-| Evidence | Matching, non-predicted support in the same context | Direct experimental measurement |
-| Replication | Measurements associated with distinct study IDs | Correctness of input study metadata |
-| Lean kernel | Entailment from explicit premises and rules; probability bounds | Truth of scientific premises |
-| Evaluation | Frozen predictions versus withheld labels and a common baseline | Independent replication or clinical utility |
+| Rust contracts | Assembly separation, reference checks and valid representations | Empirical truth |
+| Evidence registry | Matching source-backed support and explicit context | Experimental quality and study independence |
+| Lean | Conclusions conditional on stated premises and finite computational obligations | Truth of biological premises |
+| Statistical evaluation | Performance under the disclosed data, splits and metrics | Population generalization or causal mechanism |
+| Independent implementation | Agreement of computations actually checked | Independent laboratory replication |
+| Integrity audit | Hash and ledger consistency | Authentication or biological validity |
 
-`Claim<Hypothesis>` becomes `Claim<Supported>` only with matching evidence.
-Curated ClinVar assertions cannot become `Claim<Replicated>`. Formal verification
-is recorded separately from empirical support; a proof never upgrades evidence.
-
-Coordinates are zero-based inter-residue intervals internally and one-based in
-VCF, following the coordinate semantics needed by GA4GH VRS. Display keys such as
-`GRCh38:11:5225592:C>A` are **local keys**, not computed GA4GH identifiers.
-Complete VRS normalization and identifier interoperability remain future work.
+Proof status never upgrades empirical evidence. Coordinates are zero-based
+inter-residue intervals internally and one-based in VCF. Display keys such as
+`GRCh38:11:5225592:C>A` are local identifiers; general GA4GH VRS normalization,
+computed identifiers, indel support and assembly liftover remain outside the core
+variant contracts. The deletion analysis is a source-specific forensic crosswalk.
 
 ## Workspace
 
 | Crate | Responsibility |
 | --- | --- |
-| `genome-types` | Assembly-indexed positions and SNVs, contexts, probabilities |
-| `genome-data` | Noodles VCF ingestion, reference checks, partitions, provenance |
-| `genome-knowledge` | Evidence registry, claim transitions, versioned revisions |
+| `genome-types` | Assembly-indexed variants, biological contexts and probabilities |
+| `genome-data` | Noodles VCF ingestion, reference checks and frozen partitions |
+| `genome-knowledge` | Evidence, claim transitions and versioned revisions |
 | `genome-logic` | Context-sensitive contradictions and implication derivations |
-| `genome-proof` | Pinned Lean subprocess and checked proof artifacts |
-| `genome-inference` | Predictor interface, consequence model, prevalence baseline |
-| `genome-agents` | Bounded agent interface and deterministic research loop |
-| `genome-evaluation` | Accuracy, Brier, log-loss, calibration and disagreements |
-| `genome-cli` | Experiment execution and audit |
-| `genome-mechanism` | Reference reconstruction, codons, strand-aware SNVs and splice context |
-| `genome-atlas` | Frozen primary-chromosome RefSeq loci and merged interval coverage |
-| `genome-evidence-audit` | Source ascertainment, review strength, overlap and post-hoc model gaps |
-| `genome-research-stats` | Descriptive Wilson intervals, exact paired comparisons and coverage |
-| `genome-assay` | Reference-mapped quantitative reporter effects with units and context |
+| `genome-proof` | Pinned Lean authority and checked proof artifacts |
+| `genome-inference` | Auditable predictor interfaces and simple baselines |
+| `genome-agents` | Bounded deterministic research loop and extension interface |
+| `genome-evaluation` | Classification metrics, calibration and disagreements |
+| `genome-cli` | Demo, mechanism research, study execution and audit |
+| `genome-mechanism` | Transcript reconstruction, translation and splice context |
+| `genome-atlas` | Frozen primary-chromosome loci and interval coverage |
+| `genome-evidence-audit` | Ascertainment, review strength and source/model gaps |
+| `genome-research-stats` | Descriptive intervals and paired comparisons |
+| `genome-assay` | Reference-mapped reporter effects, units and context |
+| `genome-regulatory-data` | Multi-promoter sources, identities, quality and assay roles |
+| `genome-regulatory` | Frozen features, ridge fits, guarded tests and controls |
 
-The agent investigates mixed or sparse consequence groups, retrieves training
-evidence from the snapshot, proposes independent validation questions, records
-assumptions, freezes predictions, and retains unresolved disagreements.
-Opposite claims conflict only for the same variant and context. Mixed labels in
-a consequence group are model gaps, not automatically contradictory measurements.
+The runtime research agent is deterministic. Live LLM literature retrieval and
+foundation-model adapters remain future work. Input types exclude held-out
+annotations from predictors, but the process is not a filesystem sandbox for
+future shell-capable agents.
 
-The default agent is deterministic. `ResearchAgent` and `Predictor` are extension
-interfaces; live LLM literature retrieval and foundation-model adapters are not
-implemented. Held-out annotations are excluded from their input types. This
-process is not a security sandbox: future shell-capable agents need an
-inaccessible holdout store and must not execute arbitrary Lean programs.
+Frozen inputs are not silently refreshed during setup. Data-specific cards and
+importers describe explicit refresh into new directories; preserve provenance
+and revise protocols before treating refreshed data as validation.
 
-## Benchmark limits and data refresh
-
-See [the dataset card](datasets/clinvar-hbb/README.md) for selection, provenance
-and split policy. Both models use identical held-out targets. Reports contain
-accuracy, balanced accuracy, Brier score, log-loss, five-bin calibration, a
-confusion matrix and individual disagreements. Empty/incomplete evaluations fail.
-
-This tiny, selected, imbalanced fixture shares ClinVar curation. Held-out loci may
-share submitters and cohorts. Results are descriptive and do not establish
-generalization or discovery. Freeze a fresh independent benchmark before real
-model selection; repeated tuning on this fixture would make it development data.
-
-To fetch a **new** snapshot without changing the checked-in fixture:
-
-```bash
-python3 scripts/fetch_demo.py datasets/clinvar-hbb-new
-cargo run --locked -- demo --dataset datasets/clinvar-hbb-new --out runs/new-snapshot
-```
-
-This needs network access and can change counts and outcomes. Replacing the frozen
-fixture requires provenance review and updated regression expectations; setup
-never silently refreshes it.
-
-See [architecture](docs/architecture.md) and [research milestones](docs/roadmap.md).
-`bash scripts/check.sh` runs formatting, strict Clippy, Rust tests, Lean theorems,
-and the importer syntax check. Integration tests exercise real CLI runs, Lean,
-repeatability, failure paths, artifact tampering and immutable output.
-
-Code is MIT licensed. NCBI data retain their original terms and attribution.
-Other frozen datasets and literature projections retain the source-specific
-terms and attribution documented in their dataset cards and manifests.
-
-For an optional interaction smoke check of a generated explorer (Node.js required):
-
-```bash
-node scripts/check_research_viewer.cjs runs/hbb-research/research.html
-```
-
-This checks filters, selection and generated DOM behavior without network access.
-It is separate from a browser layout or accessibility review.
+See [architecture](docs/architecture.md) and [next scientific goal](research/GOAL.md).
+Code is MIT licensed. Datasets, literature and retained reference code keep their
+source-specific terms and attribution.

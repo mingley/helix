@@ -1,0 +1,183 @@
+[
+  {
+    "file": "kircher2019-fulltext.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6687891/fullTextXML",
+    "retrieved_at": "2026-10-27T06:25:01.997798+00:00",
+    "sha256": "8a137e659d29fca939d70f10cb249d19dd3f83645e593cb62f19674c4dd1be7c",
+    "size_bytes": 184360
+  },
+  {
+    "file": "osf-node.json",
+    "url": "https://api.osf.io/v2/nodes/75b2m/",
+    "final_url": "https://api.osf.io/v2/nodes/75b2m/",
+    "retrieved_at": "2026-10-27T06:25:38.688203+00:00",
+    "sha256": "0f9606a76b229810d266da440c52d78be2de6a2cdde36261a95822836a2c6a7e",
+    "size_bytes": 4438
+  },
+  {
+    "file": "osf-files.json",
+    "url": "https://api.osf.io/v2/nodes/75b2m/files/osfstorage/?page%5Bsize%5D=100",
+    "final_url": "https://api.osf.io/v2/nodes/75b2m/files/osfstorage/?page%5Bsize%5D=100",
+    "retrieved_at": "2026-10-27T06:25:38.865195+00:00",
+    "sha256": "4b99d21cefce0495be4e919a270cf1bb208cc36ee5a1ea3f71a90ef7486885b6",
+    "size_bytes": 3560
+  },
+  {
+    "file": "author-site.html",
+    "url": "https://mpra.gs.washington.edu/satMutMPRA/",
+    "final_url": "https://kircherlab.bihealth.org/satMutMPRA/",
+    "retrieved_at": "2026-10-27T06:25:40.527317+00:00",
+    "sha256": "059f6b536d53ecf43fd178a734e2536bc1bf54346791a63e8432d420b1f23ea7",
+    "size_bytes": 20823
+  },
+  {
+    "file": "geo-series.soft",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE126550&targ=self&form=text&view=full",
+    "final_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE126550&targ=self&form=text&view=full",
+    "retrieved_at": "2026-10-27T06:25:40.527411+00:00",
+    "sha256": "5ce648f228e57bddeaed85a8d58306538b146c2b6d35caf9ba84cc1fb21c84a6",
+    "size_bytes": 11930
+  },
+  {
+    "file": "osf-variants.json",
+    "url": "https://api.osf.io/v2/nodes/75b2m/files/osfstorage/5bfc21779e568600179848fa/?page%5Bsize%5D=100",
+    "retrieved_at": "2026-10-27T06:26:14.448817+00:00",
+    "sha256": "0b5e4d2ee608be4bc213450b7e0d68e5a450d16bae38fe470d2bf7d47fd1ba87",
+    "size_bytes": 3554
+  },
+  {
+    "file": "author-current.html",
+    "url": "https://kircherlab.bihealth.org/satMutMPRA/",
+    "retrieved_at": "2026-10-27T06:26:15.017624+00:00",
+    "sha256": "059f6b536d53ecf43fd178a734e2536bc1bf54346791a63e8432d420b1f23ea7",
+    "size_bytes": 20823
+  },
+  {
+    "file": "osf-grch38-files.json",
+    "url": "https://api.osf.io/v2/nodes/75b2m/files/osfstorage/5bfc218d576a4f0017b38543/?page%5Bsize%5D=100",
+    "retrieved_at": "2026-10-27T06:26:32.875707+00:00",
+    "sha256": "f99f62e4c122991277fb7bc03fa68c848d1e0a715a5a926aabee0c060c915cdc",
+    "size_bytes": 61133
+  },
+  {
+    "file": "github-repository.json",
+    "url": "https://api.github.com/repos/kircherlab/MPRA_SaturationMutagenesis",
+    "retrieved_at": "2026-10-27T06:26:32.878618+00:00",
+    "sha256": "8eea7b8cd016c315906ee3e6eb83199c82d30eddc318fa2f482ab84ef0fd2bd8",
+    "size_bytes": 7195
+  },
+  {
+    "file": "github-issues.json",
+    "url": "https://api.github.com/repos/kircherlab/MPRA_SaturationMutagenesis/issues?state=all&per_page=100",
+    "retrieved_at": "2026-10-27T06:26:32.878828+00:00",
+    "sha256": "160dc9942caffcb18621efdc139f3bf9ae771761afde9ddee03a7941d3e68dc6",
+    "size_bytes": 143372
+  },
+  {
+    "file": "GRCh38_HBB.tsv",
+    "url": "https://osf.io/download/zpv8r/",
+    "final_url": "https://idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com/cos-prod-osf-1-files-fra/705694a6d45cd61159883250393b165a5813b40cc06e1dcdbe3270faad58af07?response-content-disposition=attachment%3B+filename%3D%22GRCh38_HBB.tsv%22%3B+filename%2A%3DUTF-8%27%27GRCh38_HBB.tsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a1e5869d3122814cba7bd4265a84ad444199855%2F20261027%2Feu-frankfurt-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T062655Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=d94876696ddbd1269aa4f5d1cb743c2cd8a25594f06716aa96115f6e06c3d6c2",
+    "retrieved_at": "2026-10-27T06:26:56.374461+00:00",
+    "sha256": "705694a6d45cd61159883250393b165a5813b40cc06e1dcdbe3270faad58af07",
+    "size_bytes": 33879
+  },
+  {
+    "file": "github-tree.json",
+    "url": "https://api.github.com/repos/kircherlab/MPRA_SaturationMutagenesis/git/trees/master?recursive=1",
+    "final_url": "https://api.github.com/repos/kircherlab/MPRA_SaturationMutagenesis/git/trees/master?recursive=1",
+    "retrieved_at": "2026-10-27T06:26:56.374798+00:00",
+    "sha256": "9f016e6a46090300f29d5a469183a0b6d0743b29b6bdbd5449ac60b61b3dc777",
+    "size_bytes": 9894
+  },
+  {
+    "file": "author-file-format.md",
+    "url": "https://raw.githubusercontent.com/kircherlab/MPRA_SaturationMutagenesis/16a48622a20754b16ee356d2c4e214459ffe1476/mrkdown/file_format.md",
+    "retrieved_at": "2026-10-27T06:29:11.498370+00:00",
+    "sha256": "e6d01ab606d55b769ffbd9f4dd0a428d62c3fa42dd30b6a0c7cd81d6880a1874",
+    "size_bytes": 1939
+  },
+  {
+    "file": "author-app.R",
+    "url": "https://raw.githubusercontent.com/kircherlab/MPRA_SaturationMutagenesis/16a48622a20754b16ee356d2c4e214459ffe1476/app.R",
+    "retrieved_at": "2026-10-27T06:29:11.504272+00:00",
+    "sha256": "da4829cb23f798730f6deaa36a847b2055f7af0f73b2779b0dcd85f007848a96",
+    "size_bytes": 13529
+  },
+  {
+    "file": "author-plots.R",
+    "url": "https://raw.githubusercontent.com/kircherlab/MPRA_SaturationMutagenesis/16a48622a20754b16ee356d2c4e214459ffe1476/plots.R",
+    "retrieved_at": "2026-10-27T06:29:11.524047+00:00",
+    "sha256": "59f62860a7834a5932fd42ae5e8622095b9616488e88e2c938fc55ca6433b8ec",
+    "size_bytes": 4440
+  },
+  {
+    "file": "author-GPL-3.0-LICENSE",
+    "url": "https://raw.githubusercontent.com/kircherlab/MPRA_SaturationMutagenesis/16a48622a20754b16ee356d2c4e214459ffe1476/LICENSE",
+    "retrieved_at": "2026-10-27T06:29:11.563915+00:00",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "size_bytes": 35149
+  },
+  {
+    "file": "author-README.md",
+    "url": "https://raw.githubusercontent.com/kircherlab/MPRA_SaturationMutagenesis/16a48622a20754b16ee356d2c4e214459ffe1476/README.md",
+    "retrieved_at": "2026-10-27T06:29:11.564013+00:00",
+    "sha256": "306be02b657e8148971acc541dee9cb21984d47cf711637c99428270fb98e836",
+    "size_bytes": 3897
+  },
+  {
+    "file": "novelty-literature.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22MaveDB%22+AND+%22HBB%22+AND+%28%22deletion%22+OR+%22equality%22+OR+%22correction%22%29&format=json&pageSize=100",
+    "retrieved_at": "2026-10-27T06:29:46.677796+00:00",
+    "sha256": "c9339931d3ffad1a3a71847c13c352c4eb564364b495bc9e7fb36978fa81520b",
+    "size_bytes": 2130
+  },
+  {
+    "file": "clinvar-overlap.xml",
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&id=4910425,3051702&rettype=vcv&retmode=xml",
+    "retrieved_at": "2026-10-27T06:29:46.677961+00:00",
+    "sha256": "fa467972a463c996909242b0550eecdaf7a45cca233fc9528a8ce8f17ccfd191",
+    "size_bytes": 110
+  },
+  {
+    "file": "novelty-github-1.json",
+    "url": "https://api.github.com/search/issues?q=is%3Aissue+%2200000018-a-1%22&per_page=100",
+    "retrieved_at": "2026-10-27T06:31:39.091787+00:00",
+    "sha256": "243b94759bed342f4ce55ef575ff919e3a04327c5c44ebdb27d976ef1db7bc21",
+    "size_bytes": 316454
+  },
+  {
+    "file": "novelty-github-2.json",
+    "url": "https://api.github.com/search/issues?q=is%3Aissue+mavedb+HBB+deletion&per_page=100",
+    "retrieved_at": "2026-10-27T06:31:39.094326+00:00",
+    "sha256": "b40c2d45b3e24226c509c20e5691d91bb64140ca9fbdffdcdcdfb65b177bc79f",
+    "size_bytes": 21987
+  },
+  {
+    "file": "novelty-github-3.json",
+    "url": "https://api.github.com/search/issues?q=is%3Aissue+mavedb+equality&per_page=100",
+    "retrieved_at": "2026-10-27T06:31:40.198291+00:00",
+    "sha256": "cdd402dfec72dd13da600f3ec6ebdebd99122d0ae805da0f59f0f560c1338a77",
+    "size_bytes": 44586
+  },
+  {
+    "file": "clinvar-overlap-variationid.xml",
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&id=4910425,3051702&rettype=vcv&retmode=xml&is_variationid=true",
+    "retrieved_at": "2026-10-27T06:31:40.198710+00:00",
+    "sha256": "f55ecf2015ae088d84e8b17bc36c8131392e263f3441c145dea83a200b7a79ab",
+    "size_bytes": 20898
+  },
+  {
+    "file": "clinvar-api-use.html",
+    "url": "https://www.ncbi.nlm.nih.gov/clinvar/docs/maintenance_use/",
+    "retrieved_at": "2026-10-27T06:31:40.198775+00:00",
+    "sha256": "99b6a6928b35af7ce53f47f59195a9fbf84cecdd6419ec05cd553dc40eb341ca",
+    "size_bytes": 21376
+  },
+  {
+    "file": "github-commit.json",
+    "url": "https://api.github.com/repos/kircherlab/MPRA_SaturationMutagenesis/commits/master",
+    "retrieved_at": "2026-10-27T06:42:39.672213+00:00",
+    "sha256": "11884091cad0a9a08a26ca2d96b981bbc72d4522ac0841924b9bf10ef92e8277",
+    "size_bytes": 5751
+  }
+]

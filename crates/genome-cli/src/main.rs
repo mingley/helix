@@ -15,6 +15,8 @@ use std::{
     process::Command,
 };
 mod research;
+mod study;
+mod study_context;
 
 #[derive(Parser)]
 #[command(
@@ -28,6 +30,8 @@ struct Cli {
 }
 #[derive(Subcommand)]
 enum Commands {
+    /// Execute the frozen multi-promoter regulatory prediction study.
+    Study(study::StudyArgs),
     /// Reconstruct HBB mechanisms, audit evidence, and map primary-genome context.
     Research(research::ResearchArgs),
     /// Validate the frozen public fixture and execute a bounded offline research loop.
@@ -59,6 +63,7 @@ struct Artifacts {
 
 fn main() -> Result<()> {
     match Cli::parse().command {
+        Commands::Study(args) => study::run(&args),
         Commands::Research(args) => research::run(&args),
         Commands::Demo {
             dataset,
@@ -230,6 +235,9 @@ fn write_new(path: &Path, bytes: &[u8]) -> Result<()> {
 fn audit(directory: &Path, lean: &Path) -> Result<()> {
     let root = directory.canonicalize()?;
     let artifacts: Artifacts = serde_json::from_slice(&fs::read(root.join("artifacts.json"))?)?;
+    if artifacts.schema_version == 3 {
+        return study::audit(&root, &artifacts, lean);
+    }
     if artifacts.schema_version == 2 {
         return research::audit(&root, &artifacts, lean);
     }

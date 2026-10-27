@@ -31,13 +31,32 @@ See [the current goal](../research/GOAL.md) and
 - Frozen predictions, common baseline, calibration and disagreement reports.
 - Repeatable artifacts, audit command, pinned setup and CI.
 
-## Next: independent functional benchmark
+## Implemented: frozen regulatory prediction and source forensics
 
-The HBB regulatory dataset is acquired and descriptively integrated; it has not
-been used to fit or validate a regulatory predictor. Its protocol discloses
-availability-row exposure and the source's additive-regression limitations.
-The next task is a predeclared prediction study with grouped experimental units,
-meaningful context boundaries, baselines and uncertainty.
+The sixteen-crate workspace now evaluates six fixed sequence models across nine
+held-out promoter elements, guarded HBB positions, HBB transfer and an explicitly
+easier row-random diagnostic. A metadata-first cohort includes 15 score sets,
+with duplicate/context assays reserved for validation-only comparisons. All
+derive from one published study, not independent studies. No fitted model beats
+the mean baseline in the primary evaluation.
+
+Independent Rust/Python computation reproduces all 131,112 predictions and
+primary errors/controls. The full frozen comparison remains failed on 26 of 240
+secondary exact-rank metrics. A separate post-hoc precision-grid supplement
+diagnoses numerical tie sensitivity without changing that status.
+
+Original-source reconciliation maps all 62 HBB equality descriptions to author
+deletions. Their apparent duplicate-identity prediction constraint disappears
+under the preexisting tag-quality rule. This is source-estimate accounting,
+not a biological noise floor. See the [documented findings](../research/regulatory-study.md).
+
+## Next: independent functional benchmark and context-aware prediction
+
+Before fitting a further model, freeze a new question that can fail: does a
+context-aware model improve over sequence-only and training-mean baselines on
+an independently produced assay, with whole elements and experimental contexts
+held out? Select endpoint-compatible data and inspect source independence first.
+The existing same-study contexts cannot establish this result.
 
 Choose any additional public functional assay and separate data by independent experimental
 unit. One possible distinct target is BRCA1 saturation genome editing from

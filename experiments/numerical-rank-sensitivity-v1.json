@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "protocol_id": "numerical-rank-sensitivity-v1",
+  "status": "frozen",
+  "frozen_at_utc": "2026-10-27T07:08:29.969444+00:00",
+  "analysis_status": "POST-HOC numerical sensitivity supplement; no modification of regulatory-prediction-v1 or its raw exact-rank endpoint.",
+  "parent_protocol": {
+    "path": "experiments/regulatory-prediction-v1.json",
+    "sha256": "c8e97fabef2afe8ccaa5a01a7ef7bb952f9c9f15857e5c540af112a66e78cb58"
+  },
+  "motivation": "Primary predictions/errors/controls agree, but exact-rank secondary metrics can differ when source means or predicted values separated by ULPs change ties. Quantums are fixed before running this supplement.",
+  "levels": [
+    "raw_exact",
+    "1e-12",
+    "1e-10",
+    "1e-8",
+    "1e-6",
+    "0.01"
+  ],
+  "quantized_quantity": "Predicted reporter-expression effect only, after native implementation row/position reduction. Do not quantize observed coefficients, refit models, change features or tune levels.",
+  "rounding": "Nearest integer with ties to even on EXACT Fraction.from_float(saved_prediction)/Fraction(decimal_quantum). Rank the resulting integer codes directly; no convert-back-to-float grid arithmetic.",
+  "observed_rows": "Exact original source CSV decimal values; they must correspond to saved observed floats and all matchedIDs.",
+  "observed_positions": "Exact Fraction sum of original source CSV decimal effects divided by number of available alleles; rank those fractions directly.",
+  "predicted_rows": "Use saved f64 prediction values exactly, matched by family/model/assay/accession.",
+  "predicted_positions": {
+    "rust": "Use saved native per_position_errors.predicted_mean and validate groupedidentities.",
+    "python": "Reconstruct archived reduction: sort alleles by alternate thenaccession; return firstprediction if all identical; otherwise NumPy float64 mean inthatorder. Verifyrawrhos against archived report before diagnosing gridlevels."
+  },
+  "metrics": {
+    "scope": "All four frozen evaluation families, six models and every evaluated assay; row and position Spearman correlations separately.",
+    "ranks": "Average ranks for exact ties among Fractions/integers/floats as appropriate.",
+    "correlation": "Pearson of rank vectors; returnnull if either rankvectorconstant or sample<2.",
+    "compare": "Match each pair of implementation vectors and record both correlations, absolute difference, defined/undefined statuses, unique predicted rankcount, range and maximum absolute predictiondelta.",
+    "nominal_metric_match_tolerance": 1e-08,
+    "interpretation": "Tolerance is a reporting comparator inheritedfromv1, not scientific significance and not new permissionto declarev1pass."
+  },
+  "required_outputs": [
+    "one row per family/model/assay/resolution/level with matchedIDcounts and bothmetrics/statuses",
+    "all discrepancies and undefined-status mismatches",
+    "per-level counts, maxima and worstcaseidentities",
+    "parentprotocol/sensitivityprotocol hashes,inputartifact/code/software hashes",
+    "source-score precision counts and raw predictionagreement diagnostics"
+  ],
+  "restrictions": {
+    "no_model_refitting": true,
+    "no_pvalues": true,
+    "no_selected_quantum": true,
+    "retain_all_levels": true,
+    "no_retroactive_v1_success": true,
+    "no_biological_novelty_claim": "This is a numericalmethods diagnostic, not a geneticfinding.",
+    "new_estimand": "Each quantized level is a separately labeled coarse-resolution rank estimand, not a repair of raw exactSpearman."
+  },
+  "anchor": "Existing v1 prediction tolerance1e-7 and observed source coefficientprecision; levels spanfine floating comparisons to0.01 log2 units. Noquantum chosen basedonagreement orbiologicalassociation."
+}

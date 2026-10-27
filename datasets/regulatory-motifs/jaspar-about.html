@@ -1,0 +1,1237 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@khanaziz84" />
+<meta name="twitter:creator" content="@khanaziz84" />
+<meta name="twitter:title" content="JASPAR: An open-access database of transcription factor binding profiles" />
+<meta name="twitter:url" content="http://jaspar.elixir.no" />
+<meta name="twitter:description" content="JASPAR is the largest open-access database of curated and non-redundant transcription factor (TF) binding profiles from six different taxonomic groups." />
+
+  <meta property="og:title" content="JASPAR: An open-access database of transcription factor binding profiles" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://jaspar.elixir.no" />
+<meta property="og:description" content="JASPAR is the largest open-access database of curated and non-redundant transcription factor (TF) binding profiles from six different taxonomic groups." />
+
+  <meta name="google-site-verification" content="r4fkTjq5Hp4UlRVWNKyuDZ4se34zD83f0t-qJBEO1vk" />
+
+  
+
+  <meta name="description" content="JASPAR is the largest open-access database of curated and non-redundant transcription factor (TF) binding profiles from six different taxonomic groups."/>
+  <meta name="keywords" content="JASPAR, 2020, plants, vertibrates, eukaryotic, SELEX, ChIP-seq, matrices, HT-SELEX, DAP-seq, profiles, transcription factor, TFBs, TFs, MEME, TRANSFAC, TF binding, PFM, PWM, TFFM, Position Weight Matrices, PWMs, PSSMs, JASPAR REST, RESTful API"/>
+
+  <title>JASPAR -
+About
+ </title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="apple-touch-icon" sizes="144x144" href="/static/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/static/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/static/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Academicons -->
+  <link rel="stylesheet" href="/static/academicons-1.9.0/css/academicons.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="/static/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/static/fontawesome-free-5.13.0-web/css/all.min.css">
+
+  <!-- DataTables -->
+  <link rel="stylesheet" href="/static/plugins/datatables/datatables.min.css">
+  <!-- hopscotch -->
+  <link rel="stylesheet" href="/static/plugins/hopscotch/css/hopscotch.min.css">
+
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="/static/plugins/iCheck/all.css">
+
+   <!-- Theme style -->
+  <link rel="stylesheet" href="/static/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="/static/css/custom.css">
+  <link rel="stylesheet" href="/static/css/skins/skin-black-light.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="/static/html5shiv-3.7.3-dist/html5shiv.min.js"></script>
+  <script src="/static/Respond-1.4.2-dest/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Matomo Tag Manager for Dev -->
+  <!--<script>
+    var _mtm = window._mtm = window._mtm || [];
+    var _paq = window._paq = window._paq || [];
+    
+    // IMPORTANT:
+    // Do not send analytics until consent has been given.
+    _paq.push(['requireConsent']);
+
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+
+    _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+
+    (function() {
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='https://public.si.elixir.no/matomo/js/container_DoYvjGeJ.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>-->
+  <!-- End Matomo Tag Manager for Dev -->
+  <!-- Matomo Tag Manager -->
+  <script>
+
+    var _mtm = window._mtm = window._mtm || [];
+    var _paq = window._paq = window._paq || [];
+
+    // IMPORTANT:
+    // Do not send analytics until consent has been given.
+    _paq.push(['requireConsent']);
+
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+
+    _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+
+    (function() {
+
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+
+      g.async=true; g.src='https://public.si.elixir.no/matomo/js/container_InyBIpBP.js'; s.parentNode.insertBefore(g,s);
+
+    })();
+
+  </script>
+  <!-- End Matomo Tag Manager -->
+  <style>
+  /* ================================
+    JASPAR privacy consent
+  ================================ */
+
+  .privacy-consent {
+      position: fixed;
+      inset: 0;
+      z-index: 1080;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 1.5rem;
+  }
+
+  .privacy-consent__backdrop {
+      position: absolute;
+      inset: 0;
+
+      background: rgba(20, 25, 30, 0.45);
+
+      /* Blur the website behind the notice */
+      backdrop-filter: blur(7px);
+      -webkit-backdrop-filter: blur(7px);
+  }
+
+  .privacy-consent__dialog {
+      position: relative;
+      z-index: 1;
+
+      width: 100%;
+      max-width: 620px;
+
+      padding: 2.5rem;
+
+      background: #ffffff;
+      border-radius: 1rem;
+
+      box-shadow:
+          0 20px 60px rgba(0, 0, 0, 0.18),
+          0 4px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  .privacy-consent__brand {
+      margin-bottom: 1.25rem;
+
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+
+      color: #dd4b39;
+  }
+
+  .privacy-consent__title {
+      margin-bottom: 1rem;
+
+      font-size: 1.75rem;
+      font-weight: 600;
+      line-height: 1.25;
+  }
+
+  .privacy-consent__text {
+      margin-bottom: 1rem;
+
+      color: #495057;
+      line-height: 1.65;
+  }
+
+  .privacy-consent__privacy-link {
+      margin-top: 1.5rem;
+      margin-bottom: 0;
+
+      font-size: 1.4rem;
+      color: #6c757d;
+  }
+
+  .privacy-consent__privacy-link a {
+      color: inherit;
+      text-decoration: underline;
+  }
+
+  .privacy-consent__actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.75rem;
+
+      margin-top: 2rem;
+  }
+
+  .privacy-consent__actions .btn {
+      min-width: 120px;
+  }
+
+  /* Hidden state */
+  .privacy-consent.is-hidden {
+    display: none;
+  }
+
+  /* Prevent scrolling while the notice is shown */
+  body.privacy-consent-open {
+      overflow: hidden;
+  }
+
+   #trackVisits{
+        margin-right: 5px;
+    }
+
+  /* Mobile */
+  @media (max-width: 575.98px) {
+
+      .privacy-consent {
+          padding: 1rem;
+          align-items: flex-end;
+      }
+
+      .privacy-consent__dialog {
+          padding: 1.5rem;
+          border-radius: 1rem;
+      }
+
+      .privacy-consent__title {
+          font-size: 1.5rem;
+      }
+
+      .privacy-consent__actions {
+          flex-direction: column-reverse;
+      }
+
+      .privacy-consent__actions .btn {
+          width: 100%;
+      }
+  }
+  </style>
+
+  
+
+  
+
+  
+
+
+</head>
+
+<body class="hold-transition skin-black-light fixed sidebar-mini ">
+<div class="wrapper">
+
+
+<!-- Main Header -->
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="/" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b><span class="label label-danger">J</span></b><sup>26</sup></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">
+        <b><font style="color:#508cb8; font-size:120%"><i style="vertical-align:middle" class="ai ai-open-access"></i></font>
+        <font style="color:#dd4b39">JASPAR</font></b><sup>2026</sup></span>
+    </a>
+    <!-- Header Navbar -->
+    <nav class="navbar" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">   
+
+        <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fas fa-cart-arrow-down"></i> Cart
+              <span class="label label-success">0</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 0 profile(s) in cart. </li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                
+                  
+                </ul>
+              </li>
+              
+              <li class="footer"> <a href="/search"> <b><i class="fas fa-search"></i> Search profiles and add to cart</a></b> </li>
+              
+            </ul>
+          </li>
+          <!--
+          <li>
+            <a href="http://jaspar.genereg.net/html/DOWNLOAD/" target="_blank"><i class="fas fa-download"></i> Download Data</a>
+          </li>
+        -->
+          
+          <li>
+            <a href="/blog"><i class="fas fa-rss-square"> JASPAR Blog</i></a>
+          </li>
+          <!--
+          <li>
+            <a href="/blog" data-toggle="control-sidebar"><i class="fas fa-bullhorn"> News</i></a>
+          </li>
+          -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "name": "JASPAR 2018",
+  "url": "https://jaspar.elixir.no",
+  "citation": "Khan, A. et al. JASPAR 2018: update of the open-access database of transcription factor binding profiles and its web framework. Nucleic Acids Res. gkx1126, doi: 10.1093/nar/gkx1126",
+  "license": "CC BY 4.0",
+  "description": "JASPAR is an open-access database of curated, non-redundant transcription factor (TF) binding profiles stored as position frequency matrices (PFMs) and TF flexible models (TFFMs) for TFs across multiple species in six taxonomic groups.",
+  "version": "2018",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://jaspar.elixir.no/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+
+<!-- Left side column. contains the logo and sidebar -->
+
+
+<aside class="main-sidebar">
+
+  <!-- sidebar: style can be found in sidebar.less -->
+  <section class="sidebar">
+
+    <ul class="sidebar-menu">
+      <!-- Optionally, you can add icons to the links -->
+
+      <li class="">
+          <a href="/"><i class="fas fa-home"></i> <span>Home</span></a>
+      </li>
+
+      <li class="treeview active">
+
+        <a href="#"><i class="fas fa-info-circle"></i><span> About</span>
+          <span class="pull-right-container"><i class="fas fa-angle-left pull-right"></i></span></a>
+
+        <ul class="treeview-menu">
+          <li class="active">
+            <a href="/about/"><i class="fas fa-info-circle"></i> <span>About JASPAR</span></a>
+          </li>
+          <li class="">
+            <a href="/faq"><i class="fas fa-question-circle"></i> <span>FAQ</span></a>
+          </li>
+          <li class="">
+            <a href="/docs"><i class="fas fa-book"></i> <span>Documentation</span></a>
+          </li>
+          <li class="">
+            <a href="/privacy-policy/"><i class="fas fa-user-shield"></i> <span>Privacy Policy</span></a>
+          </li>
+          <li class="">
+            <a href="/changelog"><i class="fas fa-history"></i> <span>Changelog</span></a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="">
+        <a href="/search?advanced=true"><i class="fas fa-search"></i><span> Search by profile</span></a>
+      </li>
+
+      <li class="">
+        <a href="/align"><i class="fas fa-search"></i> <span> Search by pattern</span></a>
+      </li>
+
+      <li class="">
+        <a href="/collection/core"><i class="fas fa-folder-open"></i><span> Browse JASPAR CORE</span></a>
+      </li>
+
+      <li class="">
+        <a href="/collection/unvalidated"><i class="fas fa-exclamation-triangle"></i><span> Unvalidated Profiles</span></a>
+      </li>
+
+      <li class="">
+        <a href="/collection/deep-learning"><i class="fas fa-chart-line"></i><span> Deep Learning Collection</span>
+        <span class="label label-warning">New</span></a>
+      </li>
+
+      <li class="treeview " id="jaspar-browse">
+
+        <a href="#"><i class="fas fa-folder-open"></i><span> Browse Collections</span>
+              <span class="pull-right-container"><i class="fas fa-angle-left pull-right"></i></span>
+        </a>
+        <ul class="treeview-menu">
+
+          
+
+          <li class="">
+            <a href="/collection/CORE"><i class="fas fa-circle"></i> <span>JASPAR CORE</span></a>
+          </li>
+
+          
+
+          <li class="">
+            <a href="/collection/UNVALIDATED"><i class="fas fa-circle"></i> <span>JASPAR UNVALIDATED</span></a>
+          </li>
+
+          
+
+          <li class="">
+            <a href="/collection/deep-learning"><i class="fas fa-circle"></i> <span>JASPAR Deep Learning</span></a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li class="treeview ">
+        <a href="#"><i class="fas fa-wrench"></i><span> Tools</span>
+            <span class="pull-right-container"><i class="fas fa-angle-left pull-right"></i></span></a>
+
+        <ul class="treeview-menu">
+
+          
+
+          <li class="">
+            <a href="/tools"><i class="fas fa-wrench"></i> <span>External tools</span></a>
+          </li>
+        </ul>
+      </li>
+
+      <li><a href="/api/" target="_blank"><i class="fas fa-plug"></i> <span> RESTful API </span></a></li>
+      <li class=">">
+        <a href="/downloads"><i class="fas fa-download"></i> <span>Download Data</span></a>
+      </li>
+
+      
+
+      <li class="">
+        <a href="/matrix-clusters"><i class="fab fa-delicious"></i> <span>Matrix Clusters</span></a>
+      </li>
+
+      
+
+      <li class="">
+        <a href="/genome-tracks"><i class="fas fa-map-marker"></i> <span>Genome Tracks</span></a>
+      </li>
+      <li class="">
+        <a href="/enrichment"><i class="fas fa-star"></i> <span>Enrichment Analysis</span></a>
+      </li>
+      <li>
+        <a href="/tfbs_extraction"><i class="fas fa-align-center"></i> <span>TFBS extraction</span></a>
+      </li>
+      <li class="">
+        <a href="/inmotifin"><i class="fas fa-edit"></i> <span>inMOTIFin</span>
+        <span class="label label-warning">New</span></a>
+      </li>
+      <li class="">
+        <a href="/llm_extracted_tf_targets"><i class="fas fa-edit"></i> <span>LLM-extracted TF Targets</span>
+        <span class="label label-warning">New</span></a>
+      </li>
+    </ul>
+  </section>
+</aside>
+
+   
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    
+
+<!-- JASPAR Privacy / Analytics Consent -->
+<div
+    id="privacyConsent"
+    class="privacy-consent is-hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="privacyConsentTitle"
+    aria-describedby="privacyConsentDescription"
+>
+    <div class="privacy-consent__backdrop"></div>
+
+    <div class="privacy-consent__dialog">
+        <div class="privacy-consent__brand">
+            JASPAR
+        </div>
+
+        <h2 id="privacyConsentTitle" class="privacy-consent__title">
+            Your privacy matters
+        </h2>
+
+        <p id="privacyConsentDescription" class="privacy-consent__text">
+            This website uses Matomo analytics to collect and analyse traffic data. 
+            The information obtained is used solely to assess website performance, 
+            improve the quality of our services, and facilitate the effective continuation 
+            and enhancement of our operations.
+        </p>
+
+        <p class="privacy-consent__text">
+            The site processes certain personal information. 
+            Such data is retained for a period of two years, after which it is deleted. 
+            Aggregated statistical information derived from this data may be retained indefinitely 
+            for analytical and reporting purposes.
+        </p>
+
+        <div class="collapse" id="privacyMoreInfo">
+            <p class="privacy-consent__text mb-2">
+                This data is co-processed and co-controlled following the Consortium Agreement on 
+                ELIXIR4OLS Enabling Open Life Science in Norway, between:
+                <ul>
+                    <li>Universitetet i Bergen (Uib), Department of Informatics, as main partner</li>
+                    <li>Norges miljø-og Biovitenskapelige Universitet (NMBU), as main partner</li>
+                    <li>Norges Teknisk-Naturvitenskapelige Universitet (NTNU), as main partner</li>
+                    <li>Universitetet i Oslo (UiO), as main partner</li>
+                    <li>Universitetet i Tromsø - Norges Arktiske Universitet (UiT), as main partner</li>
+                    <li>Folkehelseinstituttet (FHI), as additional partner</li>
+                    <li>Veterinærinstituttet, as additional partner</li>
+                </ul>
+            </p>
+        </div>
+
+        <button
+            class="btn btn-link p-0 mb-3 privacy-consent__more"
+            id="privacy-consent__more"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#privacyMoreInfo"
+            aria-expanded="false"
+            aria-controls="privacyMoreInfo"
+        >Read more</button>
+
+        <p class="privacy-consent__privacy-link">
+            For more information about how we process your data, please read
+            our
+            <a href="/privacy-policy/" target="_blank" rel="noopener">
+                Privacy Policy
+            </a>.
+        </p>
+
+        <div class="privacy-consent__actions">
+            <button
+                type="button"
+                id="rejectAnalytics"
+                class="btn btn-outline-secondary btn-md"
+            >
+                Opt out
+            </button>
+
+            <button
+                type="button"
+                id="acceptAnalytics"
+                class="btn btn-primary btn-md"
+            >
+                Accept
+            </button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    // PRIVACY NOTICE
+    const moreInfo = document.getElementById('privacyMoreInfo');
+    const moreButton = document.getElementById('privacy-consent__more');
+    
+
+    if (moreInfo && moreButton) {
+
+        moreButton.addEventListener('click', () => {
+            console.log(moreButton.textContent);
+            if (moreButton.textContent == 'Read more') {
+                moreInfo.classList.remove('collapse');
+                moreButton.textContent = 'Show less';
+            } else {
+                moreInfo.classList.add('collapse');
+                moreButton.textContent = 'Read more';
+            }
+        });
+
+    }
+</script>
+
+    
+    <section class="content-header">
+      <h1>
+        
+About JASPAR
+
+      </h1>
+      <ol class="breadcrumb">
+        
+  <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+  <li class="active">About</li>
+
+      </ol>
+    </section>
+    
+  
+    <!-- Main content -->
+    <section class="content">
+
+    
+
+    <div class="row">
+
+      <div class="col-md-12 col-lg-12 col-xs-12">
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <h3 class="box-title">What is JASPAR?</h3>
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fas fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fas fa-times"></i></button>
+            </div>
+          </div>
+          <div class="box-body">
+
+            <p>JASPAR is a regularly maintained open-access database that stores manually 
+              curated transcription factor (TF) binding profiles as position frequency 
+              matrices (PFMs). PFMs summarize occurrences of each nucleotide at each 
+              position in a set of observed TF-DNA interactions. PFMs can be 
+              transformed to probabilistic or energistic models to construct position 
+              weight matrices (PWMs) or position-specific scoring matrices (PSSMs), 
+              which can be used to scan any DNA sequence to predict TF binding sites 
+              (TFBSs). The JASPAR database provides TFBSs predicted using the profiles 
+              in the CORE collection.
+            </p>
+
+            <p>Since 2026, JASPAR has also stored interpretable deep learning models 
+              designed to predict transcription factor binding preferences.</p>
+
+            <p>In both cases, the selected motifs are manually curated. Specifically, our curators assess the quality of the motif and search for an orthogonal publication that provides support to the motif as the bona fide motif recognized by the TF of interest (e.g., a motif found in ChIP-seq peaks looks similar to one found by SELEX-seq). The PubMed ID associated with the orthogonal support is provided in the TF profile metadata.</p>
+
+            <p>JASPAR is the only database with this scope where the data can
+              be used with no restrictions (open source). For a comprehensive
+              review of models and how they can be used, please see the following
+              reviews</p>
+
+            <ul>
+            <li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=25045190&amp;query_hl=1">Modeling the specificity of protein-DNA interactions Quant Biol. 2013 Jun;1(2):115-130</a></li>
+            <li><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=15131651&amp;query_hl=4">Applied bioinformatics for the identification of regulatory elements Nat Rev Genet. 2004 Apr;5(4):276-87</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6 col-lg-6 col-xs-12">
+
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <h3 class="box-title">JASPAR collections</h3>
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fas fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fas fa-times"></i></button>
+            </div>
+          </div>
+
+          <div class="box-body">
+            <div class="box-group" id="accordion">
+              <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+
+              
+
+              <div class="panel box box-solid">
+                <div class="box-header with-border">
+                  <h4 class="box-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#CORE">
+                      
+                      JASPAR CORE
+                      
+                    </a>
+                  </h4>
+                </div>
+                <div id="CORE" class="panel-collapse collapse in">
+                  <div class="box-body">
+
+                    <!-- Instead of including with a parameterised filename. -->
+                    
+                    <p>The JASPAR CORE database contains a curated, non-redundant set of profiles, 
+	derived from published collections of experimentally defined transcription 
+	factor binding sites for eukaryotes. JASPAR is committed to providing open 
+	data access and non-redundant, high-quality binding profiles.</p>
+
+<p><b>When should it be used?</b> When seeking models for specific factors or
+structural classes, or if experimental evidence is paramount.</p>
+
+                    
+
+                  </div>
+                </div>
+              </div>
+
+              
+
+              <div class="panel box box-solid">
+                <div class="box-header with-border">
+                  <h4 class="box-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#UNVALIDATED">
+                      
+                      JASPAR UNVALIDATED
+                      
+                    </a>
+                  </h4>
+                </div>
+                <div id="UNVALIDATED" class="panel-collapse collapse ">
+                  <div class="box-body">
+
+                    <!-- Instead of including with a parameterised filename. -->
+                    
+                    <p>These profiles are considered unvalidated because our curators were unable to 
+	find any orthogonal support in the existing literature. We encourage the 
+	community to conduct experiments and/or point us to relevant literature 
+	that our curators may have missed, in order to support these profiles.</p>
+
+<p><b>When should it be used?</b> These profiles are not non-validated, 
+	so we recommend using them with caution.</p>
+
+                    
+
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="panel box box-solid">
+                <div class="box-header with-border">
+                  <h4 class="box-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#dl">
+                      JASPAR DL
+                    </a>
+                  </h4>
+                </div>
+                <div id="dl" class="panel-collapse collapse ">
+                  <div class="box-body">
+
+                    <!-- Instead of including with a parameterised filename. -->
+                    
+                    <p>This collection is a curated repository of interpretable deep learning models 
+	designed to predict transcription factor binding preferences. The collection 
+	also includes motifs and matrices derived from model interpretation, ensuring 
+	compatibility with CORE and UNVALIDATED collections.
+</p>
+
+<p><b>When should it be used?</b> When cooperative binding or positional dependencies 
+	are relevant, or when predictive modeling is required in conjunction with 
+	experimental evidence.</p>
+
+                    
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <!-- LINE CHART -->
+        <div class="box box-danger">
+          <div class="box-header with-border">
+            <h3 class="box-title">JASPAR collections data growth per release</h3>
+
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fas fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fas fa-times"></i></button>
+            </div>
+          </div>
+
+          <div class="box-body">
+            <div class="box-group" id="accordion_plots">
+              <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+
+              
+
+              <div class="panel box box-solid">
+                <div class="box-header with-border">
+                  <h4 class="box-title">
+                    <a data-toggle="collapse" data-parent="#accordion_plots" href="#CORE_plots">
+                      
+                      JASPAR CORE
+                      
+                    </a>
+                  </h4>
+                </div>
+                <div id="CORE_plots" class="panel-collapse collapse in">
+                  <div class="box-body">
+
+                    <a href="/static//plots/2026/JASPAR_CORE_growth_barplot.html" target="_blank"
+                    title="Jaspar_2026_bars" style="display: block; text-align: center;">
+                    <img src="/static//plots/2026/JASPAR_CORE_growth_barplot.png" alt="Jaspar_2026_bars"
+                    style="max-width: 100%;width: 600px;"  width="600"/></a>
+
+                  </div>
+                </div>
+              </div>
+
+              
+
+              <div class="panel box box-solid">
+                <div class="box-header with-border">
+                  <h4 class="box-title">
+                    <a data-toggle="collapse" data-parent="#accordion_plots" href="#UNVALIDATED_plots">
+                      
+                      JASPAR UNVALIDATED
+                      
+                    </a>
+                  </h4>
+                </div>
+                <div id="UNVALIDATED_plots" class="panel-collapse collapse ">
+                  <div class="box-body">
+
+                    <a href="/static//plots/2026/JASPAR_UNVALIDATED_growth_barplot.html" target="_blank"
+                    title="Jaspar_2026_bars" style="display: block; text-align: center;">
+                    <img src="/static//plots/2026/JASPAR_UNVALIDATED_growth_barplot.png" alt="Jaspar_2026_bars"
+                    style="max-width: 100%;width: 600px;"  width="600"/></a>
+
+                  </div>
+                </div>
+              </div>
+
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  
+
+<footer class="main-footer">
+
+  <div class="row" >
+
+    <div class="col-md-5 col-sm-10 col-xs-12">
+      <div class="info-box1">
+
+        <p><span style="color: #dd4b39; font-weight: bold">JASPAR</span> is an
+        open-access database of curated, non-redundant transcription factor
+        (TF) binding profiles, stored as position frequency matrices (PFMs), as well as
+        deep learning (DL) models, covering multiple species in six taxonomic groups.</p>
+
+	<p>You are viewing data from the 11th release
+	(<strong>2026</strong>) of JASPAR.</p>
+
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-4 col-xs-12">
+      <div class="info-box1">
+        <p><a href="/about"><i class="fas fa-info-circle"></i> About JASPAR</a></p>
+        <p><a href="/tour"><i class="fas fa-file-video"></i> JASPAR video tour</a></p>
+        <p><a href="/blog"><i class="fas fa-rss"></i> Blog and News</a></p>
+        <p><a href="/contact-us"><i class="fas fa-envelope"></i> Contact Us</a></p>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-4 col-xs-12">
+      <div class="info-box1">
+        <p><a href="/profile-versions"><i class="fas fa-copy"></i> Profile versions</a></p>
+        <p><a href="/changelog"><i class="fas fa-history"></i> Changelog</a></p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-xs-12">
+
+      <!-- Logos may be placed here, available separately for the official service. -->
+
+
+<a href="https://elixir-europe.org/" target="_blank">
+  <img class="img-responsive" src="/static/img/logos/elixir_service_logos_cdr_full.png"
+       alt="Elixir Europe" width="35%" style="float: left; margin: 5px"></a>
+<a href="https://www.elixir.no/" target="_blank">
+  <img class="img-responsive" src="/static/img/logos/elixir_norway_white_background.png"
+       alt="Elixir Norway" width="35%" style="float: left; margin: 5px"></a>
+<a href="http://albinsandelin.wixsite.com/sandelinlab" target="_blank">
+  <img class="img-responsive" src="/static/img/logos/ku_logo.jpg"
+       alt="KU" width="35%" style="float: left; margin: 5px"></a>
+<a href="https://mathelierlab.com/" target="_blank">
+  <img class="img-responsive" src="/static/img/logos/ncmbm.png"
+       alt="NCMBM" width="35%" style="float: left; margin: 5px"></a>
+<a href="https://lms.mrc.ac.uk/research-group/computational-regulatory-genomics/" target="_blank">
+  <img class="img-responsive" src="/static/img/logos/mrc_logo.jpg"
+       alt="MRC" width="35%" style="float: left; margin: 5px"></a>
+<a href="http://cmmt.ubc.ca/wasserman-lab/" target="_blank">
+  <img class="img-responsive" src="/static/img/logos/cmmt_ubc.jpg"
+       alt="CMMT" width="35%" style="float: left; margin: 5px"></a>
+
+
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-sm-12">
+
+      <p class="pull-right" style="padding: 10px">
+  
+
+
+</p>
+
+
+      <hr>
+
+      <p style="text-align: center; clear: both">
+
+        <span style="color: #dd4b39; font-weight: bold">JASPAR</span> is
+        brought to you by a collaborative effort of several research labs and
+        it is licensed under the <a rel="license"
+                                href="http://creativecommons.org/licenses/by/4.0/"
+                                target="_blank"> <i class="fab
+                                fa-creative-commons" aria-hidden="true"></i>
+        Creative Commons Attribution 4.0 International License.</a>
+
+      </p>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  <!-- News Sidebar -->
+   <aside class="control-sidebar control-sidebar-light">
+   
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane active" id="control-sidebar-home-tab">
+        <h3 class="control-sidebar-heading"><b> <i class="fas fa-bullhorn"> News & Updates</i> </b></h3>
+      
+        <ul class="timeline">
+          <!-- timeline time label -->
+          <li class="time-label">
+              <span class="bg-red">
+                  15 May. 2017
+              </span>
+          </li>
+          <!-- /.timeline-label -->
+
+          <!-- timeline item -->
+          <li>
+              <!-- timeline icon -->
+              <i class="fas fa-globe bg-blue"></i>
+              <div class="timeline-item">
+                  <div class="timeline-body">
+                      Welcome to our new website!
+                  </div>
+                  <div class="timeline-footer">
+                      <a class="btn btn-primary btn-xs" href="/about">More ...</a>
+                  </div>
+              </div>
+          </li>
+          <!-- END timeline item -->
+
+          <!-- timeline time label -->
+          <li class="time-label">
+              <span class="bg-green">
+                  15 May. 2017
+              </span>
+          </li>
+          <!-- /.timeline-label -->
+
+          <!-- timeline item -->
+          <li>
+              <!-- timeline icon -->
+              <i class="fas fa-envelope bg-blue"></i>
+              <div class="timeline-item">
+                  <div class="timeline-body">
+                      Released RESTful API!
+                  </div>
+                  <div class="timeline-footer">
+                      <a class="btn btn-primary btn-xs" href="/api">More ...</a>
+                  </div>
+              </div>
+          </li>
+          <!-- END timeline item -->
+      </ul>
+
+      <a href="/blog">View all news</a>
+
+      </div>
+
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+
+  
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 2.2.3 -->
+<script src="/static/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery-Form-Validator -->
+<script src="/static/jQuery-Form-Validator-2.3.79-form-validator/jquery.form-validator.min.js"></script>
+<!-- Bootstrap -->
+<script src="/static/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="/static/plugins/datatables/datatables.min.js"></script>
+<!-- hopscotch -->
+<script src="/static/plugins/hopscotch/js/hopscotch.min.js"></script>
+<!-- SlimScroll -->
+<script src="/static/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="/static/plugins/fastclick/fastclick.js"></script>
+
+<script src="/static/plugins/iCheck/icheck.min.js"></script>
+
+
+<!-- AdminLTE App -->
+<script src="/static/js/app.min.js"></script>
+
+<script src="https://public.si.elixir.no/matomo/index.php?module=CoreAdminHome&action=optOutJS&divId=matomo-opt-out&language=auto&backgroundColor=FFFFFF&fontColor=000000&fontSize=12px&fontFamily=Arial&showIntro=0"></script>
+
+ 
+
+<script type="text/javascript">
+
+$('#selectAllProfiles').click (function () {
+     var checkedStatus = this.checked;
+    $('#search_table tbody tr').find('td:last :checkbox').each(function () {
+        $(this).prop('checked', checkedStatus);
+     });
+});
+
+  //Popover
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+        //placement : 'top',
+        trigger : 'hover'
+    });
+});
+
+    
+    //Flat red color scheme for iCheck
+    $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+      checkboxClass: 'icheckbox_flat-green',
+      radioClass: 'iradio_flat-green'
+    });
+
+
+      $('#check-all').on('ifChecked', function(event) {
+          $('.flat-red').iCheck('check');
+      });
+      $('#check-all').on('ifUnchecked', function(event) {
+          $('.flat-red').iCheck('uncheck');
+      });
+      // Removed the checked state from "All" if any checkbox is unchecked
+      $('#check-all').on('ifChanged', function(event){
+          if(!this.changed) {
+              this.changed=true;
+              $('#check-all').iCheck('check');
+          } else {
+              this.changed=false;
+              $('#check-all').iCheck('uncheck');
+          }
+          $('#check-all').iCheck('update');
+      });
+
+  </script>
+
+    
+
+
+    <script type="text/javascript">
+      // Add custom validation rule
+    $.formUtils.addValidator({
+      name : 'fasta_file',
+            validatorFunction : function(value, $el, config, language, $form) {
+
+               if (value.charAt(0) == ">"){
+                return true;
+               }else{
+                return false;
+               }
+            },
+            errorMessage : 'Make sure your sequence is <a href="https://en.wikipedia.org/wiki/FASTA_format" target="_blank">fasta-formatted</a>',
+          });
+          // Setup form validation
+          $.validate();
+
+    </script>
+
+    <script>
+      const consentDialog = document.getElementById('privacyConsent');
+      const acceptButton = document.getElementById('acceptAnalytics');
+      const rejectButton = document.getElementById('rejectAnalytics');
+
+      const CONSENT_COOKIE = 'jaspar_privacy_choice';
+      const CONSENT_DAYS = 180;
+
+      /**
+       * Read a cookie.
+       */
+      function getCookie(name) {
+          const prefix = name + '=';
+
+          return document.cookie
+              .split(';')
+              .map(cookie => cookie.trim())
+              .find(cookie => cookie.startsWith(prefix))
+              ?.substring(prefix.length) || null;
+      }
+
+      /**
+       * Store the user's privacy choice.
+       *
+       * SameSite=Lax and Secure are appropriate for
+       * a first-party preference cookie on HTTPS.
+       */
+      function setPreferenceCookie(value) {
+          const maxAge = CONSENT_DAYS * 24 * 60 * 60;
+
+          document.cookie =
+              CONSENT_COOKIE + '=' + encodeURIComponent(value) +
+              '; Path=/' +
+              '; Max-Age=' + maxAge +
+              '; SameSite=Lax' +
+              '; Secure';
+      }
+
+      function showConsentDialog() {
+          consentDialog.classList.remove('is-hidden');
+          document.body.classList.add('privacy-consent-open');
+
+          // Move keyboard focus into the dialog
+          acceptButton.focus();
+      }
+
+      function hideConsentDialog() {
+          consentDialog.classList.add('is-hidden');
+          document.body.classList.remove('privacy-consent-open');
+      }
+
+      /**
+       * ACCEPT
+       */
+      function acceptAnalytics() {
+        setPreferenceCookie('accepted');
+
+        window._paq = window._paq || [];
+        window._paq.push(['rememberConsentGiven']);
+
+        hideConsentDialog();
+
+        const optOutBtn2 = document.getElementById('optOutBtn2');
+        if (optOutBtn2) {
+            optOutBtn2.textContent = 'You may opt out at any time here.';
+        }
+      }
+
+      /**
+       * REJECT
+       */
+      function rejectAnalytics() {
+        setPreferenceCookie('rejected');
+
+        window._paq = window._paq || [];
+        window._paq.push(['forgetConsentGiven']);
+
+        hideConsentDialog();
+
+        const optOutBtn2 = document.getElementById('optOutBtn2');
+        if (optOutBtn2) {
+            optOutBtn2.textContent = 'You have opted out! Give permission?';
+        }
+      }
+
+      acceptButton.addEventListener('click', acceptAnalytics);
+      rejectButton.addEventListener('click', rejectAnalytics);
+
+      /**
+       * Determine whether we need to show the notice.
+       */
+      const privacyChoice = getCookie(CONSENT_COOKIE);
+
+      if (privacyChoice === 'accepted') {
+
+          /*
+          * Matomo normally remembers consent itself through
+          * its consent cookie.
+          *
+          * Calling rememberConsentGiven again is therefore
+          * unnecessary.
+          */
+          hideConsentDialog();
+
+      } else if (privacyChoice === 'rejected') {
+
+          hideConsentDialog();
+
+      } else {
+
+          showConsentDialog();
+      }
+    </script>
+
+    
+
+    <!-- Google tag (gtag.js) -->
+
+</body>
+</html>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+                        
+<ClinVarResult-Set><VariationArchive VariationID="4910425" VariationName="NM_000518.5(HBB):c.-43C&gt;T" VariationType="single nucleotide variant" Accession="VCV004910425" Version="1" RecordType="classified" NumberOfSubmissions="1" NumberOfSubmitters="1" DateLastUpdated="2026-09-27" DateCreated="2026-09-22" MostRecentSubmission="2026-09-22">
+  <RecordStatus>current</RecordStatus>
+  <Species>Homo sapiens</Species>
+  <ClassifiedRecord>
+    <SimpleAllele AlleleID="5020618" VariationID="4910425">
+      <GeneList>
+        <Gene Symbol="HBB" FullName="hemoglobin subunit beta" GeneID="3043" HGNC_ID="HGNC:4827" Source="calculated" RelationshipType="within multiple genes by overlap">
+          <Location>
+            <CytogeneticLocation>11p15.4</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="11" Accession="NC_000011.10" start="5225464" stop="5227071" display_start="5225464" display_stop="5227071" Strand="-"/>
+            <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="11" Accession="NC_000011.9" start="5246695" stop="5248300" display_start="5246695" display_stop="5248300" Strand="-"/>
+          </Location>
+          <OMIM>141900</OMIM>
+        </Gene>
+        <Gene Symbol="LOC106099062" FullName="HBB recombination region" GeneID="106099062" Source="calculated" RelationshipType="within multiple genes by overlap">
+          <Location>
+            <CytogeneticLocation>11p15.4</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="11" Accession="NC_000011.10" start="5226570" stop="5228834" display_start="5226570" display_stop="5228834" Strand="+"/>
+          </Location>
+        </Gene>
+        <Gene Symbol="LOC107133510" FullName="origin of replication at HBB" GeneID="107133510" Source="calculated" RelationshipType="within multiple genes by overlap">
+          <Location>
+            <CytogeneticLocation>11p15.4</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="11" Accession="NC_000011.10" start="5222166" stop="5229620" display_start="5222166" display_stop="5229620" Strand="+"/>
+          </Location>
+        </Gene>
+      </GeneList>
+      <Name>NM_000518.5(HBB):c.-43C&gt;T</Name>
+      <CanonicalSPDI>NC_000011.10:5227063:G:A</CanonicalSPDI>
+      <VariantType>single nucleotide variant</VariantType>
+      <Location>
+        <CytogeneticLocation>11p15.4</CytogeneticLocation>
+        <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" forDisplay="true" AssemblyStatus="current" Chr="11" Accession="NC_000011.10" start="5227064" stop="5227064" display_start="5227064" display_stop="5227064" variantLength="1" positionVCF="5227064" referenceAlleleVCF="G" alternateAlleleVCF="A"/>
+        <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="11" Accession="NC_000011.9" start="5248294" stop="5248294" display_start="5248294" display_stop="5248294" variantLength="1" positionVCF="5248294" referenceAlleleVCF="G" alternateAlleleVCF="A"/>
+      </Location>
+      <HGVSlist>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="LRG_1232" sequenceAccession="LRG_1232">
+            <Expression>LRG_1232:g.5008C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="LRG_1232t1" sequenceAccession="LRG_1232t1">
+            <Expression>LRG_1232t1:c.-43C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh38" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000011.10" sequenceAccession="NC_000011" sequenceVersion="10" change="g.5227064G&gt;A" Assembly="GRCh38">
+            <Expression>NC_000011.10:g.5227064G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh37" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000011.9" sequenceAccession="NC_000011" sequenceVersion="9" change="g.5248294G&gt;A" Assembly="GRCh37">
+            <Expression>NC_000011.9:g.5248294G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_000007.3" sequenceAccession="NG_000007" sequenceVersion="3" change="g.70552C&gt;T">
+            <Expression>NG_000007.3:g.70552C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_042296.1" sequenceAccession="NG_042296" sequenceVersion="1" change="g.595G&gt;A">
+            <Expression>NG_042296.1:g.595G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_046672.1" sequenceAccession="NG_046672" sequenceVersion="1" change="g.4999G&gt;A">
+            <Expression>NG_046672.1:g.4999G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_059281.1" sequenceAccession="NG_059281" sequenceVersion="1" change="g.5008C&gt;T">
+            <Expression>NG_059281.1:g.5008C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_000518.5" sequenceAccession="NM_000518" sequenceVersion="5" change="c.-43C&gt;T" MANESelect="true">
+            <Expression>NM_000518.5:c.-43C&gt;T</Expression>
+          </NucleotideExpression>
+          <MolecularConsequence ID="SO:0001623" Type="5 prime UTR variant" DB="SO"/>
+        </HGVS>
+      </HGVSlist>
+    </SimpleAllele>
+    <RCVList>
+      <RCVAccession Title="NM_000518.5(HBB):c.-43C&gt;T AND HBB-related disorder" Accession="RCV006813010" Version="1">
+        <ClassifiedConditionList TraitSetID="33481">
+          <ClassifiedCondition DB="MedGen" ID="CN239378">HBB-related disorder</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2022-06-05" SubmissionCount="1">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+    </RCVList>
+    <Classifications>
+      <GermlineClassification DateLastEvaluated="2022-06-05" NumberOfSubmissions="1" NumberOfSubmitters="1" DateCreated="2026-09-22" MostRecentSubmission="2026-09-22">
+        <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+        <Description>Likely pathogenic</Description>
+        <Explanation DataSource="ClinVar" Type="public">Likely pathogenic (1)</Explanation>
+        <ConditionList>
+          <TraitSet ID="33481" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="36575" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">HBB-related condition</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">HBB-related disorder</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">HBB-related disorders</ElementValue>
+              </Name>
+              <XRef ID="CN239378" DB="MedGen"/>
+            </Trait>
+          </TraitSet>
+        </ConditionList>
+      </GermlineClassification>
+    </Classifications>
+    <ClinicalAssertionList>
+      <ClinicalAssertion ID="14719101" SubmissionDate="2026-08-20" ContributesToAggregateClassification="true" DateLastUpdated="2026-09-22" DateCreated="2026-09-22">
+        <ClinVarSubmissionID localKey=":Chr.11_5248294_G_A|HBB-related disorders" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV007746286" DateUpdated="2026-09-22" DateCreated="2026-09-22" Type="SCV" Version="1" SubmitterName="Blueprint Genetics" OrgID="500188" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2022-06-05">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Likely pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+              <MethodAttribute>
+                <Attribute Type="TestName">Comprehensive Hematology Panel, Comprehensive Hematology and Hereditary Cancer Panel (Hematology)</Attribute>
+              </MethodAttribute>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="2"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <SequenceLocation Assembly="GRCh37" Chr="11" alternateAllele="A" referenceAllele="G" start="5248294" stop="5248294" variantLength="1"/>
+          </Location>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">HBB-related disorders</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB16423224</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+    </ClinicalAssertionList>
+    <TraitMappingList>
+      <TraitMapping ClinicalAssertionID="14719101" TraitType="Disease" MappingType="Name" MappingValue="HBB-related disorders" MappingRef="Preferred">
+        <MedGen CUI="CN239378" Name="HBB-related disorder"/>
+      </TraitMapping>
+    </TraitMappingList>
+  </ClassifiedRecord>
+</VariationArchive><VariationArchive VariationID="3051702" VariationName="NC_000011.10:g.5227091C&gt;T" VariationType="single nucleotide variant" Accession="VCV003051702" Version="2" RecordType="classified" NumberOfSubmissions="1" NumberOfSubmitters="1" DateLastUpdated="2026-04-04" DateCreated="2024-03-17" MostRecentSubmission="2024-10-08">
+  <RecordStatus>current</RecordStatus>
+  <Species>Homo sapiens</Species>
+  <ClassifiedRecord>
+    <SimpleAllele AlleleID="3205470" VariationID="3051702">
+      <GeneList>
+        <Gene Symbol="HBB" FullName="hemoglobin subunit beta" GeneID="3043" HGNC_ID="HGNC:4827" Source="submitted" RelationshipType="near gene, upstream">
+          <Location>
+            <CytogeneticLocation>11p15.4</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="11" Accession="NC_000011.10" start="5225464" stop="5227071" display_start="5225464" display_stop="5227071" Strand="-"/>
+            <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="11" Accession="NC_000011.9" start="5246695" stop="5248300" display_start="5246695" display_stop="5248300" Strand="-"/>
+          </Location>
+          <OMIM>141900</OMIM>
+        </Gene>
+        <Gene Symbol="LOC106099062" FullName="HBB recombination region" GeneID="106099062" Source="calculated" RelationshipType="within multiple genes by overlap">
+          <Location>
+            <CytogeneticLocation>11p15.4</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="11" Accession="NC_000011.10" start="5226570" stop="5228834" display_start="5226570" display_stop="5228834" Strand="+"/>
+          </Location>
+        </Gene>
+        <Gene Symbol="LOC107133510" FullName="origin of replication at HBB" GeneID="107133510" Source="calculated" RelationshipType="within multiple genes by overlap">
+          <Location>
+            <CytogeneticLocation>11p15.4</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="11" Accession="NC_000011.10" start="5222166" stop="5229620" display_start="5222166" display_stop="5229620" Strand="+"/>
+          </Location>
+        </Gene>
+      </GeneList>
+      <Name>NC_000011.10:g.5227091C&gt;T</Name>
+      <CanonicalSPDI>NC_000011.10:5227090:C:T</CanonicalSPDI>
+      <VariantType>single nucleotide variant</VariantType>
+      <Location>
+        <CytogeneticLocation>11p15.4</CytogeneticLocation>
+        <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" forDisplay="true" AssemblyStatus="current" Chr="11" Accession="NC_000011.10" start="5227091" stop="5227091" display_start="5227091" display_stop="5227091" variantLength="1" positionVCF="5227091" referenceAlleleVCF="C" alternateAlleleVCF="T"/>
+        <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="11" Accession="NC_000011.9" start="5248321" stop="5248321" display_start="5248321" display_stop="5248321" variantLength="1" positionVCF="5248321" referenceAlleleVCF="C" alternateAlleleVCF="T"/>
+      </Location>
+      <HGVSlist>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="LRG_1232" sequenceAccession="LRG_1232">
+            <Expression>LRG_1232:g.4981G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh38" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000011.10" sequenceAccession="NC_000011" sequenceVersion="10" change="g.5227091C&gt;T" Assembly="GRCh38">
+            <Expression>NC_000011.10:g.5227091C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh37" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000011.9" sequenceAccession="NC_000011" sequenceVersion="9" change="g.5248321C&gt;T" Assembly="GRCh37">
+            <Expression>NC_000011.9:g.5248321C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_000007.3" sequenceAccession="NG_000007" sequenceVersion="3" change="g.70525G&gt;A">
+            <Expression>NG_000007.3:g.70525G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_042296.1" sequenceAccession="NG_042296" sequenceVersion="1" change="g.622C&gt;T">
+            <Expression>NG_042296.1:g.622C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_046672.1" sequenceAccession="NG_046672" sequenceVersion="1" change="g.5026C&gt;T">
+            <Expression>NG_046672.1:g.5026C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_059281.1" sequenceAccession="NG_059281" sequenceVersion="1" change="g.4981G&gt;A">
+            <Expression>NG_059281.1:g.4981G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+      </HGVSlist>
+      <XRefList>
+        <XRef ID="CA217115731" DB="ClinGen"/>
+        <XRef Type="rs" ID="954327894" DB="dbSNP"/>
+      </XRefList>
+      <AlleleFrequencyList>
+        <AlleleFrequency Value="0.00001" Source="The Genome Aggregation Database (gnomAD)"/>
+      </AlleleFrequencyList>
+    </SimpleAllele>
+    <RCVList>
+      <RCVAccession Title="NC_000011.10:g.5227091C&gt;T AND HBB-related disorder" Accession="RCV004545571" Version="2">
+        <ClassifiedConditionList TraitSetID="33481">
+          <ClassifiedCondition DB="MedGen" ID="CN239378">HBB-related disorder</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated="2022-11-03" SubmissionCount="1">Likely benign</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+    </RCVList>
+    <Classifications>
+      <GermlineClassification DateLastEvaluated="2022-11-03" NumberOfSubmissions="1" NumberOfSubmitters="1" DateCreated="2024-03-17" MostRecentSubmission="2024-10-08">
+        <ReviewStatus>no assertion criteria provided</ReviewStatus>
+        <Description>Likely benign</Description>
+        <Explanation DataSource="ClinVar" Type="public">Likely benign (1)</Explanation>
+        <ConditionList>
+          <TraitSet ID="33481" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="36575" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">HBB-related condition</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">HBB-related disorder</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">HBB-related disorders</ElementValue>
+              </Name>
+              <XRef ID="CN239378" DB="MedGen"/>
+            </Trait>
+          </TraitSet>
+        </ConditionList>
+      </GermlineClassification>
+    </Classifications>
+    <ClinicalAssertionList>
+      <ClinicalAssertion ID="8856433" SubmissionDate="2024-10-02" ContributesToAggregateClassification="true" DateLastUpdated="2024-10-08" DateCreated="2024-03-16">
+        <ClinVarSubmissionID localKey="29949407|HBB-related condition"/>
+        <ClinVarAccession Accession="SCV004773306" DateUpdated="2024-10-08" DateCreated="2024-03-16" Type="SCV" Version="2" SubmitterName="PreventionGenetics, part of Exact Sciences" OrgID="239772" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2022-11-03">
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Likely benign</GermlineClassification>
+          <Comment>This variant is classified as likely benign based on ACMG/AMP sequence variant interpretation guidelines (Richards et al. 2015 PMID: 25741868, with internal and published modifications).</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="HBB"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <OtherNameList>
+            <Name Type="SubmitterVariantId">29949407</Name>
+          </OtherNameList>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000011.9:g.5248321C&gt;T</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">HBB-related condition</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB14299258</SubmissionName>
+          <SubmissionName>SUB14767649</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+    </ClinicalAssertionList>
+    <TraitMappingList>
+      <TraitMapping ClinicalAssertionID="8856433" TraitType="Disease" MappingType="Name" MappingValue="HBB-related condition" MappingRef="Preferred">
+        <MedGen CUI="CN239378" Name="HBB-related disorder"/>
+      </TraitMapping>
+    </TraitMappingList>
+  </ClassifiedRecord>
+</VariationArchive>
+</ClinVarResult-Set>

@@ -11,6 +11,7 @@ serde.workspace = true
 serde_json.workspace = true
 sha2.workspace = true
 tempfile.workspace = true
+flate2.workspace = true
 genome-types.workspace = true
 genome-data.workspace = true
 genome-knowledge.workspace = true
@@ -24,6 +25,8 @@ genome-atlas.workspace = true
 genome-evidence-audit.workspace = true
 genome-research-stats.workspace = true
 genome-assay.workspace = true
+genome-regulatory.workspace = true
+genome-regulatory-data.workspace = true
 
 [lints]
 workspace = true

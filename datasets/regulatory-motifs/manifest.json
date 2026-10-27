@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "name": "Prior-biology HBB promoter motif set",
+  "motifs_file": "motifs.json",
+  "selection": {
+    "fixed_accessions": [
+      "MA0035.4",
+      "MA0493.3",
+      "MA0060.3",
+      "MA0108.3"
+    ],
+    "reason": "Erythroid GATA1/KLF1 and canonical promoter CCAAT/TATA factors; selected from prior biology before positional MPRA score inspection.",
+    "species_policy": "GATA1/KLF1/NFYA must explicitly include Homo sapiens taxid9606; TBP missing species metadata is preserved and never silently assigned human provenance.",
+    "release_policy": "Exact accessions/versions are frozen. No claim is made that these are all from one named JASPAR release or are currently the latest profiles.",
+    "outcome_independence": "The importer never reads assay files, scores, positions or model outcomes."
+  },
+  "terms": {
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "license_evidence_file": "jaspar-about.html",
+    "license_evidence_url": "https://jaspar.elixir.no/about/",
+    "attribution": "JASPAR collaborative database; cite each versioned profile and the database publication when reusing these matrices.",
+    "scope": "JASPAR database content as explicitly licensed on the official About page. Derived motif probabilities/log-odds are transformations of these PFMs, not new experimental measurements."
+  },
+  "sources": [
+    {
+      "url": "https://jaspar.elixir.no/api/v1/matrix/MA0035.4/",
+      "retrieved_at": "2026-10-27T06:29:05.462816+00:00",
+      "sha256": "aa98f1c0ff66c0de7d427f0e6cfb9b103c44ba2b380c8ad30bcf9a959d0259a9",
+      "file": "MA0035.4.json"
+    },
+    {
+      "url": "https://jaspar.elixir.no/api/v1/matrix/MA0493.3/",
+      "retrieved_at": "2026-10-27T06:29:07.768253+00:00",
+      "sha256": "7471b4ac209feafee0acdd43e842fe6a8fdd29eebbfba6620b53c55e29c2f067",
+      "file": "MA0493.3.json"
+    },
+    {
+      "url": "https://jaspar.elixir.no/api/v1/matrix/MA0060.3/",
+      "retrieved_at": "2026-10-27T06:29:08.539154+00:00",
+      "sha256": "e2cb0ad29cb1684f842574374096697cbfe71a86d1a687dcaf2b508979f60423",
+      "file": "MA0060.3.json"
+    },
+    {
+      "url": "https://jaspar.elixir.no/api/v1/matrix/MA0108.3/",
+      "retrieved_at": "2026-10-27T06:29:08.727559+00:00",
+      "sha256": "9112b50c34dd8f67f99bb5645b8626f6663f16660f97e6d3958f6fd36807c69b",
+      "file": "MA0108.3.json"
+    },
+    {
+      "url": "https://jaspar.elixir.no/about/",
+      "retrieved_at": "2026-10-27T06:29:09.291379+00:00",
+      "sha256": "a90272a8429dc269f1d2c9afa7fe9830ceb04a019f33c386e2939cfb551604ba",
+      "file": "jaspar-about.html"
+    }
+  ],
+  "files": {
+    "MA0035.4.json": "aa98f1c0ff66c0de7d427f0e6cfb9b103c44ba2b380c8ad30bcf9a959d0259a9",
+    "MA0060.3.json": "e2cb0ad29cb1684f842574374096697cbfe71a86d1a687dcaf2b508979f60423",
+    "MA0108.3.json": "9112b50c34dd8f67f99bb5645b8626f6663f16660f97e6d3958f6fd36807c69b",
+    "MA0493.3.json": "7471b4ac209feafee0acdd43e842fe6a8fdd29eebbfba6620b53c55e29c2f067",
+    "jaspar-about.html": "a90272a8429dc269f1d2c9afa7fe9830ceb04a019f33c386e2939cfb551604ba",
+    "motifs.json": "563bca7bd1f8be4f0e042490fd66d51a1efcee69fa85cdd2b5c142eb3a69b5cf"
+  }
+}

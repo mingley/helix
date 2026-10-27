@@ -1,0 +1,131 @@
+# Saturation mutagenesis MPRA data access portal
+
+Shiny webapp of [https://mpra.gs.washington.edu/satMutMPRA](https://mpra.gs.washington.edu/satMutMPRA) or [https://kircherlab.bihealth.org/satMutMPRA/](https://kircherlab.bihealth.org/satMutMPRA/).
+
+## Installation
+
+### Option 1: conda
+
+If not already done install [miniconda](https://docs.conda.io/en/latest/miniconda.html)
+
+set up the channels:
+
+```
+conda config --add channels bioconda
+conda config --add channels conda-forge
+```
+
+Then run `conda install mpra-data-access-portal`
+
+The latest version on conda is `0.1.11` so you can run `conda install mpra-data-access-portal=0.1.11` to install exactly this version.
+
+now you can run the data portal via the command: `mpra-data-access-portal`
+
+The default port is `8080` and the default host `0.0.0.0`. If you want to change this please change the two variables `SHINY_PORT` and export `SHINY_HOST`. E.g.:
+
+```
+export SHINY_PORT=7001
+export SHINY_HOST=127.0.0.1
+```
+
+Then run `mpra-data-access-portal` again.
+
+### Option 2: from source
+
+install dependencies:
+
+R version 4.3.3
+
+R packages:
+
+- dplyr version 1.1.4
+- DT version 0.33
+- ggplot2 version 3.5.1
+- shiny version 1.9.1
+- shinytest2 version 0.3.1
+- shinyvalidate 0.1.3
+- htmlwidgets version 1.6.4
+- readr version 2.1.5
+- stringr version 1.5.1
+- plotly version 4.10.4
+
+You can install also via conda using: `conda env create -f environment.yaml -n mpra-data-access-portal`
+
+Get the latest version via version release on github:
+https://github.com/kircherlab/MPRA_SaturationMutagenesis/archive/v0.1.11.tar.gz
+or cloning the repository:
+https://github.com/kircherlab/MPRA_SaturationMutagenesis/archive/v0.1.11.tar.gz and change to the version tag `v0.1.11`.
+
+the goto the directory and run the shiny server (here on port `8080` and on host `0.0.0.0`, if not alredy defined:
+
+```
+export SHINY_HOST=${SHINY_HOST-0.0.0.0}
+export SHINY_PORT=${SHINY_PORT-8080}
+
+Rscript -e "shiny::runApp(port = ${SHINY_PORT}, launch.browser = FALSE, host = '${SHINY_HOST}')"
+```
+
+## Development
+
+### Setting up the development environment
+
+To set up a development environment, use conda with the provided `environment.yml`:
+
+```bash
+conda env create -f environment.yml -n satMutMPRA
+conda activate satMutMPRA
+```
+
+### Running tests
+
+To run the test suite:
+
+```bash
+conda activate satMutMPRA
+Rscript run_tests.R
+```
+
+Tests verify:
+
+- All required packages are available
+- Data files exist and have expected format
+- Application code has valid syntax
+- Markdown documentation files are present
+
+## Releases
+
+This project uses [Release Please](https://github.com/googleapis/release-please-action) to automate versioning and release management.
+
+### How releases work
+
+Releases are automatically created when commits are pushed to `master` using [Conventional Commits](https://www.conventionalcommits.org/). The Release Please action will:
+
+1. Analyze commit messages on master
+1. Create a release PR with updated DESCRIPTION version and CHANGELOG
+1. Once merged, automatically create a GitHub release with:
+   - Release notes generated from commit history
+   - Packaged artifacts (tar.gz and zip files)
+   - Tests run to verify the release
+
+### Making a release
+
+Simply use conventional commit messages in your pull requests:
+
+- `feat:` - New features (triggers minor version bump: 0.1.11 → 0.2.0)
+- `fix:` - Bug fixes (triggers patch version bump: 0.1.11 → 0.1.12)
+- `BREAKING CHANGE:` - Major changes (triggers major version bump: 0.1.11 → 1.0.0)
+
+Example:
+
+```bash
+git commit -m "feat: add support for new reference genome"
+git commit -m "fix: update filter logic for edge cases"
+```
+
+When you merge a PR with such commits, Release Please will automatically:
+
+- Create a release PR updating the version
+- Update CHANGELOG.md
+- Merge and create the GitHub release
+
+Releases are available at: https://github.com/kircherlab/MPRA_SaturationMutagenesis/releases

@@ -14,6 +14,7 @@ use std::{
 pub const LEAN_VERSION: &str = "4.19.0";
 const PRELUDE: &str = include_str!("../../../proofs/Helix.lean");
 const MECHANISM_PRELUDE: &str = include_str!("../../../proofs/GenomeMechanisms.lean");
+const REGULATORY_PRELUDE: &str = include_str!("../../../proofs/RegulatoryStudy.lean");
 
 #[derive(Debug, Serialize)]
 pub struct CheckedProof {
@@ -26,6 +27,9 @@ pub fn source(derivation: &Derivation, arithmetic: &str) -> String {
 }
 pub fn mechanism_source(derivation: &Derivation, arithmetic: &str) -> String {
     export(MECHANISM_PRELUDE, derivation, arithmetic)
+}
+pub fn regulatory_source(derivation: &Derivation, arithmetic: &str) -> String {
+    export(REGULATORY_PRELUDE, derivation, arithmetic)
 }
 fn export(prelude: &str, derivation: &Derivation, arithmetic: &str) -> String {
     format!(
@@ -40,6 +44,10 @@ pub fn check(lean: &Path, source: &str) -> Result<CheckedProof> {
 pub fn check_mechanisms(lean: &Path, source: &str) -> Result<CheckedProof> {
     validate_export(source, MECHANISM_PRELUDE)?;
     check_export(lean, source, "Finite DNA complement definitions, coordinate/arithmetic identities, conditional entailment and proportion bounds. This does not verify Rust code or establish biological truth.")
+}
+pub fn check_regulatory(lean: &Path, source: &str) -> Result<CheckedProof> {
+    validate_export(source, REGULATORY_PRELUDE)?;
+    check_export(lean, source, "Guarded-window arithmetic, identical-input function consistency, control-tail resolution and conditional entailment. No statistical calibration, fitted-model implementation or empirical biology is proved.")
 }
 fn check_export(lean: &Path, source: &str, scope: &str) -> Result<CheckedProof> {
     let version = Command::new(lean)

@@ -5,6 +5,9 @@
 use anyhow::{ensure, Result};
 use serde::Serialize;
 
+mod regulatory;
+pub use regulatory::*;
+
 const Z_975: f64 = 1.959_963_984_540_054;
 const MAX_EXACT_F64_INTEGER: u64 = 1 << 53;
 const MAX_DISCORDANT_PAIRS: usize = 1_000_000;

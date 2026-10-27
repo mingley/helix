@@ -100,6 +100,24 @@ separate capabilities and an inaccessible holdout store.
 
 ## Current boundaries
 
+The separate `helix study` path uses `genome-regulatory-data` to validate a
+metadata-selected, source-frozen cohort and `genome-regulatory` to execute the
+fixed six-model protocol. Model inputs retain sequence and mutation identity;
+quality/source fields do not enter the predictor. Training-only scaling,
+guarded HBB folds and held-out promoter folds have explicit memberships.
+The schema3 artifact includes complete compressed predictions/fits, controls,
+context comparisons, input commitments and a revision ledger. Its audit verifies
+internal bindings and the scoped method proof; it does not refit every model.
+
+An independent NumPy/SciPy implementation rebuilds features and fits from raw
+sources. Continuous predictions, primary losses and controls reproduce, while
+26 secondary exact-rank comparisons remain failed. The separately specified
+post-hoc finite-grid study is retained alongside that failure. This distinction
+is visible in machine-readable flags and the workflow's exit status. Read the
+[complete regulatory study](../research/regulatory-study.md) for the scientific
+result and limits. The proof covers guard arithmetic, same-input loss algebra
+and finite-control resolution, not model coefficients or biological validity.
+
 Mechanism calculations remain limited to the named HBB GRCh38 transcript and
 biallelic SNVs. The atlas supplies source-specific genome-wide annotation context;
 it does not compute genome-wide variant effects. No full VRS normalization,

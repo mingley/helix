@@ -1,0 +1,472 @@
+{
+  "schema_version": 1,
+  "protocol_id": "regulatory-prediction-v1",
+  "status": "frozen",
+  "frozen_at_utc": "2026-10-27T06:33:19.414100+00:00",
+  "goal": "Find sequence-to-reporter-expression candidate patterns that survive guarded evaluation, baseline comparisons, source forensics and independent numerical implementation; retain negative results.",
+  "inference_status": "Retrospective exploratory public-data analysis, not preregistered confirmatory inference or an untouched HBB holdout.",
+  "outcome_exposure": {
+    "HBB": "Previously explored; historical outcomes and sample rows already known. No claim of pristine validation.",
+    "new_cohort": "Selected on metadata, endpoint, license, species, sequence/reference identity and role before score retrieval; no threshold/model selection from outcomes."
+  },
+  "inputs": {
+    "hbb_directory": "datasets/hbb-promoter-assay",
+    "cohort_directory": "datasets/regulatory-cohort",
+    "motif_directory": "datasets/regulatory-motifs",
+    "reference_directory": "datasets/hbb-reference",
+    "required_hashes": "Validate all dataset and motif manifest commitments before parsing outcomes; report each input manifest SHA256 and protocol SHA256."
+  },
+  "cohort": {
+    "study_doi": "10.1038/s41467-019-11526-w",
+    "species": "Homo sapiens, taxonomy9606",
+    "element_class": "promoter",
+    "score_units": "log2 reporter-expression-effect additive regression coefficient",
+    "data_license": "CC0 1.0 per-score-set data grant verified, producer attribution retained",
+    "selection": "All nine eligible unique non-HBB promoter loci; among same-element records choose lexicographically first fullURN as primary; keep specified other records validation-only. No score-based inclusion.",
+    "max_new_score_sets": 14,
+    "assay_roles": [
+      {
+        "assay_id": "urn:mavedb:00000015-a-1",
+        "gene": "F9",
+        "role": "primary"
+      },
+      {
+        "assay_id": "urn:mavedb:00000016-a-1",
+        "gene": "FOXE1",
+        "role": "primary"
+      },
+      {
+        "assay_id": "urn:mavedb:00000017-a-1",
+        "gene": "GP1BB",
+        "role": "primary"
+      },
+      {
+        "assay_id": "urn:mavedb:00000019-a-1",
+        "gene": "HBG1",
+        "role": "primary"
+      },
+      {
+        "assay_id": "urn:mavedb:00000020-a-1",
+        "gene": "HNF4A",
+        "role": "primary"
+      },
+      {
+        "assay_id": "urn:mavedb:00000023-a-1",
+        "gene": "LDLR",
+        "role": "primary"
+      },
+      {
+        "assay_id": "urn:mavedb:00000024-a-1",
+        "gene": "MSMB",
+        "role": "primary"
+      },
+      {
+        "assay_id": "urn:mavedb:00000027-a-1",
+        "gene": "PKLR",
+        "role": "primary"
+      },
+      {
+        "assay_id": "urn:mavedb:00000031-a-1",
+        "gene": "TERT",
+        "role": "primary"
+      },
+      {
+        "assay_id": "urn:mavedb:00000023-a-2",
+        "gene": "LDLR",
+        "role": "validation_only",
+        "relationship": "library_repeat",
+        "compare_to": "urn:mavedb:00000023-a-1"
+      },
+      {
+        "assay_id": "urn:mavedb:00000027-b-1",
+        "gene": "PKLR",
+        "role": "validation_only",
+        "relationship": "48h_vs_24h_context",
+        "compare_to": "urn:mavedb:00000027-a-1"
+      },
+      {
+        "assay_id": "urn:mavedb:00000031-b-1",
+        "gene": "TERT",
+        "role": "validation_only",
+        "relationship": "GBM_vs_HEK293T_cell_context",
+        "compare_to": "urn:mavedb:00000031-a-1"
+      },
+      {
+        "assay_id": "urn:mavedb:00000031-c-1",
+        "gene": "TERT",
+        "role": "validation_only",
+        "relationship": "GABPA_knockdown_context",
+        "compare_to": "urn:mavedb:00000031-d-1"
+      },
+      {
+        "assay_id": "urn:mavedb:00000031-d-1",
+        "gene": "TERT",
+        "role": "validation_only",
+        "relationship": "scrambled_control_context",
+        "compare_to": "urn:mavedb:00000031-b-1"
+      },
+      {
+        "assay_id": "urn:mavedb:00000018-a-1",
+        "gene": "HBB",
+        "role": "previously_exposed_reference"
+      }
+    ],
+    "same_study_limit": "Distinct loci/cell contexts share a study, source processing and sometimes constructed libraries. They are not independent studies or a random sample of human promoters."
+  },
+  "row_inclusion": {
+    "variant_type": "Unambiguous single-nucleotide substitution n.POSREF>ALT with positive one-based target coordinate, REF and ALT in ACGT, REF!=ALT.",
+    "minimum_unique_tags": 10,
+    "require_finite_positive_dna_and_rna_counts": true,
+    "require_finite_score": true,
+    "require_complete_three_snv_positions": false,
+    "grouping": "Retain every quality-passing SNV; one to three eligible alleles per position are allowed. All retained alleles at a position share folds and bootstrap blocks. Report incomplete positions and per-position allele counts; never discard a valid allele solely because another is missing.",
+    "equality_and_deletion_rows": "Exclude from fitting and all prediction metrics; preserve raw rows and source-forensics crosswalk separately.",
+    "pvalues": "Never a predictor feature or outcome-dependent inclusion threshold.",
+    "duplicates": "Reject duplicate accession or SNV representation; never treat technical/library/context records as different loci.",
+    "missingness": "No silent imputations; disclose every raw row and whole-position exclusion before metric aggregation."
+  },
+  "features": {
+    "orientation": "Use provided source target orientation consistently; no gene-strand inference from labels. All motif scans use both strands.",
+    "sequence_context_radius": 10,
+    "maximum_feature_window_bp": 21,
+    "external_flanks": "Do not use outside-target sequence; only windows fully contained in the provided target. Edge support truncation is fixed and disclosed.",
+    "mutation_identity_order": [
+      "A>C",
+      "A>G",
+      "A>T",
+      "C>A",
+      "C>G",
+      "C>T",
+      "G>A",
+      "G>C",
+      "G>T",
+      "T>A",
+      "T>C",
+      "T>G"
+    ],
+    "mutation_encoding": "One-hot twelve directed reference-to-alternate identities, in the explicit order.",
+    "position": "x=2*(position_1based-1)/(target_length-1)-1; features x and x*x.",
+    "delta3mer_order": [
+      "AAA",
+      "AAC",
+      "AAG",
+      "AAT",
+      "ACA",
+      "ACC",
+      "ACG",
+      "ACT",
+      "AGA",
+      "AGC",
+      "AGG",
+      "AGT",
+      "ATA",
+      "ATC",
+      "ATG",
+      "ATT",
+      "CAA",
+      "CAC",
+      "CAG",
+      "CAT",
+      "CCA",
+      "CCC",
+      "CCG",
+      "CCT",
+      "CGA",
+      "CGC",
+      "CGG",
+      "CGT",
+      "CTA",
+      "CTC",
+      "CTG",
+      "CTT",
+      "GAA",
+      "GAC",
+      "GAG",
+      "GAT",
+      "GCA",
+      "GCC",
+      "GCG",
+      "GCT",
+      "GGA",
+      "GGC",
+      "GGG",
+      "GGT",
+      "GTA",
+      "GTC",
+      "GTG",
+      "GTT",
+      "TAA",
+      "TAC",
+      "TAG",
+      "TAT",
+      "TCA",
+      "TCC",
+      "TCG",
+      "TCT",
+      "TGA",
+      "TGC",
+      "TGG",
+      "TGT",
+      "TTA",
+      "TTC",
+      "TTG",
+      "TTT"
+    ],
+    "delta3mer": "For each 3mer window fully inside target and containing the changed base, count ALT 3mers minus REF 3mers across the same windows. 64 signed integer features, not normalized by available-window count; maximum radius2.",
+    "motif_ids": [
+      "MA0035.4",
+      "MA0493.3",
+      "MA0060.3",
+      "MA0108.3"
+    ],
+    "motif_features": "Four signed deltas only, in motif_ids order. Ref/alt maxima may be reported but are not predictor covariates.",
+    "motif_scoring": {
+      "method": "jaspar-overlap-max-delta-v1",
+      "bases": "ACGT",
+      "pseudocount_total_per_column": 1.0,
+      "background": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "log_odds": "log2(((count_base+0.25)/(column_total+1))/0.25)",
+      "scan": "All fully contained motif windows overlapping changed base, on both strands; max_ref and max_alt use the identical window/orientation candidate set. delta=max_alt-max_ref.",
+      "maximum_motif_width": 11,
+      "no_binding_threshold": true,
+      "taxonomy_limit": "GATA1/KLF1/NFYA human metadata; TBP source taxonomy missing, retained as a documented prior-motif limitation."
+    },
+    "prohibited": [
+      "score",
+      "p-value",
+      "unique_tags",
+      "dna_sequences",
+      "rna_sequences",
+      "ClinVar classification",
+      "assay or cell ID as learned covariate",
+      "per-test-assay outcome normalization"
+    ]
+  },
+  "models": [
+    {
+      "id": "mean",
+      "feature_sets": []
+    },
+    {
+      "id": "chemistry",
+      "feature_sets": [
+        "mutation_identity"
+      ]
+    },
+    {
+      "id": "coordinate",
+      "feature_sets": [
+        "mutation_identity",
+        "position"
+      ]
+    },
+    {
+      "id": "delta3mer",
+      "feature_sets": [
+        "mutation_identity",
+        "delta3mer"
+      ]
+    },
+    {
+      "id": "motif",
+      "feature_sets": [
+        "mutation_identity",
+        "motif_deltas"
+      ]
+    },
+    {
+      "id": "full",
+      "feature_sets": [
+        "mutation_identity",
+        "position",
+        "delta3mer",
+        "motif_deltas"
+      ]
+    }
+  ],
+  "fit": {
+    "algorithm": "Ridge ordinary squared-error regression; mean model is training ymean only.",
+    "ridge_alpha": 10.0,
+    "objective": "sum_i((y_i-intercept-Xstd_i beta)^2)+alpha*sum_j(beta_j^2), without division by n",
+    "intercept": "Unpenalized; center training y by its unweighted row mean and predict ymean+Xstd beta.",
+    "feature_scaling": "For each fitted fold, training-only feature mean and population SD (ddof0). If SD<=1e-12 use scale1. Apply those same means/scales to test.",
+    "y_scaling": "No outcome scaling; preserve raw log2 effect units.",
+    "sample_weight": "Equal retained training rows, no assay-specific weighting or test intercept.",
+    "selection": "No alpha/model/feature/window selection, nested optimization or threshold tuning in v1.",
+    "linear_solve": "Solve (Xstd^T Xstd+alpha I) beta=Xstd^T(y-ymean); f64 arithmetic."
+  },
+  "evaluation": {
+    "hbb_guarded_position_cv": {
+      "role": "Exploratory within-element assessment on already explored HBB",
+      "outer_folds": 5,
+      "fold_boundaries_zero_based": "boundary[k]=floor(k*target_length/5), k=0..5; test position p has boundary[k]<=p-1<boundary[k+1].",
+      "guard_bp": 20,
+      "training_rule": "Keep a training center only if its distance from every test center is strictly greater than20. All included alleles at each position share a fold.",
+      "leakage_contract": "radius10 feature supports are disjoint across train/test at distance>20; biochemical/source dependence can remain."
+    },
+    "primary_leave_element_out": {
+      "role": "Primary retrospective cross-element assessment of nine newly acquired promoter loci",
+      "test_assays": [
+        "urn:mavedb:00000015-a-1",
+        "urn:mavedb:00000016-a-1",
+        "urn:mavedb:00000017-a-1",
+        "urn:mavedb:00000019-a-1",
+        "urn:mavedb:00000020-a-1",
+        "urn:mavedb:00000023-a-1",
+        "urn:mavedb:00000024-a-1",
+        "urn:mavedb:00000027-a-1",
+        "urn:mavedb:00000031-a-1"
+      ],
+      "training_assays": "All other primary-role loci only. Never include HBB or validation-only records.",
+      "folds": 9,
+      "aggregation": "Per-target-position mean errors, then per-assay mean; macro-average across nine test assays. Report each assay and cell context separately."
+    },
+    "hbb_to_external_transfer": {
+      "role": "Secondary exploratory transport diagnostic",
+      "train_assays": [
+        "urn:mavedb:00000018-a-1"
+      ],
+      "test_assays": "All nine primary-role loci, with frozen training preprocessing and no test normalization."
+    },
+    "row_random_diagnostic": {
+      "role": "Explicitly leaky diagnostic, never primary or model selection",
+      "scope": "HBB only",
+      "folds": 5,
+      "assignment": "SHA256(assay_id+\"|\"+position_1based+\"|\"+REF+\">\"+ALT+\"|row-random-v1\"); first8 digest bytes interpreted little-endian unsigned mod5.",
+      "guard_bp": 0,
+      "report": "Report number of test positions also represented in training and feature-window overlap. Gap versus guarded CV also reflects different split difficulty; do not attribute it solely to leakage."
+    }
+  },
+  "metrics": {
+    "primary_error": "MSE in squared log2-effect units; average allele errors per position, then positions within assay, then macro over primary assays.",
+    "secondary": [
+      "MAE using same position/assay weighting",
+      "Spearman rho over all retained SNV rows per heldout assay using average ranks for exact ties",
+      "Spearman rho of per-position mean prediction versus per-position mean observed effect",
+      "per-assay relative MSE versus training-mean baseline; undefined if baseline MSE=0",
+      "coverage and all exclusions"
+    ],
+    "constant_rank_rule": "Return null, not zero, when either ranked vector has zero variance; disclose unavailable rank metrics.",
+    "no_clinical_classification": true
+  },
+  "comparisons": [
+    {
+      "id": "delta3mer_vs_chemistry",
+      "candidate": "delta3mer",
+      "baseline": "chemistry"
+    },
+    {
+      "id": "motif_vs_chemistry",
+      "candidate": "motif",
+      "baseline": "chemistry"
+    },
+    {
+      "id": "full_vs_coordinate",
+      "candidate": "full",
+      "baseline": "coordinate"
+    }
+  ],
+  "resampling": {
+    "prng": {
+      "algorithm": "SplitMix64",
+      "step": "state=(state+0x9E3779B97F4A7C15)mod2^64; z=(state xor(state>>30))*0xBF58476D1CE4E5B9 mod2^64; z=(z xor(z>>27))*0x94D049BB133111EB mod2^64; output=z xor(z>>31); bounded index=output mod n.",
+      "integer_arithmetic": "unsigned64 wraparound"
+    },
+    "replicates": 2000,
+    "quantiles": "Type7 linear interpolation at0.025 and0.975 on sorted resampled statistics.",
+    "hbb_position_block_bootstrap": {
+      "seed": 2026102701,
+      "block_bp": 21,
+      "blocks": "Nonoverlapping included-position blocks anchored at physical positions1,22,43,...; keep last shorter block, exclude empty blocks. Draw number_of_nonempty_blocks blocks with replacement and concatenate all rows of each selected block.",
+      "unit": "Frozen OOF per-position paired loss differences; no refitting.",
+      "statistic": "Baseline MSE minus candidate MSE over resampled positions for each comparison."
+    },
+    "external_element_bootstrap": {
+      "seed": 2026102702,
+      "unit": "Draw nine primary assay indices with replacement; equal-element mean of frozen leave-element-out paired per-assay MSE differences.",
+      "statistic": "Macro baseline MSE minus candidate MSE for each comparison."
+    },
+    "interpretation": "Descriptive conditional resampling of fixed OOF prediction losses; nine selected elements share one study and OOF fits overlap. Not guaranteed population confidence intervals or full model-selection uncertainty."
+  },
+  "spatial_null": {
+    "replicates": 99,
+    "seed": 2026102703,
+    "scope": "Guarded HBB comparison and primary leave-element-out comparison only.",
+    "transform": "For each replicate, process assays in lexicographic fullURN order, then mutation_identity_order. Within each assay+directed REF>ALT class, order retained rows by one-based target position and accession; rotate scores circularly by offset=1+SplitMix64%(stratum_size-1). The score assigned to destination row i is original score[(i+offset)%stratum_size]. Strata with fewer than2 rows stay unchanged and are reported. Every included row remains included; no scores are assigned to a different chemistry class. Keep features/eligibility/folds fixed.",
+    "preserved": "Per-assay directed mutation-chemistry score distributions and cyclic positional ordering within each class. This breaks cross-class/within-position outcome correlation and does not preserve absolute genomic gaps or all library dependence; disclose these limits.",
+    "refit": "Refit every model on rotated training outcomes using the fixed training-only X scaling; recompute rotated training ymean and RHS and evaluate rotated test outcomes. Cache each fold/model Gram matrix and factorization because X is unchanged. No feature/window/model changes or reuse of real ymeans.",
+    "statistic": "Baseline MSE minus candidate MSE (same aggregation as real evaluation); larger is better.",
+    "tail_fraction": "(1+number_null_statistics>=observed_statistic)/(99+1)",
+    "adjustment": "Holm step-down across the three prespecified comparisons within each of two evaluation families separately; disclose both families (6 total planned tails). Also report conservative Bonferroni over all6 planned tails.",
+    "interpretation": "Falsification/robustness control under chemistry-stratified spatial stationarity and an artificial rotation transformation, not a calibrated biological-significance p-value. No discovery declaration from a threshold."
+  },
+  "validation_context_analysis": {
+    "training": "Never train on validation-only score sets.",
+    "pairs": [
+      {
+        "left": "urn:mavedb:00000023-a-2",
+        "right": "urn:mavedb:00000023-a-1",
+        "relationship": "library_repeat"
+      },
+      {
+        "left": "urn:mavedb:00000027-b-1",
+        "right": "urn:mavedb:00000027-a-1",
+        "relationship": "48h_vs_24h_context"
+      },
+      {
+        "left": "urn:mavedb:00000031-b-1",
+        "right": "urn:mavedb:00000031-a-1",
+        "relationship": "GBM_vs_HEK293T_cell_context"
+      },
+      {
+        "left": "urn:mavedb:00000031-c-1",
+        "right": "urn:mavedb:00000031-d-1",
+        "relationship": "GABPA_knockdown_context"
+      },
+      {
+        "left": "urn:mavedb:00000031-d-1",
+        "right": "urn:mavedb:00000031-b-1",
+        "relationship": "scrambled_control_context"
+      }
+    ],
+    "matching": "Match exact reference-validated genomic SNV identity; report per-pair overlap and exclusions. No equality/deletion rows.",
+    "metrics": [
+      "paired Pearson/Spearman where defined",
+      "MSE and MAE of matched coefficients",
+      "signed mean difference without threshold",
+      "finite context-blind lower bound sum_{variant,context}(score-variant_mean)^2 / number_of_matched_observations"
+    ],
+    "lower_bound_scope": "Finite observed-source algebraic bound for any predictor assigning the same value to an identical variant across these contexts. It does not assign causes to variance, establish noise-free biology or generalize beyond observed contexts. Compare LDLR library-repeat differences with cell/time/perturbation contexts without treating any as independent loci."
+  },
+  "replication": {
+    "implementations": [
+      "Rust genome-regulatory",
+      "independent Python NumPy/SciPy"
+    ],
+    "must_match": [
+      "included IDs and exclusions",
+      "all fold/guard assignments",
+      "fixed feature vocabulary and dimensions",
+      "training-only feature means/scales",
+      "per-record OOF predictions and model metrics"
+    ],
+    "prediction_absolute_tolerance": 1e-07,
+    "metric_absolute_tolerance": 1e-08,
+    "mismatch_policy": "Investigate and resolve differences before claiming reproduction; never silently loosen tolerances.",
+    "artifact_policy": "New output directory only; retain complete predictions, coefficients/scaling, diagnostics, null statistics, resample summaries, source/protocol hashes and failures."
+  },
+  "stopping_and_claims": {
+    "retain_all_attempts": true,
+    "negative_results": "Report failed controls, uncertainty and source anomalies as results; do not search additional models in v1 until something appears.",
+    "candidate_mechanism": "A robust sequence association is a candidate for an independent perturbation experiment, not a proven mechanism.",
+    "novelty": "Check prior literature before calling a pattern novel. A computational rediscovery or source-curation correction must be labeled accordingly.",
+    "independent_validation_gap": "One study across promoters and cell contexts is not independent laboratory replication or a model of the entire human genome."
+  },
+  "frozen_before_new_outcome_acquisition": true,
+  "freeze_note": "Initial draft was amended before any new score acquisition or any real-data fitting to retain incomplete positions and use chemistry-stratified rotations. This final hash is the implementation/acquisition authority."
+}

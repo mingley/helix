@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "scope": "Assess reported HBB DNA reporter design using target sequence, directional-primer metadata and backbone records. Assay outcomes are not used to map the design or define sequence features; exact reporter RNA remains unestablished.",
+  "coordinate_reference": {
+    "target_sha256": "4e7864ac41060a0caf76996f31ffcd06e2919341c627a6e301fcaef4be5ae0c0",
+    "target_length": 187,
+    "target_genomic_strand": "+",
+    "native_HBB_transcription_strand": "-"
+  },
+  "reported_design": {
+    "supplement_table1": "HBB MPRA uses pGL4.11c in HEL92.1.7; fragment187bp.",
+    "supplement_table18": "Directional amplification/cloning oligos support native-HBB-orientation insertion.",
+    "forward_target_specific_suffix": "AAGGACAGGTACGGCTGTC",
+    "reverse_target_specific_suffix": "GGTGTCTGTTTGAGGTTGC",
+    "backbone_MCS": "Both deposited pGL4.11b and pGL4.11c have an altered MCS upstream of the annotated luc2 sequence.",
+    "MCS_consistency": "Forward flank and reverse flank order are consistent with the native-minus-oriented insert upstream of luciferase.",
+    "barcode_location": "Main text reports luciferase insertion between regulatory element and tag; tag becomes reporter3primeUTR."
+  },
+  "checks": {
+    "forward_suffix_matches_rc_target_start": true,
+    "forward_suffix_matches_plus_target_start": false,
+    "reverse_suffix_matches_plus_target_start": true
+  },
+  "conclusions": {
+    "physical_DNA_insert_orientation": "Reported design is consistent with native HBB minus-strand orientation, not the plus-strand coordinate target representation.",
+    "native_5prime_UTR_included_in_target_DNA": true,
+    "reporter_RNA_5prime_end_or_native_TSS_use": "Not established by these sources or by the barcode RNA/DNA readout.",
+    "exact_reporter_RNA_sequence": "Not established.",
+    "RNA_uAUG_uORF_features_justified_by_native_annotation_alone": false,
+    "both_strand_DNA_motif_features_depend_on_target_orientation": false
+  },
+  "limitations": [
+    "The deposited records are cloning backbones, not an independently sequence-verified complete HBB library molecule.",
+    "Reported construct design and primer consistency do not establish every physical molecule or its transcription start.",
+    "Native-TSS initiation would predict transcription of native UTR sequence; alternative reporter initiation is not ruled out.",
+    "Barcode RNA abundance is not direct protein production, translation efficiency or hemoglobin physiology."
+  ],
+  "sources": [
+    {
+      "name": "Kircher2019 main XML",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6687891/fullTextXML",
+      "content_sha256": "8a137e659d29fca939d70f10cb249d19dd3f83645e593cb62f19674c4dd1be7c",
+      "size_bytes": 184360,
+      "accessed_at": "2026-10-27T06:42:44.939198+00:00",
+      "retention": "Reviewed source; original article/supplement/backbone text not redistributed in this artifact."
+    },
+    {
+      "name": "Kircher2019 supplementary PDF",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6687891/supplementaryFiles",
+      "content_sha256": "8b3a557fadfb478a92a51eb85c7c874ed4ffe01d977c5ed9eae6864d94c9c17f",
+      "size_bytes": 13562412,
+      "accessed_at": "2026-10-27T06:42:44.954398+00:00",
+      "retention": "Reviewed source; original article/supplement/backbone text not redistributed in this artifact."
+    },
+    {
+      "name": "pGL4.11b backbone",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=MK484103.1&rettype=gb&retmode=text",
+      "content_sha256": "5dedcc07105c85194994f90eeab9a735c2d7bc9a2033f511341b73b13895809d",
+      "size_bytes": 8469,
+      "accessed_at": "2026-10-27T06:42:44.954962+00:00",
+      "retention": "Reviewed source; original article/supplement/backbone text not redistributed in this artifact."
+    },
+    {
+      "name": "pGL4.11c backbone",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=MK484104.1&rettype=gb&retmode=text",
+      "content_sha256": "cacff41715e85d5463e2d672c1fb61a83d61962fb71ed8d050fde1f6a8bc52cd",
+      "size_bytes": 8600,
+      "accessed_at": "2026-10-27T06:42:44.955006+00:00",
+      "retention": "Reviewed source; original article/supplement/backbone text not redistributed in this artifact."
+    }
+  ],
+  "retrieval_note": "Publisher supplement host returned proxy tunnel403. The supplementary PDF was instead retrieved from an independently published legitimate Europe PMC archive, not by proxying the blocked destination."
+}

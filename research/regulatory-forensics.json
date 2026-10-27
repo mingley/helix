@@ -1,0 +1,2082 @@
+{
+  "schema_version": 1,
+  "analysis_type": "source-identity reconciliation and adversarial measurement audit",
+  "score_exposure_disclosure": "All623 source/database rows were read for identity matching, including coefficients and counts. No positional score-pattern analysis, predictor fitting or performance-based model selection was conducted in this script.",
+  "conclusion": {
+    "status": "confirmed_original_deletions_represented_as_database_equalities",
+    "supported": "All62 literal MaveDB n.<position>= records match original source single-base deletion rows by position, coefficient and all three count columns; p-values match five-decimal rounding.",
+    "not_established": [
+      "The exact import, normalization or migration code path that introduced the equality notation",
+      "The date when the representation discrepancy first appeared",
+      "That62 source rows represent62 distinct physical alleles after repeat normalization",
+      "Global novelty of a legacy MaveDB deletion/equality discrepancy",
+      "Independent biological replication, endogenous expression effects or clinical pathogenicity"
+    ]
+  },
+  "input_commitments": {
+    "mavedb_scores_sha256": "ec8b189f70c740f0ab2a11863a0a464fb421d93fefb9da1240cd3831872f57c6",
+    "original_osf_table_sha256": "705694a6d45cd61159883250393b165a5813b40cc06e1dcdbe3270faad58af07",
+    "original_osf_service_hash_matches": true,
+    "original_osf_file_version": 1,
+    "original_osf_file_created_at": "2018-11-26T16:40:00.263673Z",
+    "original_osf_materialized_path": "/Variants/GRCh38/GRCh38_HBB.tsv",
+    "target_sequence_sha256": "4e7864ac41060a0caf76996f31ffcd06e2919341c627a6e301fcaef4be5ae0c0",
+    "source_documentation_git_commit": "16a48622a20754b16ee356d2c4e214459ffe1476",
+    "source_documentation_commit_tree": "8b0c6947a8f2840f3d5ee388c926208e1c3cd11e"
+  },
+  "reconciliation": {
+    "source_rows": 623,
+    "database_rows": 623,
+    "one_to_one_matches": 623,
+    "snv_matches": 561,
+    "equality_to_original_deletion_matches": 62,
+    "exact_numeric_fields": [
+      "score",
+      "unique_tags",
+      "dna_sequences",
+      "rna_sequences"
+    ],
+    "pvalue_absolute_tolerance": "0.000005",
+    "maximum_pvalue_absolute_difference": "0.00000498055046681",
+    "mavedb_literal_zero_pvalues": 84,
+    "original_literal_zero_pvalues": 0,
+    "deletion_rows_below_ten_tags": 27,
+    "snv_rows_below_ten_tags": 0,
+    "deletion_rows_at_least_ten_tags": 35,
+    "distinct_deletion_altered_target_sequences": 53,
+    "equivalent_deletion_position_groups": [
+      [
+        9,
+        11
+      ],
+      [
+        83,
+        85
+      ],
+      [
+        92,
+        93
+      ],
+      [
+        96,
+        97
+      ],
+      [
+        114,
+        116
+      ],
+      [
+        137,
+        138
+      ],
+      [
+        152,
+        153
+      ],
+      [
+        157,
+        158
+      ],
+      [
+        186,
+        187
+      ]
+    ],
+    "rows_in_equivalent_deletion_groups": 18,
+    "source_estimate_inconsistency": {
+      "scope": "Original deletion source rows, not SNV evaluation, and not a biological noise floor.",
+      "identity": "Exact equality of the complete altered187-nt reporter target sequence.",
+      "groups": [
+        {
+          "altered_target_sha256": "5bd8dc2530165f193d487ab30d45e95538266831132b9f5178a43d805698f66f",
+          "target_positions_one_based": [
+            9,
+            11
+          ],
+          "mavedb_accessions": [
+            "urn:mavedb:00000018-a-1#179",
+            "urn:mavedb:00000018-a-1#257"
+          ],
+          "original_coefficients": [
+            "-1.16",
+            "0.03"
+          ],
+          "original_tags": [
+            3,
+            4977
+          ],
+          "group_mean_coefficient": "-0.565",
+          "sum_squared_deviations_from_group_mean": "0.708050",
+          "coefficient_range": "1.19",
+          "distinct_coefficient_count": 2
+        },
+        {
+          "altered_target_sha256": "78fdc434aa8420375ced837b8eebeeb1830befcaa212651ff051d7463d0e752d",
+          "target_positions_one_based": [
+            83,
+            85
+          ],
+          "mavedb_accessions": [
+            "urn:mavedb:00000018-a-1#187",
+            "urn:mavedb:00000018-a-1#195"
+          ],
+          "original_coefficients": [
+            "0.06",
+            "-0.13"
+          ],
+          "original_tags": [
+            3,
+            1770
+          ],
+          "group_mean_coefficient": "-0.035",
+          "sum_squared_deviations_from_group_mean": "0.018050",
+          "coefficient_range": "0.19",
+          "distinct_coefficient_count": 2
+        },
+        {
+          "altered_target_sha256": "cb262acd9a3a0332d9effc0cb0a34bb25b4172a6b551f3c16062aed70e450259",
+          "target_positions_one_based": [
+            92,
+            93
+          ],
+          "mavedb_accessions": [
+            "urn:mavedb:00000018-a-1#220",
+            "urn:mavedb:00000018-a-1#226"
+          ],
+          "original_coefficients": [
+            "1.05",
+            "0.05"
+          ],
+          "original_tags": [
+            2,
+            1799
+          ],
+          "group_mean_coefficient": "0.55",
+          "sum_squared_deviations_from_group_mean": "0.5000",
+          "coefficient_range": "1.00",
+          "distinct_coefficient_count": 2
+        },
+        {
+          "altered_target_sha256": "328824b25001a48286bc9ed5bfd67a0dcb1ab343c3b4707bac11f0f34106646d",
+          "target_positions_one_based": [
+            96,
+            97
+          ],
+          "mavedb_accessions": [
+            "urn:mavedb:00000018-a-1#237",
+            "urn:mavedb:00000018-a-1#241"
+          ],
+          "original_coefficients": [
+            "-0.07",
+            "0.19"
+          ],
+          "original_tags": [
+            1,
+            132
+          ],
+          "group_mean_coefficient": "0.06",
+          "sum_squared_deviations_from_group_mean": "0.0338",
+          "coefficient_range": "0.26",
+          "distinct_coefficient_count": 2
+        },
+        {
+          "altered_target_sha256": "1b47528b54477bc4e19ad0ea593a1c8c7560848154662fb78039255b7afbb17b",
+          "target_positions_one_based": [
+            114,
+            116
+          ],
+          "mavedb_accessions": [
+            "urn:mavedb:00000018-a-1#303",
+            "urn:mavedb:00000018-a-1#310"
+          ],
+          "original_coefficients": [
+            "-0.31",
+            "-0.08"
+          ],
+          "original_tags": [
+            3,
+            1844
+          ],
+          "group_mean_coefficient": "-0.195",
+          "sum_squared_deviations_from_group_mean": "0.026450",
+          "coefficient_range": "0.23",
+          "distinct_coefficient_count": 2
+        },
+        {
+          "altered_target_sha256": "928559a1b0d2135084d729ce3af9886ad95e01602c0170a48d13cd369938f3c8",
+          "target_positions_one_based": [
+            137,
+            138
+          ],
+          "mavedb_accessions": [
+            "urn:mavedb:00000018-a-1#387",
+            "urn:mavedb:00000018-a-1#392"
+          ],
+          "original_coefficients": [
+            "-0.86",
+            "-0.22"
+          ],
+          "original_tags": [
+            4,
+            336
+          ],
+          "group_mean_coefficient": "-0.54",
+          "sum_squared_deviations_from_group_mean": "0.2048",
+          "coefficient_range": "0.64",
+          "distinct_coefficient_count": 2
+        },
+        {
+          "altered_target_sha256": "10f4a246fe041f80569d0de273febbbf70ff5829f84f11bdd57cea7f8bbb9c8d",
+          "target_positions_one_based": [
+            152,
+            153
+          ],
+          "mavedb_accessions": [
+            "urn:mavedb:00000018-a-1#447",
+            "urn:mavedb:00000018-a-1#451"
+          ],
+          "original_coefficients": [
+            "1.12",
+            "-0.49"
+          ],
+          "original_tags": [
+            3,
+            304
+          ],
+          "group_mean_coefficient": "0.315",
+          "sum_squared_deviations_from_group_mean": "1.296050",
+          "coefficient_range": "1.61",
+          "distinct_coefficient_count": 2
+        },
+        {
+          "altered_target_sha256": "a93bfd950d1b0534a1a2359f044661a92bc57edf5f30b208425ff8fd6ce185d8",
+          "target_positions_one_based": [
+            157,
+            158
+          ],
+          "mavedb_accessions": [
+            "urn:mavedb:00000018-a-1#465",
+            "urn:mavedb:00000018-a-1#470"
+          ],
+          "original_coefficients": [
+            "-1.45",
+            "0.04"
+          ],
+          "original_tags": [
+            3,
+            98
+          ],
+          "group_mean_coefficient": "-0.705",
+          "sum_squared_deviations_from_group_mean": "1.110050",
+          "coefficient_range": "1.49",
+          "distinct_coefficient_count": 2
+        },
+        {
+          "altered_target_sha256": "4e984a491449a6695019ed43cc20f9a61887d56f306259df447e2722c9502e5b",
+          "target_positions_one_based": [
+            186,
+            187
+          ],
+          "mavedb_accessions": [
+            "urn:mavedb:00000018-a-1#575",
+            "urn:mavedb:00000018-a-1#580"
+          ],
+          "original_coefficients": [
+            "-0.43",
+            "0.65"
+          ],
+          "original_tags": [
+            1,
+            14
+          ],
+          "group_mean_coefficient": "0.11",
+          "sum_squared_deviations_from_group_mean": "0.5832",
+          "coefficient_range": "1.08",
+          "distinct_coefficient_count": 2
+        }
+      ],
+      "groups_with_distinct_coefficients": 9,
+      "total_within_identity_sse": "4.480450",
+      "lower_bound_mse_over_all_deletion_rows": "0.07226532258064516129032258065",
+      "lower_bound_mse_over_repeated_identity_rows": "0.2489138888888888888888888889",
+      "mean_group_sum_squared_deviation": "0.4978277777777777777777777778",
+      "denominators": {
+        "all_source_deletion_rows": 62,
+        "rows_in_repeated_identity_groups": 18,
+        "repeated_identity_groups": 9
+      },
+      "derivation": "For each identical input x with observed source coefficients y1..yn, sum_i(yi-f(x))^2 = sum_i(yi-ybar)^2 + n*(f(x)-ybar)^2. Summing nonnegative residual terms gives the finite observed-label lower bound.",
+      "interpretation": "Different additive-regression coefficients attached to identical isolated edited target sequences are source-estimate inconsistency. Their difference can reflect representation, multi-mutant background assignment, estimation or correlated measurement; it does not demonstrate that identical DNA has different intrinsic biology.",
+      "uncertainty": "No replicate coefficient covariance or biological error distribution is available here; these algebraic bounds are neither confidence intervals nor estimates of latent experimental noise.",
+      "predefined_minimum_ten_tag_qc": {
+        "retained_deletion_rows": 35,
+        "distinct_altered_target_sequences": 35,
+        "repeated_identity_groups": 0,
+        "total_within_identity_sse": "0",
+        "lower_bound_mse_from_repeated_identity": "0",
+        "raw_groups_with_exactly_one_low_support_row": 9,
+        "interpretation": "Apply the study's preexisting minimum10-tag QC before interpreting source-label inconsistency. In this HBB snapshot every raw equivalent pair contains one low-support row, so this duplicate-identity bound vanishes after QC; that does not establish noise-free measurements."
+      }
+    },
+    "deletion_mapping": [
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#1",
+        "mavedb_literal_hgvs": "n.1=",
+        "original_table_line": 622,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227022,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.1del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "b23508b6f7065f980cf312f8de3c9fd8ec695cbba003c649707195e46fd735e4",
+        "score": "-0.51",
+        "pvalue_original": "0.00289870880628956",
+        "pvalue_mavedb": "0.0029",
+        "tags": 68,
+        "dna_count": 231,
+        "rna_count": 538,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#8",
+        "mavedb_literal_hgvs": "n.33=",
+        "original_table_line": 518,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227054,
+        "original_reference": "T",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.33del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "bb81266111205adb6fb681ddc47cf933753c6189385c868c85f45ceb3b47ffcc",
+        "score": "0.18",
+        "pvalue_original": "0.340263982665387",
+        "pvalue_mavedb": "0.34026",
+        "tags": 57,
+        "dna_count": 192,
+        "rna_count": 641,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#39",
+        "mavedb_literal_hgvs": "n.42=",
+        "original_table_line": 491,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227063,
+        "original_reference": "A",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.42del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "9fe57db1ee235028264da4eda4c863a08b0950f3398c4d996b8a2b3f9af03bea",
+        "score": "-0.51",
+        "pvalue_original": "0.0886481686120824",
+        "pvalue_mavedb": "0.08865",
+        "tags": 22,
+        "dna_count": 79,
+        "rna_count": 174,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#56",
+        "mavedb_literal_hgvs": "n.47=",
+        "original_table_line": 475,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227068,
+        "original_reference": "A",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.47del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "a73708c512ab4042d0d5c6b5966205da1c4cf890d0653ca5f5fea447a8e4f733",
+        "score": "-0.03",
+        "pvalue_original": "0.558180035413232",
+        "pvalue_mavedb": "0.55818",
+        "tags": 1043,
+        "dna_count": 4568,
+        "rna_count": 12508,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#74",
+        "mavedb_literal_hgvs": "n.52=",
+        "original_table_line": 459,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227073,
+        "original_reference": "A",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.52del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "634aa19092da24b06a00bb39d3ea9c30b13bfb2fabf1bb59e812cea33f2e5baa",
+        "score": "-0.06",
+        "pvalue_original": "0.204154916277841",
+        "pvalue_mavedb": "0.20415",
+        "tags": 1022,
+        "dna_count": 4386,
+        "rna_count": 12791,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#78",
+        "mavedb_literal_hgvs": "n.53=",
+        "original_table_line": 454,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227074,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.53del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "e66a15d98bec3740b2b2942f78d873979326dc1ac422a1db179c0bb717e1fc00",
+        "score": "-2.07",
+        "pvalue_original": "0.139900966931133",
+        "pvalue_mavedb": "0.1399",
+        "tags": 1,
+        "dna_count": 1,
+        "rna_count": 1,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#83",
+        "mavedb_literal_hgvs": "n.54=",
+        "original_table_line": 451,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227075,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.54del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "f82a459d987694c41da6558cec1bde33c054618baee87021363b467160382c12",
+        "score": "1.04",
+        "pvalue_original": "0.198551299092185",
+        "pvalue_mavedb": "0.19855",
+        "tags": 3,
+        "dna_count": 3,
+        "rna_count": 54,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#91",
+        "mavedb_literal_hgvs": "n.56=",
+        "original_table_line": 444,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227077,
+        "original_reference": "A",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.56del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "1ae0c7e19cbbeea711efbca5da03d6aa9ca2556aa2491442a131b0a00095a365",
+        "score": "0.00",
+        "pvalue_original": "0.981380170608927",
+        "pvalue_mavedb": "0.98138",
+        "tags": 182,
+        "dna_count": 776,
+        "rna_count": 2260,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#116",
+        "mavedb_literal_hgvs": "n.63=",
+        "original_table_line": 421,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227084,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.63del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "ae22aa4fdc94b5baf0a6ec6940de9cecc3dc64eb85eabb77a5b072ca0c7e377c",
+        "score": "-0.07",
+        "pvalue_original": "0.137777535425189",
+        "pvalue_mavedb": "0.13778",
+        "tags": 841,
+        "dna_count": 3755,
+        "rna_count": 9883,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#143",
+        "mavedb_literal_hgvs": "n.71=",
+        "original_table_line": 397,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227092,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.71del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "51a1912d7c83ee031a04c597ad31ce746aca6d9f4900178d82c0093f3d11059a",
+        "score": "-0.13",
+        "pvalue_original": "0.0789648417773509",
+        "pvalue_mavedb": "0.07896",
+        "tags": 344,
+        "dna_count": 1556,
+        "rna_count": 3844,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#154",
+        "mavedb_literal_hgvs": "n.74=",
+        "original_table_line": 387,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227095,
+        "original_reference": "A",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.74del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "7a640c092a9d3c5496f375b2a30e0b20631954976bedc32c237e284e55c160dc",
+        "score": "-0.07",
+        "pvalue_original": "0.935012856245529",
+        "pvalue_mavedb": "0.93501",
+        "tags": 3,
+        "dna_count": 4,
+        "rna_count": 18,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#172",
+        "mavedb_literal_hgvs": "n.79=",
+        "original_table_line": 370,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227100,
+        "original_reference": "T",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.79del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "d6fa9cecec18f2744473e4a867a0563d42c642d4492d7155c095e11b3b018f9f",
+        "score": "-0.15",
+        "pvalue_original": "2.96377980400107e-07",
+        "pvalue_mavedb": "0.0",
+        "tags": 2200,
+        "dna_count": 9749,
+        "rna_count": 24507,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#176",
+        "mavedb_literal_hgvs": "n.80=",
+        "original_table_line": 367,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227101,
+        "original_reference": "A",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.80del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "10d526c2db5965addd60b618e1e389f380eb81915e217638bed6a58380d53ace",
+        "score": "1.83",
+        "pvalue_original": "0.0654446972247828",
+        "pvalue_mavedb": "0.06544",
+        "tags": 2,
+        "dna_count": 8,
+        "rna_count": 63,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#179",
+        "mavedb_literal_hgvs": "n.9=",
+        "original_table_line": 597,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227030,
+        "original_reference": "T",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.9del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "5bd8dc2530165f193d487ab30d45e95538266831132b9f5178a43d805698f66f",
+        "score": "-1.16",
+        "pvalue_original": "0.151142714554952",
+        "pvalue_mavedb": "0.15114",
+        "tags": 3,
+        "dna_count": 25,
+        "rna_count": 19,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#187",
+        "mavedb_literal_hgvs": "n.83=",
+        "original_table_line": 357,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227104,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.83del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "78fdc434aa8420375ced837b8eebeeb1830befcaa212651ff051d7463d0e752d",
+        "score": "0.06",
+        "pvalue_original": "0.941694162990745",
+        "pvalue_mavedb": "0.94169",
+        "tags": 3,
+        "dna_count": 14,
+        "rna_count": 33,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#195",
+        "mavedb_literal_hgvs": "n.85=",
+        "original_table_line": 350,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227106,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.85del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "78fdc434aa8420375ced837b8eebeeb1830befcaa212651ff051d7463d0e752d",
+        "score": "-0.13",
+        "pvalue_original": "6.84904421610624e-05",
+        "pvalue_mavedb": "7e-05",
+        "tags": 1770,
+        "dna_count": 7968,
+        "rna_count": 20525,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#213",
+        "mavedb_literal_hgvs": "n.90=",
+        "original_table_line": 334,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227111,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.90del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "070cb911d013bd6bddf8d67ebc87d6212416b2e16088dde3572f56f14ca4e4aa",
+        "score": "-0.00",
+        "pvalue_original": "0.964041842141064",
+        "pvalue_mavedb": "0.96404",
+        "tags": 610,
+        "dna_count": 2761,
+        "rna_count": 7904,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#220",
+        "mavedb_literal_hgvs": "n.92=",
+        "original_table_line": 326,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227113,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.92del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "cb262acd9a3a0332d9effc0cb0a34bb25b4172a6b551f3c16062aed70e450259",
+        "score": "1.05",
+        "pvalue_original": "0.288550387851028",
+        "pvalue_mavedb": "0.28855",
+        "tags": 2,
+        "dna_count": 5,
+        "rna_count": 30,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#226",
+        "mavedb_literal_hgvs": "n.93=",
+        "original_table_line": 322,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227114,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.93del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "cb262acd9a3a0332d9effc0cb0a34bb25b4172a6b551f3c16062aed70e450259",
+        "score": "0.05",
+        "pvalue_original": "0.0973455248293453",
+        "pvalue_mavedb": "0.09735",
+        "tags": 1799,
+        "dna_count": 8530,
+        "rna_count": 24968,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#237",
+        "mavedb_literal_hgvs": "n.96=",
+        "original_table_line": 313,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227117,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.96del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "328824b25001a48286bc9ed5bfd67a0dcb1ab343c3b4707bac11f0f34106646d",
+        "score": "-0.07",
+        "pvalue_original": "0.958842211843334",
+        "pvalue_mavedb": "0.95884",
+        "tags": 1,
+        "dna_count": 2,
+        "rna_count": 4,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#241",
+        "mavedb_literal_hgvs": "n.97=",
+        "original_table_line": 309,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227118,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.97del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "328824b25001a48286bc9ed5bfd67a0dcb1ab343c3b4707bac11f0f34106646d",
+        "score": "0.19",
+        "pvalue_original": "0.113975444932594",
+        "pvalue_mavedb": "0.11398",
+        "tags": 132,
+        "dna_count": 500,
+        "rna_count": 1773,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#249",
+        "mavedb_literal_hgvs": "n.99=",
+        "original_table_line": 301,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227120,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.99del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "d20747dc7fd6ea1ebf3a3a5421d8fee246d2e4772754cd2378c427f387595bb6",
+        "score": "0.16",
+        "pvalue_original": "0.875530413633295",
+        "pvalue_mavedb": "0.8755299999999999",
+        "tags": 2,
+        "dna_count": 5,
+        "rna_count": 21,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#257",
+        "mavedb_literal_hgvs": "n.11=",
+        "original_table_line": 590,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227032,
+        "original_reference": "T",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.11del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "5bd8dc2530165f193d487ab30d45e95538266831132b9f5178a43d805698f66f",
+        "score": "0.03",
+        "pvalue_original": "0.114661181682899",
+        "pvalue_mavedb": "0.11465999999999997",
+        "tags": 4977,
+        "dna_count": 22824,
+        "rna_count": 66136,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#260",
+        "mavedb_literal_hgvs": "n.102=",
+        "original_table_line": 292,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227123,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.102del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "18a4633c631bd639f8d1de377e37b538d66dc9f09b2dad335e431545bf1d364a",
+        "score": "-0.01",
+        "pvalue_original": "0.89211469249779",
+        "pvalue_mavedb": "0.8921100000000001",
+        "tags": 694,
+        "dna_count": 3184,
+        "rna_count": 8780,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#274",
+        "mavedb_literal_hgvs": "n.106=",
+        "original_table_line": 279,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227127,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.106del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "68a2afbd30d66785c3e6712720944c0232c5fb4ca41801a466e6d72f831ccd9f",
+        "score": "-0.07",
+        "pvalue_original": "0.274371100763055",
+        "pvalue_mavedb": "0.27437",
+        "tags": 550,
+        "dna_count": 2485,
+        "rna_count": 6550,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#295",
+        "mavedb_literal_hgvs": "n.112=",
+        "original_table_line": 260,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227133,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.112del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "8442db69f77efccc01ad544eab4f86a0a414e1f3ea877985e2a31ad9e23d484c",
+        "score": "0.09",
+        "pvalue_original": "0.384757829250609",
+        "pvalue_mavedb": "0.38476",
+        "tags": 179,
+        "dna_count": 816,
+        "rna_count": 2567,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#301",
+        "mavedb_literal_hgvs": "n.12=",
+        "original_table_line": 586,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227033,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.12del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "1c90f80990662961a0811c3289706c574f8c7119fc90cf31f56abfc6e7289f56",
+        "score": "0.16",
+        "pvalue_original": "0.762003502620467",
+        "pvalue_mavedb": "0.762",
+        "tags": 7,
+        "dna_count": 22,
+        "rna_count": 66,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#303",
+        "mavedb_literal_hgvs": "n.114=",
+        "original_table_line": 252,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227135,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.114del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "1b47528b54477bc4e19ad0ea593a1c8c7560848154662fb78039255b7afbb17b",
+        "score": "-0.31",
+        "pvalue_original": "0.704686108623497",
+        "pvalue_mavedb": "0.7046899999999999",
+        "tags": 3,
+        "dna_count": 5,
+        "rna_count": 20,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#310",
+        "mavedb_literal_hgvs": "n.116=",
+        "original_table_line": 245,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227137,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.116del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "1b47528b54477bc4e19ad0ea593a1c8c7560848154662fb78039255b7afbb17b",
+        "score": "-0.08",
+        "pvalue_original": "0.0189321596186673",
+        "pvalue_mavedb": "0.01893",
+        "tags": 1844,
+        "dna_count": 8070,
+        "rna_count": 22460,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#339",
+        "mavedb_literal_hgvs": "n.124=",
+        "original_table_line": 220,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227145,
+        "original_reference": "T",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.124del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "089aefe2457b378228c5615eee1283e79f917a413383bbc245d9206f505821ca",
+        "score": "-0.28",
+        "pvalue_original": "0.00411150176227053",
+        "pvalue_mavedb": "0.00411",
+        "tags": 211,
+        "dna_count": 925,
+        "rna_count": 2129,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#347",
+        "mavedb_literal_hgvs": "n.126=",
+        "original_table_line": 213,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227147,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.126del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "ae31164c976bf7aa137d2320985e2b6891a2ed03c6ee9dbf30feb25d85cb1d13",
+        "score": "-0.24",
+        "pvalue_original": "0.00499005854744211",
+        "pvalue_mavedb": "0.00499",
+        "tags": 261,
+        "dna_count": 1123,
+        "rna_count": 2628,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#354",
+        "mavedb_literal_hgvs": "n.128=",
+        "original_table_line": 207,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227149,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.128del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "b7fea12b69442b4a7873cf607a89952d5787efade3d5c050878914a032f4564c",
+        "score": "-0.38",
+        "pvalue_original": "4.18211869840899e-08",
+        "pvalue_mavedb": "0.0",
+        "tags": 414,
+        "dna_count": 1633,
+        "rna_count": 3951,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#362",
+        "mavedb_literal_hgvs": "n.130=",
+        "original_table_line": 200,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227151,
+        "original_reference": "A",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.130del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "6523893f37ddbb26024c09242f2625b4ccfdb9cd19b3cc803df93882553c8691",
+        "score": "-0.27",
+        "pvalue_original": "0.000612319518249705",
+        "pvalue_mavedb": "0.00061",
+        "tags": 311,
+        "dna_count": 1312,
+        "rna_count": 3199,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#373",
+        "mavedb_literal_hgvs": "n.133=",
+        "original_table_line": 190,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227154,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.133del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "f849c836d4c90524c9b0648ed74c0b5ce353aea922754c2e181f3c542caf9d1c",
+        "score": "-0.28",
+        "pvalue_original": "0.000133918332400727",
+        "pvalue_mavedb": "0.00013000000000000002",
+        "tags": 358,
+        "dna_count": 1537,
+        "rna_count": 3532,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#387",
+        "mavedb_literal_hgvs": "n.137=",
+        "original_table_line": 176,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227158,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.137del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "928559a1b0d2135084d729ce3af9886ad95e01602c0170a48d13cd369938f3c8",
+        "score": "-0.86",
+        "pvalue_original": "0.218149506421752",
+        "pvalue_mavedb": "0.21815",
+        "tags": 4,
+        "dna_count": 7,
+        "rna_count": 27,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#392",
+        "mavedb_literal_hgvs": "n.138=",
+        "original_table_line": 172,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227159,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.138del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "928559a1b0d2135084d729ce3af9886ad95e01602c0170a48d13cd369938f3c8",
+        "score": "-0.22",
+        "pvalue_original": "0.00424898065927267",
+        "pvalue_mavedb": "0.00425",
+        "tags": 336,
+        "dna_count": 1784,
+        "rna_count": 3952,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#399",
+        "mavedb_literal_hgvs": "n.140=",
+        "original_table_line": 165,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227161,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.140del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "8298193bb98e3e1ef36a7aa53970c8997275c7ab28246b736a6aa442f57cfa92",
+        "score": "-0.53",
+        "pvalue_original": "0.59430010230031",
+        "pvalue_mavedb": "0.5943",
+        "tags": 2,
+        "dna_count": 5,
+        "rna_count": 12,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#410",
+        "mavedb_literal_hgvs": "n.143=",
+        "original_table_line": 155,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227164,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.143del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "fca5b0d6f6105686ddcd8381b1e6a79bba4a1779ad9d1b77dfbd819616f803eb",
+        "score": "-0.31",
+        "pvalue_original": "1.98667569244037e-15",
+        "pvalue_mavedb": "0.0",
+        "tags": 1272,
+        "dna_count": 5748,
+        "rna_count": 12732,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#412",
+        "mavedb_literal_hgvs": "n.15=",
+        "original_table_line": 576,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227036,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.15del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "519639b81630c8dd24b997ddd97deaf60763e3ab146b47fc260b2723c9bd0021",
+        "score": "-0.00",
+        "pvalue_original": "0.9771360154512",
+        "pvalue_mavedb": "0.97714",
+        "tags": 3330,
+        "dna_count": 14559,
+        "rna_count": 41395,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#415",
+        "mavedb_literal_hgvs": "n.144=",
+        "original_table_line": 152,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227165,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.144del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "a24ca203c5baaa47fbbf3f4afaad3c1f4639cb4589ad9ad783028080208b45c0",
+        "score": "-0.18",
+        "pvalue_original": "0.853693013926224",
+        "pvalue_mavedb": "0.85369",
+        "tags": 2,
+        "dna_count": 5,
+        "rna_count": 11,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#419",
+        "mavedb_literal_hgvs": "n.145=",
+        "original_table_line": 147,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227166,
+        "original_reference": "T",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.145del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "847e451295b94b896fa645a6f1a0fd190bd3235fe5d5b742caaa7b5b68a10882",
+        "score": "0.19",
+        "pvalue_original": "0.81130278019716",
+        "pvalue_mavedb": "0.8113",
+        "tags": 3,
+        "dna_count": 3,
+        "rna_count": 26,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#427",
+        "mavedb_literal_hgvs": "n.147=",
+        "original_table_line": 141,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227168,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.147del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "8f94b88bbc60d18fe69ec4eb878bda6136213843da9f91696477b7967f66c8df",
+        "score": "-0.04",
+        "pvalue_original": "0.370638420069726",
+        "pvalue_mavedb": "0.37064",
+        "tags": 1237,
+        "dna_count": 5297,
+        "rna_count": 14938,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#431",
+        "mavedb_literal_hgvs": "n.148=",
+        "original_table_line": 137,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227169,
+        "original_reference": "A",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.148del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "294857dae1e97f1bbd17f0d14edd6c589809dba1b7b974cf911b66cfac1ad384",
+        "score": "1.10",
+        "pvalue_original": "0.433426248669795",
+        "pvalue_mavedb": "0.43343",
+        "tags": 1,
+        "dna_count": 1,
+        "rna_count": 9,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#447",
+        "mavedb_literal_hgvs": "n.152=",
+        "original_table_line": 123,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227173,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.152del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "10f4a246fe041f80569d0de273febbbf70ff5829f84f11bdd57cea7f8bbb9c8d",
+        "score": "1.12",
+        "pvalue_original": "0.168428669762422",
+        "pvalue_mavedb": "0.16843",
+        "tags": 3,
+        "dna_count": 3,
+        "rna_count": 31,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#451",
+        "mavedb_literal_hgvs": "n.153=",
+        "original_table_line": 119,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227174,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.153del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "10f4a246fe041f80569d0de273febbbf70ff5829f84f11bdd57cea7f8bbb9c8d",
+        "score": "-0.49",
+        "pvalue_original": "1.42755794330181e-09",
+        "pvalue_mavedb": "0.0",
+        "tags": 304,
+        "dna_count": 1528,
+        "rna_count": 2752,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#465",
+        "mavedb_literal_hgvs": "n.157=",
+        "original_table_line": 106,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227178,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.157del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "a93bfd950d1b0534a1a2359f044661a92bc57edf5f30b208425ff8fd6ce185d8",
+        "score": "-1.45",
+        "pvalue_original": "0.0726840859868279",
+        "pvalue_mavedb": "0.07268",
+        "tags": 3,
+        "dna_count": 5,
+        "rna_count": 7,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#470",
+        "mavedb_literal_hgvs": "n.158=",
+        "original_table_line": 102,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227179,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.158del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "a93bfd950d1b0534a1a2359f044661a92bc57edf5f30b208425ff8fd6ce185d8",
+        "score": "0.04",
+        "pvalue_original": "0.792774829193904",
+        "pvalue_mavedb": "0.79277",
+        "tags": 98,
+        "dna_count": 446,
+        "rna_count": 1187,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#487",
+        "mavedb_literal_hgvs": "n.163=",
+        "original_table_line": 87,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227184,
+        "original_reference": "A",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.163del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "a6d9970263d0a6eaa21e2c3d23a3e993c5d61f8da9726ff4b1f61e03cb9b9591",
+        "score": "0.02",
+        "pvalue_original": "0.722711635932622",
+        "pvalue_mavedb": "0.7227100000000001",
+        "tags": 1034,
+        "dna_count": 4226,
+        "rna_count": 12804,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#490",
+        "mavedb_literal_hgvs": "n.17=",
+        "original_table_line": 569,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227038,
+        "original_reference": "T",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.17del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "a9a1d741d2bcc2a38a7e6126787528dbaacf9a332bfc8d690e8d7182ad8ed085",
+        "score": "-0.06",
+        "pvalue_original": "0.0681133049267238",
+        "pvalue_mavedb": "0.06811",
+        "tags": 2065,
+        "dna_count": 9084,
+        "rna_count": 25543,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#498",
+        "mavedb_literal_hgvs": "n.166=",
+        "original_table_line": 76,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227187,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.166del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "232cd17aa3f0732b3a503e07dff98b9a8d8d03ad0f0a82239d663e832ee0aa13",
+        "score": "-0.72",
+        "pvalue_original": "0.375186680357303",
+        "pvalue_mavedb": "0.37519",
+        "tags": 3,
+        "dna_count": 13,
+        "rna_count": 25,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#506",
+        "mavedb_literal_hgvs": "n.168=",
+        "original_table_line": 69,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227189,
+        "original_reference": "T",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.168del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "bbaf7973bdad56455d9fc1b06af2f0677f7c08f3f9df7b0da567c4151b7604bd",
+        "score": "0.72",
+        "pvalue_original": "0.609207055325128",
+        "pvalue_mavedb": "0.60921",
+        "tags": 1,
+        "dna_count": 2,
+        "rna_count": 11,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#514",
+        "mavedb_literal_hgvs": "n.170=",
+        "original_table_line": 63,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227191,
+        "original_reference": "A",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.170del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "4de84309e0e75193ae08e238818c6f4989674790ae15e850db4392492ee8ff5c",
+        "score": "-0.95",
+        "pvalue_original": "0.242418749489175",
+        "pvalue_mavedb": "0.24242",
+        "tags": 3,
+        "dna_count": 18,
+        "rna_count": 18,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#525",
+        "mavedb_literal_hgvs": "n.173=",
+        "original_table_line": 52,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227194,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.173del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "0cdb895cc5c2d43083ec24ddb2f53bf20b9316e95c9bd3d778fe45537896c46b",
+        "score": "-0.42",
+        "pvalue_original": "0.674770413298729",
+        "pvalue_mavedb": "0.67477",
+        "tags": 2,
+        "dna_count": 7,
+        "rna_count": 45,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#532",
+        "mavedb_literal_hgvs": "n.175=",
+        "original_table_line": 46,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227196,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.175del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "6f78120ee4ac4c524b4dde1e76767d27a1d97efa7fe6a2f6eec7fc3343df6342",
+        "score": "-0.02",
+        "pvalue_original": "0.630284109371126",
+        "pvalue_mavedb": "0.6302800000000001",
+        "tags": 1054,
+        "dna_count": 4742,
+        "rna_count": 13286,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#543",
+        "mavedb_literal_hgvs": "n.178=",
+        "original_table_line": 36,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227199,
+        "original_reference": "A",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.178del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "77004165e2e26dd761ffcee696fe4c95a20e36e731d4dc393cd07c9174b6bc79",
+        "score": "0.21",
+        "pvalue_original": "0.829102487150256",
+        "pvalue_mavedb": "0.8291",
+        "tags": 2,
+        "dna_count": 8,
+        "rna_count": 20,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#551",
+        "mavedb_literal_hgvs": "n.180=",
+        "original_table_line": 29,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227201,
+        "original_reference": "C",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.180del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "1ed1b4ad37419197f8846d57fd59186dcacf22e3894848fc85be493de077fdc2",
+        "score": "0.21",
+        "pvalue_original": "1.93500960136525e-21",
+        "pvalue_mavedb": "0.0",
+        "tags": 4071,
+        "dna_count": 17965,
+        "rna_count": 60646,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#555",
+        "mavedb_literal_hgvs": "n.181=",
+        "original_table_line": 24,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227202,
+        "original_reference": "T",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.181del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "a51a7906af914450560b11d799e89714495331dcb01097db895e2d0cf718052b",
+        "score": "0.25",
+        "pvalue_original": "0.802441668270546",
+        "pvalue_mavedb": "0.8024399999999999",
+        "tags": 2,
+        "dna_count": 4,
+        "rna_count": 17,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#561",
+        "mavedb_literal_hgvs": "n.182=",
+        "original_table_line": 20,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227203,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.182del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "70904536ddc7b5bfd04dd3085ff38d0d0f6eea2af03910b52afeaa42d9c56798",
+        "score": "0.97",
+        "pvalue_original": "0.491130760733851",
+        "pvalue_mavedb": "0.49113",
+        "tags": 1,
+        "dna_count": 15,
+        "rna_count": 33,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#575",
+        "mavedb_literal_hgvs": "n.186=",
+        "original_table_line": 7,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227207,
+        "original_reference": "T",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.186del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "4e984a491449a6695019ed43cc20f9a61887d56f306259df447e2722c9502e5b",
+        "score": "-0.43",
+        "pvalue_original": "0.758321652102",
+        "pvalue_mavedb": "0.75832",
+        "tags": 1,
+        "dna_count": 1,
+        "rna_count": 4,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#580",
+        "mavedb_literal_hgvs": "n.187=",
+        "original_table_line": 3,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227208,
+        "original_reference": "T",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.187del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "4e984a491449a6695019ed43cc20f9a61887d56f306259df447e2722c9502e5b",
+        "score": "0.65",
+        "pvalue_original": "0.081279672493205",
+        "pvalue_mavedb": "0.08127999999999999",
+        "tags": 14,
+        "dna_count": 185,
+        "rna_count": 379,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#605",
+        "mavedb_literal_hgvs": "n.26=",
+        "original_table_line": 542,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227047,
+        "original_reference": "A",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.26del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "875c3a0097b38ff220828b735a12adfef77c9e3dcdc9d845643f1f200c7ef0ff",
+        "score": "-0.25",
+        "pvalue_original": "0.105178154450793",
+        "pvalue_mavedb": "0.10518",
+        "tags": 84,
+        "dna_count": 333,
+        "rna_count": 986,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      },
+      {
+        "mavedb_accession": "urn:mavedb:00000018-a-1#622",
+        "mavedb_literal_hgvs": "n.31=",
+        "original_table_line": 525,
+        "original_chromosome": "11",
+        "original_position_one_based": 5227052,
+        "original_reference": "G",
+        "original_alternate": "-",
+        "source_anchored_deletion_description": "n.31del",
+        "normalization_status": "source-anchored, not full-reference HGVS 3-prime normalized",
+        "altered_target_sha256": "19955c1ba3dbde157f81d07860bb3adb7d79f3e9dbe4b2e6bd20b19ea4a21be7",
+        "score": "0.65",
+        "pvalue_original": "0.515376870212882",
+        "pvalue_mavedb": "0.5153800000000001",
+        "tags": 2,
+        "dna_count": 5,
+        "rna_count": 35,
+        "matched_fields": [
+          "genomic_position",
+          "original_allele",
+          "score",
+          "unique_tags",
+          "dna_sequences",
+          "rna_sequences",
+          "rounded_pvalue"
+        ]
+      }
+    ]
+  },
+  "measurement_cautions": [
+    "The source library used error-prone-PCR multi-mutant constructs. Coefficients are fitted additive effects, not every allele isolated in one clone.",
+    "Three transfections share a constructed library; barcode counts are not independent biological replications.",
+    "The primary paper explicitly warns that coefficient p-values are inflated by tag-independence assumptions, correlated counts and unmodeled epistasis.",
+    "The original raw table retains27 deletion coefficients with fewer than10 tags. The author's visualization filters minimum tag support at display/analysis time; retention is not proof the published downstream filter was violated.",
+    "All561 substitution rows have at least10 tags, so the declared substitution-only evaluation is unaffected by the low-tag deletion rows.",
+    "Database literal p=0 values are rounded, not true mathematical zeros or infinite evidence.",
+    "The62 source deletions yield53 distinct altered187-nt target sequences. Equivalent rows require grouping and provenance-aware resolution before future deletion modeling.",
+    "Counts and sequence opportunity may be predictors of estimation noise; held-out sequence positions still share library-wide regression and measurement construction."
+  ],
+  "clinical_ancestry": {
+    "scope": "the two selected ClinVar SNVs overlapping the reporter fragment",
+    "retrieval_state": "live XML record versions match the frozen ESummary versions",
+    "records": [
+      {
+        "accession": "VCV004910425.1",
+        "variation_name": "NM_000518.5(HBB):c.-43C>T",
+        "pubmed_ids_explicitly_cited": [
+          "25741868"
+        ],
+        "kircher_2019_pmid_explicitly_cited": false
+      },
+      {
+        "accession": "VCV003051702.2",
+        "variation_name": "NC_000011.10:g.5227091C>T",
+        "pubmed_ids_explicitly_cited": [],
+        "kircher_2019_pmid_explicitly_cited": false
+      }
+    ],
+    "conclusion": "No explicit Kircher2019 citation was found in these XML records. Absence of a citation does not establish independent data, cohorts, organizations, or uncited evidence ancestry."
+  },
+  "evaluation_protocol_audit": {
+    "protocol": "experiments/regulatory-prediction-v1.json",
+    "protocol_sha256": "c8e97fabef2afe8ccaa5a01a7ef7bb952f9c9f15857e5c540af112a66e78cb58",
+    "role": "Adversarial interpretation review after protocol freeze, without changing the fixed modeling plan.",
+    "checks": [
+      {
+        "topic": "feature-support leakage",
+        "assessment": "Radius10 sequence supports are disjoint at center distance>20. Grouping alleles by position and guarded contiguous folds addresses direct feature overlap, not source-estimator covariance or biological dependence."
+      },
+      {
+        "topic": "jointly estimated assay labels",
+        "assessment": "HBB coefficients were jointly fitted from multi-mutant constructs before downstream cross-validation. Disjoint sequence windows do not create independent coefficient-estimation data; unknown covariance remains."
+      },
+      {
+        "topic": "locus and context transport",
+        "assessment": "Nine leave-element-out targets are stronger than random variants but still one selected study. Cell-line and construct differences are real transport conditions, not interchangeable independent human promoters."
+      },
+      {
+        "topic": "measurement support and source formatting",
+        "assessment": "Minimum10-tag QC is prespecified, not selected to improve performance. All561HBB substitutions meet it. Do not derive significance labels from rounded MaveDB p=0 or interpret low-support raw deletion conflicts as biological noise floors."
+      },
+      {
+        "topic": "context-blind bounds",
+        "assessment": "Finite equal-input observed-label bounds are algebraic statements about the measured source coefficients. They mix technical variation with possible biology and do not identify either cause or latent error distribution."
+      },
+      {
+        "topic": "resampling and rotations",
+        "assessment": "Nine-element and position-block resampling conditions on overlapping fitted OOF predictions. Chemistry-stratified rotations break some within-position and library dependence. Retain their declared descriptive/falsification status, not calibrated biological p-values or population confidence intervals."
+      },
+      {
+        "topic": "outcome exposure",
+        "assessment": "Forensic matching necessarily read the already exposed HBB coefficients. No new-promoter outcome table was inspected by this analysis, and no model, threshold, motif or split was selected from forensic matches."
+      }
+    ]
+  },
+  "novelty_check": {
+    "status": "related_legacy_discrepancy_already_publicly_acknowledged",
+    "prior_public_issue": {
+      "url": "https://github.com/Open-Athena/VEP-bench/issues/32",
+      "created_at": "2026-09-02T21:24:16Z",
+      "finding": "The issue explicitly warns that a legacy MaveDB F9 source deletion appears as a target-equality expression and recommends source-crosswalk validation."
+    },
+    "additional_related_issue": "https://github.com/Open-Athena/VEP-bench/issues/62",
+    "bounded_literature_query": "\"MaveDB\" AND \"HBB\" AND (\"deletion\" OR \"equality\" OR \"correction\")",
+    "bounded_literature_hit_count": 2,
+    "interpretation": "This is a reproduced source-quality finding and HBB-specific reconciliation. A bounded search is not proof of novelty; no globally novel discrepancy is claimed."
+  },
+  "reuse": {
+    "mavedb_score_set": "CC0 1.0 as retained in the frozen score-set metadata",
+    "primary_article": "CC BY4.0; Kircher et al.2019, DOI10.1038/s41467-019-11526-w, PMID31395865",
+    "original_osf_table": "Public author deposit with the producer's historical data-use statement. No separate OSF Creative Commons grant was established; do not relabel it CC0.",
+    "retained_author_source_code_and_documentation": "GPL-3.0 repository snapshot; license retained in author-GPL-3.0-LICENSE. It is reference evidence, not incorporated into Helix's MIT implementation."
+  }
+}

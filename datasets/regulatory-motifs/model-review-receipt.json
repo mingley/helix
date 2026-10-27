@@ -1,0 +1,340 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-10-27T07:04:49.174936+00:00",
+  "scope": "Read-only review of frozen run summaries; no feature/model/protocol changes or new fitting.",
+  "source_receipts": [
+    {
+      "name": "helix-regulatory-rust-v1-constant-safe.json",
+      "reviewed_path": "/tmp/helix-regulatory-rust-v1-constant-safe.json",
+      "sha256": "73f3b23a5557cc348fcf8cdef8e8a643405c7a07a1b9ff407a21da7c12b1d24a",
+      "size_bytes": 123022982
+    },
+    {
+      "name": "replication.json",
+      "reviewed_path": "/tmp/helix-independent-regulatory-v1-20261027/replication.json",
+      "sha256": "1f4ba05b951f778e64798fcd1728efe93b2369267f1e9c112a1b70cd6ad0a739",
+      "size_bytes": 6810910
+    }
+  ],
+  "protocol_sha256": "c8e97fabef2afe8ccaa5a01a7ef7bb952f9c9f15857e5c540af112a66e78cb58",
+  "input_records_sha256": "fa6a0c76a2c79b9ad78eb583e4bd7bad74ef7ba8bb37f52de6a06e7ffabee9b2",
+  "motif_manifest_sha256": "2be48efb0bc084f29023a2ef13027195e8316ffdd86b8a1031e6fafe752b8fa8",
+  "macro_position_mse": {
+    "hbb_guarded_position_cv": {
+      "mean": 0.02193388576613813,
+      "chemistry": 0.02268307246173562,
+      "coordinate": 0.026119801221622507,
+      "delta3mer": 0.02502722599827286,
+      "motif": 0.02499656939424367,
+      "full": 0.029609654049114635
+    },
+    "primary_leave_element_out": {
+      "mean": 0.11639218660932493,
+      "chemistry": 0.11689921010172477,
+      "coordinate": 0.11652876324891474,
+      "delta3mer": 0.1183708973058549,
+      "motif": 0.11682948733115302,
+      "full": 0.1179888746685814
+    },
+    "hbb_to_external_transfer": {
+      "mean": 0.11672352208473748,
+      "chemistry": 0.11712480035712973,
+      "coordinate": 0.11557964489726145,
+      "delta3mer": 0.11853220496263642,
+      "motif": 0.11693560354604265,
+      "full": 0.11700972289724483
+    },
+    "row_random_diagnostic": {
+      "mean": 0.021462133212199773,
+      "chemistry": 0.021725836460853746,
+      "coordinate": 0.020792209873482844,
+      "delta3mer": 0.020941712364387945,
+      "motif": 0.021855342783225224,
+      "full": 0.020436205094339348
+    }
+  },
+  "macro_mse_replication_checks": [
+    {
+      "family": "hbb_guarded_position_cv",
+      "model": "mean",
+      "absolute_macro_mse_difference": 3.469446951953614e-18
+    },
+    {
+      "family": "hbb_guarded_position_cv",
+      "model": "chemistry",
+      "absolute_macro_mse_difference": 0.0
+    },
+    {
+      "family": "hbb_guarded_position_cv",
+      "model": "coordinate",
+      "absolute_macro_mse_difference": 1.3877787807814457e-17
+    },
+    {
+      "family": "hbb_guarded_position_cv",
+      "model": "delta3mer",
+      "absolute_macro_mse_difference": 1.0408340855860843e-17
+    },
+    {
+      "family": "hbb_guarded_position_cv",
+      "model": "motif",
+      "absolute_macro_mse_difference": 6.938893903907228e-18
+    },
+    {
+      "family": "hbb_guarded_position_cv",
+      "model": "full",
+      "absolute_macro_mse_difference": 2.7755575615628914e-17
+    },
+    {
+      "family": "primary_leave_element_out",
+      "model": "mean",
+      "absolute_macro_mse_difference": 6.938893903907228e-17
+    },
+    {
+      "family": "primary_leave_element_out",
+      "model": "chemistry",
+      "absolute_macro_mse_difference": 2.7755575615628914e-17
+    },
+    {
+      "family": "primary_leave_element_out",
+      "model": "coordinate",
+      "absolute_macro_mse_difference": 8.326672684688674e-17
+    },
+    {
+      "family": "primary_leave_element_out",
+      "model": "delta3mer",
+      "absolute_macro_mse_difference": 3.0253577421035516e-15
+    },
+    {
+      "family": "primary_leave_element_out",
+      "model": "motif",
+      "absolute_macro_mse_difference": 4.163336342344337e-17
+    },
+    {
+      "family": "primary_leave_element_out",
+      "model": "full",
+      "absolute_macro_mse_difference": 1.8041124150158794e-16
+    },
+    {
+      "family": "hbb_to_external_transfer",
+      "model": "mean",
+      "absolute_macro_mse_difference": 6.938893903907228e-17
+    },
+    {
+      "family": "hbb_to_external_transfer",
+      "model": "chemistry",
+      "absolute_macro_mse_difference": 4.163336342344337e-17
+    },
+    {
+      "family": "hbb_to_external_transfer",
+      "model": "coordinate",
+      "absolute_macro_mse_difference": 1.1102230246251565e-16
+    },
+    {
+      "family": "hbb_to_external_transfer",
+      "model": "delta3mer",
+      "absolute_macro_mse_difference": 2.7755575615628914e-17
+    },
+    {
+      "family": "hbb_to_external_transfer",
+      "model": "motif",
+      "absolute_macro_mse_difference": 2.7755575615628914e-17
+    },
+    {
+      "family": "hbb_to_external_transfer",
+      "model": "full",
+      "absolute_macro_mse_difference": 4.163336342344337e-17
+    },
+    {
+      "family": "row_random_diagnostic",
+      "model": "mean",
+      "absolute_macro_mse_difference": 0.0
+    },
+    {
+      "family": "row_random_diagnostic",
+      "model": "chemistry",
+      "absolute_macro_mse_difference": 3.469446951953614e-18
+    },
+    {
+      "family": "row_random_diagnostic",
+      "model": "coordinate",
+      "absolute_macro_mse_difference": 0.0
+    },
+    {
+      "family": "row_random_diagnostic",
+      "model": "delta3mer",
+      "absolute_macro_mse_difference": 2.7755575615628914e-17
+    },
+    {
+      "family": "row_random_diagnostic",
+      "model": "motif",
+      "absolute_macro_mse_difference": 6.938893903907228e-18
+    },
+    {
+      "family": "row_random_diagnostic",
+      "model": "full",
+      "absolute_macro_mse_difference": 1.3877787807814457e-17
+    }
+  ],
+  "maximum_macro_mse_difference": 3.0253577421035516e-15,
+  "primary_resampling": [
+    {
+      "comparison_id": "delta3mer_vs_chemistry",
+      "observed_mean_loss_improvement": -0.0014716872041301181,
+      "percentile_95_lower": -0.0025341508389131713,
+      "percentile_95_upper": -0.00013159331064929838
+    },
+    {
+      "comparison_id": "motif_vs_chemistry",
+      "observed_mean_loss_improvement": 6.972277057174364e-05,
+      "percentile_95_lower": -0.0005804399377470097,
+      "percentile_95_upper": 0.0006428538564839895
+    },
+    {
+      "comparison_id": "full_vs_coordinate",
+      "observed_mean_loss_improvement": -0.0014601114196666526,
+      "percentile_95_lower": -0.0025372725754037673,
+      "percentile_95_upper": -0.00016468790889672433
+    }
+  ],
+  "hbb_resampling": [
+    {
+      "comparison_id": "delta3mer_vs_chemistry",
+      "observed_mean_loss_improvement": -0.0023441535365372433,
+      "percentile_95_lower": -0.004382480935815078,
+      "percentile_95_upper": 0.00011995384594997182
+    },
+    {
+      "comparison_id": "motif_vs_chemistry",
+      "observed_mean_loss_improvement": -0.0023134969325080516,
+      "percentile_95_lower": -0.003915636905237962,
+      "percentile_95_upper": -0.0007471273180823203
+    },
+    {
+      "comparison_id": "full_vs_coordinate",
+      "observed_mean_loss_improvement": -0.003489852827492115,
+      "percentile_95_lower": -0.005699377385530233,
+      "percentile_95_upper": -0.0007148796380668423
+    }
+  ],
+  "spatial_null_adjusted_tails": {
+    "comparison_ids": [
+      "delta3mer_vs_chemistry",
+      "motif_vs_chemistry",
+      "full_vs_coordinate"
+    ],
+    "guarded_hbb": {
+      "bonferroni_across_both_families": [
+        0.48,
+        1.0,
+        1.0
+      ],
+      "holm_within_family": [
+        0.24,
+        1.0,
+        0.54
+      ],
+      "raw": [
+        0.08,
+        1.0,
+        0.27
+      ]
+    },
+    "interpretation_limit": "Arithmetic multiplicity controls over six planned spatial-null tails; the artificial rotation distribution is not established as calibrated biological inference.",
+    "leave_element_out": {
+      "bonferroni_across_both_families": [
+        1.0,
+        0.06,
+        1.0
+      ],
+      "holm_within_family": [
+        1.0,
+        0.03,
+        1.0
+      ],
+      "raw": [
+        0.98,
+        0.01,
+        0.95
+      ]
+    }
+  },
+  "context_pairs_from_independent_python": [
+    {
+      "left": "urn:mavedb:00000023-a-2",
+      "right": "urn:mavedb:00000023-a-1",
+      "relationship": "library_repeat",
+      "matched_variants": 943,
+      "unmatched_left": 7,
+      "unmatched_right": 2,
+      "mse": 0.03393340402969247,
+      "mae": 0.11289501590668082,
+      "signed_mean_left_minus_right": -0.030965005302226938,
+      "pearson": 0.9726492588277443,
+      "spearman": 0.8647088177885728,
+      "finite_context_blind_mse_lower_bound": 0.008483351007423118
+    },
+    {
+      "left": "urn:mavedb:00000027-b-1",
+      "right": "urn:mavedb:00000027-a-1",
+      "relationship": "48h_vs_24h_context",
+      "matched_variants": 1368,
+      "unmatched_left": 11,
+      "unmatched_right": 1,
+      "mse": 0.05694334795321637,
+      "mae": 0.1639985380116959,
+      "signed_mean_left_minus_right": -0.02490497076023392,
+      "pearson": 0.8820306533252266,
+      "spearman": 0.7655459380069579,
+      "finite_context_blind_mse_lower_bound": 0.014235836988304093
+    },
+    {
+      "left": "urn:mavedb:00000031-b-1",
+      "right": "urn:mavedb:00000031-a-1",
+      "relationship": "GBM_vs_HEK293T_cell_context",
+      "matched_variants": 770,
+      "unmatched_left": 0,
+      "unmatched_right": 0,
+      "mse": 0.10288038961038962,
+      "mae": 0.22463636363636366,
+      "signed_mean_left_minus_right": -0.03744155844155845,
+      "pearson": 0.7590337541650136,
+      "spearman": 0.5926092779710743,
+      "finite_context_blind_mse_lower_bound": 0.025720097402597404
+    },
+    {
+      "left": "urn:mavedb:00000031-c-1",
+      "right": "urn:mavedb:00000031-d-1",
+      "relationship": "GABPA_knockdown_context",
+      "matched_variants": 769,
+      "unmatched_left": 0,
+      "unmatched_right": 0,
+      "mse": 0.03385409622886866,
+      "mae": 0.13087126137841354,
+      "signed_mean_left_minus_right": 0.026215864759427828,
+      "pearson": 0.9036628724961165,
+      "spearman": 0.851982378029125,
+      "finite_context_blind_mse_lower_bound": 0.008463524057217165
+    },
+    {
+      "left": "urn:mavedb:00000031-d-1",
+      "right": "urn:mavedb:00000031-b-1",
+      "relationship": "scrambled_control_context",
+      "matched_variants": 769,
+      "unmatched_left": 0,
+      "unmatched_right": 1,
+      "mse": 0.027762028608582574,
+      "mae": 0.11560468140442133,
+      "signed_mean_left_minus_right": 0.037425227568270485,
+      "pearson": 0.935159869201324,
+      "spearman": 0.8800863706620767,
+      "finite_context_blind_mse_lower_bound": 0.006940507152145644
+    }
+  ],
+  "verification_scope": {
+    "macro_mse": "All24 family/model macroMSE values compared here between provided Rust and independent Python summaries at1e-8 tolerance.",
+    "per_record_predictions": "Verified by coordinating agent; not independently re-fit by this literature reviewer.",
+    "secondary_spearman": "130 discrepancies reported by coordinator remain under investigation at this review; no Spearman claim is used.",
+    "context_values": "Descriptive independent-Python source-estimate comparisons; no causal/latent-noise claim."
+  },
+  "interpretation": "All five nonconstant models are worse than the mean baseline under the primary macroMSE. Dataset-specific negative controlled reanalysis; no new mechanism or global novelty claim."
+}

@@ -1,0 +1,315 @@
+{
+  "schema_version": 1,
+  "motifs": [
+    {
+      "matrix_id": "MA0035.4",
+      "name": "GATA1",
+      "width": 11,
+      "collection": "CORE",
+      "tax_group": "vertebrates",
+      "species": [
+        {
+          "tax_id": 9606,
+          "name": "Homo sapiens"
+        }
+      ],
+      "species_caveat": null,
+      "experimental_type": "ChIP-seq",
+      "uniprot_ids": [
+        "P15976"
+      ],
+      "pubmed_ids": [
+        "23142663"
+      ],
+      "pfm": {
+        "A": [
+          22209.0,
+          17328.0,
+          3953.0,
+          1314.0,
+          49692.0,
+          67550.0,
+          2206.0,
+          2567.0,
+          7397.0,
+          26545.0,
+          22656.0
+        ],
+        "C": [
+          12209.0,
+          14489.0,
+          62419.0,
+          595.0,
+          710.0,
+          1292.0,
+          1238.0,
+          65937.0,
+          3025.0,
+          11186.0,
+          15261.0
+        ],
+        "G": [
+          13955.0,
+          11088.0,
+          2712.0,
+          652.0,
+          856.0,
+          988.0,
+          618.0,
+          1471.0,
+          765.0,
+          14358.0,
+          9325.0
+        ],
+        "T": [
+          23455.0,
+          28923.0,
+          2744.0,
+          69267.0,
+          20570.0,
+          1998.0,
+          67766.0,
+          1853.0,
+          60641.0,
+          19739.0,
+          24586.0
+        ]
+      },
+      "source_file": "MA0035.4.json",
+      "source_url": "https://jaspar.elixir.no/api/v1/matrix/MA0035.4/"
+    },
+    {
+      "matrix_id": "MA0493.3",
+      "name": "KLF1",
+      "width": 8,
+      "collection": "CORE",
+      "tax_group": "vertebrates",
+      "species": [
+        {
+          "tax_id": 9606,
+          "name": "Homo sapiens"
+        }
+      ],
+      "species_caveat": null,
+      "experimental_type": "ChIP-seq",
+      "uniprot_ids": [
+        "Q13351"
+      ],
+      "pubmed_ids": [
+        "7682653"
+      ],
+      "pfm": {
+        "A": [
+          1.0,
+          1.0,
+          1.0,
+          125.0,
+          1.0,
+          1.0,
+          82.0,
+          1.0
+        ],
+        "C": [
+          1.0,
+          1.0,
+          1.0,
+          529.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "G": [
+          998.0,
+          998.0,
+          998.0,
+          1.0,
+          998.0,
+          675.0,
+          896.0,
+          998.0
+        ],
+        "T": [
+          1.0,
+          1.0,
+          1.0,
+          346.0,
+          1.0,
+          324.0,
+          21.0,
+          1.0
+        ]
+      },
+      "source_file": "MA0493.3.json",
+      "source_url": "https://jaspar.elixir.no/api/v1/matrix/MA0493.3/"
+    },
+    {
+      "matrix_id": "MA0060.3",
+      "name": "NFYA",
+      "width": 11,
+      "collection": "CORE",
+      "tax_group": "vertebrates",
+      "species": [
+        {
+          "tax_id": 9606,
+          "name": "Homo sapiens"
+        }
+      ],
+      "species_caveat": null,
+      "experimental_type": "ChIP-seq",
+      "uniprot_ids": [
+        "P23511"
+      ],
+      "pubmed_ids": [
+        "9469818"
+      ],
+      "pfm": {
+        "A": [
+          1897.0,
+          1924.0,
+          23.0,
+          31.0,
+          4683.0,
+          4584.0,
+          37.0,
+          166.0,
+          4088.0,
+          611.0,
+          1855.0
+        ],
+        "C": [
+          757.0,
+          404.0,
+          4657.0,
+          4713.0,
+          29.0,
+          94.0,
+          132.0,
+          4215.0,
+          213.0,
+          1131.0,
+          1369.0
+        ],
+        "G": [
+          1815.0,
+          1858.0,
+          34.0,
+          28.0,
+          17.0,
+          124.0,
+          11.0,
+          319.0,
+          489.0,
+          2713.0,
+          887.0
+        ],
+        "T": [
+          356.0,
+          639.0,
+          111.0,
+          53.0,
+          96.0,
+          23.0,
+          4645.0,
+          125.0,
+          35.0,
+          370.0,
+          714.0
+        ]
+      },
+      "source_file": "MA0060.3.json",
+      "source_url": "https://jaspar.elixir.no/api/v1/matrix/MA0060.3/"
+    },
+    {
+      "matrix_id": "MA0108.3",
+      "name": "TBP",
+      "width": 7,
+      "collection": "CORE",
+      "tax_group": "vertebrates",
+      "species": [],
+      "species_caveat": "JASPAR does not specify a species for this profile; linked human TF protein identity does not establish the matrix training species.",
+      "experimental_type": null,
+      "uniprot_ids": [
+        "P20226"
+      ],
+      "pubmed_ids": [
+        "2329577"
+      ],
+      "pfm": {
+        "A": [
+          16.0,
+          352.0,
+          3.0,
+          354.0,
+          268.0,
+          360.0,
+          222.0
+        ],
+        "C": [
+          46.0,
+          0.0,
+          10.0,
+          0.0,
+          0.0,
+          3.0,
+          2.0
+        ],
+        "G": [
+          18.0,
+          2.0,
+          2.0,
+          5.0,
+          0.0,
+          20.0,
+          44.0
+        ],
+        "T": [
+          309.0,
+          35.0,
+          374.0,
+          30.0,
+          121.0,
+          6.0,
+          121.0
+        ]
+      },
+      "source_file": "MA0108.3.json",
+      "source_url": "https://jaspar.elixir.no/api/v1/matrix/MA0108.3/"
+    }
+  ],
+  "scoring": {
+    "id": "jaspar-overlap-max-delta-v1",
+    "pseudocount_total_per_column": 1.0,
+    "pseudocount_allocation": "background_proportions",
+    "background": {
+      "A": 0.25,
+      "C": 0.25,
+      "G": 0.25,
+      "T": 0.25
+    },
+    "log_base": 2,
+    "probability_formula": "(count[base,column]+0.25)/(sum_base count[base,column]+1.0)",
+    "window_selection": "all complete motif-width windows within the supplied target that overlap the SNV position",
+    "orientations": [
+      "forward",
+      "reverse_complement"
+    ],
+    "comparison": "reference and alternate use exactly the same window-coordinate/orientation candidate set",
+    "features": [
+      "reference_max_log2_odds",
+      "alternate_max_log2_odds",
+      "delta_max_log2_odds"
+    ],
+    "delta_formula": "alternate_max_log2_odds-reference_max_log2_odds",
+    "maxima_note": "The maximizing coordinate/orientation can differ between alleles; retain both argmax locations when reporting a candidate.",
+    "threshold": null,
+    "ambiguous_bases": "reject",
+    "snv_policy": "one unambiguous reference-matching substitution; no indels or multiallelic haplotypes",
+    "edge_policy": "use only complete windows; return an explicit missing feature if no candidate window exists",
+    "units": "bits of motif log-odds similarity, not binding energy, occupancy or expression",
+    "maximum_motif_width": 11,
+    "maximum_context_radius": 10,
+    "strict_disjoint_support_center_guard": 20,
+    "guard_note": "For maximum width11, each SNV feature can use sequence from position-10 through position+10. Strictly disjoint sequence supports require training/test centers more than20bp apart."
+  }
+}

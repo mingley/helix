@@ -22,3 +22,22 @@ jobs:
           key: helix-${{ runner.os }}-${{ hashFiles('Cargo.lock', 'rust-toolchain.toml', 'lean-toolchain') }}
       - run: bash scripts/setup.sh
       - run: bash scripts/check.sh
+  independent-numerical-controls:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      HELIX_TOOLS_DIR: ${{ github.workspace }}/.ci-tools
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: bash scripts/setup_research.sh
+      - name: Independent synthetic controls and exact rank arithmetic
+        shell: bash
+        run: |
+          source scripts/research-env.sh
+          python3 research/independent-regulatory-replication/test_replication.py
+          python3 scripts/analyze_rank_sensitivity.py --self-test
+      # Full empirical reproduction is scripts/check_study.sh. Its known
+      # secondary-rank failures remain exit 2 and are not masked as CI success.

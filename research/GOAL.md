@@ -1,52 +1,81 @@
 # Research objective
 
 Build an inspectable, source-grounded partial model of how human genomic sequence
-produces molecular effects. Extend the model only through reference-validated
-representations, explicit assumptions, quantitative observations and falsifiable
-questions. Genome annotation, logical consistency and clinical classification
-are different kinds of evidence.
+produces molecular effects. Extend it through reference-validated representations,
+explicit assumptions, measured endpoints and falsifiable questions. Annotation,
+logical consistency, clinical classification and molecular measurements remain
+different kinds of evidence.
 
-## Current milestone: understand a complete, bounded HBB example
+## Completed foundation
 
-1. Place HBB in a frozen annotation of the primary human chromosomes, distinguishing
-   genes, transcripts, coding sequence, noncoding annotations and uncovered sequence.
-2. Recover its named DNA → spliced RNA → translated protein chain exactly.
-3. Recompute all local single-base sequence consequences without using ClinVar
-   consequence labels as inputs, and enumerate the complete disclosed SNV universe.
-4. Reconcile existing clinical assertions while exposing missing context,
-   ascertainment bias, review strength, nearby variants and unestablished independence.
-5. Add a separately produced public HBB reporter-expression assay with exact target
-   mapping, measured units, cell context and independently checked reuse terms.
-6. Evaluate the computational parts of five explicit questions and preserve the
-   biological extensions as untested where relevant observations are absent.
-7. Save deterministic machine-readable outputs, a readable synthesis, an interactive
-   locus explorer, source commitments and scoped Lean proofs; run integrity and
-   implementation checks before publishing code.
+The workspace now reconstructs HBB's reference DNA → spliced RNA → translated
+protein chain, enumerates a bounded SNV universe, audits public clinical
+assertions, maps reporter-assay sequences and places the locus in a frozen
+primary-chromosome gene atlas. The mechanism map and five explicit questions are
+documented in [the HBB synthesis](hbb-mechanisms.md).
 
-This milestone is a reference mechanism map and measured-evidence integration,
-not reverse engineering of the entire human genome or a new biological discovery.
-The reporter assay tests a fragment in a named cellular context; it does not
-establish endogenous regulation, organism physiology or clinical outcomes.
+These are computational consistency checks and evidence integration. They do not
+establish the downstream effect of every variant or a complete model of the
+human genome.
 
-## Research decisions
+## Current result: the frozen regulatory study is negative
 
-- The original 54 ClinVar records, including the former heldout partition, have
-  been explored. They are development evidence now, not an untouched test set.
-- The prior 96% versus 84% clinical result does not establish superiority
-  (five discordant pairs, exact paired p = 0.375 under unestablished assumptions).
-- Prespecified reference and assay-mapping checks can fail. Do not change
-  expected alleles, target orientation, source hashes or biology to make them pass.
-- Reporter data are not converted into clinical pathogenicity labels. Culture
-  replicates from one study are not independent scientific replication.
-- An unmodeled region, synonymous change, intact canonical splice motif or absent
-  clinical record does not imply lack of biological function.
+The [study report](regulatory-study.md) tests six fixed models across nine
+held-out promoter elements. None of the five nonconstant models beats the
+training-mean baseline on primary macro position MSE. HBB's small row-random
+full-model advantage reverses under the whole-position, 20-base-guarded test.
+No model or feature was selected to replace those negative results.
 
-## Following milestone
+Source forensics reconcile all 62 HBB database equality records to original
+deletions. They produce 53 edited identities before QC, but predefined support
+filtering leaves 35 rows and 35 identities. The apparent raw duplicate-label
+constraint is not a biological noise floor.
 
-Freeze an independent functional-prediction task before fitting a richer model:
-define the endpoint, relevant cellular context, genomic/experimental leakage
-groups, comparison methods, missingness policy and uncertainties. Validate
-sequence-to-assay mapping, then test whether the extra mechanistic features
-improve predictions on genuinely withheld units. Expand to additional genes and
-regulatory programs through the same contracts rather than claiming whole-genome
-understanding from one locus.
+Independent implementations reproduce 131,112 predictions and the primary
+losses, fits and controls. The complete frozen comparison still fails:
+26 of 240 exact-Spearman checks disagree. A separately specified post-hoc
+sensitivity analysis matches all metric pairs at every declared prediction
+grid; it changes the rank estimand and is not a retroactive v1 pass.
+See the [numerical review](rank-sensitivity-review.md).
+
+The [novelty assessment](regulatory-novelty-review.md) distinguishes established
+motif/context biology and known source-problem classes from this analysis's
+specific quantification. No new biological mechanism or global-first claim is
+established.
+
+## Next falsifiable goal: predict across experimentally defined contexts
+
+Test whether adding explicitly measured context improves regulatory-effect
+prediction on independent data beyond context-appropriate mean and sequence-only
+baselines. Keep the negative v1 study unchanged.
+
+Before fitting the next round:
+
+1. Freeze a new endpoint, source selection, licensing, sequence mapping and
+   experimental-unit split. Prefer independent studies and matched same-element
+   measurements over treating nearby alleles or library records as independent.
+2. State which context is observed: cell state, construct, time, perturbation
+   and available factor measurements. Do not infer a reporter RNA sequence from
+   native annotation alone.
+3. Fix features, models, baselines, inclusion/QC, uncertainty and reporting
+   precision before inspecting evaluation outcomes. A finite rank grid, if used,
+   needs a scientific justification and a separately declared estimand.
+4. Evaluate the predefined primary error on withheld experimental units and
+   retain all comparisons, exclusions and failed controls. A claimed gain must
+   survive the declared baseline and uncertainty checks, not one favorable split.
+5. Use independent endogenous or other discriminating observations to test any
+   proposed biological mechanism. Reporter coefficients alone do not establish
+   clinical outcomes or native-chromatin function.
+
+## Standing research rules
+
+- The original ClinVar partition and HBB reporter outcomes are explored
+  development evidence, not untouched validation.
+- Preserve raw sources and failed attempts. Do not change alleles, orientations,
+  hashes, QC or metric definitions to make a result pass.
+- Software agreement, same-study culture replication and independent biological
+  replication are distinct.
+- A synonymous variant, intact core splice motif, unmodeled region or absent
+  record does not imply no biological function.
+- Expand across genes and regulatory programs through these contracts; the
+  amount of annotation loaded is not the amount of biology explained.

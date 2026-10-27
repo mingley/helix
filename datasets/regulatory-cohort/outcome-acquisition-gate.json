@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "c8e97fabef2afe8ccaa5a01a7ef7bb952f9c9f15857e5c540af112a66e78cb58",
+  "metadata_manifest_sha256": "ecae659e6f581976894d8cc725f14a7b89bded2459a2ce1c213406ed7bf9cdd2",
+  "frozen_before_new_outcome_acquisition": true,
+  "gate_written_at": "2026-10-27T06:35:46.601714+00:00",
+  "assay_roles": {
+    "urn:mavedb:00000015-a-1": "primary",
+    "urn:mavedb:00000016-a-1": "primary",
+    "urn:mavedb:00000017-a-1": "primary",
+    "urn:mavedb:00000018-a-1": "previously_exposed_reference",
+    "urn:mavedb:00000019-a-1": "primary",
+    "urn:mavedb:00000020-a-1": "primary",
+    "urn:mavedb:00000023-a-1": "primary",
+    "urn:mavedb:00000023-a-2": "validation_only",
+    "urn:mavedb:00000024-a-1": "primary",
+    "urn:mavedb:00000027-a-1": "primary",
+    "urn:mavedb:00000027-b-1": "validation_only",
+    "urn:mavedb:00000031-a-1": "primary",
+    "urn:mavedb:00000031-b-1": "validation_only",
+    "urn:mavedb:00000031-c-1": "validation_only",
+    "urn:mavedb:00000031-d-1": "validation_only"
+  }
+}

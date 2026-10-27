@@ -17,6 +17,7 @@ serde_json = { version = "1.0.145", features = ["float_roundtrip"] }
 sha2 = "0.10.9"
 noodles-vcf = "0.81.0"
 tempfile = "3.23.0"
+flate2 = { version = "1.1.10", default-features = false, features = ["zlib-rs"] }
 genome-types = { path = "crates/genome-types" }
 genome-data = { path = "crates/genome-data" }
 genome-knowledge = { path = "crates/genome-knowledge" }
@@ -30,6 +31,8 @@ genome-atlas = { path = "crates/genome-atlas" }
 genome-evidence-audit = { path = "crates/genome-evidence-audit" }
 genome-research-stats = { path = "crates/genome-research-stats" }
 genome-assay = { path = "crates/genome-assay" }
+genome-regulatory = { path = "crates/genome-regulatory" }
+genome-regulatory-data = { path = "crates/genome-regulatory-data" }
 
 [workspace.lints.rust]
 unsafe_code = "forbid"

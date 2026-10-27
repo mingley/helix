@@ -1,0 +1,613 @@
+{
+  "schema_version": 1,
+  "phase": "metadata_only_no_score_endpoints_requested",
+  "study_doi": "10.1038/s41467-019-11526-w",
+  "selection_rule": "All nine distinct eligible non-HBB human promoters from the publication; lexicographically first accession per locus is primary. Five other same-locus contexts/replicates are validation-only. Existing HBB is pre-exposed reference-only.",
+  "primary_elements": 9,
+  "new_score_sets": 14,
+  "all_score_sets": 15,
+  "assays": [
+    {
+      "assay_id": "urn:mavedb:00000015-a-1",
+      "element_id": "F9",
+      "role": "primary",
+      "title": "Saturation mutagenesis MPRA of F9 promoter",
+      "cell_context": "HepG2",
+      "target_sequence": "GTCCCACTGATGAACTGTGCTGCCACAGTAAATGTAGCCACTATGCCTATCTCCATTCTGAAGATGTGTCACTTCCTGTTTCAGACTCAAATCAGCCACAGTGGCAGAAGCCCACGAAATCAGAGGTGAAATTTAATAATGACCACTGCCCATTCTCTTCACTTGTCCCAAGAGGCCATTGGAAATAGTCCAAAGACCCATTGAGGGAGATGGACATTATTTCCCAGAAGTAAATACAGCTCAGCTTGTACTTTGGTACAACTAATCGACCTTACCACTTTCACAATCTGCTAGCAAAGGTTA",
+      "target_length": 303,
+      "metadata_file": "00000015-a-1.metadata.json",
+      "reference_file": "reference-X-139530463-139530765.json",
+      "expected_source_rows": 984,
+      "mapping": {
+        "assembly": "GRCh38",
+        "chromosome": "X",
+        "start": 139530462,
+        "end": 139530765,
+        "target_reference_alignment_strand": "+",
+        "source_coordinate_convention": "one-based inclusive, resolved by exact full-target sequence mapping",
+        "genome_wide_uniqueness_established": false
+      },
+      "assay_context": "Saturation mutagenesis MPRA of F9 promoter in HepG2 cells."
+    },
+    {
+      "assay_id": "urn:mavedb:00000016-a-1",
+      "element_id": "FOXE1",
+      "role": "primary",
+      "title": "Saturation mutagenesis MPRA of FOXE1 promoter",
+      "cell_context": "HeLa",
+      "target_sequence": "CTCGCCAGCGGTCCGCAGGGCTGGAGACCCACGCCGTGGAGAGGACCAGCCTCAGGTCGCCCCGCCTGGGCCCGCGCCCCGACCTCGCTGCCCCCGCCTCGCCTCTCTGCCCGTGGCGCTTACGGCCACCTTGGCCTCGGGGGCAGGGCATGGGCGGCCCCCGCCAGATCGCCCAGCGCCAGTACTAACTGCCCTCGCTCTGGCCTTCGAGCCCGAAGCCTCTTCTGCGCGCACAACCTAGGCAGTAATCCTAAACTAGCGGGCACCACAGACCAGCTGCAGCCACCCCAACCCAGGGATCACTTCCGGACCCCTCGACCGCCCGGCACCAGCGCGCAAGGGACCCTTCAGCCGGAGACCAGAGTCCAGTCCCGGTCACGAGGCCACCGCCGCTGCCCGCCTCGAGAAGCACCACGCGGGCTGAGCCGTCGGCTAGCGGGTCACTCCCGAGCCTCTGTCTGCACCGCGCCAGCCCCAGACCACGGACGCTGAGCCTCCAGCGCGTGCCAGCCTGGGCCGCTGGGCTCTCGGGGCCAGCCCGCGACGATCCCCTGAGCTCTCCGCAGAAGGGCCGAGCGTCCGTTCCGGGGACGCCAGGCC",
+      "target_length": 600,
+      "metadata_file": "00000016-a-1.metadata.json",
+      "reference_file": "reference-9-97853255-97853854.json",
+      "expected_source_rows": 2048,
+      "mapping": {
+        "assembly": "GRCh38",
+        "chromosome": "9",
+        "start": 97853254,
+        "end": 97853854,
+        "target_reference_alignment_strand": "+",
+        "source_coordinate_convention": "one-based inclusive, resolved by exact full-target sequence mapping",
+        "genome_wide_uniqueness_established": false
+      },
+      "assay_context": "Saturation mutagenesis MPRA of FOXE1 promoter in HeLa cells."
+    },
+    {
+      "assay_id": "urn:mavedb:00000017-a-1",
+      "element_id": "GP1BB",
+      "role": "primary",
+      "title": "Saturation mutagenesis MPRA of GP1BB promoter",
+      "cell_context": "HEL 92.1.7",
+      "target_sequence": "GTTGTGAATGCCGCGTCCTGTCCTGGTGACAGGAGAACAATGTTGGTGAACGTCGCAGCGGGTGTCCGAGTGCTCCGTGTGCCCCTGAGAGCGGGTGGGAGCGGAAGCCTGAGCGGCCTGCGGCCTCCGGCGATAGTGTGCTATCTGCCGCTGCAGCGCGCGTCCGCGCGGCCTCTGGGCTATTTCTGGCCAGGCCGCAGCACTGTGGTCGGTGCGGGCGTGGCAGGGGCGGGGCGGCCTTATCGCTCGGCTCTCCCGCCTACGCCTCCCGCTGCAGAGTAAGCCGGGCTGCCGTCTTCTCGCCATGGGCTCCGGTGAGTCTGGAGTCCGGTCGGGCCCCCGGCTGCTCCCTAGGCCGACCCGGGTTGAGAGGAGCTCTGGTCGT",
+      "target_length": 385,
+      "metadata_file": "00000017-a-1.metadata.json",
+      "reference_file": "reference-22-19723266-19723650.json",
+      "expected_source_rows": 1268,
+      "mapping": {
+        "assembly": "GRCh38",
+        "chromosome": "22",
+        "start": 19723265,
+        "end": 19723650,
+        "target_reference_alignment_strand": "+",
+        "source_coordinate_convention": "one-based inclusive, resolved by exact full-target sequence mapping",
+        "genome_wide_uniqueness_established": false
+      },
+      "assay_context": "Saturation mutagenesis MPRA of GP1BB promoter in HEL 92.1.7 cells."
+    },
+    {
+      "assay_id": "urn:mavedb:00000018-a-1",
+      "element_id": "HBB",
+      "role": "previously_exposed_reference",
+      "title": "Saturation mutagenesis MPRA of HBB promoter",
+      "cell_context": "HEL 92.1.7",
+      "target_sequence": "GGTGTCTGTTTGAGGTTGCTAGTGAACACAGTTGTGTCAGAAGCAAATGTAAGCAATAGATGGCTCTGCCCTGACTTTTATGCCCAGCCCTGGCTCCTGCCCTCCCTGCTCCTGGGAGTAGATTGGCCAACCCTAGGGTGTGGCTCCACAGGGTGAGGTCTAAGTGATGACAGCCGTACCTGTCCTT",
+      "target_length": 187,
+      "metadata_file": "00000018-a-1.metadata.json",
+      "reference_file": "reference-11-5227022-5227208.json",
+      "expected_source_rows": 623,
+      "mapping": {
+        "assembly": "GRCh38",
+        "chromosome": "11",
+        "start": 5227021,
+        "end": 5227208,
+        "target_reference_alignment_strand": "+",
+        "source_coordinate_convention": "one-based inclusive, resolved by exact full-target sequence mapping",
+        "genome_wide_uniqueness_established": false
+      },
+      "assay_context": "Saturation mutagenesis MPRA of HBB promoter in HEL 92.1.7 cells."
+    },
+    {
+      "assay_id": "urn:mavedb:00000019-a-1",
+      "element_id": "HBG1",
+      "role": "primary",
+      "title": "Saturation mutagenesis MPRA of HBG1 promoter",
+      "cell_context": "HEL 92.1.7",
+      "target_sequence": "GGCGTCTGGACTAGGAGCTTATTGATAACCTCAGACGTTCCAGAAGCGAGTGTGTGGAACTGCTGAAGGGTGCTTCCTTTTATTCTTCATCCCTAGCCAGCCGCCGGCCCCTGGCCTCACTGGATACTCTAAGACTATTGGTCAAGTTTGCCTTGTCAAGGCTATTGGTCAAGGCAAGGCTGGCCAACCCATGGGTGGAGTTTAGCCAGGGACCGTTTCAGACAGATATTTGCATTGAGATAGTGTGGGGAAGGGGCCCCCAAGAGGATACTGC",
+      "target_length": 274,
+      "metadata_file": "00000019-a-1.metadata.json",
+      "reference_file": "reference-11-5249805-5250078.json",
+      "expected_source_rows": 907,
+      "mapping": {
+        "assembly": "GRCh38",
+        "chromosome": "11",
+        "start": 5249804,
+        "end": 5250078,
+        "target_reference_alignment_strand": "+",
+        "source_coordinate_convention": "one-based inclusive, resolved by exact full-target sequence mapping",
+        "genome_wide_uniqueness_established": false
+      },
+      "assay_context": "Saturation mutagenesis MPRA of HBG1 promoter in HEL 92.1.7 cells."
+    },
+    {
+      "assay_id": "urn:mavedb:00000020-a-1",
+      "element_id": "HNF4A",
+      "role": "primary",
+      "title": "Saturation mutagenesis MPRA of HNF4A promoter",
+      "cell_context": "HEK293T",
+      "target_sequence": "CCCCAGAGTGCAGGACTAGGACCCGAGTGGACCTCAGGTCTGGCCAGGTCGCCATTGCCATGGAGACAGCAACAGTCCCCAGCCGCGGGTTCCCTAAGTGACTGGTTACTCTTTAACGTATCCACCCACCTTGGGTGATTAGAAGAATCAATAAGATAACCGGGCGGTGGCAGCTGGCCGCACTCACCGCCTTCCTGGTGGACGGGCTCCTGGTGGCTGTGCTGCTGCTGTGAGCGGGCCCCTGCTCCTCCATGCCCCCAGCTCTCCGGCTGGGTGGGCTTGGCC",
+      "target_length": 285,
+      "metadata_file": "00000020-a-1.metadata.json",
+      "reference_file": "reference-20-44355520-44355804.json",
+      "expected_source_rows": 977,
+      "mapping": {
+        "assembly": "GRCh38",
+        "chromosome": "20",
+        "start": 44355519,
+        "end": 44355804,
+        "target_reference_alignment_strand": "+",
+        "source_coordinate_convention": "one-based inclusive, resolved by exact full-target sequence mapping",
+        "genome_wide_uniqueness_established": false
+      },
+      "assay_context": "Saturation mutagenesis MPRA of HNF4A promoter in HEK293T cells."
+    },
+    {
+      "assay_id": "urn:mavedb:00000023-a-1",
+      "element_id": "LDLR",
+      "role": "primary",
+      "title": "Saturation mutagenesis MPRA of LDLR promoter, replicate 1",
+      "cell_context": "HepG2",
+      "target_sequence": "AGCTCTTCACCGGAGACCCAAATACAACAAATCAAGTCGCCTGCCCTGGCGACACTTTCGAAGGACTGGAGTGGGAATCAGAGCTTCACGGGTTAAAAAGCCGATGTCACATCGGCCGTTCGAAACTCCTCCTCTTGCAGTGAGGTGAAGACATTTGAAAATCACCCCACTGCAAACTCCTCCCCCTGCTAGAAACCTCACATTGAAATGCTGTAAATGACGTGGGCCCCGAGTGCAATCGCGGGAAGCCAGGGTTTCCAGCTAGGACACAGCAGGTCGTGATCCGGGTCGGGACACTGCCTGGCAGAGGCTGCGAGC",
+      "target_length": 318,
+      "metadata_file": "00000023-a-1.metadata.json",
+      "reference_file": "reference-19-11089231-11089548.json",
+      "expected_source_rows": 1083,
+      "mapping": {
+        "assembly": "GRCh38",
+        "chromosome": "19",
+        "start": 11089230,
+        "end": 11089548,
+        "target_reference_alignment_strand": "+",
+        "source_coordinate_convention": "one-based inclusive, resolved by exact full-target sequence mapping",
+        "genome_wide_uniqueness_established": false
+      },
+      "assay_context": "Saturation mutagenesis MPRA of LDLR promoter in HepG2 cells. Biological replicate 1 of 2."
+    },
+    {
+      "assay_id": "urn:mavedb:00000023-a-2",
+      "element_id": "LDLR",
+      "role": "validation_only",
+      "title": "Saturation mutagenesis MPRA of LDLR promoter, replicate 2",
+      "cell_context": "HepG2",
+      "target_sequence": "AGCTCTTCACCGGAGACCCAAATACAACAAATCAAGTCGCCTGCCCTGGCGACACTTTCGAAGGACTGGAGTGGGAATCAGAGCTTCACGGGTTAAAAAGCCGATGTCACATCGGCCGTTCGAAACTCCTCCTCTTGCAGTGAGGTGAAGACATTTGAAAATCACCCCACTGCAAACTCCTCCCCCTGCTAGAAACCTCACATTGAAATGCTGTAAATGACGTGGGCCCCGAGTGCAATCGCGGGAAGCCAGGGTTTCCAGCTAGGACACAGCAGGTCGTGATCCGGGTCGGGACACTGCCTGGCAGAGGCTGCGAGC",
+      "target_length": 318,
+      "metadata_file": "00000023-a-2.metadata.json",
+      "reference_file": "reference-19-11089231-11089548.json",
+      "expected_source_rows": 1093,
+      "mapping": {
+        "assembly": "GRCh38",
+        "chromosome": "19",
+        "start": 11089230,
+        "end": 11089548,
+        "target_reference_alignment_strand": "+",
+        "source_coordinate_convention": "one-based inclusive, resolved by exact full-target sequence mapping",
+        "genome_wide_uniqueness_established": false
+      },
+      "assay_context": "Saturation mutagenesis MPRA of LDLR promoter in HepG2 cells. Biological replicate 2 of 2."
+    },
+    {
+      "assay_id": "urn:mavedb:00000024-a-1",
+      "element_id": "MSMB",
+      "role": "primary",
+      "title": "Saturation mutagenesis MPRA of MSMB promoter",
+      "cell_context": "HEK293T",
+      "target_sequence": "AAGCAGGACTCCTTATAGACAGGTACATCCAGGCAAAGCTGCATCAAACTTTTATACTGGAGAGGGCAACCACGCATTCGACATCATTGGGAATGATAACAAGGTGAGAACACATTGAGTGTTTACAGAGGGTTGACTATCAAAAGGAAAGTATGGTTTCAGATGATTTATGAGTTATTAATCAATCACATCTCCACCCAAGTTATGTGTTTACCTTGTCCCCACCCCGATCTGCATTTGCTGCTGACCTAAAAGAGCAGAGGAGGAGAGAACTTCTCTTTGCTGAGCCTTCGCCCTATGCTGGTGGATTGCTAGCACGTGATGTGTCCTTATTCGATTTTATACACAAAGAAACAGCCTCAGCGATGCCAGTCACAACAGCCAGGTGGTAAAGGTGGGTTTCCTGAAGGCATAAGAATAGCCCACAGGTCAGCCCACCAGGCCCACCGGGCCTGGGTCTGTGGCCCAGATGACCCTGCCCTTAGGGTCTGACATGAGAACAGAAATGGGTCAAGCCATCCTGCAGGGCACAGGAGAGCAAGAACTACATACAGCTCGGGGTTCCCTGACAAGCTGAATTGCTGGACCTTT",
+      "target_length": 591,
+      "metadata_file": "00000024-a-1.metadata.json",
+      "reference_file": "reference-10-46046244-46046834.json",
+      "expected_source_rows": 2019,
+      "mapping": {
+        "assembly": "GRCh38",
+        "chromosome": "10",
+        "start": 46046243,
+        "end": 46046834,
+        "target_reference_alignment_strand": "+",
+        "source_coordinate_convention": "one-based inclusive, resolved by exact full-target sequence mapping",
+        "genome_wide_uniqueness_established": false
+      },
+      "assay_context": "Saturation mutagenesis MPRA of MSMB promoter in HEK293T cells."
+    },
+    {
+      "assay_id": "urn:mavedb:00000027-a-1",
+      "element_id": "PKLR",
+      "role": "primary",
+      "title": "Saturation mutagenesis MPRA of PKLR promoter, 24h",
+      "cell_context": "K562",
+      "target_sequence": "TGCTTTCAGTGTGGGCCTGGGGCTGCGGGACCATGGAATGAGAGGGAGAGGATGACAAAACTGCTGGTCTTATCTAAGGGAGACAGAGAAGAGAAAAGGGGCACACCCAGTAGGCCACCCTGTCCCCACAGAATCCCTCCCCCAGAACGGCCTGCTCTCTGCCCTCATCTCCTGGCATTTCCTCTCATCCTTTTTTCCTGATAAATTTTCAATCCATTCATACTATCTGGTCATCCACGTGAATAGATATTTTTTTTTTGGCCAGTCATATGGCCCCATTTTCTTTGTACTTTACTGAAGTTAGCTCTAGTGAATCCAGGGAGCAGGGGCTGTAGGGTGGGGCTGGAGCCTGAAGAAAGACAAAAGGGATCACTGTGATAATATGGTGGGGGGAGGGTTACCCAGTTCTGACCACTTTTTTTCTCTGTCTCAACCAAGAAATGCAGAGTGCCTTCACCACTCTGTAACCT",
+      "target_length": 470,
+      "metadata_file": "00000027-a-1.metadata.json",
+      "reference_file": "reference-1-155301395-155301864.json",
+      "expected_source_rows": 1776,
+      "mapping": {
+        "assembly": "GRCh38",
+        "chromosome": "1",
+        "start": 155301394,
+        "end": 155301864,
+        "target_reference_alignment_strand": "+",
+        "source_coordinate_convention": "one-based inclusive, resolved by exact full-target sequence mapping",
+        "genome_wide_uniqueness_established": false
+      },
+      "assay_context": "Saturation mutagenesis MPRA of PKLR promoter, 24h post-transfection in K562 cells."
+    },
+    {
+      "assay_id": "urn:mavedb:00000027-b-1",
+      "element_id": "PKLR",
+      "role": "validation_only",
+      "title": "Saturation mutagenesis MPRA of PKLR promoter, 48h",
+      "cell_context": "K562",
+      "target_sequence": "TGCTTTCAGTGTGGGCCTGGGGCTGCGGGACCATGGAATGAGAGGGAGAGGATGACAAAACTGCTGGTCTTATCTAAGGGAGACAGAGAAGAGAAAAGGGGCACACCCAGTAGGCCACCCTGTCCCCACAGAATCCCTCCCCCAGAACGGCCTGCTCTCTGCCCTCATCTCCTGGCATTTCCTCTCATCCTTTTTTCCTGATAAATTTTCAATCCATTCATACTATCTGGTCATCCACGTGAATAGATATTTTTTTTTTGGCCAGTCATATGGCCCCATTTTCTTTGTACTTTACTGAAGTTAGCTCTAGTGAATCCAGGGAGCAGGGGCTGTAGGGTGGGGCTGGAGCCTGAAGAAAGACAAAAGGGATCACTGTGATAATATGGTGGGGGGAGGGTTACCCAGTTCTGACCACTTTTTTTCTCTGTCTCAACCAAGAAATGCAGAGTGCCTTCACCACTCTGTAACCT",
+      "target_length": 470,
+      "metadata_file": "00000027-b-1.metadata.json",
+      "reference_file": "reference-1-155301395-155301864.json",
+      "expected_source_rows": 1794,
+      "mapping": {
+        "assembly": "GRCh38",
+        "chromosome": "1",
+        "start": 155301394,
+        "end": 155301864,
+        "target_reference_alignment_strand": "+",
+        "source_coordinate_convention": "one-based inclusive, resolved by exact full-target sequence mapping",
+        "genome_wide_uniqueness_established": false
+      },
+      "assay_context": "Saturation mutagenesis MPRA of PKLR promoter, 48h post-transfection in K562 cells."
+    },
+    {
+      "assay_id": "urn:mavedb:00000031-a-1",
+      "element_id": "TERT",
+      "role": "primary",
+      "title": "Saturation mutagenesis MPRA of TERT promoter, HEK",
+      "cell_context": "HEK293T",
+      "target_sequence": "TCGCGGGGGTGGCCGGGGCCAGGGCTTCCCACGTGCGCAGCAGGACGCAGCGCTGCCTGAAACTCGCGCCGCGAGGAGAGGGCGGGGCCGCGGAAAGGAAGGGGAGGGGCTGGGAGGGCCCGGAGGGGGCTGGGCCGGGGACCCGGGAGGGGTCGGGACGGGGCGGGGTCCGCGCGGAGGAGGCGGAGCTGGAAGGTGAAGGGGCAGGACGGGTGCCCGGGTCCCCAGTCCCTCCGCCACGTGGGAAGCGCGGTCCTGG",
+      "target_length": 259,
+      "metadata_file": "00000031-a-1.metadata.json",
+      "reference_file": "reference-5-1294989-1295247.json",
+      "expected_source_rows": 975,
+      "mapping": {
+        "assembly": "GRCh38",
+        "chromosome": "5",
+        "start": 1294988,
+        "end": 1295247,
+        "target_reference_alignment_strand": "+",
+        "source_coordinate_convention": "one-based inclusive, resolved by exact full-target sequence mapping",
+        "genome_wide_uniqueness_established": false
+      },
+      "assay_context": "Saturation mutagenesis MPRA of TERT promoter in HEK293T cells."
+    },
+    {
+      "assay_id": "urn:mavedb:00000031-b-1",
+      "element_id": "TERT",
+      "role": "validation_only",
+      "title": "Saturation mutagenesis MPRA of TERT promoter, GBM",
+      "cell_context": "SF7996",
+      "target_sequence": "TCGCGGGGGTGGCCGGGGCCAGGGCTTCCCACGTGCGCAGCAGGACGCAGCGCTGCCTGAAACTCGCGCCGCGAGGAGAGGGCGGGGCCGCGGAAAGGAAGGGGAGGGGCTGGGAGGGCCCGGAGGGGGCTGGGCCGGGGACCCGGGAGGGGTCGGGACGGGGCGGGGTCCGCGCGGAGGAGGCGGAGCTGGAAGGTGAAGGGGCAGGACGGGTGCCCGGGTCCCCAGTCCCTCCGCCACGTGGGAAGCGCGGTCCTGG",
+      "target_length": 259,
+      "metadata_file": "00000031-b-1.metadata.json",
+      "reference_file": "reference-5-1294989-1295247.json",
+      "expected_source_rows": 973,
+      "mapping": {
+        "assembly": "GRCh38",
+        "chromosome": "5",
+        "start": 1294988,
+        "end": 1295247,
+        "target_reference_alignment_strand": "+",
+        "source_coordinate_convention": "one-based inclusive, resolved by exact full-target sequence mapping",
+        "genome_wide_uniqueness_established": false
+      },
+      "assay_context": "Saturation mutagenesis MPRA of TERT promoter in glioblastoma SF7996 (GBM) cells."
+    },
+    {
+      "assay_id": "urn:mavedb:00000031-c-1",
+      "element_id": "TERT",
+      "role": "validation_only",
+      "title": "Saturation mutagenesis MPRA of TERT promoter, GBM siRNA knockdown",
+      "cell_context": "SF7996",
+      "target_sequence": "TCGCGGGGGTGGCCGGGGCCAGGGCTTCCCACGTGCGCAGCAGGACGCAGCGCTGCCTGAAACTCGCGCCGCGAGGAGAGGGCGGGGCCGCGGAAAGGAAGGGGAGGGGCTGGGAGGGCCCGGAGGGGGCTGGGCCGGGGACCCGGGAGGGGTCGGGACGGGGCGGGGTCCGCGCGGAGGAGGCGGAGCTGGAAGGTGAAGGGGCAGGACGGGTGCCCGGGTCCCCAGTCCCTCCGCCACGTGGGAAGCGCGGTCCTGG",
+      "target_length": 259,
+      "metadata_file": "00000031-c-1.metadata.json",
+      "reference_file": "reference-5-1294989-1295247.json",
+      "expected_source_rows": 974,
+      "mapping": {
+        "assembly": "GRCh38",
+        "chromosome": "5",
+        "start": 1294988,
+        "end": 1295247,
+        "target_reference_alignment_strand": "+",
+        "source_coordinate_convention": "one-based inclusive, resolved by exact full-target sequence mapping",
+        "genome_wide_uniqueness_established": false
+      },
+      "assay_context": "Saturation mutagenesis MPRA of TERT promoter in glioblastoma SF7996 (GBM) cells, siRNA knockdown of GABPA."
+    },
+    {
+      "assay_id": "urn:mavedb:00000031-d-1",
+      "element_id": "TERT",
+      "role": "validation_only",
+      "title": "Saturation mutagenesis MPRA of TERT promoter, GBM siRNA control",
+      "cell_context": "SF7996",
+      "target_sequence": "TCGCGGGGGTGGCCGGGGCCAGGGCTTCCCACGTGCGCAGCAGGACGCAGCGCTGCCTGAAACTCGCGCCGCGAGGAGAGGGCGGGGCCGCGGAAAGGAAGGGGAGGGGCTGGGAGGGCCCGGAGGGGGCTGGGCCGGGGACCCGGGAGGGGTCGGGACGGGGCGGGGTCCGCGCGGAGGAGGCGGAGCTGGAAGGTGAAGGGGCAGGACGGGTGCCCGGGTCCCCAGTCCCTCCGCCACGTGGGAAGCGCGGTCCTGG",
+      "target_length": 259,
+      "metadata_file": "00000031-d-1.metadata.json",
+      "reference_file": "reference-5-1294989-1295247.json",
+      "expected_source_rows": 974,
+      "mapping": {
+        "assembly": "GRCh38",
+        "chromosome": "5",
+        "start": 1294988,
+        "end": 1295247,
+        "target_reference_alignment_strand": "+",
+        "source_coordinate_convention": "one-based inclusive, resolved by exact full-target sequence mapping",
+        "genome_wide_uniqueness_established": false
+      },
+      "assay_context": "Saturation mutagenesis MPRA of TERT promoter in glioblastoma SF7996 (GBM) cells, siRNA scrambled control."
+    }
+  ],
+  "discovery_total_score_sets": 29,
+  "source_roles": [
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/search",
+      "method": "POST",
+      "retrieved_at": "2026-10-27T06:30:44.784153+00:00",
+      "content_type": "application/json",
+      "bytes": 239590,
+      "sha256": "8fff467aa66fc413d8bfa2e737d837c67dbf0470f93d81115b17cfb6bcc766d4",
+      "file": "discovery-search.json",
+      "request_body": {
+        "publicationIdentifiers": [
+          "31395865"
+        ],
+        "published": true,
+        "limit": 100,
+        "offset": 0
+      },
+      "role": "metadata_only_cohort_discovery"
+    },
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000015-a-1",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:45.552738+00:00",
+      "content_type": "application/json",
+      "bytes": 11108,
+      "sha256": "8250b2c933b45c8ca0a76621ecfeeca5c4724d58228068757cc6a095702db71c",
+      "file": "00000015-a-1.metadata.json",
+      "role": "metadata_only_accession_selection"
+    },
+    {
+      "url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chrX;start=139530362;end=139530865",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:46.460989+00:00",
+      "content_type": "application/json",
+      "bytes": 662,
+      "sha256": "f00be709a8f2ca04a90f72642b079ee4402aa847d7b9e33cb494fbb31255312d",
+      "file": "reference-X-139530463-139530765.json",
+      "role": "bounded_reference_sequence"
+    },
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000016-a-1",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:52.311816+00:00",
+      "content_type": "application/json",
+      "bytes": 11413,
+      "sha256": "bb82a8669ba3a419374c295c54c4f12ebfadb77eb14a0ec0a6fb24b2a70e38de",
+      "file": "00000016-a-1.metadata.json",
+      "role": "metadata_only_accession_selection"
+    },
+    {
+      "url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chr9;start=97853154;end=97853954",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:53.183201+00:00",
+      "content_type": "application/json",
+      "bytes": 957,
+      "sha256": "9638889062ae6065d73ccb61d239cca48a6a5e9aa2539246873e0626196dc00b",
+      "file": "reference-9-97853255-97853854.json",
+      "role": "bounded_reference_sequence"
+    },
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000017-a-1",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:53.388425+00:00",
+      "content_type": "application/json",
+      "bytes": 11225,
+      "sha256": "4f414047612b741dc5483972a1e18b572233a43a85255cd5e2e0552da145898d",
+      "file": "00000017-a-1.metadata.json",
+      "role": "metadata_only_accession_selection"
+    },
+    {
+      "url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chr22;start=19723165;end=19723750",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:53.741394+00:00",
+      "content_type": "application/json",
+      "bytes": 743,
+      "sha256": "a1b01af7e361383d00891141f9979703bfe0c6075efa6a9f7a59e3a645e663a1",
+      "file": "reference-22-19723266-19723650.json",
+      "role": "bounded_reference_sequence"
+    },
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000018-a-1",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:54.122668+00:00",
+      "content_type": "application/json",
+      "bytes": 11008,
+      "sha256": "1b3383dca72b028fcd484150a249766468d343cb3a81907e64281a7af7e2f11c",
+      "file": "00000018-a-1.metadata.json",
+      "role": "metadata_only_accession_selection"
+    },
+    {
+      "url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chr11;start=5226921;end=5227308",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:54.821089+00:00",
+      "content_type": "application/json",
+      "bytes": 543,
+      "sha256": "cf2d701085a7f6a87bfc4ee7d6de621fef7a39ef2d904af492e321c4f9fd6341",
+      "file": "reference-11-5227022-5227208.json",
+      "role": "bounded_reference_sequence"
+    },
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000019-a-1",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:55.011762+00:00",
+      "content_type": "application/json",
+      "bytes": 11108,
+      "sha256": "07c4a2a1f2fb25ec553bfaee1d5caccf611dcba2ad19f813feec5a775fbc575f",
+      "file": "00000019-a-1.metadata.json",
+      "role": "metadata_only_accession_selection"
+    },
+    {
+      "url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chr11;start=5249704;end=5250178",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:55.519003+00:00",
+      "content_type": "application/json",
+      "bytes": 630,
+      "sha256": "243c50b7ffa36b0f761a08b81114042e7522306e7f15a3226fc456c62f7a4477",
+      "file": "reference-11-5249805-5250078.json",
+      "role": "bounded_reference_sequence"
+    },
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000020-a-1",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:56.015216+00:00",
+      "content_type": "application/json",
+      "bytes": 11116,
+      "sha256": "1873e0e68ca7d79aa7954f5756166cd351472b72298c5de3b95afd8443631266",
+      "file": "00000020-a-1.metadata.json",
+      "role": "metadata_only_accession_selection"
+    },
+    {
+      "url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chr20;start=44355419;end=44355904",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:56.518124+00:00",
+      "content_type": "application/json",
+      "bytes": 643,
+      "sha256": "253411e0a714f4a13028d4a97a7781250e5f06d8dd33abf6ef241efd340c2897",
+      "file": "reference-20-44355520-44355804.json",
+      "role": "bounded_reference_sequence"
+    },
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000023-a-1",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:56.686631+00:00",
+      "content_type": "application/json",
+      "bytes": 10991,
+      "sha256": "ff6909b761e52c09c74b93272c440612ac1569827f03cc13aa1ac0c938e70df3",
+      "file": "00000023-a-1.metadata.json",
+      "role": "metadata_only_accession_selection"
+    },
+    {
+      "url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chr19;start=11089130;end=11089648",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:57.108483+00:00",
+      "content_type": "application/json",
+      "bytes": 676,
+      "sha256": "c1a3c40ab8705877601fb9de9120dc2186233ae8741ba9059e8430e611598b72",
+      "file": "reference-19-11089231-11089548.json",
+      "role": "bounded_reference_sequence"
+    },
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000023-a-2",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:57.280089+00:00",
+      "content_type": "application/json",
+      "bytes": 10989,
+      "sha256": "46111d4d8f47e7449385973b03c03b2cc32e2ed3569783e6295f984975a663d4",
+      "file": "00000023-a-2.metadata.json",
+      "role": "metadata_only_accession_selection"
+    },
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000024-a-1",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:57.654482+00:00",
+      "content_type": "application/json",
+      "bytes": 11421,
+      "sha256": "908b899585a492b4d3277bb3d1f24c4e1476faa3af478bf7603eeca7ef12ac16",
+      "file": "00000024-a-1.metadata.json",
+      "role": "metadata_only_accession_selection"
+    },
+    {
+      "url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chr10;start=46046143;end=46046934",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:58.128947+00:00",
+      "content_type": "application/json",
+      "bytes": 949,
+      "sha256": "d4dcdc1b18aed1832de2bd1c55a8eb5ed44357dbdf8b76f8bf860c6f5c5a8d9c",
+      "file": "reference-10-46046244-46046834.json",
+      "role": "bounded_reference_sequence"
+    },
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000027-a-1",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:58.319769+00:00",
+      "content_type": "application/json",
+      "bytes": 11351,
+      "sha256": "b49d006887b5e43463360c54fbc18a3365a52c9f617fefa5e715249a771d6832",
+      "file": "00000027-a-1.metadata.json",
+      "role": "metadata_only_accession_selection"
+    },
+    {
+      "url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chr1;start=155301294;end=155301964",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:58.869874+00:00",
+      "content_type": "application/json",
+      "bytes": 829,
+      "sha256": "d4e80afabcc7fe9dce1300f0f94527d184b606d53865aab023c971bd0d370262",
+      "file": "reference-1-155301395-155301864.json",
+      "role": "bounded_reference_sequence"
+    },
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000027-b-1",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:59.046369+00:00",
+      "content_type": "application/json",
+      "bytes": 11353,
+      "sha256": "65268ca9ab92214c7c521974166aceb2f2171867dcf6de48a1e8a7d457c4bda0",
+      "file": "00000027-b-1.metadata.json",
+      "role": "metadata_only_accession_selection"
+    },
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000031-a-1",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:59.293502+00:00",
+      "content_type": "application/json",
+      "bytes": 11089,
+      "sha256": "0853dd8eab161fb4aa0042778317d29883ad4c502db9f516556170904a2ae8a4",
+      "file": "00000031-a-1.metadata.json",
+      "role": "metadata_only_accession_selection"
+    },
+    {
+      "url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chr5;start=1294888;end=1295347",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:59.440671+00:00",
+      "content_type": "application/json",
+      "bytes": 614,
+      "sha256": "82fec1602c02e0672083f6926293fe681046b6b9b9d5fdb458e2e8b65c9047dc",
+      "file": "reference-5-1294989-1295247.json",
+      "role": "bounded_reference_sequence"
+    },
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000031-b-1",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:59.620507+00:00",
+      "content_type": "application/json",
+      "bytes": 11130,
+      "sha256": "fc202ebe0801f2d8031273182429496fae0b48e75f73f134f6fbbe5f8d262572",
+      "file": "00000031-b-1.metadata.json",
+      "role": "metadata_only_accession_selection"
+    },
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000031-c-1",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:59.797183+00:00",
+      "content_type": "application/json",
+      "bytes": 11216,
+      "sha256": "0a57aaaa41a7e9f51b2eb0fb51296d9eafb3a4b15135d929642f06b0eb5f694f",
+      "file": "00000031-c-1.metadata.json",
+      "role": "metadata_only_accession_selection"
+    },
+    {
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000031-d-1",
+      "method": "GET",
+      "retrieved_at": "2026-10-27T06:30:59.967538+00:00",
+      "content_type": "application/json",
+      "bytes": 10953,
+      "sha256": "e6105a5b92929ad94331842389df605780f6d4c24881c7cdf93468c8530f778b",
+      "file": "00000031-d-1.metadata.json",
+      "role": "metadata_only_accession_selection"
+    }
+  ],
+  "outcome_access_before_freeze": "No new score CSV endpoints were requested in this acquisition phase; existing HBB outcomes were previously exposed."
+}

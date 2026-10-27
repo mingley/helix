@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">jquery[3.7.1];shiny-css[1.13.0];shiny-busy-indicators[1.13.0];shiny-javascript[1.13.0];selectize[0.15.2];font-awesome[6.5.2];bootstrap[3.4.1]</script>
+<script src="jquery-3.7.1/jquery.min.js"></script>
+<link href="shiny-css-1.13.0/shiny.min.css" rel="stylesheet" />
+<link href="shiny-busy-indicators-1.13.0/busy-indicators.css" rel="stylesheet" />
+<script src="shiny-javascript-1.13.0/shiny.min.js"></script>
+<link href="selectize-0.15.2/css/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="selectize-0.15.2/js/selectize.min.js"></script>
+<script src="selectize-0.15.2/accessibility/js/selectize-plugin-a11y.min.js"></script>
+<link href="font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet" />
+<link href="bootstrap-3.4.1/accessibility/css/bootstrap-accessibility.min.css" rel="stylesheet" />
+<script src="bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script src="bootstrap-3.4.1/accessibility/js/bootstrap-accessibility.min.js"></script>  <meta name="description" content="MPRA data access portal for browsing promoter and enhancer saturation mutagenesis results, visualizing variant effects, and downloading element datasets."/>
+  <title>MPRA Saturation Mutagenesis Data Access Portal</title>
+  <link rel="stylesheet" type="text/css" href="mpra.css"/>
+  <title>Download elements</title>
+</head>
+<body>
+  <html lang="en">
+    <body>
+      <div class="row" id="canvas">
+        <div class="col-sm-12">
+          <main id="main-content" role="main">
+            <body class="bslib-page-navbar">
+              <nav class="navbar navbar-default navbar-static-top" role="navigation" data-bs-theme="light">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <span class="navbar-brand">MPRA-Data</span>
+                  </div>
+                  <ul class="nav navbar-nav nav-underline" data-tabsetid="3872">
+                    <li class="active">
+                      <a href="#tab-3872-1" data-toggle="tab" data-bs-toggle="tab" data-value="About">About</a>
+                    </li>
+                    <li>
+                      <a href="#tab-3872-2" data-toggle="tab" data-bs-toggle="tab" data-value="Promoter">Promoter</a>
+                    </li>
+                    <li>
+                      <a href="#tab-3872-3" data-toggle="tab" data-bs-toggle="tab" data-value="Enhancer">Enhancer</a>
+                    </li>
+                    <li>
+                      <a href="#tab-3872-4" data-toggle="tab" data-bs-toggle="tab" data-value="Download">Download</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="container-fluid">
+                <div class="tab-content" data-tabsetid="3872">
+                  <div class="tab-pane active" data-value="About" id="tab-3872-1">
+                    <h1>MPRA data access portal</h1>
+                    <hr/>
+                    <p>We performed saturation mutagenesis in conjunction with massively parallel reporter assays (MPRAs) on 21 regulatory elements, including 20 commonly studied, disease-relevant promoter and enhancer sequences from the literature, and one ultra conserved enhancer (UC88). For the former, we focused primarily on regulatory sequences in which specific mutations are known to cause disease, both for their clinical relevance and to provide for positive control variants. Selected elements were limited up to 600 base pairs (bp) for technical reasons related to the mapping of variants to barcodes by subassembly. In addition, we selected only sequences where cell line-based reporter assays were previously established.</p>
+<h2 id="the-regulatory-elements">The regulatory elements</h2>
+<h3 id="promoters">Promoters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Genomic coordinates (GRCh37)</th>
+<th>Genomic coordinates (GRCh38)</th>
+<th>Transcript</th>
+<th>Associated Phenotype</th>
+<th>Luciferase vector</th>
+<th>MPRA vector</th>
+<th>Cell line</th>
+<th>Transf. time (hr)</th>
+<th>Fold change (Wild type)</th>
+<th>Fold Change (MPRA)</th>
+<th>Construct size (bp)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F9</td>
+<td>chrX:138,612,622-138,612,924</td>
+<td>chrX:139,530,463-139,530,765</td>
+<td>NM_000133.3</td>
+<td>Hemophilia B</td>
+<td>pGL4.11b</td>
+<td>pGL4.11c</td>
+<td>HepG2</td>
+<td>24</td>
+<td>2.6</td>
+<td>2.1</td>
+<td>303</td>
+</tr>
+<tr>
+<td>FOXE1</td>
+<td>chr9:100,615,537-100,616,136</td>
+<td>chr9:97,853,255-97,853,854</td>
+<td>NM_004473.3</td>
+<td>Thyroid cancer</td>
+<td>pGL4.11b</td>
+<td>pGL4.11c</td>
+<td>HeLa</td>
+<td>24</td>
+<td>4.2</td>
+<td>2.5</td>
+<td>600</td>
+</tr>
+<tr>
+<td>GP1BB</td>
+<td>chr22:19,710,789-19,711,173</td>
+<td>chr22:19,723,266-19,723,650</td>
+<td>NM_000407.4</td>
+<td>Bernard-Soulier Syndrome</td>
+<td>pGL4.11b</td>
+<td>pGL4.11c</td>
+<td>HEL 92.1.7</td>
+<td>24</td>
+<td>22.1</td>
+<td>12.3</td>
+<td>385</td>
+</tr>
+<tr>
+<td>HBB</td>
+<td>chr11:5,248,252-5,248,438</td>
+<td>chr11:5,227,022-5,227,208</td>
+<td>NM_000518.4</td>
+<td>Thalassemia</td>
+<td>pGL4.11b</td>
+<td>pGL4.11c</td>
+<td>HEL 92.1.7</td>
+<td>24</td>
+<td>14.3</td>
+<td>8.4</td>
+<td>187</td>
+</tr>
+<tr>
+<td>HBG1</td>
+<td>chr11:5,271,035-5,271,308</td>
+<td>chr11:5,249,805-5,250,078</td>
+<td>NM_000559.2</td>
+<td>Hereditary persistence of fetal hemoglobin</td>
+<td>pGL4.11b</td>
+<td>pGL4.11c</td>
+<td>HEL 92.1.7</td>
+<td>24</td>
+<td>118.1</td>
+<td>41.8</td>
+<td>274</td>
+</tr>
+<tr>
+<td>HNF4A (P2)</td>
+<td>chr20:42,984,160-42,984,444</td>
+<td>chr20:44,355,520-44,355,804</td>
+<td>NM_175914.4</td>
+<td>Maturity-onset diabetes of the young (MODY)</td>
+<td>pGL4.11b</td>
+<td>pGL4.11c</td>
+<td>HEK293T</td>
+<td>24</td>
+<td>2.8</td>
+<td>1.3</td>
+<td>285</td>
+</tr>
+<tr>
+<td>LDLR</td>
+<td>chr19:11,199,907-11,200,224</td>
+<td>chr19:11,089,231-11,089,548</td>
+<td>NM_000527.4</td>
+<td>Familial hypercholesterolemia</td>
+<td>pGL4.11b</td>
+<td>pGL4.11b</td>
+<td>HepG2</td>
+<td>24</td>
+<td>110.7</td>
+<td>76.6</td>
+<td>318</td>
+</tr>
+<tr>
+<td>MSMB</td>
+<td>chr10:51,548,988-51,549,578</td>
+<td>chr10:46,046,244-46,046,834</td>
+<td>NM_002443.3</td>
+<td>Prostate cancer</td>
+<td>pGL4.11b</td>
+<td>pGL4.11c</td>
+<td>HEK293T</td>
+<td>24</td>
+<td>8.4</td>
+<td>3.4</td>
+<td>593</td>
+</tr>
+<tr>
+<td>PKLR</td>
+<td>chr1:155,271,186-155,271,655</td>
+<td>chr1:155,301,395-155,301,864</td>
+<td>NM_000298.5</td>
+<td>Pyruvate kinase deficiency</td>
+<td>pGL4.11b</td>
+<td>pGL4.11c</td>
+<td>K562</td>
+<td>48</td>
+<td>29.4</td>
+<td>9.6</td>
+<td>470</td>
+</tr>
+<tr>
+<td>TERT</td>
+<td>chr5:1,295,104-1,295,362</td>
+<td>chr5:1,294,989-1,295,247</td>
+<td>NM_198253.2</td>
+<td>Various types of cancer</td>
+<td>pGL4.11b</td>
+<td>pGL4.11b</td>
+<td>HEK293T, SF7996</td>
+<td>24</td>
+<td>231.8,5.2</td>
+<td>148.2, 2.7</td>
+<td>259</td>
+</tr>
+</tbody>
+</table>
+<h3 id="enhancers">Enhancers</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Genomic coordinates (GRCh37)</th>
+<th>Genomic coordinates (GRCh38)</th>
+<th>Associated Phenotype</th>
+<th>Luciferase vector</th>
+<th>MPRA vector</th>
+<th>Cell line</th>
+<th>Transf. time (hr)</th>
+<th>Fold change (Wild type)</th>
+<th>Fold Change (MPRA)</th>
+<th>Construct size (bp)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BCL11A+58</td>
+<td>chr2:60,722,075-60,722,674</td>
+<td>chr2:60,494,940-60,495,539</td>
+<td>Sickle cell disease</td>
+<td>pGL4.23</td>
+<td>pGL4.23d</td>
+<td>HEL 92.1.7</td>
+<td>24</td>
+<td>2.5</td>
+<td>1.7</td>
+<td>600</td>
+</tr>
+<tr>
+<td>IRF4</td>
+<td>chr6:396,143-396,593</td>
+<td>chr6:396,143-396,593</td>
+<td>Human pigmentation</td>
+<td>pGL4.23</td>
+<td>pGL4.23d</td>
+<td>SK-MEL-28</td>
+<td>24</td>
+<td>44.5</td>
+<td>16.3</td>
+<td>451</td>
+</tr>
+<tr>
+<td>IRF6</td>
+<td>chr1:209,989,135-209,989,735</td>
+<td>chr1:209,815,790-209,816,390</td>
+<td>Cleft lip</td>
+<td>pGL4.23</td>
+<td>pGL4.23c</td>
+<td>HaCaT</td>
+<td>24</td>
+<td>17</td>
+<td>16.7</td>
+<td>600</td>
+</tr>
+<tr>
+<td>MYC (rs6983267)</td>
+<td>chr8:128,413,074-128,413,673</td>
+<td>chr8:127,400,829-127,401,428</td>
+<td>Various types of cancer</td>
+<td>pGL4.23</td>
+<td>pGL4.23c</td>
+<td>HEK293T</td>
+<td>32, 20nM LiCl added after 24hr</td>
+<td>2.8</td>
+<td>0.7</td>
+<td>600</td>
+</tr>
+<tr>
+<td>MYC (rs11986220)</td>
+<td>chr8:128,531,515-128,531,977</td>
+<td>chr8:127,519,270-127,519,732</td>
+<td>Various types of cancer</td>
+<td>pGL4.23</td>
+<td>pGL4.23d</td>
+<td>LNCaP + 100nM DHT</td>
+<td>24</td>
+<td>5.5</td>
+<td>3.2</td>
+<td>464</td>
+</tr>
+<tr>
+<td>RET</td>
+<td>chr10:43,581,927-43,582,526</td>
+<td>chr10:43,086,479-43,087,078</td>
+<td>Hirschsprung</td>
+<td>pGL3</td>
+<td>pGL3c</td>
+<td>Neuro-2a</td>
+<td>24</td>
+<td>2</td>
+<td>0.9</td>
+<td>600</td>
+</tr>
+<tr>
+<td>SORT1</td>
+<td>chr1:109,817,274-109,817,873</td>
+<td>chr1:109,274,652-109,275,251</td>
+<td>Plasma low-density lipoprotein cholesterol &amp; myocardial infarction</td>
+<td>pGL4.23</td>
+<td>pGL4.23c</td>
+<td>HepG2</td>
+<td>24</td>
+<td>235.3</td>
+<td>202.2</td>
+<td>600</td>
+</tr>
+<tr>
+<td>TCF7L2</td>
+<td>chr10:114,757,999-114,758,598</td>
+<td>chr10:112,998,240-112,998,839</td>
+<td>Type 2 diabetes</td>
+<td>pGL4.23</td>
+<td>pGL4.23d</td>
+<td>MIN6</td>
+<td>24</td>
+<td>9</td>
+<td>2.7</td>
+<td>600</td>
+</tr>
+<tr>
+<td>UC88</td>
+<td>chr2:162,094,919-162,095,508</td>
+<td>chr2:161,238,408-161,238,997</td>
+<td>-</td>
+<td>pGL4.23</td>
+<td>pGL4.23c</td>
+<td>Neuro-2a</td>
+<td>24</td>
+<td>9.3</td>
+<td>5.4</td>
+<td>590</td>
+</tr>
+<tr>
+<td>ZFAND3</td>
+<td>chr6:37,775,275-37,775,853</td>
+<td>chr6:37,807,499-37,808,077</td>
+<td>Type 2 diabetes</td>
+<td>pGL4.23</td>
+<td>pGL4.23c</td>
+<td>MIN6</td>
+<td>24</td>
+<td>14.3</td>
+<td>7.3</td>
+<td>579</td>
+</tr>
+<tr>
+<td>ZRS</td>
+<td>chr7:156,583,813-156,584,297</td>
+<td>chr7:156,791,119-156,791,603</td>
+<td>Limb malformations</td>
+<td>TATA-pGL4m (EV087)</td>
+<td>pGL4Zc</td>
+<td>NIH/3T3 (with HOXD13/ HOXD13+HAND2)</td>
+<td>24</td>
+<td>04.02.2002</td>
+<td>3.7/2.6</td>
+<td>485</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-usage">Data usage</h2>
+<p>We made our data available prior to publication in line with <a href="https://www.genome.gov/Pages/Research/WellcomeReport0303.pdf">Fort Lauderdale principle</a>, allowing others to use the data but allowing the data producers to make the first presentations and to publish the first paper with global analyses of the data. Furter, we reserved the right to publish the first analysis of the differences seen in the TERT knock-down experiments and alternative cell-type experiments. Studies that do not overlap with these intentions may be submitted for publication at any time, but must appropriately cite the data source. After publication of the data, the first publication of the data producers should be cited for any use of these data.</p>
+<p>The manuscript describing this data set, global analysis and TERT knock-down experiments was published on Aug 8, 2019:</p>
+<p>Kircher M, Xiong C, Martin B, Schubach M, Inoue F, Bell RJA, Costello JF, Shendure J, Ahituv N. <strong>Saturation mutagenesis of twenty disease-associated regulatory elements at single base-pair resolution.</strong> <em>Nature Communication</em>. 2019 Aug 8;10(1):3583. doi: <a href="https://doi.org/10.1038/s41467-019-11526-w">10.1038/s41467-019-11526-w</a>.</p>
+<p>NCBI GEO and raw data submission are available under accession <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE126550">GSE126550</a>.</p>
+<h2 id="contact">Contact</h2>
+<p>For general information and specific questions about the experiment contact <a href="mailto:nadav.ahituv@ucsf.edu">Nadav Ahituv</a>. For questions on the data analysis please contact <a href="mailto:martin.kircher@bih-charite.de">Martin Kircher</a>. About the website please contact <a href="mailto:max.schubach@bih-charite.de">Max Schubach</a> or refer directly to the <a href="https://github.com/kircherlab/MPRA_SaturationMutagenesis">github repository</a> of this website.</p>
+<p style="text-align: center;">
+<img src="logos/bih.png" height="75" alt="Berlin Institute of Health Logo.">
+<img src="logos/charite.png" height="75" alt="Charite Berlin Logo.">
+<img src="logos/ucsf.png" height="75" alt="University of California San Francisco Logo.">
+<img src="logos/uw.png" height="75" alt="University of Washington Logo.">
+</p>
+
+                  </div>
+                  <div class="tab-pane" data-value="Promoter" id="tab-3872-2">
+                    <div class="tabbable">
+                      <ul class="nav nav-tabs shiny-tab-input" id="promoterNavigation" data-tabsetid="6907"></ul>
+                      <div class="tab-content" data-tabsetid="6907"></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" data-value="Enhancer" id="tab-3872-3">
+                    <div class="tabbable">
+                      <ul class="nav nav-tabs shiny-tab-input" id="enhancerNavigation" data-tabsetid="1592"></ul>
+                      <div class="tab-content" data-tabsetid="1592"></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" data-value="Download" id="tab-3872-4">
+                    <div class="container-fluid">
+                      <h2>Download elements</h2>
+                      <hr/>
+                      <div class="row">
+                        <div class="col-sm-4" id="download_panel">
+                          <div class="form-group shiny-input-container">
+                            <label class="control-label" id="download_reference_all-label" for="download_reference_all">Genome release:</label>
+                            <div>
+                              <select id="download_reference_all" class="shiny-input-select"><option value="GRCh37" selected>GRCh37</option>
+<option value="GRCh38">GRCh38</option></select>
+                              <script type="application/json" data-for="download_reference_all" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+                            </div>
+                          </div>
+                          <div class="form-group shiny-input-container">
+                            <label class="control-label" id="download_promoter-label" for="download_promoter">Promoters:</label>
+                            <div>
+                              <select id="download_promoter" class="shiny-input-select" multiple="multiple"><optgroup label="Element">
+<option value="F9">F9</option>
+<option value="FOXE1">FOXE1</option>
+<option value="GP1BA">GP1BA</option>
+<option value="HBB">HBB</option>
+<option value="HBG1">HBG1</option>
+<option value="HNF4A">HNF4A</option>
+<option value="LDLR">LDLR</option>
+<option value="LDLR.2">LDLR.2</option>
+<option value="MSMB">MSMB</option>
+<option value="PKLR-24h">PKLR-24h</option>
+<option value="PKLR-48h">PKLR-48h</option>
+<option value="TERT-GAa">TERT-GAa</option>
+<option value="TERT-GBM">TERT-GBM</option>
+<option value="TERT-GSc">TERT-GSc</option>
+<option value="TERT-HEK">TERT-HEK</option>
+</optgroup></select>
+                              <script type="application/json" data-for="download_promoter">{"plugins":["selectize-plugin-a11y"]}</script>
+                            </div>
+                          </div>
+                          <div class="form-group shiny-input-container">
+                            <label class="control-label" id="download_enhancer-label" for="download_enhancer">Enhancers:</label>
+                            <div>
+                              <select id="download_enhancer" class="shiny-input-select" multiple="multiple"><optgroup label="Element">
+<option value="BCL11A">BCL11A</option>
+<option value="IRF4">IRF4</option>
+<option value="IRF6">IRF6</option>
+<option value="MYCrs11986220">MYCrs11986220</option>
+<option value="MYCrs6983267">MYCrs6983267</option>
+<option value="RET">RET</option>
+<option value="SORT1">SORT1</option>
+<option value="SORT1-flip">SORT1-flip</option>
+<option value="SORT1.2">SORT1.2</option>
+<option value="TCF7L2">TCF7L2</option>
+<option value="UC88">UC88</option>
+<option value="ZFAND3">ZFAND3</option>
+<option value="ZRSh-13">ZRSh-13</option>
+<option value="ZRSh-13h2">ZRSh-13h2</option>
+</optgroup></select>
+                              <script type="application/json" data-for="download_enhancer">{"plugins":["selectize-plugin-a11y"]}</script>
+                            </div>
+                          </div>
+                          <div class="form-group shiny-input-container">
+                            <label class="control-label" id="download_format_all-label" for="download_format_all">Format:</label>
+                            <div>
+                              <select id="download_format_all" class="shiny-input-select"><option value=".tsv" selected>.tsv</option>
+<option value=".csv">.csv</option></select>
+                              <script type="application/json" data-for="download_format_all" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+                            </div>
+                          </div>
+                          <a id="downloadData_selected" class="btn btn-default shiny-download-link disabled" href="" target="_blank" download aria-disabled="true" tabindex="-1">
+                            <i class="fas fa-download" role="presentation" aria-label="download icon"></i>
+                            Download Selected Elements
+                          </a>
+                          <a id="downloadData_all" class="btn btn-default shiny-download-link disabled" href="" target="_blank" download aria-disabled="true" tabindex="-1">
+                            <i class="fas fa-download" role="presentation" aria-label="download icon"></i>
+                            Download All Elements
+                          </a>
+                        </div>
+                        <div class="col-sm-8" id="file_format"><h2 id="format-description">Format description</h2>
+<p>Variant files for each element are available for genome releases GRCh37 and GRCh38. Except of the chromosomal coordinates the files of the different releases are identical. Files are TAB (<code>.tsv</code>) or COMMA (<code>.csv</code>) separated, each row contains one variant, and they include a header. If a possible variant at a position is not shown, it was not observed in the saturation mutagenesis library and therefore not present in the final model for fitting.</p>
+<h3 id="columns">Columns</h3>
+<p><strong>Chromosome</strong> - Chromosome of the variant.
+<strong>Position</strong> - Chromosomal position (GRCh38 or GRCH38) of the variant.
+<strong>Ref</strong> - Reference allele of the variant (<code>A</code>, <code>T</code>, <code>G</code>, or <code>C</code>).
+<strong>Alt</strong> - Alternative allele of the variant (<code>A</code>, <code>T</code>, <code>G</code>, or <code>C</code>). One base-pair deletions are represented as <code>-</code>.
+<strong>Tags</strong> - Number of unique tags associated with the variant.
+<strong>DNA</strong> - Count of DNA sequences that contain the variant (used for fitting the linear model).
+<strong>RNA</strong> - Count of RNA sequences that contain the variant (used for fitting the linear model).
+<strong>Value</strong> - Log2 variant expression effect derived from the fit of the linear model (coefficient).
+<strong>P-Value</strong> - P-value of the coefficient.</p>
+<h2 id="data-usage">Data usage</h2>
+<p>We are making our data available prior to publication in line with <a href="https://www.genome.gov/Pages/Research/WellcomeReport0303.pdf">Fort Lauderdale principle</a>, allowing others to use the data but allowing the data producers to make the first presentations and to publish the first paper with global analyses of the data. In addition, we also reserve the right to publish the first analysis of the differences seen in the TERT knock-down experiments and alternative cell-type experiments. Studies that do not overlap with these intentions may be submitted for publication at any time, but must appropriately cite the data source. After publication of the data, the first publication of the data producers should be cited for any use of these data.</p>
+</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </body>
+          </main>
+        </div>
+      </div>
+      <footer id="footer" role="contentinfo" class="row"><a href="https://www.washington.edu/online/terms">Terms and Conditions</a> and the <a href="https://www.washington.edu/online/privacy">Online Privacy Statement</a> of the University of Washington apply.</footer>
+    </body>
+  </html>
+</body>
+</html>
