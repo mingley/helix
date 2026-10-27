@@ -1,0 +1,24 @@
+{
+  "files": {
+    "all-snv-deltas.csv": {
+      "bytes": 510437,
+      "sha256": "33cf20bdfffb2733e79801946dd4d37d6326088987ec8e04abf45c14387d49e4"
+    },
+    "delta-classes.csv": {
+      "bytes": 219669,
+      "sha256": "5fb863cedde6bf27831ca595f8b81bd2b19d339d3d144a3b4a5dd670aa5528ba"
+    },
+    "implementation.py": {
+      "bytes": 11557,
+      "sha256": "c65676df80de314226a1c672880fdb6fef6609f7606b56c10c460a879989413a"
+    },
+    "summary.json": {
+      "bytes": 5204,
+      "sha256": "fd254f73a22237b61ecb0d4e8fcaa1244b3f26f3127aaa39e92503c08f57de0f"
+    },
+    "zero-delta-edits.csv": {
+      "bytes": 1718,
+      "sha256": "7b342c07c5aec4c9cc9ac83ced690a7c1e88052131a3675bbe4040fe4a083272"
+    }
+  }
+}

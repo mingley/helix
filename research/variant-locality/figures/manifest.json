@@ -1,0 +1,46 @@
+{
+  "all_interior_SNV_opportunities": 32502288,
+  "biological_interpretation": "Feature equivalence does not imply biological neutrality.",
+  "complete_panel_elements": 55276,
+  "dependency_lock": {
+    "path": "requirements/research.lock",
+    "sha256": "f2efb9267afd0846c87f557d815370f7510a133ae9129b458889c2c6204ccd57"
+  },
+  "exact_zero_feature_delta_opportunities": 745052,
+  "filtering": "None; every original panel row is included.",
+  "inputs": {
+    "manifest.json": {
+      "bytes": 866,
+      "sha256": "72a1092015e38df2f4ecf9d20631c6f3e0d1f639c7e8a5e303aed2714e61f722"
+    },
+    "per-element.csv": {
+      "bytes": 2719548,
+      "sha256": "f50422b34129125564d6bda3702c496899fa1b95e1efff99f77303b9ffde9638"
+    },
+    "summary.json": {
+      "bytes": 3020,
+      "sha256": "45ed67761035c435dd8018f5f9793bbdd9483045285379c68ad0347d6f609c89"
+    }
+  },
+  "matplotlib_version": "3.10.8",
+  "outputs": {
+    "feature-equivalent-counts.csv": {
+      "bytes": 316,
+      "sha256": "0a9f44bfb48dca1dd8e752cd77d210f8418fb2cb2abe9b6f33250c4dc9999f21"
+    },
+    "panel-feature-equivalence.png": {
+      "bytes": 144009,
+      "sha256": "263d6816ee68dec7785a9061428fd370428988dd6b41205c09b10b6728c44f20"
+    },
+    "panel-feature-equivalence.svg": {
+      "bytes": 90982,
+      "sha256": "68d356fecad6312a2cd7f74919a23fbe88146f912c8d8229fcf008a6d082cd0e"
+    }
+  },
+  "purpose": "Descriptive histogram of the completed outcome-free exact DNA scan.",
+  "schema_version": 1,
+  "script": {
+    "path": "scripts/plot_variant_locality.py",
+    "sha256": "749e3826c27e89e09cff1000d8e873fe43bbae216fa3c123502baffbd9fb09c7"
+  }
+}

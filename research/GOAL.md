@@ -34,6 +34,18 @@ constraints.
 
 ## Next falsifiable goal: predict perturbations in a separate study
 
+The [external transfer contract](../experiments/variant-transfer-v1.md) now
+freezes a test of signed Siraj 2026 reporter effects in K562 and HepG2 using the
+five existing activity fits without retraining. Source semantics, exact DNA,
+coordinate/reference validation and exclusions from all explored loci must pass
+before outcomes can be evaluated. The protocol was committed before acquiring
+the new outcome asset; a second exact schema/cohort freeze remains required.
+
+The [outcome-free mutation analysis](variant-locality-study.md) quantifies the
+model's limits before that test: 745,052 proposed interior edits preserve every
+feature, and distant substitutions have zero ideal predicted interaction. These
+facts describe the representation and do not count as measured transfer success.
+
 Test whether a model learned from explicit sequence/context measurements
 predicts variant effects at untouched regulatory loci in a genuinely separate
 experimental study. Separate composition-based prediction from hypotheses about

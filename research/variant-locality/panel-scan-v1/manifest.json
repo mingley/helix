@@ -1,0 +1,29 @@
+{
+  "files": {
+    "checks.json": {
+      "bytes": 771,
+      "sha256": "46d394f920a8b0312e78016fffa68706b85632ea90f75539f277828bf3b8c539"
+    },
+    "opportunity-classes.csv": {
+      "bytes": 388857,
+      "sha256": "d7e10b3ae852796de1511b133a591ba698abb21c8bcbe180a2f30c2bbda91cea"
+    },
+    "per-element.csv": {
+      "bytes": 2719548,
+      "sha256": "f50422b34129125564d6bda3702c496899fa1b95e1efff99f77303b9ffde9638"
+    },
+    "scan.py": {
+      "bytes": 9547,
+      "sha256": "26fb984e849dbf1f234a88d5dae3e2fb58402f063312a6aec46259ee446fe43c"
+    },
+    "summary.json": {
+      "bytes": 3020,
+      "sha256": "45ed67761035c435dd8018f5f9793bbdd9483045285379c68ad0347d6f609c89"
+    },
+    "zero-feature-examples.csv": {
+      "bytes": 7237,
+      "sha256": "9ee20d7d5cdd1d338e48ee19bdb1563762aef4a934d7cc081aa43b480f204e78"
+    }
+  },
+  "schema_version": 1
+}

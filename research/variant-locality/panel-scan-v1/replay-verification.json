@@ -1,0 +1,53 @@
+{
+  "all_computational_artifacts_and_manifest_byte_identical": true,
+  "command": "python3 research/variant-locality/panel-scan-v1/scan.py --panel datasets/context-panel/panel.json --out /tmp/helix-feature-panel-published-replay",
+  "computation_manifest_sha256": "72a1092015e38df2f4ecf9d20631c6f3e0d1f639c7e8a5e303aed2714e61f722",
+  "files": [
+    {
+      "byte_identical": true,
+      "bytes": 771,
+      "file": "checks.json",
+      "sha256": "46d394f920a8b0312e78016fffa68706b85632ea90f75539f277828bf3b8c539"
+    },
+    {
+      "byte_identical": true,
+      "bytes": 388857,
+      "file": "opportunity-classes.csv",
+      "sha256": "d7e10b3ae852796de1511b133a591ba698abb21c8bcbe180a2f30c2bbda91cea"
+    },
+    {
+      "byte_identical": true,
+      "bytes": 2719548,
+      "file": "per-element.csv",
+      "sha256": "f50422b34129125564d6bda3702c496899fa1b95e1efff99f77303b9ffde9638"
+    },
+    {
+      "byte_identical": true,
+      "bytes": 9547,
+      "file": "scan.py",
+      "sha256": "26fb984e849dbf1f234a88d5dae3e2fb58402f063312a6aec46259ee446fe43c"
+    },
+    {
+      "byte_identical": true,
+      "bytes": 3020,
+      "file": "summary.json",
+      "sha256": "45ed67761035c435dd8018f5f9793bbdd9483045285379c68ad0347d6f609c89"
+    },
+    {
+      "byte_identical": true,
+      "bytes": 7237,
+      "file": "zero-feature-examples.csv",
+      "sha256": "9ee20d7d5cdd1d338e48ee19bdb1563762aef4a934d7cc081aa43b480f204e78"
+    },
+    {
+      "byte_identical": true,
+      "bytes": 866,
+      "file": "manifest.json",
+      "sha256": "72a1092015e38df2f4ecf9d20631c6f3e0d1f639c7e8a5e303aed2714e61f722"
+    }
+  ],
+  "python_version": "3.12.14",
+  "schema_version": 1,
+  "scope": "Computational replay of outcome-free DNA feature scan only; no response measurements or biological validation.",
+  "verified_at_utc": "2026-10-27T22:19:33.363331+00:00"
+}

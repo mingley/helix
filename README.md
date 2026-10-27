@@ -11,6 +11,14 @@ by **8.80%** beyond cell means on **55,276 elements in 2,761 sequence/locus grou
 Independent Rust and Python calculations pass all **258 comparison categories**,
 including all 829,140 predictions and exact DNA feature fractions.
 
+An [exact mutation analysis](research/variant-locality-study.md) now identifies
+**745,052 of 32,502,288 interior single-base edit opportunities (2.2923%)**
+that leave every feature unchanged in this panel. The model must predict zero
+for those pairs. It also cannot represent interactions between substitutions
+separated by three or more positions. Twenty-one further Lean theorems and
+independent exhaustive calculations establish these representation limits;
+they do not establish biological neutrality.
+
 The [source recovery](research/context-endpoint-recovery.md) retrieves the
 previously missing official RNA/DNA activity table. It also reproduces all
 166,014 model-score cells by standardizing the published ESS table on the exact

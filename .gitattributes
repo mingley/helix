@@ -44,3 +44,9 @@ research/context-identifiability-figures/*.csv -text whitespace=cr-at-eol
 research/results/context-activity-v3/figures/*.svg -text whitespace=-trailing-space
 research/results/context-activity-v3/figures/*.csv -text whitespace=cr-at-eol
 research/results/context-endpoint-recovery-v1/primary/source-evidence/*.xml -text -whitespace
+# Preserve exact generated figures retained from the first activity attempt.
+research/results/context-activity-v3/history/context-activity-v3-final-figures/*.svg -text whitespace=-trailing-space
+research/results/context-activity-v3/history/context-activity-v3-final-figures/*.csv -text whitespace=cr-at-eol
+# Immutable exact-count and generated-figure artifacts.
+research/variant-locality/**/*.csv -text whitespace=cr-at-eol
+research/variant-locality/figures/*.svg -text whitespace=-trailing-space

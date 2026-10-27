@@ -1,0 +1,34 @@
+{
+  "absolute_comparison_tolerance": 1e-10,
+  "artifact_manifest_sha256": "2ea476bc5413dc13486dec9f3d7e9162a50a0e47f1d83ce29efabc5f5cc5af9d",
+  "comparison": "separate predictor is used only after independent results; all5fold and ensemble deltas plus learned GC terms",
+  "comparison_implementation_sha256": "7e6123eab6c8c55cd714bd18b092bb8e5806f87a1640a44869404ae8dd30fae4",
+  "edits": 3072,
+  "embedding": "97 A bases + local 5mer + 98 A bases; edit zero-based position99 in fixed200nt",
+  "enumeration": "lexicographic ACGT^5; replace central base with each other ACGT base",
+  "expected_exact_feature_zero_edits": 64,
+  "extrema": "retain all ties for ensemble minimum, maximum and maximumabsolute permodel; allrowdata retained",
+  "folds_per_model": 5,
+  "implementation_sha256": "2e541666fd43edeaf6c565684caee434ba4f66544bf4d32f79ddb79824e188e7",
+  "kind": "exhaustive synthetic architecture audit; no external outcomes or refitting",
+  "limits": [
+    "Existing training outcomes were previously exposed; no new outcome payload accepted.",
+    "Interior same-length SNVs only; this is not a whole-sequence activity bound.",
+    "Prediction is not an observed, causal or clinical variant effect.",
+    "Five fits share one study; fold spread is not calibrated uncertainty.",
+    "Floating arithmetic is cross-checked, not formally verified.",
+    "This finite model envelope does not establish global scientific novelty."
+  ],
+  "models": [
+    "S",
+    "I:HepG2",
+    "I:K562",
+    "I:WTC11"
+  ],
+  "prediction": "exact local integer count changes divided by198 (trimers) or200 (GC), dot beta/scale; mean all5folds",
+  "protocol_id": "variant-locality-model-envelope-v1",
+  "schema_version": 1,
+  "training_protocol_sha256": "64e14037fb1f42ddc1ecaca1d23bb8096fabac1f1e892d105eaa20f525fbbb20",
+  "training_source_manifest_sha256": "6a3371bed4061f9ca9fa1a95bfc0947ffee91daa22fe509063708e549d453730",
+  "units": "transferred published library-normalized log2(RNA/DNA) model scale"
+}

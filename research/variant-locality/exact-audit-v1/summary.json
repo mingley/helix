@@ -1,0 +1,226 @@
+{
+  "independent_implementation": true,
+  "experimental_outcomes_read": false,
+  "models_fitted": false,
+  "arithmetic": "exact signed integer counts; Fraction for normalized L1",
+  "canonical_trimers": [
+    "AAA",
+    "AAC",
+    "AAG",
+    "AAT",
+    "ACA",
+    "ACC",
+    "ACG",
+    "ACT",
+    "AGA",
+    "AGC",
+    "AGG",
+    "ATA",
+    "ATC",
+    "ATG",
+    "CAA",
+    "CAC",
+    "CAG",
+    "CCA",
+    "CCC",
+    "CCG",
+    "CGA",
+    "CGC",
+    "CTA",
+    "CTC",
+    "GAA",
+    "GAC",
+    "GCA",
+    "GCC",
+    "GGA",
+    "GTA",
+    "TAA",
+    "TCA"
+  ],
+  "sequence_length": 200,
+  "trimer_frequency_denominator": 198,
+  "gc_frequency_denominator": 200,
+  "interior_positions_zero_based": [
+    2,
+    197
+  ],
+  "oriented_edits": 3072,
+  "reverse_complement_pairs": 1536,
+  "unique_delta_vectors": 1405,
+  "all_zero_edits": 64,
+  "all_zero_rc_pairs": 32,
+  "zero_iff_mutated_5mer_equals_reference_reverse_complement": true,
+  "class_size_histogram": {
+    "2": 1312,
+    "4": 88,
+    "8": 4,
+    "64": 1
+  },
+  "trimer_count_l1_histogram_by_edit": {
+    "0": 64,
+    "2": 16,
+    "4": 384,
+    "6": 2608
+  },
+  "minimum_nonzero_trimer_count_l1": 2,
+  "minimum_nonzero_joint_integer_l1": 3,
+  "minimum_nonzero_normalized_feature_l1": "299/19800",
+  "minimum_normalized_l1_examples": [
+    {
+      "reference": "AAACC",
+      "mutant": "AACCC"
+    },
+    {
+      "reference": "AAAGG",
+      "mutant": "AAGGG"
+    },
+    {
+      "reference": "AACCC",
+      "mutant": "AAACC"
+    },
+    {
+      "reference": "AAGGG",
+      "mutant": "AAAGG"
+    },
+    {
+      "reference": "CCAAA",
+      "mutant": "CCCAA"
+    },
+    {
+      "reference": "CCCAA",
+      "mutant": "CCAAA"
+    },
+    {
+      "reference": "CCCTT",
+      "mutant": "CCTTT"
+    },
+    {
+      "reference": "CCTTT",
+      "mutant": "CCCTT"
+    }
+  ],
+  "checks": {
+    "all_oriented_delta_and_rc_checks": 3072,
+    "all_two_base_flanks_full_count_checks": 786432,
+    "fixed_200nt_full_count_checks": 3072
+  },
+  "double_edit_checks": [
+    {
+      "distance_nt": 1,
+      "reference_contexts": 4096,
+      "direct_full_count_comparisons": 36864,
+      "zero_interactions": 0,
+      "nonzero_interactions": 36864,
+      "first_nonzero": {
+        "reference": "AAAAAA",
+        "mutant": "AACCAA",
+        "positions_zero_based": [
+          2,
+          3
+        ],
+        "interaction_vector": [
+          2,
+          -1,
+          0,
+          0,
+          -2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "distance_nt": 2,
+      "reference_contexts": 16384,
+      "direct_full_count_comparisons": 147456,
+      "zero_interactions": 0,
+      "nonzero_interactions": 147456,
+      "first_nonzero": {
+        "reference": "AAAAAAA",
+        "mutant": "AACACAA",
+        "positions_zero_based": [
+          2,
+          4
+        ],
+        "interaction_vector": [
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "distance_nt": 3,
+      "reference_contexts": 65536,
+      "direct_full_count_comparisons": 589824,
+      "zero_interactions": 589824,
+      "nonzero_interactions": 0,
+      "first_nonzero": null
+    }
+  ],
+  "general_background_argument": "Any 3mer not containing the edited site is unchanged and cancels. For an interior SNV the only affected windows have starts p-2,p-1,p; their union is exactly the centered 5mer. Outside nucleotides therefore cannot alter this delta, for arbitrary background and boundary placement with p in [2,L-3].",
+  "general_distance_argument": "A 3nt window cannot contain two positions separated by at least3nt. Each affected window then contains at most one edit, so its mixed second difference is zero. GC is an additive base count. Thus every pair separated by >=3nt has exactly zero interaction in this feature vector and every fixed linear predictor of it, including at sequence edges.",
+  "limits": [
+    "Interior 5mer enumeration does not apply to the first/last2positions without truncating the affected windows.",
+    "Distinct vectors need not yield distinct predictions under particular coefficients; collisions or zero effects can increase.",
+    "No quantitative minimum predictor effect follows without assumptions on coefficients; zero interaction here is a representation limitation, not a biological assertion.",
+    "A fixed affine standardizer and intercept do not remove zero changes or feature-delta equivalences.",
+    "Count norms and normalized-frequency norms are separate quantities."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "files": {
+    "all-snv-predictions.csv": {
+      "bytes": 2218760,
+      "sha256": "d1ed52e2853d4716b3929acd3af1e559dfe972798779700e2ca03bb430b1ca6f"
+    },
+    "comparison-implementation.py": {
+      "bytes": 15940,
+      "sha256": "7e6123eab6c8c55cd714bd18b092bb8e5806f87a1640a44869404ae8dd30fae4"
+    },
+    "implementation.py": {
+      "bytes": 18093,
+      "sha256": "2e541666fd43edeaf6c565684caee434ba4f66544bf4d32f79ddb79824e188e7"
+    },
+    "numeric-comparisons.csv": {
+      "bytes": 605244,
+      "sha256": "aa7b303500d3c942c25b6400e2fe345ce7f7e86c65481ce4c6af0fedc5ea3c6c"
+    },
+    "protocol.json": {
+      "bytes": 1988,
+      "sha256": "551bc4ca278d309a7489c341b7128b55ef79349a0ebc90e73b2432db562c06c2"
+    },
+    "saved-fits.json": {
+      "bytes": 88581,
+      "sha256": "ff0b31e025224a8f7573d8fab1ce961d804a5b540aee111c426c6f074f2fd02e"
+    },
+    "summary.json": {
+      "bytes": 21276,
+      "sha256": "fc473d0492f19e633f16a6d7ed2047bcfb65b650ec6a542f0642d0fb3514bd20"
+    },
+    "zero-feature-checks.csv": {
+      "bytes": 2936,
+      "sha256": "bef1273cad9804b48cd8482d63a067178d2dc8470f8ac4225b2cc3c4e5439716"
+    }
+  },
+  "protocol_sha256": "551bc4ca278d309a7489c341b7128b55ef79349a0ebc90e73b2432db562c06c2",
+  "schema_version": 1,
+  "source_artifacts_sha256": "2ea476bc5413dc13486dec9f3d7e9162a50a0e47f1d83ce29efabc5f5cc5af9d"
+}

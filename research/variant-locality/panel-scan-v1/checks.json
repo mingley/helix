@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "allele_swap_negates_exact_delta": 3072,
+    "allele_swap_preserves_zero_status": 3072,
+    "direct_full_200nt_mutation_feature_recomputations": 3072,
+    "exact_zero_class_characterization_all_directed_templates": 3072,
+    "per_element_196_positions_times_3_alternates": 55276,
+    "reverse_complement_preserves_exact_delta": 3072,
+    "reverse_complement_preserves_zero_status": 3072
+  },
+  "excluded_inputs": "No observations, reporter activities, source effects, model coefficients, fitted predictions or clinical labels are selected or used.",
+  "feature_vector": "32 exact reverse-complement-canonical overlapping 3mer counts followed by exact GC numerator; normalization fixed at198 and200 respectively for200nt sequence.",
+  "passed": true
+}

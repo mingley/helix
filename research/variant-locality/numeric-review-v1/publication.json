@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "kind": "independent-frozen-variant-prediction-numeric-review-v1",
+  "training_artifacts_sha256": "2ea476bc5413dc13486dec9f3d7e9162a50a0e47f1d83ce29efabc5f5cc5af9d",
+  "reviewed_predictor_sha256": "7e6123eab6c8c55cd714bd18b092bb8e5806f87a1640a44869404ae8dd30fae4",
+  "original_manifest_sha256": "b700ae1057746416e6559d65dd97dc4551e523463fefcde4cc0129fe2e3f23ab",
+  "original_evidence_retained_byte_exact": true,
+  "ensemble_comparisons": 24960,
+  "fold_comparisons": 124800,
+  "new_experimental_outcomes_used": false,
+  "models_refitted": false,
+  "exact_rational_numerical_agreement_absolute_limit": 1e-12,
+  "ieee754_exact_identities_proven": false,
+  "files": {
+    "A-pairs.json": {
+      "bytes": 2700139,
+      "sha256": "bf0749b93109058e026afc3c7308529da6a1effe0ffc21105f3d81c88a4470fe"
+    },
+    "A-primary/manifest.json": {
+      "bytes": 807,
+      "sha256": "d831ccf5704865298711d42206432ea51ca47b356bdc46aae499aa9de0bdaa1e"
+    },
+    "A-primary/predictions.json": {
+      "bytes": 3585044,
+      "sha256": "f4d3c24b542115ed3a5182dada5f90107d2bad3bb0e1a65fd4c9b3fe0afb46f0"
+    },
+    "I-pairs.json": {
+      "bytes": 8120299,
+      "sha256": "e54d7d95765176ccd94413a50df883161684e86b83c6f8026fb579e7283eff26"
+    },
+    "I-primary/manifest.json": {
+      "bytes": 807,
+      "sha256": "0c9f6be0332f6725539c0b1ee9266d6201875dcc4d7409d89b1f53cb7c45ef24"
+    },
+    "I-primary/predictions.json": {
+      "bytes": 10776036,
+      "sha256": "1ac9647213081af8cd9bbd47aaf2548fee178ab09caeab1b5b75d1bc700f9318"
+    },
+    "README.md": {
+      "bytes": 5540,
+      "sha256": "b1cafeeee9c497c2c1eabece2f6e97197bb878a2a991a16d23bdb3f7fdcdadaa"
+    },
+    "S-pairs.json": {
+      "bytes": 2700139,
+      "sha256": "bf0749b93109058e026afc3c7308529da6a1effe0ffc21105f3d81c88a4470fe"
+    },
+    "S-primary/manifest.json": {
+      "bytes": 807,
+      "sha256": "647bb0da5a515f893fa532a0769c6fb626c7ac3146811b4c12b271d208fef325"
+    },
+    "S-primary/predictions.json": {
+      "bytes": 3584976,
+      "sha256": "347804f20cfa65351fec60f1a4f65542bb73599adc481203b6999dea8d323d87"
+    },
+    "implementation.py": {
+      "bytes": 9038,
+      "sha256": "00a7e6c67f5f84079edb9dc5dfff365e1fd42fd4d90f0801657fd8c8970f8fce"
+    },
+    "manifest.json": {
+      "bytes": 1580,
+      "sha256": "b700ae1057746416e6559d65dd97dc4551e523463fefcde4cc0129fe2e3f23ab"
+    },
+    "reviewed-predictor.py": {
+      "bytes": 15940,
+      "sha256": "7e6123eab6c8c55cd714bd18b092bb8e5806f87a1640a44869404ae8dd30fae4"
+    },
+    "summary.json": {
+      "bytes": 20316,
+      "sha256": "cde12b638ed801191e9f6df53913399a7a937f877b4959831a0fad06667b2716"
+    }
+  }
+}

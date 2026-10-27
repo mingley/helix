@@ -1,0 +1,93 @@
+{
+  "distinct_exact_delta_vectors": 1405,
+  "exact_oriented_5mer_plus_alternate_classes": 3072,
+  "exact_zero_characterization": "All64andonly64classes have alternate=complement(reference_center), outerleft=complement(outerright), and innerleft=complement(innerright). Equivalently the mutant5mer equals the reverse complement of the reference5mer. The GCnumerator and canonical3mer spectrum are unchanged.",
+  "exact_zero_feature_delta_fraction": 0.022923063139431907,
+  "exact_zero_feature_delta_opportunities": 745052,
+  "exact_zero_oriented_classes": 64,
+  "implementation_sha256": "26fb984e849dbf1f234a88d5dae3e2fb58402f063312a6aec46259ee446fe43c",
+  "interior_SNV_opportunities": 32502288,
+  "length_nt": 200,
+  "limits": [
+    "Slots count every pre-existing assay-panel record. Duplicate or RC-identical sequences are not deduplicated and no genomic-unique count is claimed.",
+    "Exact feature equality forces equal outputs only for deterministic predictors using solely this feature vector. No measured functional effect, clinical consequence or biological neutrality is inferred.",
+    "Only interior single-nucleotide substitutions are enumerated. Boundary positions, indels, multi-edit haplotypes, positional or longer-context features are outside this scan.",
+    "Reported quantiles describe this fixed sequence panel; they are not inferential intervals."
+  ],
+  "observed_distinct_exact_delta_vectors": 1405,
+  "observed_oriented_classes": 3072,
+  "panel_slots": 55276,
+  "per_element_exact_zero_count": {
+    "elements_with_any": 55270,
+    "elements_with_none": 6,
+    "histogram": {
+      "0": 6,
+      "1": 5,
+      "2": 11,
+      "3": 66,
+      "4": 164,
+      "5": 353,
+      "6": 811,
+      "7": 1454,
+      "8": 2389,
+      "9": 3313,
+      "10": 4233,
+      "11": 5043,
+      "12": 5588,
+      "13": 5632,
+      "14": 5385,
+      "15": 4936,
+      "16": 4188,
+      "17": 3277,
+      "18": 2551,
+      "19": 1897,
+      "20": 1428,
+      "21": 903,
+      "22": 611,
+      "23": 376,
+      "24": 278,
+      "25": 157,
+      "26": 87,
+      "27": 57,
+      "28": 30,
+      "29": 29,
+      "30": 8,
+      "31": 4,
+      "32": 4,
+      "33": 2
+    },
+    "max": 33,
+    "mean": 13.478761125985962,
+    "median": 13.0,
+    "min": 0,
+    "q025_type7": 6.0,
+    "q25_type7": 11.0,
+    "q75_type7": 16.0,
+    "q975_type7": 22.0
+  },
+  "position_definition": {
+    "alternates_per_position": 3,
+    "one_based_inclusive": [
+      3,
+      198
+    ],
+    "positions_per_element": 196,
+    "zero_based_inclusive": [
+      2,
+      197
+    ]
+  },
+  "purpose": "Outcome-free exact feature equivalence scan, not a biological neutrality test.",
+  "schema_version": 1,
+  "source": {
+    "bytes": 37840164,
+    "path": "datasets/context-panel/panel.json",
+    "selected_fields": [
+      "records[].id",
+      "records[].sequence"
+    ],
+    "sha256": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3"
+  },
+  "unique_RC_sequence_identities": 55275,
+  "unique_exact_sequence_identities": 55276
+}
