@@ -1,21 +1,24 @@
 # Research milestones
 
-## Current: numerical prediction passes; source-formula validation does not
+## Current: published activity prediction and source recovery
 
-The **17-crate workspace** now evaluates matched-context sequence prediction
-on 55,276 reference-valid regulatory elements. Context-specific slopes achieve
-13.434% lower MSE than additive DNA/context on the fixed published columns.
-All 243 independent comparison categories pass, including exact core features,
-memberships, fits, 829,140 predictions and declared loss/resampling checks.
+The **17-crate workspace** predicts unchanged published log2(RNA/DNA) activity
+on 55,276 reference-valid fragments in three measured cells. Fixed shared DNA
+composition slopes improve held-out MSE by **8.80%** beyond cell means. All 258
+independent numerical categories pass, including 829,140 predictions, fresh fits,
+exact features, losses and 2,000 paired component resamples.
 
-The source columns contradict the paper's unweighted ESS formula. Their
-weighted rank-two structure is compatible with extra scaling, but historical
-normalization remains unresolved. The full workflow preserves that failure
-and exits 2 despite complete numerical reproduction. It neither repairs the
-targets nor claims raw-activity prediction or a new regulatory mechanism.
-Read the [study](../research/context-specificity-study.md),
-[semantic review](../research/context-specificity-semantic-review.md) and
-[snapshot](../research/results/context-specificity-v2/README.md).
+Official source recovery supplies individual replicate and aggregate activities
+and reconstructs the older model-score table through a separately tested
+standardization relationship. Upstream ESS-processing provenance remains a
+different question. The earlier 36 negative arithmetic routes, blocked v1,
+frozen v2 source-formula failure and all failed attempts remain recorded.
+The same experiment and panel are not independent biological replication.
+
+Read the [activity study](../research/context-activity-study.md),
+[endpoint recovery](../research/context-endpoint-recovery.md),
+[identifiability proof](../research/context-identifiability.md) and
+[activity snapshot](../research/results/context-activity-v3/README.md).
 
 ## Implemented: reference-grounded HBB research and measured regulatory evidence
 
@@ -68,25 +71,19 @@ deletions. Their apparent duplicate-identity prediction constraint disappears
 under the preexisting tag-quality rule. This is source-estimate accounting,
 not a biological noise floor. See the [documented findings](../research/regulatory-study.md).
 
-## Next: recover authoritative normalization or compatible measurements
+## Next: perturbation prediction in a separate study
 
-The raw-activity context v1 stopped before fitting because its specified
-activity endpoint was absent. V2 openly changed to the available score columns
-under a new frozen protocol; numerical success does not erase either source
-failure.
-
-1. Resolve the frozen S9 release against authoritative preprocessing code,
-   operation order and version-linked tables. A fitted plane cannot identify
-   historical normalization.
-2. Recover underlying activity/replicate measurements if their reuse terms and
-   source mapping permit it, or select an independently compatible assay.
-3. Freeze any new endpoint, source, exclusions, units, groups, baselines and
-   uncertainty before new outcome inspection. Preserve the existing targets and
-   failed checks; do not project labels to force a formula.
-4. Distinguish fixed-column prediction, endpoint validation, unseen-cell
-   transfer, source-study validation and independent laboratory replication.
-5. Use new directed or endogenous observations to discriminate proposed
-   mechanisms. Sequence associations and computation alone are insufficient.
+1. Establish an independent experiment's source genealogy, actual variant/insert
+   DNA, observed assay units, replicate context and reuse terms before outcomes.
+2. Freeze the small model, whole-locus/homology groups, context-matched baselines,
+   perturbation endpoint and uncertainty. Existing HBB/Kircher and Agarwal data
+   are explored evidence, not pristine validation.
+3. Test signed variant effects and conditional uncertainty at untouched loci.
+   Whole-fragment activity gains do not establish single-base effect accuracy.
+4. Require directed or endogenous evidence that distinguishes composition-based
+   prediction from a specific regulatory interaction before a mechanistic claim.
+5. Continue upstream normalization provenance as a separate source audit, keeping
+   every frozen negative result and post-hoc diagnostic explicitly identified.
 
 Other assays remain future candidates. The
 [BRCA1 acquisition review](../research/independent-assay-plan.md) records its

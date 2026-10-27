@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "kind": "synthetic ideal-operator illustration",
+  "empirical_outcomes_consumed": false,
+  "frozen_inputs_sha256": "52c765e96afe867d779d0b7706dee616903af410776f85545309c1c732417e2d",
+  "implementation": {
+    "path": "scripts/plot_context_identifiability.py",
+    "sha256": "71f285203d8eabf716b5db67b54ab5cf493978f46b1f04b58e7e61d61c9e7ef9"
+  },
+  "formal_source": {
+    "path": "proofs/ContextIdentifiability.lean",
+    "sha256": "b5a1d4713d78a1872ea7a3c15529808449507fefbf97401b3cb46d01709e0b67",
+    "theorem": "HelixContextIdentifiability.common_shift_invariant",
+    "scope": "Exact ideal centering-stage map; center3 is three times rational centering. A source hash is not itself a Lean verification receipt."
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "matplotlib": "3.10.8"
+  },
+  "dependency_lock_sha256": "f2efb9267afd0846c87f557d815370f7510a133ae9129b458889c2c6204ccd57",
+  "exact_checks": {
+    "profiles_distinct": true,
+    "centered_profiles_identical": true,
+    "centered_sum_exactly_zero": true,
+    "base_mean": "3",
+    "shifted_mean": "8",
+    "centered_values": [
+      "-1",
+      "1",
+      "0"
+    ],
+    "formal_center3_values": [
+      "-3",
+      "3",
+      "0"
+    ]
+  },
+  "artifacts": {
+    "inputs.json": {
+      "bytes": 780,
+      "sha256": "52c765e96afe867d779d0b7706dee616903af410776f85545309c1c732417e2d"
+    },
+    "identifiability-exact.csv": {
+      "bytes": 271,
+      "sha256": "776febe46fa09f2d789bec7aa20a02990d4829914e186333ab7f35e3371af9ef"
+    },
+    "identifiability.svg": {
+      "bytes": 24655,
+      "sha256": "2eb808438075c82a9303d2d505b35ab1fa6926df3b573311cd43955acb96acb1"
+    },
+    "identifiability.png": {
+      "bytes": 201821,
+      "sha256": "7040463555c5dbcd4f38fec0ebfef0b1e8a4210b2277551efabd838623eb3ec7"
+    }
+  },
+  "interpretation_limits": [
+    "Not S9 data",
+    "Not a reconstruction of empirical raw activity",
+    "Not verification of source normalization",
+    "Not a new mathematical or biological discovery",
+    "The invariance is at the input to centering, not arbitrary raw shifts with a recomputed upstream normalizer.",
+    "Deterministic rendering is expected with the pinned runtime, font and input bytes; alternative rendering stacks may differ."
+  ]
+}

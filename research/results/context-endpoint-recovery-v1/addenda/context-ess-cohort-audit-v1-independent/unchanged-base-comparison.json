@@ -1,0 +1,51 @@
+{
+  "matched": true,
+  "failures": [],
+  "checks": [
+    {
+      "category": "published_activity_aggregate:IDs",
+      "kind": "exact",
+      "matched": true
+    },
+    {
+      "category": "published_activity_aggregate:unchanged_base_values",
+      "kind": "numeric",
+      "matched": true,
+      "finite_values": 170937,
+      "matching_missing": 6,
+      "maximum_absolute_difference": 0.0,
+      "absolute_tolerance": 1e-08,
+      "relative_tolerance": 1e-08
+    },
+    {
+      "category": "mean_three_published_replicates:IDs",
+      "kind": "exact",
+      "matched": true
+    },
+    {
+      "category": "mean_three_published_replicates:unchanged_base_values",
+      "kind": "numeric",
+      "matched": true,
+      "finite_values": 170885,
+      "matching_missing": 58,
+      "maximum_absolute_difference": 0.0,
+      "absolute_tolerance": 1e-08,
+      "relative_tolerance": 1e-08
+    },
+    {
+      "category": "mean_three_after_explicit_replicate_median_subtraction:IDs",
+      "kind": "exact",
+      "matched": true
+    },
+    {
+      "category": "mean_three_after_explicit_replicate_median_subtraction:unchanged_base_values",
+      "kind": "numeric",
+      "matched": true,
+      "finite_values": 170885,
+      "matching_missing": 58,
+      "maximum_absolute_difference": 0.0,
+      "absolute_tolerance": 1e-08,
+      "relative_tolerance": 1e-08
+    }
+  ]
+}

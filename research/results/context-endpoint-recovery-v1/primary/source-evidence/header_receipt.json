@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "inspected_at_utc": "2026-10-27T18:47:18.911990+00:00",
+  "protocol_sha256": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868",
+  "source_workbook": {
+    "path": "datasets/context-endpoint-recovery/raw/jointdata.xlsx",
+    "sha256": "9c95ca2b8df0ff3edc7dda4fdcf337f33e652b96a0833a70e786bbcdc2b76b4e",
+    "bytes": 53557805
+  },
+  "scope": "Workbook metadata and first stored row text only. Numeric cell values redacted. No data rows/quantitative activity values interpreted.",
+  "implementation_sha256": "9dab87116d67182d9dd1fffc4f8d773fe54c0bfeb3bb9eb5b21428043f65f8c4",
+  "reader_sha256": "7ed80e8c4abbf3dfb6ff201cb3d1aafa5fd5865098ea687108fa8fe0d4b67f48",
+  "sheets": {
+    "all_cell_types_summary": {
+      "xml_member": "xl/worksheets/sheet1.xml",
+      "xml_uncompressed_bytes": 13072328,
+      "sheet_dimension_not_a_record_count": "A1:D56982",
+      "header_row": 1,
+      "headers": {
+        "A": "name",
+        "B": "HepG2 [log2(rna/dna)]",
+        "C": "K562 [log2(rna/dna)]",
+        "D": "WTC11 [log2(rna/dna)]"
+      },
+      "numeric_header_cells_redacted": []
+    },
+    "all_cell_types_ESS": {
+      "xml_member": "xl/worksheets/sheet2.xml",
+      "xml_uncompressed_bytes": 15830993,
+      "sheet_dimension_not_a_record_count": "A1:E55978",
+      "header_row": 1,
+      "headers": {
+        "A": "name",
+        "B": "type",
+        "C": "ElementSpecificityScore_HepG2",
+        "D": "ElementSpecificityScore_K562",
+        "E": "ElementSpecificityScore_WTC11"
+      },
+      "numeric_header_cells_redacted": []
+    },
+    "HepG2_replicate_level": {
+      "xml_member": "xl/worksheets/sheet3.xml",
+      "xml_uncompressed_bytes": 62333290,
+      "sheet_dimension_not_a_record_count": "A1:K170930",
+      "header_row": 1,
+      "headers": {
+        "A": "replicate",
+        "B": "name",
+        "C": "normalized_dna_count",
+        "D": "normalized_rna_count",
+        "E": "rna/dna ratio",
+        "F": "log2(rna/dna)",
+        "G": "num_observed_barcodes"
+      },
+      "numeric_header_cells_redacted": [
+        "H",
+        "I",
+        "J",
+        "K"
+      ]
+    },
+    "HepG2_summary_data": {
+      "xml_member": "xl/worksheets/sheet4.xml",
+      "xml_uncompressed_bytes": 16115027,
+      "sheet_dimension_not_a_record_count": "A1:E56983",
+      "header_row": 1,
+      "headers": {
+        "A": "name",
+        "B": "replicate 1 [log2(rna/dna)]",
+        "C": "replicate 2 [log2(rna/dna)]",
+        "D": "replicate 3 [log2(rna/dna)]",
+        "E": "mean"
+      },
+      "numeric_header_cells_redacted": []
+    },
+    "K562_replicate_level": {
+      "xml_member": "xl/worksheets/sheet5.xml",
+      "xml_uncompressed_bytes": 62339058,
+      "sheet_dimension_not_a_record_count": "A1:G170925",
+      "header_row": 1,
+      "headers": {
+        "A": "replicate",
+        "B": "name",
+        "C": "normalized_dna_count",
+        "D": "normalized_rna_count",
+        "E": "rna/dna ratio",
+        "F": "log2(rna/dna)",
+        "G": "num_observed_barcodes"
+      },
+      "numeric_header_cells_redacted": []
+    },
+    "K562_summary_data": {
+      "xml_member": "xl/worksheets/sheet6.xml",
+      "xml_uncompressed_bytes": 16107970,
+      "sheet_dimension_not_a_record_count": "A1:E56980",
+      "header_row": 1,
+      "headers": {
+        "A": "name",
+        "B": "replicate 1 [log2(rna/dna)]",
+        "C": "replicate 2 [log2(rna/dna)]",
+        "D": "replicate 3 [log2(rna/dna)]",
+        "E": "mean"
+      },
+      "numeric_header_cells_redacted": []
+    },
+    "WTC11_replicate_level": {
+      "xml_member": "xl/worksheets/sheet7.xml",
+      "xml_uncompressed_bytes": 62351730,
+      "sheet_dimension_not_a_record_count": "A1:G170895",
+      "header_row": 1,
+      "headers": {
+        "A": "replicate",
+        "B": "name",
+        "C": "normalized_dna_count",
+        "D": "normalized_rna_count",
+        "E": "rna/dna ratio",
+        "F": "log2(rna/dna)",
+        "G": "num_observed_barcodes"
+      },
+      "numeric_header_cells_redacted": []
+    },
+    "WTC11_summary_data": {
+      "xml_member": "xl/worksheets/sheet8.xml",
+      "xml_uncompressed_bytes": 15524462,
+      "sheet_dimension_not_a_record_count": "A1:E56980",
+      "header_row": 1,
+      "headers": {
+        "A": "name",
+        "B": "replicate 1 [log2(rna/dna)]",
+        "C": "replicate 2 [log2(rna/dna)]",
+        "D": "replicate 3 [log2(rna/dna)]",
+        "E": "mean"
+      },
+      "numeric_header_cells_redacted": []
+    }
+  },
+  "workbook_uncompressed_bytes": 265800125,
+  "workbook_uncompressed_byte_bound": 1000000000
+}

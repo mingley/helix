@@ -1,0 +1,46 @@
+{
+  "protocol_sha256": "a0e3f521d1086fca0633fc4c473a3655aaf2fa9d4a4818b0429a735f46d42372",
+  "files": {
+    "primary_summary": {
+      "transport_path": "runs/recovered-context-primary/summary.json",
+      "bytes": 4143612,
+      "sha256": "41fc2c0ca904c8320e0e7921d269754599cdf45107366a50cc310fbb01078b67"
+    },
+    "source_values": {
+      "transport_path": "runs/recovered-context-primary/source-values.json.gz",
+      "bytes": 15907416,
+      "sha256": "a0f42ea8512829fa0bb15da28ef1ec4020e8e2936ceb982631d8744a9b29ae3e"
+    },
+    "schema_binding": {
+      "transport_path": "runs/recovered-context-primary/schema-binding.json",
+      "bytes": 11475,
+      "sha256": "a59592816f57f7254b780c83ba3e929e3b38f4fd06b2b196a0cddda1d9bfb98e"
+    },
+    "published_activity_aggregate": {
+      "transport_path": "runs/recovered-context-primary/published_activity_aggregate.json.gz",
+      "bytes": 537102,
+      "sha256": "130394fd560357274d0fa9e304f4fbd7ef8d86dc1fad0bb7bd82d988118610ce"
+    },
+    "mean_three_published_replicates": {
+      "transport_path": "runs/recovered-context-primary/mean_three_published_replicates.json.gz",
+      "bytes": 1715611,
+      "sha256": "a6a0fe3586254f7a0aad63e73abe937eac3208047dce48af61e3344cccffef76"
+    },
+    "mean_three_after_explicit_replicate_median_subtraction": {
+      "transport_path": "runs/recovered-context-primary/mean_three_after_explicit_replicate_median_subtraction.json.gz",
+      "bytes": 1735802,
+      "sha256": "ee03b955ad5736b3eba05caa4f29659081e282c4a7fd7051e00b615ebb3f91f8"
+    }
+  },
+  "primary_root_transport_override": null,
+  "official_workbook_transport_path": "datasets/context-endpoint-recovery/raw/jointdata.xlsx",
+  "official_workbook_sha256": "9c95ca2b8df0ff3edc7dda4fdcf337f33e652b96a0833a70e786bbcdc2b76b4e",
+  "archived_primary_helper_sha256": "2472660613a5f63f41394eb91aaf99b8e5606fddeca0b23e2ee30c372c75a4f4",
+  "archived_S12_reader_sha256": "9a9779f80ea3002eab0ba904530cf1ec5c1bc3d7bb2f96155018d0369a3dbf42",
+  "implementation_sha256": "f2267f24a6f3c0f3d2b6bb7ec23865df74d1e63ede0b12766fd4d435e586d335",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "completed_at_utc": "2026-10-27T19:07:11.226716+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "kind": "synthetic ideal-operator illustration",
+  "selection": "Hand-chosen integer examples, independent of empirical outcomes.",
+  "contexts": [
+    "Context A",
+    "Context B",
+    "Context C"
+  ],
+  "base_profile": [
+    "2",
+    "4",
+    "3"
+  ],
+  "common_shift": "5",
+  "operator": "P(x)=x-mean(x)*1",
+  "input_stage": "Input to across-context centering only; no claim that upstream column standardization was recomputed.",
+  "not_claimed": [
+    "Not S9 data",
+    "Not a reconstruction of empirical raw activity",
+    "Not verification of source normalization",
+    "Not a new mathematical or biological discovery"
+  ],
+  "related_formal_source": "proofs/ContextIdentifiability.lean",
+  "formal_scaling": "center3=3*P over rational inputs"
+}

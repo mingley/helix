@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "scope": "Replicate-label metadata column A only; no activity/count/ratio/ESS values decoded or inspected",
+  "protocol_sha256": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868",
+  "source_workbook_sha256": "9c95ca2b8df0ff3edc7dda4fdcf337f33e652b96a0833a70e786bbcdc2b76b4e",
+  "inspected_at_utc": "2026-10-27T18:48:21.440603+00:00",
+  "sheets": {
+    "HepG2_replicate_level": {
+      "replicate_header": "replicate",
+      "column": "A",
+      "source_token_counts": [
+        {
+          "token": "1",
+          "rows": 56976
+        },
+        {
+          "token": "2",
+          "rows": 56979
+        },
+        {
+          "token": "3",
+          "rows": 56974
+        }
+      ]
+    },
+    "K562_replicate_level": {
+      "replicate_header": "replicate",
+      "column": "A",
+      "source_token_counts": [
+        {
+          "token": "1",
+          "rows": 56973
+        },
+        {
+          "token": "2",
+          "rows": 56975
+        },
+        {
+          "token": "3",
+          "rows": 56976
+        }
+      ]
+    },
+    "WTC11_replicate_level": {
+      "replicate_header": "replicate",
+      "column": "A",
+      "source_token_counts": [
+        {
+          "token": "1",
+          "rows": 56968
+        },
+        {
+          "token": "2",
+          "rows": 56963
+        },
+        {
+          "token": "3",
+          "rows": 56963
+        }
+      ]
+    }
+  }
+}

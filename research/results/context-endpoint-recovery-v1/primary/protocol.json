@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "protocol_id": "context-endpoint-recovery-v1",
+  "status": "frozen",
+  "frozen_at_utc": "2026-10-27T18:33:59.042663+00:00",
+  "purpose": "Acquire authoritative final-paper joint-panel measurements, validate endpoint/replicate semantics and compare unchanged published values with the older S9 source; no predictive model fitting.",
+  "frozen_before_new_final_attachment_payload_acquisition": true,
+  "exposure": {
+    "old_source": "All old Zenodo S9 values, initial predictive results, zero-sum failure and separately frozen moments/SVD/weighted-plane diagnostics are known. Old S7 DNA/coordinates and reference eligibility are known. This is not outcome-naive research.",
+    "new_source": "Only final-paper attachment metadata, article/code prose and headers of old sources are known before this freeze. Downloading an entire archive counts as outcome acquisition even if only Table10 is later interpreted.",
+    "independence": "Final attachment may be another release of the same experiment/element measurements. It is source recovery and provenance validation, not an independent cohort or pristine predictive holdout."
+  },
+  "immutable_previous_protocols": {
+    "context_prediction_v1": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2",
+    "context_specificity_v2": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+    "source_arithmetic_audit_v1": "8f092c7ff075d7f455791e5a72f189781e611e3a6bda69b0fd9d8a7947990eae"
+  },
+  "authoritative_source": {
+    "article_doi": "10.1038/s41586-024-08430-9",
+    "pmcid": "PMC11903340",
+    "article_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11903340/fullTextXML",
+    "article_xml_sha256": "41a554f31ea67adb1ce983b05ed9194e8fa1596bd4e6d2208df1854de9f33320",
+    "selection_rule": "Use only finalarticle officialMOESM5 exact41586_2024_8430_MOESM5_ESM.zip captionSupplementaryTables1–13. Inspect metadata/headers for joint-linkedTables10,11,12; permit their joint-library observedactivity/replicates/ESS values aftersemanticbinding. Never select a source byagreement or predictiveperformance; otherlibrarytables remainuninterpreted.",
+    "license": "Final article CC-BY-4.0; retain article/attachment attribution and any attachment-specific terms. Record contradictions and stop reuse if attachment-specific terms conflict; do not infer downstream-copy rights from a code-repository license.",
+    "primary_archive": {
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08430-9/MediaObjects/41586_2024_8430_MOESM5_ESM.zip",
+      "expected_size_bytes": 342234089,
+      "maximum_download_bytes": 1000000000,
+      "opaque_etag": "cd38d6f0835534f0227865fee990cb9c",
+      "last_modified": "2025-02-14T10:46:05Z",
+      "accept_ranges": "bytes",
+      "expected_published_sha256": null,
+      "digest_policy": "Compute complete archiveSHA256 immediately after acquisition and before interpretation. ETag is opaque, not a promised MD5. If no publisher digest exists, report provenance+computedhash, not precommitted cryptographic authenticity. For partialmembers never claim wholearchivehashverified."
+    },
+    "permitted_official_distribution_routes": [
+      "the exact primary media.springernature.com URL",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11903340/bin/41586_2024_8430_MOESM5_ESM.zip",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11903340/supplementaryFiles",
+      "a PMC OA package URL returned by https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC11903340 containing the exact same MOESM5 attachment"
+    ],
+    "mirror_policy": "Primary publisher URL first. Other listed official routes may transport the same named final attachment only; record redirects, package/member path and hashes. No access-control bypass or favorable version selection. A differently sized/hash-mismatched alleged mirror is a source-version discrepancy, not automatically interchangeable.",
+    "archive_policy": "Validatefiletype,exactprimary342234089size, ZIPcentraldirectory/memberbounds/CRC; inventoryallmembernames/sizes. ComputearchiveSHA256 beforeinterpretation. Fullarchiveallowedwithin1GB. Numericinterpretationrestricted joint-library observedactivity/replicate/ESSdata inTables10/11/12, not predictions/performance orotherlibraries. Table1–13 filenames aremetadataonly exceptselectedjointmembers.",
+    "member_selection": "Select the three exact allowed joint member paths, verifying them against the official ZIP inventory. Record path, CRC, compressed/uncompressed bytes and SHA256 before opening values. Unexpected paths or byte/digest mismatches are explicit source-version discrepancies; stop the affected comparison rather than silently substituting a file. Only these joint-library members permit quantitative interpretation after schema binding.",
+    "binding_gate": "After inventory and header-only inspection, save the exact Table 10/11/12 worksheet, ID, context, replicate, aggregate, ESS, DNA and missing-token roles with source evidence BEFORE quantitative checks. The downstream code schema is a hypothesis to verify, not authority to silently alias columns.",
+    "head_receipt": "research/context-provenance-round3/publisher-attachment-head.json",
+    "head_receipt_sha256": "d4e0682dd419bb8ee77714886c0040be18be50214399783661839e7dd3302d55",
+    "allowed_joint_member_paths": [
+      "2023-03-03628-s5/2023-03-03628C-Table S11 - jointdata.xlsx",
+      "2023-03-03628-s5/2023-03-03628C-Table S10 - joint lib design.xlsx",
+      "2023-03-03628-s5/2023-03-03628C-Table S12 - folds and performance.xlsx"
+    ]
+  },
+  "secondary_forensic_metadata_only": {
+    "repository": "de-Boer-Lab/GAME-Agarwal-MPRA-joint-library-evaluator",
+    "commit": "8f95a6ce026e0b1e09eba2b13c1421f35e16f583",
+    "files": [
+      {
+        "path": "agarwal_joint_library/evaluator_data/2023-03-03628-s5/56k_measured_file.xlsx",
+        "git_blob_sha1": "14ad2cdd43594c5b4056c3aaee0bcd2c822dd229",
+        "bytes": 1493318
+      },
+      {
+        "path": "agarwal_joint_library/evaluator_data/2023-03-03628-s5/56k_measured_final_sequence_file.xlsx",
+        "git_blob_sha1": "462b5e28cd414b16d0173f94afe23242e8d5bc93",
+        "bytes": 6974891
+      }
+    ],
+    "payload_acquisition_allowed": false,
+    "reason": "No declared repository/data license and missing intermediate all_cell_type_measured.xlsx. README/code metadata may be inspected, but these downstream workbook payloads are not authorized by this protocol. They cannot certify historical producer processing or an independent study."
+  },
+  "old_inputs": {
+    "s9_workbook": {
+      "path": "datasets/context-panel/raw/Table-S9-folds-performance.xlsx",
+      "sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+      "sheet": "Fold assignment, joint library",
+      "id_column": "Sequence ID",
+      "context_columns": {
+        "HepG2": "HepG2, Element Specificity Score",
+        "K562": "K562, Element Specificity Score",
+        "WTC11": "WTC11, Element Specificity Score"
+      },
+      "nonempty_unique_ids": 55338
+    },
+    "old_design": {
+      "path": "datasets/context-panel/raw/Table-S7-joint-design.xlsx",
+      "sha256": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5"
+    },
+    "old_admitted_panel": {
+      "path": "datasets/context-panel/panel.json",
+      "sha256": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3",
+      "element_count": 55276
+    }
+  },
+  "endpoint_contract": {
+    "contexts": [
+      "HepG2",
+      "K562",
+      "WTC11"
+    ],
+    "raw_measurement": "Published observed joint-library log2(RNA/DNA) activities, with documented three independent infections/replicates percell from the shared source library; preserve individual replicate and published mean/median-normalized aggregate values exactly as supplied.",
+    "units": "Raw/replicate activity in documented log2RNA/DNA units, with source median-normalization annotation; sourceESS dimensionless; counts/barcodes distinct units and not independent experiments.",
+    "required_roles": "Unambiguous empirical activity roles from officialcaption/methods+schema: exact stableelementID, cellcontext, replicate identifier/three-replicate aggregate, and scoreunits. PublishedESS can additionally be bound separately. Sourcepredictions, performance, activitybins and inferred rawvalues fromESS are never empirical rawlabels.",
+    "source_methods": "Published methods describe perreplicate median normalization, then arithmeticmean overthree independent infections. They describe percell zscore ofjointactivity, followedby subtracting each element acrosscell mean. They do not specify reconstructedSDddof or an extra ESScolumnstandardization. Record code/version history separately.",
+    "no_replacement": "Freeze all original empirical cellvalues/rawlexemes/NA tokens unchanged. Derived arithmetic arrays below are diagnostic only and never overwrite sourcevalues, oldS9, oldpanel, oldfits or frozenprimarylosses.",
+    "missing_fields": "Mark absent replicate/aggregate/ESS/count/DNA fields as nonestimable for the affected checks. Do not infer unavailable rawactivities, pseudocounts, counts, normalization constants or replicates from ESS/predictions.",
+    "replicate_independence": "Three infections are withinone source study/library, not three independent studies. Barcodecounts/molecules/source rowcopies are not replicate experimentalunits."
+  },
+  "id_and_cohort_policy": {
+    "join": "Primary comparison uses exact case-sensitive stable sourceelementIDs, preserving old/newIDs androwprovenance. No fuzzy/name/category/outcome-based mapping. A documented global naming alias can be instantiated only from an ID-only audit with explicit sourceevidence BEFORE quantitativecomparison; retain exactjoin results separately and never choose among aliases byagreement.",
+    "duplicates": "Retain and report every duplicate/missing ID/context/replicate. An empirical observation key must be unique; conflicting duplicates block the affected comparison, never average or select favorable copies. Identical repeated filecopies may be de-duplicated only with recorded byte/valueidentity.",
+    "cohorts": [
+      "all finaljoint-library sourceIDs in selectedTables10/11/12 withfullrow/missingnessledger",
+      "maximal complete3context set for each named activitybase or publishedESS endpoint",
+      "exactoldS9/newsource intersection for each comparison",
+      "fixed old55276 admittedIDs intersected with each eligible newcomparison set"
+    ],
+    "normalization_population": "Always the prespecified full newsource population for each pipeline, before oldS9/admitted intersections. Do not normalize separately on a favorable comparison subset.",
+    "filtering": "No activity/ESS/rank/pvalue/category/barcode/correlation/agreement based threshold. Missing/nonfinite sourcevalues make only required comparisons nonestimable, with counts. Retain existing sourceQCflags rather than inventing a new filter.",
+    "physical_identity": "When final designDNA/coordinates exist, compare exact core/strand/interval to oldS7 metadata for commonIDs, recording all discrepancies. No sourceidentity claim from a name alone, no sequence overwrite or unrecorded coordinate rescue."
+  },
+  "predeclared_activity_bases": [
+    {
+      "id": "published_activity_aggregate",
+      "formula": "Use documented published mean/median-normalized aggregate exactlyasprovided; missingaggregate=>nonestimable."
+    },
+    {
+      "id": "mean_three_published_replicates",
+      "formula": "Arithmeticmean ofthree finite published replicate log2RNA/DNAscores for each element/context; any requiredreplicate missing=>nonestimable for thatrow."
+    },
+    {
+      "id": "mean_three_after_explicit_replicate_median_subtraction",
+      "formula": "For eachcell/replicate subtract median ofallfinite publishedsource scores inthatreplicate, then arithmeticmean ofthree finite centeredreplicates perelement. Evenifsourcealreadycentered, reportthisfixed diagnostic andits equivalence; nofitted extraoffset."
+    }
+  ],
+  "fixed_pipeline_grid": {
+    "purpose": "Method-inspired arithmetic recovery/compatibility only, not targetselection or historical pipelineproof. Report everyvariant, includingequivalent andnonestimable variants.",
+    "base_routes": [
+      "published_activity_aggregate",
+      "mean_three_published_replicates",
+      "mean_three_after_explicit_replicate_median_subtraction"
+    ],
+    "pre_zscore_populations": [
+      "complete3contextsourceintersection for thatactivitybase",
+      "allfinite sourcevalues independently pereachcell for thatactivitybase, thenevaluate complete3contextintersection"
+    ],
+    "pre_zscore_ddof": [
+      0,
+      1
+    ],
+    "row_center": "Subtract arithmeticmean overthree standardizedcell values perelement.",
+    "post_ESS_steps": [
+      "none",
+      "subsequentcolumnzscore usingddof0",
+      "subsequentcolumnzscore usingddof1"
+    ],
+    "post_normalization_population": "All complete3context newsource rows of thatpipeline, before oldS9/admitted intersection; recordN/means/SDs. NonpositiveSDorinsufficientN=>nonestimable.",
+    "variant_count_if_all_fields_present": 36,
+    "forensic_label": "Post-ESS columnzscore variants are explicitly compatibility diagnostics motivatedby knownoldS9 rank2/unitSD finding, not documentedhistoricalsteps or altered empiricaltargets.",
+    "excluded_operations": [
+      "fitted regression/affine calibration",
+      "optimized offsets or weights",
+      "continuous transform search",
+      "selected cohort/subset",
+      "sourcevalue projection/re-centering as a replacementendpoint",
+      "predictive model fitting"
+    ],
+    "extra_prespecified_code_test": "Inadditionto all36method-gridvariants, test the single exactlyspecified S11publishedESS→S12-ID-subset samplezscore pipeline inpre_value_code_hypothesis. Do notaddotherposthocpopulations/transforms."
+  },
+  "comparisons": {
+    "required": [
+      "publishedaggregate versus eachfixed replicateaggregate whenestimable",
+      "unchanged finalpublishedESS versus unchangedoldS9 on exactcommonIDs",
+      "eachfixed diagnosticpipeline versus finalpublishedESS whenpresent",
+      "eachfixed diagnosticpipeline versus unchangedoldS9",
+      "pre_value_code_hypothesis S11publishedESS→S12samplezscore on fullS12IDset andfixedoldintersections"
+    ],
+    "report_every_cohort": "Full appropriate sourcecomplete population and exactoldcommon/admitted intersections, withall counts andmissingness; neveroptimize coverage or omit unfavorable fits.",
+    "exact_equality": "Compare preserved source decimallexemes as exactDecimal values whennumeric; report exactequal count separatelyfrom tolerance results. Preserve allsourceformat/type information.",
+    "floating_tolerance": {
+      "absolute": 1e-08,
+      "relative": 1e-08,
+      "rule": "abs(candidate-source)<=1e-8+1e-8*abs(source); fixed beforenewvalues. No tolerance widening."
+    },
+    "summary_metrics": [
+      "matchedIDs andcontexts",
+      "eligibleandmissingcounts",
+      "exactdecimal equalcounts",
+      "within-fixed-tolerance counts",
+      "signedmeanerror",
+      "MAE",
+      "RMSE",
+      "maximumabsoluteerror",
+      "absoluteerror Type7quantiles0,0.5,0.95,1",
+      "allcontextmeans/popSD/sampleSD",
+      "row-sumresiduals for anyESS-labelledmatrix"
+    ],
+    "no_selection": "A matchingvariant is a compatible mathematicalreconstruction, not a selected replacementtarget or automatic historicalproof. Retain everyvariant/parameter/population/result andanynonidentifiability."
+  },
+  "source_history_and_nonidentifiability": {
+    "history": "Record official release, attachment/member/workbook hashes, article/preprint table mapping, code snapshot/date and actual preprocessing function if found. Existing CNN/LegNet loaders accept supplied labels. The downstream Dalal code predicts an S11-to-S12 identity but explicitly leaves S11 upstream normalization unpublished. GAME lacks an intermediate file and is metadata-only here.",
+    "separate_flags": [
+      "official_source_authenticity",
+      "empirical_raw_endpoint_binding",
+      "replicate_aggregate_arithmetic_verified_or_nonestimable",
+      "publishedESS_formula_verified_or_failed",
+      "oldS9_release_relationship",
+      "historical_pipeline_identified_or_unresolved"
+    ],
+    "limits": [
+      "Positiveweightedrank2geometry alone doesnotidentify historicalnormalization.",
+      "Per-cell additiveoffsets andpositiveunit changes maycancel underzscoring, so rawactivitycannotbe recoveredfromESS.",
+      "Population/sampleSD conventions maybe observationallyequivalent after subsequentcolumnstandardization; do notclaimuniquehistory from tiedarithmeticmatches.",
+      "Finalrelease andoldS9 mayshare all experimentalmeasurements; matchingcopies are not independentvalidation.",
+      "Wholepanel sourcenormalization includes heldoutoutcomeinformation andisnotprospective training-only normalization."
+    ]
+  },
+  "gates_and_status": {
+    "gate_A": "Official attachment identity/license/size/integrity/member selection recorded; discrepancy=>blocked acquisition orsourceversionwarning, no silentmirror substitution.",
+    "gate_B": "Exact schema/measurementunits/replicate/cell/ID semantics bound fromsourceevidence beforequantitativechecks; predicted orambiguous fields=>blocked endpoint.",
+    "gate_C": "Complete sourceID/duplicates/missingness/physicalidentity ledger; compareonly declared cohorts andreport everyexclusion.",
+    "gate_D": "Publish all estimable arithmeticvariants andall comparisonflags, includingsemanticfailures/nonidentifiability; do notchange empiricalvalues.",
+    "predictive_fitting": "NONE authorized bythis protocol, evenif recoverypasses. No future predictivefit until its endpointcontract isverified and a separate analysisprotocol is frozen. Oldv1/v2 remain unchanged.",
+    "completion": "A blocked, nonestimable, divergent ornonidentified endpoint is an admissible documentedresult; no favorablematch required."
+  },
+  "required_outputs": [
+    "protocolandimplementationhashes",
+    "officialHTTP/head/retrieval+license receipts",
+    "outerarchive/member SHA256,size,CRCandinventory",
+    "exactschema/ID/replicate/contextbinding",
+    "unchangedsourcevalue snapshots/rawrepresentations",
+    "fullcohort/duplicate/missingness/physicalidentity ledger",
+    "all36pipeline records ornonestimable reasons",
+    "all exact/tolerance comparisonresults bycontext/cohort",
+    "sourcehistory/nonidentifiability flags",
+    "explicitno-predictive-fit andno-independentvalidation disclosure",
+    "explicitpre-value-code-hypothesis result/missingfieldreason; nohistoricalcertificationfromcompatibility"
+  ],
+  "amendments": "Immutable afterannouncedSHA256. Metadata/headerbinding may instantiatefixedsemanticfields butnotchange allowedsource, endpointmeaning, pipelinegrid, cohorts ortolerances. Anynewworkbookpayload/source/transform requires separatelyversioned authorization beforeacquisition/analysis.",
+  "pre_value_code_hypothesis": {
+    "repository": "TaykhoomDalal/LentiMPRA-Enhancer-Processing",
+    "commit": "d2751a6ddff67ce4406288e9f6c3d932b0c12cdd",
+    "file": "process.py",
+    "sha256": "a904d02c65072be4dd328d700958011c5c804e43799a7f4fc1cefd551559b6cb",
+    "function": "validate_joint_ess",
+    "lines": "633–661",
+    "license": "MIT downstreamcode; notproducerhistoricalcertification",
+    "known_before_final_payload": "Source-code-only hypothesis: S11 all_cell_types_ESS iszero-sum, and S12 observedESS equals per-columnsamplezscore(ddof1) ofS11ESS restrictedto exactS12IDsubset.",
+    "candidate_schema": {
+      "activity_sheets": [
+        "HepG2_replicate_level",
+        "K562_replicate_level",
+        "WTC11_replicate_level",
+        "HepG2_summary_data",
+        "K562_summary_data",
+        "WTC11_summary_data",
+        "all_cell_types_summary"
+      ],
+      "raw_columns": [
+        "HepG2 [log2(rna/dna)]",
+        "K562 [log2(rna/dna)]",
+        "WTC11 [log2(rna/dna)]"
+      ],
+      "ess_sheet": "all_cell_types_ESS",
+      "ess_columns": [
+        "ElementSpecificityScore_HepG2",
+        "ElementSpecificityScore_K562",
+        "ElementSpecificityScore_WTC11"
+      ]
+    },
+    "fixed_test": "If the official schema confirms these roles, test unchanged S11 published ESS row sums and compare S12 observed ESS with (S11 ESS minus its mean on the exact S12 ID subset) divided by sample SD on that same subset, ddof=1. Require all S12 IDs to have unique finite three-context S11 matches. Missing fields or unmatched IDs make the test nonestimable; do not optimize a subset.",
+    "normalization_population": "All exact S12 source observed-score IDs, with unique finite three-context S11 ESS matches required for every ID. Record the complete ID set and hash before arithmetic; never choose it by agreement.",
+    "fixed_maximum_absolute_tolerance": 1e-12,
+    "comparisons": [
+      "fullS12sourceIDset",
+      "exactoldS9intersection",
+      "fixedoldadmittedintersection"
+    ],
+    "interpretation": "An arithmeticmatch validatescompatibilitybetweenreleases, notproducerhistory orindependentvalidation; preservealloriginalvaluesandoldresults.",
+    "public_history": {
+      "initial_commit": "ce0779aa266f2f581b63007b5107010ddd74443d",
+      "initial_date": "2026-08-21",
+      "initial_code_sha256": "5cf57ac415a3682d9cb4d89cd7ce9e81a67a5ae9f48bebf8b9a13ad3dc857eba",
+      "function_ast_sha256": "e001ef4f38f40f96bb245d51a8848b637b8add9faf9db7bda0dcc94fde669442",
+      "meaning": "The same validation function predates this recovery. It is downstream reconstruction, not producer historical documentation."
+    },
+    "downstream_predicted_members": [
+      {
+        "role": "joint data, Table 11",
+        "bytes": 53557805,
+        "sha256": "9c95ca2b8df0ff3edc7dda4fdcf337f33e652b96a0833a70e786bbcdc2b76b4e",
+        "path": "2023-03-03628-s5/2023-03-03628C-Table S11 - jointdata.xlsx"
+      },
+      {
+        "role": "joint design, Table 10",
+        "bytes": 8301566,
+        "sha256": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5",
+        "path": "2023-03-03628-s5/2023-03-03628C-Table S10 - joint lib design.xlsx"
+      },
+      {
+        "role": "joint folds, Table 12",
+        "bytes": 3564742,
+        "sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+        "path": "2023-03-03628-s5/2023-03-03628C-Table S12 - folds and performance.xlsx"
+      }
+    ],
+    "digest_interpretation": "These are downstream pre-acquisition predictions, NOT publisher-provided digests. Compare to actual official member bytes; a mismatch is a provenance finding, not permission to select a different payload.",
+    "upstream_caveat": "Downstream scripts/common.py explicitly says the upstream normalization of S11 ESS is unpublished. The S11-to-S12 sample-zscore test does not certify raw activity-to-S11 ESS semantics.",
+    "downstream_predicted_archive": {
+      "sha256": "aefb1974e9ebe5c196a89a00f4e868c0abaf69e3d3952e79c74bfb42f217f6a4",
+      "bytes": 342234089,
+      "authority": "Downstream common.py prediction only, not an authenticated publisher digest."
+    }
+  }
+}

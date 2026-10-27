@@ -1,5 +1,14 @@
 # Predicting published context scores with an unresolved source transform
 
+> Subsequent source recovery: the official final Table 11 activity/ESS workbook
+> is now retained. Its ESS values, standardized over the exact Table 12 ID set,
+> reproduce every old S9/model-table value. Upstream activity-to-ESS processing
+> remains unresolved after 36 original and six separate post-hoc routes.
+> See [endpoint recovery](context-endpoint-recovery.md) and the distinct
+> [published-activity benchmark](context-activity-study.md). The original v2
+> scores, losses, frozen source-formula rule and published snapshot are unchanged.
+
+
 ## Result and semantic status
 
 **The numerical benchmark improves prediction of the supplied source columns,

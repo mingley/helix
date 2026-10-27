@@ -1,0 +1,10 @@
+{
+  "files": {
+    "acquisition.json": "db83eb9e73796a4881fcdbc8c3a08dfbfbb04893cda69b0d11feb0ef9f9e390f",
+    "implementation.py": "b7ec7a2bc5a928d9a4bd11ed3a32c547741bfdc92cc2e8a92384187aafa241c4",
+    "inventory.json": "6ec0755fbe76363b5cc50664b29ad9accdd4060c6267778d5415ae42213b325a",
+    "protocol.json": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868",
+    "verification.json": "67f32d0fafd71dc6cc010c7059ac22148b8a66b035b84b4d0f6ac7695f9d24e3"
+  },
+  "schema_version": 1
+}

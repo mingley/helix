@@ -1,0 +1,47 @@
+[
+  {
+    "path": "final-article.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11903340/fullTextXML",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11903340/fullTextXML",
+    "requested_at_utc": "2026-10-27T18:28:58.483641+00:00",
+    "received_at_utc": "2026-10-27T18:29:05.560782+00:00",
+    "status": 200,
+    "headers": {
+      "content-type": "application/xml",
+      "date": "Tue, 27 Oct 2026 18:29:05 GMT",
+      "server": "envoy"
+    },
+    "bytes": 233913,
+    "sha256": "41a554f31ea67adb1ce983b05ed9194e8fa1596bd4e6d2208df1854de9f33320",
+    "role": "article or attachment metadata only; no supplementary quantitative payload",
+    "header_retention_policy": "allowlist only: representation, cache/server/date and redirect metadata; no cookie, nonce or opaque reporting fields"
+  },
+  {
+    "path": "pmc-article.html",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11903340/",
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11903340/",
+    "requested_at_utc": "2026-10-27T18:28:58.484182+00:00",
+    "received_at_utc": "2026-10-27T18:28:59.156575+00:00",
+    "status": 200,
+    "headers": {
+      "date": "Tue, 27 Oct 2026 18:28:59 GMT",
+      "server": "envoy",
+      "content-type": "text/html; charset=utf-8",
+      "content-length": "313386"
+    },
+    "bytes": 313386,
+    "sha256": "3979249e4e7244796443e4085451a44af6f9a02d72f1a453624e46ea57f1a337",
+    "role": "article or attachment metadata only; no supplementary quantitative payload",
+    "header_retention_policy": "allowlist only: representation, cache/server/date and redirect metadata; no cookie, nonce or opaque reporting fields",
+    "raw_body_retained": false,
+    "relevant_metadata_extract": "pmc-article.html.relevant-extract.json"
+  },
+  {
+    "path": "oa-metadata.xml",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC11903340",
+    "requested_at_utc": "2026-10-27T18:28:58.484548+00:00",
+    "error": "HTTP Error 404: Not Found",
+    "headers": {},
+    "header_retention_policy": "allowlist only: representation, cache/server/date and redirect metadata; no cookie, nonce or opaque reporting fields"
+  }
+]

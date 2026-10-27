@@ -28,3 +28,19 @@ research/context-source-alternatives/design-coordinate-example-*.json -text whit
 datasets/context-panel/raw/*.xlsx -text
 research/results/context-specificity-v2/figures/*.svg -text whitespace=-trailing-space
 research/results/context-specificity-v2/figures/*.csv -text whitespace=cr-at-eol
+# Exact new upstream snapshots and binary workbook evidence.
+research/context-provenance-round3/final-article.xml -text -whitespace
+research/context-normalization-trace/dalal/** -text -whitespace
+research/context-normalization-trace/dalal-initial/** -text -whitespace
+research/context-normalization-trace/game/** -text -whitespace
+research/context-normalization-trace/mpraflow-2020/** -text -whitespace
+research/context-normalization-trace/mpraflow-current/** -text -whitespace
+research/context-normalization-trace/mpra-qc/** -text -whitespace
+research/context-normalization-trace/mpra-mnist/** -text -whitespace
+research/context-normalization-trace/sequence-cnn/** -text -whitespace
+datasets/context-endpoint-recovery/raw/*.xlsx -text
+research/context-identifiability-figures/*.svg -text whitespace=-trailing-space
+research/context-identifiability-figures/*.csv -text whitespace=cr-at-eol
+research/results/context-activity-v3/figures/*.svg -text whitespace=-trailing-space
+research/results/context-activity-v3/figures/*.csv -text whitespace=cr-at-eol
+research/results/context-endpoint-recovery-v1/primary/source-evidence/*.xml -text -whitespace

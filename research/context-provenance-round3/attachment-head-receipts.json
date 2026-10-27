@@ -1,0 +1,45 @@
+[
+  {
+    "method": "HEAD",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/11903340/bin/41586_2024_8430_MOESM5_ESM.zip",
+    "requested_at_utc": "2026-10-27T18:29:22.950717+00:00",
+    "body_bytes_read": 0,
+    "status": 200,
+    "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/11903340/bin/41586_2024_8430_MOESM5_ESM.zip",
+    "headers": {
+      "content-type": "text/html; charset=utf-8",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "date": "Tue, 27 Oct 2026 18:29:23 GMT",
+      "content-length": "0",
+      "server": "envoy"
+    },
+    "response_classification": "challenge indicated by recaptcha response headers; not verified attachment",
+    "header_retention_policy": "allowlist only: representation, cache/server/date and redirect metadata; no cookie, nonce or opaque reporting fields"
+  },
+  {
+    "method": "HEAD",
+    "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41586-024-08430-9/MediaObjects/41586_2024_8430_MOESM5_ESM.zip",
+    "requested_at_utc": "2026-10-27T18:29:22.951689+00:00",
+    "body_bytes_read": 0,
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "headers": {},
+    "header_retention_policy": "allowlist only: representation, cache/server/date and redirect metadata; no cookie, nonce or opaque reporting fields"
+  },
+  {
+    "method": "HEAD",
+    "url": "https://www.nature.com/articles/s41586-024-08430-9",
+    "requested_at_utc": "2026-10-27T18:29:22.952183+00:00",
+    "body_bytes_read": 0,
+    "status": 200,
+    "final_url": "https://www.nature.com/articles/s41586-024-08430-9?error=cookies_not_supported",
+    "headers": {
+      "accept-ranges": "bytes",
+      "server": "envoy",
+      "cache-control": "private, must-revalidate",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Tue, 27 Oct 2026 18:29:25 GMT"
+    },
+    "header_retention_policy": "allowlist only: representation, cache/server/date and redirect metadata; no cookie, nonce or opaque reporting fields",
+    "opaque_redirect_code_omitted": true
+  }
+]

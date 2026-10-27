@@ -14,6 +14,7 @@ use std::{
     path::{Path, PathBuf},
     process::Command,
 };
+mod context_activity;
 mod context_study;
 mod research;
 mod study;
@@ -31,6 +32,8 @@ struct Cli {
 }
 #[derive(Subcommand)]
 enum Commands {
+    /// Evaluate frozen published reporter activity under the v3 source gates.
+    ContextActivity(context_activity::ContextActivityArgs),
     /// Evaluate the frozen published cell-specificity endpoint on grouped loci.
     ContextStudy(context_study::ContextArgs),
     /// Execute the frozen multi-promoter regulatory prediction study.
@@ -66,6 +69,7 @@ struct Artifacts {
 
 fn main() -> Result<()> {
     match Cli::parse().command {
+        Commands::ContextActivity(args) => context_activity::run(&args),
         Commands::ContextStudy(args) => context_study::run(&args),
         Commands::Study(args) => study::run(&args),
         Commands::Research(args) => research::run(&args),
@@ -239,6 +243,9 @@ fn write_new(path: &Path, bytes: &[u8]) -> Result<()> {
 fn audit(directory: &Path, lean: &Path) -> Result<()> {
     let root = directory.canonicalize()?;
     let artifacts: Artifacts = serde_json::from_slice(&fs::read(root.join("artifacts.json"))?)?;
+    if artifacts.schema_version == 5 {
+        return context_activity::audit(&root, &artifacts);
+    }
     if artifacts.schema_version == 4 {
         return context_study::audit(&root, &artifacts);
     }

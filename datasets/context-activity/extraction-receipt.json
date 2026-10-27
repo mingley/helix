@@ -1,0 +1,44 @@
+{
+  "started_at_utc": "2026-10-27T18:47:07.020359+00:00",
+  "protocol_path": "/workspace/helix/experiments/context-endpoint-recovery-v1.json",
+  "protocol_sha256": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868",
+  "archive_path": "/workspace/.tools/context-endpoint-recovery-v1/final-supplement.zip",
+  "archive_bytes": 342234089,
+  "archive_sha256": "aefb1974e9ebe5c196a89a00f4e868c0abaf69e3d3952e79c74bfb42f217f6a4",
+  "max_member_bytes": 67108864,
+  "max_total_bytes": 201326592,
+  "scope": "ZIP metadata and exact-literal member extraction only; no workbook parsing",
+  "selected_members": [
+    {
+      "literal_member_name": "2023-03-03628-s5/2023-03-03628C-Table S11 - jointdata.xlsx",
+      "output_path": "/workspace/.tools/context-endpoint-recovery-v1/members/2023-03-03628-s5/2023-03-03628C-Table S11 - jointdata.xlsx",
+      "uncompressed_bytes": 53557805,
+      "compressed_bytes": 53389299,
+      "zip_crc32_hex": "827bd842",
+      "crc32_verified_by_zipfile": true,
+      "sha256": "9c95ca2b8df0ff3edc7dda4fdcf337f33e652b96a0833a70e786bbcdc2b76b4e",
+      "workbook_or_quantitative_cells_inspected": false
+    },
+    {
+      "literal_member_name": "2023-03-03628-s5/2023-03-03628C-Table S10 - joint lib design.xlsx",
+      "output_path": "/workspace/.tools/context-endpoint-recovery-v1/members/2023-03-03628-s5/2023-03-03628C-Table S10 - joint lib design.xlsx",
+      "uncompressed_bytes": 8301566,
+      "compressed_bytes": 7746556,
+      "zip_crc32_hex": "16827d79",
+      "crc32_verified_by_zipfile": true,
+      "sha256": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5",
+      "workbook_or_quantitative_cells_inspected": false
+    },
+    {
+      "literal_member_name": "2023-03-03628-s5/2023-03-03628C-Table S12 - folds and performance.xlsx",
+      "output_path": "/workspace/.tools/context-endpoint-recovery-v1/members/2023-03-03628-s5/2023-03-03628C-Table S12 - folds and performance.xlsx",
+      "uncompressed_bytes": 3564742,
+      "compressed_bytes": 3562109,
+      "zip_crc32_hex": "84d517aa",
+      "crc32_verified_by_zipfile": true,
+      "sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+      "workbook_or_quantitative_cells_inspected": false
+    }
+  ],
+  "completed_at_utc": "2026-10-27T18:47:07.275972+00:00"
+}

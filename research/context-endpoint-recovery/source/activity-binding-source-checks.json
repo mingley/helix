@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-10-27T18:54:16.319967+00:00",
+  "builder_path": "scripts/build_context_activity.py",
+  "builder_sha256_at_review": "0d4baf513c6775fb25038b1ec1feb73b979a72131192900db14886512c56b219",
+  "v3_protocol_sha256": "64e14037fb1f42ddc1ecaca1d23bb8096fabac1f1e892d105eaa20f525fbbb20",
+  "recovery_protocol_sha256": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868",
+  "schema_binding_sha256": "a59592816f57f7254b780c83ba3e929e3b38f4fd06b2b196a0cddda1d9bfb98e",
+  "export_receipt_sha256": "ef6fc34de3625430e20bb6647703db105d231eb7080810170ec680644607b2aa",
+  "coverage": {
+    "dna_record_count": 55276,
+    "dna_unique_id_count": 55276,
+    "source_record_count": 56981,
+    "source_unique_id_count": 56981,
+    "required_ids_missing": [],
+    "source_blank_ids": 0,
+    "source_duplicate_id_rows": 0
+  },
+  "ordinary_numeric_cell_evidence": {
+    "source_exception_cells": [
+      {
+        "id": "K562_peak54734",
+        "header": "WTC11 [log2(rna/dna)]",
+        "classification": "missing_token",
+        "xml_type": "s",
+        "in_required_cohort": false
+      },
+      {
+        "id": "HepG2_DNasePeakNoPromoter52963",
+        "header": "K562 [log2(rna/dna)]",
+        "classification": "missing_token",
+        "xml_type": "s",
+        "in_required_cohort": false
+      },
+      {
+        "id": "HepG2_DNasePeakNoPromoter52963",
+        "header": "WTC11 [log2(rna/dna)]",
+        "classification": "missing_token",
+        "xml_type": "s",
+        "in_required_cohort": false
+      },
+      {
+        "id": "ENSG00000183856",
+        "header": "K562 [log2(rna/dna)]",
+        "classification": "missing_token",
+        "xml_type": "s",
+        "in_required_cohort": false
+      },
+      {
+        "id": "ENSG00000128564",
+        "header": "K562 [log2(rna/dna)]",
+        "classification": "missing_token",
+        "xml_type": "s",
+        "in_required_cohort": false
+      },
+      {
+        "id": "ENSG00000128564",
+        "header": "WTC11 [log2(rna/dna)]",
+        "classification": "missing_token",
+        "xml_type": "s",
+        "in_required_cohort": false
+      }
+    ],
+    "required_cohort_exception_cells": 0,
+    "source_export_activity_aggregate_counts": {
+      "stored_data_row_elements": 56981,
+      "nonempty_id_rows": 56981,
+      "missing_id_rows": 0,
+      "missing_empirical_key_rows": 0,
+      "value_classifications": {
+        "HepG2 [log2(rna/dna)]": {
+          "finite_numeric": 56981
+        },
+        "K562 [log2(rna/dna)]": {
+          "finite_numeric": 56978,
+          "missing_token": 3
+        },
+        "WTC11 [log2(rna/dna)]": {
+          "finite_numeric": 56978,
+          "missing_token": 3
+        }
+      },
+      "xml_types": {
+        "HepG2 [log2(rna/dna)]": {
+          "n": 56981
+        },
+        "K562 [log2(rna/dna)]": {
+          "n": 56978,
+          "s": 3
+        },
+        "WTC11 [log2(rna/dna)]": {
+          "n": 56978,
+          "s": 3
+        }
+      },
+      "formula_cells": 0,
+      "unique_nonempty_ids": 56981,
+      "duplicate_id_rows_beyond_first": 0,
+      "unique_complete_empirical_keys": 56981,
+      "duplicate_empirical_key_rows_beyond_first": 0
+    },
+    "formula_count_from_source_export": 0,
+    "interpretation": "All 55,276 required IDs have three ordinary finite numeric source cells. Six shared-string missing-token cells occur only outside the frozen cohort."
+  },
+  "license_metadata_check": {
+    "article_license": "CC-BY-4.0 from exact final article permissions",
+    "workbook_sheet_names": [
+      "all_cell_types_summary",
+      "all_cell_types_ESS",
+      "HepG2_replicate_level",
+      "HepG2_summary_data",
+      "K562_replicate_level",
+      "K562_summary_data",
+      "WTC11_replicate_level",
+      "WTC11_summary_data"
+    ],
+    "custom_license_copyright_named_zip_members": [],
+    "document_properties": {
+      "docProps/core.xml": {
+        "bytes": 626,
+        "sha256": "c2dbc610965e6b4de08949e550b37b287d9d19594baf22d79ed8a9a0e363ab5e",
+        "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dc:creator>Agarwal, Vikram /US</dc:creator><cp:lastModifiedBy>Vikram Agarwal</cp:lastModifiedBy><dcterms:created xsi:type=\"dcterms:W3CDTF\">2015-06-05T18:17:20Z</dcterms:created><dcterms:modified xsi:type=\"dcterms:W3CDTF\">2023-03-05T19:51:11Z</dcterms:modified></cp:coreProperties>"
+      },
+      "docProps/app.xml": {
+        "bytes": 1081,
+        "sha256": "972beebe8223edf9aa13d976da703d17fbdc887a89ad32085e02596ed34ee6ca",
+        "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<Properties xmlns=\"http://schemas.openxmlformats.org/officeDocument/2006/extended-properties\" xmlns:vt=\"http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes\"><Application>Microsoft Excel</Application><DocSecurity>0</DocSecurity><ScaleCrop>false</ScaleCrop><HeadingPairs><vt:vector size=\"2\" baseType=\"variant\"><vt:variant><vt:lpstr>Worksheets</vt:lpstr></vt:variant><vt:variant><vt:i4>8</vt:i4></vt:variant></vt:vector></HeadingPairs><TitlesOfParts><vt:vector size=\"8\" baseType=\"lpstr\"><vt:lpstr>all_cell_types_summary</vt:lpstr><vt:lpstr>all_cell_types_ESS</vt:lpstr><vt:lpstr>HepG2_replicate_level</vt:lpstr><vt:lpstr>HepG2_summary_data</vt:lpstr><vt:lpstr>K562_replicate_level</vt:lpstr><vt:lpstr>K562_summary_data</vt:lpstr><vt:lpstr>WTC11_replicate_level</vt:lpstr><vt:lpstr>WTC11_summary_data</vt:lpstr></vt:vector></TitlesOfParts><Company></Company><LinksUpToDate>false</LinksUpToDate><SharedDoc>false</SharedDoc><HyperlinksChanged>false</HyperlinksChanged><AppVersion>16.0300</AppVersion></Properties>"
+      }
+    },
+    "additional_terms_visible_in_inspected_metadata_or_headers": false,
+    "scope": "Official article permissions, archive/member identity, workbook document properties and all eight worksheet text headers; no arbitrary outcome-cell annotation search"
+  },
+  "no_activity_arithmetic_performed": true,
+  "test_result": "Eight existing synthetic builder controls passed unchanged"
+}

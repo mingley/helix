@@ -1,0 +1,25 @@
+panel,element,context,input_exact,column_mean_exact,column_sum_squares_exact,column_sample_variance_exact,input_row_mean_exact,centered_input_exact,normalized_center_exact
+X,Element 1,Context A,2,0,14,14/3,1,1,1/sqrt(14/3)
+X,Element 1,Context B,1,0,14,14/3,1,0,0
+X,Element 1,Context C,0,0,14,14/3,1,-1,-1/sqrt(14/3)
+X,Element 2,Context A,0,0,14,14/3,1,-1,-1/sqrt(14/3)
+X,Element 2,Context B,2,0,14,14/3,1,1,1/sqrt(14/3)
+X,Element 2,Context C,1,0,14,14/3,1,0,0
+X,Element 3,Context A,1,0,14,14/3,1,0,0
+X,Element 3,Context B,0,0,14,14/3,1,-1,-1/sqrt(14/3)
+X,Element 3,Context C,2,0,14,14/3,1,1,1/sqrt(14/3)
+X,Element 4,Context A,-3,0,14,14/3,-3,0,0
+X,Element 4,Context B,-3,0,14,14/3,-3,0,0
+X,Element 4,Context C,-3,0,14,14/3,-3,0,0
+Y,Element 1,Context A,0,0,14,14/3,-1,1,1/sqrt(14/3)
+Y,Element 1,Context B,-1,0,14,14/3,-1,0,0
+Y,Element 1,Context C,-2,0,14,14/3,-1,-1,-1/sqrt(14/3)
+Y,Element 2,Context A,-2,0,14,14/3,-1,-1,-1/sqrt(14/3)
+Y,Element 2,Context B,0,0,14,14/3,-1,1,1/sqrt(14/3)
+Y,Element 2,Context C,-1,0,14,14/3,-1,0,0
+Y,Element 3,Context A,-1,0,14,14/3,-1,0,0
+Y,Element 3,Context B,-2,0,14,14/3,-1,-1,-1/sqrt(14/3)
+Y,Element 3,Context C,0,0,14,14/3,-1,1,1/sqrt(14/3)
+Y,Element 4,Context A,3,0,14,14/3,3,0,0
+Y,Element 4,Context B,3,0,14,14/3,3,0,0
+Y,Element 4,Context C,3,0,14,14/3,3,0,0

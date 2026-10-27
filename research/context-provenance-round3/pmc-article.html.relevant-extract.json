@@ -1,0 +1,12 @@
+{
+  "source_name": "pmc-article.html",
+  "source_sha256": "3979249e4e7244796443e4085451a44af6f9a02d72f1a453624e46ea57f1a337",
+  "source_bytes": 313386,
+  "scope": "relevant public source attachment links/caption only; full HTML omitted",
+  "attachment_links": [
+    "/articles/instance/11903340/bin/41586_2024_8430_MOESM5_ESM.zip"
+  ],
+  "archive_caption": "Supplementary Tables 1\u201313.",
+  "rounded_size_label": "326.4MB, zip",
+  "notes": "Relevant source attachment metadata extracted; raw public article HTML omitted to avoid retaining irrelevant scripts, tracking and opaque context values."
+}

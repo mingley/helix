@@ -1,0 +1,19 @@
+{
+  "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08430-9/MediaObjects/41586_2024_8430_MOESM5_ESM.zip",
+  "url_authority": "exact href from current Nature article, not guessed path",
+  "method": "HEAD",
+  "requested_at_utc": "2026-10-27T18:31:08.945728+00:00",
+  "body_bytes_read": 0,
+  "status": 200,
+  "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08430-9/MediaObjects/41586_2024_8430_MOESM5_ESM.zip",
+  "headers": {
+    "etag": "\"cd38d6f0835534f0227865fee990cb9c\"",
+    "content-type": "application/octet-stream",
+    "last-modified": "Fri, 14 Feb 2025 10:46:05 GMT",
+    "cache-control": "public,max-age=2628000,stale-while-revalidate=2628000,stale-if-error=2628000",
+    "server": "envoy",
+    "accept-ranges": "bytes",
+    "date": "Tue, 27 Oct 2026 18:31:09 GMT",
+    "content-length": "342234089"
+  }
+}

@@ -41,5 +41,11 @@ jobs:
           python3 research/independent-context-replication/test_context_replication.py
           python3 scripts/audit_context_source_arithmetic.py --self-test
           python3 scripts/analyze_rank_sensitivity.py --self-test
+          python3 -m unittest discover -s research/independent-endpoint-recovery -p 'test_*.py'
+          python3 -m unittest discover -s research/context-endpoint-recovery -p 'test_*.py'
+          python3 -m unittest discover -s research/context-endpoint-recovery/source -p 'test_*.py'
+          python3 research/context-endpoint-recovery/source/extract_members.py --self-test
+          python3 -m unittest discover -s research/independent-context-activity-replication -p 'test_*.py'
+          python3 scripts/audit_context_ess_cohort.py --self-test --primary-root research/results/context-endpoint-recovery-v1/primary
       # Full empirical reproduction is scripts/check_study.sh. Its known
       # secondary-rank failures remain exit 2 and are not masked as CI success.

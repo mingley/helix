@@ -1,5 +1,12 @@
 # Context prediction v1: blocked at the semantic source gate
 
+> Later [official source recovery](context-endpoint-recovery.md) retrieves the
+> missing activity workbook. The distinct [v3 study](context-activity-study.md)
+> predicts its literal published aggregate columns with recorded normalization
+> uncertainty. This does not rewrite the source files or the stopped-before-fit
+> status of the historical v1 attempt documented below.
+
+
 **Status: blocked before any model fit.** The immutable authority remains
 [context-prediction-v1.json](../experiments/context-prediction-v1.json), SHA-256
 `a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2`.

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "kind": "synthetic normalization-controlled ideal-operator counterexample",
+  "selection": "Parent-provided fixed integer example; independent of empirical outcomes.",
+  "contexts": [
+    "Context A",
+    "Context B",
+    "Context C"
+  ],
+  "rows": [
+    "Element 1",
+    "Element 2",
+    "Element 3",
+    "Element 4"
+  ],
+  "panel_x": [
+    [
+      "2",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "2",
+      "1"
+    ],
+    [
+      "1",
+      "0",
+      "2"
+    ],
+    [
+      "-3",
+      "-3",
+      "-3"
+    ]
+  ],
+  "panel_y": [
+    [
+      "0",
+      "-1",
+      "-2"
+    ],
+    [
+      "-2",
+      "0",
+      "-1"
+    ],
+    [
+      "-1",
+      "-2",
+      "0"
+    ],
+    [
+      "3",
+      "3",
+      "3"
+    ]
+  ],
+  "column_normalization": "Subtract column means; divide by shared sample SD sqrt(14/3); then center each row across the three contexts.",
+  "input_stage": "Synthetic full panels for the stated ideal column-standardization and row-centering construction.",
+  "not_claimed": [
+    "Not S9 data",
+    "Not empirical raw-activity reconstruction",
+    "Not identification of historical source preprocessing",
+    "Not a new mathematical or biological discovery"
+  ],
+  "related_formal_source": "proofs/ContextIdentifiability.lean"
+}

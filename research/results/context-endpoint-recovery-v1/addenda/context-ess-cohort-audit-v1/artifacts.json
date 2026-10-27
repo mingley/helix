@@ -1,0 +1,85 @@
+{
+  "protocol_sha256": "a0e3f521d1086fca0633fc4c473a3655aaf2fa9d4a4818b0429a735f46d42372",
+  "files": {
+    "S12-reader.py": {
+      "bytes": 15689,
+      "sha256": "9a9779f80ea3002eab0ba904530cf1ec5c1bc3d7bb2f96155018d0369a3dbf42"
+    },
+    "id-category-ledger.json.gz": {
+      "bytes": 6776414,
+      "sha256": "0132106832e16ea51c5b01d35e2d0d11ca7fd8c745cc030e2f04e07050ff7633"
+    },
+    "implementation.py": {
+      "bytes": 18569,
+      "sha256": "f2267f24a6f3c0f3d2b6bb7ec23865df74d1e63ede0b12766fd4d435e586d335"
+    },
+    "inputs.json": {
+      "bytes": 2208,
+      "sha256": "ad455d0d5ff43574e18493fe1926aa0758596eadccef7981dec330391027c022"
+    },
+    "mean_three_after_explicit_replicate_median_subtraction__exact_ESS_cohort__ddof0.json.gz": {
+      "bytes": 1715407,
+      "sha256": "a9de284138fbd52fa8db2664184b9573722201d3e13617d82016d9e4762521bb"
+    },
+    "mean_three_after_explicit_replicate_median_subtraction__exact_ESS_cohort__ddof0__S12_sample_zscore.json.gz": {
+      "bytes": 1687994,
+      "sha256": "ff0fdad28b65c32a12e61ae3630a9e68e9abd55453a6d840344b163ead782964"
+    },
+    "mean_three_after_explicit_replicate_median_subtraction__exact_ESS_cohort__ddof1.json.gz": {
+      "bytes": 1715125,
+      "sha256": "e4dcbc58f54007798126765f1dc1a68d62436e1d09df7a72f6cbad91398f1cc7"
+    },
+    "mean_three_after_explicit_replicate_median_subtraction__exact_ESS_cohort__ddof1__S12_sample_zscore.json.gz": {
+      "bytes": 1687652,
+      "sha256": "b98faa1b2757674e188735c738ebd956e65bb41dae78948654c0eae7fa3fff76"
+    },
+    "mean_three_published_replicates__exact_ESS_cohort__ddof0.json.gz": {
+      "bytes": 1715099,
+      "sha256": "eb2489e1f8ef9314107d2eea1b97f26b373ff06bc6387de02dbf1f8abbabe09c"
+    },
+    "mean_three_published_replicates__exact_ESS_cohort__ddof0__S12_sample_zscore.json.gz": {
+      "bytes": 1688083,
+      "sha256": "04829a7c6a2d0436ecdfd80cc04fd11cfc325c57e7176ba0388753a8ee422284"
+    },
+    "mean_three_published_replicates__exact_ESS_cohort__ddof1.json.gz": {
+      "bytes": 1715531,
+      "sha256": "ed433c82f2fa8fe98bcb19ef2dae784cba4d74a21762effdbbe2f383cd6b0c2b"
+    },
+    "mean_three_published_replicates__exact_ESS_cohort__ddof1__S12_sample_zscore.json.gz": {
+      "bytes": 1687896,
+      "sha256": "17c11b8eaae214fc0c39d07c5eecf7dea4135eb70d4cffe203576212d03ab0ca"
+    },
+    "populations-before-arithmetic.json": {
+      "bytes": 428,
+      "sha256": "60232348ca76d9aabbb34fdf4fdde448e38dd850f6bd81ed25ff37920688d196"
+    },
+    "primary-helper.py": {
+      "bytes": 36835,
+      "sha256": "2472660613a5f63f41394eb91aaf99b8e5606fddeca0b23e2ee30c372c75a4f4"
+    },
+    "protocol.json": {
+      "bytes": 10353,
+      "sha256": "a0e3f521d1086fca0633fc4c473a3655aaf2fa9d4a4818b0429a735f46d42372"
+    },
+    "published_activity_aggregate__exact_ESS_cohort__ddof0.json.gz": {
+      "bytes": 1715037,
+      "sha256": "204c52bb144176c28e5c88dda7adf449f4c8a6128626bce814a82d49ee70a59b"
+    },
+    "published_activity_aggregate__exact_ESS_cohort__ddof0__S12_sample_zscore.json.gz": {
+      "bytes": 1687867,
+      "sha256": "7a08be07ac9b2ce4964fbb7dd258ce04195906063e488c1e20725f86be4a26d6"
+    },
+    "published_activity_aggregate__exact_ESS_cohort__ddof1.json.gz": {
+      "bytes": 1714948,
+      "sha256": "fa944af63ab0e41b0336a3790ab166ef98b16d149558493eac59cde8a83c13d0"
+    },
+    "published_activity_aggregate__exact_ESS_cohort__ddof1__S12_sample_zscore.json.gz": {
+      "bytes": 1688037,
+      "sha256": "fc5f1c88570ad1fca465421f7352263c7fcedb3b09b3d13a567160b55042996f"
+    },
+    "summary.json": {
+      "bytes": 12253770,
+      "sha256": "74083f00da45de823bb2f10177bbe7c7c010e0f14a5291db32d03396b9d18906"
+    }
+  }
+}

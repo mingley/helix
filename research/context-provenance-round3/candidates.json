@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "round": "context provenance round3",
+  "scope": "Metadata-only source discovery. No new quantitative supplemental payload, ZIP bytes, member data or processed outcomes acquired.",
+  "source_study": {
+    "doi": "10.1038/s41586-024-08430-9",
+    "pmcid": "PMC11903340",
+    "title": "Massively parallel characterization of transcriptional regulatory elements"
+  },
+  "primary_candidate": {
+    "source_role": "Authoritative final published Supplementary Tables 1\u201313 archive; primary target Table 10",
+    "filename": "41586_2024_8430_MOESM5_ESM.zip",
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08430-9/MediaObjects/41586_2024_8430_MOESM5_ESM.zip",
+    "url_authority": "Exact attachment href in current Nature public article HTML",
+    "pmc_official_mirror_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/11903340/bin/41586_2024_8430_MOESM5_ESM.zip",
+    "bytes": 342234089,
+    "size_basis": "Publisher HTTP HEAD content-length; PMC article independently displays rounded 326.4 MB",
+    "accept_ranges": "bytes",
+    "last_modified": "Fri, 14 Feb 2025 10:46:05 GMT",
+    "etag": "\"cd38d6f0835534f0227865fee990cb9c\"",
+    "checksum_status": "No producer cryptographic checksum established. ETag is an opaque validator and is not asserted to be MD5. Archive body not acquired so no observed body SHA256.",
+    "member_inventory": "Unknown until authorized central-directory metadata acquisition",
+    "table10_caption_status": "Final article refers to joint design/composition and full ESSs. Individual Table 10 workbook caption/schema not yet inspected.",
+    "secondary_candidate": "Final Table 12 is joint-library fold assignment/modeling data; may be useful for header-only endpoint discovery, subject to central protocol.",
+    "reuse": {
+      "article_license": "CC-BY-4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "evidence": "final-article.xml permissions block; article-source-metadata.json",
+      "qualification": "Article license includes supplementary material unless a specific third-party credit line indicates otherwise. No attachment-specific exception or embedded workbook terms inspected before acquisition. Retain full credit and indicate transformations."
+    }
+  },
+  "endpoint_semantics_known_from_methods": {
+    "upstream_activity": "Per-replicate log2(RNA/DNA), centered by within-replicate library median, average of three replicates; barcode filter >=10; not absolute per-copy transcription",
+    "published_ess": "Within each cell, z-score of activity, then subtract element mean across all three cells",
+    "table10": "Full ESSs reported; presence of upstream activity columns UNKNOWN",
+    "table12": "Joint fold assignment cited; exact column roles UNKNOWN",
+    "not_equivalent": "ESS and raw averaged activity are distinct endpoints; published ESS alone does not identify raw activity scale or offsets"
+  },
+  "normal_distribution_status": {
+    "publisher_exact_link": "HEAD 200, application/octet-stream, bytes 342234089, Accept-Ranges: bytes",
+    "pmc_article_attachment": "HEAD 200 text/html challenge headers, zero HEAD content length; not ZIP verification",
+    "guessed_static_content_hostname": "CONNECT 403; abandoned, not bypassed",
+    "europepmc_supplementaryFiles": "HEAD 45-second timeout; no body acquired",
+    "pmc_oa_metadata_old_and_modern": "HTTP 404",
+    "europepmc_article_attachment": "HTTP 403; no body acquired"
+  },
+  "permitted_next_action_recommendation": "Centrally freeze acquisition protocol, then bounded exact EOCD/central-directory ranges of publisher URL followed only by authorized Table 10/Table 12 members. Require 206 range/ZIP signature/CRC32 plus observed SHA256 and explicitly state unverified outer-archive checksum if partial.",
+  "exposure_boundary": {
+    "new_quantitative_payload_acquired": false,
+    "archive_body_bytes_read": 0,
+    "new_supplement_table_headers_read": false,
+    "new_supplement_table_values_read": false,
+    "prior_exposure": "Earlier rounds acquired old Zenodo S7 design/S9 ESS; earlier analyses source-accounted 55,338 actual S9 IDs. This is not an untouched new panel. Existing v1 raw-activity endpoint remains blocked; Table 10 could match old ESS and must be tested."
+  }
+}

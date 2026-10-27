@@ -4,35 +4,42 @@ Helix connects typed genomic representations, source provenance, conditional
 Lean reasoning and quantitative experiments. The Rust workspace contains
 **17 crates** and builds inspectable partial models of human genome function.
 
-The current [context-score benchmark](research/context-specificity-study.md)
-reduces held-out MSE by **13.434%** on fixed published source columns. Independent
-implementations reproduce every required numerical comparison, including exact
-features and all 829,140 model predictions.
+The current [published-activity study](research/context-activity-study.md) tests
+whether fixed DNA composition features predict the common component of reporter
+activity across HepG2, K562 and WTC11. Shared DNA prediction reduces held-out MSE
+by **8.80%** beyond cell means on **55,276 elements in 2,761 sequence/locus groups**.
+Independent Rust and Python calculations pass all **258 comparison categories**,
+including all 829,140 predictions and exact DNA feature fractions.
 
-**Scientific source-formula validation remains unresolved.** The supplied
-columns fail the published ESS zero-sum formula by far more than rounding.
-Numerical reproduction does not resolve their preprocessing history or certify
-the stated biological endpoint. The workflow retains this failure and returns
-exit status 2. No target projection, repair or refit is used to force agreement.
+The [source recovery](research/context-endpoint-recovery.md) retrieves the
+previously missing official RNA/DNA activity table. It also reproduces all
+166,014 model-score cells by standardizing the published ESS table on the exact
+model-table subset. Upstream activity-to-ESS processing remains a separate
+unresolved question; the earlier frozen source-formula failure is retained.
+The source experiment and selected panel are shared with the earlier benchmark.
+This is computational reproduction, not an independent laboratory experiment or
+a new regulatory mechanism.
 
-The next goal is to recover authoritative, version-linked normalization/raw
-activity or independently compatible measurements. No new biological mechanism
-or global novelty is established.
+[Lean proofs](research/context-identifiability.md) show why centered specificity
+alone cannot uniquely identify common activity, including a counterexample with
+identical column means and variances. Formal implications, source arithmetic,
+predictive evaluation and biological validation remain distinct.
 
 Start with the [research objective](research/GOAL.md),
-[context study](research/context-specificity-study.md),
-[retained snapshot](research/results/context-specificity-v2/README.md), and
-[source-semantic review](research/context-specificity-semantic-review.md).
+[activity study](research/context-activity-study.md),
+[retained activity evidence](research/results/context-activity-v3/README.md), and
+[endpoint recovery](research/context-endpoint-recovery.md).
 
 ## Current evidence
 
 | Result | Scope |
 | --- | --- |
-| Context-specific MSE 0.86538919 versus additive 0.99969020 | 13.434% lower MSE on 55,276 selected, reference-valid elements in three known contexts |
-| All 243 independent comparison categories pass | 1,824,108 feature fractions match exactly; 829,140 model predictions reproduce within frozen tolerance |
-| Every admitted score triple violates the stated zero-sum formula | Maximum absolute sum 1.0987267; source-normalization provenance remains unresolved |
-| Source columns instead occupy a fitted weighted rank-two plane | Compatible with extra column scaling; no proof of historical preprocessing or new biology |
-| Raw-activity context-prediction-v1 stopped before fitting | Available files contained ESS rather than the required activity means; v2 is a distinct protocol |
+| Additive DNA/context MSE 0.665083 versus cell means 0.729254 | 8.80% lower held-out MSE on unchanged published log2(RNA/DNA) aggregates |
+| Primary MSE gain 0.0641716; conditional 95% range 0.0598440–0.0687169 | 2,000 paired component resamples; no refitting or genome-wide inference |
+| All 258 independent activity comparison categories pass | 829,140 model predictions; maximum difference 6.38e−12 |
+| S11 ESS → S12 subset column standardization reproduces all 166,014 cells | The older S9 source is byte-identical to final S12; this establishes a file relationship |
+| Earlier 36 activity-to-ESS reconstructions all fail | Bounded arithmetic search; further post-hoc cohort diagnostics are separately identified |
+| Specificity cannot uniquely determine common activity | 29 checked Lean theorems; ideal operators and explicit moment-preserving witnesses |
 
 The earlier [regulatory study](research/regulatory-study.md) remains negative:
 none of five fixed nonconstant models beats the mean across nine held-out
@@ -52,15 +59,20 @@ bash scripts/setup.sh
 bash scripts/setup_research.sh
 source scripts/research-env.sh
 bash scripts/check.sh
-bash scripts/check_context_study.sh runs/context-review
+bash scripts/check_context_activity.sh runs/activity-review
 ```
 
-Choose a new output prefix. The context check rebuilds groups and guards,
-replays reference validation, runs Rust and independent Python, retains all five
-models and 2,000 paired resamples, compares artifacts, and generates figures
-and source diagnostics. **Exit status 2 is expected because scientific
-source-formula validation remains unresolved, despite numerical reproduction
-passing.** It must not be presented as a complete scientific pass.
+Choose a new output prefix. The activity check verifies source and dataset
+bindings, runs Rust and independent Python, retains all five models and 2,000
+paired resamples, compares complete results, and generates three figures. It
+reuses the previously independently verified, unchanged DNA groups and guards.
+No new reference download is needed for this activity replay.
+
+The [earlier specificity benchmark](research/context-specificity-study.md)
+remains reproducible with
+`bash scripts/check_context_study.sh runs/context-review`. That frozen workflow
+returns **2** for its original unresolved source-formula gate; later source
+recovery does not retroactively change its target or success rule.
 
 Full rederivation obtains a checksum-verified **835 MB hg38 reference**. Cache
 it separately if desired:
@@ -69,20 +81,25 @@ it separately if desired:
 bash scripts/setup_reference.sh
 ```
 
-Snapshot inspection and direct fitting of the frozen panel do not require that
-download. To create a new grouping receipt and run the Rust path directly:
+To inspect the retained evidence without refitting:
 
 ```bash
-python3 scripts/group_context_panel.py --panel datasets/context-panel/panel.json \
-  --out runs/context-direct-groups.json
-cargo run --release --frozen -- context-study \
-  --groups runs/context-direct-groups.json --out runs/context-direct-rust
-cargo run --release --frozen -- audit runs/context-direct-rust
+bash scripts/check_context_activity.sh --verify-published
 ```
 
-See the [independent replay](research/independent-context-replication/README.md),
-[v2 protocol](experiments/context-specificity-v2.json), and
-[source interpretation](research/context-literature.md).
+Run the activity Rust path directly with a new output directory:
+
+```bash
+cargo run --release --frozen -- context-activity --out runs/activity-direct-rust
+cargo run --release --frozen -- audit runs/activity-direct-rust
+```
+
+See the [activity protocol](experiments/context-activity-v3.json),
+[independent activity replay](research/independent-context-activity-replication/README.md),
+and [source recovery](research/context-endpoint-recovery.md).
+The earlier [v2 protocol](experiments/context-specificity-v2.json) and
+[independent specificity replay](research/independent-context-replication/README.md)
+remain available with their original endpoints.
 The [earlier study snapshot](research/results/regulatory-v1/README.md) remains
 available. Reproduce it with `bash scripts/check_study.sh runs/study-review`;
 that workflow returns 2 for its retained secondary-rank failures.

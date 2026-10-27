@@ -1,0 +1,1493 @@
+{
+  "sets": {
+    "S11_ESS": {
+      "count": 55977,
+      "ids_sha256": "3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f",
+      "values_file": "id-sets/3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f.json.gz",
+      "design_category_counts": {
+        "__UNMAPPED__": 2,
+        "negative control, shuffled": 286,
+        "negative, synthetic control, HepG2 (Smith et al 2013)": 153,
+        "positive control, K562 (Ernst et al 2016)": 48,
+        "positive, synthetic control, HepG2 (Smith et al 2013)": 133,
+        "potential enhancer, HepG2": 17900,
+        "potential enhancer, K562": 17554,
+        "potential enhancer, WTC11": 17708,
+        "promoter": 2193
+      }
+    },
+    "S12": {
+      "count": 55338,
+      "ids_sha256": "b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075",
+      "values_file": "id-sets/b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075.json.gz",
+      "design_category_counts": {
+        "potential enhancer, HepG2": 17889,
+        "potential enhancer, K562": 17554,
+        "potential enhancer, WTC11": 17708,
+        "promoter": 2187
+      }
+    },
+    "old_admitted": {
+      "count": 55276,
+      "ids_sha256": "ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7",
+      "values_file": "id-sets/ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7.json.gz",
+      "design_category_counts": {
+        "potential enhancer, HepG2": 17847,
+        "potential enhancer, K562": 17554,
+        "potential enhancer, WTC11": 17708,
+        "promoter": 2167
+      }
+    },
+    "published_activity_aggregate:all": {
+      "count": 56981,
+      "ids_sha256": "b6fc12ae7fcdc9e4560d650256f75d2132c6acbd4b9836bde84c0a0bd61b9dac",
+      "values_file": "id-sets/b6fc12ae7fcdc9e4560d650256f75d2132c6acbd4b9836bde84c0a0bd61b9dac.json.gz",
+      "design_category_counts": {
+        "__UNMAPPED__": 2,
+        "negative control, shuffled": 292,
+        "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+        "positive control, K562 (Ernst et al 2016)": 49,
+        "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+        "potential enhancer, HepG2": 18094,
+        "potential enhancer, K562": 17878,
+        "potential enhancer, WTC11": 18030,
+        "promoter": 2313
+      }
+    },
+    "published_activity_aggregate:complete": {
+      "count": 56977,
+      "ids_sha256": "ec84fa32f83dad9237f39a0667a2439e9d3e5a4854b221574aaa20ea78fcc275",
+      "values_file": "id-sets/ec84fa32f83dad9237f39a0667a2439e9d3e5a4854b221574aaa20ea78fcc275.json.gz",
+      "design_category_counts": {
+        "__UNMAPPED__": 2,
+        "negative control, shuffled": 292,
+        "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+        "positive control, K562 (Ernst et al 2016)": 49,
+        "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+        "potential enhancer, HepG2": 18093,
+        "potential enhancer, K562": 17877,
+        "potential enhancer, WTC11": 18030,
+        "promoter": 2311
+      }
+    },
+    "mean_three_published_replicates:all": {
+      "count": 56981,
+      "ids_sha256": "b6fc12ae7fcdc9e4560d650256f75d2132c6acbd4b9836bde84c0a0bd61b9dac",
+      "values_file": "id-sets/b6fc12ae7fcdc9e4560d650256f75d2132c6acbd4b9836bde84c0a0bd61b9dac.json.gz",
+      "design_category_counts": {
+        "__UNMAPPED__": 2,
+        "negative control, shuffled": 292,
+        "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+        "positive control, K562 (Ernst et al 2016)": 49,
+        "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+        "potential enhancer, HepG2": 18094,
+        "potential enhancer, K562": 17878,
+        "potential enhancer, WTC11": 18030,
+        "promoter": 2313
+      }
+    },
+    "mean_three_published_replicates:complete": {
+      "count": 56941,
+      "ids_sha256": "fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf",
+      "values_file": "id-sets/fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf.json.gz",
+      "design_category_counts": {
+        "__UNMAPPED__": 2,
+        "negative control, shuffled": 291,
+        "negative, synthetic control, HepG2 (Smith et al 2013)": 156,
+        "positive control, K562 (Ernst et al 2016)": 48,
+        "positive, synthetic control, HepG2 (Smith et al 2013)": 165,
+        "potential enhancer, HepG2": 18091,
+        "potential enhancer, K562": 17863,
+        "potential enhancer, WTC11": 18018,
+        "promoter": 2307
+      }
+    },
+    "mean_three_after_explicit_replicate_median_subtraction:all": {
+      "count": 56981,
+      "ids_sha256": "b6fc12ae7fcdc9e4560d650256f75d2132c6acbd4b9836bde84c0a0bd61b9dac",
+      "values_file": "id-sets/b6fc12ae7fcdc9e4560d650256f75d2132c6acbd4b9836bde84c0a0bd61b9dac.json.gz",
+      "design_category_counts": {
+        "__UNMAPPED__": 2,
+        "negative control, shuffled": 292,
+        "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+        "positive control, K562 (Ernst et al 2016)": 49,
+        "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+        "potential enhancer, HepG2": 18094,
+        "potential enhancer, K562": 17878,
+        "potential enhancer, WTC11": 18030,
+        "promoter": 2313
+      }
+    },
+    "mean_three_after_explicit_replicate_median_subtraction:complete": {
+      "count": 56941,
+      "ids_sha256": "fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf",
+      "values_file": "id-sets/fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf.json.gz",
+      "design_category_counts": {
+        "__UNMAPPED__": 2,
+        "negative control, shuffled": 291,
+        "negative, synthetic control, HepG2 (Smith et al 2013)": 156,
+        "positive control, K562 (Ernst et al 2016)": 48,
+        "positive, synthetic control, HepG2 (Smith et al 2013)": 165,
+        "potential enhancer, HepG2": 18091,
+        "potential enhancer, K562": 17863,
+        "potential enhancer, WTC11": 18018,
+        "promoter": 2307
+      }
+    }
+  },
+  "pairwise_differences": [
+    {
+      "left": "S11_ESS",
+      "right": "S12",
+      "intersection": {
+        "count": 55338,
+        "ids_sha256": "b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075",
+        "values_file": "id-sets/b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 17889,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2187
+        }
+      },
+      "left_only": {
+        "count": 639,
+        "ids_sha256": "c03e2fde3f2ebb1c9dcf1899734f807e648a1447d7705af6abec292f9433cec3",
+        "values_file": "id-sets/c03e2fde3f2ebb1c9dcf1899734f807e648a1447d7705af6abec292f9433cec3.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 286,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 153,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 133,
+          "potential enhancer, HepG2": 11,
+          "promoter": 6
+        }
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "S11_ESS",
+      "right": "mean_three_after_explicit_replicate_median_subtraction:all",
+      "intersection": {
+        "count": 55977,
+        "ids_sha256": "3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f",
+        "values_file": "id-sets/3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 286,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 153,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 133,
+          "potential enhancer, HepG2": 17900,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2193
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 1004,
+        "ids_sha256": "95178a28fff5610e6498cafabe97a15304ec3b8a59fc7a6fbdee4b8e244587df",
+        "values_file": "id-sets/95178a28fff5610e6498cafabe97a15304ec3b8a59fc7a6fbdee4b8e244587df.json.gz",
+        "design_category_counts": {
+          "negative control, shuffled": 6,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 4,
+          "positive control, K562 (Ernst et al 2016)": 1,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 33,
+          "potential enhancer, HepG2": 194,
+          "potential enhancer, K562": 324,
+          "potential enhancer, WTC11": 322,
+          "promoter": 120
+        }
+      }
+    },
+    {
+      "left": "S11_ESS",
+      "right": "mean_three_after_explicit_replicate_median_subtraction:complete",
+      "intersection": {
+        "count": 55977,
+        "ids_sha256": "3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f",
+        "values_file": "id-sets/3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 286,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 153,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 133,
+          "potential enhancer, HepG2": 17900,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2193
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 964,
+        "ids_sha256": "4577d86149bb8201334e2a47abfa96c77eba09e7d8d3381a98edd2424879fcf7",
+        "values_file": "id-sets/4577d86149bb8201334e2a47abfa96c77eba09e7d8d3381a98edd2424879fcf7.json.gz",
+        "design_category_counts": {
+          "negative control, shuffled": 5,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 3,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 32,
+          "potential enhancer, HepG2": 191,
+          "potential enhancer, K562": 309,
+          "potential enhancer, WTC11": 310,
+          "promoter": 114
+        }
+      }
+    },
+    {
+      "left": "S11_ESS",
+      "right": "mean_three_published_replicates:all",
+      "intersection": {
+        "count": 55977,
+        "ids_sha256": "3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f",
+        "values_file": "id-sets/3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 286,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 153,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 133,
+          "potential enhancer, HepG2": 17900,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2193
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 1004,
+        "ids_sha256": "95178a28fff5610e6498cafabe97a15304ec3b8a59fc7a6fbdee4b8e244587df",
+        "values_file": "id-sets/95178a28fff5610e6498cafabe97a15304ec3b8a59fc7a6fbdee4b8e244587df.json.gz",
+        "design_category_counts": {
+          "negative control, shuffled": 6,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 4,
+          "positive control, K562 (Ernst et al 2016)": 1,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 33,
+          "potential enhancer, HepG2": 194,
+          "potential enhancer, K562": 324,
+          "potential enhancer, WTC11": 322,
+          "promoter": 120
+        }
+      }
+    },
+    {
+      "left": "S11_ESS",
+      "right": "mean_three_published_replicates:complete",
+      "intersection": {
+        "count": 55977,
+        "ids_sha256": "3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f",
+        "values_file": "id-sets/3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 286,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 153,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 133,
+          "potential enhancer, HepG2": 17900,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2193
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 964,
+        "ids_sha256": "4577d86149bb8201334e2a47abfa96c77eba09e7d8d3381a98edd2424879fcf7",
+        "values_file": "id-sets/4577d86149bb8201334e2a47abfa96c77eba09e7d8d3381a98edd2424879fcf7.json.gz",
+        "design_category_counts": {
+          "negative control, shuffled": 5,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 3,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 32,
+          "potential enhancer, HepG2": 191,
+          "potential enhancer, K562": 309,
+          "potential enhancer, WTC11": 310,
+          "promoter": 114
+        }
+      }
+    },
+    {
+      "left": "S11_ESS",
+      "right": "old_admitted",
+      "intersection": {
+        "count": 55276,
+        "ids_sha256": "ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7",
+        "values_file": "id-sets/ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 17847,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2167
+        }
+      },
+      "left_only": {
+        "count": 701,
+        "ids_sha256": "0d5709c3e828da6250144a7f829a146f85826c9cc16e76786e08bdd3da168891",
+        "values_file": "id-sets/0d5709c3e828da6250144a7f829a146f85826c9cc16e76786e08bdd3da168891.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 286,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 153,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 133,
+          "potential enhancer, HepG2": 53,
+          "promoter": 26
+        }
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "S11_ESS",
+      "right": "published_activity_aggregate:all",
+      "intersection": {
+        "count": 55977,
+        "ids_sha256": "3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f",
+        "values_file": "id-sets/3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 286,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 153,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 133,
+          "potential enhancer, HepG2": 17900,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2193
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 1004,
+        "ids_sha256": "95178a28fff5610e6498cafabe97a15304ec3b8a59fc7a6fbdee4b8e244587df",
+        "values_file": "id-sets/95178a28fff5610e6498cafabe97a15304ec3b8a59fc7a6fbdee4b8e244587df.json.gz",
+        "design_category_counts": {
+          "negative control, shuffled": 6,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 4,
+          "positive control, K562 (Ernst et al 2016)": 1,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 33,
+          "potential enhancer, HepG2": 194,
+          "potential enhancer, K562": 324,
+          "potential enhancer, WTC11": 322,
+          "promoter": 120
+        }
+      }
+    },
+    {
+      "left": "S11_ESS",
+      "right": "published_activity_aggregate:complete",
+      "intersection": {
+        "count": 55977,
+        "ids_sha256": "3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f",
+        "values_file": "id-sets/3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 286,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 153,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 133,
+          "potential enhancer, HepG2": 17900,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2193
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 1000,
+        "ids_sha256": "51e912576f840c8090cebc64e6149f10f13d673c78f518465317025282f63196",
+        "values_file": "id-sets/51e912576f840c8090cebc64e6149f10f13d673c78f518465317025282f63196.json.gz",
+        "design_category_counts": {
+          "negative control, shuffled": 6,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 4,
+          "positive control, K562 (Ernst et al 2016)": 1,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 33,
+          "potential enhancer, HepG2": 193,
+          "potential enhancer, K562": 323,
+          "potential enhancer, WTC11": 322,
+          "promoter": 118
+        }
+      }
+    },
+    {
+      "left": "S12",
+      "right": "mean_three_after_explicit_replicate_median_subtraction:all",
+      "intersection": {
+        "count": 55338,
+        "ids_sha256": "b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075",
+        "values_file": "id-sets/b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 17889,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2187
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 1643,
+        "ids_sha256": "d239bb3e75953e1a3639c2a6c62efdbdb4acf7f2d2d10db3f1fc85db00413388",
+        "values_file": "id-sets/d239bb3e75953e1a3639c2a6c62efdbdb4acf7f2d2d10db3f1fc85db00413388.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 292,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+          "positive control, K562 (Ernst et al 2016)": 49,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+          "potential enhancer, HepG2": 205,
+          "potential enhancer, K562": 324,
+          "potential enhancer, WTC11": 322,
+          "promoter": 126
+        }
+      }
+    },
+    {
+      "left": "S12",
+      "right": "mean_three_after_explicit_replicate_median_subtraction:complete",
+      "intersection": {
+        "count": 55338,
+        "ids_sha256": "b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075",
+        "values_file": "id-sets/b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 17889,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2187
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 1603,
+        "ids_sha256": "eb02fd4d366bc8ef1ad5bbd1789a3ca52c1337c0fa5e77241b0ed6f23fab6600",
+        "values_file": "id-sets/eb02fd4d366bc8ef1ad5bbd1789a3ca52c1337c0fa5e77241b0ed6f23fab6600.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 291,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 156,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 165,
+          "potential enhancer, HepG2": 202,
+          "potential enhancer, K562": 309,
+          "potential enhancer, WTC11": 310,
+          "promoter": 120
+        }
+      }
+    },
+    {
+      "left": "S12",
+      "right": "mean_three_published_replicates:all",
+      "intersection": {
+        "count": 55338,
+        "ids_sha256": "b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075",
+        "values_file": "id-sets/b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 17889,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2187
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 1643,
+        "ids_sha256": "d239bb3e75953e1a3639c2a6c62efdbdb4acf7f2d2d10db3f1fc85db00413388",
+        "values_file": "id-sets/d239bb3e75953e1a3639c2a6c62efdbdb4acf7f2d2d10db3f1fc85db00413388.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 292,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+          "positive control, K562 (Ernst et al 2016)": 49,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+          "potential enhancer, HepG2": 205,
+          "potential enhancer, K562": 324,
+          "potential enhancer, WTC11": 322,
+          "promoter": 126
+        }
+      }
+    },
+    {
+      "left": "S12",
+      "right": "mean_three_published_replicates:complete",
+      "intersection": {
+        "count": 55338,
+        "ids_sha256": "b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075",
+        "values_file": "id-sets/b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 17889,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2187
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 1603,
+        "ids_sha256": "eb02fd4d366bc8ef1ad5bbd1789a3ca52c1337c0fa5e77241b0ed6f23fab6600",
+        "values_file": "id-sets/eb02fd4d366bc8ef1ad5bbd1789a3ca52c1337c0fa5e77241b0ed6f23fab6600.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 291,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 156,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 165,
+          "potential enhancer, HepG2": 202,
+          "potential enhancer, K562": 309,
+          "potential enhancer, WTC11": 310,
+          "promoter": 120
+        }
+      }
+    },
+    {
+      "left": "S12",
+      "right": "old_admitted",
+      "intersection": {
+        "count": 55276,
+        "ids_sha256": "ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7",
+        "values_file": "id-sets/ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 17847,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2167
+        }
+      },
+      "left_only": {
+        "count": 62,
+        "ids_sha256": "cb8437c4d449575a3dfd0f4bd438d6ac89378fc549d25298e47d14708b869409",
+        "values_file": "id-sets/cb8437c4d449575a3dfd0f4bd438d6ac89378fc549d25298e47d14708b869409.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 42,
+          "promoter": 20
+        }
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "S12",
+      "right": "published_activity_aggregate:all",
+      "intersection": {
+        "count": 55338,
+        "ids_sha256": "b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075",
+        "values_file": "id-sets/b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 17889,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2187
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 1643,
+        "ids_sha256": "d239bb3e75953e1a3639c2a6c62efdbdb4acf7f2d2d10db3f1fc85db00413388",
+        "values_file": "id-sets/d239bb3e75953e1a3639c2a6c62efdbdb4acf7f2d2d10db3f1fc85db00413388.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 292,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+          "positive control, K562 (Ernst et al 2016)": 49,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+          "potential enhancer, HepG2": 205,
+          "potential enhancer, K562": 324,
+          "potential enhancer, WTC11": 322,
+          "promoter": 126
+        }
+      }
+    },
+    {
+      "left": "S12",
+      "right": "published_activity_aggregate:complete",
+      "intersection": {
+        "count": 55338,
+        "ids_sha256": "b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075",
+        "values_file": "id-sets/b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 17889,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2187
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 1639,
+        "ids_sha256": "30c82b2710b3be17ebf349130e21d092a39a4fea492a2b805af0b1b552111451",
+        "values_file": "id-sets/30c82b2710b3be17ebf349130e21d092a39a4fea492a2b805af0b1b552111451.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 292,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+          "positive control, K562 (Ernst et al 2016)": 49,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+          "potential enhancer, HepG2": 204,
+          "potential enhancer, K562": 323,
+          "potential enhancer, WTC11": 322,
+          "promoter": 124
+        }
+      }
+    },
+    {
+      "left": "mean_three_after_explicit_replicate_median_subtraction:all",
+      "right": "mean_three_after_explicit_replicate_median_subtraction:complete",
+      "intersection": {
+        "count": 56941,
+        "ids_sha256": "fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf",
+        "values_file": "id-sets/fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 291,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 156,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 165,
+          "potential enhancer, HepG2": 18091,
+          "potential enhancer, K562": 17863,
+          "potential enhancer, WTC11": 18018,
+          "promoter": 2307
+        }
+      },
+      "left_only": {
+        "count": 40,
+        "ids_sha256": "5acfeda6a2850b44f0e21b6fb8283b6a7d5c1be5dee2c03f0f61a158af9d1402",
+        "values_file": "id-sets/5acfeda6a2850b44f0e21b6fb8283b6a7d5c1be5dee2c03f0f61a158af9d1402.json.gz",
+        "design_category_counts": {
+          "negative control, shuffled": 1,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "positive control, K562 (Ernst et al 2016)": 1,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "potential enhancer, HepG2": 3,
+          "potential enhancer, K562": 15,
+          "potential enhancer, WTC11": 12,
+          "promoter": 6
+        }
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "mean_three_after_explicit_replicate_median_subtraction:all",
+      "right": "mean_three_published_replicates:all",
+      "intersection": {
+        "count": 56981,
+        "ids_sha256": "b6fc12ae7fcdc9e4560d650256f75d2132c6acbd4b9836bde84c0a0bd61b9dac",
+        "values_file": "id-sets/b6fc12ae7fcdc9e4560d650256f75d2132c6acbd4b9836bde84c0a0bd61b9dac.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 292,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+          "positive control, K562 (Ernst et al 2016)": 49,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+          "potential enhancer, HepG2": 18094,
+          "potential enhancer, K562": 17878,
+          "potential enhancer, WTC11": 18030,
+          "promoter": 2313
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "mean_three_after_explicit_replicate_median_subtraction:all",
+      "right": "mean_three_published_replicates:complete",
+      "intersection": {
+        "count": 56941,
+        "ids_sha256": "fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf",
+        "values_file": "id-sets/fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 291,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 156,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 165,
+          "potential enhancer, HepG2": 18091,
+          "potential enhancer, K562": 17863,
+          "potential enhancer, WTC11": 18018,
+          "promoter": 2307
+        }
+      },
+      "left_only": {
+        "count": 40,
+        "ids_sha256": "5acfeda6a2850b44f0e21b6fb8283b6a7d5c1be5dee2c03f0f61a158af9d1402",
+        "values_file": "id-sets/5acfeda6a2850b44f0e21b6fb8283b6a7d5c1be5dee2c03f0f61a158af9d1402.json.gz",
+        "design_category_counts": {
+          "negative control, shuffled": 1,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "positive control, K562 (Ernst et al 2016)": 1,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "potential enhancer, HepG2": 3,
+          "potential enhancer, K562": 15,
+          "potential enhancer, WTC11": 12,
+          "promoter": 6
+        }
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "mean_three_after_explicit_replicate_median_subtraction:all",
+      "right": "old_admitted",
+      "intersection": {
+        "count": 55276,
+        "ids_sha256": "ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7",
+        "values_file": "id-sets/ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 17847,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2167
+        }
+      },
+      "left_only": {
+        "count": 1705,
+        "ids_sha256": "319c09638de30ee328b9813226142fcfebe5d84cf5cb697406771a3360611ee7",
+        "values_file": "id-sets/319c09638de30ee328b9813226142fcfebe5d84cf5cb697406771a3360611ee7.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 292,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+          "positive control, K562 (Ernst et al 2016)": 49,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+          "potential enhancer, HepG2": 247,
+          "potential enhancer, K562": 324,
+          "potential enhancer, WTC11": 322,
+          "promoter": 146
+        }
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "mean_three_after_explicit_replicate_median_subtraction:all",
+      "right": "published_activity_aggregate:all",
+      "intersection": {
+        "count": 56981,
+        "ids_sha256": "b6fc12ae7fcdc9e4560d650256f75d2132c6acbd4b9836bde84c0a0bd61b9dac",
+        "values_file": "id-sets/b6fc12ae7fcdc9e4560d650256f75d2132c6acbd4b9836bde84c0a0bd61b9dac.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 292,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+          "positive control, K562 (Ernst et al 2016)": 49,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+          "potential enhancer, HepG2": 18094,
+          "potential enhancer, K562": 17878,
+          "potential enhancer, WTC11": 18030,
+          "promoter": 2313
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "mean_three_after_explicit_replicate_median_subtraction:all",
+      "right": "published_activity_aggregate:complete",
+      "intersection": {
+        "count": 56977,
+        "ids_sha256": "ec84fa32f83dad9237f39a0667a2439e9d3e5a4854b221574aaa20ea78fcc275",
+        "values_file": "id-sets/ec84fa32f83dad9237f39a0667a2439e9d3e5a4854b221574aaa20ea78fcc275.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 292,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+          "positive control, K562 (Ernst et al 2016)": 49,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+          "potential enhancer, HepG2": 18093,
+          "potential enhancer, K562": 17877,
+          "potential enhancer, WTC11": 18030,
+          "promoter": 2311
+        }
+      },
+      "left_only": {
+        "count": 4,
+        "ids_sha256": "4df7d0bea967cd48b696b7ac58707f6396878f50d7c28f67235cd44892d46c51",
+        "values_file": "id-sets/4df7d0bea967cd48b696b7ac58707f6396878f50d7c28f67235cd44892d46c51.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 1,
+          "potential enhancer, K562": 1,
+          "promoter": 2
+        }
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "mean_three_after_explicit_replicate_median_subtraction:complete",
+      "right": "mean_three_published_replicates:all",
+      "intersection": {
+        "count": 56941,
+        "ids_sha256": "fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf",
+        "values_file": "id-sets/fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 291,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 156,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 165,
+          "potential enhancer, HepG2": 18091,
+          "potential enhancer, K562": 17863,
+          "potential enhancer, WTC11": 18018,
+          "promoter": 2307
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 40,
+        "ids_sha256": "5acfeda6a2850b44f0e21b6fb8283b6a7d5c1be5dee2c03f0f61a158af9d1402",
+        "values_file": "id-sets/5acfeda6a2850b44f0e21b6fb8283b6a7d5c1be5dee2c03f0f61a158af9d1402.json.gz",
+        "design_category_counts": {
+          "negative control, shuffled": 1,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "positive control, K562 (Ernst et al 2016)": 1,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "potential enhancer, HepG2": 3,
+          "potential enhancer, K562": 15,
+          "potential enhancer, WTC11": 12,
+          "promoter": 6
+        }
+      }
+    },
+    {
+      "left": "mean_three_after_explicit_replicate_median_subtraction:complete",
+      "right": "mean_three_published_replicates:complete",
+      "intersection": {
+        "count": 56941,
+        "ids_sha256": "fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf",
+        "values_file": "id-sets/fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 291,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 156,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 165,
+          "potential enhancer, HepG2": 18091,
+          "potential enhancer, K562": 17863,
+          "potential enhancer, WTC11": 18018,
+          "promoter": 2307
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "mean_three_after_explicit_replicate_median_subtraction:complete",
+      "right": "old_admitted",
+      "intersection": {
+        "count": 55276,
+        "ids_sha256": "ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7",
+        "values_file": "id-sets/ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 17847,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2167
+        }
+      },
+      "left_only": {
+        "count": 1665,
+        "ids_sha256": "ab185958a4f2385f5f8764477da0bc9d07b009908d22da3e5a6a4387da0f66aa",
+        "values_file": "id-sets/ab185958a4f2385f5f8764477da0bc9d07b009908d22da3e5a6a4387da0f66aa.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 291,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 156,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 165,
+          "potential enhancer, HepG2": 244,
+          "potential enhancer, K562": 309,
+          "potential enhancer, WTC11": 310,
+          "promoter": 140
+        }
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "mean_three_after_explicit_replicate_median_subtraction:complete",
+      "right": "published_activity_aggregate:all",
+      "intersection": {
+        "count": 56941,
+        "ids_sha256": "fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf",
+        "values_file": "id-sets/fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 291,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 156,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 165,
+          "potential enhancer, HepG2": 18091,
+          "potential enhancer, K562": 17863,
+          "potential enhancer, WTC11": 18018,
+          "promoter": 2307
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 40,
+        "ids_sha256": "5acfeda6a2850b44f0e21b6fb8283b6a7d5c1be5dee2c03f0f61a158af9d1402",
+        "values_file": "id-sets/5acfeda6a2850b44f0e21b6fb8283b6a7d5c1be5dee2c03f0f61a158af9d1402.json.gz",
+        "design_category_counts": {
+          "negative control, shuffled": 1,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "positive control, K562 (Ernst et al 2016)": 1,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "potential enhancer, HepG2": 3,
+          "potential enhancer, K562": 15,
+          "potential enhancer, WTC11": 12,
+          "promoter": 6
+        }
+      }
+    },
+    {
+      "left": "mean_three_after_explicit_replicate_median_subtraction:complete",
+      "right": "published_activity_aggregate:complete",
+      "intersection": {
+        "count": 56941,
+        "ids_sha256": "fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf",
+        "values_file": "id-sets/fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 291,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 156,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 165,
+          "potential enhancer, HepG2": 18091,
+          "potential enhancer, K562": 17863,
+          "potential enhancer, WTC11": 18018,
+          "promoter": 2307
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 36,
+        "ids_sha256": "91b20bb765862885b9c4a779e9da62a85f6ca74a2a22cc978378270a2565a211",
+        "values_file": "id-sets/91b20bb765862885b9c4a779e9da62a85f6ca74a2a22cc978378270a2565a211.json.gz",
+        "design_category_counts": {
+          "negative control, shuffled": 1,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "positive control, K562 (Ernst et al 2016)": 1,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "potential enhancer, HepG2": 2,
+          "potential enhancer, K562": 14,
+          "potential enhancer, WTC11": 12,
+          "promoter": 4
+        }
+      }
+    },
+    {
+      "left": "mean_three_published_replicates:all",
+      "right": "mean_three_published_replicates:complete",
+      "intersection": {
+        "count": 56941,
+        "ids_sha256": "fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf",
+        "values_file": "id-sets/fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 291,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 156,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 165,
+          "potential enhancer, HepG2": 18091,
+          "potential enhancer, K562": 17863,
+          "potential enhancer, WTC11": 18018,
+          "promoter": 2307
+        }
+      },
+      "left_only": {
+        "count": 40,
+        "ids_sha256": "5acfeda6a2850b44f0e21b6fb8283b6a7d5c1be5dee2c03f0f61a158af9d1402",
+        "values_file": "id-sets/5acfeda6a2850b44f0e21b6fb8283b6a7d5c1be5dee2c03f0f61a158af9d1402.json.gz",
+        "design_category_counts": {
+          "negative control, shuffled": 1,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "positive control, K562 (Ernst et al 2016)": 1,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "potential enhancer, HepG2": 3,
+          "potential enhancer, K562": 15,
+          "potential enhancer, WTC11": 12,
+          "promoter": 6
+        }
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "mean_three_published_replicates:all",
+      "right": "old_admitted",
+      "intersection": {
+        "count": 55276,
+        "ids_sha256": "ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7",
+        "values_file": "id-sets/ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 17847,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2167
+        }
+      },
+      "left_only": {
+        "count": 1705,
+        "ids_sha256": "319c09638de30ee328b9813226142fcfebe5d84cf5cb697406771a3360611ee7",
+        "values_file": "id-sets/319c09638de30ee328b9813226142fcfebe5d84cf5cb697406771a3360611ee7.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 292,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+          "positive control, K562 (Ernst et al 2016)": 49,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+          "potential enhancer, HepG2": 247,
+          "potential enhancer, K562": 324,
+          "potential enhancer, WTC11": 322,
+          "promoter": 146
+        }
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "mean_three_published_replicates:all",
+      "right": "published_activity_aggregate:all",
+      "intersection": {
+        "count": 56981,
+        "ids_sha256": "b6fc12ae7fcdc9e4560d650256f75d2132c6acbd4b9836bde84c0a0bd61b9dac",
+        "values_file": "id-sets/b6fc12ae7fcdc9e4560d650256f75d2132c6acbd4b9836bde84c0a0bd61b9dac.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 292,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+          "positive control, K562 (Ernst et al 2016)": 49,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+          "potential enhancer, HepG2": 18094,
+          "potential enhancer, K562": 17878,
+          "potential enhancer, WTC11": 18030,
+          "promoter": 2313
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "mean_three_published_replicates:all",
+      "right": "published_activity_aggregate:complete",
+      "intersection": {
+        "count": 56977,
+        "ids_sha256": "ec84fa32f83dad9237f39a0667a2439e9d3e5a4854b221574aaa20ea78fcc275",
+        "values_file": "id-sets/ec84fa32f83dad9237f39a0667a2439e9d3e5a4854b221574aaa20ea78fcc275.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 292,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+          "positive control, K562 (Ernst et al 2016)": 49,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+          "potential enhancer, HepG2": 18093,
+          "potential enhancer, K562": 17877,
+          "potential enhancer, WTC11": 18030,
+          "promoter": 2311
+        }
+      },
+      "left_only": {
+        "count": 4,
+        "ids_sha256": "4df7d0bea967cd48b696b7ac58707f6396878f50d7c28f67235cd44892d46c51",
+        "values_file": "id-sets/4df7d0bea967cd48b696b7ac58707f6396878f50d7c28f67235cd44892d46c51.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 1,
+          "potential enhancer, K562": 1,
+          "promoter": 2
+        }
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "mean_three_published_replicates:complete",
+      "right": "old_admitted",
+      "intersection": {
+        "count": 55276,
+        "ids_sha256": "ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7",
+        "values_file": "id-sets/ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 17847,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2167
+        }
+      },
+      "left_only": {
+        "count": 1665,
+        "ids_sha256": "ab185958a4f2385f5f8764477da0bc9d07b009908d22da3e5a6a4387da0f66aa",
+        "values_file": "id-sets/ab185958a4f2385f5f8764477da0bc9d07b009908d22da3e5a6a4387da0f66aa.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 291,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 156,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 165,
+          "potential enhancer, HepG2": 244,
+          "potential enhancer, K562": 309,
+          "potential enhancer, WTC11": 310,
+          "promoter": 140
+        }
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    },
+    {
+      "left": "mean_three_published_replicates:complete",
+      "right": "published_activity_aggregate:all",
+      "intersection": {
+        "count": 56941,
+        "ids_sha256": "fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf",
+        "values_file": "id-sets/fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 291,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 156,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 165,
+          "potential enhancer, HepG2": 18091,
+          "potential enhancer, K562": 17863,
+          "potential enhancer, WTC11": 18018,
+          "promoter": 2307
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 40,
+        "ids_sha256": "5acfeda6a2850b44f0e21b6fb8283b6a7d5c1be5dee2c03f0f61a158af9d1402",
+        "values_file": "id-sets/5acfeda6a2850b44f0e21b6fb8283b6a7d5c1be5dee2c03f0f61a158af9d1402.json.gz",
+        "design_category_counts": {
+          "negative control, shuffled": 1,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "positive control, K562 (Ernst et al 2016)": 1,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "potential enhancer, HepG2": 3,
+          "potential enhancer, K562": 15,
+          "potential enhancer, WTC11": 12,
+          "promoter": 6
+        }
+      }
+    },
+    {
+      "left": "mean_three_published_replicates:complete",
+      "right": "published_activity_aggregate:complete",
+      "intersection": {
+        "count": 56941,
+        "ids_sha256": "fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf",
+        "values_file": "id-sets/fefb8913de2bd321765740a195e13c4869cd88edc8dd013c1612ee006e6dc5cf.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 291,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 156,
+          "positive control, K562 (Ernst et al 2016)": 48,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 165,
+          "potential enhancer, HepG2": 18091,
+          "potential enhancer, K562": 17863,
+          "potential enhancer, WTC11": 18018,
+          "promoter": 2307
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 36,
+        "ids_sha256": "91b20bb765862885b9c4a779e9da62a85f6ca74a2a22cc978378270a2565a211",
+        "values_file": "id-sets/91b20bb765862885b9c4a779e9da62a85f6ca74a2a22cc978378270a2565a211.json.gz",
+        "design_category_counts": {
+          "negative control, shuffled": 1,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "positive control, K562 (Ernst et al 2016)": 1,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 1,
+          "potential enhancer, HepG2": 2,
+          "potential enhancer, K562": 14,
+          "potential enhancer, WTC11": 12,
+          "promoter": 4
+        }
+      }
+    },
+    {
+      "left": "old_admitted",
+      "right": "published_activity_aggregate:all",
+      "intersection": {
+        "count": 55276,
+        "ids_sha256": "ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7",
+        "values_file": "id-sets/ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 17847,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2167
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 1705,
+        "ids_sha256": "319c09638de30ee328b9813226142fcfebe5d84cf5cb697406771a3360611ee7",
+        "values_file": "id-sets/319c09638de30ee328b9813226142fcfebe5d84cf5cb697406771a3360611ee7.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 292,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+          "positive control, K562 (Ernst et al 2016)": 49,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+          "potential enhancer, HepG2": 247,
+          "potential enhancer, K562": 324,
+          "potential enhancer, WTC11": 322,
+          "promoter": 146
+        }
+      }
+    },
+    {
+      "left": "old_admitted",
+      "right": "published_activity_aggregate:complete",
+      "intersection": {
+        "count": 55276,
+        "ids_sha256": "ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7",
+        "values_file": "id-sets/ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 17847,
+          "potential enhancer, K562": 17554,
+          "potential enhancer, WTC11": 17708,
+          "promoter": 2167
+        }
+      },
+      "left_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      },
+      "right_only": {
+        "count": 1701,
+        "ids_sha256": "148eac1e4c0349eac6ddeeb5392244351f858cc411c619b9b126eda33abfc877",
+        "values_file": "id-sets/148eac1e4c0349eac6ddeeb5392244351f858cc411c619b9b126eda33abfc877.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 292,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+          "positive control, K562 (Ernst et al 2016)": 49,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+          "potential enhancer, HepG2": 246,
+          "potential enhancer, K562": 323,
+          "potential enhancer, WTC11": 322,
+          "promoter": 144
+        }
+      }
+    },
+    {
+      "left": "published_activity_aggregate:all",
+      "right": "published_activity_aggregate:complete",
+      "intersection": {
+        "count": 56977,
+        "ids_sha256": "ec84fa32f83dad9237f39a0667a2439e9d3e5a4854b221574aaa20ea78fcc275",
+        "values_file": "id-sets/ec84fa32f83dad9237f39a0667a2439e9d3e5a4854b221574aaa20ea78fcc275.json.gz",
+        "design_category_counts": {
+          "__UNMAPPED__": 2,
+          "negative control, shuffled": 292,
+          "negative, synthetic control, HepG2 (Smith et al 2013)": 157,
+          "positive control, K562 (Ernst et al 2016)": 49,
+          "positive, synthetic control, HepG2 (Smith et al 2013)": 166,
+          "potential enhancer, HepG2": 18093,
+          "potential enhancer, K562": 17877,
+          "potential enhancer, WTC11": 18030,
+          "promoter": 2311
+        }
+      },
+      "left_only": {
+        "count": 4,
+        "ids_sha256": "4df7d0bea967cd48b696b7ac58707f6396878f50d7c28f67235cd44892d46c51",
+        "values_file": "id-sets/4df7d0bea967cd48b696b7ac58707f6396878f50d7c28f67235cd44892d46c51.json.gz",
+        "design_category_counts": {
+          "potential enhancer, HepG2": 1,
+          "potential enhancer, K562": 1,
+          "promoter": 2
+        }
+      },
+      "right_only": {
+        "count": 0,
+        "ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "values_file": "id-sets/4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945.json.gz",
+        "design_category_counts": {}
+      }
+    }
+  ],
+  "category_policy": "Existing exact S10 metadata only; never chooses or changes normalization"
+}

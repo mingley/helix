@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868",
+  "files": {
+    "failure.json": "ea3a5c8aecccf84d4fb7efef157c1ec139ffa34c73d6be311ecb87599b071142",
+    "implementation.py": "f91eaf3e68fde8ac7f49fe00c7b23dac51e3839d4e06ed0739631c4a0ab94c4b"
+  }
+}

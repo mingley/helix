@@ -1,0 +1,101 @@
+
+# MPRA-MNIST Repository
+
+We present **MPRA-MNIST**: a standardized dataset and toolkit. This resource integrates rigorously preprocessed MPRA data from seminal studies, preserving experimental fidelity while providing:
+
+ - Consistent Formats: Ready-to-use sequences, activity scores, and metadata (CSV, FASTA, PyTorch).
+
+ - Reproducible Pipelines: Transparent preprocessing code with version-controlled dependencies.
+
+ - ML Compatibility: Structured for classification/regression tasks in frameworks like scikit-learn.
+
+By eliminating data-wrangling barriers, MPRA-MNIST enables rapid algorithm validation—shifting focus from technical debt to biological discovery.
+
+## Software Requirements
+
+- OS: Ubuntu 20.04.6 LTS x86_64 
+- CUDA: 12.6
+- Python: 3.12.7
+- PyTorch: 2.7.1+cu126
+
+## **Installation**  
+
+1. Clone the repository:  
+
+   ```bash
+   git clone https://github.com/autosome-imtf/MPRA-MNIST
+   cd MPRA-MNIST
+   ```
+2. Create a Virtual Environment
+
+   ```bash
+   conda create -n mpramnist python=3.12.7
+   conda activate mpramnist
+   pip install torch
+   ```
+3. Install dependencies:
+
+   ```bash
+   pip install --upgrade pip
+   pip install -r requirements.txt 
+   ```
+4. Install the package in editable mode (for development):
+
+   ```bash
+   pip install setuptools wheel
+   python setup.py sdist bdist_wheel
+   pip install -e .
+   ```
+
+## We have such datasets:
+
+| Name | Artcile and link | DOI | Cell types |
+|-----------|:-----------:|-----------|-----------|
+| HUMAN | ----------- | ----------- | ----------- |
+| [`Agarwal2025`](https://github.com/autosome-ru/MPRA-MNIST/tree/main/mpramnist/Agarwal2025) | [Massively parallel characterization of transcriptional regulatory elements](https://www.nature.com/articles/s41586-024-08430-9) | 10.1038/s41586-024-08430-9 | HepG2, K562, WTC11 |
+| [`BarbadillaMartinez2026`](https://github.com/autosome-ru/MPRA-MNIST/tree/main/mpramnist/BarbadillaMartinez2026) | [Regulatory grammar in human promoters uncovered by MPRA-based deep learning](https://www.nature.com/articles/s41586-025-10093-z) | 10.1038/s41588-022-01048-5 | AGS HAP1 HepG2 K562 MCF7 U2OS HCT116 HEK293 LNCaP |
+| [`Kircher2019`](https://github.com/autosome-ru/MPRA-MNIST/tree/main/mpramnist/Kircher2019) | [Saturation mutagenesis of twenty disease-associated regulatory elements at single base-pair resolution](https://www.nature.com/articles/s41467-019-11526-w) | 10.1038/s41467-019-11526-w | HepG2, K562, etc |
+| [`Gosai2024`](https://github.com/autosome-ru/MPRA-MNIST/tree/main/mpramnist/Gosai2024) | [Machine-guided design of synthetic cell type-specific cis-regulatory elements](https://www.nature.com/articles/s41586-024-08070-z) | 10.1101/2023.08.08.552077 | HepG2, K562, SK-N-SH |
+| [`Fromel2025`](https://github.com/autosome-ru/MPRA-MNIST/tree/main/mpramnist/Fromel2025) | [Design principles of cell-state-specific enhancers in hematopoiesis](https://www.cell.com/cell/fulltext/S0092-8674(25)00449-0) | 10.1038/s41588-022-01048-5 | K562, HSPC (7 states) |
+| [`Sahu2022`](https://github.com/autosome-ru/MPRA-MNIST/tree/main/mpramnist/Sahu2022) | [Sequence determinants of human gene regulatory elements](https://www.nature.com/articles/s41588-021-01009) | 10.1038/s41588-021-01009-4 | HepG2, GP5D, RPE1 |
+| [`Arensbergen2019`](https://github.com/autosome-ru/MPRA-MNIST/tree/main/mpramnist/Arensbergen2019) | [Genome-wide mapping of autonomous promoter activity in human cells](https://pmc.ncbi.nlm.nih.gov/articles/PMC5498152/) | 10.1038/nbt.3754 | HepG2, K562 |
+| [`Ernst2016`](https://github.com/autosome-ru/MPRA-MNIST/tree/main/mpramnist/Ernst2016) | [Genome-scale high-resolution mapping of activating and repressive nucleotides in regulatory regions](https://pmc.ncbi.nlm.nih.gov/articles/PMC5125825/) | 10.1038/nbt.3678 | HepG2, K562 |
+| [`Reddy2023`](https://github.com/autosome-ru/MPRA-MNIST/tree/main/mpramnist/Reddy2023) | [Strategies for effectively modelling promoter-driven gene expression using transfer learning](https://pmc.ncbi.nlm.nih.gov/articles/PMC10002662/) | 10.1101/2023.02.24.529941 | JURKAT, K562, THP1 |
+| BACTERIA | ----------- | ----------- | ----------- |
+| [`Evfratov2017`](https://github.com/autosome-ru/MPRA-MNIST/tree/main/mpramnist/Evfratov2017) | [Application of sorting and next generation sequencing to study 5΄-UTR influence on translation efficiency in Escherichia coli](https://academic.oup.com/nar/article/45/6/3487/2605795) | 10.1093/nar/gkw1141 | The JM109 E. coli strain |
+| [`Wang2020`](https://github.com/autosome-ru/MPRA-MNIST/tree/main/mpramnist/Wang2020) | [Synthetic promoter design in Escherichia coli based on a deep generative network](https://academic.oup.com/nar/article/48/12/6403/5837049) | 10.1093/nar/gkaa325 | The DH5α E. coli strain |
+| YEAST | ----------- | ----------- | ----------- |
+| [`Rafi2024`](https://github.com/autosome-ru/MPRA-MNIST/tree/main/mpramnist/Rafi2024) | [Random Promoter DREAM Challenge Consortium. Evaluation and optimization of sequence-based gene regulatory deep learning models.](https://pmc.ncbi.nlm.nih.gov/articles/PMC10888977/) | 10.1101/2023.04.26.538471 | strains S288C::ura3, etc |
+| [`Vaishnav2024`](https://github.com/autosome-ru/MPRA-MNIST/tree/main/mpramnist/Vaishnav2024) | [The evolution, evolvability and engineering of gene regulatory DNA](https://www.nature.com/articles/s41586-022-04506-6) | 10.1038/s41586-022-04506-6 | strains Y8205, S288C::ura3, etc |
+| DROSOPHILA | ----------- | ----------- | ----------- |
+| [`deAlmeida2022`](https://github.com/autosome-ru/MPRA-MNIST/tree/main/mpramnist/deAlmeida2022) | [DeepSTARR predicts enhancer activity from DNA sequence and enables the de novo design of synthetic enhancers](https://www.nature.com/articles/s41588-022-01048-5) | 10.1038/s41588-022-01048-5 | Drosophila S2 |
+
+## Planned datasets
+| Priority | Artcile and link | DOI |
+|:-----------:|:-----------:|-----------|
+| HUMAN | ----------- | ----------- |
+| 1 | [Functional dissection of complex trait variants at single-nucleotide resolution](https://www.nature.com/articles/s41586-026-10121-6) | 10.1038/s41586-026-10121-6 |
+| 1 | [A systematic evaluation of the design and context dependencies of massively parallel reporter assays](https://www.nature.com/articles/s41592-020-0965-y) | 10.1038/s41592-020-0965-y |
+| 1 | [Context-dependent regulatory variants in Alzheimer’s disease](https://www.biorxiv.org/content/10.1101/2025.07.11.659973v2) | 10.1101/2025.07.11.659973 |
+| 1 | [Massively parallel characterization of regulatory elements in the developing human cortex](https://www.science.org/doi/10.1126/science.adh0559) | 10.1126/science.adh0559 |
+| 1 | [Multi-scale dissection, compaction and derivatization of mammalian developmental enhancers](https://www.biorxiv.org/content/10.64898/2026.04.20.719625v1) | 10.64898/2026.04.20.719625 |
+| 2 | [BRAIN-MAGNET: A functional genomics atlas for interpretation of non-coding variants](https://www.cell.com/cell/fulltext/S0092-8674(25)01234-6) | 10.1016/j.cell.2025.10.029 |
+| 2 | [Generative Design of Cell Type-Specific RNA Splicing Elements for Programmable Gene Regulation](https://www.biorxiv.org/content/10.1101/2025.11.05.686847v1) | 10.1101/2025.11.05.686847 |
+| 2 | [Fine-tuning sequence-to-expression models on personal genome and transcriptome data](https://www.biorxiv.org/content/10.1101/2024.09.23.614632v1) | 10.1101/2024.09.23.614632 |
+| 2 | [Massively parallel characterization of regulatory elements in the developing human cortex](https://pubmed.ncbi.nlm.nih.gov/38781390/) | 10.1126/science.adh0559 |
+| 2 | [Iterative deep learning-design of human enhancers exploits condensed sequence grammar to achieve cell type-specificity](https://pubmed.ncbi.nlm.nih.gov/38915713/) | 10.1101/2024.06.14.599076 |
+| 3 | [Disease-linked regulatory DNA variants and homeostatic transcription factors in epidermis](https://www.nature.com/articles/s41467-025-63070-5) | 10.1038/s41467-025-63070-5 |
+| 3 | [Deciphering the functional impact of Alzheimer’s Disease-associated variants in resting and proinflammatory immune cells](https://www.medrxiv.org/content/10.1101/2024.09.13.24313654v1.full-text) | 10.1101/2024.09.13.24313654 |
+| 3 | [Uncovering the whole genome silencers of human cells via Ss-STARR-seq](https://www.nature.com/articles/s41467-025-55852-8) | 10.1038/s41467-025-55852-8 |
+| 3 | [Billion-Scale Deciphering of Human Gene Regulatory Grammar](https://www.biorxiv.org/content/10.1101/2025.11.10.687627v1.full) | 10.1101/2025.11.10.687627 |
+| 3 | [Decoding the MYC locus reveals a druggable ultraconserved RNA element](https://www.biorxiv.org/content/10.64898/2026.01.29.702547v1) | 10.64898/2026.01.29.702547 |
+| BACTERIA | ----------- | ----------- |
+| 1 | [De-novo promoters emerge more readily from random DNA than from genomic DNA](https://www.biorxiv.org/content/10.1101/2025.08.25.672121v1) | 10.1101/2025.08.25.672121 |
+| 2 | [Predictive Modeling of Gene Expression and Localization of DNA Binding Site Using Deep Convolutional Neural Networks](https://www.biorxiv.org/content/10.1101/2024.12.17.629042v1.abstract), this is pre-processed data from [Deciphering the regulatory genome of Escherichia coli, one hundred promoters at a time](https://elifesciences.org/articles/55308) | 10.1101/2024.12.17.629042 |
+| 3 | [Structure and Evolution of Constitutive Bacterial Promoters](https://www.biorxiv.org/content/10.1101/2020.05.19.104232v1) | 10.1101/2020.05.19.104232 |
+| 3 | [The emergence and evolution of gene expression in genome regions replete with regulatory motifs](https://elifesciences.org/articles/98654) | 10.7554/eLife.98654.3 |
+| YEAST | ----------- | ----------- |
+| 3 | [Deep learning of the regulatory grammar of yeast 5′ untranslated regions from 500,000 random sequences](https://genome.cshlp.org/content/27/12/2015) | 10.1101/gr.224964.117 |
+| PLANTS | ----------- | ----------- |
+| 1 | [Synthetic promoter designs enabled by a comprehensive analysis of plant core promoters](https://www.nature.com/articles/s41477-021-00932-y) | 10.1038/s41477-021-00932-y |
+| 3 | [Arabidopsis and maize terminator strength is determined by GC content, polyadenylation motifs and cleavage probability](https://www.nature.com/articles/s41467-024-50174-7) | 10.1038/s41467-024-50174-7 |

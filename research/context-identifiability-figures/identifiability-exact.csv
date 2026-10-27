@@ -1,0 +1,7 @@
+profile,context,input_exact,common_shift_from_base_exact,row_mean_exact,centered_exact,formal_center3_exact
+base,Context A,2,0,3,-1,-3
+base,Context B,4,0,3,1,3
+base,Context C,3,0,3,0,0
+shifted,Context A,7,5,8,-1,-3
+shifted,Context B,9,5,8,1,3
+shifted,Context C,8,5,8,0,0

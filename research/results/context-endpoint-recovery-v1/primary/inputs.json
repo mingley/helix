@@ -1,0 +1,71 @@
+{
+  "protocol_sha256": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868",
+  "files": {
+    "experiments/context-endpoint-recovery-v1.json": {
+      "bytes": 23229,
+      "sha256": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868"
+    },
+    "research/context-endpoint-recovery/source/schema-binding.json": {
+      "bytes": 11475,
+      "sha256": "a59592816f57f7254b780c83ba3e929e3b38f4fd06b2b196a0cddda1d9bfb98e"
+    },
+    "research/context-endpoint-recovery/source/jointdata-source-values.json.gz": {
+      "bytes": 15907416,
+      "sha256": "a0f42ea8512829fa0bb15da28ef1ec4020e8e2936ceb982631d8744a9b29ae3e"
+    },
+    "datasets/context-endpoint-recovery/raw/jointdata.xlsx": {
+      "bytes": 53557805,
+      "sha256": "9c95ca2b8df0ff3edc7dda4fdcf337f33e652b96a0833a70e786bbcdc2b76b4e"
+    },
+    "datasets/context-panel/raw/Table-S9-folds-performance.xlsx": {
+      "bytes": 3564742,
+      "sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a"
+    },
+    "datasets/context-panel/panel.json": {
+      "bytes": 37840164,
+      "sha256": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3"
+    },
+    "research/context-endpoint-recovery/source/headers-before-values.json": {
+      "bytes": 4573,
+      "sha256": "8b261f85a30261ad9475492653efd9e47ae65fe9b3d7b9472b5481376419c77f"
+    },
+    "research/context-endpoint-recovery/source/replicate-label-metadata.json": {
+      "bytes": 1425,
+      "sha256": "7aeb7af4cdf71ec49b5638619cb512770b020492caa2e63b6dc3abf80471bc36"
+    },
+    "research/context-endpoint-recovery/source/member-source-identities.json": {
+      "bytes": 1450,
+      "sha256": "0117143e0c3c4a0dd8b7a8880d8cb5d7dc6eff0da704e429881952b7ab211610"
+    },
+    "research/context-endpoint-recovery/source/archive-validation/verification.json": {
+      "bytes": 1540,
+      "sha256": "67f32d0fafd71dc6cc010c7059ac22148b8a66b035b84b4d0f6ac7695f9d24e3"
+    },
+    "research/context-provenance-round3/final-article.xml": {
+      "bytes": 233913,
+      "sha256": "41a554f31ea67adb1ce983b05ed9194e8fa1596bd4e6d2208df1854de9f33320"
+    },
+    "research/context-endpoint-recovery/source/source-export-receipt.json": {
+      "bytes": 9061,
+      "sha256": "ef6fc34de3625430e20bb6647703db105d231eb7080810170ec680644607b2aa"
+    },
+    "research/context-endpoint-recovery/source/source-type-missing-formula-ledger.jsonl.gz": {
+      "bytes": 836495,
+      "sha256": "34e21cf4a60a81b31a258e2be844766633ac7fe58f61765cc59d0825c5896b09"
+    }
+  },
+  "implementation_sha256": "2472660613a5f63f41394eb91aaf99b8e5606fddeca0b23e2ee30c372c75a4f4",
+  "old_s9_reader_sha256": "9a9779f80ea3002eab0ba904530cf1ec5c1bc3d7bb2f96155018d0369a3dbf42",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "source_reader_provenance": {
+    "path": "scripts/fetch_context_panel.py",
+    "sha256": "154560395db33a690aa17b59be1f555f2ab32267cbe3612e29c017abacdb43d7",
+    "larger_source_metadata_wrapper_sha256": "7ed80e8c4abbf3dfb6ff201cb3d1aafa5fd5865098ea687108fa8fe0d4b67f48"
+  },
+  "source_exporter_implementation_sha256": "e67d7b44770bf49508adb3d3b377fd30a9c79082a279af574d4e8b7655f4849c",
+  "source_schema_bound_before_numeric_checks": true,
+  "exact_decimal_policy": "Only direct preserved source-cell comparisons; derived means/zscores are not exact decimal claims"
+}

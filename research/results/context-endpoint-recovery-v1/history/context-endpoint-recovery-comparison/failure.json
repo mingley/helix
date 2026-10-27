@@ -1,0 +1,5 @@
+{
+  "error_type": "ValueError",
+  "error": "recovery artifact integrity mismatch: code-hypothesis-population.json",
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/helix/scripts/verify_context_endpoint_recovery.py\", line 1033, in recovery_comparison\n    return _recovery_comparison_compute(independent_root, primary_root, output)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/helix/scripts/verify_context_endpoint_recovery.py\", line 951, in _recovery_comparison_compute\n    own_manifest, primary_manifest = verified_manifest(independent_root, \"manifest.json\"), verified_manifest(primary_root, \"artifacts.json\")\n                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/helix/scripts/verify_context_endpoint_recovery.py\", line 904, in verified_manifest\n    raise ValueError(\"recovery artifact integrity mismatch: \" + name)\nValueError: recovery artifact integrity mismatch: code-hypothesis-population.json\n"
+}

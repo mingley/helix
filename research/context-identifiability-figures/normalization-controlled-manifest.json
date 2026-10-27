@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "kind": "synthetic normalization-controlled ideal-operator counterexample",
+  "empirical_outcomes_consumed": false,
+  "frozen_inputs_sha256": "49d55f5b6bd306c305426612410ceec14f2c769a2ad2818a3cecea1544fd0ced",
+  "implementation": {
+    "path": "scripts/plot_context_identifiability.py",
+    "sha256": "71f285203d8eabf716b5db67b54ab5cf493978f46b1f04b58e7e61d61c9e7ef9"
+  },
+  "formal_source": {
+    "path": "proofs/ContextIdentifiability.lean",
+    "sha256": "b5a1d4713d78a1872ea7a3c15529808449507fefbf97401b3cb46d01709e0b67",
+    "theorem": "HelixContextIdentifiability.no_exact_decoder_even_with_column_moment_constraints",
+    "scope": "Ideal normalization-compatible synthetic panels, not the source's actual processing history. Source hash is not a proof-check receipt."
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "matplotlib": "3.10.8"
+  },
+  "dependency_lock_sha256": "f2efb9267afd0846c87f557d815370f7510a133ae9129b458889c2c6204ccd57",
+  "exact_checks": {
+    "panels_distinct": true,
+    "column_sums": [
+      "0",
+      "0",
+      "0"
+    ],
+    "column_sums_squares": [
+      "14",
+      "14",
+      "14"
+    ],
+    "sample_variance": "14/3",
+    "centered_panels_identical": true,
+    "x_row_means": [
+      "1",
+      "1",
+      "1",
+      "-3"
+    ],
+    "y_row_means": [
+      "-1",
+      "-1",
+      "-1",
+      "3"
+    ]
+  },
+  "artifacts": {
+    "normalized-panel-inputs.json": {
+      "bytes": 1286,
+      "sha256": "49d55f5b6bd306c305426612410ceec14f2c769a2ad2818a3cecea1544fd0ced"
+    },
+    "normalization-controlled-exact.csv": {
+      "bytes": 1297,
+      "sha256": "7a3bbb6c174bc9983906cb5389f9aa441c9983e6c916eaf3b1e61fd7a97078e6"
+    },
+    "normalization-controlled.svg": {
+      "bytes": 27344,
+      "sha256": "b56e61c7783f3c2db09ba43fed1b9eeb670caa08bbecacea3ebed052a94c1ce1"
+    },
+    "normalization-controlled.png": {
+      "bytes": 165756,
+      "sha256": "55c82facc6b97f06f56bc60eeec804ef376907b43e88acb329ee117785336c11"
+    }
+  },
+  "interpretation_limits": [
+    "Not S9 data",
+    "Not empirical raw-activity reconstruction",
+    "Not identification of historical source preprocessing",
+    "Not a new mathematical or biological discovery"
+  ]
+}

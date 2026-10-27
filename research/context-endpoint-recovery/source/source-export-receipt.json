@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868",
+  "schema_binding_sha256": "a59592816f57f7254b780c83ba3e929e3b38f4fd06b2b196a0cddda1d9bfb98e",
+  "source": {
+    "path": "datasets/context-endpoint-recovery/raw/jointdata.xlsx",
+    "bytes": 53557805,
+    "sha256": "9c95ca2b8df0ff3edc7dda4fdcf337f33e652b96a0833a70e786bbcdc2b76b4e"
+  },
+  "strict_reader_source": {
+    "path": "scripts/fetch_context_panel.py",
+    "sha256": "154560395db33a690aa17b59be1f555f2ab32267cbe3612e29c017abacdb43d7",
+    "larger_source_metadata_wrapper_sha256": "7ed80e8c4abbf3dfb6ff201cb3d1aafa5fd5865098ea687108fa8fe0d4b67f48"
+  },
+  "implementation_sha256": "e67d7b44770bf49508adb3d3b377fd30a9c79082a279af574d4e8b7655f4849c",
+  "export": {
+    "path": "research/context-endpoint-recovery/source/jointdata-source-values.json.gz",
+    "bytes": 15907416,
+    "sha256": "a0f42ea8512829fa0bb15da28ef1ec4020e8e2936ceb982631d8744a9b29ae3e"
+  },
+  "ledger": {
+    "path": "research/context-endpoint-recovery/source/source-type-missing-formula-ledger.jsonl.gz",
+    "bytes": 836495,
+    "sha256": "34e21cf4a60a81b31a258e2be844766633ac7fe58f61765cc59d0825c5896b09"
+  },
+  "tables": {
+    "all_cell_types_summary": {
+      "stored_data_row_elements": 56981,
+      "nonempty_id_rows": 56981,
+      "missing_id_rows": 0,
+      "missing_empirical_key_rows": 0,
+      "value_classifications": {
+        "HepG2 [log2(rna/dna)]": {
+          "finite_numeric": 56981
+        },
+        "K562 [log2(rna/dna)]": {
+          "finite_numeric": 56978,
+          "missing_token": 3
+        },
+        "WTC11 [log2(rna/dna)]": {
+          "finite_numeric": 56978,
+          "missing_token": 3
+        }
+      },
+      "xml_types": {
+        "HepG2 [log2(rna/dna)]": {
+          "n": 56981
+        },
+        "K562 [log2(rna/dna)]": {
+          "n": 56978,
+          "s": 3
+        },
+        "WTC11 [log2(rna/dna)]": {
+          "n": 56978,
+          "s": 3
+        }
+      },
+      "formula_cells": 0,
+      "unique_nonempty_ids": 56981,
+      "duplicate_id_rows_beyond_first": 0,
+      "unique_complete_empirical_keys": 56981,
+      "duplicate_empirical_key_rows_beyond_first": 0
+    },
+    "all_cell_types_ESS": {
+      "stored_data_row_elements": 55977,
+      "nonempty_id_rows": 55977,
+      "missing_id_rows": 0,
+      "missing_empirical_key_rows": 0,
+      "value_classifications": {
+        "ElementSpecificityScore_HepG2": {
+          "finite_numeric": 55977
+        },
+        "ElementSpecificityScore_K562": {
+          "finite_numeric": 55977
+        },
+        "ElementSpecificityScore_WTC11": {
+          "finite_numeric": 55977
+        }
+      },
+      "xml_types": {
+        "ElementSpecificityScore_HepG2": {
+          "n": 55977
+        },
+        "ElementSpecificityScore_K562": {
+          "n": 55977
+        },
+        "ElementSpecificityScore_WTC11": {
+          "n": 55977
+        }
+      },
+      "formula_cells": 0,
+      "unique_nonempty_ids": 55977,
+      "duplicate_id_rows_beyond_first": 0,
+      "unique_complete_empirical_keys": 55977,
+      "duplicate_empirical_key_rows_beyond_first": 0
+    },
+    "HepG2_replicate_level": {
+      "stored_data_row_elements": 170929,
+      "nonempty_id_rows": 170929,
+      "missing_id_rows": 0,
+      "missing_empirical_key_rows": 0,
+      "value_classifications": {
+        "replicate": {
+          "finite_numeric": 170929
+        },
+        "log2(rna/dna)": {
+          "finite_numeric": 170929
+        }
+      },
+      "xml_types": {
+        "replicate": {
+          "n": 170929
+        },
+        "log2(rna/dna)": {
+          "n": 170929
+        }
+      },
+      "formula_cells": 0,
+      "unique_nonempty_ids": 56981,
+      "duplicate_id_rows_beyond_first": 113948,
+      "unique_complete_empirical_keys": 170929,
+      "duplicate_empirical_key_rows_beyond_first": 0
+    },
+    "HepG2_summary_data": {
+      "stored_data_row_elements": 56982,
+      "nonempty_id_rows": 56982,
+      "missing_id_rows": 0,
+      "missing_empirical_key_rows": 0,
+      "value_classifications": {
+        "replicate 1 [log2(rna/dna)]": {
+          "finite_numeric": 56977,
+          "missing_token": 5
+        },
+        "replicate 2 [log2(rna/dna)]": {
+          "finite_numeric": 56980,
+          "missing_token": 2
+        },
+        "replicate 3 [log2(rna/dna)]": {
+          "finite_numeric": 56975,
+          "missing_token": 7
+        },
+        "mean": {
+          "finite_numeric": 56982
+        }
+      },
+      "xml_types": {
+        "replicate 1 [log2(rna/dna)]": {
+          "n": 56977,
+          "s": 5
+        },
+        "replicate 2 [log2(rna/dna)]": {
+          "n": 56980,
+          "s": 2
+        },
+        "replicate 3 [log2(rna/dna)]": {
+          "n": 56975,
+          "s": 7
+        },
+        "mean": {
+          "n": 56982
+        }
+      },
+      "formula_cells": 0,
+      "unique_nonempty_ids": 56982,
+      "duplicate_id_rows_beyond_first": 0,
+      "unique_complete_empirical_keys": 56982,
+      "duplicate_empirical_key_rows_beyond_first": 0
+    },
+    "K562_replicate_level": {
+      "stored_data_row_elements": 170924,
+      "nonempty_id_rows": 170924,
+      "missing_id_rows": 0,
+      "missing_empirical_key_rows": 0,
+      "value_classifications": {
+        "replicate": {
+          "finite_numeric": 170924
+        },
+        "log2(rna/dna)": {
+          "finite_numeric": 170924
+        }
+      },
+      "xml_types": {
+        "replicate": {
+          "n": 170924
+        },
+        "log2(rna/dna)": {
+          "n": 170924
+        }
+      },
+      "formula_cells": 0,
+      "unique_nonempty_ids": 56978,
+      "duplicate_id_rows_beyond_first": 113946,
+      "unique_complete_empirical_keys": 170924,
+      "duplicate_empirical_key_rows_beyond_first": 0
+    },
+    "K562_summary_data": {
+      "stored_data_row_elements": 56979,
+      "nonempty_id_rows": 56979,
+      "missing_id_rows": 0,
+      "missing_empirical_key_rows": 0,
+      "value_classifications": {
+        "replicate 1 [log2(rna/dna)]": {
+          "finite_numeric": 56974,
+          "missing_token": 5
+        },
+        "replicate 2 [log2(rna/dna)]": {
+          "finite_numeric": 56976,
+          "missing_token": 3
+        },
+        "replicate 3 [log2(rna/dna)]": {
+          "finite_numeric": 56977,
+          "missing_token": 2
+        },
+        "mean": {
+          "finite_numeric": 56979
+        }
+      },
+      "xml_types": {
+        "replicate 1 [log2(rna/dna)]": {
+          "n": 56974,
+          "s": 5
+        },
+        "replicate 2 [log2(rna/dna)]": {
+          "n": 56976,
+          "s": 3
+        },
+        "replicate 3 [log2(rna/dna)]": {
+          "n": 56977,
+          "s": 2
+        },
+        "mean": {
+          "n": 56979
+        }
+      },
+      "formula_cells": 0,
+      "unique_nonempty_ids": 56979,
+      "duplicate_id_rows_beyond_first": 0,
+      "unique_complete_empirical_keys": 56979,
+      "duplicate_empirical_key_rows_beyond_first": 0
+    },
+    "WTC11_replicate_level": {
+      "stored_data_row_elements": 170894,
+      "nonempty_id_rows": 170894,
+      "missing_id_rows": 0,
+      "missing_empirical_key_rows": 0,
+      "value_classifications": {
+        "replicate": {
+          "finite_numeric": 170894
+        },
+        "log2(rna/dna)": {
+          "finite_numeric": 170894
+        }
+      },
+      "xml_types": {
+        "replicate": {
+          "n": 170894
+        },
+        "log2(rna/dna)": {
+          "n": 170894
+        }
+      },
+      "formula_cells": 0,
+      "unique_nonempty_ids": 56978,
+      "duplicate_id_rows_beyond_first": 113916,
+      "unique_complete_empirical_keys": 170894,
+      "duplicate_empirical_key_rows_beyond_first": 0
+    },
+    "WTC11_summary_data": {
+      "stored_data_row_elements": 56979,
+      "nonempty_id_rows": 56979,
+      "missing_id_rows": 0,
+      "missing_empirical_key_rows": 0,
+      "value_classifications": {
+        "replicate 1 [log2(rna/dna)]": {
+          "finite_numeric": 56969,
+          "missing_token": 10
+        },
+        "replicate 2 [log2(rna/dna)]": {
+          "finite_numeric": 56964,
+          "missing_token": 15
+        },
+        "replicate 3 [log2(rna/dna)]": {
+          "finite_numeric": 56964,
+          "missing_token": 15
+        },
+        "mean": {
+          "finite_numeric": 56979
+        }
+      },
+      "xml_types": {
+        "replicate 1 [log2(rna/dna)]": {
+          "n": 56969,
+          "s": 10
+        },
+        "replicate 2 [log2(rna/dna)]": {
+          "n": 56964,
+          "s": 15
+        },
+        "replicate 3 [log2(rna/dna)]": {
+          "n": 56964,
+          "s": 15
+        },
+        "mean": {
+          "n": 56979
+        }
+      },
+      "formula_cells": 0,
+      "unique_nonempty_ids": 56979,
+      "duplicate_id_rows_beyond_first": 0,
+      "unique_complete_empirical_keys": 56979,
+      "duplicate_empirical_key_rows_beyond_first": 0
+    }
+  },
+  "activity_arithmetic_performed": false,
+  "numeric_classification_only": "Decimal.is_finite plus missing-token/type/formula and row/ID counts; no means, variances, correlations or fitting"
+}

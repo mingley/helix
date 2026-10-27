@@ -2,3 +2,7 @@
 numpy==2.3.5
 scipy==1.17.0
 matplotlib==3.10.8
+
+# Independent XLSX endpoint parser.
+openpyxl==3.1.5
+et-xmlfile==2.0.0

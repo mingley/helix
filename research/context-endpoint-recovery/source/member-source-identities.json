@@ -1,0 +1,30 @@
+{
+  "protocol_sha256": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868",
+  "archive_sha256": "aefb1974e9ebe5c196a89a00f4e868c0abaf69e3d3952e79c74bfb42f217f6a4",
+  "member_extraction_receipt": "member-extraction.json",
+  "full_archive_validation_receipt": "archive-validation/verification.json",
+  "table11_retained_source": {
+    "path": "datasets/context-endpoint-recovery/raw/jointdata.xlsx",
+    "bytes": 53557805,
+    "sha256": "9c95ca2b8df0ff3edc7dda4fdcf337f33e652b96a0833a70e786bbcdc2b76b4e"
+  },
+  "identical_earlier_workbooks": [
+    {
+      "literal_member_name": "2023-03-03628-s5/2023-03-03628C-Table S10 - joint lib design.xlsx",
+      "sha256": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5",
+      "old_retained_workbook_path": "datasets/context-panel/raw/Table-S7-joint-design.xlsx",
+      "bytes": 8301566,
+      "byte_for_byte_identity_checked": true,
+      "no_second_Git_copy_retained": true
+    },
+    {
+      "literal_member_name": "2023-03-03628-s5/2023-03-03628C-Table S12 - folds and performance.xlsx",
+      "sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+      "old_retained_workbook_path": "datasets/context-panel/raw/Table-S9-folds-performance.xlsx",
+      "bytes": 3564742,
+      "byte_for_byte_identity_checked": true,
+      "no_second_Git_copy_retained": true
+    }
+  ],
+  "scope": "Byte identity and provenance only; no workbook values inspected"
+}

@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "protocol_id": "context-ess-cohort-audit-v1",
+  "status": "frozen",
+  "frozen_at_utc": "2026-10-27T19:00:52.655380+00:00",
+  "purpose": "Post-hoc audit of whether using the exact published S11 ESS cohort as the activity-normalization population yields a compatible arithmetic reconstruction. No predictive fitting or replacement endpoint.",
+  "exposure": "The complete earlier 36-route results, their errors, source moments, all cohort counts, published ESS values and old S9 diagnostics are known. The raw aggregate has 56977 complete rows and S11 ESS has 55977. No activity normalization on the exact S11 ESS ID population has been computed before this freeze. This is explicitly post-hoc, not preregistered independent validation.",
+  "previous_results": "Preserve all 36 earlier negative reconstruction results and all old targets, fits, protocols and losses. This six-route audit adds a separately identified population hypothesis; it does not revise those results.",
+  "parent_protocol_sha256": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868",
+  "inputs": {
+    "primary_summary": {
+      "path": "runs/recovered-context-primary/summary.json",
+      "bytes": 4143612,
+      "sha256": "41fc2c0ca904c8320e0e7921d269754599cdf45107366a50cc310fbb01078b67"
+    },
+    "source_values": {
+      "path": "runs/recovered-context-primary/source-values.json.gz",
+      "bytes": 15907416,
+      "sha256": "a0f42ea8512829fa0bb15da28ef1ec4020e8e2936ceb982631d8744a9b29ae3e"
+    },
+    "schema_binding": {
+      "path": "runs/recovered-context-primary/schema-binding.json",
+      "bytes": 11475,
+      "sha256": "a59592816f57f7254b780c83ba3e929e3b38f4fd06b2b196a0cddda1d9bfb98e"
+    },
+    "activity_bases": [
+      {
+        "id": "published_activity_aggregate",
+        "path": "runs/recovered-context-primary/published_activity_aggregate.json.gz",
+        "bytes": 537102,
+        "sha256": "130394fd560357274d0fa9e304f4fbd7ef8d86dc1fad0bb7bd82d988118610ce"
+      },
+      {
+        "id": "mean_three_published_replicates",
+        "path": "runs/recovered-context-primary/mean_three_published_replicates.json.gz",
+        "bytes": 1715611,
+        "sha256": "a6a0fe3586254f7a0aad63e73abe937eac3208047dce48af61e3344cccffef76"
+      },
+      {
+        "id": "mean_three_after_explicit_replicate_median_subtraction",
+        "path": "runs/recovered-context-primary/mean_three_after_explicit_replicate_median_subtraction.json.gz",
+        "bytes": 1735802,
+        "sha256": "ee03b955ad5736b3eba05caa4f29659081e282c4a7fd7051e00b615ebb3f91f8"
+      }
+    ],
+    "official_jointdata": {
+      "path": "datasets/context-endpoint-recovery/raw/jointdata.xlsx",
+      "bytes": 53557805,
+      "sha256": "9c95ca2b8df0ff3edc7dda4fdcf337f33e652b96a0833a70e786bbcdc2b76b4e"
+    },
+    "source_ESS_role": {
+      "sheet": "all_cell_types_ESS",
+      "id_column": "name",
+      "columns": {
+        "HepG2": "ElementSpecificityScore_HepG2",
+        "K562": "ElementSpecificityScore_K562",
+        "WTC11": "ElementSpecificityScore_WTC11"
+      }
+    },
+    "S12": {
+      "path": "datasets/context-panel/raw/Table-S9-folds-performance.xlsx",
+      "sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+      "note": "Official final S12 is byte-identical to this previously inspected old S9; not independent data."
+    },
+    "old_admitted_panel": {
+      "path": "datasets/context-panel/panel.json",
+      "sha256": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3"
+    },
+    "design_category_source": {
+      "path": "datasets/context-panel/raw/Table-S7-joint-design.xlsx",
+      "sha256": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5",
+      "sheet": "joint library",
+      "header_row_1based": 2,
+      "id_column": "name",
+      "category_column": "category",
+      "note": "Official S10 is byte-identical. Categories are metadata audit labels only."
+    }
+  },
+  "normalization_population": {
+    "definition": "Every unique exact source ID with all three finite published S11 ESS values; no subset selected by activity, category, reconstruction error or agreement.",
+    "expected_ids": 55977,
+    "expected_ids_sha256": "3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f",
+    "id_hash_encoding": "SHA256 of UTF8 JSON of sorted ID strings, ensure_ascii=False and separators=(comma,colon), without spaces.",
+    "contexts": [
+      "HepG2",
+      "K562",
+      "WTC11"
+    ],
+    "coverage_gate": "For each activity base, EVERY target ESS ID must have a unique finite three-context activity row. If any are missing, duplicate or nonfinite, both routes for that base are nonestimable; preserve the full missing-ID ledger. No intersection rescue or imputation.",
+    "unchanged_bases": "Reuse the three pinned prior activity-base arrays unchanged. In particular, the median-subtracted base retains medians previously computed on all finite source values per cell/replicate; do not recompute medians on the new ESS cohort."
+  },
+  "six_routes": {
+    "activity_bases": [
+      "published_activity_aggregate",
+      "mean_three_published_replicates",
+      "mean_three_after_explicit_replicate_median_subtraction"
+    ],
+    "pre_zscore_ddof": [
+      0,
+      1
+    ],
+    "route_count": 6,
+    "formula": "Restrict an eligible base to the entire fixed S11 ESS ID population. Compute each context mean and SD on that same population, using the declared ddof. Standardize each cell column, then subtract each element mean across all three standardized cells. No other step.",
+    "zero_SD": "Insufficient population, nonpositive/nonfinite SD or exactly constant context values makes the route nonestimable. Use an exact all-equal guard; do not introduce an epsilon selected from outcomes.",
+    "retain_all": "Report all six distinct tuples, including nonestimable or mathematically equivalent routes; never select a best-fitting endpoint.",
+    "structural_audit": "Each reconstructed ESS column must have approximately zero mean over the normalization cohort. Report the actual source and reconstructed means, row sums and discrepancies without forcing source values to satisfy the identity."
+  },
+  "comparisons_to_unchanged_S11": {
+    "cohorts": [
+      "full fixed S11 ESS ID population",
+      "exact old S9/S12 ID intersection",
+      "fixed old 55276 admitted-ID intersection"
+    ],
+    "general_tolerance": {
+      "absolute": 1e-08,
+      "relative": 1e-08,
+      "rule": "abs(candidate-source) <= 1e-8 + 1e-8*abs(source)"
+    },
+    "metrics": [
+      "coverage and exact ID-set hashes",
+      "all normalization means and population/sample SDs",
+      "signed mean error",
+      "MAE",
+      "RMSE",
+      "maximum absolute error",
+      "Type7 absolute-error quantiles 0,0.5,0.95,1",
+      "within-fixed-tolerance counts by context and pooled",
+      "source/reconstructed row-sum and column-mean diagnostics"
+    ],
+    "exact_values": "Preserve original source decimal lexemes. Reconstructed binary-float arrays do not have exact source decimal equality claims; report exact counts as not applicable for derived comparisons."
+  },
+  "fixed_S12_derivative": {
+    "apply_to": "Every estimable one of the six reconstructed ESS arrays, irrespective of its S11 agreement. Do not apply only to a selected favorable route.",
+    "population": "Every exact S12 score ID, expected 55338, ID hash b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075. Require all IDs to have unique finite three-context reconstructed values and source S12 targets; otherwise mark the affected derivative nonestimable with no subset rescue.",
+    "operation": "Restrict the reconstructed ESS to the full S12 ID subset; subtract each column mean and divide by sample SD on that subset, ddof=1. No other fitted offset, weight, calibration or scaling.",
+    "comparison": "Compare to unchanged official S12/old S9 source values on full S12 IDs and the fixed old admitted intersection. Retain all six derivative results or their nonestimable reasons.",
+    "maximum_absolute_tolerance": 1e-12,
+    "historical_pipeline_certified": false
+  },
+  "metadata_only_ID_audit": {
+    "sets": [
+      "all source activity-base IDs",
+      "complete-three-context IDs for each pinned activity base",
+      "all S11 ESS IDs",
+      "all S12 IDs",
+      "fixed old admitted IDs"
+    ],
+    "outputs": "Full deterministic sorted set differences, intersections, missingness and hashes; category counts using only the existing exact S10 category field, including an explicit unmapped category count.",
+    "restriction": "Categories describe the cohort gap; they never choose, remove, weight or redefine a normalization population. No new sequence-family grouping or activity-based categories."
+  },
+  "prohibitions": [
+    "No predictive model fitting or refitting.",
+    "No changed empirical targets, old endpoint, old scores, folds, features, alpha or losses.",
+    "No free regression, affine calibration, optimized source weights or continuous search.",
+    "No normalization on a favorable intersection or category subset.",
+    "No claim that one compatible formula proves producer history.",
+    "No reinterpretation as independent biological validation or regulatory novelty."
+  ],
+  "interpretation": "Compatibility can identify a viable population/formula relationship, not necessarily its unique history. Per-cell offsets and positive scales can disappear under zscoring; replicate median offsets and some SD conventions can be observationally equivalent. Report all equivalences and keep historical identification separate from arithmetic agreement.",
+  "required_outputs": [
+    "protocol/input/implementation hashes",
+    "all six route definitions and coverage statuses",
+    "full cohort/ID/category ledgers",
+    "every normalization parameter and all fixed comparison metrics",
+    "all six S12 derivative results",
+    "explicit no-target-change and no-predictive-fit status",
+    "bounded interpretation retaining earlier 36 negative results"
+  ],
+  "failure_policy": "A coverage failure, all-negative reconstruction or nonidentified history is a valid result. Stop affected routes instead of imputing, weakening the population or changing tolerances. Any further population/transform requires another separately versioned post-hoc protocol."
+}

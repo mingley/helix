@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-27T18:38:03.492593+00:00",
+  "scope": "Code and public metadata only; no new assay payload acquisition or numerical fitting",
+  "original_producer_ESS_construction_found": false,
+  "original_producer_history_certified": false,
+  "downstream_hypothesis": {
+    "repository": "TaykhoomDalal/LentiMPRA-Enhancer-Processing",
+    "commit": "d2751a6ddff67ce4406288e9f6c3d932b0c12cdd",
+    "reported_head_commit_time": "2026-08-25T12:26:24Z",
+    "initial_commit": "ce0779aa266f2f581b63007b5107010ddd74443d",
+    "reported_initial_commit_time": "2026-08-21T19:37:31Z",
+    "chronology_limit": "GitHub metadata dates precede this investigation; unsigned commit metadata is not authenticated scientific independence or producer provenance",
+    "source_file": "dalal/LentiMPRA/process.py",
+    "source_url": "https://raw.githubusercontent.com/TaykhoomDalal/LentiMPRA-Enhancer-Processing/d2751a6ddff67ce4406288e9f6c3d932b0c12cdd/LentiMPRA/process.py",
+    "source_sha256": "a904d02c65072be4dd328d700958011c5c804e43799a7f4fc1cefd551559b6cb",
+    "initial_source_sha256": "5cf57ac415a3682d9cb4d89cd7ce9e81a67a5ae9f48bebf8b9a13ad3dc857eba",
+    "function": "validate_joint_ess",
+    "function_ast_sha256": "e001ef4f38f40f96bb245d51a8848b637b8add9faf9db7bda0dcc94fde669442",
+    "operation": "For each context, restrict S11 ESS to S12 exact identifier subset, then (x-mean(x))/sample_sd(x,ddof=1); compare to unchanged S12 published scores",
+    "asserted_maximum_absolute_error": 1e-12,
+    "asserted_S11_zero_sum_absolute_tolerance": 1e-09,
+    "asserted_S11_quantization_denominator": 18000,
+    "numeric_identity_tested_here": false,
+    "raw_activity_to_S11_ESS_recipe_available": false,
+    "upstream_unknown_evidence": "dalal/scripts/common.py explicitly says S11 upstream normalization unpublished",
+    "license": "MIT for code; producer article/data terms separate"
+  },
+  "predicted_archive": {
+    "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-024-08430-9/MediaObjects/41586_2024_8430_MOESM5_ESM.zip",
+    "expected_bytes": 342234089,
+    "expected_sha256": "aefb1974e9ebe5c196a89a00f4e868c0abaf69e3d3952e79c74bfb42f217f6a4",
+    "assertion_source": "dalal/scripts/common.py",
+    "assertion_source_sha256": "c08abd2855d1e95df17e780d8fbc3d5cc3d965a116d264ed6ecb6cfaf41a2ff7",
+    "digest_is_publisher_signature": false,
+    "payload_retrieved_here": false,
+    "members": [
+      {
+        "role": "S10",
+        "member": "2023-03-03628-s5/2023-03-03628C-Table S10 - joint lib design.xlsx",
+        "expected_bytes": 8301566,
+        "expected_sha256": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5",
+        "verification_status": "downstream-code assertion; no official payload observed by this task"
+      },
+      {
+        "role": "S11",
+        "member": "2023-03-03628-s5/2023-03-03628C-Table S11 - jointdata.xlsx",
+        "expected_bytes": 53557805,
+        "expected_sha256": "9c95ca2b8df0ff3edc7dda4fdcf337f33e652b96a0833a70e786bbcdc2b76b4e",
+        "verification_status": "downstream-code assertion; no official payload observed by this task"
+      },
+      {
+        "role": "S12",
+        "member": "2023-03-03628-s5/2023-03-03628C-Table S12 - folds and performance.xlsx",
+        "expected_bytes": 3564742,
+        "expected_sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+        "verification_status": "downstream-code assertion; no official payload observed by this task"
+      }
+    ]
+  },
+  "expected_S11_schema_from_code": {
+    "activities": {
+      "sheet": "all_cell_types_summary",
+      "headers": [
+        "name",
+        "HepG2 [log2(rna/dna)]",
+        "K562 [log2(rna/dna)]",
+        "WTC11 [log2(rna/dna)]"
+      ]
+    },
+    "ESS": {
+      "sheet": "all_cell_types_ESS",
+      "headers": [
+        "name",
+        "ElementSpecificityScore_HepG2",
+        "ElementSpecificityScore_K562",
+        "ElementSpecificityScore_WTC11"
+      ]
+    },
+    "replicate_sheets": [
+      "HepG2_replicate_level",
+      "K562_replicate_level",
+      "WTC11_replicate_level"
+    ],
+    "summary_sheets": [
+      "HepG2_summary_data",
+      "K562_summary_data",
+      "WTC11_summary_data"
+    ],
+    "header_payloads_inspected_here": false
+  },
+  "game_candidates": [
+    {
+      "url": "https://raw.githubusercontent.com/de-Boer-Lab/GAME-Agarwal-MPRA-joint-library-evaluator/8f95a6ce026e0b1e09eba2b13c1421f35e16f583/agarwal_joint_library/evaluator_data/2023-03-03628-s5/56k_measured_file.xlsx",
+      "repository_path": "agarwal_joint_library/evaluator_data/2023-03-03628-s5/56k_measured_file.xlsx",
+      "git_blob_sha1": "14ad2cdd43594c5b4056c3aaee0bcd2c822dd229",
+      "expected_bytes": 1493318,
+      "sha256": null,
+      "payload_retrieved": false,
+      "license": "no separate repository/data license found; producer article/data terms require separate evaluation"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/de-Boer-Lab/GAME-Agarwal-MPRA-joint-library-evaluator/8f95a6ce026e0b1e09eba2b13c1421f35e16f583/agarwal_joint_library/evaluator_data/2023-03-03628-s5/56k_measured_final_sequence_file.xlsx",
+      "repository_path": "agarwal_joint_library/evaluator_data/2023-03-03628-s5/56k_measured_final_sequence_file.xlsx",
+      "git_blob_sha1": "462b5e28cd414b16d0173f94afe23242e8d5bc93",
+      "expected_bytes": 6974891,
+      "sha256": null,
+      "payload_retrieved": false,
+      "license": "no separate repository/data license found; producer article/data terms require separate evaluation"
+    }
+  ],
+  "producer_pipeline_limit": {
+    "article_named_version": "MPRAflow1.0; no Git commit in article",
+    "checked_historical_commit": "6b136aacf0cfa5d46023668237a379d9d9edd05b",
+    "actual_version_in_checked_config": "2.2",
+    "claim": "Generic source code supports log2 total-count-normalized pseudocount RNA/DNA ratio generation, not certified original ESS history",
+    "master_tables_caveat": "nrm_reps computed but not written or used in average; all_reps grouped only by condition; no inference that this code generated deposited source values"
+  },
+  "licenses": {
+    "dalal": "MIT code; NOTICE preserves separate underlying-data terms",
+    "dalal-initial": "MIT",
+    "mpraflow": "Apache-2.0",
+    "sequence-cnn": "MIT",
+    "game": "No declared GitHub repository license or LICENSE entry observed",
+    "mpra-mnist": "No declared GitHub repository license or LICENSE entry observed",
+    "mpra-qc": "No declared license in checked fork metadata/tree"
+  },
+  "git_blob_bindings": [
+    {
+      "file": "dalal/LICENSE",
+      "repository": "TaykhoomDalal/LentiMPRA-Enhancer-Processing",
+      "commit": "d2751a6ddff67ce4406288e9f6c3d932b0c12cdd",
+      "repository_path": "LICENSE",
+      "git_blob_sha1": "039a747c79fe1242ea663ca608f09787f77f47f4",
+      "tree_metadata": "dalal-tree.json"
+    },
+    {
+      "file": "dalal/LentiMPRA/README.md",
+      "repository": "TaykhoomDalal/LentiMPRA-Enhancer-Processing",
+      "commit": "d2751a6ddff67ce4406288e9f6c3d932b0c12cdd",
+      "repository_path": "LentiMPRA/README.md",
+      "git_blob_sha1": "9ba6661c2dfee41050812eab09270c0763492853",
+      "tree_metadata": "dalal-tree.json"
+    },
+    {
+      "file": "dalal/LentiMPRA/process.py",
+      "repository": "TaykhoomDalal/LentiMPRA-Enhancer-Processing",
+      "commit": "d2751a6ddff67ce4406288e9f6c3d932b0c12cdd",
+      "repository_path": "LentiMPRA/process.py",
+      "git_blob_sha1": "e79643f82ef142304088ee510991c23cf57399bf",
+      "tree_metadata": "dalal-tree.json"
+    },
+    {
+      "file": "dalal/NOTICE.md",
+      "repository": "TaykhoomDalal/LentiMPRA-Enhancer-Processing",
+      "commit": "d2751a6ddff67ce4406288e9f6c3d932b0c12cdd",
+      "repository_path": "NOTICE.md",
+      "git_blob_sha1": "b10e8712a8d346a1004bb342a075a59fd3351b9b",
+      "tree_metadata": "dalal-tree.json"
+    },
+    {
+      "file": "dalal/README.md",
+      "repository": "TaykhoomDalal/LentiMPRA-Enhancer-Processing",
+      "commit": "d2751a6ddff67ce4406288e9f6c3d932b0c12cdd",
+      "repository_path": "README.md",
+      "git_blob_sha1": "c856b12fcea794b799b3389956706cd3d53095df",
+      "tree_metadata": "dalal-tree.json"
+    },
+    {
+      "file": "dalal/scripts/common.py",
+      "repository": "TaykhoomDalal/LentiMPRA-Enhancer-Processing",
+      "commit": "d2751a6ddff67ce4406288e9f6c3d932b0c12cdd",
+      "repository_path": "scripts/common.py",
+      "git_blob_sha1": "35a0c0bb3c1b59a4c71afbe5f41c5b9429f8714b",
+      "tree_metadata": "dalal-tree.json"
+    },
+    {
+      "file": "dalal/scripts/download_data.py",
+      "repository": "TaykhoomDalal/LentiMPRA-Enhancer-Processing",
+      "commit": "d2751a6ddff67ce4406288e9f6c3d932b0c12cdd",
+      "repository_path": "scripts/download_data.py",
+      "git_blob_sha1": "7a7e02945d73c9b9b49f3a4b521b49739e6c7e58",
+      "tree_metadata": "dalal-tree.json"
+    },
+    {
+      "file": "game/README.md",
+      "repository": "de-Boer-Lab/GAME-Agarwal-MPRA-joint-library-evaluator",
+      "commit": "8f95a6ce026e0b1e09eba2b13c1421f35e16f583",
+      "repository_path": "README.md",
+      "git_blob_sha1": "c657a7cf09588d4c16ecf151caf294ef3972ceba",
+      "tree_metadata": "game-tree.json"
+    },
+    {
+      "file": "game/agarwal_joint_library/config.py",
+      "repository": "de-Boer-Lab/GAME-Agarwal-MPRA-joint-library-evaluator",
+      "commit": "8f95a6ce026e0b1e09eba2b13c1421f35e16f583",
+      "repository_path": "agarwal_joint_library/config.py",
+      "git_blob_sha1": "8f31b1abf1f67010f67cc9b492dad12294a54f9e",
+      "tree_metadata": "game-tree.json"
+    },
+    {
+      "file": "game/agarwal_joint_library/data_loader.py",
+      "repository": "de-Boer-Lab/GAME-Agarwal-MPRA-joint-library-evaluator",
+      "commit": "8f95a6ce026e0b1e09eba2b13c1421f35e16f583",
+      "repository_path": "agarwal_joint_library/data_loader.py",
+      "git_blob_sha1": "0350174670a69b57f484921f0723d3788a5782c2",
+      "tree_metadata": "game-tree.json"
+    },
+    {
+      "file": "game/agarwal_joint_library/evaluator_data/README.md",
+      "repository": "de-Boer-Lab/GAME-Agarwal-MPRA-joint-library-evaluator",
+      "commit": "8f95a6ce026e0b1e09eba2b13c1421f35e16f583",
+      "repository_path": "agarwal_joint_library/evaluator_data/README.md",
+      "git_blob_sha1": "625f8c9de53b5287aee71935e0d7add8d23e1944",
+      "tree_metadata": "game-tree.json"
+    },
+    {
+      "file": "game/agarwal_joint_library/evaluator_data/make_56k_filtered_file.py",
+      "repository": "de-Boer-Lab/GAME-Agarwal-MPRA-joint-library-evaluator",
+      "commit": "8f95a6ce026e0b1e09eba2b13c1421f35e16f583",
+      "repository_path": "agarwal_joint_library/evaluator_data/make_56k_filtered_file.py",
+      "git_blob_sha1": "c7e74fc3e6f86499111f9b7afe19b3628f37c7a0",
+      "tree_metadata": "game-tree.json"
+    },
+    {
+      "file": "game/agarwal_joint_library/evaluator_metrics_calculator.py",
+      "repository": "de-Boer-Lab/GAME-Agarwal-MPRA-joint-library-evaluator",
+      "commit": "8f95a6ce026e0b1e09eba2b13c1421f35e16f583",
+      "repository_path": "agarwal_joint_library/evaluator_metrics_calculator.py",
+      "git_blob_sha1": "f8f0e6cdcb09325030cc94f93e504e28b49f02d9",
+      "tree_metadata": "game-tree.json"
+    },
+    {
+      "file": "mpra-mnist/README.md",
+      "repository": "autosome-ru/MPRA-MNIST",
+      "commit": "644590f095e33fa8ab484550f5395e8fc94e6105",
+      "repository_path": "README.md",
+      "git_blob_sha1": "5184a4f38c303388f23fe1f1eeccc9314614b2cb",
+      "tree_metadata": "mpra-mnist-tree.json"
+    },
+    {
+      "file": "mpra-mnist/mpramnist/Agarwal2025/README.md",
+      "repository": "autosome-ru/MPRA-MNIST",
+      "commit": "644590f095e33fa8ab484550f5395e8fc94e6105",
+      "repository_path": "mpramnist/Agarwal2025/README.md",
+      "git_blob_sha1": "e45211e5ebd4afbc7242b20d6067da418af7b3c5",
+      "tree_metadata": "mpra-mnist-tree.json"
+    },
+    {
+      "file": "mpra-mnist/mpramnist/Agarwal2025/dataset.py",
+      "repository": "autosome-ru/MPRA-MNIST",
+      "commit": "644590f095e33fa8ab484550f5395e8fc94e6105",
+      "repository_path": "mpramnist/Agarwal2025/dataset.py",
+      "git_blob_sha1": "841ae228acacb3cddf5bc4547307af875afc0c3d",
+      "tree_metadata": "mpra-mnist-tree.json"
+    },
+    {
+      "file": "mpra-mnist/mpramnist/info.py",
+      "repository": "autosome-ru/MPRA-MNIST",
+      "commit": "644590f095e33fa8ab484550f5395e8fc94e6105",
+      "repository_path": "mpramnist/info.py",
+      "git_blob_sha1": "939dee84bed583c5bfbd12fdf2c1f959195e5b15",
+      "tree_metadata": "mpra-mnist-tree.json"
+    },
+    {
+      "file": "mpra-mnist/mpramnist/target_transforms.py",
+      "repository": "autosome-ru/MPRA-MNIST",
+      "commit": "644590f095e33fa8ab484550f5395e8fc94e6105",
+      "repository_path": "mpramnist/target_transforms.py",
+      "git_blob_sha1": "b1988ee5e96b00b746228c2c8a432f867c212e0a",
+      "tree_metadata": "mpra-mnist-tree.json"
+    },
+    {
+      "file": "mpraflow-2020/LICENSE",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "6b136aacf0cfa5d46023668237a379d9d9edd05b",
+      "repository_path": "LICENSE",
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "tree_metadata": "mpraflow-2020-tree.json"
+    },
+    {
+      "file": "mpraflow-2020/README.md",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "6b136aacf0cfa5d46023668237a379d9d9edd05b",
+      "repository_path": "README.md",
+      "git_blob_sha1": "3788e885f29ede4d3389e303427baad633300e85",
+      "tree_metadata": "mpraflow-2020-tree.json"
+    },
+    {
+      "file": "mpraflow-2020/conf/global.config",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "6b136aacf0cfa5d46023668237a379d9d9edd05b",
+      "repository_path": "conf/global.config",
+      "git_blob_sha1": "61ab7005b6bca2748a94707f8dd1a538218d0fe3",
+      "tree_metadata": "mpraflow-2020-tree.json"
+    },
+    {
+      "file": "mpraflow-2020/count.nf",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "6b136aacf0cfa5d46023668237a379d9d9edd05b",
+      "repository_path": "count.nf",
+      "git_blob_sha1": "f095fd194a05ad50928b754cc7272a628d833521",
+      "tree_metadata": "mpraflow-2020-tree.json"
+    },
+    {
+      "file": "mpraflow-2020/nextflow.config",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "6b136aacf0cfa5d46023668237a379d9d9edd05b",
+      "repository_path": "nextflow.config",
+      "git_blob_sha1": "615267a34bc5cc13c045df291695dc5e56a5d764",
+      "tree_metadata": "mpraflow-2020-tree.json"
+    },
+    {
+      "file": "mpraflow-2020/src/make_master_tables.R",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "6b136aacf0cfa5d46023668237a379d9d9edd05b",
+      "repository_path": "src/make_master_tables.R",
+      "git_blob_sha1": "ce6d20b72ea78f1a5285b87b382172817a39e417",
+      "tree_metadata": "mpraflow-2020-tree.json"
+    },
+    {
+      "file": "mpraflow-2020/src/merge_all.py",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "6b136aacf0cfa5d46023668237a379d9d9edd05b",
+      "repository_path": "src/merge_all.py",
+      "git_blob_sha1": "69d10ed8f2d4827fee24ff8f06f0781604b6895d",
+      "tree_metadata": "mpraflow-2020-tree.json"
+    },
+    {
+      "file": "mpraflow-2020/src/merge_label.py",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "6b136aacf0cfa5d46023668237a379d9d9edd05b",
+      "repository_path": "src/merge_label.py",
+      "git_blob_sha1": "dc1ed3435ae6403ac042e0b20e37c5ebbecf5a68",
+      "tree_metadata": "mpraflow-2020-tree.json"
+    },
+    {
+      "file": "mpraflow-2020/src/plot_perInsertCounts_correlation.R",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "6b136aacf0cfa5d46023668237a379d9d9edd05b",
+      "repository_path": "src/plot_perInsertCounts_correlation.R",
+      "git_blob_sha1": "dcfcfce016de175618d58d92892764b3287b9228",
+      "tree_metadata": "mpraflow-2020-tree.json"
+    },
+    {
+      "file": "mpraflow-current/LICENSE",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "87d8b4c623274011841d3580f4b32a2bcd5bf54b",
+      "repository_path": "LICENSE",
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "tree_metadata": "mpraflow-tree.json"
+    },
+    {
+      "file": "mpraflow-current/README.md",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "87d8b4c623274011841d3580f4b32a2bcd5bf54b",
+      "repository_path": "README.md",
+      "git_blob_sha1": "774fb5bd5c1aab602ef5d62dccc0789deb502aa4",
+      "tree_metadata": "mpraflow-tree.json"
+    },
+    {
+      "file": "mpraflow-current/count.nf",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "87d8b4c623274011841d3580f4b32a2bcd5bf54b",
+      "repository_path": "count.nf",
+      "git_blob_sha1": "2f2181d17a22987d70f54db72e15877955e83e11",
+      "tree_metadata": "mpraflow-tree.json"
+    },
+    {
+      "file": "mpraflow-current/docs/count.rst",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "87d8b4c623274011841d3580f4b32a2bcd5bf54b",
+      "repository_path": "docs/count.rst",
+      "git_blob_sha1": "898f053eae247bc2541c35250d1a5ad91e29b2b0",
+      "tree_metadata": "mpraflow-tree.json"
+    },
+    {
+      "file": "mpraflow-current/src/make_master_tables.R",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "87d8b4c623274011841d3580f4b32a2bcd5bf54b",
+      "repository_path": "src/make_master_tables.R",
+      "git_blob_sha1": "ce6d20b72ea78f1a5285b87b382172817a39e417",
+      "tree_metadata": "mpraflow-tree.json"
+    },
+    {
+      "file": "mpraflow-current/src/merge_all.py",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "87d8b4c623274011841d3580f4b32a2bcd5bf54b",
+      "repository_path": "src/merge_all.py",
+      "git_blob_sha1": "3415828942a5bf8cd1d82ee3e20b57d8e9d9d59b",
+      "tree_metadata": "mpraflow-tree.json"
+    },
+    {
+      "file": "mpraflow-current/src/merge_label.py",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "87d8b4c623274011841d3580f4b32a2bcd5bf54b",
+      "repository_path": "src/merge_label.py",
+      "git_blob_sha1": "9bd2e5f431100e9a7fe7390ae6e45d296aa075fb",
+      "tree_metadata": "mpraflow-tree.json"
+    },
+    {
+      "file": "mpraflow-current/src/plot_perInsertCounts_correlation.R",
+      "repository": "shendurelab/MPRAflow",
+      "commit": "87d8b4c623274011841d3580f4b32a2bcd5bf54b",
+      "repository_path": "src/plot_perInsertCounts_correlation.R",
+      "git_blob_sha1": "7c5c88b11d61dadd7b6ad92c349d0094fbf68cb6",
+      "tree_metadata": "mpraflow-tree.json"
+    },
+    {
+      "file": "sequence-cnn/LICENSE",
+      "repository": "visze/sequence_cnn_models",
+      "commit": "7638fce137db0445123efe8d7e2c35e248fafc5f",
+      "repository_path": "LICENSE",
+      "git_blob_sha1": "897550630b1750d2e1577ee03dffa1da5d9e514d",
+      "tree_metadata": "sequence-cnn-tree.json"
+    },
+    {
+      "file": "sequence-cnn/README.md",
+      "repository": "visze/sequence_cnn_models",
+      "commit": "7638fce137db0445123efe8d7e2c35e248fafc5f",
+      "repository_path": "README.md",
+      "git_blob_sha1": "e96b03f54f7cfeb8ad48f6fe2bb156c4b3561816",
+      "tree_metadata": "sequence-cnn-tree.json"
+    },
+    {
+      "file": "sequence-cnn/config/config_mprann.yml",
+      "repository": "visze/sequence_cnn_models",
+      "commit": "7638fce137db0445123efe8d7e2c35e248fafc5f",
+      "repository_path": "config/config_mprann.yml",
+      "git_blob_sha1": "c736454966fed57a8cc3084b9a54912e4705e199",
+      "tree_metadata": "sequence-cnn-tree.json"
+    },
+    {
+      "file": "sequence-cnn/workflow/rules/regression_input.smk",
+      "repository": "visze/sequence_cnn_models",
+      "commit": "7638fce137db0445123efe8d7e2c35e248fafc5f",
+      "repository_path": "workflow/rules/regression_input.smk",
+      "git_blob_sha1": "88af727a13a0ed84973ca3591714515de32720b0",
+      "tree_metadata": "sequence-cnn-tree.json"
+    },
+    {
+      "file": "sequence-cnn/workflow/rules/sequence_selection.smk",
+      "repository": "visze/sequence_cnn_models",
+      "commit": "7638fce137db0445123efe8d7e2c35e248fafc5f",
+      "repository_path": "workflow/rules/sequence_selection.smk",
+      "git_blob_sha1": "3c8d94e447b1083e9f8ce6b55d3f47f4976500e8",
+      "tree_metadata": "sequence-cnn-tree.json"
+    },
+    {
+      "file": "sequence-cnn/workflow/scripts/lib/sequence.py",
+      "repository": "visze/sequence_cnn_models",
+      "commit": "7638fce137db0445123efe8d7e2c35e248fafc5f",
+      "repository_path": "workflow/scripts/lib/sequence.py",
+      "git_blob_sha1": "386b470c5ff256fa5664d50777271ed83ea19676",
+      "tree_metadata": "sequence-cnn-tree.json"
+    },
+    {
+      "file": "sequence-cnn/workflow/scripts/train.py",
+      "repository": "visze/sequence_cnn_models",
+      "commit": "7638fce137db0445123efe8d7e2c35e248fafc5f",
+      "repository_path": "workflow/scripts/train.py",
+      "git_blob_sha1": "466ffc41694f09e74df56a4ff351dcff0446bc6d",
+      "tree_metadata": "sequence-cnn-tree.json"
+    },
+    {
+      "file": "mpra-qc/README.md",
+      "repository": "visze/MPRA_QC_analysis",
+      "commit": "c8153dce0a359ddda4983075f7b77630cd7ca697",
+      "repository_path": "README.md",
+      "git_blob_sha1": "fae0a25419dee7dbc2eaec7c13a6b76a7f638f8a",
+      "tree_metadata": "mpra-qc-tree-main.json"
+    },
+    {
+      "file": "mpra-qc/scripts/activity_analysis.py",
+      "repository": "visze/MPRA_QC_analysis",
+      "commit": "c8153dce0a359ddda4983075f7b77630cd7ca697",
+      "repository_path": "scripts/activity_analysis.py",
+      "git_blob_sha1": "bc88c336b79774f0369ffc540e22b5cee7ca7428",
+      "tree_metadata": "mpra-qc-tree-main.json"
+    },
+    {
+      "file": "mpra-qc/workflow/scripts/activity_analysis.py",
+      "repository": "visze/MPRA_QC_analysis",
+      "commit": "c8153dce0a359ddda4983075f7b77630cd7ca697",
+      "repository_path": "workflow/scripts/activity_analysis.py",
+      "git_blob_sha1": "9b8fcc6c6981488be8f64ef4a5098a4513ee47f8",
+      "tree_metadata": "mpra-qc-tree-main.json"
+    }
+  ]
+}

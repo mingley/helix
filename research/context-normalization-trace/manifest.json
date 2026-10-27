@@ -1,0 +1,370 @@
+{
+  "schema_version": 1,
+  "scope": "code-and-metadata snapshot; assertions are not validation of unseen assay data",
+  "files": {
+    "README.md": {
+      "bytes": 9574,
+      "sha256": "959c4c297c80cd0136c0792bcce73fcd5dfd15613cb606acc0a6108fe804b3ce"
+    },
+    "dalal/LICENSE": {
+      "bytes": 1099,
+      "sha256": "edb695ef63cb4d6e673c8840f7f1182c87a50082f71486c30ad9464f516e28fe"
+    },
+    "dalal/LentiMPRA/README.md": {
+      "bytes": 2443,
+      "sha256": "d56642a9e589f177c11cb7afbac859c1c727f35302e2ad2e54c7af940b4917a7"
+    },
+    "dalal/LentiMPRA/process.py": {
+      "bytes": 32951,
+      "sha256": "a904d02c65072be4dd328d700958011c5c804e43799a7f4fc1cefd551559b6cb"
+    },
+    "dalal/NOTICE.md": {
+      "bytes": 345,
+      "sha256": "c0bdad30f2fc915d4a37ead595fb5721e93c84576eda8fe30d4d7184ce144a6d"
+    },
+    "dalal/README.md": {
+      "bytes": 9102,
+      "sha256": "4c28eee2724430bcfeadb9bc8ecf068665c6a04dc8d760a5459430a3aa079508"
+    },
+    "dalal/scripts/common.py": {
+      "bytes": 25831,
+      "sha256": "c08abd2855d1e95df17e780d8fbc3d5cc3d965a116d264ed6ecb6cfaf41a2ff7"
+    },
+    "dalal/scripts/download_data.py": {
+      "bytes": 3101,
+      "sha256": "823e42df8b54ad90d02eb06f5191e130e3c1e61f094654156188452ccae534ab"
+    },
+    "dalal-head-commit.json": {
+      "bytes": 137127,
+      "sha256": "0f9d13af2aec5257125f5b309e2d6511f32e48f2a82fe80cc6a9351a98e15c4a"
+    },
+    "dalal-initial/LICENSE": {
+      "bytes": 1099,
+      "sha256": "edb695ef63cb4d6e673c8840f7f1182c87a50082f71486c30ad9464f516e28fe"
+    },
+    "dalal-initial/LentiMPRA/process.py": {
+      "bytes": 33521,
+      "sha256": "5cf57ac415a3682d9cb4d89cd7ce9e81a67a5ae9f48bebf8b9a13ad3dc857eba"
+    },
+    "dalal-process-history.json": {
+      "bytes": 7035,
+      "sha256": "7281d9901765586f2e5b430bc2f51623078023a2312859495d4cb5d2bdff527b"
+    },
+    "dalal-repository.json": {
+      "bytes": 6352,
+      "sha256": "1ef0f8c0970fc24d111be28b9453088f90427fd600670969a85cfa8c7fe8ee93"
+    },
+    "dalal-tree.json": {
+      "bytes": 6798,
+      "sha256": "e7a5091649cc6bad06f6b8331313e88e7fbaabd0f56e28221921fece45dc0181"
+    },
+    "game/README.md": {
+      "bytes": 5765,
+      "sha256": "42e091bde75c36910f0138ac442fe72ce612362e59777b98ea0267fb7795df12"
+    },
+    "game/agarwal_joint_library/config.py": {
+      "bytes": 2687,
+      "sha256": "693af19d54274439c27adcb4ffd6a79f25975d10cb48cb8a15e0926c4065aa0a"
+    },
+    "game/agarwal_joint_library/data_loader.py": {
+      "bytes": 12748,
+      "sha256": "c780c811f5798df7f266c38cecac24aacfc9324332ef382331ced383e1e8ebd5"
+    },
+    "game/agarwal_joint_library/evaluator_data/README.md": {
+      "bytes": 5401,
+      "sha256": "89b8459bcfe6bf1f4132e33f25161fda27076e8c1764de4beb860a3f0571cf50"
+    },
+    "game/agarwal_joint_library/evaluator_data/make_56k_filtered_file.py": {
+      "bytes": 1924,
+      "sha256": "e8055b126d836733d1293729db99ad7d3e399f61fabb1dbecf9b3e288142d9f8"
+    },
+    "game/agarwal_joint_library/evaluator_metrics_calculator.py": {
+      "bytes": 26081,
+      "sha256": "bfe1fa10f119b27d0040e649af46b18a8dcba7cb074ff47c5bafb419c1cd18d7"
+    },
+    "game-commits.json": {
+      "bytes": 70187,
+      "sha256": "cc12044187061f9c3c6693473009297ac37c233d613cb4a7b9c4d0ffbc1eb242"
+    },
+    "game-data-code-history.json": {
+      "bytes": 3557,
+      "sha256": "8d295913b1a6afdb8035144fae4ac320d54ec34eb3890c3e98e69f84b52cfa69"
+    },
+    "game-repository.json": {
+      "bytes": 8016,
+      "sha256": "744caae634c21ac2c102edd64324db1e956a15a98547344ce71aad3c4066b458"
+    },
+    "game-tree.json": {
+      "bytes": 4838,
+      "sha256": "ef4ecca10fa7810cd2d35e5ea215541bbb65ef51f1187b5350987363777b42c9"
+    },
+    "grep-ESS-score.json": {
+      "bytes": 27907,
+      "sha256": "c15ea2f22eb299691b43234cdcab9ad2ade74ccf6aa45d5c78f907fba12253b6"
+    },
+    "grep-specificity.json": {
+      "bytes": 13297,
+      "sha256": "cbbef39beb7deebcafcef830ef5f29add79d91a36fd7088f9a368e92b292ed72"
+    },
+    "grep-zenodo10558183.json": {
+      "bytes": 8169,
+      "sha256": "4277172c7071e8f7e9197dc140d0caa8e8339391b9167bd25a195a59e230007e"
+    },
+    "human-legnet-commits.json": {
+      "bytes": 104830,
+      "sha256": "ef622bca3f96c5dacc62edc7aeee1617eb545e6ebd5241fa9c68c05d34524496"
+    },
+    "mpra-mnist/README.md": {
+      "bytes": 10212,
+      "sha256": "1f9b094564c90b1ebff9873810c3e78aa198ca4e7d18a89de82aaa40e043543d"
+    },
+    "mpra-mnist/mpramnist/Agarwal2025/README.md": {
+      "bytes": 15418,
+      "sha256": "24d4d0642dd48489d1897c07ff6c90b3b06d6d5e107c40c45c1a6618eb09619c"
+    },
+    "mpra-mnist/mpramnist/Agarwal2025/dataset.py": {
+      "bytes": 17446,
+      "sha256": "2357e581405863958cc168ff260aaa29317a34c65c04708a36e13dde18f73961"
+    },
+    "mpra-mnist/mpramnist/info.py": {
+      "bytes": 39222,
+      "sha256": "acd6aef040a82a603f8491b903eb0a6af67a758f73221b17681cbf7f9b067253"
+    },
+    "mpra-mnist/mpramnist/target_transforms.py": {
+      "bytes": 7974,
+      "sha256": "fabf6ede0e549c9056e05394c8211c482e47ebb49ff2fa0691911df9ba26a196"
+    },
+    "mpra-mnist-agarwal-code-history.json": {
+      "bytes": 2950,
+      "sha256": "b8ca16e99f09650b81984c2d3f50e94a740989f1956f77c555f6f571e32fbd9a"
+    },
+    "mpra-mnist-repository.json": {
+      "bytes": 6367,
+      "sha256": "a4b169ee57302c6dabf324bb240592f5b8e2c88cec88ac89d275f226b5a2b65a"
+    },
+    "mpra-mnist-tree.json": {
+      "bytes": 42472,
+      "sha256": "f9a53a426fdfa31f410bcea6ba73aefd24eda3195a93001d7f8d08ab7a668707"
+    },
+    "mpra-qc/README.md": {
+      "bytes": 7956,
+      "sha256": "f1ec7d8d4d91474f9d2d4ee6e35062259f5f70c6f76108478848c8e1f36a504d"
+    },
+    "mpra-qc/scripts/activity_analysis.py": {
+      "bytes": 66003,
+      "sha256": "5adedf29edaa869cafab9e6752cbea299047efacbc79cf3aa44b4bcb8cb1f296"
+    },
+    "mpra-qc/workflow/scripts/activity_analysis.py": {
+      "bytes": 38693,
+      "sha256": "90c1702121f6b1f7a1415c3d0869ef4c9dbb9c70bed27dafa30803a0e2019d79"
+    },
+    "mpra-qc-tree-main.json": {
+      "bytes": 11408,
+      "sha256": "d975e225950b540ce2cce724b6dae6379301942c0ed726d2130ec318b6705818"
+    },
+    "mpraflow-2020/LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "mpraflow-2020/README.md": {
+      "bytes": 8655,
+      "sha256": "92008f64995dac0381409a3f03cab412cc4ab65fca23151bdf37263bd0d99d07"
+    },
+    "mpraflow-2020/conf/global.config": {
+      "bytes": 145,
+      "sha256": "0f474c3e3fcdcde7bbe1625f715e32a9dbc83c9bb2a94d233d4591324faddde0"
+    },
+    "mpraflow-2020/count.nf": {
+      "bytes": 26566,
+      "sha256": "7c52392fdbc9a7aa3ae75f79a1c4f8b667dafc24bd57031c08995b3c5bb27ee4"
+    },
+    "mpraflow-2020/nextflow.config": {
+      "bytes": 229,
+      "sha256": "87649d8e69c00451b7ea3fddfa09f947d625bb4fe1b8413a387f16747a937e8d"
+    },
+    "mpraflow-2020/src/make_master_tables.R": {
+      "bytes": 1551,
+      "sha256": "0320a00e826dd0b66fcc7e6a3b6eb9d49fdb4c446219511415739c1a0f8279ef"
+    },
+    "mpraflow-2020/src/merge_all.py": {
+      "bytes": 998,
+      "sha256": "ecf46e753a14dbeed5f952e1acfa8683069d97ba7d51ca53a9dff0358c2cd20c"
+    },
+    "mpraflow-2020/src/merge_label.py": {
+      "bytes": 4346,
+      "sha256": "4e9c6438973974d1f0e956af2da5b1e7f0dc5338212e0f39bcda6a33806c67d5"
+    },
+    "mpraflow-2020/src/plot_perInsertCounts_correlation.R": {
+      "bytes": 8328,
+      "sha256": "68fba57a8891906e2ec368b1e1c8907f0f9e75e5515cb6dc473f72f6a88a4396"
+    },
+    "mpraflow-2020-commit-metadata.json": {
+      "bytes": 5115,
+      "sha256": "5d2f09fd44bf3d84720b92a653710ce496705d2998a29b9b8cb495d2be6b4898"
+    },
+    "mpraflow-2020-tree.json": {
+      "bytes": 20450,
+      "sha256": "ece8c4777ff3024940c97de780b7167c0b162ba2797d933435c5388bcd83386a"
+    },
+    "mpraflow-branches.json": {
+      "bytes": 1484,
+      "sha256": "fad57dedadecbd7eed75d428c661eef3717d0de7bd00cd8e5bac576ceab4e2d9"
+    },
+    "mpraflow-commits.json": {
+      "bytes": 239175,
+      "sha256": "f60b8570578ab4acbf879118a01086ed4a242f6c62f5b4d983a360c593b3b5ed"
+    },
+    "mpraflow-current/LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "mpraflow-current/README.md": {
+      "bytes": 9556,
+      "sha256": "a2d29f91288d35e6cb3da1df18dd3ed79c5e06e3ed11d0283a43efb7631dc91a"
+    },
+    "mpraflow-current/count.nf": {
+      "bytes": 26882,
+      "sha256": "f23b491fe8aea62c59852fd12a4dd15d72ab62882c2702d399484aea5b93626f"
+    },
+    "mpraflow-current/docs/count.rst": {
+      "bytes": 7407,
+      "sha256": "3ebae7bee4eff09327c17bd66f16da92506ba39a04ff61f7d2b0ff62e574e896"
+    },
+    "mpraflow-current/src/make_master_tables.R": {
+      "bytes": 1551,
+      "sha256": "0320a00e826dd0b66fcc7e6a3b6eb9d49fdb4c446219511415739c1a0f8279ef"
+    },
+    "mpraflow-current/src/merge_all.py": {
+      "bytes": 1742,
+      "sha256": "a2b788bf353a08c461c67f1310727b344342b0dc2c655077eb3132b7d4d7e86c"
+    },
+    "mpraflow-current/src/merge_label.py": {
+      "bytes": 6951,
+      "sha256": "06e8523f3a6ed8a0e95edde88dc970743b31437cf9a48d9f9888f72f732dee55"
+    },
+    "mpraflow-current/src/plot_perInsertCounts_correlation.R": {
+      "bytes": 8349,
+      "sha256": "05c61a82f8ef8495af3cc990a2e6b54a9aca1482413cd8416df4eb662c7f637e"
+    },
+    "mpraflow-global-config-history.json": {
+      "bytes": 34958,
+      "sha256": "e02da2f539bb9cb89002bfde8238f75a2a5697a05d8a71a133ea4c5dcc791127"
+    },
+    "mpraflow-make-master-history.json": {
+      "bytes": 17558,
+      "sha256": "7acc55be60fb9a125e30bef61bb73b5aa1fdfd6f55df75012f3ab65fc64972e3"
+    },
+    "mpraflow-pre2021-commit.json": {
+      "bytes": 4080,
+      "sha256": "24db88bdbc46f33d8cefa4e69c4993598a2f1de76702b8fb10fd18094fcdf942"
+    },
+    "mpraflow-releases.json": {
+      "bytes": 16229,
+      "sha256": "7fe119c35e3238cbbdac348b75af00971d9f791ad1514896c6f4ee30c9a3cedc"
+    },
+    "mpraflow-shendurelab-repository.json": {
+      "bytes": 6526,
+      "sha256": "3af1105987e5ad6c7572ca0b254b91c33169ce732b55bbd669f10ed7ed8dcfeb"
+    },
+    "mpraflow-tags.json": {
+      "bytes": 3363,
+      "sha256": "c7f77499e35a7b932076ef287fc736736e5598c61f384901e4bfeb94fbea69b2"
+    },
+    "mpraflow-tree.json": {
+      "bytes": 27294,
+      "sha256": "7af3fdb9d4d9d343d17cad38c994262716a4778585a22c210893e6233fd4c269"
+    },
+    "retrieval.json": {
+      "bytes": 50289,
+      "sha256": "98c3eeb942ad39f96b9448492a0a0985e02759ce928c999f8d163c904ad86681"
+    },
+    "search-MPRAnn-in-readme.json": {
+      "bytes": 17435,
+      "sha256": "6490e0e7ae09378975dd393f9e3c463cff793d2af241a776fd7cd5a30bd98d22"
+    },
+    "search-agarwal-article-readme.json": {
+      "bytes": 46644,
+      "sha256": "95a6bfdad39337ab12e6a093a5013b4eb4936c5c955db0eb625fe442666edc81"
+    },
+    "search-agarwal-regulatory.json": {
+      "bytes": 6320,
+      "sha256": "38e6c8212a20699a2adcaacc37d63b2e3e94a19d836bff71c3647dfef982e155"
+    },
+    "search-element-specificity.json": {
+      "bytes": 76989,
+      "sha256": "a980b7febc567ca94a4d1d68946dc53f647f3a1107738a25cbd9d33841c65de8"
+    },
+    "search-lentimpra-agarwal.json": {
+      "bytes": 55,
+      "sha256": "4af480b8ee5b87b369a76c49bd22c9a783908272ebffbe97898f8ab0f0772a5f"
+    },
+    "search-lentimpra.json": {
+      "bytes": 48258,
+      "sha256": "228e662432df52d3cc2b4a81c5daec5f840088c00097ac0412a0a5d230e9e94b"
+    },
+    "search-mpra-specificity.json": {
+      "bytes": 48447,
+      "sha256": "294cf63a3c4a840233fa45daeb82fe9813747ba850f36c80dfc32de7bc167884"
+    },
+    "search-zenodo-in-readme.json": {
+      "bytes": 11224,
+      "sha256": "da7395c04abcc89a05b3c81b45b629795c9710566a7074e278d33e7117d20f02"
+    },
+    "sequence-cnn/LICENSE": {
+      "bytes": 1104,
+      "sha256": "4c7f6aa809faecf1c7b4fecaa41a6de395b8f3d3705458239d3ace242f850f50"
+    },
+    "sequence-cnn/README.md": {
+      "bytes": 9409,
+      "sha256": "8c9616cb9464c9f1e47b5f7045367fb3e01037f650badbb0db52a6e9f6bccc78"
+    },
+    "sequence-cnn/config/config_mprann.yml": {
+      "bytes": 15695,
+      "sha256": "bb8165d69a705b44393b715a9cb79b40e335c64898971b61f48a5f67bc09ecc6"
+    },
+    "sequence-cnn/workflow/rules/regression_input.smk": {
+      "bytes": 3473,
+      "sha256": "8c076d7db3670bfb4e3cc8d8d15ac8528014b5a39b46920d25e8e20f4dd0edef"
+    },
+    "sequence-cnn/workflow/rules/sequence_selection.smk": {
+      "bytes": 9568,
+      "sha256": "ab84b3aed631bde69148735b3e75193a97d51efd1b32b86afc6cc928eef450dc"
+    },
+    "sequence-cnn/workflow/scripts/lib/sequence.py": {
+      "bytes": 25558,
+      "sha256": "9b3b5eba48dd5c5e52b0f8cbf058b7c49981198993ff381ab6927d6b6b7eb9ca"
+    },
+    "sequence-cnn/workflow/scripts/train.py": {
+      "bytes": 7709,
+      "sha256": "68cda8ba6cdabb98855e7035aa0d8e2b3f0765606dcc3c93ddb7e9a151bbb147"
+    },
+    "sequence-cnn-commits.json": {
+      "bytes": 206945,
+      "sha256": "fc394181568b4d8cc024f16ddfa8edc5740d21857f0a7b6c28ee82f72428effb"
+    },
+    "sequence-cnn-tree.json": {
+      "bytes": 36119,
+      "sha256": "20a5db73f13b3008d697e389c9d6c09b2c448be8c60cb0d7cfb7d2ab5dba9022"
+    },
+    "trace.json": {
+      "bytes": 21890,
+      "sha256": "d07dc1d0e2b2866258e60308bd9daa7b4dd98dd973a6db8c7f7cdfb828825c62"
+    },
+    "user-agarwalv-repos.json": {
+      "bytes": 39806,
+      "sha256": "746938f48d8185bfe660f4f0e260fd73e882568cc906b83f304bda555b9880d7"
+    },
+    "user-vikramagarwal-repos.json": {
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "user-visze-repos.json": {
+      "bytes": 317534,
+      "sha256": "d842a32bb6662b5bb6a9aa1bf03258e5ed662350f18b16c330d891f8774a9730"
+    },
+    "verify_evidence.py": {
+      "bytes": 2846,
+      "sha256": "6fac91726ee368974b923b877ed16884d3ff8f5925ed16421c8ae35b251d2b0d"
+    }
+  }
+}

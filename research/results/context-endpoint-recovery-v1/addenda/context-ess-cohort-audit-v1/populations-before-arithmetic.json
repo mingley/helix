@@ -1,0 +1,15 @@
+{
+  "S11_ESS": {
+    "count": 55977,
+    "ids_sha256": "3f5667fe22887a579d66da4b0b4e2e59f2196f0d6d465d0656a10ef2b6fe3c8f"
+  },
+  "S12": {
+    "count": 55338,
+    "ids_sha256": "b85af55d0b1f80549d7b70b3ae7f22538215e31627efec0dab76c7272efe9075"
+  },
+  "old_admitted": {
+    "count": 55276,
+    "ids_sha256": "ba9aa3801e051776e3c899f890a58ce2dfeb18fbb372f6b866b63888635266d7"
+  },
+  "normalization_will_not_use_categories": true
+}

@@ -6,52 +6,51 @@ explicit assumptions, measured endpoints and falsifiable questions. Annotation,
 logical consistency, clinical classification and molecular measurements remain
 different kinds of evidence.
 
-## Current result: reproducible prediction with unresolved source meaning
+## Current result: predict a measured activity component
 
-The [context-specificity benchmark](context-specificity-study.md) has
-**13.434% lower held-out MSE** for context-specific sequence slopes than
-additive DNA/context prediction on three fixed published source columns.
-The panel contains 55,276 reference-valid elements in 2,761 sequence/locus
-groups. All 243 independent numerical comparison categories pass, including
-1,824,108 exact feature fractions and 829,140 model predictions.
+The [published-activity benchmark](context-activity-study.md) reduces grouped
+held-out MSE by **8.7996%** beyond cell means using 32 reverse-complement-canonical
+3mer frequencies and GC fraction. The 55,276 reference-valid 200nt elements form
+2,761 groups and were tested in three measured cell contexts. Independent
+calculations pass all 258 comparison categories and reproduce 829,140 predictions.
+The primary conditional component-resampling interval for the MSE improvement is
+0.0598440–0.0687169, on the original published activity scales.
 
-**The scientific source-formula check fails.** Every admitted score triple has
-a nonzero sum beyond rounding, contradicting the cited simple ESS formula.
-A separately frozen arithmetic audit finds a weighted rank-two constraint
-compatible with additional column scaling, but does not establish historical
-normalization. No targets, fits or primary losses were repaired. The complete
-workflow reports numerical success separately and exits 2 for the unresolved
-scientific source validation.
+The endpoint is unchanged published library-normalized log2(RNA/DNA), not
+absolute transcription. The common component is the mean of these three
+published scales. Its predictability does not identify a shared transcription
+factor or a causal endogenous mechanism. The panel and experiment are shared
+with the earlier specificity study; this is a new endpoint analysis, not a new
+independent study.
 
-The earlier raw-activity `context-prediction-v1` remains
-[blocked before fitting](context-v1-source-gate.md); the available files
-contained ESS rather than its required activity means. The distinct v2 is a
-bounded benchmark of published columns, not a retrospective v1 pass or a new
-discovery that sequence/context affects expression. See the
-[source-semantic review](context-specificity-semantic-review.md) and
-[retained snapshot](results/context-specificity-v2/README.md).
+[Official source recovery](context-endpoint-recovery.md) supplies the previously
+missing activity table and validates a precise ESS-table to model-table
+standardization relationship. Earlier negative arithmetic tests and historical
+normalization uncertainties remain recorded. The old v1 source gate and v2
+source-formula rule are not rewritten as successes. The
+[identifiability analysis](context-identifiability.md) proves why specificity
+alone cannot uniquely reconstruct common activity, even with column moment
+constraints.
 
-## Next falsifiable goal: establish the endpoint before extending the model
+## Next falsifiable goal: predict perturbations in a separate study
 
-Recover authoritative, version-linked source normalization and underlying
-activity, or obtain independently compatible measurements with an explicit
-observation contract. Keep the current numerical result and semantic failure
-unchanged while resolving what the source columns mean.
+Test whether a model learned from explicit sequence/context measurements
+predicts variant effects at untouched regulatory loci in a genuinely separate
+experimental study. Separate composition-based prediction from hypotheses about
+specific regulatory interactions using observations that can distinguish them.
 
-1. Trace the frozen S9 release to documented preprocessing code, operation order
-   and version-linked intermediate/output tables. A fitted weighted plane proves
-   an algebraic representation, not the producer's history.
-2. Verify the documented transform against the unchanged source values. If raw
-   activity is recovered, establish units, replicate aggregation, missingness
-   and normalization before specifying a separately versioned study.
-3. If provenance remains unavailable, select an endpoint-compatible independent
-   assay and freeze its acquisition/mapping/grouping/model contract before
-   inspection. Preserve source selection and failed acquisition history.
-4. Evaluate whole sequence/locus groups against context-appropriate baselines.
-   Separate model agreement, endpoint validation and independent experimental
-   evidence. Do not project or rescale scores to force the old formula to pass.
-5. Require directed sequence/TF perturbations and endogenous or other
-   discriminating observations before claiming a regulatory mechanism.
+1. Establish source independence, assay units, actual inserted DNA, perturbation
+   identity, replicate support and licensing from metadata before acquisition.
+   Prior HBB/Kircher outcomes and the current Agarwal panel are explored evidence.
+2. Freeze a small model and outcome contract, whole-locus/homology groups,
+   context-matched baselines and negative controls before inspecting new outcomes.
+   Do not select a source or threshold for a favorable effect.
+3. Test signed perturbation predictions and uncertainty under those conditions,
+   retaining source failures and negative results. Whole-fragment activity gains
+   do not establish accurate single-base effect predictions.
+4. Require directed perturbations and endogenous or other discriminating evidence
+   before claiming a biological regulatory mechanism. Continue tracing the
+   unresolved upstream ESS processing as a separate source-provenance question.
 
 ## Completed foundation
 

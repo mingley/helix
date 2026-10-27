@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-27T18:33:26.115223+00:00",
+  "scope": "Metadata and article prose only. No new supplementary quantitative payload, archive bytes or member contents acquired.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4185,
+      "sha256": "c0a6f41adad091e98f3009785cbbe86707a5fa4529efca63ac6b0d685d56b1b9"
+    },
+    {
+      "path": "article-source-metadata.json",
+      "bytes": 42547,
+      "sha256": "a23af7f80ab7a69c92ec00b20899db077d56910404d5c353a484b240da26cd1e"
+    },
+    {
+      "path": "attachment-head-receipts.json",
+      "bytes": 2076,
+      "sha256": "242647be0c1ec983d7315e355070bfe0aadf9fc034e9bc0840bddb3d74b53ddc"
+    },
+    {
+      "path": "candidates.json",
+      "bytes": 4312,
+      "sha256": "6a9cba6b8bd02c40703c41ff026d8012147f2bb39acece742c32419f7ce0483c"
+    },
+    {
+      "path": "final-article.xml",
+      "bytes": 233913,
+      "sha256": "41a554f31ea67adb1ce983b05ed9194e8fa1596bd4e6d2208df1854de9f33320"
+    },
+    {
+      "path": "nature-article-metadata-receipt.json",
+      "bytes": 5705,
+      "sha256": "af719241f9a22c1bb4266ab90f22f53a581e368f673a455a297b851e4d37013a"
+    },
+    {
+      "path": "nature-article.html.relevant-extract.json",
+      "bytes": 672,
+      "sha256": "03460869ae3692dbd32f206ebd5ec3e3234d45fbffd4b4d65e2a984ba1ac7254"
+    },
+    {
+      "path": "official-distribution-receipts.json",
+      "bytes": 2553,
+      "sha256": "7bb3a35b137a345675b1705d4cbf80757145cffed48e5b5263ca7c0269176a6e"
+    },
+    {
+      "path": "pmc-article.html.relevant-extract.json",
+      "bytes": 601,
+      "sha256": "f7895780ef8acee60f8f332823f6e51ba3e8492631d60a3d73256b14b4d69143"
+    },
+    {
+      "path": "publisher-attachment-head.json",
+      "bytes": 920,
+      "sha256": "d4e0682dd419bb8ee77714886c0040be18be50214399783661839e7dd3302d55"
+    },
+    {
+      "path": "retrieval.json",
+      "bytes": 2176,
+      "sha256": "c91c49e787296a25a94ca0ed22024c4af1b80aeb8e14bfbf8f2bb499e88f9cda"
+    }
+  ],
+  "manifest_self_hash": "Intentionally omitted to avoid recursion"
+}

@@ -1,32 +1,36 @@
 # Architecture and trust boundaries
 
-The **17-crate workspace** keeps numerical reproduction and scientific endpoint
-validation as separate gates. The current matched-context benchmark has
-13.434% lower held-out MSE on its fixed published columns and passes all 243
-independent numerical comparison categories. Its source columns fail the
-published ESS formula, so scientific source-formula validation remains
-unresolved and the complete check exits 2. No target projection repairs that
-status.
+The **17-crate workspace** keeps source binding, numerical reproduction,
+conditional formal reasoning and biological validation separate. The current
+published-activity benchmark reduces grouped held-out MSE by 8.80% beyond cell
+means and passes all 258 independent comparison categories. It predicts the
+mean component of three published library-normalized activity scales; it does
+not establish absolute expression or a causal regulatory mechanism.
 
 ```mermaid
 flowchart TD
-    W[Frozen source workbooks and exact column binding] --> D[Exact IDs and 200-base core extraction]
-    D --> R[Declared-strand hg38 reference validation]
-    R --> G[Metadata-only root groups and guarded folds]
-    G --> M[Five fixed matched-context models]
-    M --> N[Independent feature, membership, fit and loss replay]
-    N --> P[Numerical comparison passes]
-    W --> S[Source formula and arithmetic checks]
-    S --> U[Formula fails; normalization history unresolved]
-    P --> O[Report retains distinct statuses]
+    W[Official source bytes and exact schema] --> A[Unchanged published RNA/DNA activity]
+    W --> E[Published specificity and model-score tables]
+    D[Previously reference-validated DNA] --> G[Frozen sequence/locus groups and guards]
+    A --> M[Five fresh fixed models]
+    G --> M
+    M --> N[Independent raw-source, feature, fit and loss replay]
+    N --> P[258 numerical comparison categories pass]
+    E --> S[Separately frozen arithmetic checks]
+    S --> U[Table relationship verified; upstream history separate]
+    F[Lean ideal-operator assumptions] --> L[Common activity is not uniquely identifiable from specificity]
+    P --> O[Report distinct evidence and limitations]
     U --> O
+    L --> O
 ```
 
-The next scientific goal is authoritative normalization/raw-activity provenance
-or independently compatible measurements. A weighted rank-two source relation
-narrows compatible arithmetic descriptions; it does not identify the producer's
-history. See the [study](../research/context-specificity-study.md) and
-[source-semantic review](../research/context-specificity-semantic-review.md).
+The [source recovery](../research/context-endpoint-recovery.md) obtains official
+replicate and aggregate activities and verifies a model-table standardization
+relationship. It preserves earlier negative formula checks and their frozen
+success rules. The next scientific goal is perturbation prediction in a separate
+experimental study, with mechanisms requiring discriminating observations.
+See the [activity study](../research/context-activity-study.md) and
+[research goal](../research/GOAL.md).
 
 The HBB workflow combines the original clinical demonstration with a reference
 mechanism engine, a curated atlas and separately produced reporter evidence:
@@ -126,6 +130,21 @@ The process is trusted to follow API boundaries; shell-capable agents require
 separate capabilities and an inaccessible holdout store.
 
 ## Current boundaries
+
+The new `helix context-activity` path shares the generic ridge engine but binds a
+distinct activity protocol and source. It requires the complete fixed 55,276-ID
+cohort, exact official source bytes, metadata-only DNA/group commitments, ordinary
+finite numeric cells and jointly bound recovery receipts. Source ESS fields never
+enter its response vectors. Schema-5 artifacts retain all fits, observations,
+predictions, resamples, feature fractions and source bindings. The audit replays
+saved fits and verifies loss and common-component identities; independent Python
+separately parses the workbook and refits each model. Its 258-category numerical
+comparison is distinct from biological replication.
+
+The generic model's inherited `interpretation_limits` sentence describing primary
+group weighting is not the caller's v3 weighting contract: the frozen v3 primary
+is equal elements and equal cells, with macro-group summaries as sensitivity
+analyses. Actual losses and resampling use the declared equal-element rule.
 
 The `helix context-study` path uses `genome-context-model` for a small generic
 matched-context ridge model. The crate enforces engineering contracts; the

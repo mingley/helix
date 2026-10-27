@@ -1,0 +1,15 @@
+{
+  "recorded_at_utc": "2026-10-27T18:35:38.085502+00:00",
+  "scope": "Pre-acquisition article-prose metadata only; no new quantitative workbook or archive inspected",
+  "article_source_path": "research/context-provenance-round3/final-article.xml",
+  "article_source_sha256": "41a554f31ea67adb1ce983b05ed9194e8fa1596bd4e6d2208df1854de9f33320",
+  "table11_role": {
+    "paragraph_id": "Par27",
+    "section": "Characterization of cell-specific factors",
+    "citation_context": "Element activity scores were strongly concordant across replicate pairs; Supplementary Table 11 and Supplementary Fig. 7b\u2013d cited.",
+    "inference": "Plausible replicate activity or correlation-summary source. Exact contents and column semantics unresolved until authorized schema inspection.",
+    "not_established": "Article prose does not establish whether Table 11 includes raw averaged activity, individual replicate log ratios, normalized values or summaries only."
+  },
+  "acquisition_gate": "Await parent-provided archive path, observed archive SHA256 and immutable central protocol path/SHA256. Exact member selection must be metadata-based.",
+  "extractor": "extract_members.py; synthetic traversal/symlink/missing-name/byte-bound/CRC checks passed; no empirical archive run yet"
+}

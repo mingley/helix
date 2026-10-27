@@ -9,6 +9,7 @@ cargo test --workspace --locked --jobs "${HELIX_BUILD_JOBS:-4}"
 lean proofs/Helix.lean
 lean proofs/GenomeMechanisms.lean
 lean proofs/RegulatoryStudy.lean
+lean proofs/ContextIdentifiability.lean
 python3 -m py_compile scripts/fetch_demo.py
 python3 -m py_compile scripts/fetch_hbb_reference.py scripts/fetch_genome_atlas.py
 python3 -m py_compile scripts/fetch_hbb_promoter_assay.py

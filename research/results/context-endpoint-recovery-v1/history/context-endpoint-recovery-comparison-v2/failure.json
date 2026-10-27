@@ -1,0 +1,5 @@
+{
+  "error_type": "KeyError",
+  "error": "0",
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/helix/scripts/verify_context_endpoint_recovery.py\", line 1035, in recovery_comparison\n    return _recovery_comparison_compute(independent_root, primary_root, output)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/helix/scripts/verify_context_endpoint_recovery.py\", line 987, in _recovery_comparison_compute\n    params, expected = a[\"post_moments\"][\"moments\"][c], b[\"post_parameters\"][c]\n                                                        ~~~~~~~~~~~~~~~~~~~~^^^\nKeyError: 0\n"
+}

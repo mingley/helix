@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "packages": [
+    {
+      "package": "openpyxl",
+      "version": "3.1.5",
+      "metadata_url": "https://pypi.org/pypi/openpyxl/3.1.5/json",
+      "metadata_file": "openpyxl-3.1.5.pypi.json",
+      "metadata_sha256": "6a922b57aebf0a54ec276b48bab917fa6684a5822e2d40a465972098d46be12e",
+      "wheel_url": "https://files.pythonhosted.org/packages/c0/da/977ded879c29cbd04de313843e76868e6e13408a94ed6b987245dc7c8506/openpyxl-3.1.5-py2.py3-none-any.whl",
+      "wheel_filename": "openpyxl-3.1.5-py2.py3-none-any.whl",
+      "wheel_path": "/workspace/.tools/endpoint-recovery-wheels/openpyxl-3.1.5-py2.py3-none-any.whl",
+      "wheel_bytes": 250910,
+      "wheel_sha256": "5282c12b107bffeef825f4617dc029afaf41d0ea60823bbb665ef3079dc79de2",
+      "upstream_sha256_match": true,
+      "transport": "verified HTTPS with inherited proxy and CA trust",
+      "retrieved_at": "2026-10-27T18:29:32.677006+00:00"
+    },
+    {
+      "package": "et-xmlfile",
+      "version": "2.0.0",
+      "metadata_url": "https://pypi.org/pypi/et_xmlfile/2.0.0/json",
+      "metadata_file": "et_xmlfile-2.0.0.pypi.json",
+      "metadata_sha256": "807b439c620d04dc8b1680d18d462233b4c4711d11a32a2e6d74b47949af9bf0",
+      "wheel_url": "https://files.pythonhosted.org/packages/c1/8b/5fe2cc11fee489817272089c4203e679c63b570a5aaeb18d852ae3cbba6a/et_xmlfile-2.0.0-py3-none-any.whl",
+      "wheel_filename": "et_xmlfile-2.0.0-py3-none-any.whl",
+      "wheel_path": "/workspace/.tools/endpoint-recovery-wheels/et_xmlfile-2.0.0-py3-none-any.whl",
+      "wheel_bytes": 18059,
+      "wheel_sha256": "7a91720bc756843502c3b7504c77b8fe44217c85c537d85037f0f536151b2caa",
+      "upstream_sha256_match": true,
+      "transport": "verified HTTPS with inherited proxy and CA trust",
+      "retrieved_at": "2026-10-27T18:29:33.421194+00:00"
+    }
+  ],
+  "installed_versions": {
+    "python": "3.12.14",
+    "openpyxl": "3.1.5",
+    "et-xmlfile": "2.0.0",
+    "numpy": "2.3.5"
+  },
+  "install_command": "source scripts/research-env.sh && python3 -m pip install --no-deps openpyxl==3.1.5 et-xmlfile==2.0.0"
+}

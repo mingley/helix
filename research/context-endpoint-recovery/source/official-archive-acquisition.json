@@ -1,0 +1,26 @@
+{
+  "bytes": 342234089,
+  "complete": true,
+  "etag_is_asserted_digest": false,
+  "expected_bytes": 342234089,
+  "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08430-9/MediaObjects/41586_2024_8430_MOESM5_ESM.zip",
+  "finished_at_utc": "2026-10-27T18:46:27.635480+00:00",
+  "headers": {
+    "accept-ranges": "bytes",
+    "content-length": "342234089",
+    "content-type": "application/octet-stream",
+    "date": "Tue, 27 Oct 2026 18:36:59 GMT",
+    "etag": "\"cd38d6f0835534f0227865fee990cb9c\"",
+    "last-modified": "Fri, 14 Feb 2025 10:46:05 GMT",
+    "server": "envoy"
+  },
+  "implementation_sha256": "133fd10a5fc2f807f6458131bb353c99f3c440128552de6684a3c6a43d81bb6c",
+  "method": "GET",
+  "new_member_payloads_read": false,
+  "protocol_sha256": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868",
+  "publisher_checksum_available": false,
+  "sha256": "aefb1974e9ebe5c196a89a00f4e868c0abaf69e3d3952e79c74bfb42f217f6a4",
+  "started_at_utc": "2026-10-27T18:36:59.204853+00:00",
+  "status": 200,
+  "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-08430-9/MediaObjects/41586_2024_8430_MOESM5_ESM.zip"
+}

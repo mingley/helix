@@ -1,0 +1,21 @@
+{
+  "protocol_sha256": "a0e3f521d1086fca0633fc4c473a3655aaf2fa9d4a4818b0429a735f46d42372",
+  "independent_recovery_manifest": {
+    "path": "/workspace/helix/runs/context-endpoint-recovery-independent/manifest.json",
+    "sha256": "006e87a0876a9a002788b4367a6a88655cda6eed2fe5d0b54c9c687cf899a1ab"
+  },
+  "original36_comparison": {
+    "path": "runs/context-endpoint-recovery-comparison-v3/comparison.json",
+    "sha256": "9bddcb8da47c27d8252157cf8894cf332f5087f6562e54e23eec6ede0dec095c"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "openpyxl": "3.1.5",
+    "et_xmlfile": "2.0.0",
+    "numpy": "2.3.5",
+    "recovery_protocol_sha256": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868",
+    "implementation_sha256": "7a15a57a7748b879735490e951aa3d62c0dfa856ca1d45a30a0ba31c8f014041",
+    "quantitative_source_downloads": "none; local checksum-bound inputs only"
+  },
+  "base3_medians": "Archived original full-source constants reused; no median estimation in this audit"
+}

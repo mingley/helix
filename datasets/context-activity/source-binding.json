@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "status": "bound_before_quantitative_inspection",
+  "semantic_binding_complete": true,
+  "bound_at_utc": "2026-10-27T18:49:43.916827+00:00",
+  "protocol_sha256": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868",
+  "source_workbook": {
+    "path": "datasets/context-endpoint-recovery/raw/jointdata.xlsx",
+    "bytes": 53557805,
+    "sha256": "9c95ca2b8df0ff3edc7dda4fdcf337f33e652b96a0833a70e786bbcdc2b76b4e"
+  },
+  "evidence": {
+    "header_receipt": {
+      "path": "research/context-endpoint-recovery/source/headers-before-values.json",
+      "sha256": "8b261f85a30261ad9475492653efd9e47ae65fe9b3d7b9472b5481376419c77f"
+    },
+    "replicate_label_metadata": {
+      "path": "research/context-endpoint-recovery/source/replicate-label-metadata.json",
+      "sha256": "7aeb7af4cdf71ec49b5638619cb512770b020492caa2e63b6dc3abf80471bc36"
+    },
+    "source_identity_receipt": {
+      "path": "research/context-endpoint-recovery/source/member-source-identities.json",
+      "sha256": "0117143e0c3c4a0dd8b7a8880d8cb5d7dc6eff0da704e429881952b7ab211610"
+    },
+    "archive_integrity_receipt": {
+      "path": "research/context-endpoint-recovery/source/archive-validation/verification.json",
+      "sha256": "67f32d0fafd71dc6cc010c7059ac22148b8a66b035b84b4d0f6ac7695f9d24e3"
+    },
+    "article_xml": {
+      "path": "research/context-provenance-round3/final-article.xml",
+      "sha256": "41a554f31ea67adb1ce983b05ed9194e8fa1596bd4e6d2208df1854de9f33320"
+    }
+  },
+  "roles": {
+    "activity_aggregate": {
+      "sheet": "all_cell_types_summary",
+      "id_header": "name",
+      "columns": {
+        "HepG2": "HepG2 [log2(rna/dna)]",
+        "K562": "K562 [log2(rna/dna)]",
+        "WTC11": "WTC11 [log2(rna/dna)]"
+      }
+    },
+    "replicates": {
+      "HepG2": {
+        "sheet": "HepG2_replicate_level",
+        "id_header": "name",
+        "replicate_header": "replicate",
+        "activity_header": "log2(rna/dna)",
+        "replicate_values": {
+          "1": "1",
+          "2": "2",
+          "3": "3"
+        }
+      },
+      "K562": {
+        "sheet": "K562_replicate_level",
+        "id_header": "name",
+        "replicate_header": "replicate",
+        "activity_header": "log2(rna/dna)",
+        "replicate_values": {
+          "1": "1",
+          "2": "2",
+          "3": "3"
+        }
+      },
+      "WTC11": {
+        "sheet": "WTC11_replicate_level",
+        "id_header": "name",
+        "replicate_header": "replicate",
+        "activity_header": "log2(rna/dna)",
+        "replicate_values": {
+          "1": "1",
+          "2": "2",
+          "3": "3"
+        }
+      }
+    },
+    "published_ess": {
+      "sheet": "all_cell_types_ESS",
+      "id_header": "name",
+      "columns": {
+        "HepG2": "ElementSpecificityScore_HepG2",
+        "K562": "ElementSpecificityScore_K562",
+        "WTC11": "ElementSpecificityScore_WTC11"
+      }
+    },
+    "summary_replicates": {
+      "HepG2": {
+        "sheet": "HepG2_summary_data",
+        "id_header": "name",
+        "replicate_columns": {
+          "1": "replicate 1 [log2(rna/dna)]",
+          "2": "replicate 2 [log2(rna/dna)]",
+          "3": "replicate 3 [log2(rna/dna)]"
+        },
+        "mean_header": "mean"
+      },
+      "K562": {
+        "sheet": "K562_summary_data",
+        "id_header": "name",
+        "replicate_columns": {
+          "1": "replicate 1 [log2(rna/dna)]",
+          "2": "replicate 2 [log2(rna/dna)]",
+          "3": "replicate 3 [log2(rna/dna)]"
+        },
+        "mean_header": "mean"
+      },
+      "WTC11": {
+        "sheet": "WTC11_summary_data",
+        "id_header": "name",
+        "replicate_columns": {
+          "1": "replicate 1 [log2(rna/dna)]",
+          "2": "replicate 2 [log2(rna/dna)]",
+          "3": "replicate 3 [log2(rna/dna)]"
+        },
+        "mean_header": "mean"
+      }
+    }
+  },
+  "tables": {
+    "all_cell_types_summary": {
+      "header_row": 1,
+      "id_column": "A",
+      "headers": {
+        "A": "name",
+        "B": "HepG2 [log2(rna/dna)]",
+        "C": "K562 [log2(rna/dna)]",
+        "D": "WTC11 [log2(rna/dna)]"
+      },
+      "value_columns": [
+        "B",
+        "C",
+        "D"
+      ],
+      "empirical_key_columns": [
+        "A"
+      ],
+      "role": "published_observed_log2_rna_dna_aggregate",
+      "unbound_first_row_columns_numeric_values_not_inspected": []
+    },
+    "all_cell_types_ESS": {
+      "header_row": 1,
+      "id_column": "A",
+      "headers": {
+        "A": "name",
+        "B": "type",
+        "C": "ElementSpecificityScore_HepG2",
+        "D": "ElementSpecificityScore_K562",
+        "E": "ElementSpecificityScore_WTC11"
+      },
+      "value_columns": [
+        "C",
+        "D",
+        "E"
+      ],
+      "empirical_key_columns": [
+        "A"
+      ],
+      "role": "published_element_specificity_scores_distinct_from_activity",
+      "unbound_first_row_columns_numeric_values_not_inspected": []
+    },
+    "HepG2_replicate_level": {
+      "header_row": 1,
+      "id_column": "B",
+      "headers": {
+        "A": "replicate",
+        "B": "name",
+        "C": "normalized_dna_count",
+        "D": "normalized_rna_count",
+        "E": "rna/dna ratio",
+        "F": "log2(rna/dna)",
+        "G": "num_observed_barcodes"
+      },
+      "value_columns": [
+        "A",
+        "F"
+      ],
+      "empirical_key_columns": [
+        "B",
+        "A"
+      ],
+      "role": "published_observed_replicate_log2_rna_dna_longform",
+      "unbound_first_row_columns_numeric_values_not_inspected": [
+        "H",
+        "I",
+        "J",
+        "K"
+      ]
+    },
+    "HepG2_summary_data": {
+      "header_row": 1,
+      "id_column": "A",
+      "headers": {
+        "A": "name",
+        "B": "replicate 1 [log2(rna/dna)]",
+        "C": "replicate 2 [log2(rna/dna)]",
+        "D": "replicate 3 [log2(rna/dna)]",
+        "E": "mean"
+      },
+      "value_columns": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "empirical_key_columns": [
+        "A"
+      ],
+      "role": "published_summary_replicate_fields_and_mean_retained_separately",
+      "unbound_first_row_columns_numeric_values_not_inspected": []
+    },
+    "K562_replicate_level": {
+      "header_row": 1,
+      "id_column": "B",
+      "headers": {
+        "A": "replicate",
+        "B": "name",
+        "C": "normalized_dna_count",
+        "D": "normalized_rna_count",
+        "E": "rna/dna ratio",
+        "F": "log2(rna/dna)",
+        "G": "num_observed_barcodes"
+      },
+      "value_columns": [
+        "A",
+        "F"
+      ],
+      "empirical_key_columns": [
+        "B",
+        "A"
+      ],
+      "role": "published_observed_replicate_log2_rna_dna_longform",
+      "unbound_first_row_columns_numeric_values_not_inspected": []
+    },
+    "K562_summary_data": {
+      "header_row": 1,
+      "id_column": "A",
+      "headers": {
+        "A": "name",
+        "B": "replicate 1 [log2(rna/dna)]",
+        "C": "replicate 2 [log2(rna/dna)]",
+        "D": "replicate 3 [log2(rna/dna)]",
+        "E": "mean"
+      },
+      "value_columns": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "empirical_key_columns": [
+        "A"
+      ],
+      "role": "published_summary_replicate_fields_and_mean_retained_separately",
+      "unbound_first_row_columns_numeric_values_not_inspected": []
+    },
+    "WTC11_replicate_level": {
+      "header_row": 1,
+      "id_column": "B",
+      "headers": {
+        "A": "replicate",
+        "B": "name",
+        "C": "normalized_dna_count",
+        "D": "normalized_rna_count",
+        "E": "rna/dna ratio",
+        "F": "log2(rna/dna)",
+        "G": "num_observed_barcodes"
+      },
+      "value_columns": [
+        "A",
+        "F"
+      ],
+      "empirical_key_columns": [
+        "B",
+        "A"
+      ],
+      "role": "published_observed_replicate_log2_rna_dna_longform",
+      "unbound_first_row_columns_numeric_values_not_inspected": []
+    },
+    "WTC11_summary_data": {
+      "header_row": 1,
+      "id_column": "A",
+      "headers": {
+        "A": "name",
+        "B": "replicate 1 [log2(rna/dna)]",
+        "C": "replicate 2 [log2(rna/dna)]",
+        "D": "replicate 3 [log2(rna/dna)]",
+        "E": "mean"
+      },
+      "value_columns": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "empirical_key_columns": [
+        "A"
+      ],
+      "role": "published_summary_replicate_fields_and_mean_retained_separately",
+      "unbound_first_row_columns_numeric_values_not_inspected": []
+    }
+  },
+  "source_semantics": {
+    "source_role": "Original published joint-library observed log2(RNA/DNA) activity/replicates and a separately labeled published ESS table. No prediction fields selected.",
+    "activity_unit": "Source log2(RNA/DNA), library/cell/assay-relative; not absolute transcription or endogenous effect.",
+    "article_normalization": "Article Methods describe per-replicate median activity normalization followed by averaging three replicates to combine observations. Header roles establish measurands, not exact implementation history.",
+    "primary_aggregate_choice": "The explicitly labeled all-cell summary activity table is the prespecified published aggregate route. Per-cell summary mean columns are retained separately, not selected by numerical agreement.",
+    "primary_replicate_choice": "Use explicitly named replicate_level log2(rna/dna) observed fields for the primary three-replicate routes. Per-cell summary replicate columns remain distinct; no rounding/precision or agreement-based substitution.",
+    "replicate_normalization_status": "Whether replicate_level values already have the article median centering is not asserted from headers; the frozen arithmetic routes examine provided and explicitly centered values.",
+    "ESS_definition": "Article Par57: per-cell z-score of activity, subtract each element mean across three cells. This labels a different endpoint; arithmetic agreement and exact convention remain unverified until the frozen audit.",
+    "experimental_unit": "Three infections within one common library/source study, not independent studies.",
+    "compact_export_exclusions": "Count, ratio, barcode and type/category columns remain in the byte-exact raw source but are not part of this compact activity/ESS export. No additional filtering performed. HepG2 replicate sheet has unbound numeric first-row cells H:K, redacted and not interpreted.",
+    "numerical_formulas_or_source_equivalence_verified_yet": false
+  },
+  "earlier_source_identity": {
+    "table10_design_byte_identical_old_s7": true,
+    "table12_folds_byte_identical_old_s9": true,
+    "table12_retained_path": "datasets/context-panel/raw/Table-S9-folds-performance.xlsx",
+    "table12_sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+    "table12_observed_sheet": "Fold assignment, joint library",
+    "table12_id_header": "Sequence ID",
+    "table12_cell_ess_headers": {
+      "HepG2": "HepG2, Element Specificity Score",
+      "K562": "K562, Element Specificity Score",
+      "WTC11": "WTC11, Element Specificity Score"
+    }
+  },
+  "exposure_boundary": {
+    "new_activity_ESS_or_summary_values_inspected_before_binding": false,
+    "inspected_before_binding": "Exact workbook text headers and replicate-label metadata only. Numeric first-row cells redacted. Archive ZIP metadata/CRC/full hashes and unchanged earlier-workbook byte identity were checked.",
+    "prior_old_ESS_exposure_disclosed": true
+  },
+  "no_arithmetic_or_fit_at_binding": true
+}

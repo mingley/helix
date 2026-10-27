@@ -1,5 +1,14 @@
 # Published specificity columns: source arithmetic and semantic limits
 
+> Subsequent source recovery: the official final Table 11 activity/ESS workbook
+> is now retained. Its ESS values, standardized over the exact Table 12 ID set,
+> reproduce every old S9/model-table value. Upstream activity-to-ESS processing
+> remains unresolved after 36 original and six separate post-hoc routes.
+> See [endpoint recovery](context-endpoint-recovery.md) and the distinct
+> [published-activity benchmark](context-activity-study.md). The original v2
+> scores, losses, frozen source-formula rule and published snapshot are unchanged.
+
+
 The frozen source columns are numerically well defined, but their relationship
 to the paper's stated ESS formula remains **unresolved**. They do not obey the
 expected unweighted zero-sum identity. They instead occupy a positive-weighted

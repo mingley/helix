@@ -10,5 +10,5 @@ fi
 "$HELIX_TOOLS_DIR/research-venv/bin/python" -m pip install \
   --disable-pip-version-check --require-hashes -r requirements/research.lock
 "$HELIX_TOOLS_DIR/research-venv/bin/python" -c \
-  'import sys,numpy,scipy,matplotlib; print("Research Python:",sys.version.split()[0]); print("NumPy",numpy.__version__,"SciPy",scipy.__version__,"Matplotlib",matplotlib.__version__)'
+  'import sys,numpy,scipy,matplotlib,openpyxl; print("Research Python:",sys.version.split()[0]); print("NumPy",numpy.__version__,"SciPy",scipy.__version__,"Matplotlib",matplotlib.__version__,"openpyxl",openpyxl.__version__)'
 printf '%s\n' 'Activate with: source scripts/research-env.sh'
