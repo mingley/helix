@@ -1,0 +1,161 @@
+{
+  "absolute_tolerance": 1e-10,
+  "analysis_classification": "exploratory_after_v1_source_failure",
+  "checks": [
+    {
+      "matched": true,
+      "name": "associations_equal_observation_weight"
+    },
+    {
+      "matched": true,
+      "name": "component_count"
+    },
+    {
+      "matched": true,
+      "name": "contexts"
+    },
+    {
+      "matched": true,
+      "name": "gc_diagnostics_descriptive_only"
+    },
+    {
+      "matched": true,
+      "name": "limits"
+    },
+    {
+      "matched": true,
+      "name": "loci"
+    },
+    {
+      "matched": true,
+      "name": "model_order"
+    },
+    {
+      "matched": true,
+      "name": "observed"
+    },
+    {
+      "matched": true,
+      "name": "per_component"
+    },
+    {
+      "matched": true,
+      "name": "per_variant"
+    },
+    {
+      "matched": true,
+      "name": "primary"
+    },
+    {
+      "matched": true,
+      "name": "resampling"
+    },
+    {
+      "matched": true,
+      "name": "schema_version"
+    },
+    {
+      "matched": true,
+      "name": "variant_count"
+    },
+    {
+      "matched": true,
+      "name": "variant_order"
+    },
+    {
+      "matched": true,
+      "name": "normalized_handoff"
+    },
+    {
+      "matched": true,
+      "name": "original_source_features_and_fixed_predictions"
+    }
+  ],
+  "component_partition_authenticated_not_independently_reconstructed": true,
+  "failure_count": 0,
+  "failures": [],
+  "full_protocol_independent_reproduction_claimed": false,
+  "independent_manifest": {
+    "bytes": 2374,
+    "sha256": "5e6ac31bad6e4edf98eee9a21b22df5b731713ca34209730dd8f9015f49648fe"
+  },
+  "matched": true,
+  "max_absolute_numeric_error": 8.881784197001252e-16,
+  "normalized_handoff_comparison": {
+    "absolute_tolerance": 1e-10,
+    "checks": [
+      {
+        "matched": true,
+        "name": "variants"
+      }
+    ],
+    "failure_count": 0,
+    "failures": [],
+    "matched": true,
+    "max_absolute_numeric_error": 2.7755575615628914e-17,
+    "numeric_cells_compared": 12918,
+    "observed_float_bits_and_integer_indices_exact": true
+  },
+  "numeric_cells_compared": 209488,
+  "observed_float_bits_and_integer_indices_exact": true,
+  "primary_manifest": {
+    "bytes": 1391,
+    "sha256": "3b1346e0a6c051e6ff53892bd0d0d4db1e7430fc7082ccb347685db9cd549493"
+  },
+  "protocol_id": "variant-transfer-v2",
+  "protocol_sha256": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c",
+  "raw_source_and_fixed_prediction_comparison": {
+    "absolute_tolerance": 1e-10,
+    "checks": [
+      {
+        "matched": true,
+        "name": "all_original_S2_DNA_metadata_source_float_bits_and_complete_cases"
+      },
+      {
+        "matched": true,
+        "name": "I_frozen_model_feature_contract"
+      },
+      {
+        "matched": true,
+        "name": "I_all_integer_numerators_DNA_hashes_folds_and_ensembles"
+      },
+      {
+        "matched": true,
+        "name": "S_frozen_model_feature_contract"
+      },
+      {
+        "matched": true,
+        "name": "S_all_integer_numerators_DNA_hashes_folds_and_ensembles"
+      }
+    ],
+    "component_partition_authenticated_not_independently_reconstructed": true,
+    "exact_integer_feature_numerators_compared": 852588,
+    "failure_count": 0,
+    "failures": [],
+    "fixed_prediction_numbers_compared": 51672,
+    "full_protocol_independent_reproduction_claimed": false,
+    "matched": true,
+    "maximum_absolute_prediction_error": 2.7755575615628914e-17,
+    "parent_manifests": {
+      "independent": {
+        "bytes": 2374,
+        "sha256": "5e6ac31bad6e4edf98eee9a21b22df5b731713ca34209730dd8f9015f49648fe"
+      },
+      "prediction_I": {
+        "bytes": 807,
+        "sha256": "11779b2b575386712b1f74d288546018656062b3f043579603028e8ca9a35b37"
+      },
+      "prediction_S": {
+        "bytes": 807,
+        "sha256": "25287b6f5e39571a23b66d92f0785ef609fd887bfdaa1ad3ec0d57800286b51a"
+      },
+      "primary_observations": {
+        "bytes": 1703,
+        "sha256": "a4594f7c9fbd9c538db735383fbf5fc4ff0286e40428a4bef906428f7ecd663b"
+      }
+    },
+    "protocol_id": "variant-transfer-v2",
+    "protocol_sha256": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c",
+    "source_float_bits_exact_comparisons": 4344
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "analysis_classification": "exploratory_after_v1_source_failure",
+  "binding_sha256": "a54badc4645d7ac88c31b7722fbbd89aaefa2b995bc0a02befd15123d83d4fba",
+  "bulk_remaining_effect_parsing_started": false,
+  "frozen_at_utc": "2026-10-27T23:02:46.255033+00:00",
+  "independent_decoding_scope": "Openpyxl may instantiate nonselected worksheet values internally. The selected-cell ledger is not a bound on all internal numeric conversion. No outcome-naive validation claim.",
+  "interpretation": "This receipt supplements protocol exposure metadata; it changes no protocol, source, cohort, missingness rule, model, metric, resampling or tolerance.",
+  "protocol_id": "variant-transfer-v2",
+  "protocol_sha256": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c",
+  "schema_version": 1,
+  "v1_bootstrap_computed": false,
+  "v1_comparison_matched": true,
+  "v1_comparison_sha256": "a13b8ea6aaf77a473ee50898e0d35031324af5bba6932a9a554d5ab013fc38fc",
+  "v1_fully_decoded_paired_variants_before_failure_per_implementation": 120,
+  "v1_independent_fixed_predictions_computed": true,
+  "v1_independent_fixed_predictions_sha256": "b6552fd7e5fa633c65188f8faeefe31c4105e211dec2113c184fd8a4ae27ceeb",
+  "v1_independent_selected_effect_cell_ledger_entries": 241,
+  "v1_independent_selected_numeric_cells_before_failure": 240,
+  "v1_predictive_performance_evaluated": false,
+  "v1_primary_predictions_computed": false,
+  "v1_primary_selected_effect_cell_ledger_entries": 241,
+  "v1_primary_selected_numeric_cells_before_failure": 240
+}

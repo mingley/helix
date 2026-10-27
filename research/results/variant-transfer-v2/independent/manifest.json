@@ -1,0 +1,68 @@
+{
+  "analysis_classification": "exploratory_after_v1_source_failure",
+  "files": {
+    "binding.json": {
+      "bytes": 6614,
+      "sha256": "a54badc4645d7ac88c31b7722fbbd89aaefa2b995bc0a02befd15123d83d4fba"
+    },
+    "evaluation.json.gz": {
+      "bytes": 2973097,
+      "sha256": "67b940ce4a206fcf8f61c6849d8c645804ac1a2aab026b4d840909669b8a6a50"
+    },
+    "fixed-predictions.json.gz": {
+      "bytes": 353893,
+      "sha256": "b6552fd7e5fa633c65188f8faeefe31c4105e211dec2113c184fd8a4ae27ceeb"
+    },
+    "implementation.py": {
+      "bytes": 52495,
+      "sha256": "4a2cd82c0a000a6b86493e6859d24eba5f8525ecf8e59752975e84a5f9bb3fc2"
+    },
+    "independent-normalized.json.gz": {
+      "bytes": 152772,
+      "sha256": "097689a02cd041cdb0788a7c7ab984cfebee395825c4f0e4c099e8ec93a5f12d"
+    },
+    "inputs.json": {
+      "bytes": 5810,
+      "sha256": "b796c319723186d3e9b8034bafbd7bde843fd2fdb39c48473be5c9fdde6828ce"
+    },
+    "metadata-cohort.json.gz": {
+      "bytes": 205636,
+      "sha256": "791f0b1b6c374b22ea5e21022b543928bba996250fe3a70e3c5c3338dcaf1369"
+    },
+    "protocol.json": {
+      "bytes": 26803,
+      "sha256": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c"
+    },
+    "second-freeze-exposure.json": {
+      "bytes": 1538,
+      "sha256": "c7ea409a90bd5911220cdf528ee2352cc2e38250f8af726fcf9931f9366cdc93"
+    },
+    "source-DNA.json.gz": {
+      "bytes": 343028,
+      "sha256": "61d1d83082492cc5c255356585a36825e0e77d4fe395fff9b557da30c9be0293"
+    },
+    "source-cell-type-ledger.json.gz": {
+      "bytes": 125586,
+      "sha256": "b2480e615637aa89aa8e3704d242992c150a3cba543b2e1fac0c3786ba1306d6"
+    },
+    "source-missingness.json.gz": {
+      "bytes": 962,
+      "sha256": "f4bccf98b2459d33a7be073bad70e7de4d086203f44fb8af561211964b37ccba"
+    },
+    "source-observations.json.gz": {
+      "bytes": 112196,
+      "sha256": "afc07dcaec4c28ddf5cf896c98cc29f9ab754c3167f2990228e1c21374c53705"
+    },
+    "status.json": {
+      "bytes": 649,
+      "sha256": "73cbdd337fee2b3e34bb3a6121aed6e184e4997b8043c0c8595d701b9bb5ce49"
+    },
+    "summary.json": {
+      "bytes": 3432823,
+      "sha256": "ed9e783130699163f2cb226d79508e9bcac702dd9d8c89ac496df4d7e35c2150"
+    }
+  },
+  "protocol_id": "variant-transfer-v2",
+  "protocol_sha256": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c",
+  "schema_version": 1
+}

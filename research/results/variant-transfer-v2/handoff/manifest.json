@@ -1,0 +1,9 @@
+{
+  "files": {
+    "implementation.py": "b5a0547c5ef7b8d52406a1ea77ff494a833ac1f13da198cc9aeb54aa528fa68f",
+    "normalized-input.json": "38abbdf81820fafba4de37a896ccac39e67ae861b5efc1d5678cd6ce05cedfc9",
+    "pins.json": "414688a974df1c1cff31265f78012728153ec89c68f1246f886849e4396373d9"
+  },
+  "schema_version": 1,
+  "source_observation_manifest_sha256": "a4594f7c9fbd9c538db735383fbf5fc4ff0286e40428a4bef906428f7ecd663b"
+}

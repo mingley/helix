@@ -1,6 +1,22 @@
 # Research milestones
 
-## Current: published activity prediction and source recovery
+## Current: exact mutation limits and exploratory external transfer
+
+The [mutation analysis](../research/variant-locality-study.md) identifies 745,052
+feature-equivalent edit opportunities across the fixed panel. Twenty-one further
+Lean theorems prove local SNV effects and zero ideal predicted interaction for
+substitutions separated by at least three positions.
+
+The [external test](../research/variant-transfer-v2-study.md) retains a negative
+result on 2,153 SNVs in 172 untouched components: the fixed model shows no
+observed macro-MSE advantage over zero effect. All 17 independent numerical
+categories pass; global grouping separately passes 4,689 checks. V1 failed its
+strict NA-token gate, and v2 is explicitly exploratory with operational numeric
+complete cases. Neither that source failure nor earlier negative studies is
+rewritten. The next [goal](../research/GOAL.md) tests predicted zero epistasis
+using source-compatible four-construct measurements and replicate uncertainty.
+
+## Completed: published activity prediction and source recovery
 
 The **17-crate workspace** predicts unchanged published log2(RNA/DNA) activity
 on 55,276 reference-valid fragments in three measured cells. Fixed shared DNA

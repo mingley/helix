@@ -1,0 +1,22 @@
+{
+  "files": {
+    "binding.json": "a54badc4645d7ac88c31b7722fbbd89aaefa2b995bc0a02befd15123d83d4fba",
+    "evaluation.json.gz": "ee04d034a84d29315f176c4b3adaa5216fb48509e92c8ebe8e03e699beec2bb4",
+    "implementation.py": "ac98e36ead95211cf6ce08531e3c0f3e55d149973204cbc88d7f830b04de4b43",
+    "normalized-input.json": "38abbdf81820fafba4de37a896ccac39e67ae861b5efc1d5678cd6ce05cedfc9",
+    "pins.json": "414688a974df1c1cff31265f78012728153ec89c68f1246f886849e4396373d9",
+    "protocol.json": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c",
+    "summary.json": "2edbdaf24b837707382751845cd61315d14cd204203fad088a9e10c7a3bf72ad"
+  },
+  "input_pins": {
+    "binding_sha256": "a54badc4645d7ac88c31b7722fbbd89aaefa2b995bc0a02befd15123d83d4fba",
+    "input_sha256": "38abbdf81820fafba4de37a896ccac39e67ae861b5efc1d5678cd6ce05cedfc9",
+    "prediction_I_manifest_sha256": "11779b2b575386712b1f74d288546018656062b3f043579603028e8ca9a35b37",
+    "prediction_I_sha256": "b8e0efdf1bc02cc669910bfddf6e2737a6c5b45832e9cc90ce6c05e6699c9580",
+    "prediction_S_manifest_sha256": "25287b6f5e39571a23b66d92f0785ef609fd887bfdaa1ad3ec0d57800286b51a",
+    "prediction_S_sha256": "463fcdabb492757ba183a448f4f5664d5bc3715e1da069c07aba62253454ef80",
+    "protocol_sha256": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c",
+    "schema_version": 1
+  },
+  "schema_version": 1
+}

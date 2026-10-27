@@ -1,0 +1,46 @@
+{
+  "binding_sha256": "a54badc4645d7ac88c31b7722fbbd89aaefa2b995bc0a02befd15123d83d4fba",
+  "cohort_sha256": "4d1fd2725ee0ed2952cf95cefa555ba4418c1338bdcd047a34d849d0b95ddc8b",
+  "files": {
+    "binding.json": {
+      "bytes": 6614,
+      "sha256": "a54badc4645d7ac88c31b7722fbbd89aaefa2b995bc0a02befd15123d83d4fba"
+    },
+    "completecasepairs.json": {
+      "bytes": 2379401,
+      "sha256": "acbebdad1c00ea9cb3916750f5b4ad4b3b2ff44d552dc83112ad5187f2d99dff"
+    },
+    "implementation.py": {
+      "bytes": 24727,
+      "sha256": "707e845bab758ee164318569f2bba9e661eb617f0176997b47a4dbb2e7c7c2f9"
+    },
+    "missingness.jsonl.gz": {
+      "bytes": 1245,
+      "sha256": "ca76e74bca0a17c49fe35c5d397ab49c905f542a9d4c6429ac76d181aeee3931"
+    },
+    "observations.json.gz": {
+      "bytes": 309369,
+      "sha256": "6b42bf0781f22d18460f9d8968c2ee1eb313a174b944ac79a85b085f7d9ae298"
+    },
+    "protocol.json": {
+      "bytes": 26803,
+      "sha256": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c"
+    },
+    "source-IDs.jsonl.gz": {
+      "bytes": 2427029,
+      "sha256": "050533865197c4ebda8f8bc52bb8f8cb759d460ee56e6611c97e97563eff3895"
+    },
+    "source-type-float-ledger.jsonl.gz": {
+      "bytes": 159058,
+      "sha256": "f1ba9e7c380ee68c64856e61e271d3b43c333247262f2ffa806cde2d63c94af2"
+    },
+    "summary.json": {
+      "bytes": 5933,
+      "sha256": "d5380cb5dba643d80a0f813783511f79212fff6f60541987b84f2cc8e76c64f0"
+    }
+  },
+  "protocol_id": "variant-transfer-v2",
+  "protocol_sha256": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c",
+  "schema_version": 1,
+  "source_sha256": "723c4a0e1cfdb2c9c6ae55b3fa9206855dd95e0241319b9fc8d0831d3b42f9c2"
+}

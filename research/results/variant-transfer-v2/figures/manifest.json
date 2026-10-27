@@ -1,0 +1,57 @@
+{
+  "analysis_classification": "exploratory_after_v1_source_failure",
+  "components": 172,
+  "dependency_lock_sha256": "f2efb9267afd0846c87f557d815370f7510a133ae9129b458889c2c6204ccd57",
+  "filtering": "None after producer complete-case selection; every admitted variant and component retained.",
+  "matplotlib_version": "3.10.8",
+  "outputs": {
+    "01-model-transfer.png": {
+      "bytes": 143112,
+      "sha256": "3ae53f7458b8420e9f42756fbe9a3be42f54613d25930cc390be6827d9dc7987"
+    },
+    "01-model-transfer.svg": {
+      "bytes": 87623,
+      "sha256": "84e97e6cc3f11565731589d7170e2e08de23d97c69d72dcf9c1d92a75280f958"
+    },
+    "02-all-variant-effects.png": {
+      "bytes": 214890,
+      "sha256": "350a92e1bc3412f533cb960624b198df4f6dc2a011ba3477512072eeedf6c00f"
+    },
+    "02-all-variant-effects.svg": {
+      "bytes": 130491,
+      "sha256": "5fd2e128120e7cd6832b443b2b380e0f8e92f737603e4b0232ad4d5074a7ef30"
+    },
+    "all-components.csv": {
+      "bytes": 175480,
+      "sha256": "70864df728b082ad40ea72869058d9e912c7b74b76f3032e8471799c17631d0a"
+    },
+    "all-variants.csv": {
+      "bytes": 1282528,
+      "sha256": "0cd567c0caa84f811732d082c9dbdca040ba8250d17408bf27bac867c9d234bf"
+    },
+    "macro-model-errors.csv": {
+      "bytes": 110,
+      "sha256": "2aefea8fa6927ec1a122e6fc081d92605e4a574b633c73e3a6f153a9671b3542"
+    }
+  },
+  "plot_script_sha256": "d2f6395a4fc84aae6ba6b8e3f6d40ecc899f5fa260c9cfad1be7413fdcefd417",
+  "producer_files": {
+    "binding.json": "a54badc4645d7ac88c31b7722fbbd89aaefa2b995bc0a02befd15123d83d4fba",
+    "evaluation.json.gz": "ee04d034a84d29315f176c4b3adaa5216fb48509e92c8ebe8e03e699beec2bb4",
+    "implementation.py": "ac98e36ead95211cf6ce08531e3c0f3e55d149973204cbc88d7f830b04de4b43",
+    "normalized-input.json": "38abbdf81820fafba4de37a896ccac39e67ae861b5efc1d5678cd6ce05cedfc9",
+    "pins.json": "414688a974df1c1cff31265f78012728153ec89c68f1246f886849e4396373d9",
+    "protocol.json": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c",
+    "summary.json": "2edbdaf24b837707382751845cd61315d14cd204203fad088a9e10c7a3bf72ad"
+  },
+  "producer_manifest_sha256": "3b1346e0a6c051e6ff53892bd0d0d4db1e7430fc7082ccb347685db9cd549493",
+  "protocol_id": "variant-transfer-v2",
+  "protocol_sha256": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c",
+  "scatter_axes_full_range": [
+    -6.023399407058086,
+    7.956063561959977
+  ],
+  "scatter_points_per_panel": 2153,
+  "schema_version": 1,
+  "variants": 2153
+}

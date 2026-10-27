@@ -1,0 +1,102 @@
+{
+  "analysis_status": "exploratory_after_v1_missingness_failure",
+  "archive_integrity": {
+    "all_member_crc_checked": true,
+    "members": 10,
+    "uncompressed_bytes": 1078863882
+  },
+  "binding_sha256": "a54badc4645d7ac88c31b7722fbbd89aaefa2b995bc0a02befd15123d83d4fba",
+  "cohort_sha256": "4d1fd2725ee0ed2952cf95cefa555ba4418c1338bdcd047a34d849d0b95ddc8b",
+  "complete_case_components": 172,
+  "complete_case_variants": 2153,
+  "exposure": {
+    "independent_reader_scope": "The independent v1 reader may have internally decoded nonselected worksheet values as part of XLSX row iteration; exposure is not certified to be limited to the primary240 selected numeric cells.",
+    "independent_retained_fixed_predictions": {
+      "interpretation": "A fixed-predictor artifact exists from the independent v1 attempt. It must not be described as no predictions having existed. No new-outcome fitting or target-performance result is established by this artifact.",
+      "path": "history/independent-v1/fixed-predictions.json.gz",
+      "sha256": "b6552fd7e5fa633c65188f8faeefe31c4105e211dec2113c184fd8a4ae27ceeb"
+    },
+    "primary_first_blocking_cell": {
+      "context": "K562",
+      "coordinate": "AO42972",
+      "literal_text": "NA",
+      "variant_id": "chr12:72652619:A:G",
+      "xml_type": "s"
+    },
+    "primary_selected_effect_cell_ledger_entries": 241,
+    "primary_selected_numeric_cells_before_failure": 240,
+    "primary_status": "Strict import failed before primary prediction/evaluation. No new model fitting, calibration or observed-target performance result was computed.",
+    "registration": "No outcome-naive validation or external-preregistration claim. Repository commit freezing v2 must precede bulk remaining effect parsing.",
+    "source_experiment": "Separate Siraj experimental study; the analysis is now explicitly outcome-exposed and exploratory.",
+    "v1_exact_binding_commit": "a21fd6f",
+    "v1_exact_binding_sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79",
+    "v1_failure_observed": true,
+    "v1_semantic_protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+    "v2_preparation": "No new S4 effect value was read during this metadata/protocol preparation."
+  },
+  "inventory": {
+    "metadata_selected_IDs": 2172,
+    "physical_rows": 304280,
+    "source_unique_IDs": 304278
+  },
+  "limits": "Literal published allelic-effect cells only; complete-case rule changes no metadata eligibility or grouping.",
+  "metadata_eligible_variants": 2172,
+  "minimum_support_gate_passed": true,
+  "missing_cells": 20,
+  "missing_cells_by_component": {
+    "1d9772941c0c123e3627d683f221402439f6f258a7c444e1f94a25f47158860a": 1,
+    "21fa95a64287f2cfa2503b402b1e6627408d026d1f787c34d979b4a3a086dc0a": 1,
+    "30ca52594408c360a45f3c8ccde5f173a1814251e3cc70164762aae2fefb4dfd": 1,
+    "3fc4cb09ea29ddba1cc5e3f7f116cc7177b57548b5ec21eaf1a77db279821e8f": 2,
+    "40379deb96792cc93190bd0ad5d0bf82f5a26d25978e5a88e0981b99731ef96c": 1,
+    "48cb3eebdbee8856543d74c017069cd5d1de0c792840e35bc44066e9e74a0e31": 3,
+    "4f8e614bce728fa641b8f3ad8bf4272340a48b629fbaf3c4a5d9759c7e9c3cbc": 1,
+    "579ef0eba4e9a465b133623b58f6c9be8538d08c2de7bbaa037c78e7b3b89523": 1,
+    "74451ff6f855b193fa77ccf3474a729294b28caa30681baba3b54b0f667e71f1": 1,
+    "8ca9a577b189eef88ce5c9bb298c9c6e42a24e0fb49e4d65674d27c7d0b844af": 1,
+    "a7b18c5b48fa0847285e22d9b2b29c04bbb5f5e5ed0d56ac2046ad60689fe375": 1,
+    "a7f5505898f435abcaa8df782afdf4ab82c60c35eea0ed49753a535b49104f31": 1,
+    "a9352a98be1c0abdf37d6de50f4ff8419556966e7197e10142b02de2d5668164": 1,
+    "ce10f75aa3f019ea9375cec39a8ae737990190da5dc2ef5ccb720d40ea1e3c75": 1,
+    "f84880732bb58977da9e3d830bfbce7b709eb1cc66e501257f7ffcbde5abff2b": 1,
+    "fa45c45602bf705cd44712d3d1e733d055031245be17e39b9a9dc8c16621f6d8": 2
+  },
+  "missing_cells_by_context": {
+    "HepG2": 7,
+    "K562": 13
+  },
+  "missing_variants": 19,
+  "model_artifacts_sha256": "2ea476bc5413dc13486dec9f3d7e9162a50a0e47f1d83ce29efabc5f5cc5af9d",
+  "models_fitted": false,
+  "operational_missingness": {
+    "interpretation": "literal_unreported_unknown_reason",
+    "rule": "exclude_variant_unless_both_contexts_ordinary_finite_numeric",
+    "source_semantics_established": false
+  },
+  "predictions_computed": false,
+  "protocol_id": "variant-transfer-v2",
+  "protocol_sha256": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c",
+  "schema_version": 1,
+  "source_bytes": 224405074,
+  "source_cohort_gate": {
+    "S4_ID_membership_verified": true,
+    "analysis_classification": "exploratory_after_v1_source_failure",
+    "independent_grouping": {
+      "checks_passed": 4689,
+      "comparison_path": "research/variant-transfer/independent-grouping-v1/comparison-v1/comparison.json",
+      "comparison_sha256": "93f2b9d82c5b45d9dbb6344a350e48f24ac99ad0ce496d8993b813fb8d1faa60",
+      "failed_checks": [],
+      "independent_manifest_sha256": "e25231628756da32f961f6553999a58132353b9e223e6e3df7f467f817ede33b",
+      "new_numeric_outcome_access": false,
+      "primary_manifest_sha256": "c276cb6e2fc06e4318c3029d83e497f769792fa14029d55f7e3e59ed8bd6b5a2",
+      "scope": "Full outcome-free new-component and prior-exposure reconstruction. Excluded-component witness catalogs need not enumerate every old hit; exact component reason classes are compared. S30 technical-control flags retained separately until source-cohort binding.",
+      "status": "matched"
+    },
+    "numeric_effect_type_coverage_status": "v1_strict_import_failed_at_literal_NA; v2_complete_case_coverage_pending",
+    "passed": true,
+    "scope": "same frozen metadata cohort with explicit exploratory operational NA exclusion; final complete-case source gate remains untested",
+    "whole_component_S30_exclusion": true
+  },
+  "source_observation_gate_passed": true,
+  "source_sha256": "723c4a0e1cfdb2c9c6ae55b3fa9206855dd95e0241319b9fc8d0831d3b42f9c2"
+}

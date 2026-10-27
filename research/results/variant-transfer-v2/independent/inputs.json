@@ -1,0 +1,97 @@
+{
+  "S2": {
+    "bytes": 40795798,
+    "exposure": "S2 DNA, exact schema, reference/chain validation and complete source-exclusion inventory were already exposed and frozen under v1 before the strict import attempt. Source bytes remain identical.",
+    "header_row_1based": 2,
+    "headers": [
+      "Variant",
+      "Allele 1 Oligo",
+      "Allele 2 Oligo"
+    ],
+    "name": "Supplementary Table 2, Variant oligo sequences",
+    "reported_data_rows": 365762,
+    "sha256": "4b6e20d1789021ee8f11f57af366a65680d25496de9351a9e781e9424716d824",
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM4_ESM.xlsx",
+    "worksheet": "S2.Variant Oligo Seqs"
+  },
+  "S4": {
+    "bytes": 224405074,
+    "path": "/workspace/.tools/variant-transfer-v1/S4.xlsx",
+    "sha256": "723c4a0e1cfdb2c9c6ae55b3fa9206855dd95e0241319b9fc8d0831d3b42f9c2"
+  },
+  "analysis_classification": "exploratory_after_v1_source_failure",
+  "binding_sha256": "a54badc4645d7ac88c31b7722fbbd89aaefa2b995bc0a02befd15123d83d4fba",
+  "cohort_sha256": "4d1fd2725ee0ed2952cf95cefa555ba4418c1338bdcd047a34d849d0b95ddc8b",
+  "component_partition_authenticated_not_independently_reconstructed": true,
+  "exposure": {
+    "independent_reader_scope": "The independent v1 reader may have internally decoded nonselected worksheet values as part of XLSX row iteration; exposure is not certified to be limited to the primary240 selected numeric cells.",
+    "independent_retained_fixed_predictions": {
+      "interpretation": "A fixed-predictor artifact exists from the independent v1 attempt. It must not be described as no predictions having existed. No new-outcome fitting or target-performance result is established by this artifact.",
+      "path": "history/independent-v1/fixed-predictions.json.gz",
+      "sha256": "b6552fd7e5fa633c65188f8faeefe31c4105e211dec2113c184fd8a4ae27ceeb"
+    },
+    "primary_first_blocking_cell": {
+      "context": "K562",
+      "coordinate": "AO42972",
+      "literal_text": "NA",
+      "variant_id": "chr12:72652619:A:G",
+      "xml_type": "s"
+    },
+    "primary_selected_effect_cell_ledger_entries": 241,
+    "primary_selected_numeric_cells_before_failure": 240,
+    "primary_status": "Strict import failed before primary prediction/evaluation. No new model fitting, calibration or observed-target performance result was computed.",
+    "registration": "No outcome-naive validation or external-preregistration claim. Repository commit freezing v2 must precede bulk remaining effect parsing.",
+    "source_experiment": "Separate Siraj experimental study; the analysis is now explicitly outcome-exposed and exploratory.",
+    "v1_exact_binding_commit": "a21fd6f",
+    "v1_exact_binding_sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79",
+    "v1_failure_observed": true,
+    "v1_semantic_protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+    "v2_preparation": "No new S4 effect value was read during this metadata/protocol preparation."
+  },
+  "frozen_model_artifacts_sha256": "2ea476bc5413dc13486dec9f3d7e9162a50a0e47f1d83ce29efabc5f5cc5af9d",
+  "implementation_sha256": "4a2cd82c0a000a6b86493e6859d24eba5f8525ecf8e59752975e84a5f9bb3fc2",
+  "missing_policy": {
+    "allowed_tokens": [
+      "NA"
+    ],
+    "evidence": "research/variant-transfer/binding-v2/operational-missingness-evidence.json",
+    "evidence_sha256": "258ba99807985b50677eb4eb69a45071ed833bf0fea98b9db188f8a3ce35617d",
+    "source_semantics_established": false
+  },
+  "models_refitted": false,
+  "numpy_version": "2.3.5",
+  "operational_missingness": {
+    "interpretation": "literal_unreported_unknown_reason",
+    "rule": "exclude_variant_unless_both_contexts_ordinary_finite_numeric",
+    "source_semantics_established": false
+  },
+  "protocol_id": "variant-transfer-v2",
+  "protocol_sha256": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c",
+  "second_freeze_commit": "156c5676c4f79328153edc517a737a2d83c97a48",
+  "second_freeze_exposure_receipt": {
+    "contents": {
+      "analysis_classification": "exploratory_after_v1_source_failure",
+      "binding_sha256": "a54badc4645d7ac88c31b7722fbbd89aaefa2b995bc0a02befd15123d83d4fba",
+      "bulk_remaining_effect_parsing_started": false,
+      "frozen_at_utc": "2026-10-27T23:02:46.255033+00:00",
+      "independent_decoding_scope": "Openpyxl may instantiate nonselected worksheet values internally. The selected-cell ledger is not a bound on all internal numeric conversion. No outcome-naive validation claim.",
+      "interpretation": "This receipt supplements protocol exposure metadata; it changes no protocol, source, cohort, missingness rule, model, metric, resampling or tolerance.",
+      "protocol_id": "variant-transfer-v2",
+      "protocol_sha256": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c",
+      "schema_version": 1,
+      "v1_bootstrap_computed": false,
+      "v1_comparison_matched": true,
+      "v1_comparison_sha256": "a13b8ea6aaf77a473ee50898e0d35031324af5bba6932a9a554d5ab013fc38fc",
+      "v1_fully_decoded_paired_variants_before_failure_per_implementation": 120,
+      "v1_independent_fixed_predictions_computed": true,
+      "v1_independent_fixed_predictions_sha256": "b6552fd7e5fa633c65188f8faeefe31c4105e211dec2113c184fd8a4ae27ceeb",
+      "v1_independent_selected_effect_cell_ledger_entries": 241,
+      "v1_independent_selected_numeric_cells_before_failure": 240,
+      "v1_predictive_performance_evaluated": false,
+      "v1_primary_predictions_computed": false,
+      "v1_primary_selected_effect_cell_ledger_entries": 241,
+      "v1_primary_selected_numeric_cells_before_failure": 240
+    },
+    "sha256": "c7ea409a90bd5911220cdf528ee2352cc2e38250f8af726fcf9931f9366cdc93"
+  }
+}

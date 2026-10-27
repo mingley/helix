@@ -19,6 +19,14 @@ separated by three or more positions. Twenty-one further Lean theorems and
 independent exhaustive calculations establish these representation limits;
 they do not establish biological neutrality.
 
+The [external variant-effect test](research/variant-transfer-v2-study.md) now
+shows **no observed advantage over zero effect** on 2,153 SNVs in 172 untouched
+components from a separate experiment. Macro MSE is 0.2033556 versus 0.2033201;
+the conditional improvement interval includes zero. All 17 independent numeric
+comparison categories pass. This analysis is explicitly exploratory after a
+retained v1 source-token failure; literal NA is excluded operationally with an
+unknown missingness reason.
+
 The [source recovery](research/context-endpoint-recovery.md) retrieves the
 previously missing official RNA/DNA activity table. It also reproduces all
 166,014 model-score cells by standardizing the published ESS table on the exact
@@ -94,6 +102,20 @@ To inspect the retained evidence without refitting:
 ```bash
 bash scripts/check_context_activity.sh --verify-published
 ```
+
+The external transfer evidence can also be verified without raw-source access:
+
+```bash
+bash scripts/check_variant_transfer.sh --verify-published
+```
+
+With the hash-bound Siraj S2/S4 workbooks cached under
+`$HELIX_TOOLS_DIR/variant-transfer-v1`, replay the complete exploratory pipeline
+with `bash scripts/check_variant_transfer.sh runs/variant-review`. Choose a new
+prefix. This reuses the committed cohort, independently reads the original
+sources, compares all values/draws and exports standalone figures. Its numerical
+pass preserves the negative useful-transfer result. See the
+[study and exposure record](research/variant-transfer-v2-study.md).
 
 Run the activity Rust path directly with a new output directory:
 

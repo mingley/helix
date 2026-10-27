@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "protocol_id": "variant-transfer-v2",
+  "status": "frozen",
+  "prepared_at_utc": "2026-10-27T23:00:10.802967+00:00",
+  "objective": "Exploratorily test the same fixed sequence-composition model transfer to signed Siraj reporter effects after the retained v1 source import failure, using a newly explicit literal-NA complete-case operational rule. No new fitting or calibration.",
+  "exposure": {
+    "v1_failure_observed": true,
+    "v1_semantic_protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+    "v1_exact_binding_sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79",
+    "v1_exact_binding_commit": "a21fd6f",
+    "primary_selected_numeric_cells_before_failure": 240,
+    "primary_selected_effect_cell_ledger_entries": 241,
+    "primary_first_blocking_cell": {
+      "coordinate": "AO42972",
+      "variant_id": "chr12:72652619:A:G",
+      "context": "K562",
+      "xml_type": "s",
+      "literal_text": "NA"
+    },
+    "primary_status": "Strict import failed before primary prediction/evaluation. No new model fitting, calibration or observed-target performance result was computed.",
+    "independent_reader_scope": "The independent v1 reader may have internally decoded nonselected worksheet values as part of XLSX row iteration; exposure is not certified to be limited to the primary240 selected numeric cells.",
+    "independent_retained_fixed_predictions": {
+      "path": "history/independent-v1/fixed-predictions.json.gz",
+      "sha256": "b6552fd7e5fa633c65188f8faeefe31c4105e211dec2113c184fd8a4ae27ceeb",
+      "interpretation": "A fixed-predictor artifact exists from the independent v1 attempt. It must not be described as no predictions having existed. No new-outcome fitting or target-performance result is established by this artifact."
+    },
+    "source_experiment": "Separate Siraj experimental study; the analysis is now explicitly outcome-exposed and exploratory.",
+    "registration": "No outcome-naive validation or external-preregistration claim. Repository commit freezing v2 must precede bulk remaining effect parsing.",
+    "v2_preparation": "No new S4 effect value was read during this metadata/protocol preparation."
+  },
+  "source": {
+    "title": "Functional dissection of complex trait variants at single-nucleotide resolution",
+    "doi": "10.1038/s41586-026-10121-6",
+    "author": "Siraj et al.",
+    "publication_date": "2026-02-25",
+    "preferred_distribution": "Exact publisher-linked S2 DNA and S4 main-panel MPRA summary, rather than Zenodo satmut or predictive-model products.",
+    "design_table": {
+      "name": "Supplementary Table 2, Variant oligo sequences",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM4_ESM.xlsx",
+      "sha256": "4b6e20d1789021ee8f11f57af366a65680d25496de9351a9e781e9424716d824",
+      "bytes": 40795798,
+      "worksheet": "S2.Variant Oligo Seqs",
+      "header_row_1based": 2,
+      "headers": [
+        "Variant",
+        "Allele 1 Oligo",
+        "Allele 2 Oligo"
+      ],
+      "reported_data_rows": 365762,
+      "exposure": "S2 DNA, exact schema, reference/chain validation and complete source-exclusion inventory were already exposed and frozen under v1 before the strict import attempt. Source bytes remain identical."
+    },
+    "outcome_table": {
+      "name": "Supplementary Table 4, MPRA result summary",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM6_ESM.xlsx",
+      "expected_semantic_header": "Cell-specific log2Skew/Log2Skew producer name for the Alt-vs-Ref by RNA-vs-DNA interaction; exact textual spreadsheet columns still require a separately committed header binding. Names alone do not prove units/orientation.",
+      "sha256": "723c4a0e1cfdb2c9c6ae55b3fa9206855dd95e0241319b9fc8d0831d3b42f9c2",
+      "bytes": 224405074,
+      "worksheet": "S4.MPRA results",
+      "header_row_1based": 2,
+      "columns": {
+        "A": "Variant",
+        "AN": "log2Skew in HEPG2",
+        "AO": "log2Skew in K562"
+      },
+      "exposure": "Exact S4 source already acquired. The retained v1 failure and broader possible independent decoding are disclosed in this v2 exposure block."
+    },
+    "license_gate": "Retain publisher CC-BY4.0 statement and verify no source-workbook contrary credit/terms before redistribution. Zenodo record15297965 is CC-BY-NC4.0; no assumption that its license equals publisher article. Record full source receipt even if source bytes cached outside Git.",
+    "no_fallback": "Do not substitute satmut, S7 multivariate-shrunken results, meta-analysis, diplotypes, source significance calls or another study to rescue failure.",
+    "acquisition_limits": {
+      "max_download_bytes": 400000000,
+      "max_total_xml_bytes": 2000000000,
+      "max_zip_members": 10000,
+      "requirements": "Finite connection/read/total timeouts and bounded streaming download. Preserve inherited proxy and CA trust; TLS verification remains enabled. Reject HTTP failures, HTML/error bodies, incomplete lengths, wrong magic, encrypted ZIP entries, duplicate member names, unsafe absolute/traversal/backslash paths, and symbolic-link entries. Check every member CRC and declared versus actual decompressed size while streaming within the total XML budget. Do not extract outside a new task-owned directory or follow symlinks. Hash and retain acquisition URL/status/headers, byte count and SHA-256. CRC scanning is byte-level integrity work and does not authorize decoding outcome cells.",
+      "failure": "A source asset exceeding these bounds or failing integrity is a gate failure; do not silently relax limits. Any changed bound requires a new explicit metadata-only protocol version before numeric outcome parsing.",
+      "max_total_uncompressed_bytes": 2000000000
+    }
+  },
+  "freeze_sequence": [
+    "Preserve the frozen v1 protocol/binding and both failed reader attempts unchanged, including source-cell ledgers and existing independent fixed-predictor output. The v1 source gate is not rewritten as passed.",
+    "Commit this explicitly exploratory v2 protocol plus fresh exact binding before any bulk remaining effect read. Metadata cohort, source/model bytes, contexts, original grouping, losses, bootstrap RNG and support thresholds remain unchanged.",
+    "After the v2 freeze commit, parse only the same selected exact effect columns. Exact literal NA is operationally unreported with unknown reason. Retain only variants with ordinary finite numeric effects in both contexts; no imputation, sign/magnitude/activity/significance filter or missing-reason inference.",
+    "Keep original component labels after complete-case exclusions. Components with no complete variant provide no loss mean and are omitted from the complete-case bootstrap population, with all removed IDs/components counted. No regrouping or replacement of excluded variants.",
+    "Apply the same fixed I and S predictors and unchanged primary/evaluation contract to the complete-case cohort. Retain prior240 exposed selected numeric cells in the ordinary complete-case rule; do not carve out a conveniently fresh subset.",
+    "Independently reproduce raw selected-source observations, exclusions, fixed predictions, losses and resampling under v2. Preserve every failure and prohibit further response-dependent policy changes without another explicitly exposed version."
+  ],
+  "contexts": {
+    "primary": [
+      "K562",
+      "HepG2"
+    ],
+    "selection": "Both prespecified contexts; neither may be selected after outcomes. All finite paired observations of each eligible variant are retained in both contexts under the fixed complete-case rule below. Cell-specific results are secondary; no across-five-cell meta estimate."
+  },
+  "endpoint": {
+    "definition": "Source cell-specific DESeq2 allelic interaction estimate: (RNA/DNA activity at Alt) minus (RNA/DNA activity at Ref), in delta log2 fold-change units.",
+    "units": "Published summit-shift-normalized DESeq2 RNA/DNA allelic interaction delta log2FC. This is not a raw-count ratio, absolute expression, or a posterior/shrunken saturation-mutagenesis effect.",
+    "transform": "None. Preserve source floats; no sample centering, standardization, clipping, sign flipping by observed effects, cross-study gain fitting or refitting. Source-provided negative-positive orientation must be bound from methods/code before values.",
+    "exclude": "Do not use empiricalBayes/mashr effects, significance/FDR, TF predictions, effect-selected classes or cell-combined meta-analysis as outcomes."
+  },
+  "eligibility": {
+    "DNA": "Human primary chr1..chr22,chrX,chrY sequences. Both inserted genomic cores exactly 200 nt uppercase ACGT after removal of exactly documented 15 nt adaptors if present. Reject ambiguous bases, silent case repair, inferred/truncated cores or padded strings. Exactly one reference-to-alternative nucleotide substitution, equal lengths, no indels/diplotypes/satmut backgrounds.",
+    "source_classes": "Include every original-main-panel genuine human SNV in source design metadata, including fine-mapped/eQTL/trait variants and genuine location/annotation/null controls. Exclude technical controls reused from earlier experiments and all synthetic/shuffled controls based on source class metadata. No PIP, CRE, activity, emVar, FDR or effect-magnitude threshold.",
+    "source_qc": "Respect published filtering of DNA count <30 or RNA count =0 for either allele and source coverage-based choice of duplicate library. Do not choose libraries by outcome. If S4 is already deduplicated and prefiltered, use that table unchanged and record this source preprocessing; do not reconstruct unknown counts. If explicit counts/library records required to resolve these semantics are absent, stop rather than guess.",
+    "duplicates": "Exact variant and construct/library IDs must have a unique authoritative source-selected result per context; conflicting or unexplained duplicates block fitting. Preserve a complete duplicate ledger.",
+    "coverage": "Start from the identical2172-variant/172-component metadata cohort. Under this explicitly exploratory v2 operational assumption, an ordinary text cell resolving exactly to NA is unreported with unknown reason. Exclude a variant unless both K562 and HepG2 effects are ordinary finite numeric cells. Record every NA cell, affected variant and original component; no inference of author QC reason or missing-at-random behavior. Formula/error/bool/blank/absent/nonfinite/numeric-string/other-text cells still block evaluation; no imputation or response magnitude/sign filtering. Preserve original component IDs, and report components with zero remaining complete variants.",
+    "minimum_support": "At least 100 complete variant pairs and 10 independent components required for primary interval claim; otherwise retain all descriptive results and declare inferential support gate failed. No replacement source or favorable subgroup."
+  },
+  "grouping": {
+    "principle": "No new-study fitting. All external variants form one test set. Whole components define overlap exclusion and resampling, rather than fictional train/test folds on the new outcomes.",
+    "relations": "Transitive union of exact/reverse-complement sequence identities, source shared locus/parent IDs, overlapping inserted genomic intervals, fixed 1,000,000-base bins, and equal-length ungapped >=90% identity in either strand for either allele. For zero-based half-open interval [start,end), the bin is floor(start/1,000,000), keyed jointly by reference build and chromosome. All contexts, library occurrences, and reference/alternate sequences of a variant remain together. Shared source loci and homology links can join bins; do not break resulting components.",
+    "coordinates": "Bind source genome build and coordinate convention from metadata. Use existing reference only after exact build concordance or independently checksum-bound one-to-one conversion and full200nt reference-core equality. Never compare hg19 positions to hg38 directly. Missing/ambiguous mappings are recorded metadata exclusions before outcomes; do not silently lift or infer.",
+    "prior_source_exclusion": "Exclude an entire external component if any member has exact/RC identity or >=90% full-200nt ungapped identity to any old Agarwal training core, or a same-build genomic interval gap <=10,000 bp to any old trained locus. A gap is zero for overlapping or adjacent half-open intervals; the 10,000-bp boundary is inclusive. Apply across the union of all five old-fold training IDs, not just one selected fold. Before numeric outcomes are parsed, retain and hash a complete explicit interval/sequence inventory of all previously explored HBB/Kircher loci, including their reported human genomic contexts. Exclude entire new components linked to any of those explored loci by coordinate overlap/10,000-bp guard or the declared sequence-identity/homology relations. An incomplete explored-source inventory blocks this protocol.",
+    "resource_policy": "Freeze and report exhaustive/indexed candidate algorithm and budget before outcome parsing; failure to establish all declared relations blocks study. Never drop hard candidate pairs to complete a run."
+  },
+  "pretrained_model": {
+    "source_protocol_sha256": "64e14037fb1f42ddc1ecaca1d23bb8096fabac1f1e892d105eaa20f525fbbb20",
+    "source_run": "research/results/context-activity-v3/core/study.json.gz; all five fold fits from the final clean published activity run. Verify its artifact manifest and exact per-file hashes before use.",
+    "primary": "Arithmetic average of the five independently-context-fitted I model delta predictions for the corresponding exact K562 or HepG2 context. No averaging across contexts in the predictor.",
+    "features": "Existing 32 RC-canonical overlapping 3mer frequencies plus GC, in the source 33-feature order. Fixed 200 nt: trimer denominator 198 and GC denominator 200.",
+    "delta_formula": "mean_f sum_j (standardized_coefficient_fcj / training_feature_scale_fj) * (feature_alt_j-feature_ref_j); intercept and training feature mean cancel exactly.",
+    "hyperparameters": "Existing alpha 10 fitted on old data only. No new training, fine-tuning, model selection, response calibration, sign choice or coefficient editing.",
+    "secondary": "Frozen shared A/S slope ensemble under same five-fit rule. A/S yield same pair difference.",
+    "GC_baseline": "No new GC-only fit is authorized by this protocol. Do not label the full-model GC contribution as a separately trained GC-only model. The baseline is zero delta; GC-preserving SNVs form a metadata-defined secondary diagnostic only.",
+    "source_artifacts_path": "research/results/context-activity-v3/core/artifacts.json",
+    "source_artifacts_sha256": "2ea476bc5413dc13486dec9f3d7e9162a50a0e47f1d83ce29efabc5f5cc5af9d",
+    "source_code_commit": "035ca5731fe594622cd2c3c27cd3bb51ec65c924"
+  },
+  "primary": {
+    "baseline": "zero delta for every variant/context",
+    "candidate": "fixed matched-cell I ensemble delta",
+    "per_variant_loss": "Average squared prediction error equally across the two K562/HepG2 contexts.",
+    "per_component_loss": "Average per-variant loss across all admitted variants in that component.",
+    "metric": "Equal-component macroMSE improvement: mean_g[MSE_g(zero)-MSE_g(fixedI)], in squared delta log2FC units. Positive means transfer beats no-effect baseline.",
+    "success_rule": "Evidence of useful transfer requires positive observed macroMSE improvement and positive lower endpoint of the prespecified conditional 95% interval. A negative result is retained unchanged. Numerical reproduction and scientific performance are separate flags."
+  },
+  "secondary": [
+    "All candidate/baseline macroMSE and MAE; same primary comparison separately in K562 and HepG2; equal-variant pooled sensitivity.",
+    "Shared-A/S ensemble transfer versus zero, reported as secondary regardless of I result.",
+    "Pearson signed correlation and exact sign agreement, retaining exact-zero outcomes/predictions explicitly. No significance or near-zero filtering; no rank result used to rescue primary.",
+    "GC-preserving versusGC-changing SNV diagnostics defined only by alleles; all components preserved.",
+    "Within each source-defined locus, report all predictions/errors rather than only favorable loci."
+  ],
+  "uncertainty": {
+    "method": "2,000 paired whole-component bootstrap draws with replacement from lexicographically sorted component IDs; each draw samples G components, carrying all their variants/contexts and fixed predictions. Macro loss is arithmetic mean of sampled component means.",
+    "rng": "Existing verified SplitMix64, seed 0x2026102801",
+    "interval": "Type7 quantiles 0.025 and 0.975. Fixed-fit conditional selected-panel percentile range, not a calibrated p-value, new biological replicate or assay-normalization uncertainty.",
+    "retention": "Retain all draw indices and all sampled losses/gains; no adaptive resampling."
+  },
+  "synthetic_controls": [
+    "Identical 200 nt DNA yields exactly zero feature/prediction delta.",
+    "Swapping reference/alternate negates delta; RC of both preserves feature/prediction delta.",
+    "Hand-computed single SNV changes only containing 3mer windows and GC, with exact integer count bridge.",
+    "Separated substitutions at positions distance>=3 have exactly additive delta and zero predicted epistasis for fixed length; include boundary cases.",
+    "Explicitly fail lowercased/ambiguous/padded/wronglengthDNAs and erroneous allele orientation.",
+    "Macro component averaging and joint cell/variant resampling checked against hand-computed unequal-component-size fixture."
+  ],
+  "independent_reproduction": {
+    "source": "Independent reader directly parses original XLSX selected cells and DNA, not normalized target cache. Exact source-ID/float/feature bindings required.",
+    "predictions": "Independently re-extract counts and apply five old fit ensembles; all observations, eligibility/exclusion IDs, components, coefficients, predictions, losses, draw indices and intervals compared.",
+    "tolerances": "Exact integer counts, IDs, source float bits and resampling indices; maximum absolute 1e-10 for predictions/metrics, no relative tolerance. Rank diagnostics not primary. All failed comparisons retained; no tolerance widening."
+  },
+  "outputs": [
+    "Exact parent-v1 semantic/schema commits, retained v1 source-gate failures, explicitly exploratory v2 protocol/binding freeze, unchanged source/model hashes and full acquisition/license history.",
+    "Complete DNA eligibility, explored-source exclusion, source QC/missingness/duplicate/component ledgers.",
+    "All admitted observed signed effects, fixed predictions, fold contributions, model/component/cell losses.",
+    "All bootstrap indices/statistics and exact independent comparison.",
+    "Standalone all-locus tables, plot data, figures, bounded report and failure history."
+  ],
+  "failure_policy": "Preserve v1 as a failed strict source import. In v2, exact ordinary-text NA alone is an operational complete-case exclusion with unknown cause. Every other source/license/schema/coordinate/identity/type/prediction gate remains fatal. Keep all failures and outputs; no new endpoint/model/sign/scale/tolerance/subgroup rescue. Minimum support remains100 complete variants and10 original components for an interval claim.",
+  "claims": "Explicitly exploratory, outcome-exposed external-study transfer analysis on source-selected200nt human reporter constructs. No outcome-naive or external-preregistration claim, missing-at-random assumption, author missingness/QC-reason attribution, clinical inference, endogenous causality, universal mechanism or global novelty.",
+  "frozen_at_utc": "2026-10-27T23:00:10.802967+00:00",
+  "metadata_adaptation_policy": "All source/metadata/model/header/grouping choices inherited from v1 are fixed. The only new operational policy is exact literal NA exclusion under the explicit unknown-reason complete-case assumption. This v2 is frozen after the disclosed v1 outcome exposure. A further source, endpoint, type/missing-token, population, grouping, model, metric, scale, uncertainty or threshold change requires another explicitly exposed version before more new effect reads.",
+  "analysis_contract": {
+    "contexts": [
+      "K562",
+      "HepG2"
+    ],
+    "primary_weighting": "equal_component",
+    "baseline": "zero",
+    "candidate": "I",
+    "bootstrap": {
+      "replicates": 2000,
+      "rng": "SplitMix64",
+      "seed": 138077546497,
+      "quantiles": [
+        0.025,
+        0.975
+      ],
+      "quantile_type": 7
+    },
+    "minimum_variants": 100,
+    "minimum_components": 10
+  },
+  "analysis_classification": "exploratory_after_v1_source_failure",
+  "parent_protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+  "operational_missingness": {
+    "interpretation": "literal_unreported_unknown_reason",
+    "rule": "exclude_variant_unless_both_contexts_ordinary_finite_numeric",
+    "source_semantics_established": false
+  },
+  "parent_v1": {
+    "protocol_path": "experiments/variant-transfer-v1.json",
+    "protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+    "status": "strict_source_import_failed_preserved_unchanged",
+    "binding_path": "research/variant-transfer/binding-v1-verified/binding.json",
+    "binding_sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79",
+    "failure_history": {
+      "primary-v1": {
+        "original_path": "runs/variant-transfer-v1-observations",
+        "retained_path": "research/variant-transfer/binding-v2/history/primary-v1",
+        "manifest_sha256": "de0da56ca02616947d57ebe71b50506437c0b5993d1ffd9a0494cd1c2315398a",
+        "files": {
+          "binding.json": {
+            "bytes": 3771,
+            "sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79"
+          },
+          "failure.json": {
+            "bytes": 238,
+            "sha256": "c01ec5d6ec00d20b9fcdbf727e80d23a746824b8e5b78accec55851301c31717"
+          },
+          "implementation.py": {
+            "bytes": 22154,
+            "sha256": "d83d007b296707e77df221688a166941a9ffeb24396ddfcdd371e119a7411452"
+          },
+          "manifest.json": {
+            "bytes": 1229,
+            "sha256": "de0da56ca02616947d57ebe71b50506437c0b5993d1ffd9a0494cd1c2315398a"
+          },
+          "protocol.json": {
+            "bytes": 20084,
+            "sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149"
+          },
+          "source-IDs.jsonl.gz": {
+            "bytes": 343205,
+            "sha256": "9c38e41a6b5b6e91538894edae1e3f51be7a844c7e4b5e24639c121316537632"
+          },
+          "source-type-float-ledger.jsonl.gz": {
+            "bytes": 9173,
+            "sha256": "b9d948e009ab36e01ec1f7012ccbb8836e2cbe776cdc4e28f1cfa2c04f8b6ea8"
+          }
+        }
+      },
+      "independent-v1": {
+        "original_path": "runs/variant-transfer-v1-independent",
+        "retained_path": "research/variant-transfer/binding-v2/history/independent-v1",
+        "manifest_sha256": "ae8d2d568a767d3adeff641c5c15f652cbb95f89a23166ca7195dbbd9e84508f",
+        "files": {
+          "binding.json": {
+            "bytes": 3771,
+            "sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79"
+          },
+          "failure.json": {
+            "bytes": 277,
+            "sha256": "aad12b0a460395c97ce213ccbf803c1160fd90caa166fa2d92d292d1755b0495"
+          },
+          "fixed-predictions.json.gz": {
+            "bytes": 353893,
+            "sha256": "b6552fd7e5fa633c65188f8faeefe31c4105e211dec2113c184fd8a4ae27ceeb"
+          },
+          "implementation.py": {
+            "bytes": 47354,
+            "sha256": "daf67f2ae579608596511938d0ba07d59891b7f3c1dbbc3ad946b4742fda587b"
+          },
+          "inputs.json": {
+            "bytes": 1594,
+            "sha256": "9e92e255cc38bb21c1a09f3cc38d84c0c988a8dfcc671ddc8c7a810789467e6d"
+          },
+          "manifest.json": {
+            "bytes": 1301,
+            "sha256": "ae8d2d568a767d3adeff641c5c15f652cbb95f89a23166ca7195dbbd9e84508f"
+          },
+          "metadata-cohort.json.gz": {
+            "bytes": 205636,
+            "sha256": "791f0b1b6c374b22ea5e21022b543928bba996250fe3a70e3c5c3338dcaf1369"
+          },
+          "protocol.json": {
+            "bytes": 20084,
+            "sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149"
+          },
+          "source-DNA.json.gz": {
+            "bytes": 343028,
+            "sha256": "61d1d83082492cc5c255356585a36825e0e77d4fe395fff9b557da30c9be0293"
+          },
+          "source-cell-type-ledger.json.gz": {
+            "bytes": 7394,
+            "sha256": "693983ff560389bb132e77dc71014ddec0e2c2f0d8d84f70893ab99c49ef91cc"
+          }
+        }
+      }
+    }
+  },
+  "metadata_cohort": {
+    "path": "research/variant-transfer/binding-v2/cohort.jsonl.gz",
+    "sha256": "4d1fd2725ee0ed2952cf95cefa555ba4418c1338bdcd047a34d849d0b95ddc8b",
+    "variant_count": 2172,
+    "component_count": 172,
+    "scope": "Identical metadata cohort and original global component IDs; complete numeric coverage is not yet known.",
+    "global_grouping_comparison": {
+      "checks_passed": 4689,
+      "comparison_path": "research/variant-transfer/independent-grouping-v1/comparison-v1/comparison.json",
+      "comparison_sha256": "93f2b9d82c5b45d9dbb6344a350e48f24ac99ad0ce496d8993b813fb8d1faa60",
+      "failed_checks": [],
+      "independent_manifest_sha256": "e25231628756da32f961f6553999a58132353b9e223e6e3df7f467f817ede33b",
+      "new_numeric_outcome_access": false,
+      "primary_manifest_sha256": "c276cb6e2fc06e4318c3029d83e497f769792fa14029d55f7e3e59ed8bd6b5a2",
+      "scope": "Full outcome-free new-component and prior-exposure reconstruction. Excluded-component witness catalogs need not enumerate every old hit; exact component reason classes are compared. S30 technical-control flags retained separately until source-cohort binding.",
+      "status": "matched"
+    }
+  },
+  "operational_missingness_evidence": {
+    "path": "research/variant-transfer/binding-v2/operational-missingness-evidence.json",
+    "sha256": "258ba99807985b50677eb4eb69a45071ed833bf0fea98b9db188f8a3ce35617d"
+  },
+  "unchanged_analysis_blocks": [
+    "contexts",
+    "endpoint",
+    "grouping",
+    "pretrained_model",
+    "primary",
+    "secondary",
+    "uncertainty",
+    "synthetic_controls",
+    "independent_reproduction",
+    "analysis_contract"
+  ]
+}

@@ -32,37 +32,49 @@ source-formula rule are not rewritten as successes. The
 alone cannot uniquely reconstruct common activity, even with column moment
 constraints.
 
-## Next falsifiable goal: predict perturbations in a separate study
+## Completed external transfer and exact model limits
 
-The [external transfer contract](../experiments/variant-transfer-v1.md) now
-freezes a test of signed Siraj 2026 reporter effects in K562 and HepG2 using the
-five existing activity fits without retraining. Source semantics, exact DNA,
-coordinate/reference validation and exclusions from all explored loci must pass
-before outcomes can be evaluated. The protocol was committed before acquiring
-the new outcome asset; a second exact schema/cohort freeze remains required.
+The [exploratory external test](variant-transfer-v2-study.md) uses a separate
+Siraj experiment and the five old activity fits without retraining. Across
+2,153 complete-case SNVs in 172 unexposed components, fixed I macro MSE is
+0.2033556 versus 0.2033201 for zero effect. Improvement is −0.00003545, with
+conditional 95% range [−0.00144180, 0.00140062]. The useful-transfer rule fails;
+modest gains or harm remain compatible with that range.
 
-The [outcome-free mutation analysis](variant-locality-study.md) quantifies the
-model's limits before that test: 745,052 proposed interior edits preserve every
-feature, and distant substitutions have zero ideal predicted interaction. These
-facts describe the representation and do not count as measured transfer success.
+All 17 independent numerical comparison categories pass, including exact source
+floats, 852,588 feature numerators and 344,000 draw indices. Global grouping
+separately passes 4,689 checks. The [strict v1 source gate](variant-transfer-study.md)
+remains failed on an undocumented NA. V2 explicitly follows that exposure and
+excludes literal NA operationally; it does not infer author missingness semantics
+or claim an outcome-naive analysis. All Siraj main-panel values used or internally
+decoded are explored evidence for future work.
 
-Test whether a model learned from explicit sequence/context measurements
-predicts variant effects at untouched regulatory loci in a genuinely separate
-experimental study. Separate composition-based prediction from hypotheses about
-specific regulatory interactions using observations that can distinguish them.
+The [outcome-free mutation analysis](variant-locality-study.md) enumerates
+745,052 proposed interior edits that preserve every feature. Twenty-one Lean
+theorems show the local-context restriction and zero ideal predicted interaction
+between substitutions at distance three or greater. These are model properties,
+not measured biological neutrality or proof of why external transfer failed.
 
-1. Establish source independence, assay units, actual inserted DNA, perturbation
-   identity, replicate support and licensing from metadata before acquisition.
-   Prior HBB/Kircher outcomes and the current Agarwal panel are explored evidence.
-2. Freeze a small model and outcome contract, whole-locus/homology groups,
-   context-matched baselines and negative controls before inspecting new outcomes.
-   Do not select a source or threshold for a favorable effect.
-3. Test signed perturbation predictions and uncertainty under those conditions,
-   retaining source failures and negative results. Whole-fragment activity gains
-   do not establish accurate single-base effect predictions.
-4. Require directed perturbations and endogenous or other discriminating evidence
-   before claiming a biological regulatory mechanism. Continue tracing the
-   unresolved upstream ESS processing as a separate source-provenance question.
+## Next falsifiable goal: test a predicted absence of interaction
+
+Find source-compatible four-construct measurements: reference, each of two
+single substitutions, and their double substitution. For edits at least three
+bases apart, the current model predicts exactly zero ideal epistasis. Test the
+measured interaction `activity(double) − activity(single1) − activity(single2)
++ activity(reference)` under a common within-cell normalization.
+
+1. Establish actual inserted DNA, allele identity, common activity units,
+   replicate support and terms from metadata before new values. Previously used
+   Agarwal, Kircher/HBB and Siraj main-panel outcomes are explored.
+2. Freeze all four-member groups, separation, endpoints, source/QC rules,
+   baselines, uncertainty and failure conditions before the selected outcomes.
+   An unresolved source sign or normalization ambiguity stops dependent work.
+3. Distinguish count/replicate uncertainty from reproducible nonadditivity.
+   Retain every eligible group and negative result; do not select positive
+   interactions as a new untouched validation panel.
+4. Require further endogenous or other discriminating evidence before claiming
+   a biological regulatory mechanism. Continue the historical ESS-source trace
+   as a separate provenance question.
 
 ## Completed foundation
 

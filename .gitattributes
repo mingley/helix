@@ -53,3 +53,6 @@ research/variant-locality/figures/*.svg -text whitespace=-trailing-space
 # Exact external provenance is retained with its original formatting.
 research/variant-transfer/source/producer-code/** -text -whitespace
 research/variant-transfer/source/*-availability.txt -text -whitespace
+# Hash-bound exported transfer figures and data.
+research/results/variant-transfer-v2/figures/*.svg -text whitespace=-trailing-space
+research/results/variant-transfer-v2/figures/*.csv -text whitespace=cr-at-eol

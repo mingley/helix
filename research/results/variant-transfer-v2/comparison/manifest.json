@@ -1,0 +1,16 @@
+{
+  "analysis_classification": "exploratory_after_v1_source_failure",
+  "files": {
+    "comparison.json": {
+      "bytes": 4213,
+      "sha256": "5fca72160df86d32c4724160c1fe10910d37bf3b5054f8fae187806147e58ad4"
+    },
+    "implementation.py": {
+      "bytes": 52495,
+      "sha256": "4a2cd82c0a000a6b86493e6859d24eba5f8525ecf8e59752975e84a5f9bb3fc2"
+    }
+  },
+  "protocol_id": "variant-transfer-v2",
+  "protocol_sha256": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c",
+  "schema_version": 1
+}
