@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "completed_independent_run": true,
+  "full_comparison_passed": true,
+  "comparison_categories": 4689,
+  "failures": 0,
+  "all_variant_assignments_compared": 332719,
+  "all_component_partitions_compared": 1171,
+  "manifest_sha256": "e25231628756da32f961f6553999a58132353b9e223e6e3df7f467f817ede33b",
+  "comparison_sha256": "93f2b9d82c5b45d9dbb6344a350e48f24ac99ad0ce496d8993b813fb8d1faa60",
+  "synthetic_controls": {
+    "tests": 14,
+    "passed": 14,
+    "source_sha256": "c41156cd0369c5a50eebcde0d39f91590868569040151858c8c745607bc5d4a7",
+    "scope": "Executable C++ boundary/counterexample suite; current fixture source passes with ResourceWarning promoted to an error.",
+    "log_sha256": "12be6497c8bf63376a30379df0a85b14a010c9e51b4e4f3c14ca9c7614b9febc",
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -W error::ResourceWarning -m unittest discover -s research/variant-transfer/independent-grouping-v1 -p test_grouping.py -v"
+  },
+  "orchestration_revision": {
+    "reason": "Before the first primary comparison, added full member-size/SHA authentication and completed-run/source-binding checks to comparison mode. Execution functions remained unchanged; the original successful execution snapshot remains immutable.",
+    "execution_helpers_AST_unchanged": {
+      "hashfile": true,
+      "require": true,
+      "loads": true,
+      "load": true,
+      "lines": true,
+      "dump": true,
+      "zlines": true,
+      "literal": true,
+      "reverse": true,
+      "prepare": true,
+      "execute": true,
+      "main": true
+    },
+    "current_orchestration_sha256": "ee96250e39c2b06bf62da8dfedda7115c33f3044c0d1f41af5f00094a589040c",
+    "comparison_implementation_sha256": "ee96250e39c2b06bf62da8dfedda7115c33f3044c0d1f41af5f00094a589040c"
+  },
+  "new_reporter_outcome_access": false
+}

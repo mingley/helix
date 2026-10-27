@@ -1,0 +1,70 @@
+{
+  "S4_numeric_effect_values_read": false,
+  "analysis_contract": {
+    "baseline": "zero",
+    "bootstrap": {
+      "quantile_type": 7,
+      "quantiles": [
+        0.025,
+        0.975
+      ],
+      "replicates": 2000,
+      "rng": "SplitMix64",
+      "seed": 138077546497
+    },
+    "candidate": "I",
+    "contexts": [
+      "K562",
+      "HepG2"
+    ],
+    "minimum_components": 10,
+    "minimum_variants": 100,
+    "primary_weighting": "equal_component"
+  },
+  "binding": {
+    "path": "research/variant-transfer/binding-v1-verified/binding.json",
+    "sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79"
+  },
+  "cohort": {
+    "component_count": 172,
+    "format": "jsonl.gz",
+    "path": "research/variant-transfer/binding-v1-verified/cohort.jsonl.gz",
+    "sha256": "4d1fd2725ee0ed2952cf95cefa555ba4418c1338bdcd047a34d849d0b95ddc8b",
+    "variant_count": 2172
+  },
+  "frozen_at_utc": "2026-10-27T22:53:09.291702+00:00",
+  "implementation_sha256": {
+    "scripts/build_variant_transfer_observations.py": "d83d007b296707e77df221688a166941a9ffeb24396ddfcdd371e119a7411452",
+    "scripts/evaluate_variant_transfer.py": "670c9ac140993a5f5ff9f3ec0505fe59a157f7416110c06c1900f000f34037cb",
+    "scripts/group_variant_transfer.py": "e2a14d3d2838ae23eb99a1b9066dd1e11dfdeffd03f5e8343a1091fae2c7b6c9",
+    "scripts/predict_variant_effects.py": "430bffff66592347de05c938c8e67d56bef0edfa1fd368d23d3aa35fb373a73a",
+    "scripts/replicate_variant_transfer.py": "daf67f2ae579608596511938d0ba07d59891b7f3c1dbbc3ad946b4742fda587b",
+    "scripts/seal_variant_transfer.py": "9523ae4fde24344461dbec6a98bea401ba406cc0ae26901dba026f908f3c55f0"
+  },
+  "independent_global_grouping": {
+    "checks_passed": 4689,
+    "comparison_path": "research/variant-transfer/independent-grouping-v1/comparison-v1/comparison.json",
+    "comparison_sha256": "93f2b9d82c5b45d9dbb6344a350e48f24ac99ad0ce496d8993b813fb8d1faa60",
+    "failed_checks": [],
+    "independent_manifest_sha256": "e25231628756da32f961f6553999a58132353b9e223e6e3df7f467f817ede33b",
+    "new_numeric_outcome_access": false,
+    "primary_manifest_sha256": "c276cb6e2fc06e4318c3029d83e497f769792fa14029d55f7e3e59ed8bd6b5a2",
+    "scope": "Full outcome-free new-component and prior-exposure reconstruction. Excluded-component witness catalogs need not enumerate every old hit; exact component reason classes are compared. S30 technical-control flags retained separately until source-cohort binding.",
+    "status": "matched"
+  },
+  "independent_reconstruction_scope": "Global component reconstruction independently passed. Original XLSX DNA and effects, model transfer and evaluation will be independently parsed/recomputed after this commit.",
+  "missing_policy": {
+    "allowed_tokens": [],
+    "evidence": "/workspace/helix/research/variant-transfer/source/missing-token-evidence.json",
+    "evidence_sha256": "0c801ce2086979e0da4b3752c74e610517ac73269c3460123382b0b59705347e"
+  },
+  "phase": "second exact source/cohort freeze before any numeric S4 effect parsing",
+  "pre_value_source_gate_scope": "DNA, assembly/reference, prior exposure, all global components, technical-control exclusion, authoritative source ID membership, exact headers/units/direction and fixed model. Ordinary finite numeric coverage remains unverified.",
+  "protocol": {
+    "path": "experiments/variant-transfer-v1.json",
+    "semantic_freeze_commit": "ec454e6d559dc96337359e32f8a05242581798c2",
+    "sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149"
+  },
+  "schema_version": 1,
+  "stop_rule": "Any undocumented missing token, absent cell, formula, error, boolean, numeric string or nonfinite required effect stops v1. No transfer performance is computed or claimed unless its value gates pass."
+}

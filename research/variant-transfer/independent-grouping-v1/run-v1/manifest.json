@@ -1,0 +1,45 @@
+{
+  "files": {
+    "bindings.json": {
+      "bytes": 4656,
+      "sha256": "9e2607f8fb96c05e1582fa62e117a5c3c0ba5f4647406c432143fc727f4a5659"
+    },
+    "compiler-output.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "components.json": {
+      "bytes": 10252283,
+      "sha256": "e7bdc523c196f0c2d55535501c2bdaad9810abd894bc0303f0d29b527050e527"
+    },
+    "execution.log": {
+      "bytes": 1745,
+      "sha256": "2626c832aca17f6f1f815feecc01b7a55177b5d0d02fc0297914b184e44480c4"
+    },
+    "implementation.cpp": {
+      "bytes": 10191,
+      "sha256": "573e1814a2270b6588f162c7a1a178c8169dc41b401a3b63ec76b4fa3c68d3ab"
+    },
+    "new-metadata-index.jsonl.gz": {
+      "bytes": 4641416,
+      "sha256": "cd7a475e91b311e6bd194f001cb8fda0fad2c4f0c5dc81b6b50678b2c088defb"
+    },
+    "orchestration.py": {
+      "bytes": 14774,
+      "sha256": "9e7dc9ca4fab216da47bf605b4e940afcdfd046d68da06580fbee1418c0d2cb6"
+    },
+    "summary.json": {
+      "bytes": 519,
+      "sha256": "101983ac57ba488e153ff7f85845b56a78e788590b22783d25790a3bae9339de"
+    },
+    "variant-ledger.jsonl.gz": {
+      "bytes": 2160318,
+      "sha256": "c40e248dd931d2c179e87a6bd4fe4de838daa9cfab8e672f94bc16e76fa13b7f"
+    },
+    "witnesses.tsv.gz": {
+      "bytes": 21782,
+      "sha256": "b45a33b95e0820da194355d65db60cc8efea71b91ad08c4d0ef0b188eb126973"
+    }
+  },
+  "schema_version": 1
+}

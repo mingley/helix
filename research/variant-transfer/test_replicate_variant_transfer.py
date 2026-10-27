@@ -1,9 +1,13 @@
 """Independent transfer controls use synthetic numbers and generated workbooks."""
 import copy
+import hashlib
 import importlib.util
 import json
 from pathlib import Path
+import subprocess
+import sys
 import tempfile
+import types
 import unittest
 
 import numpy as np
@@ -186,6 +190,180 @@ class IndependentTransferTests(unittest.TestCase):
                 commitment = workbook(path, "effects", values={40: invalid})
                 with self.subTest(invalid=invalid), self.assertRaises(ValueError):
                     M.read_s4_effects(path, commitment, {"chr1:100:A:C"}, [])
+
+    def test_failed_source_cell_is_retained_in_independent_type_ledger(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "S4.xlsx"
+            commitment = workbook(path, "effects", values={40: "=1+1"})
+            ledger = []
+            with self.assertRaises(ValueError):
+                M.read_s4_effects(path, commitment, {"chr1:100:A:C"}, [], cell_ledger=ledger)
+            self.assertEqual(ledger[-1]["context"], "HepG2")
+            self.assertEqual(ledger[-1]["cell_data_type"], "f")
+            self.assertEqual(ledger[-1]["status"], "gate_failure")
+
+    def test_source_gate_fails_before_any_workbook_path_is_accessed(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "binding.json"
+            M.write_json(path, {"schema_version": 1, "protocol_id": "variant-transfer-v1",
+                "protocol_sha256": M.PROTOCOL_SHA, "source_cohort_gate": {"passed": False}})
+            args = types.SimpleNamespace(binding=path, expected_binding_sha256=M.sha256(path))
+            # No protocol, workbook or model paths even exist on this object.
+            with self.assertRaisesRegex(ValueError, "sealed source/cohort gate"):
+                M.validate_empirical_binding(args)
+
+    def test_second_freeze_requires_committed_exact_bytes(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            frozen = root / "frozen.txt"
+            frozen.write_text("metadata only\n")
+            subprocess.run(["git", "init", "-q", str(root)], check=True)
+            subprocess.run(["git", "-C", str(root), "add", "frozen.txt"], check=True)
+            subprocess.run(["git", "-C", str(root), "-c", "user.name=Test", "-c",
+                "user.email=test@example.invalid", "commit", "-qm", "freeze"], check=True)
+            commit = subprocess.check_output(["git", "-C", str(root), "rev-parse", "HEAD"], text=True).strip()
+            M.check_committed_input(root, commit, frozen, M.sha256(frozen))
+            with self.assertRaises(ValueError):
+                M.check_committed_input(root, commit, frozen, "0" * 64)
+            with self.assertRaises(ValueError):
+                M.check_committed_input(root, commit[:7], frozen, M.sha256(frozen))
+
+    def test_frozen_metadata_requires_centered_actual_snv_and_gc_boolean(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "cohort.json"
+            row = {"id": "chr1:100:A:C", "component": "a", "locus": "locus",
+                "sequence_ref": "A" * 200, "sequence_alt": "A" * 99 + "C" + "A" * 100,
+                "gc_preserving": False}
+            M.write_json(path, {"schema_version": 1, "pairs": [row]})
+            binding = {"cohort": {"format": "json", "variant_count": 1}}
+            self.assertEqual(set(M.load_frozen_cohort(path, binding)), {row["id"]})
+            M.write_json(path, {"schema_version": 1, "pairs": [row | {"gc_preserving": 0}]})
+            with self.assertRaises(ValueError):
+                M.load_frozen_cohort(path, binding)
+
+    def test_run_manifest_is_exact_and_tamper_rejected(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / "known.txt").write_text("exact\n")
+            M.manifest_directory(root)
+            M.verify_run_directory(root)
+            (root / "known.txt").write_text("changed\n")
+            with self.assertRaises(ValueError):
+                M.verify_run_directory(root)
+
+    def test_independent_numpy_reproduces_primary_cli_on_synthetic_handoff(self):
+        # The primary is run as a separate executable; no primary implementation
+        # is imported or used to derive the independent arrays/statistics.
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            checkout = Path(__file__).resolve().parents[2]
+            protocol = json.loads((checkout / "experiments/variant-transfer-v1.json").read_bytes())
+            M.write_json(root / "protocol.json", protocol)
+            psha = M.sha256(root / "protocol.json")
+            M.write_json(root / "binding.json", {"protocol_id": "variant-transfer-v1", "protocol_sha256": psha,
+                "source_cohort_gate": {"passed": True, "scope": "synthetic unit fixture only"}})
+            bsha = M.sha256(root / "binding.json")
+            variants = rows()
+            pins = {"schema_version": 1, "protocol_sha256": psha, "binding_sha256": bsha}
+            for model in ("I", "S"):
+                directory = root / model
+                directory.mkdir()
+                training = {"artifacts_sha256": protocol["pretrained_model"]["source_artifacts_sha256"],
+                            "protocol_sha256": protocol["pretrained_model"]["source_protocol_sha256"]}
+                prediction = {"schema_version": 1, "model": model,
+                    "endpoint_direction": "alternate minus reference",
+                    "commitments": training | {"pairs_sha256": "c" * 64},
+                    "pairs": [{"id": r["id"] + "::" + cell, "context": cell,
+                        "predicted_alternate_minus_reference": r["predictions"][model][cell]}
+                        for r in variants for cell in M.CELLS]}
+                M.write_json(directory / "predictions.json", prediction)
+                M.write_json(directory / "manifest.json", {"schema_version": 1, "training": training,
+                    "pairs_sha256": "c" * 64, "files": {"predictions.json": M.sha256(directory / "predictions.json")}})
+                pins["prediction_" + model + "_sha256"] = M.sha256(directory / "predictions.json")
+                pins["prediction_" + model + "_manifest_sha256"] = M.sha256(directory / "manifest.json")
+            normalized = {"schema_version": 1, "variants": variants} | {key: pins[key] for key in (
+                "protocol_sha256", "binding_sha256", "prediction_I_sha256", "prediction_S_sha256")}
+            M.write_json(root / "normalized.json", normalized)
+            pins["input_sha256"] = M.sha256(root / "normalized.json")
+            M.write_json(root / "pins.json", pins)
+            subprocess.run([sys.executable, str(checkout / "scripts/evaluate_variant_transfer.py"),
+                "--input", str(root / "normalized.json"), "--protocol", str(root / "protocol.json"),
+                "--binding", str(root / "binding.json"), "--pins", str(root / "pins.json"),
+                "--prediction-I", str(root / "I"), "--prediction-S", str(root / "S"),
+                "--out", str(root / "primary")], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            actual = M.read_json(root / "primary/evaluation.json.gz")
+            independent = M.evaluate(variants)
+            result = M.compare_trees(actual, independent)
+            self.assertTrue(result["matched"], result["failures"][:5])
+            self.assertEqual(len(independent["resampling"]["resampling_indices"]), 2000)
+
+    def test_full_original_source_and_integer_numerator_comparison(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            own, observations = root / "own", root / "observations"
+            own.mkdir()
+            observations.mkdir()
+            reference, alternate = "A" * 200, "A" * 99 + "C" + "A" * 100
+            identifier = "chr1:100:A:C"
+            before = [0] * 33
+            after = [0] * 33
+            before[M.TRIMERS.index("AAA")] = 198
+            after[M.TRIMERS.index("AAA")] = 195
+            for word in ("AAC", "ACA", "CAA"):
+                after[M.TRIMERS.index(word)] = 1
+            after[-1] = 1
+            delta = [b - a for a, b in zip(before, after)]
+            meta = {"id": identifier, "component": "a", "locus": identifier,
+                "gc_preserving": False, "sequence_ref": reference, "sequence_alt": alternate}
+            M.write_json(own / "metadata-cohort.json.gz", {identifier: meta})
+            M.write_json(own / "source-DNA.json.gz", {identifier: {"reference": reference,
+                "alternate": alternate, "reference_counts": before, "alternate_counts": after,
+                "delta_counts": delta}})
+            values = {"K562": 1.0, "HepG2": -2.0}
+            bits = {cell: M.float_bits(value) for cell, value in values.items()}
+            M.write_json(own / "source-observations.json.gz", {identifier: {
+                "observed": values, "observed_float64_little_endian": bits}})
+            M.write_json(own / "source-missingness.json.gz", {"incomplete": {}, "absent_ids": []})
+            M.write_json(own / "inputs.json", {"protocol_sha256": M.PROTOCOL_SHA, "binding_sha256": "a" * 64})
+            fixed = {"variant_order": [identifier],
+                "predictions": {model: {cell: [0.25] for cell in M.CELLS} for model in ("I", "S")},
+                "fold_predictions": {model: {cell: [[0.25] * 5] for cell in M.CELLS} for model in ("I", "S")}}
+            M.write_json(own / "fixed-predictions.json.gz", fixed)
+            M.write_json(observations / "observations.json.gz", {"protocol_sha256": M.PROTOCOL_SHA,
+                "binding_sha256": "a" * 64, "variants": [{"id": identifier, "component": "a",
+                "locus": identifier, "gc_preserving": False, "reference": reference,
+                "alternate": alternate, "complete_case": True, "missing_contexts": [],
+                "source_float64_le_hex": bits}]})
+            prediction_roots = {}
+            for model in ("I", "S"):
+                directory = root / model
+                directory.mkdir()
+                payload = {"model": model, "feature_names": M.FEATURES,
+                    "feature_denominators": [198] * 32 + [200],
+                    "commitments": {"artifacts_sha256": M.MODEL_SHA},
+                    "pairs": [{"id": identifier + "::" + cell, "context": cell, "position_0based": 99,
+                        "reference_feature_numerators": before, "alternate_feature_numerators": after,
+                        "feature_numerator_delta": delta,
+                        "reference_sha256": hashlib.sha256(reference.encode()).hexdigest(),
+                        "alternate_sha256": hashlib.sha256(alternate.encode()).hexdigest(),
+                        "predicted_alternate_minus_reference": 0.25, "fold_predictions": [0.25] * 5}
+                        for cell in M.CELLS]}
+                M.write_json(directory / "predictions.json", payload)
+                M.manifest_directory(directory)
+                prediction_roots[model] = directory
+            M.manifest_directory(own)
+            M.manifest_directory(observations)
+            result = M.compare_raw_sources_and_predictions(own, observations, prediction_roots)
+            self.assertTrue(result["matched"], result["failures"])
+            self.assertEqual(result["source_float_bits_exact_comparisons"], 2)
+            self.assertEqual(result["exact_integer_feature_numerators_compared"], 396)
+            self.assertEqual(result["fixed_prediction_numbers_compared"], 24)
+            # A coherently rehashed wrong numerator must still fail arithmetic comparison.
+            changed = M.read_json(prediction_roots["I"] / "predictions.json")
+            changed["pairs"][0]["reference_feature_numerators"][0] -= 1
+            M.write_json(prediction_roots["I"] / "predictions.json", changed)
+            M.manifest_directory(prediction_roots["I"])
+            self.assertFalse(M.compare_raw_sources_and_predictions(own, observations, prediction_roots)["matched"])
 
     def test_missing_source_id_requires_separately_bound_absence_rule(self):
         with tempfile.TemporaryDirectory() as temporary:

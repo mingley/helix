@@ -607,7 +607,7 @@ def run_empirical(args):
             "complete_case_variants": len(variants), "incomplete_variants": len(missing["incomplete"]),
             "source_DNA_inventory": dna_report, "source_outcome_unique_IDs": missing["all_source_unique_ids"],
             "protocol_sha256": PROTOCOL_SHA, "binding_sha256": args.expected_binding_sha256,
-            "source_float_bits_preserved": True,
+            "openpyxl_source_float_bits_recorded": True,
             "component_partition_authenticated_not_independently_reconstructed": True,
             "full_protocol_independent_reproduction_claimed": False})
         print(json.dumps({"complete_variants": len(variants), "primary": result["primary"]}))

@@ -1,0 +1,19 @@
+test_actual_overlap_joins_across_start_bin_boundary (test_grouping.ExecutableCounterexamples.test_actual_overlap_joins_across_start_bin_boundary) ... ok
+test_adjacency_across_start_bin_boundary_is_not_positive_overlap (test_grouping.ExecutableCounterexamples.test_adjacency_across_start_bin_boundary_is_not_positive_overlap) ... ok
+test_chromosome_is_part_of_bin_key (test_grouping.ExecutableCounterexamples.test_chromosome_is_part_of_bin_key) ... ok
+test_distant_same_start_bin_still_joins (test_grouping.ExecutableCounterexamples.test_distant_same_start_bin_still_joins) ... ok
+test_explicit_old_hits_exclude_without_joining_new_components (test_grouping.ExecutableCounterexamples.test_explicit_old_hits_exclude_without_joining_new_components) ... ok
+test_factorized_twenty_one_mismatch_repair_uses_twenty_two_pieces (test_grouping.ExecutableCounterexamples.test_factorized_twenty_one_mismatch_repair_uses_twenty_two_pieces) ... ok
+test_guard_boundary_is_inclusive (test_grouping.ExecutableCounterexamples.test_guard_boundary_is_inclusive) ... ok
+test_reverse_strand_homology_joins (test_grouping.ExecutableCounterexamples.test_reverse_strand_homology_joins) ... ok
+test_source_parent_can_join_different_bins (test_grouping.ExecutableCounterexamples.test_source_parent_can_join_different_bins) ... ok
+test_start_bin_does_not_union_a_crossing_interval_with_a_separated_next_bin (test_grouping.ExecutableCounterexamples.test_start_bin_does_not_union_a_crossing_interval_with_a_separated_next_bin) ... ok
+test_technical_control_flag_follows_full_component (test_grouping.ExecutableCounterexamples.test_technical_control_flag_follows_full_component) ... ok
+test_twenty_distributed_mismatches_found (test_grouping.ExecutableCounterexamples.test_twenty_distributed_mismatches_found) ... ok
+test_twenty_one_mismatches_do_not_qualify_as_new_homology (test_grouping.ExecutableCounterexamples.test_twenty_one_mismatches_do_not_qualify_as_new_homology) ... ok
+test_whole_component_exclusion_propagates (test_grouping.ExecutableCounterexamples.test_whole_component_exclusion_propagates) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 4.025s
+
+OK

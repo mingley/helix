@@ -1,0 +1,265 @@
+{
+  "timestamp_utc": "2026-10-27T22:20:15.953523+00:00",
+  "source_sha256": "4b6e20d1789021ee8f11f57af366a65680d25496de9351a9e781e9424716d824",
+  "old_panel_sha256": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3",
+  "purpose": "DNA-only pre-outcome source inventory, no target values acquired or used; counts do not select final population",
+  "counts": {
+    "stored_rows": 365762,
+    "ACGT_only_pair": 365758,
+    "nominal_snv": 336475,
+    "nominal_snv_200nt_single_difference": 336475,
+    "single_difference_matches_ID_ref_alt": 336475,
+    "not_nominal_primary_chromosome_snv": 29287,
+    "non_ACGT_pair": 4
+  },
+  "unique_ids": 365762,
+  "duplicate_ids": {},
+  "length_pairs": {
+    "200,200": 336475,
+    "200,196": 1813,
+    "199,200": 6960,
+    "200,174": 19,
+    "200,186": 91,
+    "200,199": 7522,
+    "200,198": 2619,
+    "200,191": 136,
+    "198,200": 1812,
+    "200,177": 21,
+    "200,181": 56,
+    "200,189": 113,
+    "200,184": 71,
+    "196,200": 1250,
+    "200,194": 370,
+    "200,178": 30,
+    "200,169": 13,
+    "200,197": 1642,
+    "192,200": 185,
+    "191,200": 94,
+    "197,200": 951,
+    "200,190": 161,
+    "200,192": 216,
+    "186,200": 38,
+    "200,195": 603,
+    "184,200": 51,
+    "195,200": 383,
+    "200,193": 189,
+    "188,200": 78,
+    "193,200": 140,
+    "175,200": 20,
+    "200,188": 111,
+    "200,176": 37,
+    "200,187": 77,
+    "200,182": 60,
+    "190,200": 103,
+    "200,183": 54,
+    "176,200": 34,
+    "174,200": 17,
+    "194,200": 289,
+    "200,185": 73,
+    "189,200": 69,
+    "200,153": 3,
+    "181,200": 38,
+    "185,200": 39,
+    "173,200": 10,
+    "180,200": 37,
+    "177,200": 19,
+    "172,200": 14,
+    "183,200": 33,
+    "200,170": 17,
+    "182,200": 41,
+    "168,200": 7,
+    "200,171": 15,
+    "200,161": 6,
+    "200,179": 48,
+    "200,172": 14,
+    "200,175": 33,
+    "200,173": 17,
+    "200,162": 5,
+    "200,167": 8,
+    "200,164": 10,
+    "179,200": 29,
+    "160,200": 5,
+    "171,200": 8,
+    "166,200": 4,
+    "200,180": 43,
+    "200,152": 3,
+    "163,200": 6,
+    "200,166": 11,
+    "178,200": 20,
+    "200,160": 10,
+    "159,200": 1,
+    "200,168": 18,
+    "187,200": 46,
+    "200,163": 13,
+    "153,200": 1,
+    "200,159": 2,
+    "158,200": 5,
+    "167,200": 9,
+    "164,200": 3,
+    "156,200": 2,
+    "200,165": 6,
+    "200,155": 5,
+    "165,200": 5,
+    "170,200": 5,
+    "155,200": 2,
+    "154,200": 2,
+    "169,200": 4,
+    "200,157": 5,
+    "200,154": 3,
+    "200,156": 6,
+    "200,158": 2,
+    "161,200": 1,
+    "200,145": 1,
+    "200,148": 1,
+    "200,124": 1,
+    "200,149": 1,
+    "200,118": 1,
+    "200,146": 1,
+    "200,73": 1,
+    "200,144": 2,
+    "200,142": 2,
+    "200,147": 1,
+    "162,200": 1,
+    "200,150": 1,
+    "200,132": 1,
+    "200,97": 1,
+    "130,200": 1
+  },
+  "SNV_single_difference_zero_based_positions": {
+    "99": 336475
+  },
+  "mismatch_examples": [],
+  "nontext_issues": [],
+  "exact_or_RC_overlap_rows": [
+    {
+      "source_row": 6092,
+      "variant": "chr1:109817590:G:T",
+      "allele": 1,
+      "old_panel_ids": [
+        "HepG2_DNasePeakNoPromoter3054"
+      ]
+    },
+    {
+      "source_row": 97326,
+      "variant": "chr17:45296616:A:G",
+      "allele": 1,
+      "old_panel_ids": [
+        "K562_peak34453"
+      ]
+    },
+    {
+      "source_row": 103418,
+      "variant": "chr19:7807610:A:G",
+      "allele": 1,
+      "old_panel_ids": [
+        "K562_peak38580"
+      ]
+    },
+    {
+      "source_row": 116658,
+      "variant": "chr22:23152650:A:G",
+      "allele": 2,
+      "old_panel_ids": [
+        "K562_peak52225"
+      ]
+    },
+    {
+      "source_row": 124405,
+      "variant": "chr1:178511825:A:G",
+      "allele": 1,
+      "old_panel_ids": [
+        "WTC11_seq5495_F"
+      ]
+    },
+    {
+      "source_row": 148256,
+      "variant": "chr2:96677012:G:C",
+      "allele": 1,
+      "old_panel_ids": [
+        "K562_peak44184"
+      ]
+    },
+    {
+      "source_row": 148789,
+      "variant": "chr2:160778501:C:G",
+      "allele": 1,
+      "old_panel_ids": [
+        "WTC11_seq42640_F"
+      ]
+    },
+    {
+      "source_row": 149669,
+      "variant": "chr3:15599283:T:G",
+      "allele": 1,
+      "old_panel_ids": [
+        "K562_peak54250"
+      ]
+    },
+    {
+      "source_row": 149952,
+      "variant": "chr3:50301050:C:T",
+      "allele": 1,
+      "old_panel_ids": [
+        "HepG2_DNasePeakNoPromoter41664"
+      ]
+    },
+    {
+      "source_row": 157914,
+      "variant": "chr8:144843255:G:A",
+      "allele": 1,
+      "old_panel_ids": [
+        "WTC11_seq76697_F"
+      ]
+    },
+    {
+      "source_row": 168354,
+      "variant": "chr16:56581756:A:G",
+      "allele": 1,
+      "old_panel_ids": [
+        "WTC11_seq28737_F"
+      ]
+    },
+    {
+      "source_row": 206693,
+      "variant": "chr16:65283854:A:C",
+      "allele": 1,
+      "old_panel_ids": [
+        "WTC11_seq28940_F"
+      ]
+    },
+    {
+      "source_row": 306095,
+      "variant": "chr16:84209049:C:T",
+      "allele": 1,
+      "old_panel_ids": [
+        "K562_peak31907"
+      ]
+    },
+    {
+      "source_row": 335753,
+      "variant": "chr10:79925580:A:C",
+      "allele": 1,
+      "old_panel_ids": [
+        "HepG2_DNasePeakNoPromoter7783"
+      ]
+    },
+    {
+      "source_row": 338984,
+      "variant": "chr10:23336777:G:T",
+      "allele": 1,
+      "old_panel_ids": [
+        "K562_peak10846"
+      ]
+    },
+    {
+      "source_row": 346920,
+      "variant": "chr2:62524545:C:T",
+      "allele": 1,
+      "old_panel_ids": [
+        "K562_peak43204"
+      ]
+    }
+  ],
+  "DNA_export_sha256": "c8cbb47713f6020f1c134f10644d1e991694b78379e9f3699a589635401848df",
+  "source_build_status": "likely hg19 based on Methods liftover and code; must validate before coordinate comparison"
+}

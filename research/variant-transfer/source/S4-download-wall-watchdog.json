@@ -1,0 +1,11 @@
+{
+  "scope": "External finite wall watchdog on active S4 acquisition process",
+  "pid": 2931,
+  "process_start_ticks": "78888",
+  "watchdog_started_utc": "2026-10-27T22:25:59.382149+00:00",
+  "remaining_limit_seconds": 360,
+  "termination_signal": "SIGTERM",
+  "no_payload_interpretation": true,
+  "outcome": "download process completed",
+  "watchdog_completed_utc": "2026-10-27T22:28:30.425517+00:00"
+}

@@ -1,0 +1,37 @@
+{
+  "files": {
+    "components.json": {
+      "bytes": 10547289,
+      "sha256": "89ad38bc3d829e415e55f8b212b7fd6f5bc8db8417356ecb0821c52a268e5591"
+    },
+    "eligible-pairs.jsonl.gz": {
+      "bytes": 313417,
+      "sha256": "b4e87e66c4f1416a05a8e0d1a51c2965243bc057698d69dabdb5308f7d7ecba5"
+    },
+    "implementation.py": {
+      "bytes": 28723,
+      "sha256": "e2a14d3d2838ae23eb99a1b9066dd1e11dfdeffd03f5e8343a1091fae2c7b6c9"
+    },
+    "inputs.json": {
+      "bytes": 442,
+      "sha256": "51662461e08abe491d5d76dd24f8106dd2af1138affd1d12ca1e82b7958f2df2"
+    },
+    "parameters.json": {
+      "bytes": 1848,
+      "sha256": "fc81fb3a229aa93f0806b9cbf383e0b82dda794d72303a087904e0853439d2d0"
+    },
+    "preparation.json": {
+      "bytes": 350,
+      "sha256": "f2f1f65732f741d696d9d4ea1a74b2d63c600be1cd19892261af9f669925871a"
+    },
+    "summary.json": {
+      "bytes": 210762,
+      "sha256": "68a69ef9674432ede2299edf065ce2a03320e4c8f66bb7d776f54821a1d579bf"
+    },
+    "variant-ledger.jsonl.gz": {
+      "bytes": 4676784,
+      "sha256": "ec9c9a5ffdb228aaf832ac534bd864a46b89a78c4336b65dd413109502e6b622"
+    }
+  },
+  "schema_version": 1
+}

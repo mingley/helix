@@ -23,9 +23,17 @@ The implementation contains its own exact feature counts and coefficient
 calculation. `comparison-implementation.py` preserves the separately written
 predictor used for comparison. `saved-fits.json` binds the extracted old fits;
 no response fitting or new experimental outcome reading occurred. The script
-supports a fresh `--out` directory; inspect `--help` for the required source
-artifact and comparison-script arguments. Replay into a new directory
-reproduced all nine original files byte-for-byte.
+supports a fresh `--out` directory. Use the captured comparator when replaying
+the original audit, because the current CLI may gain new provenance fields:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 research/variant-locality/model-envelope-v1/implementation.py \
+  --model-artifacts research/results/context-activity-v3/core \
+  --comparator research/variant-locality/model-envelope-v1/comparison-implementation.py \
+  --out runs/variant-envelope-replay
+```
+
+Replay into a new directory reproduced all nine original files byte-for-byte.
 
 See [summary.json](summary.json), [protocol.json](protocol.json) and
 [all-snv-predictions.csv](all-snv-predictions.csv) for the complete results.

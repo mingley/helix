@@ -1,0 +1,12 @@
+{
+  "files": {
+    "comparison.json": {
+      "bytes": 775276,
+      "sha256": "93f2b9d82c5b45d9dbb6344a350e48f24ac99ad0ce496d8993b813fb8d1faa60"
+    },
+    "implementation.py": {
+      "bytes": 15994,
+      "sha256": "ee96250e39c2b06bf62da8dfedda7115c33f3044c0d1f41af5f00094a589040c"
+    }
+  }
+}

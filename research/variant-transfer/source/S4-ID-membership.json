@@ -1,0 +1,11 @@
+{
+  "phase": "ID-only source membership and duplicate inventory; no numericoutcomesread",
+  "S4_ID_metadata_sha256": "07c666b692cf1eb5b1578d3afed0708442abb087a16c9b84b5e1aebd7916b357",
+  "S4_unique_IDs": 304278,
+  "S2_unique_IDs": 365762,
+  "S4_IDs_absent_S2": [],
+  "S2_IDs_absent_S4_count": 61484,
+  "reference_validated_pairs": 332719,
+  "reference_validated_pairs_present_S4": 278251,
+  "reference_validated_pairs_absent_S4": 54468
+}

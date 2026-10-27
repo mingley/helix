@@ -1,0 +1,1 @@
+ Code availability The code used to analyse and visualize data for this study is available at https://github.com/julirsch/finemapped_mpra/ . 

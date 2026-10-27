@@ -1,0 +1,504 @@
+{
+  "schema_version": 1,
+  "timestamp_utc": "2026-10-27T22:28:51.293000+00:00",
+  "protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+  "archive_sha256": "723c4a0e1cfdb2c9c6ae55b3fa9206855dd95e0241319b9fc8d0831d3b42f9c2",
+  "implementation_sha256": "e556194661214b75550d7333e44760fd43edf4ebd888aa5651aa519b1562a27a",
+  "scope": "first two physical rows only; no numeric scientific values decoded",
+  "sheets": [
+    {
+      "sheet": "S4.MPRA results",
+      "member": "xl/worksheets/sheet1.xml",
+      "schema_rows": [
+        {
+          "row_1based": 1,
+          "cells": [
+            {
+              "coordinate": "A1",
+              "type": "s",
+              "shared_string_index": 304358,
+              "text": "Supplementary Table 4 | MPRA result summary"
+            }
+          ]
+        },
+        {
+          "row_1based": 2,
+          "cells": [
+            {
+              "coordinate": "A2",
+              "type": "s",
+              "shared_string_index": 304281,
+              "text": "Variant"
+            },
+            {
+              "coordinate": "B2",
+              "type": "s",
+              "shared_string_index": 304282,
+              "text": "Active (any cell-type)"
+            },
+            {
+              "coordinate": "C2",
+              "type": "s",
+              "shared_string_index": 304287,
+              "text": "emVar (any cell-type)"
+            },
+            {
+              "coordinate": "D2",
+              "type": "s",
+              "shared_string_index": 304288,
+              "text": "allele1 log2FC activity in A549"
+            },
+            {
+              "coordinate": "E2",
+              "type": "s",
+              "shared_string_index": 304289,
+              "text": "allele1 log2FC activity in HEPG2"
+            },
+            {
+              "coordinate": "F2",
+              "type": "s",
+              "shared_string_index": 304290,
+              "text": "allele1 log2FC activity in K562"
+            },
+            {
+              "coordinate": "G2",
+              "type": "s",
+              "shared_string_index": 304291,
+              "text": "allele1 log2FC activity in SKNSH"
+            },
+            {
+              "coordinate": "H2",
+              "type": "s",
+              "shared_string_index": 304292,
+              "text": "allele1 log2FC activity in HCT116"
+            },
+            {
+              "coordinate": "I2",
+              "type": "s",
+              "shared_string_index": 304293,
+              "text": "allele1 log2FC activity SE in A549"
+            },
+            {
+              "coordinate": "J2",
+              "type": "s",
+              "shared_string_index": 304295,
+              "text": "allele1 log2FC activity SE in HEPG2"
+            },
+            {
+              "coordinate": "K2",
+              "type": "s",
+              "shared_string_index": 304296,
+              "text": "allele1 log2FC activity SE in K562"
+            },
+            {
+              "coordinate": "L2",
+              "type": "s",
+              "shared_string_index": 304294,
+              "text": "allele1 log2FC activity SE in SKNSH"
+            },
+            {
+              "coordinate": "M2",
+              "type": "s",
+              "shared_string_index": 304297,
+              "text": "allele1 log2FC activity SE in HCT116"
+            },
+            {
+              "coordinate": "N2",
+              "type": "s",
+              "shared_string_index": 304298,
+              "text": "allele2 log2FC activity in A549"
+            },
+            {
+              "coordinate": "O2",
+              "type": "s",
+              "shared_string_index": 304299,
+              "text": "allele2 log2FC activity in HEPG2"
+            },
+            {
+              "coordinate": "P2",
+              "type": "s",
+              "shared_string_index": 304300,
+              "text": "allele2 log2FC activity in K562"
+            },
+            {
+              "coordinate": "Q2",
+              "type": "s",
+              "shared_string_index": 304301,
+              "text": "allele2 log2FC activity in SKNSH"
+            },
+            {
+              "coordinate": "R2",
+              "type": "s",
+              "shared_string_index": 304302,
+              "text": "allele2 log2FC activity in HCT116"
+            },
+            {
+              "coordinate": "S2",
+              "type": "s",
+              "shared_string_index": 304303,
+              "text": "allele2 log2FC activity SE in A549"
+            },
+            {
+              "coordinate": "T2",
+              "type": "s",
+              "shared_string_index": 304304,
+              "text": "allele2 log2FC activity SE in HEPG2"
+            },
+            {
+              "coordinate": "U2",
+              "type": "s",
+              "shared_string_index": 304305,
+              "text": "allele2 log2FC activity SE in K562"
+            },
+            {
+              "coordinate": "V2",
+              "type": "s",
+              "shared_string_index": 304306,
+              "text": "allele2 log2FC activity SE in SKNSH"
+            },
+            {
+              "coordinate": "W2",
+              "type": "s",
+              "shared_string_index": 304307,
+              "text": "allele2 log2FC activity SE in HCT116"
+            },
+            {
+              "coordinate": "X2",
+              "type": "s",
+              "shared_string_index": 304308,
+              "text": "log2FCactivity in A549"
+            },
+            {
+              "coordinate": "Y2",
+              "type": "s",
+              "shared_string_index": 304309,
+              "text": "log2FC activity in HEPG2"
+            },
+            {
+              "coordinate": "Z2",
+              "type": "s",
+              "shared_string_index": 304310,
+              "text": "log2FC activity in K562"
+            },
+            {
+              "coordinate": "AA2",
+              "type": "s",
+              "shared_string_index": 304311,
+              "text": "log2FC activity in SKNSH"
+            },
+            {
+              "coordinate": "AB2",
+              "type": "s",
+              "shared_string_index": 304312,
+              "text": "log2FC activity in HCT116"
+            },
+            {
+              "coordinate": "AC2",
+              "type": "s",
+              "shared_string_index": 304313,
+              "text": "active in A549"
+            },
+            {
+              "coordinate": "AD2",
+              "type": "s",
+              "shared_string_index": 304283,
+              "text": "active in HEPG2"
+            },
+            {
+              "coordinate": "AE2",
+              "type": "s",
+              "shared_string_index": 304284,
+              "text": "active in K562"
+            },
+            {
+              "coordinate": "AF2",
+              "type": "s",
+              "shared_string_index": 304285,
+              "text": "active in SKNSH"
+            },
+            {
+              "coordinate": "AG2",
+              "type": "s",
+              "shared_string_index": 304286,
+              "text": "active in HCT116"
+            },
+            {
+              "coordinate": "AH2",
+              "type": "s",
+              "shared_string_index": 304314,
+              "text": "logPadj activity in A549"
+            },
+            {
+              "coordinate": "AI2",
+              "type": "s",
+              "shared_string_index": 304315,
+              "text": "logPadj activity in HEPG2"
+            },
+            {
+              "coordinate": "AJ2",
+              "type": "s",
+              "shared_string_index": 304316,
+              "text": "logPadj activity in K562"
+            },
+            {
+              "coordinate": "AK2",
+              "type": "s",
+              "shared_string_index": 304317,
+              "text": "logPadj activity in SKNSH"
+            },
+            {
+              "coordinate": "AL2",
+              "type": "s",
+              "shared_string_index": 304318,
+              "text": "logPadj acitivty in HCT116"
+            },
+            {
+              "coordinate": "AM2",
+              "type": "s",
+              "shared_string_index": 304319,
+              "text": "log2Skew in A549"
+            },
+            {
+              "coordinate": "AN2",
+              "type": "s",
+              "shared_string_index": 304320,
+              "text": "log2Skew in HEPG2"
+            },
+            {
+              "coordinate": "AO2",
+              "type": "s",
+              "shared_string_index": 304321,
+              "text": "log2Skew in K562"
+            },
+            {
+              "coordinate": "AP2",
+              "type": "s",
+              "shared_string_index": 304322,
+              "text": "log2Skew in SKNSH"
+            },
+            {
+              "coordinate": "AQ2",
+              "type": "s",
+              "shared_string_index": 304323,
+              "text": "log2Skew in HCT116"
+            },
+            {
+              "coordinate": "AR2",
+              "type": "s",
+              "shared_string_index": 304324,
+              "text": "emVar in A549"
+            },
+            {
+              "coordinate": "AS2",
+              "type": "s",
+              "shared_string_index": 304325,
+              "text": "emVar in HEPG2"
+            },
+            {
+              "coordinate": "AT2",
+              "type": "s",
+              "shared_string_index": 304326,
+              "text": "emVar in K562"
+            },
+            {
+              "coordinate": "AU2",
+              "type": "s",
+              "shared_string_index": 304327,
+              "text": "emVar in SKNSH"
+            },
+            {
+              "coordinate": "AV2",
+              "type": "s",
+              "shared_string_index": 304328,
+              "text": "emVar in HCT116"
+            },
+            {
+              "coordinate": "AW2",
+              "type": "s",
+              "shared_string_index": 304329,
+              "text": "log2Skew SE in A549"
+            },
+            {
+              "coordinate": "AX2",
+              "type": "s",
+              "shared_string_index": 0,
+              "text": "log2Skew.SE_HEPG2"
+            },
+            {
+              "coordinate": "AY2",
+              "type": "s",
+              "shared_string_index": 304330,
+              "text": "log2Skew SE in K562"
+            },
+            {
+              "coordinate": "AZ2",
+              "type": "s",
+              "shared_string_index": 304331,
+              "text": "log2Skew SE in SKNSH"
+            },
+            {
+              "coordinate": "BA2",
+              "type": "s",
+              "shared_string_index": 304332,
+              "text": "log2Skew SE in HCT116"
+            },
+            {
+              "coordinate": "BB2",
+              "type": "s",
+              "shared_string_index": 304333,
+              "text": "log2Skew FDR in A549"
+            },
+            {
+              "coordinate": "BC2",
+              "type": "s",
+              "shared_string_index": 304334,
+              "text": "log2Skew FDR in HEPG2"
+            },
+            {
+              "coordinate": "BD2",
+              "type": "s",
+              "shared_string_index": 304335,
+              "text": "log2Skew FDR in K562"
+            },
+            {
+              "coordinate": "BE2",
+              "type": "s",
+              "shared_string_index": 304336,
+              "text": "log2Skew FDR in SKNSH"
+            },
+            {
+              "coordinate": "BF2",
+              "type": "s",
+              "shared_string_index": 304337,
+              "text": "log2Skew FDR  in HCT116"
+            },
+            {
+              "coordinate": "BG2",
+              "type": "s",
+              "shared_string_index": 304338,
+              "text": "mean Plasmid counts ref A549"
+            },
+            {
+              "coordinate": "BH2",
+              "type": "s",
+              "shared_string_index": 304339,
+              "text": "mean Plasmid counts ref HEPG2"
+            },
+            {
+              "coordinate": "BI2",
+              "type": "s",
+              "shared_string_index": 304340,
+              "text": "mean Plasmid counts ref K562"
+            },
+            {
+              "coordinate": "BJ2",
+              "type": "s",
+              "shared_string_index": 304341,
+              "text": "mean Plasmid counts ref SKNSH"
+            },
+            {
+              "coordinate": "BK2",
+              "type": "s",
+              "shared_string_index": 304342,
+              "text": "mean Plasmid counts ref HCT116"
+            },
+            {
+              "coordinate": "BL2",
+              "type": "s",
+              "shared_string_index": 304343,
+              "text": "mean Plasmid counts alt A549"
+            },
+            {
+              "coordinate": "BM2",
+              "type": "s",
+              "shared_string_index": 304344,
+              "text": "mean Plasmid counts alt HEPG2"
+            },
+            {
+              "coordinate": "BN2",
+              "type": "s",
+              "shared_string_index": 304345,
+              "text": "mean Plasmid counts alt K562"
+            },
+            {
+              "coordinate": "BO2",
+              "type": "s",
+              "shared_string_index": 304346,
+              "text": "mean Plasmid counts alt SKNSH"
+            },
+            {
+              "coordinate": "BP2",
+              "type": "s",
+              "shared_string_index": 304347,
+              "text": "mean Plasmid counts alt HCT116"
+            },
+            {
+              "coordinate": "BQ2",
+              "type": "s",
+              "shared_string_index": 304348,
+              "text": "mean RNA counts ref A549"
+            },
+            {
+              "coordinate": "BR2",
+              "type": "s",
+              "shared_string_index": 304349,
+              "text": "mean RNA counts ref HEPG2"
+            },
+            {
+              "coordinate": "BS2",
+              "type": "s",
+              "shared_string_index": 304350,
+              "text": "mean RNA counts ref K562"
+            },
+            {
+              "coordinate": "BT2",
+              "type": "s",
+              "shared_string_index": 304351,
+              "text": "mean RNA counts ref SKNSH"
+            },
+            {
+              "coordinate": "BU2",
+              "type": "s",
+              "shared_string_index": 304352,
+              "text": "mean RNA counts ref HCT116"
+            },
+            {
+              "coordinate": "BV2",
+              "type": "s",
+              "shared_string_index": 304353,
+              "text": "mean RNA counts alt A549"
+            },
+            {
+              "coordinate": "BW2",
+              "type": "s",
+              "shared_string_index": 304354,
+              "text": "mean RNA counts alt HEPG2"
+            },
+            {
+              "coordinate": "BX2",
+              "type": "s",
+              "shared_string_index": 304355,
+              "text": "mean RNA counts alt K562"
+            },
+            {
+              "coordinate": "BY2",
+              "type": "s",
+              "shared_string_index": 304356,
+              "text": "mean RNA counts alt SKNSH"
+            },
+            {
+              "coordinate": "BZ2",
+              "type": "s",
+              "shared_string_index": 304357,
+              "text": "mean RNA counts alt HCT116"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "document_properties": {
+    "docProps/core.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dc:creator>Layla Siraj</dc:creator><cp:lastModifiedBy>Siraj, Layla</cp:lastModifiedBy><dcterms:created xsi:type=\"dcterms:W3CDTF\">2024-04-26T14:26:38Z</dcterms:created><dcterms:modified xsi:type=\"dcterms:W3CDTF\">2025-04-25T21:56:35Z</dcterms:modified></cp:coreProperties>",
+    "docProps/app.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<Properties xmlns=\"http://schemas.openxmlformats.org/officeDocument/2006/extended-properties\" xmlns:vt=\"http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes\"><Application>Microsoft Macintosh Excel</Application><DocSecurity>0</DocSecurity><ScaleCrop>false</ScaleCrop><HeadingPairs><vt:vector size=\"2\" baseType=\"variant\"><vt:variant><vt:lpstr>Worksheets</vt:lpstr></vt:variant><vt:variant><vt:i4>1</vt:i4></vt:variant></vt:vector></HeadingPairs><TitlesOfParts><vt:vector size=\"1\" baseType=\"lpstr\"><vt:lpstr>S4.MPRA results</vt:lpstr></vt:vector></TitlesOfParts><Company></Company><LinksUpToDate>false</LinksUpToDate><SharedDoc>false</SharedDoc><HyperlinksChanged>false</HyperlinksChanged><AppVersion>16.0300</AppVersion></Properties>"
+  }
+}

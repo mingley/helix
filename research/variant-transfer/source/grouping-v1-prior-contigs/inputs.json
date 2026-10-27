@@ -1,0 +1,10 @@
+{
+  "new_pairs": {
+    "path": "/workspace/helix/research/variant-transfer/source/design-mapping-v2/all-reference-validated-pairs.jsonl.gz",
+    "sha256": "e37f6e4b621159fd432fb89d180a317bde145863e8bd706ba8f315c6f2531979"
+  },
+  "prior_inventory": {
+    "manifest_sha256": "861d838582ce1f0d52d846e6d20ee5d6c0f28c059db257032c9cff7a1fae6faf",
+    "path": "/workspace/helix/research/variant-transfer/prior-exposure-inventory/inventory-v1"
+  }
+}

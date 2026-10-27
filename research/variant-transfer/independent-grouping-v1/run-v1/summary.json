@@ -1,0 +1,14 @@
+{
+  "comparison_to_primary": "pending separate command",
+  "components": 1171,
+  "independent_component_reconstruction_complete": true,
+  "new_numeric_outcome_access": false,
+  "new_variants": 332719,
+  "retained_ID_order_sha256": "7f613f2d41172ef55b33804af0ff851cabb41215a52eede7348d951bc77d8d30",
+  "retained_prior_components": 174,
+  "retained_prior_variants": 2430,
+  "schema_version": 1,
+  "source_cohort_gate_passed": false,
+  "technical_control_components": 3,
+  "technical_control_still_retained_variants": 0
+}

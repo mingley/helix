@@ -1,0 +1,104 @@
+{
+  "url": "https://api.github.com/repos/julirsch/finemapped_mpra/commits/HEAD",
+  "result": {
+    "sha": "1e38d1e3d4414dfa3a62b22110eba0136eda197d",
+    "node_id": "C_kwDOMcyKC9oAKDFlMzhkMWUzZDQ0MTRkZmEzYTYyYjIyMTEwZWJhMDEzNmVkYTE5N2Q",
+    "commit": {
+      "author": {
+        "name": "Jacob Ulirsch",
+        "email": "julirsch@gmail.com",
+        "date": "2025-05-14T02:04:56Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2025-05-14T02:04:56Z"
+      },
+      "message": "Update README.md",
+      "tree": {
+        "sha": "207f38819a2773b7427727bc7c7f008216559db4",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/207f38819a2773b7427727bc7c7f008216559db4"
+      },
+      "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/commits/1e38d1e3d4414dfa3a62b22110eba0136eda197d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoI/pICRC1aQ7uu5UhlAAAr0cQAF/RV9WlHABHXaJvqBg/ghZn\n8HCm57O5Kuw7NO7ZLT7MBSIT3t4uwXlBYtTq1ZU0YE1/FMkeUiNs11HohPzAT0/y\nfxf+EIwcwUiTLedSx8m+OMuSOCJM5ezTSfQU4p8RSPj5+BiI3lQCWa67FVYS5+aU\nZjyOtPKhoQHTlC2aszVEs44BY88EkUxlCgehOE4NiqhplLsgL+LbDH8PRNUvH/3h\n8CHSrTo8rez4bKSUttu3dUVWOvldOL60RD/hAE/0GsqMPZLzZVuFDNkG8xjrVytv\nZyb5aoRe2p6wTd5uLTSRHnDukLoZ5uF8plBLrakbXFshplAnmkvQiD0tizw344pv\ntfE4H3mwcPl6/VaT+T1Fa2PqGFaCEAP+wQ7WHFn3GaoMbhIXJCgm1R/+ugrCoqZf\nqobL+s+Ttv17AmvW5vmkIs83kkRTncBKhUa2zUnvcca0dkOUvJWM48ck0Iq8aLh0\nb9h89jiXn5AvAACfXQOAi737iEEV0ztxkokzi4Dq5MNP/UZJcJ+MGCf0jiumD2aE\nMq5KbEPkpthE18ugYv4rdefj9t9c4Xb3yykGnLD4N4i83beFHOJuxZwxwJI80Dtp\n+XqgXqp4VHvHUW29gCmjOA/PikqElHfvZDIvxS4nyoifM8BIRbbUp6zItzmYuhci\nuJ2+lTXL6nhbR9h+OAfN\n=UQU2\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 207f38819a2773b7427727bc7c7f008216559db4\nparent 6400f6f9aebb25458fed2a96618ba030c1865820\nauthor Jacob Ulirsch <julirsch@gmail.com> 1747188296 -0700\ncommitter GitHub <noreply@github.com> 1747188296 -0700\n\nUpdate README.md",
+        "verified_at": "2025-05-14T02:09:58Z"
+      }
+    },
+    "url": "https://api.github.com/repos/julirsch/finemapped_mpra/commits/1e38d1e3d4414dfa3a62b22110eba0136eda197d",
+    "html_url": "https://github.com/julirsch/finemapped_mpra/commit/1e38d1e3d4414dfa3a62b22110eba0136eda197d",
+    "comments_url": "https://api.github.com/repos/julirsch/finemapped_mpra/commits/1e38d1e3d4414dfa3a62b22110eba0136eda197d/comments",
+    "author": {
+      "login": "julirsch",
+      "id": 24594616,
+      "node_id": "MDQ6VXNlcjI0NTk0NjE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24594616?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/julirsch",
+      "html_url": "https://github.com/julirsch",
+      "followers_url": "https://api.github.com/users/julirsch/followers",
+      "following_url": "https://api.github.com/users/julirsch/following{/other_user}",
+      "gists_url": "https://api.github.com/users/julirsch/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/julirsch/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/julirsch/subscriptions",
+      "organizations_url": "https://api.github.com/users/julirsch/orgs",
+      "repos_url": "https://api.github.com/users/julirsch/repos",
+      "events_url": "https://api.github.com/users/julirsch/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/julirsch/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6400f6f9aebb25458fed2a96618ba030c1865820",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/commits/6400f6f9aebb25458fed2a96618ba030c1865820",
+        "html_url": "https://github.com/julirsch/finemapped_mpra/commit/6400f6f9aebb25458fed2a96618ba030c1865820"
+      }
+    ],
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1
+    },
+    "files": [
+      {
+        "sha": "4bc5a9219e8a2328cde75eb329e1ece815392ef8",
+        "filename": "README.md",
+        "status": "modified",
+        "additions": 1,
+        "deletions": 1,
+        "changes": 2,
+        "blob_url": "https://github.com/julirsch/finemapped_mpra/blob/1e38d1e3d4414dfa3a62b22110eba0136eda197d/README.md",
+        "raw_url": "https://github.com/julirsch/finemapped_mpra/raw/1e38d1e3d4414dfa3a62b22110eba0136eda197d/README.md",
+        "contents_url": "https://api.github.com/repos/julirsch/finemapped_mpra/contents/README.md?ref=1e38d1e3d4414dfa3a62b22110eba0136eda197d",
+        "patch": "@@ -1,6 +1,6 @@\n # Functional dissection of complex and molecular trait variants at single cell resolution\n \n-Updated: July 29, 2024 *(To be completed by August 12th, 2024)*\n+Updated: May 13th, 2025\n \n ## About\n "
+      }
+    ]
+  }
+}

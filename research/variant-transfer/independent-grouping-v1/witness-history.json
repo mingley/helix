@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "comparison_role": "Implementation-history diagnostics, not an additional grouping success criterion. Every complete artifact catalog is retained and hash-bound.",
+  "new_homology_union_edges": {
+    "primary_count": 1656,
+    "independent_count": 1656,
+    "exact_triplets_equal": true,
+    "primary_only": [],
+    "independent_only": []
+  },
+  "old_DNA_witnesses": {
+    "primary": [
+      {
+        "mismatches": 12,
+        "new_allele": "sequence_ref",
+        "new_id": "chr1:103399207:A:C",
+        "old_DNA_kind": "reference_or_explicit_edited_window",
+        "old_id": "WTC11_seq12384_F",
+        "old_inventory_stage": "old_explicit",
+        "query_strand": "+",
+        "reason": "full200nt_ungapped_ge90pct_prior_DNA_match",
+        "component": "2a1ad8938330c93a99cc948013bb1c2e9380e7687bfac7cfe9d07810ef8d84eb"
+      }
+    ],
+    "independent": [
+      {
+        "stage": "old_explicit",
+        "new_id": "chr1:103399207:A:C",
+        "old_or_new_id": "WTC11_seq12384_F",
+        "distance": "12"
+      }
+    ],
+    "policy": "First valid old hit can depend on orientation/allele traversal order. Exact witness identity is not required; complete partitions and all exclusion reason classes must agree."
+  },
+  "coordinate_witness_policy": "Primary stores first original-interval witness per class. Independent algorithm uses merged expanded interval unions and emits exact collection reason classes, without selecting one original interval. Full old input identities and merge rule are bound in the independent run; component/variant reason classes match in the main comparison.",
+  "primary_manifest_sha256": "c276cb6e2fc06e4318c3029d83e497f769792fa14029d55f7e3e59ed8bd6b5a2",
+  "independent_manifest_sha256": "e25231628756da32f961f6553999a58132353b9e223e6e3df7f467f817ede33b",
+  "new_reporter_outcome_access": false
+}

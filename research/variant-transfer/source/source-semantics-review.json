@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "phase": "pre-outcome metadata review; not the final cohort/binding gate",
+  "protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+  "source": {
+    "doi": "10.1038/s41586-026-10121-6",
+    "S2_sha256": "4b6e20d1789021ee8f11f57af366a65680d25496de9351a9e781e9424716d824",
+    "S4_sha256": "723c4a0e1cfdb2c9c6ae55b3fa9206855dd95e0241319b9fc8d0831d3b42f9c2",
+    "S30_bundle_sha256": "3e62a3876b70e9c75951df26ed09ba552c3ba6f9f3b318934c1b01a5a42403b1"
+  },
+  "endpoint": {
+    "worksheet": "S4.MPRA results",
+    "header_row_1based": 2,
+    "ID_column": {"A": "Variant"},
+    "effect_columns": {"AN": "log2Skew in HEPG2", "AO": "log2Skew in K562"},
+    "SE_columns_metadata_only": {"AX": "log2Skew.SE_HEPG2", "AY": "log2Skew SE in K562"},
+    "units": "Published main-panel DESeq2 Alt-versus-Ref by RNA-versus-DNA interaction in delta log2 fold-change units after source summit-shift normalization.",
+    "positive_direction": "Alternative construct has greater RNA-relative-to-DNA activity than reference construct, as defined in the article Methods.",
+    "DNA_orientation_evidence": "S2 SNV allele1/allele2 bases match the exact Variant ID Ref/Alt at insert index99; full reference insert validates against hg38 after the hg19 chain mapping.",
+    "not_equal_to": "Raw read counts, absolute transcripts, endogenous gene expression, a literal difference of the earlier Agarwal aggregate estimates, S7 shrunken multi-cell effects, satmut posterior effects, or a meta-analysis.",
+    "no_sign_selection_from_outcomes": true
+  },
+  "source_processing": {
+    "evidence_section": "MPRA data processing and main analysis",
+    "quoted_QC": "Variants with fewer than 30 DNA counts or with exactly 0 RNA counts in oligonucleotides for either allele were excluded from all downstream analysis.",
+    "quoted_duplicate_library_rule": "When variants were assayed in multiple libraries, the library with the highest sum of the square roots of plasmid counts in reference and alternative sequences was selected.",
+    "quoted_S4_rule": "In Supplementary Table 4, we report the best measurement across libraries (by plasmid coverage across variants) chosen per variant per cell type.",
+    "observed_ID_metadata": "S4 has304278 data rows,304278 unique IDs and no duplicate/blank IDs; all IDs occur in S2.",
+    "application": "Use the authoritative published preprocessed S4 table unchanged. No library choice by reporter effect, no new activity/FDR/PIP threshold, no inferred unobserved count or reapplication of a guessed threshold to rounded aggregate counts.",
+    "limit": "This source-level documentation and ID uniqueness do not independently audit raw count filtering or recover the discarded library alternatives. S4 does not retain per-library IDs, source classes or an explicit final-workbook missing-token convention."
+  },
+  "source_class_metadata": {
+    "source": "Official S30.MPRA Controls design sheet, columns ID/Control Type/Source/Libraries/Sequence",
+    "complete_rows_retained": 2835,
+    "exact_or_RC_control_match_variants": 41,
+    "match_ledger_sha256": "971e90cb2d24bdaf60846efc3f00415aa1e1b495461d2677e6edc108bdf90759",
+    "application": "Every component containing a reused technical-control match must be excluded after full external population unions. Genuine newly measured location/annotation/null controls remain eligible under the frozen contract; no source effect or significance category selects the cohort."
+  },
+  "missing_policy_evidence": "missing-token-evidence.json",
+  "missing_policy": {"allowed_tokens": []},
+  "remaining_gates": [
+    "Complete frozen transitive component and previous-source homology checks on all reference-validated external pairs before any component exclusion.",
+    "Commit the exact source/header/cohort/model binding before numeric effect parsing.",
+    "Verify ordinary finite numeric type and exact target ID/context coverage under the frozen no-accepted-token policy; preserve and stop on any unexplained cell."
+  ],
+  "S4_numeric_effect_values_read": false
+}

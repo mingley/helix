@@ -1,0 +1,4138 @@
+{
+  "url": "https://www.nature.com/articles/s41586-026-10121-6",
+  "retention": "Methods, supplement descriptions and license only; no result/figure text or response payload decoded",
+  "sections": [
+    {
+      "meta": {
+        "name": "citation_fulltext_html_url",
+        "content": "https://www.nature.com/articles/s41586-026-10121-6"
+      }
+    },
+    {
+      "meta": {
+        "name": "citation_title",
+        "content": "Functional dissection of complex trait variants at single-nucleotide resolution"
+      }
+    },
+    {
+      "meta": {
+        "name": "citation_online_date",
+        "content": "2026/02/25"
+      }
+    },
+    {
+      "meta": {
+        "name": "citation_doi",
+        "content": "10.1038/s41586-026-10121-6"
+      }
+    },
+    {
+      "section": "Methods",
+      "text": "Methods"
+    },
+    {
+      "section": "Methods",
+      "text": "Fine-mapping"
+    },
+    {
+      "section": "Methods",
+      "text": "We obtained fine-mapping summary data, including PIPs for each variant and 95% CSs, for 48 traits in the UKBB and BBJ from previous studies"
+    },
+    {
+      "section": "Methods",
+      "text": "31"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "66"
+    },
+    {
+      "section": "Methods",
+      "text": ". Detailed methods are available from these studies, but we describe the general approach briefly here. The UKBB is a population-based cohort in the UK, of which 366,194 \u2018white British\u2019 individuals were selected for inclusion ("
+    },
+    {
+      "section": "Methods",
+      "text": "https://github.com/Nealelab/UK_Biobank_GWAS"
+    },
+    {
+      "section": "Methods",
+      "text": "). The BBJ is a large non-European hospital-based biobank from Japan, from which 178,726 individuals of Japanese descent were included in this study. We selected 48 traits across 12 domains (including an \u2018other\u2019 category) from the UKBB and BBJ (Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "1"
+    },
+    {
+      "section": "Methods",
+      "text": "). GWAS was performed on each using a generalized linear mixed model, as implemented in SAIGE"
+    },
+    {
+      "section": "Methods",
+      "text": "67"
+    },
+    {
+      "section": "Methods",
+      "text": " (for binary traits) or BOLT-LMM"
+    },
+    {
+      "section": "Methods",
+      "text": "68"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "69"
+    },
+    {
+      "section": "Methods",
+      "text": " (for quantitative traits), with the following covariates: age, sex, age"
+    },
+    {
+      "section": "Methods",
+      "text": "2"
+    },
+    {
+      "section": "Methods",
+      "text": ", age\u2009\u00d7\u2009sex, age"
+    },
+    {
+      "section": "Methods",
+      "text": "2"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u00d7\u2009sex and the top 20 genetic principal components. Fine-mapping was then performed using SuSiE"
+    },
+    {
+      "section": "Methods",
+      "text": "30"
+    },
+    {
+      "section": "Methods",
+      "text": " with the GWAS summary statistics and in-sample dosage linkage disequilibrium in merged 1.5-Mb windows."
+    },
+    {
+      "section": "Methods",
+      "text": "Similarly, we obtained fine-mapping results across 49 tissues from the GTEx v.8 from previous studies"
+    },
+    {
+      "section": "Methods",
+      "text": "34"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "66"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "70"
+    },
+    {
+      "section": "Methods",
+      "text": " and summarize the approach below. The GTEx project is a tissue-based biobank with genotypes (whole genome sequencing) and gene-expression data (RNA-seq) for 838 individuals across 49 tissues (Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "1"
+    },
+    {
+      "section": "Methods",
+      "text": "), which are grouped into 11 systems. We obtained "
+    },
+    {
+      "section": "Methods",
+      "text": "cis"
+    },
+    {
+      "section": "Methods",
+      "text": "-eQTL summary statistics, genotype principal components (PCs) and other associated data as input to fine-mapping, which was performed in a similar way to the fine-mapping of complex traits from the UKBB, with the main modification being that covariates (including genetic PCs) were projected out of the genotypes before the linkage\u00a0disequilibrium calculation, because GTEx is a more ancestrally heterogeneous cohort"
+    },
+    {
+      "section": "Methods",
+      "text": "39"
+    },
+    {
+      "section": "Methods",
+      "text": ". When collapsing PIPs across multiple tests into a single estimate, the maximum PIP across traits and/or tissues is used. As well as individual trait CSs, merged CSs across traits or across tissues were obtained, as previously described"
+    },
+    {
+      "section": "Methods",
+      "text": "31"
+    },
+    {
+      "section": "Methods",
+      "text": "."
+    },
+    {
+      "section": "Methods",
+      "text": "Variant selection and oligonucleotide design"
+    },
+    {
+      "section": "Methods",
+      "text": "We designed 200-bp oligonucleotides centred around the reference and alternative alleles of fine-mapped eQTLs from GTEx v.8 and fine-mapped complex traits from the UKBB and BBJ cohorts"
+    },
+    {
+      "section": "Methods",
+      "text": "71"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "72"
+    },
+    {
+      "section": "Methods",
+      "text": " (Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "1a"
+    },
+    {
+      "section": "Methods",
+      "text": "). Variants were selected for inclusion if they demonstrated a PIP\u2009>\u20090.5 or greater in any tissue or a PIP\u2009>\u20090.1 in any trait, or if they fell within a 95% CS with fewer than 25 variants (eQTLs), 30 variants (quantitative traits) or 75 variants (binary traits). Variants with PIP\u2009>\u20090.1 in any of 3 GTEx tissues approximately corresponding to cell types for MPRA were also included. That is, we selected additional fine-mapped eQTLs from liver (matched to HepG2), transverse colon (matched to HCT116) and any brain tissue (matched to SK-N-SH). CSs were considered to be successfully assayed if variants containing at least 80% of the probability had MPRA measurements. Most (92.5%) of the selected variants were single nucleotide polymorphisms. The remaining 22,951 variants were small insertions or deletions (indels), of which 92.2% affected fewer than 10\u2009bp, and only 11 involved more than 50\u2009bp. In total, we included 148,805 eQTL test variants and 78,238 complex trait test variants (Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "1b"
+    },
+    {
+      "section": "Methods",
+      "text": " and Supplementary Tables "
+    },
+    {
+      "section": "Methods",
+      "text": "1"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2013"
+    },
+    {
+      "section": "Methods",
+      "text": "3"
+    },
+    {
+      "section": "Methods",
+      "text": "), with 5,631 variants shared across the two sets. All test and control variants (see below) were split into 8 libraries "
+    },
+    {
+      "section": "Methods",
+      "text": "("
+    },
+    {
+      "section": "Methods",
+      "text": "Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "29"
+    },
+    {
+      "section": "Methods",
+      "text": ")."
+    },
+    {
+      "section": "Methods",
+      "text": "To test for potential non-additive effects between trait-associated variants in the same element, we selected 2,522 pairs of variants that were within 150\u2009bp of each other, were fine-mapped with PIP\u2009>\u20090.1 for at least one trait, and overlapped with an endogenous CRE in at least one cell type (Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "18"
+    },
+    {
+      "section": "Methods",
+      "text": "). To maximize the power to detect non-additive effects, oligonucleotides were designed for up to six possible windows. Centring on each variant in the pair, the variant was placed at approximately 50\u2009bp, 100\u2009bp or 150\u2009bp (the exact location could change for variants causing insertions or deletions), and windows in which the second variant was at least 10\u2009bp from the edge of the oligonucleotide were included (Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "3a"
+    },
+    {
+      "section": "Methods",
+      "text": "). For each window, we designed oligonucleotides for all four possible diplotypes (Ref/Ref, Ref/Alt, Alt/Ref and Alt/Alt)."
+    },
+    {
+      "section": "Methods",
+      "text": "As well as trait-associated test variants, we designed several comprehensive sets of controls. We selected 32,534 \u2018location-matched\u2019 controls that were more than 150\u2009bp but less than 500\u2009bp away from test variants and were not significantly associated with a complex trait ("
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009>\u20090.0001) or change in gene expression ("
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009>\u20090.001) in our summary data. Next, we selected 39,708 \u2018annotation-matched\u2019 controls that were not in 95% CSs or significantly associated with a trait that were matched for MAF, linkage\u00a0disequilibrium scores, standard genomic annotations (promoter, 3\u2032 UTR, coding, 5\u2032 UTR, intron, CRE, evolutionary constraint) as well as CRE annotations from relevant ENCODE cell types and tissues. Matching was done by computing propensity scores and selecting the closest score match using the MatchIt R package. An example of this matching procedure is shown in Extended Data Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "1a"
+    },
+    {
+      "section": "Methods",
+      "text": ". Finally, we selected 14,710 \u2018null\u2019 trait controls, for which we simulated a typical GWAS phenotype and performed fine-mapping and variant selection in the same manner as was done for complex traits for UKBB and BBJ. To simulate these phenotypes"
+    },
+    {
+      "section": "Methods",
+      "text": "73"
+    },
+    {
+      "section": "Methods",
+      "text": ", we drew causal effects from variants present in UKBB or BBJ, largely following a previous approach. That is, we assumed 20% trait heritability, either 1,000 (for binary traits) or 5,000 (for quantitative traits) total causal variants, and a MAF-dependent per-allele effect size consistent with previously reported complex-trait architecture"
+    },
+    {
+      "section": "Methods",
+      "text": "73"
+    },
+    {
+      "section": "Methods",
+      "text": " ("
+    },
+    {
+      "section": "Methods",
+      "text": "\u03b1"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u2009\u22120.38). Unlike annotation- and location-matched controls, null control variants were not expected to be enriched at CREs. Instead, this set of controls was designed to reflect the linkage\u00a0disequilibrium patterns of real complex traits and provide a true null set from the perspective of genomic annotation. For all three classes of control, matching was done across PIP bins, resulting in 37,437 controls for eQTLs and 48,880 for complex traits (Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "1b"
+    },
+    {
+      "section": "Methods",
+      "text": ")."
+    },
+    {
+      "section": "Methods",
+      "text": "We also selected 128 elements containing variants from the original screen that overlap endogenous CREs on which to perform saturation mutagenesis. This set contained a total of 136 emVars, where 114 elements each contain 1 emVar, 8 elements contain 2 emVars, and 6 elements contain 1 emVar and 1 non-emVar (Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "23"
+    },
+    {
+      "section": "Methods",
+      "text": ")"
+    },
+    {
+      "section": "Methods",
+      "text": ". Three categories of variants were prioritized for saturation mutagenesis. First, we prioritized 83 emVars with \u2018canonical regulatory mechanisms\u2019, in which a fine-mapped emVar was predicted to disrupt the known motif at an occupied TF site (that is, the variant disrupts a TF motif and that variant resides within a ChIP\u2013seq peak for that TF). Second, we prioritized 53 emVars with \u2018non-canonical or unclear regulatory mechanisms\u2019, in which a fine-mapped emVar did not disrupt the known motif of a TF with evidence of occupancy from ChIP\u2013seq. Candidate variants were manually inspected and selected variants had at least one alternative measure of function, such as residing in a DHS footprint, lying in the flank (0\u201310\u2009bp) of a motif at an occupied TF site, or having strong predicted allelic effects in sequence-based models of function, such as Enformer. Third, we prioritized 14 \u2018same CRE variant pairs\u2019, in which at least one variant in the pair was an emVar and the pair demonstrated a non-additive effect, or both variants were strong candidates for the first two categories. Unless otherwise indicated, the 22 emVars selected as variant pairs were also included in their respective canonical and non-canonical categories."
+    },
+    {
+      "section": "Methods",
+      "text": "Overall, variants were chosen to survey a variety of complex and molecular traits, a range of PIPs to allow for both confirmation (PIP\u2009>\u20090.9) and exploration (PIP\u2009>\u20090.1 and PIP\u2009<\u20090.9), a variety of predicted effects on different TFs and in different cell types, and sufficient representation in all three categories. In total, we selected 83 variants from category 1 (canonical mechanism), 53 variants from category 2 (non-canonical or unclear regulatory mechanisms) and 14 variant pairs from category 3 (same CRE variant pairs). For each of the 114 single-variant elements, we designed 200-bp oligonucleotides using both the reference and the alternative background sequences, as well as all possible single-nucleotide substitutions for both backgrounds (3 alternative nucleotides\u2009\u00d7\u2009200 positions\u2009\u00d7\u20092 backgrounds). For each of the 14 variant pairs, we designed mutagenesis oligonucleotides using each diplotype (Ref/Ref, Ref/Alt, Alt/Ref and Alt/Alt) as a background (3 alternative nucleotides\u2009\u00d7\u2009200 positions\u2009\u00d7\u20094 backgrounds)."
+    },
+    {
+      "section": "Methods",
+      "text": "Finally, we also included technical controls to evaluate the quality of individual MPRA experiments. For each library, we included 91 activity controls, 96 emVar controls and 506 negative controls selected from previously published experiments"
+    },
+    {
+      "section": "Methods",
+      "text": "16"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "74"
+    },
+    {
+      "section": "Methods",
+      "text": " (Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "30"
+    },
+    {
+      "section": "Methods",
+      "text": "). Activity controls were chosen for their ubiquitous activity across multiple cell types and were selected to represent a broad range of enhancer activities. For the saturation-mutagenesis library, we included an additional 2,126 negative controls, selecting 1,876 ORF controls and 250 shuffled sequences from previously published work"
+    },
+    {
+      "section": "Methods",
+      "text": "75"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "76"
+    },
+    {
+      "section": "Methods",
+      "text": "."
+    },
+    {
+      "section": "Methods",
+      "text": "MPRA\u00a0library construction"
+    },
+    {
+      "section": "Methods",
+      "text": "The MPRA libraries were constructed as previously described"
+    },
+    {
+      "section": "Methods",
+      "text": "16"
+    },
+    {
+      "section": "Methods",
+      "text": " with several modifications to the original protocol. The 230-bp oligonucleotides were synthesized using Agilent Technologies HiFi libraries for complex traits (seven 60\u2009K libraries) and eQTL (two 244\u2009K libraries) or Twist Biosciences for saturation mutagenesis (one 300\u2009K library) with the designed 200-bp oligonucleotide in the middle and 15-bp adaptor sequences on either end. Unique 20-bp barcodes were added by PCR using primers #82 and #202 (Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "31"
+    },
+    {
+      "section": "Methods",
+      "text": "). Each oligonucleotide amplification consisted of 16\u201332 50-\u03bcl reactions containing 25\u2009\u03bcl Q5 2xMM Ultra II, 2.5\u2009\u03bcl each of 10\u2009\u03bcM primer and 0.5\u2009\u03bcl oligonucleotide library using the following PCR conditions (98\u2009\u00b0C for 30\u2009s; 6\u00d7 [98\u2009\u00b0C for 10\u2009s; 60\u2009\u00b0C for 15\u2009s; 65\u2009\u00b0C for 45\u2009s]; 72\u2009\u00b0C for 5\u2009min). The PCR products were purified using AMPure XP SPRI (Beckman Coulter, A63881) and incorporated into the SfiI digested pMPRAv3:\u2206luc:\u2206xbaI (Addgene #109035) backbone vector by Gibson assembly (50\u2009\u03bcl 2\u2009\u00d7\u2009NEB HiFi Assembly MM, 2.2\u2009\u03bcg DNA oligonucleotide pool, 2.0\u2009\u03bcg SfiI digested pMPRAv3:\u2206luc:\u2206xbaI in a 100-\u03bcl reaction incubated at 50\u2009\u00b0C for 1\u2009h). To achieve a library composition of 200\u2013300 barcodes per oligonucleotide, a test transformation was performed using 1\u2009\u03bcl of the 20\u2009\u03bcl SPRI purified Gibson assembly mixture and 50\u2009\u03bcl of 10-beta electrocompetent cells (NEB) to determine the optimal amount of Gibson assembly and 10-beta cells to achieve the desired colony-forming unit (CFU) count. Based on the results of the test transformation, a subset of a second identical transformation was taken directly after electroporation and split across ten 1-ml cultures with 10-beta recovery media (NEB), then incubated for 1\u2009h at 37\u2009\u00b0C. After 1\u2009h, each culture was independently expanded in 20\u2009ml of Luria broth (LB) with 100\u2009\u03bcg\u2009ml"
+    },
+    {
+      "section": "Methods",
+      "text": "\u22121"
+    },
+    {
+      "section": "Methods",
+      "text": " carbenicillin. In parallel, CFU colony counting plates were created from four of the ten cultures. After 6.5\u2009h of growth at 37\u2009\u00b0C, the cultures were individually pelleted and frozen, and the desired number of cultures from ten expanded cultures was selected, based on the CFU counting plates, to reach an average of 200\u2013300 CFUs (barcodes) per oligonucleotide (15 million to 21 million CFUs for complex traits, 49 million CFUs for eQTLs and 86 million for saturation mutagenesis). Cultures were combined and purified using a Qiagen Plasmid Plus Maxi or Midi kit. For each library, 16 colonies from the CFU plates were checked by colony PCR to determine the oligonucleotide insertion rate for the test transformation (insertion-rate range: 93\u2013100%). The expanded purified pMPRAv3:\u2206GFP plasmid library was sequenced using Illumina 2\u2009x\u2009150\u2009bp chemistry to acquire oligonucleotide\u2013barcode pairings. To construct the final MPRA libraries, 10\u2009\u03bcg of the pMPRAv3:\u2206GFP library was digested with AsiSI, and a GFP amplicon with a minimal TATA promoter (amplified from pMPRAv3:minP-GFP, Addgene 109035) was inserted using Gibson assembly (125\u2009\u03bcl 2\u2009\u00d7\u2009NEB HiFi Assembly MM, 5.28\u2009\u03bcg GFP amplicon, 1.6\u2009\u03bcg pMPRAv3:\u2206GFP in a 250-\u03bcl reaction incubated at 50\u2009\u00b0C for 1.5\u2009h). The resulting pMPRAv3 library includes the 200-bp oligonucleotide sequence positioned directly upstream of the minimal promoter and the 20-bp barcode falling in the 3\u2032 UTR of GFP. The Gibson reaction was purified using 1.5\u00d7 SPRI and eluted in 40\u2009\u03bcl water before electroporation of 2\u201316\u2009\u03bcl of purified plasmid library into 100\u2013400\u2009\u03bcl 10-beta cells. The electroporation was split across six 2-ml cultures and recovered at 37\u2009\u00b0C for 1\u2009h followed by expansion of each 2-ml culture in 500\u2009ml of TB media with 100\u2009\u03bcg\u2009ml"
+    },
+    {
+      "section": "Methods",
+      "text": "\u22121"
+    },
+    {
+      "section": "Methods",
+      "text": " carbenicillin. After 16\u2009h of growth at 30\u2009\u00b0C, plasmid was purified using Qiagen Plasmid Plus Giga kits. The CFU counting plates from 4 of the 500-ml cultures were made to monitor transformation efficiencies (23 million\u2013185 million CFUs for complex traits, 285 million\u20131 billion CFUs for eQTLs, and 123 million\u2013171 million CFUs for saturation mutagenesis). Then, 16 colonies from the CFU plates were checked by colony PCR to determine the GFP insertion rate for the test transformation, with all libraries having a minimum of 80% of plasmids containing a GFP insert."
+    },
+    {
+      "section": "Methods",
+      "text": "MPRA library transfections"
+    },
+    {
+      "section": "Methods",
+      "text": "We used five cell types for MPRA transfections, representing five distinct tissue types. The complex trait libraries were tested in K562, SK-N-SH, HepG2 and A549 cells; the eQTL libraries were tested in K562, SK-N-SH, HepG2 and HCT116 cells; and the saturation-mutagenesis library was tested in K562 and HepG2 cells. All cell lines were acquired from ATCC and routinely tested for mycoplasma and other common contaminants by The Jackson Laboratory\u2019s Molecular Diagnostic Laboratory. Each replicate experiment was expanded from a low-passage cryopreserved aliquot followed by consistent handling for each cell type across all libraries. Specifically, K562 cells were grown in RPMI (Life Technologies, 61870127) supplemented with 10% FBS (Life Technologies, 26140) maintaining a cell density of 0.5\u20131.0 million cells per ml; SK-N-SH cells were grown in DMEM (Life Technologies, 10566-024) supplemented with 10% FBS (Life Technologies, 26140); HepG2 cells were grown in DMEM (Life Technologies, 10566-024) supplemented with 10% FBS (Life Technologies, 26140); A549 cells were grown in Ham\u2019s F-12K (Life Technologies, 21-127-030) supplemented with 10% FBS (Life Technologies, 26140); and HCT116 cells were grown in McCoy\u2019s 5a (ThermoFisher, 16600108) supplemented with 10% FBS (Life Technologies, 26140). All transfections were done using a Neon transfection system (Life Technologies), transfecting 150 million (complex traits), 500 million (eQTL) or 700 million (saturation mutagenesis) cells for each replicate. Transfections were done using 100-\u03bcl tips with optimized settings for each cell type: K562, 10 million cells per 100\u2009\u03bcl, 5\u2009\u03bcg of plasmid, 3 pulses of 1,450\u2009V for 10\u2009ms; SK-N-SH, 10 million cells per 100\u2009\u03bcl, 10\u2009\u03bcg of plasmid, 3 pulses of 1,200\u2009V for 20\u2009ms; HepG2, 10 million cells per 100\u2009\u03bcl, 5\u2009\u03bcg of plasmid for complex traits and saturation mutagenesis or 10\u2009\u03bcg of plasmid for eQTLs, 1 pulse of 1,200\u2009V for 50\u2009ms; A549, 10 million cells per 100\u2009\u03bcl, 5\u2009\u03bcg of plasmid, 2 pulses of 1,200\u2009V for 30\u2009ms; and HCT116, 10 million cells per 100\u2009\u03bcl, 10\u2009\u03bcg of plasmid, 2 pulses of 1,350\u2009V for 20\u2009ms. We did a minimum of 5 replicates for each library and collected each replicate 24\u2009h after transfection by rinsing three times with PBS and collecting by centrifugation. Cell pellets were either frozen at \u221280\u2009\u00b0C for later processing or homogenized immediately in RLT buffer (RNeasy Maxi kit) and dithiothreitol, before freezing at \u221280\u2009\u00b0C. For each cell type and library, no more than two replicates were done on the same day and with parallel replicates processed from independently expanded batches of cells."
+    },
+    {
+      "section": "Methods",
+      "text": "RNA isolation and MPRA RNA library generation"
+    },
+    {
+      "section": "Methods",
+      "text": "Total RNA was extracted from the cell homogenates using the Qiagen RNeasy Maxi kit followed by a 1-h Turbo DNase treatment (ThermoFisher) with 5\u2009\u03bcl of DNase in 1,475\u2009\u03bcl total volume for 1\u2009h at 37\u2009\u00b0C. To stop the DNase digestion, 15\u2009\u00b5l of 10% SDS and 150\u2009\u00b5l of 0.5\u2009M EDTA were added, and the sample was incubated at 70\u2009\u00b0C for 5\u2009min. GFP mRNA was then pulled down using a mixture of three GFP-specific biotinylated primers at 0.5\u2009nM (#120, #123 and #126; Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "31"
+    },
+    {
+      "section": "Methods",
+      "text": ") in 0.2\u00d7 SSC and 33% formamide (MilliporeSigma 4650\u2013500 ML) and incubated for 2.5\u2009h at 65\u2009\u00b0C. Biotin probes hybridized with GFP mRNA were then captured by adding 400\u2009\u03bcl of pre-washed Sera Mag beads (Fisher Scientific) eluted in 500\u2009\u03bcl of 20\u00d7 SSX by agitation at room temperature for 15\u2009min. The beads were captured on a magnet and washed once with 1\u00d7 SSX and twice with 0.1\u00d7 SSC. After removal of the last wash, 50\u2009\u03bcl of water was added and the RNA was treated overnight with Turbo DNase at 37\u2009\u00b0C. The beads were then collected by magnet and the supernatant removed and purified with 2\u00d7 RNA SPRI. Complementary DNA was created using SuperScript III (Life Technologies) in a 100-\u03bcl reaction with a gene-specific primer for the GFP transcript (20\u2009\u03bcM primer #19; Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "30"
+    },
+    {
+      "section": "Methods",
+      "text": ") and a modified elongation temperature (47\u2009\u00b0C for 80\u2009min). The GFP mRNA abundance was quantified by quantitative PCR to determine the cycle threshold for each replicate using a QuantStudio 5 qPCR instrument (Reaction mix: 5\u2009\u03bcl Q5 Ultra II 2x, 0.5\u2009\u03bcl of 10\u2009\u03bcM primers #801 and #802, 1.66\u2009\u03bcl 1:10,000 Sybrgreen 1, 1\u2009\u03bcl cDNA or GFP mRNA in a 10\u2009\u03bcl reaction, Cycle conditions: 98\u2009\u00b0C for 30\u2009s; 40\u00d7 [98\u2009\u00b0C for 10\u2009s; 62\u2009\u00b0C for 15\u2009s; 72\u2009\u00b0C for 30\u2009s]; Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "31"
+    },
+    {
+      "section": "Methods",
+      "text": "). A standard curve with the final MPRA library (10\u2009fg\u20131\u2009ng) was run alongside 1\u2009\u03bcl of cDNA and 1\u2009\u03bcl of GFP mRNA for each replicate. Any samples showing amplification in the mRNA sample were discarded for having plasmid carry-over. Replicates within a cell type and library were diluted to approximately the same concentration, based on the quantitative PCR (qPCR) results, and first-round PCR (98\u2009\u00b0C for 30\u2009s; 6\u201313\u00d7 [98\u2009\u00b0C for 10\u2009s; 62\u2009\u00b0C for 15\u2009s; 72\u2009\u00b0C for 30\u2009s]; 72\u2009\u00b0C for 2\u2009min) with primers #801 and #802 (Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "31"
+    },
+    {
+      "section": "Methods",
+      "text": ") were used to amplify barcodes associated with GFP cDNA sequences for each replicate. A second round of PCR (98\u2009\u00b0C for 30\u2009s; 6\u00d7 [98\u2009\u00b0C for 10\u2009s; 68\u2009\u00b0C for 15\u2009s; 72\u2009\u00b0C for 30\u2009s]; 72\u2009\u00b0C for 2\u2009min) was used to add Illumina sequencing adaptors. The resulting MPRA barcode libraries were spiked with 0.01\u20131% PhiX and sequenced on an Illumina NextSeq 500 or NovaSeq SP."
+    },
+    {
+      "section": "Methods",
+      "text": "MPRA data processing and main analysis"
+    },
+    {
+      "section": "Methods",
+      "text": "Data from MPRA were analysed as previously described"
+    },
+    {
+      "section": "Methods",
+      "text": "16"
+    },
+    {
+      "section": "Methods",
+      "text": " using MPRAsuite, which includes MPRAmatch (barcode and oligonucleotide pairing), MPRAcount (tag assignment and counting) and MPRAmodel (activity and allelic effect estimates) ("
+    },
+    {
+      "section": "Methods",
+      "text": "https://github.com/tewhey-lab/MPRASuite"
+    },
+    {
+      "section": "Methods",
+      "text": "). In brief, oligonucleotide\u2013barcode pairings were identified by merging paired-end reads into single amplicons using Flash (2.2.00)"
+    },
+    {
+      "section": "Methods",
+      "text": "77"
+    },
+    {
+      "section": "Methods",
+      "text": ". Genomic DNA sequences and barcodes were extracted and the genomic DNA element was mapped back to the oligonucleotide design file using minimap2 (v.2.17-r941)"
+    },
+    {
+      "section": "Methods",
+      "text": "78"
+    },
+    {
+      "section": "Methods",
+      "text": ". Alignments showing more than 5% error to the design files were discarded, leaving only high-quality alignments, which were compiled in a look-up table with their matching barcodes. After sequencing of the RNA and plasmid libraries, 20-bp barcode tags were assigned to oligonucleotides from the look-up table and oligonucleotide counts were aggregated by addition across all barcodes. Variants with fewer than 30 DNA counts or with exactly 0 RNA counts in oligonucleotides for either allele were excluded from all downstream analysis. In the diplotype analyses, a stricter filter was used, and variants with fewer than 100 DNA counts or fewer than 10 RNA counts across all 4 diplotypes were excluded. When variants were assayed in multiple libraries, the library with the highest sum of the square roots of plasmid counts in reference and alternative sequences was selected."
+    },
+    {
+      "section": "Methods",
+      "text": "MPRAmodel uses DESeq2 (1.42.1) as the framework for normalization and statistical analysis. For each library, counts were normalized across samples using a \u2018summit-shift\u2019 approach, which centres the distribution of RNA/DNA ratios for each sample at 1. To determine significant differences between DNA plasmid count and RNA count, a negative binomial generalized linear model (GLM) was used in DESeq2 with independent dispersion estimates for each cell type and library. We estimated element activity in units of log"
+    },
+    {
+      "section": "Methods",
+      "text": "2"
+    },
+    {
+      "section": "Methods",
+      "text": "(fold change) for RNA counts compared with DNA counts by including a contrast in the design matrix of DESeq2 to compare treatment (RNA versus DNA) and used Wald\u2019s test to evaluate the significance of this estimate, correcting for multiple hypothesis testing in each cell type and library using Bonferroni\u2019s method. We estimated an allelic effect in units of \u2206 log"
+    },
+    {
+      "section": "Methods",
+      "text": "2"
+    },
+    {
+      "section": "Methods",
+      "text": "(fold change) (or \u2206log"
+    },
+    {
+      "section": "Methods",
+      "text": "2"
+    },
+    {
+      "section": "Methods",
+      "text": " activity) for the difference in RNA counts relative to DNA counts at the Alt oligonucleotide compared with the Ref oligonucleotide by including a contrast in the design matrix of DESeq2 to compare alleles (Alt versus Ref) and treatment (RNA versus DNA) and used Wald\u2019s test to evaluate significance followed by FDR estimation using Benjamini and Hochberg\u2019s method. For simplicity, we refer to "
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "\u00a0values obtained after adjusting for the FDR as \u2018FDR\u2019 rather than \u2018"
+    },
+    {
+      "section": "Methods",
+      "text": "q"
+    },
+    {
+      "section": "Methods",
+      "text": "-value\u2019 or \u2018adjusted "
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "-value\u2019 in all relevant instances. Elements passing a specific effect size and significance threshold for RNA versus DNA are defined as active, and variants in active elements passing a specific significance threshold are defined as expression-modulating variants or emVars. By performing a grid search as described in the following section, we define elements as active if |log"
+    },
+    {
+      "section": "Methods",
+      "text": "2"
+    },
+    {
+      "section": "Methods",
+      "text": "[fold change]|\u2009>\u20091 and Bonferroni-adjusted "
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "\u00a0value\u2009<\u20090.01, and variants as emVars if either the reference or alternative allele element is active and FDR\u2009<\u200910% for a non-zero allelic effect. For specific analyses requiring cell-type agnostic estimates, we performed fixed-effect meta-analyses of activity and allelic effects across cell types and used these estimates. In Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "4"
+    },
+    {
+      "section": "Methods",
+      "text": ", we report the best measurement across libraries (by plasmid coverage across variants) chosen per variant per cell type."
+    },
+    {
+      "section": "Methods",
+      "text": "For saturation mutagenesis, we used the saturation-mutagenesis mode of MPRAmatch, which applies increased stringency requirements when pairing barcodes to oligonucleotide sequences requiring perfect alignment matches during barcode pairing. Because most of the saturation-mutagenesis library consisted of sequences with strong MPRA activity by design, we used a summit-shift normalization procedure where linear scaling factors were determined only from negative control sequences. Because the primary goal of the saturation-mutagenesis experiment was to compare the effects of substitutions across an element, rather than to detect individual emVars, we used an empirical Bayes approach to shrink the allelic effect sizes towards 0, based on how accurately they were measured (the number of RNA and DNA reads) (Supplementary Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "8c,d"
+    },
+    {
+      "section": "Methods",
+      "text": "). First, we obtained an improved estimate of the baseline activity of the background sequence by pooling the log"
+    },
+    {
+      "section": "Methods",
+      "text": "2"
+    },
+    {
+      "section": "Methods",
+      "text": "(fold change) estimates of oligonucleotides between the observed 25th and 75th percentiles of substitutions across this element, assuming that approximately 50% of substitutions will have little effect and the mean activity of these substitutions is an unbiased estimate of true baseline activity. Taking the mean and variance of this set as a normal prior, we used DESeq2 estimates of activity (log"
+    },
+    {
+      "section": "Methods",
+      "text": "2"
+    },
+    {
+      "section": "Methods",
+      "text": "[fold change]) and their corresponding standard errors to define a normal likelihood, allowing for closed-form posterior inference, owing to conjugacy. We used this prior and likelihood to obtain a posterior distribution for baseline activity of the background sequence. Next, we used the mean and variance of activity estimates between the 5th and 95th percentiles of substitutions to form a less-stringent prior with higher variance, better reflecting the distribution of substitutions with true allelic effects. Using a similar Bayesian approach with this prior, we estimated the posterior activity distribution of each substitution. To obtain shrunken estimates of each allelic effect, we subtracted the posterior mean activity for each substitution from the posterior mean baseline activity for the background sequence."
+    },
+    {
+      "section": "Methods",
+      "text": "Grid search for activity and allelic effect thresholds"
+    },
+    {
+      "section": "Methods",
+      "text": "To find the optimal thresholds for activity and for allelic effect, we did a grid search across Bonferroni-adjusted "
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "\u00a0value or FDR and effect magnitude, aiming to maximize precision and recall in a set with known positives and negatives. For activity, we used overlap with a CRE to approximate our positive set, and assigned all other oligonucleotides to the negative set, reasoning that sequences originating from accessible chromatin marked by H3K27ac should approximate active transcriptional regulatory elements. We selected sets of variants in CREs and not in CREs, and calculated the precision and recall across a grid of Bonferroni-adjusted "
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "\u00a0value and activity (log"
+    },
+    {
+      "section": "Methods",
+      "text": "2"
+    },
+    {
+      "section": "Methods",
+      "text": "[fold change]) thresholds (Supplementary Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "3a,b"
+    },
+    {
+      "section": "Methods",
+      "text": "). For activity grid searches, to compare cut-offs using different annotations to separate positive and negative controls, we did not scale the sets 1:1. Setting |log2[fold change]|\u2009>\u20091 and Bonferroni-adjusted "
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "\u00a0value\u2009<\u20090.01 optimized the precision\u2013recall trade-off and is used as the definition of active throughout the manuscript. For allelic effects, we repeated our grid search, using sets of high PIP (more than 0.9) and low PIP (less than 0.02) variants as positive and negative sets. We scaled the larger, negative sets down to the size of the positive set using the false-positive rate. First requiring all elements to be active, we calculated precision and recall across a grid of FDR thresholds and allelic effect (\u2206log"
+    },
+    {
+      "section": "Methods",
+      "text": "2"
+    },
+    {
+      "section": "Methods",
+      "text": "[fold change]) thresholds (Supplementary Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "4a,b"
+    },
+    {
+      "section": "Methods",
+      "text": "). Based on these results, we defined emVars as variants residing in active elements with any magnitude of allelic effect and an FDR\u2009<\u200910% for a non-zero allelic effect."
+    },
+    {
+      "section": "Methods",
+      "text": "Non-additive effect estimation and diplotype analyses"
+    },
+    {
+      "section": "Methods",
+      "text": "Because alternative and reference alleles for trait-associated variants are arbitrarily coded based on the reference genome, rather strictly by effect direction, disease risk or minor allele, we recoded the alleles to best aid the interpretation of MPRA effects. Using MPRA estimates of activity for each of the four diplotypes, we recoded alleles in order from lowest to highest activity, with lowest activity as the reference category. We set the reference category as the \u2018decrease\u2013decrease\u2019 pair and the highest value as the \u2018increase\u2013increase\u2019 pair, with \u2018decrease-increase\u2019 and \u2018increase-decrease\u2019 pairs in between. The additive allelic effect is defined as the sum of the individual allelic effect (decrease\u2013increase\u2009+\u2009increase\u2013decrease). The observed double-allele effect is the allelic effect for the increase\u2013increase pair compared with the decrease\u2013decrease pair. Interaction effects are the difference between the expected additive allelic effect and the double-allele effect, which are estimated in the DEseq2 model and recoded here. Interacting pairs of variants were detected as described below and classified into amplifying or dampening pairs (Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "3b,d"
+    },
+    {
+      "section": "Methods",
+      "text": ", Extended Data Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "5i"
+    },
+    {
+      "section": "Methods",
+      "text": " and Supplementary Tables "
+    },
+    {
+      "section": "Methods",
+      "text": "20"
+    },
+    {
+      "section": "Methods",
+      "text": " and "
+    },
+    {
+      "section": "Methods",
+      "text": "21"
+    },
+    {
+      "section": "Methods",
+      "text": ")."
+    },
+    {
+      "section": "Methods",
+      "text": "To gain power to detect interaction effects between variant pairs, we performed several meta-analyses. First, we did fixed-effect meta-analyses to obtain both activity and allelic-effect estimates for each pair. Meta-analyses were done by aggregating across available windows (within a single cell type) or by aggregating across both windows and cell types. In these meta-analyses, activity and emVar definitions were the same as for the meta-analyses of single-variant elements but with the consideration of additional alleles; an element was considered active if any of the four elements (versus two elements for single-variant) were active. Interaction effects were also meta-analysed across windows within a single cell type and windows across all cell types using both a standard covariance matrix and an empirical covariance matrix."
+    },
+    {
+      "section": "Methods",
+      "text": "For the meta-analyses with a standard covariance, the observed variance of each interaction-effect estimate was placed on the diagonal and zeros were placed elsewhere, encoding the hypothesis that windows are independent. We reasoned that windows might not be independent, and if we could capture this relationship in the covariance matrix, we would increase the power to detect significant interaction effects in meta-analyses. To estimate the relationship between windows, of which each variant pair could be tested in up to six (centring on variant 1 or variant 2; windows around the centred variant shifted left, middle or right), we calculated the expected correlation between these effects based on two factors that could influence these effects and how they covary: how much of the 200-bp oligonucleotide was shared, and the distance between the variants in the pair. Specifically, we split the haplotype-interaction effect measurements into a 7\u2009\u00d7\u20099 grid of 7 bins of shared oligonucleotide percentage (0%, 25%, 50%, 60%, 70%, 80%, 95% and 100%) and 9 bins of variant distance in nucleotides (0, 10, 15, 20, 25, 50, 75, 100 and 200). In each bin, we then computed the correlation between observed interaction effects to obtain an empirical correlation matrix, and used a generalized additive model to smooth the correlation matrix across the grid (Extended Data Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "5g"
+    },
+    {
+      "section": "Methods",
+      "text": "). The covariance matrix was obtained by scaling the correlation matrix by the variance vector, and fixed-effect meta-analysis was done using this covariance matrix."
+    },
+    {
+      "section": "Methods",
+      "text": "Interaction emVars were defined as pairs in which at least one diplotype was an emVar (versus the Ref/Ref diplotype) and the FDR was less than 0.05 and the absolute value of the interaction effect was greater than 0.25 for one of the 4 meta-analyses (standard versus empirical covariance, across windows in cell types versus across windows and cell types). In the saturation-mutagenesis dataset, interaction-effect estimates were similarly obtained by subtraction of the double allele and additive variant posterior activity estimates, and interaction emVars were defined as having an interaction effect greater than 0.415 (a 25% change in activity). Analyses of the distance between pairs of variants was restricted to pairs in which variants were tested in all three windows (left, middle and right) because the number of windows a variant pair is tested in is dependent on the distance between the variants (Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "3c"
+    },
+    {
+      "section": "Methods",
+      "text": ")."
+    },
+    {
+      "section": "Methods",
+      "text": "Multivariate adaptive shrinkage"
+    },
+    {
+      "section": "Methods",
+      "text": "To account for differences in power when estimating whether element activity or allelic effects are shared across cell types, we used the Multivariate Adaptive Shrinkage in R (mashr) package"
+    },
+    {
+      "section": "Methods",
+      "text": "79"
+    },
+    {
+      "section": "Methods",
+      "text": ". Because MPRA was done in four cell types for complex trait variants a four cell types for molecular trait variants, we used only the canonical covariance matrices in the mixture model. We selected variants with PIP\u2009>\u20090.1 that are in CREs and fit the mash model separately for complex trait variants and eQTLs separately. Cell-type-specific effects were determined using the local false sign rate (lfsr)\u2009<\u20090.05 (Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "7"
+    },
+    {
+      "section": "Methods",
+      "text": ")."
+    },
+    {
+      "section": "Methods",
+      "text": "Coding and non-coding genomic annotations"
+    },
+    {
+      "section": "Methods",
+      "text": "Genomic annotations were obtained as described previously"
+    },
+    {
+      "section": "Methods",
+      "text": "31"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "66"
+    },
+    {
+      "section": "Methods",
+      "text": ". In brief, we ran the Ensembl Variant Effect Predictor v.85 (ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "80"
+    },
+    {
+      "section": "Methods",
+      "text": "), selecting the most severe consequence for each variant including coding (missense, loss of function and splice site) and UTR annotations. Non-coding variants were annotated as residing within a promoter (using annotations from the S-LDSC baseline model), a CRE or having evidence of neither. CREs were defined as accessible chromatin in at least one cell type and evidence of histone modification at H3K27ac in at least one cell type. We used the combined, normalized and quality-controlled chromatin accessibility and histone modification datasets described in ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "66"
+    },
+    {
+      "section": "Methods",
+      "text": ", including DNase-seq, ATAC-seq, single-cell ATAC-seq and H3K27ac measurements from seven different atlases"
+    },
+    {
+      "section": "Methods",
+      "text": "9"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "40"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "41"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "81"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "82"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "83"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "84"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "85"
+    },
+    {
+      "section": "Methods",
+      "text": ". This combined dataset consists of more than 1,000 cell types: ROADMAP Epigenomics DNase-seq across 39 cell types and H3K27ac across 98 cell types"
+    },
+    {
+      "section": "Methods",
+      "text": "81"
+    },
+    {
+      "section": "Methods",
+      "text": "; DNase-seq across 438 cell types"
+    },
+    {
+      "section": "Methods",
+      "text": "9"
+    },
+    {
+      "section": "Methods",
+      "text": "; single-cell ATAC-seq across 54 cell types"
+    },
+    {
+      "section": "Methods",
+      "text": "82"
+    },
+    {
+      "section": "Methods",
+      "text": "; ATAC-seq data for 18 haematopoietic cell types"
+    },
+    {
+      "section": "Methods",
+      "text": "83"
+    },
+    {
+      "section": "Methods",
+      "text": "; single-cell ATAC-seq across 24 brain cell types"
+    },
+    {
+      "section": "Methods",
+      "text": "84"
+    },
+    {
+      "section": "Methods",
+      "text": "; ATAC-seq for 25 immune cell types"
+    },
+    {
+      "section": "Methods",
+      "text": "85"
+    },
+    {
+      "section": "Methods",
+      "text": "; and ChIP-Atlas DNase-seq for 284 cell types and H3K27ac for 720 cell-types"
+    },
+    {
+      "section": "Methods",
+      "text": "41"
+    },
+    {
+      "section": "Methods",
+      "text": " to identify CREs. Non-coding CSs were defined as 95% CSs where no variant was annotated as a missense, loss of function or splice-site variant."
+    },
+    {
+      "section": "Methods",
+      "text": "For analyses comparing the strength of endogenous CRE activity with MPRA activity (Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "1d"
+    },
+    {
+      "section": "Methods",
+      "text": "), only CREs from the dataset in ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "9"
+    },
+    {
+      "section": "Methods",
+      "text": " are used and cell-type agnostic CRE activity is estimated as the maximum normalized DNase I hypersensitivity counts across cell types. To identify cell-type-specific CREs, we computed the euclidean norm of normalized counts from the dataset in ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "9"
+    },
+    {
+      "section": "Methods",
+      "text": ", selected the maximum value across biosamples representing similar cell types, and selected CREs with a euclidean norm greater than 0.2. Furthermore, we obtained representative tissue and organ system annotations provided in ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "9"
+    },
+    {
+      "section": "Methods",
+      "text": ". In CREs from this dataset"
+    },
+    {
+      "section": "Methods",
+      "text": "9"
+    },
+    {
+      "section": "Methods",
+      "text": ", variants were annotated for consensus DHS footprints across 243 cell types, which were downloaded from ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "47"
+    },
+    {
+      "section": "Methods",
+      "text": " and lifted over to hg19."
+    },
+    {
+      "section": "Methods",
+      "text": "Precision and recall of MPRA"
+    },
+    {
+      "section": "Methods",
+      "text": "We calculated the precision and recall of different annotations (such as emVars) for separating trait-associated variants from background variants. We approximated the true causal (positive) set of variants by using non-coding, trait-associated variants with PIP\u2009>\u20090.9. Background non-coding variant (negative) sets were defined using either location-matched controls, annotation-matched controls or trait-associated variants with PIP\u2009<\u20090.01. For the eQTL dataset, variants with PIPs up to 0.02 were included as low-PIP to have sufficient matches. We scaled the larger, negative sets down to the size of the positive set using the false positive rate to create a 1:1 set. Precision is defined as the number of true positives divided by the number of variants selected as positive by the annotation. Recall is defined as the number of true positives divided by all positives. All three control sets produced similar estimates, and results using low-PIP variants as controls have the lowest standard errors and are used in the main analysis shown in Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "2e"
+    },
+    {
+      "section": "Methods",
+      "text": ". As well as evaluating MPRA measurements and genomic annotations, we estimated precision and recall across CS size (Extended Data Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "4e"
+    },
+    {
+      "section": "Methods",
+      "text": " and Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "11"
+    },
+    {
+      "section": "Methods",
+      "text": ") and specific cell types used in MPRA or for defining CREs (Extended Data Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "4f,g"
+    },
+    {
+      "section": "Methods",
+      "text": " and Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "10"
+    },
+    {
+      "section": "Methods",
+      "text": "). For cell-type analyses, meta points were estimated as averages of cell-type combination, and linear regression was used to predict the impact of each additional cell type on precision and recall."
+    },
+    {
+      "section": "Methods",
+      "text": "Comparison with genome-wide reporter assays"
+    },
+    {
+      "section": "Methods",
+      "text": "Measurements of allelic effects using the Survey of Regulatory Elements (SuRE) reporter assay for 5.9 million variants in K562 and HepG2 cells were downloaded from ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "44"
+    },
+    {
+      "section": "Methods",
+      "text": ". To compare performance between the Survey of Regulatory Elements and MPRA, we again estimated precision and recall using PIP\u2009>\u20090.9 variants as positives and PIP\u2009<\u20090.05 variants as negatives, but now restricted to variants assayed by both approaches."
+    },
+    {
+      "section": "Methods",
+      "text": "Regulatory quantitative trait loci"
+    },
+    {
+      "section": "Methods",
+      "text": "Chromatin accessibility quantitative trait loci and allele-specific TF occupancy quantitative trait loci were obtained from ENCODE"
+    },
+    {
+      "section": "Methods",
+      "text": "9"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "86"
+    },
+    {
+      "section": "Methods",
+      "text": ". Variants with an FDR\u2009<\u20090.25 for allele-specific differences were included in comparisons with MPRA allelic effects."
+    },
+    {
+      "section": "Methods",
+      "text": "TF binding motifs and occupancy"
+    },
+    {
+      "section": "Methods",
+      "text": "Positional motif matches on oligonucleotides were identified using a modified version of FIMO (MEME Suite 5.5.5)"
+    },
+    {
+      "section": "Methods",
+      "text": "87"
+    },
+    {
+      "section": "Methods",
+      "text": " implemented in motif liquidator"
+    },
+    {
+      "section": "Methods",
+      "text": "88"
+    },
+    {
+      "section": "Methods",
+      "text": " for PWMs from the Homo Sapiens Comprehensive Model Collection (HOCOMOCO, H12CORE"
+    },
+    {
+      "section": "Methods",
+      "text": "89"
+    },
+    {
+      "section": "Methods",
+      "text": ") and JASPAR"
+    },
+    {
+      "section": "Methods",
+      "text": "90"
+    },
+    {
+      "section": "Methods",
+      "text": " (2022 release). Motifs shorter than 8\u2009bp or with an information content of less than 12 were excluded. Sequence matches were called when the absolute percentage (scaled by the difference between the best and worst possible sequence matches scores) and the relative percentage (scaled by the difference between the best and random sequence matches scores) of each sequence was greater than 12, and the significance for this match was less than "
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u20090.0001. Disruption of a motif required a difference of more than 10% in the absolute percentage of each sequence match to the PWM. Weak calls with disruptive alleles required only an information content score of more than 8, no relative percentage filter, "
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009<\u20090.001 and an allelic difference of only 5% in the absolute percentage of each sequence. Motifs were defined as flanking variants if the motif started or ended within 10\u2009bp of the variant (Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "2f"
+    },
+    {
+      "section": "Methods",
+      "text": ")."
+    },
+    {
+      "section": "Methods",
+      "text": "TF occupancy for tested elements was determined by ChIP\u2013seq support. We obtained ChIP\u2013seq peaks from ChIP-Atlas, which uniformly reprocessed peaks from 25,823 experiments in 1,046 human cell types or tissues for 1,741 TFs"
+    },
+    {
+      "section": "Methods",
+      "text": "40"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "41"
+    },
+    {
+      "section": "Methods",
+      "text": ". TFs were retained in analyses if they met a minimum number of overlaps with variants or elements (as specified in the text). For each specific motif match or disruption, a corresponding TF was defined as occupying an element if that element overlapped with a TF peak for any TF that matched a highly similar motif (Pearson "
+    },
+    {
+      "section": "Methods",
+      "text": "r\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": ">\u20090.9 for PWM similarity). For example, 1,513 TFs occupied at least 20 elements, and we observed that, of these, 1,355 were more likely to overlap active elements at a Bonferroni-adjusted "
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009<\u20090.05 (Extended Data Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "2b"
+    },
+    {
+      "section": "Methods",
+      "text": "). Furthermore, 54 \u2018dark TFs\u2019, or TFs that bind to closed chromatin, were obtained from ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "91"
+    },
+    {
+      "section": "Methods",
+      "text": "."
+    },
+    {
+      "section": "Methods",
+      "text": "Motif contributions to the activity of elements derived from CREs containing trait-associated variants were estimated using linear regression, modelling the marginal effect of the number of motifs in each element on the activity in K562, HepG2 and SK-N-SH cells. Before fitting the linear regression, activity was quantile normalized across cell types and a generalized additive model using smoothing splines of 1-mer and 2-mer counts in each element to model activity (each cell-type measurement was an independent observation) was fit using the mgcv R package, and residual activity was used as the outcome for linear regression. "
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "\u00a0values for each motif were obtained from a Wald test and FDRs were estimated using Storey\u2019s "
+    },
+    {
+      "section": "Methods",
+      "text": "q"
+    },
+    {
+      "section": "Methods",
+      "text": "\u00a0value. Coefficients from these regressions for motifs present in more than 0.1% of elements are shown in Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "1e"
+    },
+    {
+      "section": "Methods",
+      "text": ", although these estimates should not be considered causal effects. We also assessed whether changing the extent of PWM disruption for each motif was correlated with the extent of change in activity in each cell type. Restricting to variants that are emVars in at least one cell type and motifs represented by at least 10 variants, we computed Spearman\u2019s correlations and estimated FDRs using Storey\u2019s "
+    },
+    {
+      "section": "Methods",
+      "text": "q"
+    },
+    {
+      "section": "Methods",
+      "text": "\u00a0value."
+    },
+    {
+      "section": "Methods",
+      "text": "Regulatory sequence classes"
+    },
+    {
+      "section": "Methods",
+      "text": "We obtained regulatory sequence (Sei) classifications, including polycomb and heterochromatin annotations, and lifted the annotations over to hg19 (ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "43"
+    },
+    {
+      "section": "Methods",
+      "text": "). Variants were excluded if they fell into multiple Sei annotations after liftover (less than 1%). The proportion of emVars for each complex trait, stratified by domain, is estimated and shown in Supplementary Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "6a"
+    },
+    {
+      "section": "Methods",
+      "text": "."
+    },
+    {
+      "section": "Methods",
+      "text": "Enformer"
+    },
+    {
+      "section": "Methods",
+      "text": "To capture more regulatory mechanisms than those mediated through TF motifs catalogued in JASPAR and HOCOMOCO, we scored each variant (after lifting over to hg38) using Enformer"
+    },
+    {
+      "section": "Methods",
+      "text": "48"
+    },
+    {
+      "section": "Methods",
+      "text": ", a transformer-based neural network model trained to predict functional genomic data, including TF occupancy and chromatin accessibility. Allelic-effect predictions across 1,447 distinct tissue\u2013TF pairs and 320 accessible chromatin predictions were "
+    },
+    {
+      "section": "Methods",
+      "text": "z"
+    },
+    {
+      "section": "Methods",
+      "text": "-score normalized to variants with non-emVars in CREs with PIP\u2009<\u20090.02. A combined score for each variant was computed by squaring its allelic effect for individual TF occupancy or accessible chromatin predictions and taking the sum. Thresholds were set separately for TF occupancy and accessible chromatin, each determined such that only 5% of non-emVars in CREs with PIP\u2009<\u20090.02 had higher scores. Thresholds for individual Enformer predictions for all variants were similarly obtained. A variant was considered disrupted by Enformer if it exceeded the threshold for either the TF occupancy or chromatin accessibility. Using these thresholds, 7.3% of non-emVars in CREs with PIP\u2009<\u20090.02 were classified as disrupted (Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "2f"
+    },
+    {
+      "section": "Methods",
+      "text": ")."
+    },
+    {
+      "section": "Methods",
+      "text": "Comparison of eQTL and MPRA effect sizes"
+    },
+    {
+      "section": "Methods",
+      "text": "The MPRA allelic effects were compared with eQTL allelic effects by computing their Spearman\u2019s correlation coefficients. Variants were restricted to emVars with PIP\u2009>\u20090.5 for at least one gene, and MPRA effect sizes were obtained from the meta-analyses across cell types. The eQTL effect sizes were obtained from the most significantly associated gene and tissue for each variant. To ensure a clear distinction between proximal and distal regulatory elements, distal CREs were further required to be more than 10\u2009kb from the TSS of the associated gene, and proximal CREs were required to be less than 2\u2009kb from the TSS of the associated gene. To compare agreement in sign, a binomial test that the proportion of variants agreed in sign more than expected (0.50) was performed ("
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "omnibus"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u20094.3\u2009\u00d7\u200910"
+    },
+    {
+      "section": "Methods",
+      "text": "\u221230"
+    },
+    {
+      "section": "Methods",
+      "text": "). To compare agreement in magnitude, the absolute value of each effect-size measurement was taken before computing correlations ("
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "omnibus"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u20097.1\u2009\u00d7\u200910"
+    },
+    {
+      "section": "Methods",
+      "text": "\u221215"
+    },
+    {
+      "section": "Methods",
+      "text": "). To control for background at distal CREs, correlations were computed for a set of variants that differed only in CRE status (not in a CRE), and the obtained correlation was subtracted off to obtain the adjusted estimate."
+    },
+    {
+      "section": "Methods",
+      "text": "Multiple causal variants"
+    },
+    {
+      "section": "Methods",
+      "text": "We designed a hypothesis test to evaluate whether our data provided evidence of multiple causal variants in independent signals of genetic association (the same CS). First, we restricted our analysis to non-coding 95% CSs where we obtained sufficient MPRA measurements on variants harbouring most of the CS probability (more than 90%). Then, we removed CSs without evidence of the functional annotation being tested (CRE emVars, CRE or emVars). We counted the total excess number of variants in each remaining CS (containing at least one variant with a functional annotation) and compared this with the background rate estimated from controls (location matched, annotation matched or low PIP), computing both risk ratios and risk differences. Because the emVar call rate has both biological and technical variance across experiments, we designed each library such that individual traits were fully contained in a single library along with all three types of matching control. Thus, risk ratios and risk differences were computed in each experiment and meta-analysed using a random-effects model implemented in the R package metafor. Meta-analysis was performed separately for complex traits and eQTLs across multiple CS sizes (5, 10 and 15) and "
+    },
+    {
+      "section": "Methods",
+      "text": "r"
+    },
+    {
+      "section": "Methods",
+      "text": "2"
+    },
+    {
+      "section": "Methods",
+      "text": " thresholds (0.8, 0.9 and 0.99)."
+    },
+    {
+      "section": "Methods",
+      "text": "Single-TARV CS selection"
+    },
+    {
+      "section": "Methods",
+      "text": "Across all traits, we identified 95% CSs with only one TARV that lacked other \u2018interesting\u2019 variants (Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "15"
+    },
+    {
+      "section": "Methods",
+      "text": "). We reasoned that the TARV in these CSs were enriched for being the likely causal variant. To obtain this set, we first excluded CSs containing any coding variants, as well as those consisting of only a single variant. We then filtered to CSs containing a single TARV and removed CSs when any non-TARVs in that CS were not evolutionarily constrained, not in a 3\u2032 or 5\u2032 UTR. As an extra precaution, we also excluded CSs containing variants in promoters (not annotated as CREs) and variants that were emVars."
+    },
+    {
+      "section": "Methods",
+      "text": "CRE-to-gene annotations"
+    },
+    {
+      "section": "Methods",
+      "text": "To better contextualize the variant effects identified in our MPRA, we annotated all autosomal TARVs using multiple CRE-to-gene prediction datasets:"
+    },
+    {
+      "section": "Methods",
+      "text": "\n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                  "
+    },
+    {
+      "section": "Methods",
+      "text": "PCHi-C in 27 diverse cell types"
+    },
+    {
+      "section": "Methods",
+      "text": "92"
+    },
+    {
+      "section": "Methods",
+      "text": "\n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                  "
+    },
+    {
+      "section": "Methods",
+      "text": "PCHi-C in 17 primary haematopoietic cell types"
+    },
+    {
+      "section": "Methods",
+      "text": "93"
+    },
+    {
+      "section": "Methods",
+      "text": "\n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                  "
+    },
+    {
+      "section": "Methods",
+      "text": "CRE\u2013promoter correlation in diverse 127 cell types"
+    },
+    {
+      "section": "Methods",
+      "text": "94"
+    },
+    {
+      "section": "Methods",
+      "text": "\n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                  "
+    },
+    {
+      "section": "Methods",
+      "text": "CRE\u2013promoter correlation in diverse 808 cell types"
+    },
+    {
+      "section": "Methods",
+      "text": "95"
+    },
+    {
+      "section": "Methods",
+      "text": "\n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                  "
+    },
+    {
+      "section": "Methods",
+      "text": "CRE\u2013promoter correlation in 16 primary haematopoietic cell types"
+    },
+    {
+      "section": "Methods",
+      "text": "28"
+    },
+    {
+      "section": "Methods",
+      "text": "\n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                  "
+    },
+    {
+      "section": "Methods",
+      "text": "E2G models trained on CRISPRi perturbations (E2G)"
+    },
+    {
+      "section": "Methods",
+      "text": "96"
+    },
+    {
+      "section": "Methods",
+      "text": "."
+    },
+    {
+      "section": "Methods",
+      "text": "\n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n              "
+    },
+    {
+      "section": "Methods",
+      "text": "TARVs were overlapped with each dataset to generate a compendium of CRE\u2013gene links, as and nearest gene annotations (Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "16"
+    },
+    {
+      "section": "Methods",
+      "text": "). These results include the following gene connections for TARVs highlighted in our study:"
+    },
+    {
+      "section": "Methods",
+      "text": "rs6536864738 (Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "4d,e"
+    },
+    {
+      "section": "Methods",
+      "text": "): fine-mapped in UKBB for platelet count (PIP\u2009=\u20091.0). Target genes identified include the nearest gene "
+    },
+    {
+      "section": "Methods",
+      "text": "KDM7A"
+    },
+    {
+      "section": "Methods",
+      "text": "96"
+    },
+    {
+      "section": "Methods",
+      "text": ", as well as "
+    },
+    {
+      "section": "Methods",
+      "text": "UBE3C"
+    },
+    {
+      "section": "Methods",
+      "text": "93"
+    },
+    {
+      "section": "Methods",
+      "text": ", "
+    },
+    {
+      "section": "Methods",
+      "text": "PARP12"
+    },
+    {
+      "section": "Methods",
+      "text": " (ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "96"
+    },
+    {
+      "section": "Methods",
+      "text": "), "
+    },
+    {
+      "section": "Methods",
+      "text": "SSBP1"
+    },
+    {
+      "section": "Methods",
+      "text": " (ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "93"
+    },
+    {
+      "section": "Methods",
+      "text": "), "
+    },
+    {
+      "section": "Methods",
+      "text": "MKRN1"
+    },
+    {
+      "section": "Methods",
+      "text": " (ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "96"
+    },
+    {
+      "section": "Methods",
+      "text": "), "
+    },
+    {
+      "section": "Methods",
+      "text": "RAB19"
+    },
+    {
+      "section": "Methods",
+      "text": " (ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "93"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "96"
+    },
+    {
+      "section": "Methods",
+      "text": "), "
+    },
+    {
+      "section": "Methods",
+      "text": "SLC37A3"
+    },
+    {
+      "section": "Methods",
+      "text": " (ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "93"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "96"
+    },
+    {
+      "section": "Methods",
+      "text": ") and "
+    },
+    {
+      "section": "Methods",
+      "text": "KLRG2"
+    },
+    {
+      "section": "Methods",
+      "text": " (ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "96"
+    },
+    {
+      "section": "Methods",
+      "text": ")."
+    },
+    {
+      "section": "Methods",
+      "text": "rs11864973"
+    },
+    {
+      "section": "Methods",
+      "text": " (Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "4f,g"
+    },
+    {
+      "section": "Methods",
+      "text": "): fine-mapped in BBJ for red blood cell count (PIP\u2009=\u20090.99). PCHi-C analysis identified 16 putative target genes, including the nearest gene "
+    },
+    {
+      "section": "Methods",
+      "text": "NPRL3"
+    },
+    {
+      "section": "Methods",
+      "text": ". Of these, several encode haemoglobin subunits:\u00a0"
+    },
+    {
+      "section": "Methods",
+      "text": "HBQ1"
+    },
+    {
+      "section": "Methods",
+      "text": " (refs. "
+    },
+    {
+      "section": "Methods",
+      "text": "94"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "95"
+    },
+    {
+      "section": "Methods",
+      "text": "),\u00a0HBA1 (ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "28"
+    },
+    {
+      "section": "Methods",
+      "text": "), HBA2 (ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "28"
+    },
+    {
+      "section": "Methods",
+      "text": ") and "
+    },
+    {
+      "section": "Methods",
+      "text": "HBM"
+    },
+    {
+      "section": "Methods",
+      "text": "28"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "94"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "95"
+    },
+    {
+      "section": "Methods",
+      "text": "."
+    },
+    {
+      "section": "Methods",
+      "text": "rs2529369"
+    },
+    {
+      "section": "Methods",
+      "text": " (Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "4i,j"
+    },
+    {
+      "section": "Methods",
+      "text": "): fine-mapped in GTEx tibial nerve (PIP\u2009=\u20091.0) and associated with "
+    },
+    {
+      "section": "Methods",
+      "text": "CDHR3"
+    },
+    {
+      "section": "Methods",
+      "text": " expression. This target is confirmed by PCHi-C"
+    },
+    {
+      "section": "Methods",
+      "text": "93"
+    },
+    {
+      "section": "Methods",
+      "text": ". Other targets include the nearest gene "
+    },
+    {
+      "section": "Methods",
+      "text": "ATXN7L1"
+    },
+    {
+      "section": "Methods",
+      "text": " (ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "93"
+    },
+    {
+      "section": "Methods",
+      "text": ") and "
+    },
+    {
+      "section": "Methods",
+      "text": "EFCAB10"
+    },
+    {
+      "section": "Methods",
+      "text": " (ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "96"
+    },
+    {
+      "section": "Methods",
+      "text": ")."
+    },
+    {
+      "section": "Methods",
+      "text": "rs191148279 "
+    },
+    {
+      "section": "Methods",
+      "text": "("
+    },
+    {
+      "section": "Methods",
+      "text": "Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "5d\u2013f"
+    },
+    {
+      "section": "Methods",
+      "text": "): fine-mapped in UKBB for HbA1c levels (PIP\u2009=\u20090.919). PCHi-C identifies "
+    },
+    {
+      "section": "Methods",
+      "text": "C2orf88"
+    },
+    {
+      "section": "Methods",
+      "text": " as a potential target"
+    },
+    {
+      "section": "Methods",
+      "text": "28"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "96"
+    },
+    {
+      "section": "Methods",
+      "text": ", which we confirmed through endogenous editing experiments. Other putative targets include "
+    },
+    {
+      "section": "Methods",
+      "text": "SLC40A1"
+    },
+    {
+      "section": "Methods",
+      "text": " (ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "28"
+    },
+    {
+      "section": "Methods",
+      "text": ") and "
+    },
+    {
+      "section": "Methods",
+      "text": "INPP1"
+    },
+    {
+      "section": "Methods",
+      "text": " (ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "96"
+    },
+    {
+      "section": "Methods",
+      "text": ")."
+    },
+    {
+      "section": "Methods",
+      "text": "rs7282770"
+    },
+    {
+      "section": "Methods",
+      "text": " and "
+    },
+    {
+      "section": "Methods",
+      "text": "rs7282886"
+    },
+    {
+      "section": "Methods",
+      "text": " (Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "5h,i"
+    },
+    {
+      "section": "Methods",
+      "text": "): located in the same CS in GTEx, associated with "
+    },
+    {
+      "section": "Methods",
+      "text": "DOP1B"
+    },
+    {
+      "section": "Methods",
+      "text": " expression in liver (PIP\u2009=\u20090.08), the loci shows target gene contacts to "
+    },
+    {
+      "section": "Methods",
+      "text": "DOP1B"
+    },
+    {
+      "section": "Methods",
+      "text": " in the PCHi-C and E2G datasets. Other targets include\u00a0"
+    },
+    {
+      "section": "Methods",
+      "text": "CBR3"
+    },
+    {
+      "section": "Methods",
+      "text": " (ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "96"
+    },
+    {
+      "section": "Methods",
+      "text": ") and "
+    },
+    {
+      "section": "Methods",
+      "text": "CHAF1B"
+    },
+    {
+      "section": "Methods",
+      "text": "92"
+    },
+    {
+      "section": "Methods",
+      "text": "."
+    },
+    {
+      "section": "Methods",
+      "text": "rs35081008"
+    },
+    {
+      "section": "Methods",
+      "text": " and "
+    },
+    {
+      "section": "Methods",
+      "text": "rs34003091"
+    },
+    {
+      "section": "Methods",
+      "text": " (Extended Data Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "8d,e"
+    },
+    {
+      "section": "Methods",
+      "text": "): located in the "
+    },
+    {
+      "section": "Methods",
+      "text": "ZNF329"
+    },
+    {
+      "section": "Methods",
+      "text": " promoter and associated with "
+    },
+    {
+      "section": "Methods",
+      "text": "ZNF329"
+    },
+    {
+      "section": "Methods",
+      "text": " expression in liver and LDL cholesterol levels. Both variants contact ZNF329 (refs. "
+    },
+    {
+      "section": "Methods",
+      "text": "94"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "96"
+    },
+    {
+      "section": "Methods",
+      "text": ") and 83 other genes (Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "16"
+    },
+    {
+      "section": "Methods",
+      "text": ")."
+    },
+    {
+      "section": "Methods",
+      "text": "Activity blocks"
+    },
+    {
+      "section": "Methods",
+      "text": "We developed a Gaussian filter approach to identify blocks of quasi-contiguous non-zero variant positions. Gaussian filters are widely used across fields such as image processing, in which they detect edges by reducing pixel noise; astronomy, in which they enhance features such as stars and galaxies against noisy backgrounds; and audio processing, in which they reduce high-frequency noise while preserving signal integrity. By smoothing data, Gaussian filters reduce noise while preserving localized features and highlighting important patterns in the signal. This approach emphasizes features by weighting nearby positions more heavily and provides a smooth transition between regions of high and low signal. Because of this, they are well suited to identify TF-binding sites and other regulatory sequence segments in which sets of contiguous variant positions all participate in transcriptional regulation."
+    },
+    {
+      "section": "Methods",
+      "text": "To identify blocks, we used the crossover points between a threshold "
+    },
+    {
+      "section": "Methods",
+      "text": "T"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2208\u2009\u211d and a smoothed signal "
+    },
+    {
+      "section": "Methods",
+      "text": "S"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u2009["
+    },
+    {
+      "section": "Methods",
+      "text": "S"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2208\u2009\u211d] (at position "
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": ") of the \u2206log"
+    },
+    {
+      "section": "Methods",
+      "text": "2"
+    },
+    {
+      "section": "Methods",
+      "text": "(fold change) [\u0394"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "] of an element as follows. For any given sequence element, each \u0394"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": " was obtained by averaging all three posterior allelic substitution effects at each position "
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": ". Then, "
+    },
+    {
+      "section": "Methods",
+      "text": "S"
+    },
+    {
+      "section": "Methods",
+      "text": " was obtained by applying a one-dimensional Gaussian filter (scipy.ndimage.gaussian_filter1d) to [\u0394"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "] with a kernel s.d. of "
+    },
+    {
+      "section": "Methods",
+      "text": "\u03c3"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u20091.15. To identify blocks of negative allelic effects, which indicate positive contributions to activity by the reference sequence, we found the crossover indices {"
+    },
+    {
+      "section": "Methods",
+      "text": "c"
+    },
+    {
+      "section": "Methods",
+      "text": "i"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2208\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2115"
+    },
+    {
+      "section": "Methods",
+      "text": "} between "
+    },
+    {
+      "section": "Methods",
+      "text": "S"
+    },
+    {
+      "section": "Methods",
+      "text": " and "
+    },
+    {
+      "section": "Methods",
+      "text": "T"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u2009\u22120.2, and considered as salient those regions ["
+    },
+    {
+      "section": "Methods",
+      "text": "c"
+    },
+    {
+      "section": "Methods",
+      "text": "i"
+    },
+    {
+      "section": "Methods",
+      "text": ", "
+    },
+    {
+      "section": "Methods",
+      "text": "c"
+    },
+    {
+      "section": "Methods",
+      "text": "i"
+    },
+    {
+      "section": "Methods",
+      "text": "+1"
+    },
+    {
+      "section": "Methods",
+      "text": "] such that:"
+    },
+    {
+      "section": "Methods",
+      "text": "\n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                  "
+    },
+    {
+      "section": "Methods",
+      "text": "i)\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "\n                  \n                    "
+    },
+    {
+      "section": "Methods",
+      "text": "S"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2264\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "T"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "S"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2264\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "T"
+    },
+    {
+      "section": "Methods",
+      "text": "\u00a0=\u2009\u22120.2 \u2200 "
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2208\u2009["
+    },
+    {
+      "section": "Methods",
+      "text": "c"
+    },
+    {
+      "section": "Methods",
+      "text": "i"
+    },
+    {
+      "section": "Methods",
+      "text": ", "
+    },
+    {
+      "section": "Methods",
+      "text": "c"
+    },
+    {
+      "section": "Methods",
+      "text": "i"
+    },
+    {
+      "section": "Methods",
+      "text": "+1"
+    },
+    {
+      "section": "Methods",
+      "text": "]; that is, the signal "
+    },
+    {
+      "section": "Methods",
+      "text": "S"
+    },
+    {
+      "section": "Methods",
+      "text": " along the block is below the threshold;"
+    },
+    {
+      "section": "Methods",
+      "text": "\n                  \n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                  "
+    },
+    {
+      "section": "Methods",
+      "text": "ii)\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "\n                  \n                    "
+    },
+    {
+      "section": "Methods",
+      "text": "c"
+    },
+    {
+      "section": "Methods",
+      "text": "i"
+    },
+    {
+      "section": "Methods",
+      "text": "+1"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2212\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "c"
+    },
+    {
+      "section": "Methods",
+      "text": "i"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009+\u20091\u2009\u2265\u20095; the length of the region is at least 5;"
+    },
+    {
+      "section": "Methods",
+      "text": "\n                  \n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                  "
+    },
+    {
+      "section": "Methods",
+      "text": "iii)\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "\n                  \n                    "
+    },
+    {
+      "section": "Methods",
+      "text": "mean(\u0394"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": ", "
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2208\u2009["
+    },
+    {
+      "section": "Methods",
+      "text": "c"
+    },
+    {
+      "section": "Methods",
+      "text": "i"
+    },
+    {
+      "section": "Methods",
+      "text": ", "
+    },
+    {
+      "section": "Methods",
+      "text": "c"
+    },
+    {
+      "section": "Methods",
+      "text": "i"
+    },
+    {
+      "section": "Methods",
+      "text": "+1"
+    },
+    {
+      "section": "Methods",
+      "text": "])\u2009\u2264\u2009\u22120.15; the mean of the allelic effects has to be at most 0.15."
+    },
+    {
+      "section": "Methods",
+      "text": "\n                  \n                "
+    },
+    {
+      "section": "Methods",
+      "text": "\n              "
+    },
+    {
+      "section": "Methods",
+      "text": "Similarly, we took "
+    },
+    {
+      "section": "Methods",
+      "text": "T"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u20090.2 and mean(\u0394"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": ", "
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2208\u2009["
+    },
+    {
+      "section": "Methods",
+      "text": "c"
+    },
+    {
+      "section": "Methods",
+      "text": "i"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": " "
+    },
+    {
+      "section": "Methods",
+      "text": "c"
+    },
+    {
+      "section": "Methods",
+      "text": "i"
+    },
+    {
+      "section": "Methods",
+      "text": "+1"
+    },
+    {
+      "section": "Methods",
+      "text": "])\u2009\u2265\u20090.15 to identify blocks of positive allelic effects."
+    },
+    {
+      "section": "Methods",
+      "text": "Motif matches in activity blocks"
+    },
+    {
+      "section": "Methods",
+      "text": "To find a TF motif match to a given activity block "
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u2009["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "], we constructed a PWM from the allelic effects as follows. Let "
+    },
+    {
+      "section": "Methods",
+      "text": "\u03b4"
+    },
+    {
+      "section": "Methods",
+      "text": "a"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": " denote the three allelic effects at position "
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2208\u2009["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "] between the reference allele "
+    },
+    {
+      "section": "Methods",
+      "text": "r"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2208\u2009{A,C,G,T} and the alternative alleles {A,C,G,T} \u220b "
+    },
+    {
+      "section": "Methods",
+      "text": "a"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2260\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "r"
+    },
+    {
+      "section": "Methods",
+      "text": ". We define a matrix "
+    },
+    {
+      "section": "Methods",
+      "text": "M"
+    },
+    {
+      "section": "Methods",
+      "text": "t"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": ", where "
+    },
+    {
+      "section": "Methods",
+      "text": "t"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2208\u2009{A,C,G,T} and "
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2208\u2009["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "], as "
+    },
+    {
+      "section": "Methods",
+      "text": "M"
+    },
+    {
+      "section": "Methods",
+      "text": "t"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "\u03b4"
+    },
+    {
+      "section": "Methods",
+      "text": "a"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": " if "
+    },
+    {
+      "section": "Methods",
+      "text": "t"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "a"
+    },
+    {
+      "section": "Methods",
+      "text": ", "
+    },
+    {
+      "section": "Methods",
+      "text": "M"
+    },
+    {
+      "section": "Methods",
+      "text": "t"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u20090 if "
+    },
+    {
+      "section": "Methods",
+      "text": "t"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "r"
+    },
+    {
+      "section": "Methods",
+      "text": ". Then, we define PWM["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "]\u2009=\u200920\u2009\u00d7\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "M"
+    },
+    {
+      "section": "Methods",
+      "text": "t"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "/"
+    },
+    {
+      "section": "Methods",
+      "text": "M"
+    },
+    {
+      "section": "Methods",
+      "text": "max"
+    },
+    {
+      "section": "Methods",
+      "text": " for "
+    },
+    {
+      "section": "Methods",
+      "text": "t"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2208\u2009{A,C,G,T} and "
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009\u2208\u2009["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "], as the PWM induced by the allelic effects in the activity block ["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "], where 20 is a chosen temperature parameter and "
+    },
+    {
+      "section": "Methods",
+      "text": "M"
+    },
+    {
+      "section": "Methods",
+      "text": "max"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u2009max"
+    },
+    {
+      "section": "Methods",
+      "text": "t"
+    },
+    {
+      "section": "Methods",
+      "text": "(\u2211"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "|"
+    },
+    {
+      "section": "Methods",
+      "text": "M"
+    },
+    {
+      "section": "Methods",
+      "text": "t"
+    },
+    {
+      "section": "Methods",
+      "text": "k"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009|). Using PWM["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "], we construct the block position probability matrix, PPM["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "], by applying the Softmax function to the values of PWM["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "] at each position. We also define the block information content matrix, ICM["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "], by mapping the values of PPM["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "] at each position into information bits with respect to the uniform background "
+    },
+    {
+      "section": "Methods",
+      "text": "p"
+    },
+    {
+      "section": "Methods",
+      "text": "A"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "p"
+    },
+    {
+      "section": "Methods",
+      "text": "C"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "p"
+    },
+    {
+      "section": "Methods",
+      "text": "G"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "p"
+    },
+    {
+      "section": "Methods",
+      "text": "T"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u20090.25. When we had obtained the matrices PWM["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "] and ICM["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "] from the allelic effects in an activity block "
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": ", we sought to find their best match to a human TF motif in JASPAR"
+    },
+    {
+      "section": "Methods",
+      "text": "90"
+    },
+    {
+      "section": "Methods",
+      "text": " or HOCOMOCO"
+    },
+    {
+      "section": "Methods",
+      "text": "89"
+    },
+    {
+      "section": "Methods",
+      "text": ". Let "
+    },
+    {
+      "section": "Methods",
+      "text": "\\({\\mathcal{D}}\\)"
+    },
+    {
+      "section": "Methods",
+      "text": " represent the dataset of known human TF motifs in the union of JASPAR (2022 REDUNDANT) and HOCOMOCO (H12CORE). Let PWM"
+    },
+    {
+      "section": "Methods",
+      "text": "m"
+    },
+    {
+      "section": "Methods",
+      "text": ", ICM"
+    },
+    {
+      "section": "Methods",
+      "text": "m"
+    },
+    {
+      "section": "Methods",
+      "text": " and "
+    },
+    {
+      "section": "Methods",
+      "text": "\u03bb"
+    },
+    {
+      "section": "Methods",
+      "text": "m"
+    },
+    {
+      "section": "Methods",
+      "text": " represent the position weight matrix, information content matrix and length, respectively, of a motif "
+    },
+    {
+      "section": "Methods",
+      "text": "\\(m\\in {\\mathcal{D}}\\)"
+    },
+    {
+      "section": "Methods",
+      "text": ". We defined the best alignment offset "
+    },
+    {
+      "section": "Methods",
+      "text": "o"
+    },
+    {
+      "section": "Methods",
+      "text": "("
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": ", "
+    },
+    {
+      "section": "Methods",
+      "text": "m"
+    },
+    {
+      "section": "Methods",
+      "text": ")\u2009\u2208\u2009\u2124 between a block "
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u2009["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "] and a motif "
+    },
+    {
+      "section": "Methods",
+      "text": "\\(m\\in {\\mathcal{D}}\\)"
+    },
+    {
+      "section": "Methods",
+      "text": " as the integer that maximizes the sum of the element-wise product between ICM["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "] and PWM"
+    },
+    {
+      "section": "Methods",
+      "text": "m"
+    },
+    {
+      "section": "Methods",
+      "text": " for all possible alignments of the nucleotide positions between the two matrices (with the appropriate zero padding to match the dimensions of the two matrices). Next, we computed the (block) Pearson correlation between ICM["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": ","
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "stop"
+    },
+    {
+      "section": "Methods",
+      "text": "] and ICM"
+    },
+    {
+      "section": "Methods",
+      "text": "m"
+    },
+    {
+      "section": "Methods",
+      "text": " (with the appropriate zero padding) in their best alignment given by "
+    },
+    {
+      "section": "Methods",
+      "text": "o"
+    },
+    {
+      "section": "Methods",
+      "text": "("
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": ", "
+    },
+    {
+      "section": "Methods",
+      "text": "m"
+    },
+    {
+      "section": "Methods",
+      "text": ") for every "
+    },
+    {
+      "section": "Methods",
+      "text": "m"
+    },
+    {
+      "section": "Methods",
+      "text": " in "
+    },
+    {
+      "section": "Methods",
+      "text": "\\({\\mathcal{D}}\\)"
+    },
+    {
+      "section": "Methods",
+      "text": ", and collected the motifs in the top 50 Pearson correlations. Then, for those top 50 motifs, we computed the (match) Pearson correlation between ICM"
+    },
+    {
+      "section": "Methods",
+      "text": "m"
+    },
+    {
+      "section": "Methods",
+      "text": " and ICM["
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009+\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "o"
+    },
+    {
+      "section": "Methods",
+      "text": "("
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": ", "
+    },
+    {
+      "section": "Methods",
+      "text": "m"
+    },
+    {
+      "section": "Methods",
+      "text": "), "
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": "start"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009+\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "o"
+    },
+    {
+      "section": "Methods",
+      "text": "("
+    },
+    {
+      "section": "Methods",
+      "text": "b"
+    },
+    {
+      "section": "Methods",
+      "text": ", "
+    },
+    {
+      "section": "Methods",
+      "text": "m"
+    },
+    {
+      "section": "Methods",
+      "text": ")\u2009+\u2009"
+    },
+    {
+      "section": "Methods",
+      "text": "\u03bb"
+    },
+    {
+      "section": "Methods",
+      "text": "m"
+    },
+    {
+      "section": "Methods",
+      "text": "]; that is, the correlation to the ICM allelic effects given the alignment induced by the alignment to the activity block. Finally, we selected the motif with the highest match_Pearson\u2009+\u20090.2\u2009\u00d7\u2009block_Pearson. If the overlap between the selected TF match and the activity block leaves five or more contiguous positions in the block unassigned, we repeat the process above to the unassigned sub-block."
+    },
+    {
+      "section": "Methods",
+      "text": "Rare-variant analysis"
+    },
+    {
+      "section": "Methods",
+      "text": "Whole genome sequencing for 402,990 unrelated (max kinship coefficient\u2009<\u20090.884) individuals without filtering on genetic continental ancestry in the UK Biobank was analysed on DNAnexus. Carriers were defined as single-nucleotide substitutions with a higher MPRA allelic effect size than rs191148279 from the saturation-mutagenesis experiments in K562 cells. Residual HbA1c phenotypes were obtained as previously described"
+    },
+    {
+      "section": "Methods",
+      "text": "31"
+    },
+    {
+      "section": "Methods",
+      "text": ", and an odds ratio using Firth\u2019s correction for more than 1 s.d. change in the phenotype was computed as well as Levene\u2019s test, which was run to test whether the variances were different between carriers and non-carriers."
+    },
+    {
+      "section": "Methods",
+      "text": "GWAS meta-analysis"
+    },
+    {
+      "section": "Methods",
+      "text": "We selected 121,247 individuals of African continental ancestries from UKBB ("
+    },
+    {
+      "section": "Methods",
+      "text": "n"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u20095,803), All of Us ("
+    },
+    {
+      "section": "Methods",
+      "text": "n"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u20097,442), Million Veterans Project ("
+    },
+    {
+      "section": "Methods",
+      "text": "n"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u200998,427) and Alliance for Genomic Discovery ("
+    },
+    {
+      "section": "Methods",
+      "text": "n"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009=\u20099,575) with genotype calls at "
+    },
+    {
+      "section": "Methods",
+      "text": "rs785206"
+    },
+    {
+      "section": "Methods",
+      "text": " and HbA1c level measurements. In brief, linear regression in UKBB and Alliance for Genomic Discovery was done as previously described"
+    },
+    {
+      "section": "Methods",
+      "text": "31"
+    },
+    {
+      "section": "Methods",
+      "text": "; linear regression in All of Us was done controlling for age, sex and three genetic PCs; and linear regression results from Million Veterans Project were obtained from ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "32"
+    },
+    {
+      "section": "Methods",
+      "text": " (HARE, A1C_Min_INT). Fixed-effect meta-analysis was done using the R metafor package. Bonferroni-adjusted 95% confidence intervals were obtained using the critical value corresponding to "
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "\u2009<\u20095.0\u2009\u00d7\u200910"
+    },
+    {
+      "section": "Methods",
+      "text": "\u22128"
+    },
+    {
+      "section": "Methods",
+      "text": " (5.33)."
+    },
+    {
+      "section": "Methods",
+      "text": "GTEx interaction analysis"
+    },
+    {
+      "section": "Methods",
+      "text": "Sex-biased eQTLs were mapped as described in ref. "
+    },
+    {
+      "section": "Methods",
+      "text": "97"
+    },
+    {
+      "section": "Methods",
+      "text": ". In brief, a linear model with a genotype\u2009\u00d7\u2009biological sex interaction term was used to model normalized gene expression. Genotype PCs and expression PEER factors were included as covariates. The interaction "
+    },
+    {
+      "section": "Methods",
+      "text": "P"
+    },
+    {
+      "section": "Methods",
+      "text": "\u00a0value was obtained from a Wald test."
+    },
+    {
+      "section": "Methods",
+      "text": "Constraint"
+    },
+    {
+      "section": "Methods",
+      "text": "Nucleotide-level PhyloP scores for constraint in 427 mammals were downloaded from Zoonomia"
+    },
+    {
+      "section": "Methods",
+      "text": "4"
+    },
+    {
+      "section": "Methods",
+      "text": ". Saturation-mutagenesis sequences were lifted over to hg38 and matched to PhyloP scores. Specific positions were defined as constrained if the PhyloP FDR was less than 0.05, corresponding to a PhyloP score of more than 2.27. Before estimating the correlation with PhyloP, \u2206log"
+    },
+    {
+      "section": "Methods",
+      "text": "2"
+    },
+    {
+      "section": "Methods",
+      "text": "(fold changes) for all three substitutions at each position were averaged and inverted to obtain a contribution score, similar to the height of letters in the saturation-mutagenesis examples in Figs. "
+    },
+    {
+      "section": "Methods",
+      "text": "4"
+    },
+    {
+      "section": "Methods",
+      "text": " and "
+    },
+    {
+      "section": "Methods",
+      "text": "5"
+    },
+    {
+      "section": "Methods",
+      "text": ". Correlations between either the signed contribution score or the |contribution score| and PhyloP using Pearson\u2019s method and corresponding FDRs obtained using Storey\u2019s "
+    },
+    {
+      "section": "Methods",
+      "text": "q"
+    },
+    {
+      "section": "Methods",
+      "text": "\u00a0value are provided in Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "26"
+    },
+    {
+      "section": "Methods",
+      "text": "."
+    },
+    {
+      "section": "Methods",
+      "text": "Endogenous base-editing"
+    },
+    {
+      "section": "Methods",
+      "text": "The K562 cells were cultured in RPMI 1640 medium, GlutaMAX Supplement (Life Technologies, 61870127) with 10% FBS (Life Technologies, 26140). For base-editing, 1\u2009M cells were transfected in a 10-\u03bcl volume with 1\u2009\u03bcg of a 3:1 mass ratio pool of base-editing plasmid, BE4 (Addgene, 100802)"
+    },
+    {
+      "section": "Methods",
+      "text": "98"
+    },
+    {
+      "section": "Methods",
+      "text": " and sgRNA-expressing plasmid, BPK1520 (Addgene, 65777)"
+    },
+    {
+      "section": "Methods",
+      "text": "99"
+    },
+    {
+      "section": "Methods",
+      "text": ", using a Neon transfection system (Life Technologies) (3 pulses of 1,450\u2009V for 10\u2009ms). Two sgRNAs were used to target the centre GATA motif and transfected independently (AGTACTATCTTTGAGGATAG, AAGTACTATCTTTGAGGATA). Transfected cells were grown for 6 days followed by removal of 5\u2009\u00d7\u200910"
+    },
+    {
+      "section": "Methods",
+      "text": "5"
+    },
+    {
+      "section": "Methods",
+      "text": " cells for gDNA extraction and PCR amplification of the target site (rs191148279_gDNA_F, rs191148279_gDNA_R; Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "31"
+    },
+    {
+      "section": "Methods",
+      "text": ")"
+    },
+    {
+      "section": "Methods",
+      "text": " using Q5 Polymerase (NEB) to confirm presence of edits by Sanger sequencing. Cells were grown for a further 96\u2009h, then individual cells were isolated by limiting\u00a0dilution cloning, plating at 0.3 cells per well\u00a0in 384-well plates to yield single-cell colonies in approximately one-third of wells. Single cells were expanded followed by gDNA extraction on an aliquot of cells using QuickExtract DNA Extraction Solution (Biosearch Technologies, QE09050). DNA was amplified using Q5 Polymerase (NEB) and the same primers for bulk verification followed by Sanger sequencing. Nine clones containing the rs191148279 G>A knockout mutation with a second silent G>A mutation outside GATA and 11 unedited clones with the wild-type allele containing the GATA site were selected for downstream analyses."
+    },
+    {
+      "section": "Methods",
+      "text": "Expression profiling of base-edited clones"
+    },
+    {
+      "section": "Methods",
+      "text": "RNA was extracted from around 10"
+    },
+    {
+      "section": "Methods",
+      "text": "6"
+    },
+    {
+      "section": "Methods",
+      "text": " cells taken from K562 base-edited and unedited clones using Qiagen RNeasy Mini Columns (Qiagen, 74104). BRB-seq libraries were prepared as described previously"
+    },
+    {
+      "section": "Methods",
+      "text": "100"
+    },
+    {
+      "section": "Methods",
+      "text": ". Specifically, 100\u2009ng (quantified on Qubit) of RNA was incubated with the BU3_index primer (Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "31"
+    },
+    {
+      "section": "Methods",
+      "text": ") for 10\u2009min at 65\u2009\u00b0C and placed on ice before performing the room-temperature reaction (14\u2009\u03bcl RNA\u2009+\u2009primer mixture, 4\u2009\u03bcl 5\u00d7 First Strand Buffer, 2\u2009\u03bcl 0.1\u2009M DTT and 0.25\u2009\u03bcl Superscript II Enzyme (ThermoFisher, 18064014)) (42\u2009\u00b0C for 50\u2009min, 70\u2009\u00b0C for 15\u2009min). Individual samples were then pooled and purified (Monarch Spin PCR & DNA Cleanup Kit, NEB T1130) before eluting in 20\u2009\u03bcl water. Samples were then treated with exonuclease I (20\u2009\u03bcl cDNA, 1\u2009\u03bcl exonuclease I, 2\u2009\u03bcl 10\u00d7 reaction buffer (NEB, MO293), 30\u2009\u00b0C for 30\u2009min, 80\u2009\u00b0C for 20\u2009min) before second-strand synthesis. Second-strand synthesis was done by nick translation in the following reaction: 23\u2009\u03bcl exonuclease-treated cDNA, 2\u2009\u03bcl RNase H (NEB, M0297), 1\u2009\u03bcl "
+    },
+    {
+      "section": "Methods",
+      "text": "Escherichia coli"
+    },
+    {
+      "section": "Methods",
+      "text": " DNA ligase (NEB, M0205), 5\u2009\u03bcl "
+    },
+    {
+      "section": "Methods",
+      "text": "E. coli"
+    },
+    {
+      "section": "Methods",
+      "text": " DNA polymerase (NEB, M0209), 1\u2009\u03bcl 0.2\u2009mM dNTP (ThermoFisher, R0192), 10\u2009\u03bcl 5\u00d7 second strand buffer (100\u2009mM Tris-HCl, pH 6.9, 25\u2009mM MgCl"
+    },
+    {
+      "section": "Methods",
+      "text": "2"
+    },
+    {
+      "section": "Methods",
+      "text": ", 450\u2009mM KCl, 0.8\u2009mM \u03b2-NAD, 60\u2009mM (NH"
+    },
+    {
+      "section": "Methods",
+      "text": "4"
+    },
+    {
+      "section": "Methods",
+      "text": ")2S0"
+    },
+    {
+      "section": "Methods",
+      "text": "4"
+    },
+    {
+      "section": "Methods",
+      "text": ") and 11\u2009\u03bcl water; overnight incubation at 16\u2009\u00b0C. Tagmentation was then performed with 50\u2009ng second strand synthesized sample in the following reaction: 10\u2009\u03bcl 2\u00d7 tagmentation buffer (Diagenode, C01019043), 9\u2009\u03bcl DNA, 1\u2009\u03bcl Tagmentase (Diagenode, C01070012-30), incubation at 55\u2009\u00b0C for 7\u2009min. Tagmented samples were purified (Monarch Spin PCR & DNA Cleanup Kit, NEB T1130) and resuspended in 20\u2009\u03bcl water before final library amplification: 20\u2009\u03bcl tagmented DNA, 2.5\u2009\u03bcl 5\u2009\u03bcM P5 BRB Primer, 2.5\u2009\u03bcL 5\u2009\u03bcM BRB Idx7N5 primer, 25\u2009\u03bcl NEBNext High-Fidelity 2\u00d7 PCR Master Mix (NEB, M0541) with the following thermocycler conditions: 3\u2009min at 72\u2009\u00b0C, 30\u2009s at 98\u2009\u00b0C, 15\u00d7(10\u2009s 98\u2009\u00b0C, 30\u2009s 63\u2009\u00b0C, 30\u2009s 72\u2009\u00b0C), 5\u2009min at 72\u2009\u00b0C. Amplified libraries were double SPRIselect purified (0.5\u00d7, 0.8\u00d7, Beckman, B23319) to select for 200\u2013800-bp fragments before confirmation on an Agilent TapeStation with D1000 High Sensitivity ScreenTape (Agilent, 5067-5584)."
+    },
+    {
+      "section": "Methods",
+      "text": "Libraries were sequenced on a NextSeq 2000 sequencer with a P3-100 cycle kit (Illumina) with 21-bp read 1 using a custom primer (BRB_Ilmn_read_1; Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "31"
+    },
+    {
+      "section": "Methods",
+      "text": "), and 71\u2009bp for read 2 with the standard primer. Sequenced reads were aligned with STAR (v.2.7.11b, --outFilterMultimapNmax 1)"
+    },
+    {
+      "section": "Methods",
+      "text": "101"
+    },
+    {
+      "section": "Methods",
+      "text": " and demultiplexed with BRB-seq Tools (v.1.6.1)"
+    },
+    {
+      "section": "Methods",
+      "text": "100"
+    },
+    {
+      "section": "Methods",
+      "text": ". Count tables from BRB-seq Tools (CreateDGEMatrix) were used as input for differential expression analysis with DESeq2 (v.1.48.1)"
+    },
+    {
+      "section": "Methods",
+      "text": "102"
+    },
+    {
+      "section": "Methods",
+      "text": " and significant genes (Wald test) were identified at an FDR threshold of 0.01 (Benjamini\u2013Hochberg procedure). BRB-seq results for "
+    },
+    {
+      "section": "Methods",
+      "text": "C2orf88"
+    },
+    {
+      "section": "Methods",
+      "text": " and "
+    },
+    {
+      "section": "Methods",
+      "text": "HIBCH"
+    },
+    {
+      "section": "Methods",
+      "text": " were confirmed using quantitative PCR. Total RNA (1\u20132.5\u2009\u03bcg) from the same extractions was converted to cDNA using SuperScript III, and qPCR was done using Luna Universal Master Mix on a QuantStudio 5 with gene-specific primers for "
+    },
+    {
+      "section": "Methods",
+      "text": "C2orf88"
+    },
+    {
+      "section": "Methods",
+      "text": " ("
+    },
+    {
+      "section": "Methods",
+      "text": "C2orf88_"
+    },
+    {
+      "section": "Methods",
+      "text": "F and "
+    },
+    {
+      "section": "Methods",
+      "text": "C2orf88_"
+    },
+    {
+      "section": "Methods",
+      "text": "R; Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "31"
+    },
+    {
+      "section": "Methods",
+      "text": "), "
+    },
+    {
+      "section": "Methods",
+      "text": "HIBCH"
+    },
+    {
+      "section": "Methods",
+      "text": " ("
+    },
+    {
+      "section": "Methods",
+      "text": "HIBCH_"
+    },
+    {
+      "section": "Methods",
+      "text": "F and "
+    },
+    {
+      "section": "Methods",
+      "text": "HIBCH_"
+    },
+    {
+      "section": "Methods",
+      "text": "R; Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "31"
+    },
+    {
+      "section": "Methods",
+      "text": ") and "
+    },
+    {
+      "section": "Methods",
+      "text": "TBP"
+    },
+    {
+      "section": "Methods",
+      "text": " as the normalizing control gene ("
+    },
+    {
+      "section": "Methods",
+      "text": "TBP_"
+    },
+    {
+      "section": "Methods",
+      "text": "F and "
+    },
+    {
+      "section": "Methods",
+      "text": "TBP_"
+    },
+    {
+      "section": "Methods",
+      "text": "R; Supplementary Table "
+    },
+    {
+      "section": "Methods",
+      "text": "31"
+    },
+    {
+      "section": "Methods",
+      "text": "). Two independent experiments with four technical replicates each were done, and fold changes were calculated using the \u0394\u0394Ct method normalized to "
+    },
+    {
+      "section": "Methods",
+      "text": "TBP"
+    },
+    {
+      "section": "Methods",
+      "text": " and reference allele expression. Statistical differences were assessed using a two-sided Mann\u2013Whitney "
+    },
+    {
+      "section": "Methods",
+      "text": "U"
+    },
+    {
+      "section": "Methods",
+      "text": "\u00a0test (Extended Data Fig. "
+    },
+    {
+      "section": "Methods",
+      "text": "7c"
+    },
+    {
+      "section": "Methods",
+      "text": ")."
+    },
+    {
+      "section": "Methods",
+      "text": "Data visualization and figure generation"
+    },
+    {
+      "section": "Methods",
+      "text": "All plots were generated in R using ggplot2 (v.3.5.0) and assembled with patchwork (v.1.2.0) and cowplot (v.1.1.3). Heatmaps were created using ComplexHeatmap (v.2.2.0). Colour palettes were from BuenColors (v.0.5.6) and PNWColors (v.0.1.0). Rasterization was done using ggrastr (v.1.0.2) and marginal distributions added using ggExtra (v.0.10.1)."
+    },
+    {
+      "section": "Methods",
+      "text": "Reporting summary"
+    },
+    {
+      "section": "Methods",
+      "text": "Further information on research design is available in the\u00a0"
+    },
+    {
+      "section": "Methods",
+      "text": "Nature Portfolio Reporting Summary"
+    },
+    {
+      "section": "Methods",
+      "text": " linked to this article."
+    },
+    {
+      "section": "Methods",
+      "text": "\n                        "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                    \n\n                    "
+    },
+    {
+      "section": "Methods",
+      "text": "\n                        "
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Supplementary information"
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Supplementary Information (download PDF "
+    },
+    {
+      "section": "Supplementary information",
+      "text": ")"
+    },
+    {
+      "section": "Supplementary information",
+      "text": "This file contains Supplementary Figs. 1\u20139, Supplementary Notes 1 and 2, and legends for Supplementary Tables 1\u201332."
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Reporting Summary (download PDF "
+    },
+    {
+      "section": "Supplementary information",
+      "text": ")"
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Supplementary Table 1 (download XLSX "
+    },
+    {
+      "section": "Supplementary information",
+      "text": ")"
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Summary of fine-mapped and control variants."
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Supplementary Table 2 (download XLSX "
+    },
+    {
+      "section": "Supplementary information",
+      "text": ")"
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Variant oligo sequences."
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Supplementary Tables (download XLSX "
+    },
+    {
+      "section": "Supplementary information",
+      "text": ")"
+    },
+    {
+      "section": "Supplementary information",
+      "text": "This file contains Supplementary Tables 3, 5, 6, 8\u201315, 17, 19\u201323 and 25\u201331."
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Supplementary Table 4 (download XLSX "
+    },
+    {
+      "section": "Supplementary information",
+      "text": ")"
+    },
+    {
+      "section": "Supplementary information",
+      "text": "MPRA result summary."
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Supplementary Table 7 (download XLSX "
+    },
+    {
+      "section": "Supplementary information",
+      "text": ")"
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Cell-type-specific activity and allelic effect with empirical Bayes shrinkage."
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Supplementary Table 16 (download XLSX "
+    },
+    {
+      "section": "Supplementary information",
+      "text": ")"
+    },
+    {
+      "section": "Supplementary information",
+      "text": "CRE"
+    },
+    {
+      "section": "Supplementary information",
+      "text": "-gene links for autosomal TARVs."
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Supplementary Table 18 (download XLSX "
+    },
+    {
+      "section": "Supplementary information",
+      "text": ")"
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Oligo sequences for variant pairs"
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Supplementary Table 24 (download XLSX "
+    },
+    {
+      "section": "Supplementary information",
+      "text": ")"
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Summary of saturation-mutagenesis results"
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Supplementary Table 32 (download XLSX "
+    },
+    {
+      "section": "Supplementary information",
+      "text": ")"
+    },
+    {
+      "section": "Supplementary information",
+      "text": "External data sources used in this article."
+    },
+    {
+      "section": "Supplementary information",
+      "text": "Peer Review File (download PDF "
+    },
+    {
+      "section": "Supplementary information",
+      "text": ")"
+    },
+    {
+      "section": "Rights and permissions",
+      "text": "Rights and permissions"
+    },
+    {
+      "section": "Rights and permissions",
+      "text": "\n              "
+    },
+    {
+      "section": "Rights and permissions",
+      "text": "Open Access"
+    },
+    {
+      "section": "Rights and permissions",
+      "text": "  This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article\u2019s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article\u2019s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit "
+    },
+    {
+      "section": "Rights and permissions",
+      "text": "http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "section": "Rights and permissions",
+      "text": "."
+    },
+    {
+      "section": "Rights and permissions",
+      "text": "\n            "
+    },
+    {
+      "section": "Rights and permissions",
+      "text": "Reprints and permissions"
+    }
+  ],
+  "source_accessions": [
+    "10.5281/zenodo.15297965"
+  ],
+  "links": [
+    "https://doi.org/10.5281/zenodo.15297965",
+    "https://github.com/julirsch/finemapped_mpra/",
+    "https://github.com/tewhey-lab/MPRASuite",
+    "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM10_ESM.xlsx",
+    "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM11_ESM.xlsx",
+    "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM12_ESM.pdf",
+    "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM1_ESM.pdf",
+    "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM2_ESM.pdf",
+    "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM3_ESM.xlsx",
+    "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM4_ESM.xlsx",
+    "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM5_ESM.xlsx",
+    "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM6_ESM.xlsx",
+    "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM7_ESM.xlsx",
+    "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM8_ESM.xlsx",
+    "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM9_ESM.xlsx"
+  ]
+}

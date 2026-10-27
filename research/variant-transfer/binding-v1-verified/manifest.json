@@ -1,0 +1,25 @@
+{
+  "files": {
+    "binding.json": {
+      "bytes": 3771,
+      "sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79"
+    },
+    "cohort.jsonl.gz": {
+      "bytes": 191853,
+      "sha256": "4d1fd2725ee0ed2952cf95cefa555ba4418c1338bdcd047a34d849d0b95ddc8b"
+    },
+    "component-exclusion-ledger.jsonl.gz": {
+      "bytes": 54527,
+      "sha256": "5b2a5ffa068165a5f212ebef245e2f7fe1b8d828dc6712a7e010b8c99fac0538"
+    },
+    "implementation.py": {
+      "bytes": 23000,
+      "sha256": "9523ae4fde24344461dbec6a98bea401ba406cc0ae26901dba026f908f3c55f0"
+    },
+    "variant-exclusion-ledger.jsonl.gz": {
+      "bytes": 3404409,
+      "sha256": "0e60dfd0768f47f25b3c7d995e6b4809be194938d046382fac70e551971030f1"
+    }
+  },
+  "schema_version": 1
+}

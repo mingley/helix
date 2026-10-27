@@ -1,0 +1,548 @@
+{
+  "schema_version": 1,
+  "phase": "metadata-only source technical-control relation inventory before component exclusion",
+  "control_design_sha256": "c23be380925afbd7bd9a4524d0b89105478264f49c832d8a55e6d520a51d8094",
+  "all_reference_validated_pairs_sha256": "e37f6e4b621159fd432fb89d180a317bde145863e8bd706ba8f315c6f2531979",
+  "all_S30_rows": 2835,
+  "non200nt_controls": 5,
+  "nonACGT_controls": 0,
+  "matched_external_variant_count": 41,
+  "matched_external_variants": [
+    {
+      "id": "chr1:110198727:C:G",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "1:110198727:C:G:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr2:61378186:C:A",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "2:61378186:C:A:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "2:61378186:C:A:A:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr2:75932627:T:C",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "2:75932627:T:C:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr2:131079483:C:T",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "2:131079483:C:T:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr2:131079526:C:T",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "2:131079526:C:T:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "2:131079526:C:T:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "2:131079526:C:T:A:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr2:200621420:C:T",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "2:200621420:C:T:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr3:195335265:A:G",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "3:195335265:A:G:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr4:187112629:G:C",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "4:187112629:G:C:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr5:175815782:G:C",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "5:175815782:G:C:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr6:3118952:C:T",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "6:3118952:C:T:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr6:158574892:G:T",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "6:158574892:G:T:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr7:99635369:C:A",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "7:99635369:C:A:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "7:99635369:C:A:A:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr8:145054271:T:C",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "8:145054271:T:C:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr8:145179003:A:T",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "8:145179003:A:T:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr9:34349863:G:A",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "9:34349863:G:A:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr12:54955169:G:T",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "12:54955169:G:T:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "12:54955169:G:T:A:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr13:43597706:C:T",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "13:43597706:C:T:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "13:43597706:C:T:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "13:43597706:C:T:A:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "13:43597706:C:T:A:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr16:468450:C:T",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "16:468450:C:T:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr17:43670940:A:G",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "17:43670940:A:G:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr17:46983171:G:C",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "17:46983171:G:C:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "17:46983171:G:C:A:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr18:12991393:T:C",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "18:12991393:T:C:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "18:12991393:T:C:A:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr19:3762698:C:T",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "19:3762698:C:T:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "19:3762698:C:T:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "19:3762698:C:T:A:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr19:9434872:C:T",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "19:9434872:C:T:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "19:9434872:C:T:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "19:9434872:C:T:A:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr19:44488352:G:A",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "19:44488352:G:A:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "19:44488352:G:A:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "19:44488352:G:A:A:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "19:44488352:G:A:A:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr20:61478285:G:C",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "20:61478285:G:C:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "20:61478285:G:C:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr20:62152519:C:G",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "20:62152519:C:G:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr6:10887276:C:G",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "6:10887276:C:G:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr14:24899194:C:T",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "14:24899194:C:T:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr17:44238571:C:G",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "17:44238571:C:G:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr19:21676115:G:C",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "19:21676115:G:C:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr7:23630951:T:C",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "7:23630951:T:C:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr9:123634040:G:A",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "9:123634040:G:A:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "9:123634040:G:A:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "9:123634040:G:A:A:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr16:21190092:G:A",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "16:21190092:G:A:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr19:58144519:C:G",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "19:58144519:C:G:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr22:42836337:A:C",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "22:42836337:A:C:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "22:42836337:A:C:A:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr22:44577160:T:A",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "22:44577160:T:A:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "22:44577160:T:A:A:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr22:50614476:T:C",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "22:50614476:T:C:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "22:50614476:T:C:A:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr7:114721780:G:A",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "7:114721780:G:A:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr15:66070962:T:C",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "15:66070962:T:C:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "15:66070962:T:C:R:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr4:8230456:T:G",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "4:8230456:T:G:R:wC"
+        },
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "alt",
+          "control_ID": "4:8230456:T:G:A:wC"
+        }
+      ]
+    },
+    {
+      "id": "chr5:58387311:C:A",
+      "matches": [
+        {
+          "relation": "exact_or_RC_200nt_control_DNA",
+          "allele": "ref",
+          "control_ID": "5:58387311:C:A:R:wC"
+        }
+      ]
+    }
+  ],
+  "ID_policy": "Exactcase-sensitive IDs only; no inferred stripping of S30 suffixes/chr prefixes. DNA bothalleles andbothstrands full200nt exact. All S30 recordsretained including195/196/199nt controls."
+}

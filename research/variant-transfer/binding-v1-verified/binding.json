@@ -1,0 +1,81 @@
+{
+  "S4_numeric_effect_values_read": false,
+  "cohort": {
+    "component_count": 172,
+    "format": "jsonl.gz",
+    "path": "research/variant-transfer/binding-v1-verified/cohort.jsonl.gz",
+    "sha256": "4d1fd2725ee0ed2952cf95cefa555ba4418c1338bdcd047a34d849d0b95ddc8b",
+    "variant_count": 2172
+  },
+  "effects": {
+    "HepG2": "AN",
+    "K562": "AO"
+  },
+  "inputs": {
+    "S30_match_ledger_sha256": "971e90cb2d24bdaf60846efc3f00415aa1e1b495461d2677e6edc108bdf90759",
+    "S4_ID_metadata_sha256": "07c666b692cf1eb5b1578d3afed0708442abb087a16c9b84b5e1aebd7916b357",
+    "primary_group_manifest_sha256": "c276cb6e2fc06e4318c3029d83e497f769792fa14029d55f7e3e59ed8bd6b5a2",
+    "prior_inventory_manifest_sha256": "861d838582ce1f0d52d846e6d20ee5d6c0f28c059db257032c9cff7a1fae6faf",
+    "source_manifest_sha256": "61b9756522156b2406e692113cf1268df525125441a6d348cfa99f3795875117"
+  },
+  "metadata_counts": {
+    "S30_control_components": 3,
+    "S30_control_variant_ids": 41,
+    "complete_external_population": 332719,
+    "final_components": 172,
+    "final_variants": 2172,
+    "global_components": 1171
+  },
+  "metadata_minimum_support": {
+    "at_least100_variants_and10_components": true,
+    "limit": "This is a pre-outcome upper bound; final ordinary-finite numeric coverage and inferential support remain unverified."
+  },
+  "missing_policy": {
+    "allowed_tokens": [],
+    "evidence": "/workspace/helix/research/variant-transfer/source/missing-token-evidence.json",
+    "evidence_sha256": "0c801ce2086979e0da4b3752c74e610517ac73269c3460123382b0b59705347e"
+  },
+  "model_artifacts_sha256": "2ea476bc5413dc13486dec9f3d7e9162a50a0e47f1d83ce29efabc5f5cc5af9d",
+  "no_regrouping_after_exclusion": true,
+  "protocol_id": "variant-transfer-v1",
+  "protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-10-27T22:51:48.067293+00:00",
+  "sheet": {
+    "header_row_1based": 2,
+    "headers": {
+      "A": "Variant",
+      "AN": "log2Skew in HEPG2",
+      "AO": "log2Skew in K562"
+    },
+    "name": "S4.MPRA results"
+  },
+  "source": {
+    "bytes": 224405074,
+    "path": "/workspace/.tools/variant-transfer-v1/S4.xlsx",
+    "sha256": "723c4a0e1cfdb2c9c6ae55b3fa9206855dd95e0241319b9fc8d0831d3b42f9c2"
+  },
+  "source_cohort_gate": {
+    "S4_ID_membership_verified": true,
+    "independent_grouping": {
+      "checks_passed": 4689,
+      "comparison_path": "research/variant-transfer/independent-grouping-v1/comparison-v1/comparison.json",
+      "comparison_sha256": "93f2b9d82c5b45d9dbb6344a350e48f24ac99ad0ce496d8993b813fb8d1faa60",
+      "failed_checks": [],
+      "independent_manifest_sha256": "e25231628756da32f961f6553999a58132353b9e223e6e3df7f467f817ede33b",
+      "new_numeric_outcome_access": false,
+      "primary_manifest_sha256": "c276cb6e2fc06e4318c3029d83e497f769792fa14029d55f7e3e59ed8bd6b5a2",
+      "scope": "Full outcome-free new-component and prior-exposure reconstruction. Excluded-component witness catalogs need not enumerate every old hit; exact component reason classes are compared. S30 technical-control flags retained separately until source-cohort binding.",
+      "status": "matched"
+    },
+    "numeric_effect_type_coverage_status": "not_evaluated_before_second_binding_commit",
+    "passed": true,
+    "scope": "primary metadata-only source/cohort gate",
+    "whole_component_S30_exclusion": true
+  },
+  "upstream_source_QC": {
+    "policy": "Use unchanged authoritative source-preprocessed unique S4 results; no guessed count rethreshold or alternate library selection.",
+    "review": "/workspace/helix/research/variant-transfer/source/source-semantics-review.json",
+    "review_sha256": "ea958c80f6c81a9e59fa74d59734de6d21a181c41973967bf924a64014b7ca71"
+  }
+}

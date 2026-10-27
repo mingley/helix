@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "phase": "metadata-only review before any S4 numeric effect parsing",
+  "source_doi": "10.1038/s41586-026-10121-6",
+  "source_S4_sha256": "723c4a0e1cfdb2c9c6ae55b3fa9206855dd95e0241319b9fc8d0831d3b42f9c2",
+  "documented_processing": [
+    "The Methods describe different assay cell panels for complex-trait and eQTL libraries.",
+    "Variants with fewer than30 DNA counts or exactly0 RNA counts for either allele are excluded from downstream analysis.",
+    "When a variant occurs in several libraries, the source selects the library with the highest documented plasmid support.",
+    "S4 reports the best measurement across libraries chosen per variant per cell type."
+  ],
+  "targeted_checks": [
+    {
+      "source": "Official Supplementary Table4 legend in MOESM1",
+      "result": "The legend is only MPRA result summary; no NA or blank-token convention is defined."
+    },
+    {
+      "source": "Official S4 OpenXML archive and first two text rows",
+      "result": "Ten standard package members contain no cell-comment, custom-license, or annotation member. Title/header rows define columns but no missing-token convention. Numeric effect cells were not inspected."
+    },
+    {
+      "source": "Pinned producer analysis repository1e38d1e3d4414dfa3a62b22110eba0136eda197d",
+      "result": "The inspected preprocessing code reads paired RDS results and writes intermediate compressed text tables; it does not establish the final S4 XLSX export or its missing-token encoding. Generic R writer defaults are not substituted for that missing provenance."
+    }
+  ],
+  "missing_policy": {
+    "allowed_tokens": [],
+    "absent_cell": "block",
+    "blank_cell": "block",
+    "formula": "block",
+    "error": "block",
+    "boolean": "block",
+    "numeric_string": "block",
+    "unrecognized_text": "block",
+    "evidence": "No literal missing-value token was established by the targeted source metadata review. The frozen v1 therefore accepts none. Any required nonordinary-finite numeric value must stop the source gate and remain documented."
+  },
+  "limits": "Untested or filtered measurements are plausible from the source design, but that does not identify a particular final-workbook token. No accepted missing token was chosen after inspecting its effect distribution, presence, or predictive performance."
+}

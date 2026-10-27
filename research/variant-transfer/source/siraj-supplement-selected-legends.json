@@ -1,0 +1,25 @@
+{
+  "scope": "Selected table2/3/4/29/30 legend text only, no figure/result text retained",
+  "segments": [
+    {
+      "line_1based": 306,
+      "text": "Supplementary Table 2 : Variant oligo sequences.\n"
+    },
+    {
+      "line_1based": 308,
+      "text": "Supplementary Table 3 : An overview table describing the 48 complex human traits and their\ndomains/cell-types of interest.\n"
+    },
+    {
+      "line_1based": 311,
+      "text": "Supplementary Table 4 : MPRA result summary.\n"
+    },
+    {
+      "line_1based": 363,
+      "text": "Supplementary Table 29 : Data sources for data generated in this manuscript.\n"
+    },
+    {
+      "line_1based": 365,
+      "text": "Supplementary Table 30 : Cross experiment control oligo sequences.\n"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "file_sha256": "4b6e20d1789021ee8f11f57af366a65680d25496de9351a9e781e9424716d824",
+  "zip_members": [
+    {
+      "path": "[Content_Types].xml",
+      "bytes": 1168,
+      "compressed_bytes": 350,
+      "crc": 1755180642
+    },
+    {
+      "path": "_rels/.rels",
+      "bytes": 588,
+      "compressed_bytes": 244,
+      "crc": 590370229
+    },
+    {
+      "path": "xl/workbook.xml",
+      "bytes": 1611,
+      "compressed_bytes": 700,
+      "crc": 226873888
+    },
+    {
+      "path": "xl/_rels/workbook.xml.rels",
+      "bytes": 698,
+      "compressed_bytes": 243,
+      "crc": 2543074945
+    },
+    {
+      "path": "xl/worksheets/sheet1.xml",
+      "bytes": 68306599,
+      "compressed_bytes": 6566704,
+      "crc": 2997211961
+    },
+    {
+      "path": "xl/theme/theme1.xml",
+      "bytes": 8721,
+      "compressed_bytes": 1976,
+      "crc": 1102340342
+    },
+    {
+      "path": "xl/styles.xml",
+      "bytes": 17261,
+      "compressed_bytes": 2229,
+      "crc": 2516833722
+    },
+    {
+      "path": "xl/sharedStrings.xml",
+      "bytes": 170310950,
+      "compressed_bytes": 34219639,
+      "crc": 3354141168
+    },
+    {
+      "path": "docProps/core.xml",
+      "bytes": 615,
+      "compressed_bytes": 330,
+      "crc": 1590329363
+    },
+    {
+      "path": "docProps/app.xml",
+      "bytes": 810,
+      "compressed_bytes": 409,
+      "crc": 3282120361
+    }
+  ],
+  "docprops": {
+    "docProps/core.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dc:creator>Layla Siraj</dc:creator><cp:lastModifiedBy>Layla Siraj</cp:lastModifiedBy><dcterms:created xsi:type=\"dcterms:W3CDTF\">2024-04-23T03:05:06Z</dcterms:created><dcterms:modified xsi:type=\"dcterms:W3CDTF\">2024-07-28T23:46:28Z</dcterms:modified></cp:coreProperties>",
+    "docProps/app.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<Properties xmlns=\"http://schemas.openxmlformats.org/officeDocument/2006/extended-properties\" xmlns:vt=\"http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes\"><Application>Microsoft Macintosh Excel</Application><DocSecurity>0</DocSecurity><ScaleCrop>false</ScaleCrop><HeadingPairs><vt:vector size=\"2\" baseType=\"variant\"><vt:variant><vt:lpstr>Worksheets</vt:lpstr></vt:variant><vt:variant><vt:i4>1</vt:i4></vt:variant></vt:vector></HeadingPairs><TitlesOfParts><vt:vector size=\"1\" baseType=\"lpstr\"><vt:lpstr>S2.Variant Oligo Seqs</vt:lpstr></vt:vector></TitlesOfParts><Company></Company><LinksUpToDate>false</LinksUpToDate><SharedDoc>false</SharedDoc><HyperlinksChanged>false</HyperlinksChanged><AppVersion>16.0300</AppVersion></Properties>"
+  },
+  "schema_only": [
+    {
+      "sheet": "S2.Variant Oligo Seqs",
+      "reported_dimensions": "A1:C365764",
+      "first3rows": [
+        [
+          {
+            "coordinate": "A1",
+            "type": "s",
+            "value": "Supplementary Table 2 | Variant oligo sequences"
+          }
+        ],
+        [
+          {
+            "coordinate": "A2",
+            "type": "s",
+            "value": "Variant"
+          },
+          {
+            "coordinate": "B2",
+            "type": "s",
+            "value": "Allele 1 Oligo"
+          },
+          {
+            "coordinate": "C2",
+            "type": "s",
+            "value": "Allele 2 Oligo"
+          }
+        ],
+        [
+          {
+            "coordinate": "A3",
+            "type": "s",
+            "value": "chr1:14677:G:A"
+          },
+          {
+            "coordinate": "B3",
+            "type": "s",
+            "value": "AGTGCTGGTTCCGTCACCCCCTCCCAAGGAAGTAGGTCTGAGCAGCTTGTCCTGGCTGTGTCCATGTCAGAGCAACGGCCCAAGTCTGGGTCTGGGGGGGAAGGTGTCATGGAGCCCCCTACGATTCCCAGTCGTCCTCGTCCTCCTCTGCCTGTGGCTGCTGCGGTGGCGGCAGAGGAGGGATGGAGTCTGACACGCGG"
+          },
+          {
+            "coordinate": "C3",
+            "type": "s",
+            "value": "AGTGCTGGTTCCGTCACCCCCTCCCAAGGAAGTAGGTCTGAGCAGCTTGTCCTGGCTGTGTCCATGTCAGAGCAACGGCCCAAGTCTGGGTCTGGGGGGAAAGGTGTCATGGAGCCCCCTACGATTCCCAGTCGTCCTCGTCCTCCTCTGCCTGTGGCTGCTGCGGTGGCGGCAGAGGAGGGATGGAGTCTGACACGCGG"
+          }
+        ]
+      ]
+    }
+  ]
+}

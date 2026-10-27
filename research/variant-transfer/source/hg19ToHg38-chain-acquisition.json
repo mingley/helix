@@ -1,0 +1,20 @@
+{
+  "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz",
+  "timestamp_utc": "2026-10-27T22:19:02.364080+00:00",
+  "bytes": 227698,
+  "sha256": "5c0598e500ceb5a78c73086929e8ef993aec309bcafb595139b53d440b125a1d",
+  "headers": {
+    "date": "Tue, 27 Oct 2026 22:19:02 GMT",
+    "server": "envoy",
+    "last-modified": "Wed, 01 Jan 2014 07:08:46 GMT",
+    "etag": "\"37972-4eee3590f3b80\"",
+    "accept-ranges": "bytes",
+    "content-length": "227698",
+    "access-control-allow-origin": "*",
+    "access-control-allow-headers": "Range",
+    "content-type": "application/x-gzip",
+    "x-envoy-upstream-service-time": "216",
+    "connection": "close"
+  },
+  "purpose": "Public genome assembly chain for metadata-only old-panel locus overlap; not assay outcome data."
+}

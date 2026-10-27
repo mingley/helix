@@ -1,0 +1,1160 @@
+{
+  "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/1e38d1e3d4414dfa3a62b22110eba0136eda197d?recursive=1",
+  "result": {
+    "sha": "1e38d1e3d4414dfa3a62b22110eba0136eda197d",
+    "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/1e38d1e3d4414dfa3a62b22110eba0136eda197d",
+    "tree": [
+      {
+        "path": ".gitignore",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "5d38ebe1fe575e2ea2884b5bd72e701e681fb2a0",
+        "size": 2010,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/5d38ebe1fe575e2ea2884b5bd72e701e681fb2a0"
+      },
+      {
+        "path": "LICENSE",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+        "size": 35149,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/f288702d2fa16d3cdf0035b15a9fcbc552cd88e7"
+      },
+      {
+        "path": "README.md",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "4bc5a9219e8a2328cde75eb329e1ece815392ef8",
+        "size": 878,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/4bc5a9219e8a2328cde75eb329e1ece815392ef8"
+      },
+      {
+        "path": "code",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "6c6b13a2f677e70e6b309f45a59db56b9736dfbf",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/6c6b13a2f677e70e6b309f45a59db56b9736dfbf"
+      },
+      {
+        "path": "code/fig1",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e5e06ccf65c7190281f0e177d5452fbd6c05895a",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/e5e06ccf65c7190281f0e177d5452fbd6c05895a"
+      },
+      {
+        "path": "code/fig1/fig1b_summary.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "2ddfe3e6b5f171a2711fc66566e6dd08e81721a2",
+        "size": 12752,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/2ddfe3e6b5f171a2711fc66566e6dd08e81721a2"
+      },
+      {
+        "path": "code/fig1/fig1d_dhscor.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "82e15d477a46415c3850ef29e7f7e812467efac8",
+        "size": 3118,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/82e15d477a46415c3850ef29e7f7e812467efac8"
+      },
+      {
+        "path": "code/fig1/fig1e_table6_motif.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "f107857ff48cc92db7b23198de383abad60eae74",
+        "size": 8665,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/f107857ff48cc92db7b23198de383abad60eae74"
+      },
+      {
+        "path": "code/fig1/fig1f_scatter.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "21b320201f0b4968555b25fff56551bae3ed3286",
+        "size": 2584,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/21b320201f0b4968555b25fff56551bae3ed3286"
+      },
+      {
+        "path": "code/fig2",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "f5a7c0d796cac2be46224412aed86804d8060268",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/f5a7c0d796cac2be46224412aed86804d8060268"
+      },
+      {
+        "path": "code/fig2/fig2a_pipenrich.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "65b4147be57e10373838514bb87569070eea0739",
+        "size": 4929,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/65b4147be57e10373838514bb87569070eea0739"
+      },
+      {
+        "path": "code/fig2/fig2b_eQTLcor.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "da2af1d767f0cd87bd993ae73508901e2f4a9381",
+        "size": 5764,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/da2af1d767f0cd87bd993ae73508901e2f4a9381"
+      },
+      {
+        "path": "code/fig2/fig2c_ASB.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "56ffec9688a92848d63479b874c502238ed3357a",
+        "size": 4172,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/56ffec9688a92848d63479b874c502238ed3357a"
+      },
+      {
+        "path": "code/fig2/fig2d_table8_motifcorr.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "3aede8fb418e726b639b299ca2e37eee9ae6657a",
+        "size": 14549,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/3aede8fb418e726b639b299ca2e37eee9ae6657a"
+      },
+      {
+        "path": "code/fig2/fig2e_table9_table10_prc.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "defd1394eaa36e14396e85918edea69aad712368",
+        "size": 5055,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/defd1394eaa36e14396e85918edea69aad712368"
+      },
+      {
+        "path": "code/fig2/fig2f_mech.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "cf7878d6aa2233f81468718697bc4bced87e8d13",
+        "size": 12832,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/cf7878d6aa2233f81468718697bc4bced87e8d13"
+      },
+      {
+        "path": "code/fig3",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "6505434a7fe7a59756a22eed80819595c110cbaa",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/6505434a7fe7a59756a22eed80819595c110cbaa"
+      },
+      {
+        "path": "code/fig3/fig3_file_overview.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "68eb9caff2af900ab3895857ca362b3f38bf325f",
+        "size": 1045,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/68eb9caff2af900ab3895857ca362b3f38bf325f"
+      },
+      {
+        "path": "code/fig3/fig3f_mcvs.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "5d648908fde548f951b19c6c0fe486f17b4e4fd0",
+        "size": 37224,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/5d648908fde548f951b19c6c0fe486f17b4e4fd0"
+      },
+      {
+        "path": "code/fig3/haplos_distances.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "c793694c08c5f6410066c845c3fc5e19bdc6d2c1",
+        "size": 2456,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/c793694c08c5f6410066c845c3fc5e19bdc6d2c1"
+      },
+      {
+        "path": "code/fig3/haplos_ints.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "4ca98caf61d3dbdf3c960de14f791578963d1a2c",
+        "size": 9180,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/4ca98caf61d3dbdf3c960de14f791578963d1a2c"
+      },
+      {
+        "path": "code/fig3/haplos_preprocess.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "ece1c843a051098ae5bebfe6ca71fdb3ff618b21",
+        "size": 13750,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/ece1c843a051098ae5bebfe6ca71fdb3ff618b21"
+      },
+      {
+        "path": "code/fig4_5",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "bd1aed436df073f112876314f64b10d57cbe6a78",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/bd1aed436df073f112876314f64b10d57cbe6a78"
+      },
+      {
+        "path": "code/fig4_5/fig4_5_MPRA_boxplots.ipynb",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "565415c13fc1d8bdae4c3c1ef1ac745e889ebac2",
+        "size": 65284,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/565415c13fc1d8bdae4c3c1ef1ac745e889ebac2"
+      },
+      {
+        "path": "code/fig4_5/fig4_5_activity_block_calling.ipynb",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "d9703eaca8b1f3ae5269caebff6900b29fbe75ee",
+        "size": 473746,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/d9703eaca8b1f3ae5269caebff6900b29fbe75ee"
+      },
+      {
+        "path": "code/fig4_5/fig4c.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "5ee8b2dbcc84c6205f6cd294bbe0650228df42f9",
+        "size": 16563,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/5ee8b2dbcc84c6205f6cd294bbe0650228df42f9"
+      },
+      {
+        "path": "code/fig4_5/fig4h_ctcor.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "cdedc40c5121dfe6c7aee3eab8d16f2bf80882c4",
+        "size": 1597,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/cdedc40c5121dfe6c7aee3eab8d16f2bf80882c4"
+      },
+      {
+        "path": "code/fig4_5/fig5a.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "1cfdfa96a7ab4502ab90514a14cc8ff9604494c9",
+        "size": 2874,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/1cfdfa96a7ab4502ab90514a14cc8ff9604494c9"
+      },
+      {
+        "path": "code/fig4_5/fig5b.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "3567c8783b4ec3153fe2ab84d48d013f0e1757da",
+        "size": 13402,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/3567c8783b4ec3153fe2ab84d48d013f0e1757da"
+      },
+      {
+        "path": "code/fig4_5/fig5c.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "840e280ab20acf554a65e3d27c82d084a59e6f61",
+        "size": 18723,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/840e280ab20acf554a65e3d27c82d084a59e6f61"
+      },
+      {
+        "path": "code/fig4_5/fig5f_BE_gata_boxplot.ipynb",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "4e55f49fbd75c8d0be5fd855a9d53455221e9648",
+        "size": 760019,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/4e55f49fbd75c8d0be5fd855a9d53455221e9648"
+      },
+      {
+        "path": "code/manuscript_numbers",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2a147e7ff51c68f9e8ed85227a6329c5b870c636",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/2a147e7ff51c68f9e8ed85227a6329c5b870c636"
+      },
+      {
+        "path": "code/manuscript_numbers/manuscript_numbers",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "54814dd206005c977930e718513bc709d525ce5a",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/54814dd206005c977930e718513bc709d525ce5a"
+      },
+      {
+        "path": "code/manuscript_numbers/manuscript_numbers/haplo_numbers_in_text.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "cea40550dbecdb6c009e7237d147008cd7729bbf",
+        "size": 1435,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/cea40550dbecdb6c009e7237d147008cd7729bbf"
+      },
+      {
+        "path": "code/manuscript_numbers/manuscript_numbers/section1_high_throughput.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "40e023739d5dd09df52e4f680965368c68e9eac8",
+        "size": 5552,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/40e023739d5dd09df52e4f680965368c68e9eac8"
+      },
+      {
+        "path": "code/motifs",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2a9fe3d3584831aa8538386d13215f445facc84b",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/2a9fe3d3584831aa8538386d13215f445facc84b"
+      },
+      {
+        "path": "code/motifs/convertMotifs_20231025.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "83737a343b7cd44fd93b24b5916861c97d68925d",
+        "size": 5607,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/83737a343b7cd44fd93b24b5916861c97d68925d"
+      },
+      {
+        "path": "code/motifs/copy.sh",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "f636838d9771b34c8066d4f9983e587d85488e27",
+        "size": 74,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/f636838d9771b34c8066d4f9983e587d85488e27"
+      },
+      {
+        "path": "code/motifs/copy_run.sh",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "fc5a33bf174bbdb12abe95626b9855461ea2113f",
+        "size": 488,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/fc5a33bf174bbdb12abe95626b9855461ea2113f"
+      },
+      {
+        "path": "code/motifs/docker_commands.sh",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "14aa037bf89b433cd061015d150335eba98d9b6d",
+        "size": 1724,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/14aa037bf89b433cd061015d150335eba98d9b6d"
+      },
+      {
+        "path": "code/motifs/dockerfiles",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "45c8fd43ca30a5cc85cb1a0c024bee8921faf356",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/45c8fd43ca30a5cc85cb1a0c024bee8921faf356"
+      },
+      {
+        "path": "code/motifs/dockerfiles/Dockerfile",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "69ec855a81cfc54d480dec470662a68619c34a5e",
+        "size": 1220,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/69ec855a81cfc54d480dec470662a68619c34a5e"
+      },
+      {
+        "path": "code/motifs/dockerfiles/FILENAME",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "size": 0,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "code/motifs/dockerfiles/HOCOMOCOv11_core.meme",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "768ed345f75c453640f9a4026c5e2a2419fb9943",
+        "size": 381420,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/768ed345f75c453640f9a4026c5e2a2419fb9943"
+      },
+      {
+        "path": "code/motifs/dockerfiles/HOCOMOCOv11_core_HUMAN_mono_jaspar_format.txt",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "438aea519768a594e7cf2ad7711a5c43d72c3779",
+        "size": 78902,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/438aea519768a594e7cf2ad7711a5c43d72c3779"
+      },
+      {
+        "path": "code/motifs/dockerfiles/cisbp.meme",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "c3ecc1c5fe8d7b9c0734a24329f38da842e7ed09",
+        "size": 3912356,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/c3ecc1c5fe8d7b9c0734a24329f38da842e7ed09"
+      },
+      {
+        "path": "code/motifs/dockerfiles/hocomoco.meme",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "62f468f0667595273857e33dab3899ac0e64a275",
+        "size": 1052374,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/62f468f0667595273857e33dab3899ac0e64a275"
+      },
+      {
+        "path": "code/motifs/dockerfiles/jaspar.meme",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "2b6bcef4e00ac0a3c3798381206c28308e0e62c7",
+        "size": 1169067,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/2b6bcef4e00ac0a3c3798381206c28308e0e62c7"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr1.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "5e37bf73d8cdac4954c4d9fe9e4d277ac5d57955",
+        "size": 16030692,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/5e37bf73d8cdac4954c4d9fe9e4d277ac5d57955"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr10.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "26c5acccbbfefda5d4f4e9c7900c6a535f3b3a22",
+        "size": 8222324,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/26c5acccbbfefda5d4f4e9c7900c6a535f3b3a22"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr11.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "5269034d0146f5eade471d9163a9887aa4b9f489",
+        "size": 8885013,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/5269034d0146f5eade471d9163a9887aa4b9f489"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr12.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "5aa96b418be94e79cc7c50c5de48bac7f0f67a6b",
+        "size": 8545306,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/5aa96b418be94e79cc7c50c5de48bac7f0f67a6b"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr13.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "dc57038c94574aaaa331c35f9752cd555ca7d9db",
+        "size": 4638438,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/dc57038c94574aaaa331c35f9752cd555ca7d9db"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr14.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "fc5e35898690d47dd404f89b09b4b9fc423968ff",
+        "size": 5188716,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/fc5e35898690d47dd404f89b09b4b9fc423968ff"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr15.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "b76f6534844c978f8113b09be31ddc2d2d4757be",
+        "size": 6275363,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/b76f6534844c978f8113b09be31ddc2d2d4757be"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr16.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "289b6b642063947c0b88af5db7598a07dcfde07a",
+        "size": 7479799,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/289b6b642063947c0b88af5db7598a07dcfde07a"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr17.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "08a5486b93d0f873b507d0e3005689ffa82979ed",
+        "size": 8268204,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/08a5486b93d0f873b507d0e3005689ffa82979ed"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr18.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "80729f2ea18dacb3eea8739d96a184260a1aa547",
+        "size": 3647787,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/80729f2ea18dacb3eea8739d96a184260a1aa547"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr19.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "b384f405d77f8fa19da5a192d029b27a56c9c8a1",
+        "size": 8623349,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/b384f405d77f8fa19da5a192d029b27a56c9c8a1"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr2.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "57cdb3bbb37fb5ba5de8778a962596f7c941ee74",
+        "size": 13369188,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/57cdb3bbb37fb5ba5de8778a962596f7c941ee74"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr20.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "ac2f169f76ea1f81693dc0a99638b94175ba9113",
+        "size": 4363326,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/ac2f169f76ea1f81693dc0a99638b94175ba9113"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr21.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "d3f46382d97f6263b78f164b821e9e8715758d73",
+        "size": 2289750,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/d3f46382d97f6263b78f164b821e9e8715758d73"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr22.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "42d46345e8a0705adc9cc2dc09ed743d25fc291e",
+        "size": 4292164,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/42d46345e8a0705adc9cc2dc09ed743d25fc291e"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr3.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "7f1f95b6d8452fbfb42fb7c8797cc014f1c6993a",
+        "size": 10012162,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/7f1f95b6d8452fbfb42fb7c8797cc014f1c6993a"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr4.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "fb4f80025952bd1c32c5c282095e30fb227dd3f4",
+        "size": 8173270,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/fb4f80025952bd1c32c5c282095e30fb227dd3f4"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr5.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "23e3d37db8ed055f4ee9bcb2ac4322b4cba0e1e7",
+        "size": 8571985,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/23e3d37db8ed055f4ee9bcb2ac4322b4cba0e1e7"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr6.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "73634a9c8be0894580ca9ac16323eaa15c473c3b",
+        "size": 8280177,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/73634a9c8be0894580ca9ac16323eaa15c473c3b"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr7.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "2240d7131f3bd0edcbd3b4a957b878aba080431f",
+        "size": 9869373,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/2240d7131f3bd0edcbd3b4a957b878aba080431f"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr8.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "03d3b2c85ffd4e6a9b7262cfc3d0e8a0eb18c12f",
+        "size": 7279310,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/03d3b2c85ffd4e6a9b7262cfc3d0e8a0eb18c12f"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chr9.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "435cd3225bd6841310b8e9ca0abe4bd2aa5bd226",
+        "size": 7368538,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/435cd3225bd6841310b8e9ca0abe4bd2aa5bd226"
+      },
+      {
+        "path": "code/motifs/dockerfiles/mpra_chrX.fasta",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "01bd349440a86621dd92c402713a876fc26fcee6",
+        "size": 2085481,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/01bd349440a86621dd92c402713a876fc26fcee6"
+      },
+      {
+        "path": "code/motifs/dockerfiles/scan.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "1be3dca1e543fb7700877b34914a285b4852dfc9",
+        "size": 2128,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/1be3dca1e543fb7700877b34914a285b4852dfc9"
+      },
+      {
+        "path": "code/motifs/dockerfiles/vierstra.meme",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "841207a144faf9aac369c9d06c1184e02c79a403",
+        "size": 393525,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/841207a144faf9aac369c9d06c1184e02c79a403"
+      },
+      {
+        "path": "code/motifs/munge_run.sh",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "5bbeef03da4655da769b53c88d92095a52f0c91f",
+        "size": 3690,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/5bbeef03da4655da769b53c88d92095a52f0c91f"
+      },
+      {
+        "path": "code/motifs/process_fimo.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "8e04031b155b7651e5adba5c2583371f41d7bd38",
+        "size": 11267,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/8e04031b155b7651e5adba5c2583371f41d7bd38"
+      },
+      {
+        "path": "code/motifs/process_fimo_run.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "a617c4d3d67ec0d64c395770f11393270c7b9278",
+        "size": 8277,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/a617c4d3d67ec0d64c395770f11393270c7b9278"
+      },
+      {
+        "path": "code/preprocess",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a382b2deade56b7b493ef0b1683a4daa3937b954",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/a382b2deade56b7b493ef0b1683a4daa3937b954"
+      },
+      {
+        "path": "code/preprocess/Complex_traits_munge.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "cc82ad09438814a8eabd32c29c4bc310068dd5b3",
+        "size": 16558,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/cc82ad09438814a8eabd32c29c4bc310068dd5b3"
+      },
+      {
+        "path": "code/preprocess/GTEx_munge.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "6d4c78d6d59f38fa4c39c51aba5a4022478accd1",
+        "size": 11787,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/6d4c78d6d59f38fa4c39c51aba5a4022478accd1"
+      },
+      {
+        "path": "code/preprocess/make_gtex_complex_traits.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "b2549ac28c754fea5f57963665af58b36e274565",
+        "size": 13476,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/b2549ac28c754fea5f57963665af58b36e274565"
+      },
+      {
+        "path": "code/preprocess/make_mpra.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "cfc2a1eef17da14bd097cd50e51c1ff52982188b",
+        "size": 20337,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/cfc2a1eef17da14bd097cd50e51c1ff52982188b"
+      },
+      {
+        "path": "code/preprocess/mpra_meta.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "cf68f2f8ba71de12ac0688924b35c36d36bc6e4d",
+        "size": 1785,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/cf68f2f8ba71de12ac0688924b35c36d36bc6e4d"
+      },
+      {
+        "path": "code/preprocess/preprocess_enformer.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "72c8b1eb3d759963a98b8e3ef84492e76141e15f",
+        "size": 14767,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/72c8b1eb3d759963a98b8e3ef84492e76141e15f"
+      },
+      {
+        "path": "code/preprocess/read_in_functions.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "3dc11f2153345d9a44ab132a475c398d4bc2fb46",
+        "size": 16455,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/3dc11f2153345d9a44ab132a475c398d4bc2fb46"
+      },
+      {
+        "path": "code/preprocess/satmut.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "97c0706710c8e99eef99a7a38e6868a228c608b7",
+        "size": 8437,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/97c0706710c8e99eef99a7a38e6868a228c608b7"
+      },
+      {
+        "path": "code/supplemental_figs",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "f1e2e3516413c007f4d8ebfc68932d19f33c4c64",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/f1e2e3516413c007f4d8ebfc68932d19f33c4c64"
+      },
+      {
+        "path": "code/supplemental_figs/figs1",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "fd59d8b8e742b075dfb171d0341a81b7def282ad",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/fd59d8b8e742b075dfb171d0341a81b7def282ad"
+      },
+      {
+        "path": "code/supplemental_figs/figs1/s1a_pipbreakdown.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "8532ee221e52a8a55970fc3532eab3e58e456355",
+        "size": 11078,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/8532ee221e52a8a55970fc3532eab3e58e456355"
+      },
+      {
+        "path": "code/supplemental_figs/figs1/s1a_pipstructure.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "4a75eddb753e78207cc55a783dafdc2f5aa0dae7",
+        "size": 4887,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/4a75eddb753e78207cc55a783dafdc2f5aa0dae7"
+      },
+      {
+        "path": "code/supplemental_figs/figs12",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "5adcf373b8cc486d6d7d5c191e6ddf1412cd86cb",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/5adcf373b8cc486d6d7d5c191e6ddf1412cd86cb"
+      },
+      {
+        "path": "code/supplemental_figs/figs12/s12abcdef.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "4961bd06f1311605e56f69a51aeb070a96f641dd",
+        "size": 7499,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/4961bd06f1311605e56f69a51aeb070a96f641dd"
+      },
+      {
+        "path": "code/supplemental_figs/figs12/s12g.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "b9c373debebbc6c2ebbce88484496976bbf85578",
+        "size": 7767,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/b9c373debebbc6c2ebbce88484496976bbf85578"
+      },
+      {
+        "path": "code/supplemental_figs/figs12/s12hi.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "187bc064f05aeed352399535e15d0844516ded2f",
+        "size": 3894,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/187bc064f05aeed352399535e15d0844516ded2f"
+      },
+      {
+        "path": "code/supplemental_figs/figs12/s12jkl.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "621d595f710b952ab2e16934e17da1ea19c27cf0",
+        "size": 8903,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/621d595f710b952ab2e16934e17da1ea19c27cf0"
+      },
+      {
+        "path": "code/supplemental_figs/figs16",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "38eb001c4475c18dcf245caa8bfcbbbe1326b632",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/38eb001c4475c18dcf245caa8bfcbbbe1326b632"
+      },
+      {
+        "path": "code/supplemental_figs/figs16/s16a_table26.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "a2aaf6cd4b31ffd66637008911c8213579fcea4a",
+        "size": 15013,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/a2aaf6cd4b31ffd66637008911c8213579fcea4a"
+      },
+      {
+        "path": "code/supplemental_figs/figs16/s16b_table27.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "d9dcac6f7f823b432beb9418af219ba053af838d",
+        "size": 5104,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/d9dcac6f7f823b432beb9418af219ba053af838d"
+      },
+      {
+        "path": "code/supplemental_figs/figs2",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "746488441d209ab338ba60b7a7dcfa5205dc0fdf",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/746488441d209ab338ba60b7a7dcfa5205dc0fdf"
+      },
+      {
+        "path": "code/supplemental_figs/figs2/s2_qc.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "aa2031ce251273127bd303ef50a7d3e30ad9b867",
+        "size": 21214,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/aa2031ce251273127bd303ef50a7d3e30ad9b867"
+      },
+      {
+        "path": "code/supplemental_figs/figs3",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "006595c3fd9411472668a6c3a847201b3cf9ee8f",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/006595c3fd9411472668a6c3a847201b3cf9ee8f"
+      },
+      {
+        "path": "code/supplemental_figs/figs3/s3b.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "23c210fc8b1e8ea8e8cc7b9c878a1fc564847dbf",
+        "size": 14459,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/23c210fc8b1e8ea8e8cc7b9c878a1fc564847dbf"
+      },
+      {
+        "path": "code/supplemental_figs/figs4",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "140441d527406db38a7cd8413cda507e254c38d3",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/140441d527406db38a7cd8413cda507e254c38d3"
+      },
+      {
+        "path": "code/supplemental_figs/figs4/s4b_table5.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "f1ed576b54a0d3e4afd3109cf584a2c3deb6e7d7",
+        "size": 5068,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/f1ed576b54a0d3e4afd3109cf584a2c3deb6e7d7"
+      },
+      {
+        "path": "code/supplemental_figs/figs4/s4cd.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "8011b4f9aa0475912fa9c7b28db31c7a6e7a3e23",
+        "size": 10470,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/8011b4f9aa0475912fa9c7b28db31c7a6e7a3e23"
+      },
+      {
+        "path": "code/supplemental_figs/figs4/s4e.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "53adc9cd79dfb5a33402fa8cdd5d627cc28920a4",
+        "size": 6992,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/53adc9cd79dfb5a33402fa8cdd5d627cc28920a4"
+      },
+      {
+        "path": "code/supplemental_figs/figs4/s4f.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "b6c9f21ba2fe641b49b84e2ca605daefbbadd5c6",
+        "size": 4120,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/b6c9f21ba2fe641b49b84e2ca605daefbbadd5c6"
+      },
+      {
+        "path": "code/supplemental_figs/figs5",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2068079df9ba9d32da2594919b479f2e2f606191",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/2068079df9ba9d32da2594919b479f2e2f606191"
+      },
+      {
+        "path": "code/supplemental_figs/figs5/s5abcdef.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "59cede1603a40c3cc52bda48682bca5a42285191",
+        "size": 12053,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/59cede1603a40c3cc52bda48682bca5a42285191"
+      },
+      {
+        "path": "code/supplemental_figs/figs6",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "5a58a9509b378a1a557dbf3a8c876357f4171f30",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/5a58a9509b378a1a557dbf3a8c876357f4171f30"
+      },
+      {
+        "path": "code/supplemental_figs/figs6/s6abcdef.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "ab6479895dac58276f05e6b78022132a4a6738f9",
+        "size": 8894,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/ab6479895dac58276f05e6b78022132a4a6738f9"
+      },
+      {
+        "path": "code/supplemental_figs/figs7",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "47171292a60fa68fd6510fd1106872a9e1dc8a45",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/47171292a60fa68fd6510fd1106872a9e1dc8a45"
+      },
+      {
+        "path": "code/supplemental_figs/figs7/s7ab.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "6165987e39fdd6f7071f9547ddb0bb6c0f9f5b3e",
+        "size": 8643,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/6165987e39fdd6f7071f9547ddb0bb6c0f9f5b3e"
+      },
+      {
+        "path": "code/supplemental_figs/figs7/s7cd.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "4cdcb81a41d624d6b705430f32286d7926ec02cc",
+        "size": 9390,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/4cdcb81a41d624d6b705430f32286d7926ec02cc"
+      },
+      {
+        "path": "code/supplemental_figs/figs8",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "81eb1cf50bb26cee688ec6e80621ed1a7a400b15",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/81eb1cf50bb26cee688ec6e80621ed1a7a400b15"
+      },
+      {
+        "path": "code/supplemental_figs/figs8/s8a.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "107dfcd920e6e0e5244ee0c592d4dc86f872e486",
+        "size": 3976,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/107dfcd920e6e0e5244ee0c592d4dc86f872e486"
+      },
+      {
+        "path": "code/supplemental_figs/figs8/s8b.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "4cb27757eb7f7729ec42cbfa8baa66735ddff23f",
+        "size": 3162,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/4cb27757eb7f7729ec42cbfa8baa66735ddff23f"
+      },
+      {
+        "path": "code/supplemental_figs/figs8/s8c.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "a2cf2bee744303fbf547330c7423074bf551f8a0",
+        "size": 3720,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/a2cf2bee744303fbf547330c7423074bf551f8a0"
+      },
+      {
+        "path": "code/supplemental_figs/figs8/s8d.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "b8737e6160f28372ef77a85ef5a80b2d9d17e4ce",
+        "size": 6416,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/b8737e6160f28372ef77a85ef5a80b2d9d17e4ce"
+      },
+      {
+        "path": "code/supplemental_figs/figs8/s8e.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "2244c7e4646ac155195582ab0010e844052a97cc",
+        "size": 5856,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/2244c7e4646ac155195582ab0010e844052a97cc"
+      },
+      {
+        "path": "code/supplemental_figs/figs8/s8f.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "df0ccf34488c131a0df5d02dd033195b686a953a",
+        "size": 7384,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/df0ccf34488c131a0df5d02dd033195b686a953a"
+      },
+      {
+        "path": "code/supplemental_figs/figs9",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "571633259bc261d21b9ef27e7a3b536ea37ed6a6",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/571633259bc261d21b9ef27e7a3b536ea37ed6a6"
+      },
+      {
+        "path": "code/supplemental_figs/figs9/s9ab_table10.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "470ba1949ade610f77bb3a70c7707bd1fa4f35d9",
+        "size": 8476,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/470ba1949ade610f77bb3a70c7707bd1fa4f35d9"
+      },
+      {
+        "path": "code/supplemental_figs/figs9/s9c_table10.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "f441950684c6a83fec832009c147f0f95ddcdd97",
+        "size": 7066,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/f441950684c6a83fec832009c147f0f95ddcdd97"
+      },
+      {
+        "path": "code/supplemental_figs/figs9/s9d_table10.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "5fb65b779fe551c293672b73ecae7929a5bf946d",
+        "size": 7098,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/5fb65b779fe551c293672b73ecae7929a5bf946d"
+      },
+      {
+        "path": "code/supplemental_figs/figs9/s9e_table11.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "3c074f2cdb8d3be5f895a79819ebfa906830f951",
+        "size": 4721,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/3c074f2cdb8d3be5f895a79819ebfa906830f951"
+      },
+      {
+        "path": "code/supplemental_figs/figs9/s9f_table10.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "6e0e5de2d72e323bdfe353dd303d8ccdc5c9e806",
+        "size": 11229,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/6e0e5de2d72e323bdfe353dd303d8ccdc5c9e806"
+      },
+      {
+        "path": "code/supplemental_figs/figs9/s9g_table10.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "d4cfa27f82ed4c6c9e615a36ac6e485229133416",
+        "size": 11565,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/d4cfa27f82ed4c6c9e615a36ac6e485229133416"
+      },
+      {
+        "path": "code/theme.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "c253b73e161750b0cdb708812593a2cd737b188b",
+        "size": 1571,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/c253b73e161750b0cdb708812593a2cd737b188b"
+      },
+      {
+        "path": "code/utils.R",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "9a95c5ff562dd41ad7cc7c1341d6f68a822661f5",
+        "size": 3607,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/9a95c5ff562dd41ad7cc7c1341d6f68a822661f5"
+      },
+      {
+        "path": "figures",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "1f1694dce2a5c6be9bd83158f48d9c1d256fb351",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/1f1694dce2a5c6be9bd83158f48d9c1d256fb351"
+      },
+      {
+        "path": "figures/fig1",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0e3fd8404976a2ed9d4d2cca9c7272ebc6853204",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/0e3fd8404976a2ed9d4d2cca9c7272ebc6853204"
+      },
+      {
+        "path": "figures/fig1/fig1b_cohortpie.pdf",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "5b0cac826bb08312cf836f0aa4b67e25b4fd12b0",
+        "size": 8820,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/5b0cac826bb08312cf836f0aa4b67e25b4fd12b0"
+      },
+      {
+        "path": "figures/fig1/fig1b_domainpie.pdf",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "766d6b136e5247f2419f74d48fe1e14e3a928da5",
+        "size": 15260,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/766d6b136e5247f2419f74d48fe1e14e3a928da5"
+      },
+      {
+        "path": "figures/fig1/fig1b_haplos.pdf",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "95048c31b65a4bbff2c2e4940935403839dfb2df",
+        "size": 1130,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/95048c31b65a4bbff2c2e4940935403839dfb2df"
+      },
+      {
+        "path": "figures/fig1/fig1b_singlevar.pdf",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "abd06921ada19b7a5fa7f95610b1a74dd8867e1f",
+        "size": 1166,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/abd06921ada19b7a5fa7f95610b1a74dd8867e1f"
+      },
+      {
+        "path": "figures/fig1/fig1b_systempie.pdf",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "07459e2c2b64328cc0a103dd1210c45c083ffe5e",
+        "size": 14389,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/07459e2c2b64328cc0a103dd1210c45c083ffe5e"
+      },
+      {
+        "path": "figures/fig1/fig1d_dhscorr.pdf",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "92ac3c8df58fb2074ce1db38195c7a3dccc228cf",
+        "size": 13577,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/92ac3c8df58fb2074ce1db38195c7a3dccc228cf"
+      },
+      {
+        "path": "figures/fig1/fig1e_motifbeta.pdf",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "ae30a94ae1c50111c4c3d7de748cf91b5bf038c5",
+        "size": 304820,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/ae30a94ae1c50111c4c3d7de748cf91b5bf038c5"
+      },
+      {
+        "path": "figures/fig1/fig1f_scatter.pdf",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "4a74134dc319ddb214eb5679dcbdde82faa0c9df",
+        "size": 6875499,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/4a74134dc319ddb214eb5679dcbdde82faa0c9df"
+      },
+      {
+        "path": "figures/fig2",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c2d0c4422a2278eabbe76506dc9fcda840ac6167",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/c2d0c4422a2278eabbe76506dc9fcda840ac6167"
+      },
+      {
+        "path": "figures/fig2/fig2a_propemVar.pdf",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "5bf897c55494cae7e98892ec9ba185120b5b34a0",
+        "size": 11871,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/5bf897c55494cae7e98892ec9ba185120b5b34a0"
+      },
+      {
+        "path": "figures/fig2/fig2b_eQTLcorr.pdf",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "3d03c7373dc3e5eb73c58c82e31e21ee57d1a5d3",
+        "size": 11618,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/3d03c7373dc3e5eb73c58c82e31e21ee57d1a5d3"
+      },
+      {
+        "path": "figures/fig2/fig2c_caAI.pdf",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "a58a835e53c8d6f5ecc4dfcd137160b1416855c2",
+        "size": 1114986,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/a58a835e53c8d6f5ecc4dfcd137160b1416855c2"
+      },
+      {
+        "path": "figures/fig2/fig2d_motifcorr.pdf",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "074a19226968b3bff1f68f6d2dad0839649b5e50",
+        "size": 42776,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/074a19226968b3bff1f68f6d2dad0839649b5e50"
+      },
+      {
+        "path": "figures/fig2/fig2e_prc.pdf",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "02f36c2235995c2431f0e78a49f8cc0d38abdde5",
+        "size": 10459,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/02f36c2235995c2431f0e78a49f8cc0d38abdde5"
+      },
+      {
+        "path": "figures/fig4",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "1ced434997bf2a673a809839a256a45e9667182a",
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/trees/1ced434997bf2a673a809839a256a45e9667182a"
+      },
+      {
+        "path": "figures/fig4/fig4h_satmut_ctscor.pdf",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "fbe4510e4fbd89bd3f0653d11988fece8fb43d45",
+        "size": 25281,
+        "url": "https://api.github.com/repos/julirsch/finemapped_mpra/git/blobs/fbe4510e4fbd89bd3f0653d11988fece8fb43d45"
+      }
+    ],
+    "truncated": false
+  }
+}

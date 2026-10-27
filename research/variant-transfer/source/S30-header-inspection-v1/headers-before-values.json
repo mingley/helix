@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "timestamp_utc": "2026-10-27T22:33:33.440838+00:00",
+  "protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+  "archive_sha256": "3e62a3876b70e9c75951df26ed09ba552c3ba6f9f3b318934c1b01a5a42403b1",
+  "implementation_sha256": "2e5353cf7b4b10277e2603baab1d5d748aea93acb384e77be842239e4b4b49b2",
+  "scope": "first two physical rows only; no numeric scientific values decoded",
+  "sheets": [
+    {
+      "sheet": "S30.MPRA Controls",
+      "member": "xl/worksheets/sheet23.xml",
+      "schema_rows": [
+        {
+          "row_1based": 1,
+          "cells": [
+            {
+              "coordinate": "A1",
+              "type": "s",
+              "shared_string_index": 92685,
+              "text": "Supplementary Table 30 | Cross-experiment control oligo sequencees"
+            },
+            {
+              "coordinate": "G1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "H1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "I1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "J1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "K1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "L1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "M1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "N1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "O1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "P1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "Q1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "R1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "S1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "T1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "U1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "V1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "W1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "X1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "Y1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "Z1",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            }
+          ]
+        },
+        {
+          "row_1based": 2,
+          "cells": [
+            {
+              "coordinate": "A2",
+              "type": "s",
+              "shared_string_index": 88934,
+              "text": "ID"
+            },
+            {
+              "coordinate": "B2",
+              "type": "s",
+              "shared_string_index": 92686,
+              "text": "Control Type"
+            },
+            {
+              "coordinate": "C2",
+              "type": "s",
+              "shared_string_index": 92687,
+              "text": "Source"
+            },
+            {
+              "coordinate": "D2",
+              "type": "s",
+              "shared_string_index": 92688,
+              "text": "Libraries"
+            },
+            {
+              "coordinate": "E2",
+              "type": "s",
+              "shared_string_index": 92689,
+              "text": "Sequence"
+            },
+            {
+              "coordinate": "F2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "G2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "H2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "I2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "J2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "K2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "L2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "M2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "N2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "O2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "P2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "Q2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "R2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "S2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "T2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "U2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "V2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "W2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "X2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "Y2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            },
+            {
+              "coordinate": "Z2",
+              "type": "n",
+              "value": "[redacted non-text cell; not interpreted]"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "document_properties": {
+    "docProps/core.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r<cp:coreProperties xmlns:cp=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dcmitype=\"http://purl.org/dc/dcmitype/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><dcterms:created xsi:type=\"dcterms:W3CDTF\">2024-04-18T13:14:10Z</dcterms:created><dc:creator>Ryan Tewhey</dc:creator></cp:coreProperties>"
+  }
+}

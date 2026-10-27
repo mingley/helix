@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "phase": "design_DNA_only_no_new_outcome_payload_acquired",
+  "source_class_gate_passed": false,
+  "remaining_gates": [
+    "source class excludes technical controls and reused experiments",
+    "full reference-valid population components before whole-component exposure exclusion",
+    "exhaustive old-homology gate",
+    "frozen endpoint/header/value-type binding",
+    "complete prespecified context coverage"
+  ],
+  "counts": {
+    "all_design_rows": 365762,
+    "primary_chromosome_200nt_SNV_pairs": 336471,
+    "exact_hg38_reference_validated_pairs": 332719,
+    "within_inclusive_10000bp_of_explored_Agarwal_insert": 131834,
+    "DNA_gate_passed_source_class_still_unbound": 200864,
+    "not_primary_chromosome_ACGT_200nt_SNV_pair": 29291,
+    "no_whole_insert_single_block_mapping": 1040,
+    "full_reference_insert_not_exact_hg38_match": 2700,
+    "exact_or_RC_200nt_match_to_explored_construct": 17,
+    "within_inclusive_10000bp_of_explored_Kircher_or_HBB_locus": 72,
+    "mapped_nonprimary_hg38_contig": 12
+  },
+  "definitions": {
+    "source_coordinates": "hg19, zero-based half-open interval [ID_position_1based-100, ID_position_1based+100)",
+    "mapping": "whole200nt within one chain aligned block; unique coordinate/strand mapping before exact hg38 validation",
+    "old_locus_guard": "inclusive10000bp from every explored Agarwal insert and Kircher target/HBB gene interval",
+    "all_reference_validated_pairs": "all exact hg38 DNA pairs before old-guard/exact-match exclusion; final protocol components must use this file",
+    "eligible_pairs": "rowwise inventory diagnostic only; do not use this prefiltered population to form final components",
+    "not_established": "global genome uniqueness or exhaustive homology; independent experiment status requires source class gate"
+  },
+  "eligible_ID_order_sha256": "f88c0bc780adbe6786a19991a48e2caaa920cbe4c0795dd6a49e1be5a3d59f7f",
+  "inputs": {
+    "source_DNA_export": {
+      "path": "/tmp/helix-variant-source/siraj2026-S2-DNA.tsv.gz",
+      "sha256": "c8cbb47713f6020f1c134f10644d1e991694b78379e9f3699a589635401848df"
+    },
+    "hg19_to_hg38_chain": {
+      "path": "/tmp/helix-variant-source/hg19ToHg38.over.chain.gz",
+      "sha256": "5c0598e500ceb5a78c73086929e8ef993aec309bcafb595139b53d440b125a1d"
+    },
+    "hg38_reference": {
+      "path": "/workspace/.tools/reference/hg38.2bit",
+      "sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0"
+    },
+    "explored_Agarwal_panel": {
+      "path": "/workspace/helix/datasets/context-panel/panel.json",
+      "sha256": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3"
+    }
+  },
+  "other_explored_inputs": {
+    "datasets/regulatory-cohort/metadata-selection.json": "ec1535148caa06e8af304aaeec971ee8c80d9d1fcfb33e1c098e421fa2cea404",
+    "datasets/hbb-reference/annotation.json": "95500e64345f528ee3a16194e444b892c879297f4baec2ecd64c40e2e1239df0"
+  },
+  "implementation_sha256": "4bfb65df9ceb9add57bbcde62f1f6b8f005dbc63991f08ed73ce1bed8bbd0212",
+  "files": {
+    "eligible-pairs.jsonl.gz": {
+      "sha256": "c80f80979fe14ff2be7b488ec367a560282edf5ff8668e9564772b5d89503384",
+      "bytes": 23651726
+    },
+    "all-reference-validated-pairs.jsonl.gz": {
+      "sha256": "e37f6e4b621159fd432fb89d180a317bde145863e8bd706ba8f315c6f2531979",
+      "bytes": 38801229
+    },
+    "design-ledger.jsonl.gz": {
+      "sha256": "130efb52a2e9de9448913563c256c2f991a98d60544894b599d7c536bc97dcf3",
+      "bytes": 14077154
+    }
+  }
+}

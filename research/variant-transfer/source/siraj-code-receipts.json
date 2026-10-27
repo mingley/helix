@@ -1,0 +1,35 @@
+{
+  "commit": "1e38d1e3d4414dfa3a62b22110eba0136eda197d",
+  "files": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/julirsch/finemapped_mpra/1e38d1e3d4414dfa3a62b22110eba0136eda197d/LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/julirsch/finemapped_mpra/1e38d1e3d4414dfa3a62b22110eba0136eda197d/README.md",
+      "bytes": 878,
+      "sha256": "2e8af6fcd8351b364387514e09bcc3ddafe716873e4dc6b2765ee07f92415873"
+    },
+    {
+      "path": "code/preprocess/satmut.R",
+      "url": "https://raw.githubusercontent.com/julirsch/finemapped_mpra/1e38d1e3d4414dfa3a62b22110eba0136eda197d/code/preprocess/satmut.R",
+      "bytes": 8437,
+      "sha256": "3d45c153988cf94149278a58ac685fc16294f066d1a07a7fc88939101c3da5f4"
+    },
+    {
+      "path": "code/preprocess/make_mpra.R",
+      "url": "https://raw.githubusercontent.com/julirsch/finemapped_mpra/1e38d1e3d4414dfa3a62b22110eba0136eda197d/code/preprocess/make_mpra.R",
+      "bytes": 20337,
+      "sha256": "0a6b79902b4fb40cb318b98bfa427569e5b70287d87774f52ec450e5de45bcf9"
+    },
+    {
+      "path": "code/preprocess/read_in_functions.R",
+      "url": "https://raw.githubusercontent.com/julirsch/finemapped_mpra/1e38d1e3d4414dfa3a62b22110eba0136eda197d/code/preprocess/read_in_functions.R",
+      "bytes": 16455,
+      "sha256": "8185f0952d7e4210c9a9d7b735a010a6d38da461934d5291b8470e092bd8c2f7"
+    }
+  ]
+}

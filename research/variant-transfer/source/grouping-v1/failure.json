@@ -1,0 +1,8 @@
+{
+  "candidate_counts": {},
+  "error": "invalid prior interval",
+  "error_type": "ValueError",
+  "grouping_and_prior_exposure_gates_passed": false,
+  "preparation_sha256": "88b86e39b7ce7b885aea4fba793f012453068f47d3f0edd0e73185edcdf06eca",
+  "schema_version": 1
+}

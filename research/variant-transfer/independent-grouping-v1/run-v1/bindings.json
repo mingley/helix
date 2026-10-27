@@ -1,0 +1,111 @@
+{
+  "algorithm": {
+    "candidate_budget": 1000000000,
+    "genomic_guard": "Merge each collection/chromosome old closed interval expanded by10000bp; test closed intersection with each new half-open interval endpoints, reproducing inclusive gap<=10000 convention.",
+    "group_ID": "SHA256 of newline-joined lexicographically sorted variant IDs without trailingnewline",
+    "grouping": "Exact source parent; floor(start/1Mb) bin keyed by chromosome; separate strict-positive-interval overlap; any 200nt allele/either strand Hamming<=20. Complete new-new components precede old-exposure exclusion.",
+    "new_new_index": "21 disjoint pieces, sorted flat C++ index, forward stored alleles and both query strands; verify every cross-component candidate by seven-word packed Hamming. Skip only already-connected components.",
+    "old_explicit": "21 pieces for <=20 mismatches; every retained allele and both strands screened.",
+    "old_factorized": "22 pieces for <=21 reference mismatches, exact allowed observed-SNV repair at21; <=20 reference matches directly.",
+    "pruning": "Whole already-exposed components need no further old-hit enumeration. Old coordinates never union new components, and old nodes never receive1Mb bins."
+  },
+  "compiler": {
+    "binary_sha256": "f63cd03673ce80750eb7e7d0a6b760adf095298abb84d585d22cf2ed25360c08",
+    "flags": [
+      "-O3",
+      "-std=c++20",
+      "-Wall",
+      "-Wextra",
+      "-pedantic"
+    ],
+    "version": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+  },
+  "new_DNA": {
+    "count": 332719,
+    "path": "research/variant-transfer/source/design-mapping-v2/all-reference-validated-pairs.jsonl.gz",
+    "sha256": "e37f6e4b621159fd432fb89d180a317bde145863e8bd706ba8f315c6f2531979"
+  },
+  "new_numeric_outcome_access": false,
+  "phase": "prepared_before_independent_execution_no_response_file",
+  "prior_inventory": {
+    "counts": {
+      "agarwal-cores.jsonl.gz": 55276,
+      "hbb-auxiliary-windows200.jsonl.gz": 3601,
+      "kircher-deletion-windows200.jsonl.gz": 128641,
+      "kircher-reference-windows200.jsonl.gz": 1694
+    },
+    "manifest_sha256": "861d838582ce1f0d52d846e6d20ee5d6c0f28c059db257032c9cff7a1fae6faf",
+    "path": "research/variant-transfer/prior-exposure-inventory/inventory-v1"
+  },
+  "protocol": {
+    "path": "experiments/variant-transfer-v1.json",
+    "sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149"
+  },
+  "schema_version": 1,
+  "scratch_inputs": {
+    "controls.tsv": {
+      "bytes": 764,
+      "sha256": "3157acaf94b9a2c825c9f4503c3196443390765c5154f142b5d44abf207ddece"
+    },
+    "guards.tsv": {
+      "bytes": 3792364,
+      "sha256": "acd15f91fcd049940de693df310793d8ecb7fd1802b3da35467a073554aae327"
+    },
+    "new.tsv": {
+      "bytes": 154102717,
+      "sha256": "d79eeb1a14aa6bfbce9d9a830afd39c8c7910e07fbac8609e52e55daa65633d9"
+    },
+    "old.tsv": {
+      "bytes": 56120726,
+      "sha256": "85606c45339bdfccffb3000f6db70547b20c37b1564057c723e435ffb7259f03"
+    }
+  },
+  "technical_controls": {
+    "ids": [
+      "chr12:54955169:G:T",
+      "chr13:43597706:C:T",
+      "chr14:24899194:C:T",
+      "chr15:66070962:T:C",
+      "chr16:21190092:G:A",
+      "chr16:468450:C:T",
+      "chr17:43670940:A:G",
+      "chr17:44238571:C:G",
+      "chr17:46983171:G:C",
+      "chr18:12991393:T:C",
+      "chr19:21676115:G:C",
+      "chr19:3762698:C:T",
+      "chr19:44488352:G:A",
+      "chr19:58144519:C:G",
+      "chr19:9434872:C:T",
+      "chr1:110198727:C:G",
+      "chr20:61478285:G:C",
+      "chr20:62152519:C:G",
+      "chr22:42836337:A:C",
+      "chr22:44577160:T:A",
+      "chr22:50614476:T:C",
+      "chr2:131079483:C:T",
+      "chr2:131079526:C:T",
+      "chr2:200621420:C:T",
+      "chr2:61378186:C:A",
+      "chr2:75932627:T:C",
+      "chr3:195335265:A:G",
+      "chr4:187112629:G:C",
+      "chr4:8230456:T:G",
+      "chr5:175815782:G:C",
+      "chr5:58387311:C:A",
+      "chr6:10887276:C:G",
+      "chr6:158574892:G:T",
+      "chr6:3118952:C:T",
+      "chr7:114721780:G:A",
+      "chr7:23630951:T:C",
+      "chr7:99635369:C:A",
+      "chr8:145054271:T:C",
+      "chr8:145179003:A:T",
+      "chr9:123634040:G:A",
+      "chr9:34349863:G:A"
+    ],
+    "path": "research/variant-transfer/source/S30-technical-control-matches.json",
+    "scope": "Reported separately from prior-exposure flags; primary grouping source-cohort gate remains separate.",
+    "sha256": "971e90cb2d24bdaf60846efc3f00415aa1e1b495461d2677e6edc108bdf90759"
+  }
+}

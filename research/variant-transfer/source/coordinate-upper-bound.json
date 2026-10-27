@@ -1,0 +1,1159 @@
+{
+  "phase": "DNA-only necessary-condition upper bound, not full protocol homology completion",
+  "timestamp_utc": "2026-10-27T22:25:36.415864+00:00",
+  "input_ledger_sha256": "130efb52a2e9de9448913563c256c2f991a98d60544894b599d7c536bc97dcf3",
+  "full_reference_validated_variants": 332719,
+  "bin_width": 1000000,
+  "coordinate_only_components": 2783,
+  "coordinate_only_bad_components": 2554,
+  "upper_bound_eligible_components": 229,
+  "upper_bound_eligible_variants": 4373,
+  "logic": "All validated pairs form touched1Mb-bin components before any exclusions. Anycomponent with anymember gap<=10000bp to oldloci is excluded. Adding mandatory source-parent/exactRC/homology unions and oldhomologyflags canonlymergecomponents andremove eligiblevariants, neverrestore them. Sourceclass/coverage can furtherremove.",
+  "good_components": [
+    {
+      "chromosome": "chr1",
+      "bin": 49,
+      "size": 1
+    },
+    {
+      "chromosome": "chr1",
+      "bin": 80,
+      "size": 14
+    },
+    {
+      "chromosome": "chr1",
+      "bin": 98,
+      "size": 28
+    },
+    {
+      "chromosome": "chr1",
+      "bin": 102,
+      "size": 23
+    },
+    {
+      "chromosome": "chr1",
+      "bin": 104,
+      "size": 14
+    },
+    {
+      "chromosome": "chr1",
+      "bin": 106,
+      "size": 14
+    },
+    {
+      "chromosome": "chr1",
+      "bin": 189,
+      "size": 9
+    },
+    {
+      "chromosome": "chr1",
+      "bin": 191,
+      "size": 6
+    },
+    {
+      "chromosome": "chr1",
+      "bin": 238,
+      "size": 24
+    },
+    {
+      "chromosome": "chr1",
+      "bin": 242,
+      "size": 81
+    },
+    {
+      "chromosome": "chr10",
+      "bin": 41,
+      "size": 16
+    },
+    {
+      "chromosome": "chr10",
+      "bin": 53,
+      "size": 23
+    },
+    {
+      "chromosome": "chr10",
+      "bin": 55,
+      "size": 15
+    },
+    {
+      "chromosome": "chr10",
+      "bin": 108,
+      "size": 3
+    },
+    {
+      "chromosome": "chr11",
+      "bin": 24,
+      "size": 14
+    },
+    {
+      "chromosome": "chr11",
+      "bin": 38,
+      "size": 4
+    },
+    {
+      "chromosome": "chr11",
+      "bin": 39,
+      "size": 11
+    },
+    {
+      "chromosome": "chr11",
+      "bin": 42,
+      "size": 8
+    },
+    {
+      "chromosome": "chr11",
+      "bin": 50,
+      "size": 11
+    },
+    {
+      "chromosome": "chr11",
+      "bin": 54,
+      "size": 1
+    },
+    {
+      "chromosome": "chr11",
+      "bin": 80,
+      "size": 27
+    },
+    {
+      "chromosome": "chr11",
+      "bin": 81,
+      "size": 6
+    },
+    {
+      "chromosome": "chr11",
+      "bin": 98,
+      "size": 20
+    },
+    {
+      "chromosome": "chr11",
+      "bin": 135,
+      "size": 4
+    },
+    {
+      "chromosome": "chr12",
+      "bin": 37,
+      "size": 4
+    },
+    {
+      "chromosome": "chr12",
+      "bin": 60,
+      "size": 10
+    },
+    {
+      "chromosome": "chr12",
+      "bin": 61,
+      "size": 43
+    },
+    {
+      "chromosome": "chr12",
+      "bin": 72,
+      "size": 61
+    },
+    {
+      "chromosome": "chr12",
+      "bin": 73,
+      "size": 16
+    },
+    {
+      "chromosome": "chr12",
+      "bin": 83,
+      "size": 15
+    },
+    {
+      "chromosome": "chr12",
+      "bin": 85,
+      "size": 4
+    },
+    {
+      "chromosome": "chr12",
+      "bin": 86,
+      "size": 17
+    },
+    {
+      "chromosome": "chr12",
+      "bin": 99,
+      "size": 22
+    },
+    {
+      "chromosome": "chr13",
+      "bin": 18,
+      "size": 10
+    },
+    {
+      "chromosome": "chr13",
+      "bin": 54,
+      "size": 9
+    },
+    {
+      "chromosome": "chr13",
+      "bin": 55,
+      "size": 1
+    },
+    {
+      "chromosome": "chr13",
+      "bin": 56,
+      "size": 9
+    },
+    {
+      "chromosome": "chr13",
+      "bin": 58,
+      "size": 23
+    },
+    {
+      "chromosome": "chr13",
+      "bin": 61,
+      "size": 16
+    },
+    {
+      "chromosome": "chr13",
+      "bin": 62,
+      "size": 3
+    },
+    {
+      "chromosome": "chr13",
+      "bin": 63,
+      "size": 11
+    },
+    {
+      "chromosome": "chr13",
+      "bin": 67,
+      "size": 30
+    },
+    {
+      "chromosome": "chr13",
+      "bin": 68,
+      "size": 6
+    },
+    {
+      "chromosome": "chr13",
+      "bin": 77,
+      "size": 40
+    },
+    {
+      "chromosome": "chr13",
+      "bin": 82,
+      "size": 2
+    },
+    {
+      "chromosome": "chr13",
+      "bin": 83,
+      "size": 4
+    },
+    {
+      "chromosome": "chr13",
+      "bin": 88,
+      "size": 38
+    },
+    {
+      "chromosome": "chr14",
+      "bin": 19,
+      "size": 20
+    },
+    {
+      "chromosome": "chr14",
+      "bin": 26,
+      "size": 25
+    },
+    {
+      "chromosome": "chr14",
+      "bin": 28,
+      "size": 15
+    },
+    {
+      "chromosome": "chr14",
+      "bin": 48,
+      "size": 8
+    },
+    {
+      "chromosome": "chr14",
+      "bin": 82,
+      "size": 9
+    },
+    {
+      "chromosome": "chr14",
+      "bin": 83,
+      "size": 38
+    },
+    {
+      "chromosome": "chr14",
+      "bin": 84,
+      "size": 10
+    },
+    {
+      "chromosome": "chr15",
+      "bin": 20,
+      "size": 30
+    },
+    {
+      "chromosome": "chr15",
+      "bin": 21,
+      "size": 5
+    },
+    {
+      "chromosome": "chr15",
+      "bin": 87,
+      "size": 16
+    },
+    {
+      "chromosome": "chr16",
+      "bin": 32,
+      "size": 6
+    },
+    {
+      "chromosome": "chr16",
+      "bin": 33,
+      "size": 6
+    },
+    {
+      "chromosome": "chr16",
+      "bin": 35,
+      "size": 4
+    },
+    {
+      "chromosome": "chr16",
+      "bin": 61,
+      "size": 56
+    },
+    {
+      "chromosome": "chr16",
+      "bin": 62,
+      "size": 21
+    },
+    {
+      "chromosome": "chr16",
+      "bin": 76,
+      "size": 47
+    },
+    {
+      "chromosome": "chr17",
+      "bin": 53,
+      "size": 12
+    },
+    {
+      "chromosome": "chr18",
+      "bin": 15,
+      "size": 37
+    },
+    {
+      "chromosome": "chr18",
+      "bin": 29,
+      "size": 31
+    },
+    {
+      "chromosome": "chr18",
+      "bin": 33,
+      "size": 30
+    },
+    {
+      "chromosome": "chr18",
+      "bin": 40,
+      "size": 56
+    },
+    {
+      "chromosome": "chr18",
+      "bin": 73,
+      "size": 37
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 4,
+      "size": 29
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 22,
+      "size": 9
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 34,
+      "size": 24
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 52,
+      "size": 12
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 57,
+      "size": 7
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 78,
+      "size": 9
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 81,
+      "size": 7
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 82,
+      "size": 3
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 83,
+      "size": 7
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 92,
+      "size": 9
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 107,
+      "size": 12
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 116,
+      "size": 2
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 123,
+      "size": 6
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 139,
+      "size": 10
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 140,
+      "size": 30
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 146,
+      "size": 28
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 147,
+      "size": 16
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 193,
+      "size": 1
+    },
+    {
+      "chromosome": "chr2",
+      "bin": 194,
+      "size": 2
+    },
+    {
+      "chromosome": "chr20",
+      "bin": 55,
+      "size": 27
+    },
+    {
+      "chromosome": "chr21",
+      "bin": 8,
+      "size": 1
+    },
+    {
+      "chromosome": "chr21",
+      "bin": 19,
+      "size": 22
+    },
+    {
+      "chromosome": "chr21",
+      "bin": 20,
+      "size": 38
+    },
+    {
+      "chromosome": "chr21",
+      "bin": 24,
+      "size": 76
+    },
+    {
+      "chromosome": "chr22",
+      "bin": 15,
+      "size": 1
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 2,
+      "size": 68
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 3,
+      "size": 207
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 7,
+      "size": 35
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 26,
+      "size": 15
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 35,
+      "size": 46
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 55,
+      "size": 46
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 59,
+      "size": 30
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 74,
+      "size": 15
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 81,
+      "size": 29
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 82,
+      "size": 6
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 84,
+      "size": 34
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 88,
+      "size": 15
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 90,
+      "size": 4
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 93,
+      "size": 2
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 95,
+      "size": 7
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 96,
+      "size": 7
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 104,
+      "size": 27
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 116,
+      "size": 32
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 163,
+      "size": 7
+    },
+    {
+      "chromosome": "chr3",
+      "bin": 175,
+      "size": 33
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 34,
+      "size": 9
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 43,
+      "size": 9
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 46,
+      "size": 16
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 58,
+      "size": 12
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 59,
+      "size": 4
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 63,
+      "size": 3
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 64,
+      "size": 7
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 90,
+      "size": 67
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 97,
+      "size": 10
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 116,
+      "size": 11
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 120,
+      "size": 123
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 130,
+      "size": 9
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 135,
+      "size": 28
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 137,
+      "size": 21
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 148,
+      "size": 146
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 160,
+      "size": 5
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 161,
+      "size": 24
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 162,
+      "size": 34
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 171,
+      "size": 15
+    },
+    {
+      "chromosome": "chr4",
+      "bin": 179,
+      "size": 29
+    },
+    {
+      "chromosome": "chr5",
+      "bin": 12,
+      "size": 9
+    },
+    {
+      "chromosome": "chr5",
+      "bin": 22,
+      "size": 67
+    },
+    {
+      "chromosome": "chr5",
+      "bin": 27,
+      "size": 4
+    },
+    {
+      "chromosome": "chr5",
+      "bin": 44,
+      "size": 14
+    },
+    {
+      "chromosome": "chr5",
+      "bin": 46,
+      "size": 9
+    },
+    {
+      "chromosome": "chr5",
+      "bin": 63,
+      "size": 35
+    },
+    {
+      "chromosome": "chr5",
+      "bin": 70,
+      "size": 32
+    },
+    {
+      "chromosome": "chr5",
+      "bin": 86,
+      "size": 6
+    },
+    {
+      "chromosome": "chr5",
+      "bin": 99,
+      "size": 10
+    },
+    {
+      "chromosome": "chr5",
+      "bin": 101,
+      "size": 19
+    },
+    {
+      "chromosome": "chr5",
+      "bin": 105,
+      "size": 6
+    },
+    {
+      "chromosome": "chr5",
+      "bin": 117,
+      "size": 14
+    },
+    {
+      "chromosome": "chr5",
+      "bin": 164,
+      "size": 17
+    },
+    {
+      "chromosome": "chr5",
+      "bin": 165,
+      "size": 12
+    },
+    {
+      "chromosome": "chr5",
+      "bin": 166,
+      "size": 14
+    },
+    {
+      "chromosome": "chr6",
+      "bin": 20,
+      "size": 24
+    },
+    {
+      "chromosome": "chr6",
+      "bin": 23,
+      "size": 6
+    },
+    {
+      "chromosome": "chr6",
+      "bin": 58,
+      "size": 50
+    },
+    {
+      "chromosome": "chr6",
+      "bin": 61,
+      "size": 16
+    },
+    {
+      "chromosome": "chr6",
+      "bin": 62,
+      "size": 12
+    },
+    {
+      "chromosome": "chr6",
+      "bin": 76,
+      "size": 20
+    },
+    {
+      "chromosome": "chr6",
+      "bin": 86,
+      "size": 20
+    },
+    {
+      "chromosome": "chr6",
+      "bin": 92,
+      "size": 26
+    },
+    {
+      "chromosome": "chr6",
+      "bin": 94,
+      "size": 7
+    },
+    {
+      "chromosome": "chr6",
+      "bin": 102,
+      "size": 7
+    },
+    {
+      "chromosome": "chr6",
+      "bin": 103,
+      "size": 6
+    },
+    {
+      "chromosome": "chr7",
+      "bin": 9,
+      "size": 27
+    },
+    {
+      "chromosome": "chr7",
+      "bin": 57,
+      "size": 18
+    },
+    {
+      "chromosome": "chr7",
+      "bin": 62,
+      "size": 2
+    },
+    {
+      "chromosome": "chr7",
+      "bin": 63,
+      "size": 7
+    },
+    {
+      "chromosome": "chr7",
+      "bin": 68,
+      "size": 14
+    },
+    {
+      "chromosome": "chr7",
+      "bin": 79,
+      "size": 42
+    },
+    {
+      "chromosome": "chr7",
+      "bin": 89,
+      "size": 16
+    },
+    {
+      "chromosome": "chr7",
+      "bin": 119,
+      "size": 4
+    },
+    {
+      "chromosome": "chr7",
+      "bin": 125,
+      "size": 22
+    },
+    {
+      "chromosome": "chr7",
+      "bin": 153,
+      "size": 31
+    },
+    {
+      "chromosome": "chr8",
+      "bin": 14,
+      "size": 41
+    },
+    {
+      "chromosome": "chr8",
+      "bin": 34,
+      "size": 7
+    },
+    {
+      "chromosome": "chr8",
+      "bin": 35,
+      "size": 8
+    },
+    {
+      "chromosome": "chr8",
+      "bin": 49,
+      "size": 18
+    },
+    {
+      "chromosome": "chr8",
+      "bin": 50,
+      "size": 10
+    },
+    {
+      "chromosome": "chr8",
+      "bin": 110,
+      "size": 27
+    },
+    {
+      "chromosome": "chr8",
+      "bin": 113,
+      "size": 18
+    },
+    {
+      "chromosome": "chr8",
+      "bin": 114,
+      "size": 7
+    },
+    {
+      "chromosome": "chr8",
+      "bin": 137,
+      "size": 29
+    },
+    {
+      "chromosome": "chr9",
+      "bin": 23,
+      "size": 70
+    },
+    {
+      "chromosome": "chr9",
+      "bin": 24,
+      "size": 20
+    },
+    {
+      "chromosome": "chr9",
+      "bin": 25,
+      "size": 29
+    },
+    {
+      "chromosome": "chr9",
+      "bin": 29,
+      "size": 49
+    },
+    {
+      "chromosome": "chr9",
+      "bin": 30,
+      "size": 27
+    },
+    {
+      "chromosome": "chr9",
+      "bin": 43,
+      "size": 2
+    },
+    {
+      "chromosome": "chr9",
+      "bin": 65,
+      "size": 20
+    },
+    {
+      "chromosome": "chr9",
+      "bin": 67,
+      "size": 58
+    },
+    {
+      "chromosome": "chr9",
+      "bin": 74,
+      "size": 48
+    },
+    {
+      "chromosome": "chr9",
+      "bin": 78,
+      "size": 16
+    },
+    {
+      "chromosome": "chr9",
+      "bin": 80,
+      "size": 17
+    },
+    {
+      "chromosome": "chr9",
+      "bin": 102,
+      "size": 12
+    },
+    {
+      "chromosome": "chr9",
+      "bin": 103,
+      "size": 14
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 4,
+      "size": 5
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 5,
+      "size": 1
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 6,
+      "size": 1
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 17,
+      "size": 5
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 25,
+      "size": 2
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 27,
+      "size": 1
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 34,
+      "size": 2
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 35,
+      "size": 1
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 42,
+      "size": 3
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 43,
+      "size": 1
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 44,
+      "size": 51
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 45,
+      "size": 3
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 50,
+      "size": 1
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 51,
+      "size": 2
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 54,
+      "size": 2
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 56,
+      "size": 1
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 67,
+      "size": 10
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 73,
+      "size": 39
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 74,
+      "size": 14
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 79,
+      "size": 17
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 80,
+      "size": 7
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 87,
+      "size": 1
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 96,
+      "size": 1
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 105,
+      "size": 2
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 111,
+      "size": 2
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 112,
+      "size": 8
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 114,
+      "size": 3
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 116,
+      "size": 4
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 121,
+      "size": 6
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 124,
+      "size": 11
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 125,
+      "size": 5
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 126,
+      "size": 8
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 133,
+      "size": 1
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 137,
+      "size": 1
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 141,
+      "size": 23
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 145,
+      "size": 7
+    },
+    {
+      "chromosome": "chrX",
+      "bin": 148,
+      "size": 4
+    }
+  ]
+}

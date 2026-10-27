@@ -1,0 +1,25 @@
+{
+  "files": {
+    "failure.json": {
+      "bytes": 264,
+      "sha256": "36c8c61c3d46d83b91f309b256714efbc4d2d9a147f78c0eca6606629da75470"
+    },
+    "implementation.py": {
+      "bytes": 28429,
+      "sha256": "0495ede1493f364a1ce808db087b96a1aa8ac9f39f825839096e2b4f70b38b15"
+    },
+    "inputs.json": {
+      "bytes": 442,
+      "sha256": "51662461e08abe491d5d76dd24f8106dd2af1138affd1d12ca1e82b7958f2df2"
+    },
+    "parameters.json": {
+      "bytes": 1848,
+      "sha256": "fc81fb3a229aa93f0806b9cbf383e0b82dda794d72303a087904e0853439d2d0"
+    },
+    "preparation.json": {
+      "bytes": 350,
+      "sha256": "88b86e39b7ce7b885aea4fba793f012453068f47d3f0edd0e73185edcdf06eca"
+    }
+  },
+  "schema_version": 1
+}

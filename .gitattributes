@@ -50,3 +50,6 @@ research/results/context-activity-v3/history/context-activity-v3-final-figures/*
 # Immutable exact-count and generated-figure artifacts.
 research/variant-locality/**/*.csv -text whitespace=cr-at-eol
 research/variant-locality/figures/*.svg -text whitespace=-trailing-space
+# Exact external provenance is retained with its original formatting.
+research/variant-transfer/source/producer-code/** -text -whitespace
+research/variant-transfer/source/*-availability.txt -text -whitespace
