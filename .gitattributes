@@ -1,0 +1,2 @@
+# Preserve the exact NCBI EFetch response, including its terminal blank line.
+datasets/clinvar-hbb/reference.fasta whitespace=-blank-at-eof

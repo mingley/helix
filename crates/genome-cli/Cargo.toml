@@ -1,0 +1,28 @@
+[package]
+name = "genome-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+tempfile.workspace = true
+genome-types.workspace = true
+genome-data.workspace = true
+genome-knowledge.workspace = true
+genome-logic.workspace = true
+genome-proof.workspace = true
+genome-inference.workspace = true
+genome-agents.workspace = true
+genome-evaluation.workspace = true
+
+[lints]
+workspace = true
+
+[[bin]]
+name = "helix"
+path = "src/main.rs"

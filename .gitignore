@@ -1,0 +1,7 @@
+/target/
+/runs/
+__pycache__/
+*.olean
+*.ilean
+.DS_Store
+/.ci-tools/

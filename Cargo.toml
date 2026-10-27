@@ -1,0 +1,33 @@
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.90"
+license = "MIT"
+repository = "https://github.com/mingley/helix"
+
+[workspace.dependencies]
+anyhow = "1.0.100"
+clap = { version = "4.5.50", features = ["derive"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = { version = "1.0.145", features = ["float_roundtrip"] }
+sha2 = "0.10.9"
+noodles-vcf = "0.81.0"
+tempfile = "3.23.0"
+genome-types = { path = "crates/genome-types" }
+genome-data = { path = "crates/genome-data" }
+genome-knowledge = { path = "crates/genome-knowledge" }
+genome-logic = { path = "crates/genome-logic" }
+genome-proof = { path = "crates/genome-proof" }
+genome-inference = { path = "crates/genome-inference" }
+genome-agents = { path = "crates/genome-agents" }
+genome-evaluation = { path = "crates/genome-evaluation" }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = "warn"

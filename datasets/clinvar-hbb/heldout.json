@@ -1,0 +1,177 @@
+[
+  {
+    "id": "VCV003637486.2",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/3637486/"
+  },
+  {
+    "id": "VCV003638340.2",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/3638340/"
+  },
+  {
+    "id": "VCV003910009.1",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/3910009/"
+  },
+  {
+    "id": "VCV002877740.3",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/2877740/"
+  },
+  {
+    "id": "VCV003639424.2",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/3639424/"
+  },
+  {
+    "id": "VCV004692970.1",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/4692970/"
+  },
+  {
+    "id": "VCV004734723.1",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/4734723/"
+  },
+  {
+    "id": "VCV003624952.2",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/3624952/"
+  },
+  {
+    "id": "VCV003672948.2",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/3672948/"
+  },
+  {
+    "id": "VCV003638091.2",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/3638091/"
+  },
+  {
+    "id": "VCV002962205.3",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/2962205/"
+  },
+  {
+    "id": "VCV002959873.3",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/2959873/"
+  },
+  {
+    "id": "VCV003633170.2",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/3633170/"
+  },
+  {
+    "id": "VCV004729396.1",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/4729396/"
+  },
+  {
+    "id": "VCV003633051.2",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/3633051/"
+  },
+  {
+    "id": "VCV004734636.1",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/4734636/"
+  },
+  {
+    "id": "VCV003642561.2",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/3642561/"
+  },
+  {
+    "id": "VCV003766487.1",
+    "label": "pathogenic",
+    "classification": "Pathogenic",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/3766487/"
+  },
+  {
+    "id": "VCV004277917.1",
+    "label": "pathogenic",
+    "classification": "Pathogenic",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/4277917/"
+  },
+  {
+    "id": "VCV004685642.1",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/4685642/"
+  },
+  {
+    "id": "VCV003645123.2",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/3645123/"
+  },
+  {
+    "id": "VCV004795169.1",
+    "label": "pathogenic",
+    "classification": "Likely pathogenic",
+    "review_status": "no assertion criteria provided",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/4795169/"
+  },
+  {
+    "id": "VCV002878634.3",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/2878634/"
+  },
+  {
+    "id": "VCV003766927.1",
+    "label": "pathogenic",
+    "classification": "Likely pathogenic",
+    "review_status": "criteria provided, single submitter",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/3766927/"
+  },
+  {
+    "id": "VCV003051702.2",
+    "label": "benign",
+    "classification": "Likely benign",
+    "review_status": "no assertion criteria provided",
+    "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/3051702/"
+  }
+]
