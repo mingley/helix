@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "files": {
+    "ncbi-gene-3043.json": "ceb6697cff18585b99e12395e114c2b9b59947a6ce770244f0ad4f186107352c",
+    "publications.json": "4c10f8b4e717b60dd2e84b2f72888127b34731e561791f34f918f880cfad71ac",
+    "uniprot-P68871.json": "937a46d0da699853316d18ae8becb21e949eed48ec8e1c8d2fdbd9bc2798fd12"
+  },
+  "retrievals": [
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22alpha+globin%22+AND+%22beta+thalassemia%22+AND+%22triplication%22+AND+FIRST_PDATE%3A%5B2000-01-01+TO+2026-10-27%5D&format=json&resultType=core&pageSize=5",
+      "retrieved_at": "2026-10-27T05:22:02.613898+00:00",
+      "original_response_sha256": "883cd711b178b6a424ebac95b0566d445564f5f3fec842df9760ed8ab2ed9bf7",
+      "selected_pmids": [
+        "38895064"
+      ],
+      "retained_in": "publications.json",
+      "retained_representation": "bibliographic metadata projection; abstracts are not redistributed"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22alpha-thalassemia%22+AND+TITLE%3A%22sickle%22+AND+%28TITLE%3A%22severity%22+OR+TITLE%3A%22hemolysis%22+OR+TITLE%3A%22vaso-occlusive%22%29&format=json&resultType=core&pageSize=5",
+      "retrieved_at": "2026-10-27T05:22:05.079704+00:00",
+      "original_response_sha256": "42e4fd22358c1d2c36a23f2a5fc0a9198d0470b7c1e325ece4ac59e2079938ab",
+      "selected_pmids": [
+        "6172710"
+      ],
+      "retained_in": "publications.json",
+      "retained_representation": "bibliographic metadata projection; abstracts are not redistributed"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Genome-wide+association+study+shows+BCL11A+associated+with+persistent+fetal+hemoglobin%22&format=json&resultType=core&pageSize=5",
+      "retrieved_at": "2026-10-27T05:20:15.777876+00:00",
+      "original_response_sha256": "5cb2adf2a8590db336f8db6df9100777ff0ddb0d78c8bc216b74c8ad18e95922",
+      "selected_pmids": [
+        "18245381"
+      ],
+      "retained_in": "publications.json",
+      "retained_representation": "bibliographic metadata projection; abstracts are not redistributed"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Human+fetal+hemoglobin+expression+is+regulated+by+the+developmental+stage-specific+repressor+BCL11A%22&format=json&resultType=core&pageSize=5",
+      "retrieved_at": "2026-10-27T05:20:13.272959+00:00",
+      "original_response_sha256": "c383f700b57109f909e93fdfc7eeab97dea14d579446b7bf323562bd1de45b0f",
+      "selected_pmids": [
+        "19056937"
+      ],
+      "retained_in": "publications.json",
+      "retained_representation": "bibliographic metadata projection; abstracts are not redistributed"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22BCL11A+enhancer+dissection+by+Cas9-mediated+in+situ+saturating+mutagenesis%22&format=json&resultType=core&pageSize=5",
+      "retrieved_at": "2026-10-27T05:20:18.172566+00:00",
+      "original_response_sha256": "428c083b419235429c0021e922cd42a9382dd0d18252c8b329298c0a2b5e2bb5",
+      "selected_pmids": [
+        "26375006"
+      ],
+      "retained_in": "publications.json",
+      "retained_representation": "bibliographic metadata projection; abstracts are not redistributed"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A20492708+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "retrieved_at": "2026-10-27T05:20:11.314043+00:00",
+      "original_response_sha256": "25579f437d0e4d5d9d70ed0850730f034fea346e57b7dca070827f99bcf173f2",
+      "selected_pmids": [
+        "20492708"
+      ],
+      "retained_in": "publications.json",
+      "retained_representation": "bibliographic metadata projection; abstracts are not redistributed"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A13464827+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "retrieved_at": "2026-10-27T05:22:06.532679+00:00",
+      "original_response_sha256": "160f65e3821db95e952f6b771d51db9eb6706b373afeecaa63ce469cec4ca316",
+      "selected_pmids": [
+        "13464827"
+      ],
+      "retained_in": "publications.json",
+      "retained_representation": "bibliographic metadata projection; abstracts are not redistributed"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22HBS1L-MYB+intergenic+variants+modulate+fetal+hemoglobin+via+long-range+MYB+enhancers%22&format=json&resultType=core&pageSize=5",
+      "retrieved_at": "2026-10-27T05:20:14.400283+00:00",
+      "original_response_sha256": "7088ac371a66b1aa7ca4a4c8d4c6ea537e45aadd81cee72a8e86798dfd101417",
+      "selected_pmids": [
+        "24614105"
+      ],
+      "retained_in": "publications.json",
+      "retained_representation": "bibliographic metadata projection; abstracts are not redistributed"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22beta-globin%22+AND+%22dominant%22+AND+%22nonsense-mediated%22+AND+FIRST_PDATE%3A%5B1990-01-01+TO+2015-12-31%5D&format=json&resultType=core&pageSize=5",
+      "retrieved_at": "2026-10-27T05:23:39.963395+00:00",
+      "original_response_sha256": "abd4a91266880c153ab520aa919f266ed49b2d3d90dc01e16f7664317180a428",
+      "selected_pmids": [
+        "15161914",
+        "21389146",
+        "21357703"
+      ],
+      "retained_in": "publications.json",
+      "retained_representation": "bibliographic metadata projection; abstracts are not redistributed"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Unstable+beta-globin+mRNA%22&format=json&resultType=core&pageSize=5",
+      "retrieved_at": "2026-10-27T05:23:37.317142+00:00",
+      "original_response_sha256": "567be8978f4312f06cdb1d81f4fe1ab57b58a243d12bc931bc66c8b73d2ff3dc",
+      "selected_pmids": [
+        "6101206"
+      ],
+      "retained_in": "publications.json",
+      "retained_representation": "bibliographic metadata projection; abstracts are not redistributed"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Treating+sickle+cell+disease+by+targeting+HbS+polymerization%22&format=json&resultType=core&pageSize=5",
+      "retrieved_at": "2026-10-27T05:20:09.882908+00:00",
+      "original_response_sha256": "d5d36743caf9c6bd52c6327e685a4c265b466793f6ba05dcb061193d5b2b1f01",
+      "selected_pmids": [
+        "28385699"
+      ],
+      "retained_in": "publications.json",
+      "retained_representation": "bibliographic metadata projection; abstracts are not redistributed"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A668922+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "retrieved_at": "2026-10-27T05:22:05.843592+00:00",
+      "original_response_sha256": "06a612cacb0551b47b6827ff1f11e8390f8b6b719f7a28f69050e34c3927940a",
+      "selected_pmids": [
+        "668922"
+      ],
+      "retained_in": "publications.json",
+      "retained_representation": "bibliographic metadata projection; abstracts are not redistributed"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22aberrant+splicing+results+from+a+single+point+mutation+in+an+intron%22&format=json&resultType=core&pageSize=5",
+      "retrieved_at": "2026-10-27T05:21:58.090190+00:00",
+      "original_response_sha256": "f6021f435ee3c8f045e584dc834deef966391e532efc6d02c4946016b2128c68",
+      "selected_pmids": [
+        "6895866"
+      ],
+      "retained_in": "publications.json",
+      "retained_representation": "bibliographic metadata projection; abstracts are not redistributed"
+    },
+    {
+      "file": "uniprot-P68871.json",
+      "url": "https://rest.uniprot.org/uniprotkb/P68871.json",
+      "retrieved_at": "2026-10-27T05:18:49.537371+00:00",
+      "original_response_sha256": "937a46d0da699853316d18ae8becb21e949eed48ec8e1c8d2fdbd9bc2798fd12",
+      "retained_representation": "complete source response"
+    },
+    {
+      "file": "ncbi-gene-3043.json",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=3043&retmode=json",
+      "retrieved_at": "2026-10-27T05:18:53.568300+00:00",
+      "original_response_sha256": "ceb6697cff18585b99e12395e114c2b9b59947a6ce770244f0ad4f186107352c",
+      "retained_representation": "complete source response"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2893117/fullTextXML",
+      "retrieved_at": "2026-10-27T05:31:50.952476+00:00",
+      "original_response_sha256": "87f0a3292e37a9c86b94d5bf75d8c668bb1e12114ce5b39a0f53ffa937ade945",
+      "retained_representation": "full text read for mechanistic verification; original article text not redistributed",
+      "source_id": "S06"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6687891/fullTextXML",
+      "retrieved_at": "2026-10-27T05:33:28.901773+00:00",
+      "original_response_sha256": "8a137e659d29fca939d70f10cb249d19dd3f83645e593cb62f19674c4dd1be7c",
+      "retained_representation": "full text read for assay methods, replicate structure and article license; original article text not redistributed",
+      "source_id": "S19"
+    }
+  ],
+  "unavailable_sources": [
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK1377/",
+      "reason": "NCBI Bookshelf returned a browser challenge, not article content; not used as retrieved evidence."
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK1426/",
+      "reason": "NCBI Bookshelf returned a browser challenge, not article content; not used as retrieved evidence."
+    }
+  ],
+  "terms": "UniProt data are attributed under CC BY 4.0 (https://www.uniprot.org/help/license); NCBI data retain NCBI/source terms; bibliographic metadata do not relicense the papers. Original literature abstracts and full text are not redistributed here."
+}

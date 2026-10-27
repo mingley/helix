@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Helix · HBB mechanism explorer</title>
+<style>
+:root{font:16px/1.5 system-ui;color:#dce6ee;background:#101820}body{max-width:1100px;margin:40px auto;padding:0 24px}h1,h2{color:#f0f5f7}h1{font-size:2rem}p{max-width:85ch}.muted{color:#a4b9c8}.box{background:#192731;padding:18px;border-radius:10px;margin:18px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.metric{font-size:1.5rem;color:#9ce7d8}select,input{font:inherit;color:#dce6ee;background:#223644;border:1px solid #527080;border-radius:5px;padding:8px;max-width:100%}svg{width:100%;height:auto}table{border-collapse:collapse;width:100%;font-size:.85rem}td,th{border-bottom:1px solid #354b58;padding:8px;text-align:left}tr[data-i]{cursor:pointer}tr[data-i]:hover{background:#263f4d}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.85rem}a{color:#9ce7d8}.legend span{display:inline-block;margin-right:18px}#table-wrap{max-height:380px;overflow:auto}button{font:inherit;padding:5px 10px}
+</style>
+<h1>HBB · from DNA to sequence consequences</h1>
+<p class="muted">A reference-grounded mechanism map and evidence audit. This is computational research on public data, not clinical interpretation or complete human-genome understanding.</p>
+<div class="grid" id="metrics"></div>
+<div class="box"><h2>Three exons, read on the minus strand</h2>
+<p>Coordinates increase left to right; transcription runs right to left. Coding sequence is teal; UTR exons are blue; introns are thin gray lines. Dots show the selected ClinVar variants, not all known variation.</p>
+<svg id="locus" viewBox="0 0 1000 130" role="img" aria-label="HBB exon and coding sequence map"></svg>
+<div class="legend"><span style="color:#7de0c5">■ Coding</span><span style="color:#729bd6">■ UTR</span><span style="color:#e6b77c">● Selected variants</span></div></div>
+<div class="box"><h2>Inspect a variant</h2><label for="query">Filter by accession, codon, consequence or coordinate</label><br><input id="query" type="search" placeholder="e.g. missense, 5226, CAC"><p>Click a row to inspect its transcript position, codon change, splice flags and limitations.</p><div id="table-wrap"><table><thead><tr><th>Accession</th><th>Genomic SNV</th><th>Recomputed effect</th><th>Codon</th><th>Annotation agreement</th></tr></thead><tbody id="rows"></tbody></table></div><pre id="detail"></pre></div>
+<div class="box"><h2>What the evidence supports</h2><div id="evidence"></div><p>Clinical labels and molecular effects are different endpoints. The prior heldout is already exposed; its model comparison is post hoc. No independent biological replication is established.</p></div>
+<div class="box"><h2>A measured regulatory endpoint</h2><div id="assay"></div><p>Reporter coefficients are source regression estimates in HEL 92.1.7 plasmid MPRA, not endogenous HBB levels or clinical probabilities. Cultures share one library; random constructs can contain multiple changes, and source coefficient p-values have acknowledged inflation limits.</p></div>
+<div class="box"><h2>Primary-human genome context</h2><div id="atlas"></div><p>These are source-specific curated RefSeq annotations, not a complete inventory of functional sequence. Coverage uses merged interval unions. Uncovered sequence is not demonstrated nonfunctional.</p></div>
+<div class="box"><h2>All possible local SNVs</h2><div id="effects"></div><p>The complete 4,824-row map is in saturation.json. Splice flags cover canonical motifs and narrow boundary proximity; they cannot exclude cryptic splicing, regulatory effects or other isoforms.</p></div>
+<p class="muted">Inputs, assumptions, software revision and hashes are in report.json. The CLI audit rechecks artifact integrity, the revision chain and scoped Lean proof. No remote scripts or network requests are used by this explorer.</p>
+<script id="data" type="application/json">__DATA_JSON__</script>
+<script>
+"use strict";
+const data=JSON.parse(document.getElementById("data").textContent),r=data.report;
+function text(tag,value,parent,cls){const e=document.createElement(tag);e.textContent=value;if(cls)e.className=cls;parent.appendChild(e);return e}
+const metrics=document.getElementById("metrics");
+for(const [label,value] of [["Transcript bases",628],["Protein residues",147],["Possible locus SNVs",r.saturation.all_possible_single_base_substitutions],["Selected clinical records",data.comparisons.length]]){
+const card=text("div","",metrics,"box");text("div",Number(value).toLocaleString(),card,"metric");text("div",label,card)}
+function draw(){
+const svg=document.getElementById("locus"),exons=r.reference_validation.exon_intervals_zero_based_half_open,start=exons[0][0]-80,end=exons[exons.length-1][1]+80;
+function node(tag,attrs){const n=document.createElementNS("http://www.w3.org/2000/svg",tag);for(const [k,v] of Object.entries(attrs))n.setAttribute(k,String(v));svg.appendChild(n);return n}
+function x(p){return 40+920*(p-start)/(end-start)}
+node("line",{x1:x(exons[0][0]),x2:x(exons[exons.length-1][1]),y1:60,y2:60,stroke:"#8ca0aa","stroke-width":3});
+for(const e of exons){node("rect",{x:x(e[0]),y:45,width:x(e[1])-x(e[0]),height:30,fill:"#729bd6"});const bounds=r.reference_validation.coding_bounds_zero_based_half_open,a=Math.max(e[0],bounds[0]),b=Math.min(e[1],bounds[1]);if(a<b)node("rect",{x:x(a),y:45,width:x(b)-x(a),height:30,fill:"#7de0c5"})}
+data.comparisons.forEach((c,i)=>{const dot=node("circle",{cx:x(c.recomputed.genomic_position_0based),cy:90+(i%3)*8,r:3,fill:"#e6b77c"});const title=document.createElementNS(svg.namespaceURI,"title");title.textContent=c.id+" "+c.recomputed.effect;dot.appendChild(title);dot.style.cursor="pointer";dot.addEventListener("click",()=>show(i))});
+for(const [p,label] of [[start,String(start+1)],[end,String(end)]]){const n=node("text",{x:x(p),y:25,fill:"#a4b9c8","font-size":12,"text-anchor":p===start?"start":"end"});n.textContent=label}
+const arrow=node("text",{x:500,y:25,fill:"#a4b9c8","font-size":15,"text-anchor":"middle"});arrow.textContent="← transcript 5′ to 3′ (minus strand)";
+}
+function show(i){document.getElementById("detail").textContent=JSON.stringify(data.comparisons[i],null,2)}
+function rows(){const q=document.getElementById("query").value.toLowerCase(),body=document.getElementById("rows");body.replaceChildren();data.comparisons.forEach((c,i)=>{if(!JSON.stringify(c).toLowerCase().includes(q))return;const a=c.recomputed,tr=document.createElement("tr");tr.dataset.i=i;tr.tabIndex=0;for(const value of [c.id,(a.genomic_position_0based+1)+":"+a.reference+">"+a.alternate,a.effect,(a.reference_codon||"—")+" → "+(a.alternate_codon||"—"),c.agrees_at_coarse_resolution?"Agrees":"Differs"])text("td",value,tr);tr.addEventListener("click",()=>show(i));tr.addEventListener("keydown",e=>{if(e.key==="Enter")show(i)});body.appendChild(tr)})}
+document.getElementById("query").addEventListener("input",rows);
+const e=document.getElementById("evidence"),p=r.statistics.previous_classification_benchmark_post_hoc;
+text("p",r.annotation_comparison.agreements+"/"+r.annotation_comparison.compared_targets+" coarse annotations agree with reference-derived effects.",e);
+text("p","Prior model-only correct: "+p.left_only_correct+"; baseline-only correct: "+p.right_only_correct+"; exact paired p="+p.two_sided_exact_p_value.toFixed(3)+". This does not establish superiority.",e);
+text("p","Review-star counts in selected heldout: "+JSON.stringify(r.evidence_audit.heldout.review_star_counts)+". Distinct SCV accessions do not establish independent cohorts.",e);
+const assay=document.getElementById("assay"),s=r.promoter_assay;
+text("p",s.rows.reference_validated_snv_rows+" SNV effect estimates cover all three substitutions at each of "+s.mapping.target_sequence_bases+" bases. "+s.rows.source_equality_rows+" equality-form rows are retained separately, without interpreting them as deletions or neutral controls.",assay);
+text("p","The fragment contains 50 transcribed 5′UTR bases and 137 upstream bases. Its submitted reference is on the plus strand; HBB transcription is minus-strand.",assay);
+const overlaps=document.createElement("table");assay.appendChild(overlaps);
+const heading=document.createElement("tr");for(const label of ["Clinical accession","Target allele","Reported log2 coefficient","Reference region"])text("th",label,heading);overlaps.appendChild(heading);
+for(const overlap of r.promoter_clinvar_overlap){const row=document.createElement("tr"),m=overlap.measured_reporter_record;for(const value of [overlap.source_clinvar_accession,m.source_hgvs_nt,m.effect?String(m.effect.coefficient_log2):"missing",m.region])text("td",value,row);overlaps.appendChild(row)}
+text("p","These allele-identity links are descriptive. Clinical curation may already incorporate this experiment; independent clinical confirmation is not established.",assay);
+const a=r.genome_context,atlas=document.getElementById("atlas");text("p",Number(a.gene_loci).toLocaleString()+" curated gene loci; "+Number(a.protein_coding_gene_loci).toLocaleString()+" coding loci across primary chromosomes.",atlas);
+for(const [label,key] of [["Transcript-span union","transcript_span_union_bases"],["Exon union","exon_union_bases"],["CDS union","cds_union_bases"]])text("p",label+": "+(100*a.totals[key]/a.totals.length).toFixed(2)+"% of primary reference bases.",atlas);
+const effects=document.getElementById("effects");for(const [name,count]of Object.entries(r.saturation.effect_counts))text("p",name+": "+Number(count).toLocaleString(),effects);
+draw();rows();show(0);
+</script></html>

@@ -3,6 +3,51 @@
 A Rust research laboratory for typed genomic claims, auditable evidence,
 conditional reasoning, and reproducible prediction experiments.
 
+The current [research objective](research/GOAL.md) is to recover a precise HBB
+sequence-to-mechanism model, expose its uncertainty, and connect it to measured
+regulatory evidence and a genome-wide annotation context. Six research and
+engineering subagents contributed independently checked components and source
+reviews. This is a partial model of human genome function, not a claim to have
+reverse engineered the genome.
+
+## Explore the research workspace
+
+After the setup steps below:
+
+```bash
+source scripts/env.sh
+cargo run --locked -- research --out runs/hbb-research
+cargo run --locked -- audit runs/hbb-research
+```
+
+The research command validates the named GRCh38/RefSeq/UniProt sequences,
+reconstructs HBB's 628-base transcript and 147-residue protein, enumerates all
+4,824 SNVs over its transcript locus, and recomputes consequences for the 54
+ClinVar records. It reports coding-only and all-region agreement, evaluates the
+computable portions of five hypotheses, audits evidence quality, and places the
+locus among 29,949 curated gene loci across the primary reference chromosomes.
+It also integrates 561 source-estimated SNV effects from a published HBB
+promoter/5-prime-UTR reporter assay, keeping the log2 expression endpoint and
+HEL 92.1.7 cell context distinct from clinical classifications.
+
+The output includes a readable research narrative, a standalone interactive
+HTML explorer, full JSON annotations and saturation map, source commitments,
+an append-only run ledger and scoped Lean proof. Open the generated research.html
+locally; no server or remote scripts are needed.
+
+Start with the [biological synthesis](research/hbb-mechanisms.md),
+[falsifiable hypotheses](research/hbb-hypotheses.json),
+[evidence audit](research/clinvar-audit.md),
+[genome context](research/genome-atlas.md), and
+[analysis protocol](experiments/hbb-mechanism-protocol.md).
+The [reporter dataset card](datasets/hbb-promoter-assay/README.md) and
+[assay protocol](experiments/hbb-promoter-assay-protocol.md) document the exact
+target mapping, score-set CC0 license, source regression assumptions, retained
+equality records and within-study replication limits.
+The original clinical heldout has been explored and is now development data.
+Its exact paired comparison gives p = 0.375; the earlier accuracy difference
+does not establish superiority or independent validation.
+
 The first vertical slice validates 54 frozen public ClinVar HBB variants against
 GRCh38, learns a consequence-based classification model from 29 records, predicts
 25 held-out records, checks conditional proofs with Lean 4, and saves an auditable
@@ -90,6 +135,11 @@ Complete VRS normalization and identifier interoperability remain future work.
 | `genome-agents` | Bounded agent interface and deterministic research loop |
 | `genome-evaluation` | Accuracy, Brier, log-loss, calibration and disagreements |
 | `genome-cli` | Experiment execution and audit |
+| `genome-mechanism` | Reference reconstruction, codons, strand-aware SNVs and splice context |
+| `genome-atlas` | Frozen primary-chromosome RefSeq loci and merged interval coverage |
+| `genome-evidence-audit` | Source ascertainment, review strength, overlap and post-hoc model gaps |
+| `genome-research-stats` | Descriptive Wilson intervals, exact paired comparisons and coverage |
+| `genome-assay` | Reference-mapped quantitative reporter effects with units and context |
 
 The agent investigates mixed or sparse consequence groups, retrieves training
 evidence from the snapshot, proposes independent validation questions, records
@@ -132,3 +182,14 @@ and the importer syntax check. Integration tests exercise real CLI runs, Lean,
 repeatability, failure paths, artifact tampering and immutable output.
 
 Code is MIT licensed. NCBI data retain their original terms and attribution.
+Other frozen datasets and literature projections retain the source-specific
+terms and attribution documented in their dataset cards and manifests.
+
+For an optional interaction smoke check of a generated explorer (Node.js required):
+
+```bash
+node scripts/check_research_viewer.cjs runs/hbb-research/research.html
+```
+
+This checks filters, selection and generated DOM behavior without network access.
+It is separate from a browser layout or accessibility review.

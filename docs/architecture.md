@@ -1,5 +1,38 @@
 # Architecture and trust boundaries
 
+The current research workflow combines the original clinical demonstration with
+a reference mechanism engine, a curated genome-context atlas and a separately
+produced regulatory assay:
+
+```mermaid
+flowchart TD
+    R[GRCh38 genomic sequence and RefSeq transcript/protein] --> M[Validated exon splicing and codon mechanism map]
+    U[Reviewed UniProt and source-backed biological questions] --> H[Scoped hypotheses and missing evidence]
+    C[Frozen ClinVar assertions] --> A[Annotation comparison and evidence audit]
+    M --> A
+    G[Curated primary-reference gene annotation] --> X[Genome and locus context]
+    Q[MaveDB reporter coefficients and exact target sequence] --> E[Measured log2 reporter endpoint with cell context]
+    E --> J[Join exact allele identities while retaining different endpoints]
+    A --> J
+    J --> O[Research report, explorer and revision ledger]
+    X --> O
+    H --> O
+    M --> P[Small Lean definitions and conditional proofs]
+    P --> O
+```
+
+Reporter records use a separate quantitative type with units, source accession,
+cell line and assay context. They are not converted into clinical labels or used
+to promote predicted clinical claims. The assay's target-reference orientation
+and the gene's transcription orientation are verified separately.
+
+The research audit checks artifact commitments, ordered revisions, report-to-ledger
+bindings, duplicate JSON payloads and the scoped proof. It does not authenticate
+source identity or establish biological truth. The hypothesis IDs are fixed by
+the finite analysis protocol; alternate files must retain its defined ID set.
+
+The original demo path below remains available and its proof format is preserved.
+
 ```mermaid
 flowchart TD
     S[Frozen ClinVar and reference FASTA] --> D[Hash and provenance validation]
@@ -67,6 +100,8 @@ separate capabilities and an inaccessible holdout store.
 
 ## Current boundaries
 
-HBB GRCh38 biallelic SNVs only. No full VRS normalization, indels, liftover, causal
-effects, invented confidence intervals, general-purpose proof kernel, live model
-API, physical experiments or clinical decision workflow.
+Mechanism calculations remain limited to the named HBB GRCh38 transcript and
+biallelic SNVs. The atlas supplies source-specific genome-wide annotation context;
+it does not compute genome-wide variant effects. No full VRS normalization,
+indel/liftover engine, validated causal model, general-purpose proof kernel, live
+model API, physical experiments or clinical decision workflow is implemented.

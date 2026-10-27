@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "goal": "Recover a reference-grounded HBB DNA-to-RNA-to-protein model, identify the information lost by coarse clinical labels, and generate discriminating questions for independent evidence.",
+  "scope": "Computational and descriptive research on public HBB reference sequences and an already explored ClinVar snapshot. No new biological mechanism or prospective predictive performance is claimed.",
+  "evidence_policy": {
+    "current_fixture": "Exploratory/development data: all 54 source records and the former heldout partition have been inspected.",
+    "validation": "A new independent assay/cohort and frozen protocol are required before predictive or discovery claims.",
+    "formal_scope": "Reference reconstruction, translation and logical implications can be checked; empirical premises and molecular phenotypes are not established by those checks.",
+    "sources": "research/hbb-mechanisms.md and research/sources/manifest.json"
+  },
+  "hypotheses": [
+    {
+      "id": "HBB-REF-01",
+      "question": "Does the GRCh38 minus-strand exon model reconstruct NM_000518.5 and NP_000509.1 exactly, and map the known HbS/HbC DNA controls to the expected protein substitutions?",
+      "category": "reference_reconstruction_check",
+      "status": "defined_computational_check",
+      "assumptions": [
+        "GRCh38 NC_000011.10 and the named transcript/protein are the intended reference versions.",
+        "Coordinates are zero-based half-open; exons are reverse-complemented and joined in transcription order.",
+        "The standard nuclear genetic code and Met-inclusive protein numbering are used."
+      ],
+      "expected_observation": "A 628-nt spliced transcript, 444-nt CDS including termination codon, and 147-aa protein match the frozen references; c.20A>T gives p.Glu7Val (HbS), and c.19G>A gives p.Glu7Lys (HbC).",
+      "falsifier": "Any reference-base, reconstructed sequence, transcript/CDS length, protein sequence, or expected control amino-acid mismatch falsifies the implementation/reference-consistency claim.",
+      "available_evidence": [
+        {
+          "source": "S02",
+          "description": "Frozen GRCh38/UCSC/NCBI reference bundle and reconstruction checks."
+        },
+        {
+          "source": "S03",
+          "description": "Reviewed UniProt P68871 sequence, removed initiator Met, and HbS/HbC annotations."
+        },
+        {
+          "source": "S04",
+          "description": "Primary historical HbS chemical-difference report."
+        }
+      ],
+      "missing_evidence": [
+        "Reference sources can share RefSeq ancestry; matching them is not independent biological replication.",
+        "A correctly mapped protein substitution does not measure polymerization, oxygen affinity, RNA processing or clinical outcome."
+      ],
+      "discriminating_next_evidence": "Use an independently curated sequence/control set to challenge mapping, and independently measured molecular endpoints to test any downstream functional prediction."
+    },
+    {
+      "id": "HBB-ANNOT-02",
+      "question": "Which independently recomputed sequence consequences agree with the frozen ClinVar transcript annotations, and which variants retain additional untested RNA or regulatory mechanisms?",
+      "category": "annotation_concordance_and_scope_check",
+      "status": "defined_descriptive_analysis",
+      "assumptions": [
+        "Comparisons refer to the same transcript version and the same allele orientation.",
+        "The toolkit's coarse consequence groups and ClinVar source groups have an explicitly recorded mapping.",
+        "Concordance is evaluated without using source consequences to calculate codons."
+      ],
+      "expected_observation": "Computable coding changes have reproducible reference/alternate codons and amino-acid changes. Noncoding or splice-proximal variants remain unresolved downstream, even when their coarse source group agrees.",
+      "falsifier": "A coding source annotation incompatible with the independently translated codon under the same transcript falsifies concordance and must be reviewed rather than silently reclassified. A claim that all intronic or synonymous variants lack downstream effects is also invalidated by known splicing mechanisms.",
+      "available_evidence": [
+        {
+          "source": "S02",
+          "description": "Reference-derived transcript/codon model."
+        },
+        {
+          "source": "datasets/clinvar-hbb/manifest.json",
+          "description": "Hash-pinned 54-record source snapshot and versioned assertions."
+        },
+        {
+          "source": "S07",
+          "description": "Primary evidence that an intronic point mutation can create an additional splice site."
+        },
+        {
+          "source": "S14-S16",
+          "description": "Evidence that RNA fate is context-dependent and not fully determined by a simple consequence class."
+        }
+      ],
+      "missing_evidence": [
+        "No comprehensive allele-matched RNA isoform, transcript abundance, protein quantity or functional-assay coverage is available for all 54 assertions. The separately integrated reporter assay has two exact allele overlaps; that endpoint is not endogenous HBB expression or protein physiology.",
+        "Alternative transcripts, disease/zygosity-specific contexts and regulatory haplotypes are not comprehensively modeled.",
+        "The explored fixture cannot serve as untouched validation for revised annotations or predictors."
+      ],
+      "discriminating_next_evidence": "Freeze transcript-specific variant/RNA assay pairs from an independent source and compare predicted coding and splice-context features with measured isoforms and abundance."
+    },
+    {
+      "id": "HBB-EQUIV-03",
+      "question": "Do c.327C>A and c.327C>G encode the same p.Asn109Lys substitution, while remaining distinct DNA assertions rather than independent functional replications?",
+      "category": "conditional_molecular_equivalence",
+      "status": "defined_computational_check",
+      "assumptions": [
+        "Both alleles use NM_000518.5 and the reference codon at c.325_327 is AAC.",
+        "Only the directly translated protein change is being compared.",
+        "Equivalent translated protein sequences do not imply equivalent RNA processing, abundance, linked haplotype or organism phenotype."
+      ],
+      "expected_observation": "AAC becomes AAA or AAG; both translate Asn109 to Lys. The two DNA allele identities remain distinct and occur at the same locus, so they stay in the same dataset partition.",
+      "falsifier": "Different translated residue changes under the same reference falsify the codon-equivalence claim. Independent RNA measurements showing different processing or expression would falsify any stronger claim of complete molecular equivalence, but not the narrow translation result.",
+      "available_evidence": [
+        {
+          "source": "datasets/clinvar-hbb/source.json",
+          "description": "VCV003336287.4 and VCV004847669.1 report the two DNA alleles and the same protein change."
+        },
+        {
+          "source": "S02",
+          "description": "Reference codon reconstruction without clinical-label inference."
+        },
+        {
+          "source": "S03",
+          "description": "Reviewed Hb Presbyterian / p.Asn109Lys annotation."
+        },
+        {
+          "source": "S17",
+          "description": "Primary bibliographic report identifies Presbyterian as a low-oxygen-affinity variant."
+        }
+      ],
+      "missing_evidence": [
+        "Study/cohort independence of the two clinical submissions.",
+        "Allele-specific RNA, abundance, splicing and haplotype measurements.",
+        "Direct biochemical measurements for each exact submitted DNA allele."
+      ],
+      "discriminating_next_evidence": "Compare independent transcript and protein measurements for the two DNA alleles while preserving their distinct sequence and haplotype identities."
+    },
+    {
+      "id": "HBB-JUNCTION-04",
+      "question": "Is c.92G>T / p.Arg31Met a coding substitution at an exonic splice boundary, and could an additional RNA-processing effect distinguish it from a protein-only explanation?",
+      "category": "mechanistic_candidate_with_unvalidated_biological_extension",
+      "status": "untested_biological_hypothesis",
+      "assumptions": [
+        "The first coding exon contributes 92 nt, so intron 1 interrupts codon 31 after two bases.",
+        "An exonic splice-proximity flag is a candidate feature, not proof of a splice defect.",
+        "Any measured effect must be interpreted in a relevant erythroid context and under a named transcript/haplotype."
+      ],
+      "expected_observation": "Reference projection places c.92 at the last coding base of exon 1, and the spliced codon translates Arg31 to Met. The variant should retain both coding and exonic-boundary context; a possible additional splice effect remains unresolved.",
+      "falsifier": "A reference projection away from that exon boundary or a different translated change falsifies the computational premise. For the biological extension, sufficiently sensitive matched RNA observations showing unchanged isoform use and abundance would argue against an additional splice-processing explanation in that context.",
+      "available_evidence": [
+        {
+          "source": "S02",
+          "description": "Exon coordinates, coding-phase reconstruction and codon mapping."
+        },
+        {
+          "source": "datasets/clinvar-hbb/source.json",
+          "description": "VCV003766927.1 reports c.92G>T / p.Arg31Met as a likely-pathogenic clinical assertion."
+        },
+        {
+          "source": "S07",
+          "description": "Established precedent that HBB intronic sequence changes can alter splice-site use; this does not establish the effect of c.92G>T."
+        }
+      ],
+      "missing_evidence": [
+        "Direct RNA splicing and abundance measurements for c.92G>T in an appropriate model.",
+        "A comparison that separates transcript-processing effects from altered-protein effects.",
+        "Independent clinical and biochemical characterization with genotype and condition specified."
+      ],
+      "discriminating_next_evidence": "Independent RNA isoform/abundance evidence paired with protein production and behavior for the same allele; no splicing defect is asserted from sequence proximity alone."
+    },
+    {
+      "id": "HBB-COVERAGE-05",
+      "question": "How much of the reference-defined HBB SNV universe and its mechanistic/evidence-quality diversity is absent from the current fixture?",
+      "category": "coverage_and_information_gap_audit",
+      "status": "defined_descriptive_analysis",
+      "assumptions": [
+        "The saturation denominator is the 1608-bp annotated transcript locus, not the whole human genome or the wider genomic reference slice.",
+        "Only the three non-reference unambiguous substitutions per position are enumerated.",
+        "Computational consequence categories are not counts of validated functional defects."
+      ],
+      "expected_observation": "The locus contains 4824 possible SNVs, including 1332 CDS substitutions and 24 substitutions at canonical intronic splice-core positions. Only 53 of the 54 fixture variants lie within that locus, including 17 coding records; HbS/HbC, annotated heme-interaction His64/His93 substitutions and canonical splice-class source rows are absent.",
+      "falsifier": "Reference-coordinate or allele-set reconciliation yielding a different universe or presence of those controls falsifies these coverage counts. Broad functional-generalization claims are unsupported unless a new independently selected benchmark covers the missing mechanisms.",
+      "available_evidence": [
+        {
+          "source": "S02",
+          "description": "Reference-defined transcript span, exons/CDS and splice boundaries."
+        },
+        {
+          "source": "datasets/clinvar-hbb/manifest.json",
+          "description": "The frozen selected variant inventory; one upstream record lies outside the transcript span."
+        },
+        {
+          "source": "S03",
+          "description": "Reviewed heme-binding residues and known HbS/HbC controls."
+        },
+        {
+          "source": "research/clinvar-audit.md",
+          "description": "Review-status, condition-missingness and source-selection audit."
+        }
+      ],
+      "missing_evidence": [
+        "Population-representative variants, independently measured molecular effects and structural/CNV/indel coverage.",
+        "Independent organization/cohort identities and disease/zygosity-specific phenotype labels.",
+        "A prospective evaluation sample whose selection was not informed by the present model or explored labels."
+      ],
+      "discriminating_next_evidence": "Freeze an independently sourced functional benchmark covering several mechanisms and evidence qualities before model selection; report coverage and missingness alongside performance."
+    }
+  ]
+}

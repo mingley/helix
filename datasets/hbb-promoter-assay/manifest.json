@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "dataset_id": "hbb-promoter-mpra",
+  "assay_urn": "urn:mavedb:00000018-a-1",
+  "source_url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000018-a-1",
+  "score_url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000018-a-1/scores",
+  "retrieved_at": "2026-10-27T05:35:41.622857+00:00",
+  "assembly": "GRCh38",
+  "chromosome": "11",
+  "target_start": 5227021,
+  "target_end": 5227208,
+  "target_strand": "+",
+  "gene_transcription_strand": "-",
+  "expected_rows": 623,
+  "cell_line": "HEL 92.1.7",
+  "score_name": "score",
+  "score_units": "log2 reporter-expression effect; linear-model coefficient",
+  "replicates": {
+    "cultures": 3,
+    "library": "Same constructed library across transfections",
+    "independent_studies": 1,
+    "separate_replicate_scores_in_this_csv": false
+  },
+  "source_coordinate_convention": "One-based inclusive; verified by exact sequence mapping",
+  "reference_fasta_sha256": "b20b21548d2110ba66193788a1f5ab2ae9af5c46fe920da761d2e3f96416337b",
+  "source_target_sequence_sha256": "4e7864ac41060a0caf76996f31ffcd06e2919341c627a6e301fcaef4be5ae0c0",
+  "reference_5prime_utr_interval": [
+    5227021,
+    5227071
+  ],
+  "upstream_interval": [
+    5227071,
+    5227208
+  ],
+  "data_license": {
+    "longName": "CC0 (Public domain)",
+    "shortName": "CC0",
+    "active": true,
+    "link": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "version": "1.0",
+    "id": 1,
+    "recordType": "ShortLicense"
+  },
+  "validation": {
+    "total_rows": 623,
+    "snv_rows": 561,
+    "equality_rows": 62,
+    "other_representation_rows": 0,
+    "finite_score_rows": 623,
+    "missing_score_rows": 0,
+    "invalid_score_rows": 0
+  },
+  "sources": [
+    {
+      "file": "metadata.json",
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000018-a-1",
+      "content_type": "application/json",
+      "retrieved_at": "2026-10-27T05:35:41.622857+00:00",
+      "sha256": "1b3383dca72b028fcd484150a249766468d343cb3a81907e64281a7af7e2f11c"
+    },
+    {
+      "file": "scores.csv",
+      "url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000018-a-1/scores",
+      "content_type": "text/csv; charset=utf-8",
+      "retrieved_at": "2026-10-27T05:35:41.622857+00:00",
+      "sha256": "ec8b189f70c740f0ab2a11863a0a464fb421d93fefb9da1240cd3831872f57c6"
+    },
+    {
+      "file": "license-scope.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6827219/fullTextXML",
+      "retrieved_at": "2026-10-27T05:35:41.622857+00:00",
+      "source_document_sha256": "c63458926cf0959042343877b59b65beb0a07a9c873ef095900b88aaf88d5b39"
+    }
+  ],
+  "files": {
+    "metadata.json": "1b3383dca72b028fcd484150a249766468d343cb3a81907e64281a7af7e2f11c",
+    "scores.csv": "ec8b189f70c740f0ab2a11863a0a464fb421d93fefb9da1240cd3831872f57c6",
+    "target.fasta": "7c40713bc2d76b770a194f338c01a02638994f38a5a83a254f191b03e4390864",
+    "license-scope.json": "95be55e9d60c58132dafc9c241f5926ee24c9dd14ab75f6a73c3405152e7a646"
+  },
+  "analysis_scope": "Acquisition, reference mapping and explicit missingness/representation accounting only; no fitted model, thresholds or outcome-pattern analysis"
+}

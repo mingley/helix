@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "assembly": "GRCh38",
+  "gene": "HBB",
+  "chromosome": "11",
+  "sequence_start": 5225000,
+  "sequence_end": 5227500,
+  "transcript": {
+    "accession": "NM_000518.5",
+    "protein_accession": "NP_000509.1",
+    "strand": "-",
+    "tx_start": 5225463,
+    "tx_end": 5227071,
+    "cds_start": 5225597,
+    "cds_end": 5227021,
+    "exons": [
+      [
+        5225463,
+        5225726
+      ],
+      [
+        5226576,
+        5226799
+      ],
+      [
+        5226929,
+        5227071
+      ]
+    ]
+  },
+  "sources": [
+    {
+      "file": "annotation.json",
+      "url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=ncbiRefSeq;chrom=chr11;start=5225000;end=5227500",
+      "retrieved_at": "2026-10-27T05:19:40.567391+00:00",
+      "sha256": "95500e64345f528ee3a16194e444b892c879297f4baec2ecd64c40e2e1239df0"
+    },
+    {
+      "file": "genomic.fasta",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_000011.10&seq_start=5225001&seq_stop=5227500&rettype=fasta&retmode=text",
+      "retrieved_at": "2026-10-27T05:19:40.567391+00:00",
+      "sha256": "b20b21548d2110ba66193788a1f5ab2ae9af5c46fe920da761d2e3f96416337b"
+    },
+    {
+      "file": "transcript.fasta",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NM_000518.5&rettype=fasta&retmode=text",
+      "retrieved_at": "2026-10-27T05:19:40.567391+00:00",
+      "sha256": "ec3dafd5f4db5198cf12c778dc664f90c79305dfabc9483b22f5eaef34db6fbc"
+    },
+    {
+      "file": "protein.fasta",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=NP_000509.1&rettype=fasta&retmode=text",
+      "retrieved_at": "2026-10-27T05:19:40.567391+00:00",
+      "sha256": "8d05196c8546bce9e75217ab73e377857b9bf903e23f7d12bff61e73c1e7cb77"
+    },
+    {
+      "file": "transcript.gb",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NM_000518.5&rettype=gb&retmode=text",
+      "retrieved_at": "2026-10-27T05:19:40.567391+00:00",
+      "sha256": "c114b998f526a13ce7029a484f7d2679de9bc9f50a533d6e86ce5e644ca6c5d9"
+    }
+  ],
+  "files": {
+    "annotation.json": "95500e64345f528ee3a16194e444b892c879297f4baec2ecd64c40e2e1239df0",
+    "genomic.fasta": "b20b21548d2110ba66193788a1f5ab2ae9af5c46fe920da761d2e3f96416337b",
+    "protein.fasta": "8d05196c8546bce9e75217ab73e377857b9bf903e23f7d12bff61e73c1e7cb77",
+    "transcript.fasta": "ec3dafd5f4db5198cf12c778dc664f90c79305dfabc9483b22f5eaef34db6fbc",
+    "transcript.gb": "c114b998f526a13ce7029a484f7d2679de9bc9f50a533d6e86ce5e644ca6c5d9"
+  }
+}

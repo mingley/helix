@@ -1,5 +1,26 @@
 # Research milestones
 
+## Implemented: reference-grounded HBB research and measured regulatory evidence
+
+- Reconstruct the GRCh38 minus-strand transcript, coding sequence and RefSeq
+  protein, cross-check reviewed UniProt, and verify known HbS/HbC controls.
+- Enumerate 4,824 local SNVs with coding, canonical splice and boundary context.
+- Recompute all 54 frozen coarse consequences; report the 17 coding records
+  separately and preserve the limited interpretation of agreement.
+- Audit selection, source review, missing conditions, nearby train/test loci
+  and the now-exposed clinical benchmark.
+- Freeze a primary-chromosome RefSeq atlas with merged coverage and HBB neighbors.
+- Integrate a separately produced HBB promoter/5-prime-UTR MPRA: 561 SNV effect
+  estimates, exact plus-strand target mapping, typed log2 reporter units, source
+  context and 62 equality rows preserved without guessing their meaning.
+- Evaluate computational components of five source-backed hypotheses; retain
+  biological extensions as untested.
+- Generate deterministic reports, a standalone interactive explorer, a revision
+  ledger and scoped Lean properties without equating them with biological truth.
+
+See [the current goal](../research/GOAL.md) and
+[research synthesis](../research/hbb-mechanisms.md).
+
 ## Implemented: auditable computational vertical slice
 
 - Nine-crate Rust workspace with assembly-indexed variants and reference checks.
@@ -12,11 +33,19 @@
 
 ## Next: independent functional benchmark
 
-Choose a public functional assay and separate data by independent experimental
+The HBB regulatory dataset is acquired and descriptively integrated; it has not
+been used to fit or validate a regulatory predictor. Its protocol discloses
+availability-row exposure and the source's additive-regression limitations.
+The next task is a predeclared prediction study with grouped experimental units,
+meaningful context boundaries, baselines and uncertainty.
+
+Choose any additional public functional assay and separate data by independent experimental
 unit. One possible distinct target is BRCA1 saturation genome editing from
 [Findlay et al., Nature 2018](https://doi.org/10.1038/s41586-018-0461-z).
-Inspect licensing, reference assembly, isoform and assay endpoint first. This
-dataset is not included or claimed as validated.
+Inspect licensing, reference assembly, isoform and assay endpoint first. The
+BRCA1 dataset is not included or claimed as validated; the
+[acquisition review](../research/independent-assay-plan.md) documents unresolved
+historical/current reuse terms and why the HBB assay was selected instead.
 
 Acceptance criteria:
 

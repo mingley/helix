@@ -1,0 +1,19 @@
+[package]
+name = "genome-evidence-audit"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+genome-data = { path = "../genome-data" }
+genome-types = { path = "../genome-types" }
+genome-inference = { path = "../genome-inference" }
+
+[dev-dependencies]
+tempfile.workspace = true
+
+[lints]
+workspace = true

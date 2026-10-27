@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "assembly": "GRCh38/hg38",
+  "annotation": "ncbiRefSeqCurated",
+  "coordinate_system": "zero-based half-open",
+  "retrieved_at": "2026-10-27T05:25:00.289314+00:00",
+  "sources": [
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_012920.1&rettype=gb&retmode=xml",
+      "last_modified": null,
+      "bytes": 176955,
+      "sha256": "a97065e862ae56799ca419378fea8acb4453c3cf3733bf88830f06573f7fe6f0",
+      "file": "mitochondrial-reference.xml"
+    },
+    {
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/ncbiRefSeqCurated.txt.gz",
+      "last_modified": "Wed, 13 Aug 2025 15:30:40 GMT",
+      "bytes": 4801131,
+      "sha256": "67090326b606658bdabdfe5f8dcb97b7943ac802c7945399522be7174ec021ca",
+      "file": "ncbiRefSeqCurated.txt.gz"
+    },
+    {
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/ncbiRefSeqCurated.sql",
+      "last_modified": "Wed, 13 Aug 2025 15:30:40 GMT",
+      "bytes": 2043,
+      "sha256": "46609be6ff019b56e27fb665fd6f2743d099b66bfdc769dd713bac1eb9274a9b",
+      "file": "ncbiRefSeqCurated.sql"
+    },
+    {
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/ncbiRefSeqLink.txt.gz",
+      "last_modified": "Wed, 13 Aug 2025 15:30:46 GMT",
+      "bytes": 12902516,
+      "sha256": "668e02d0c438d1012688cae73018e781135ec895fc58cd86e5e06517a25389f4",
+      "file": "ncbiRefSeqLink.txt.gz"
+    },
+    {
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/ncbiRefSeqLink.sql",
+      "last_modified": "Wed, 13 Aug 2025 15:30:46 GMT",
+      "bytes": 2105,
+      "sha256": "b3c34dd5f5f08409816efb8e985051f3e8f6d7a6e4e99782be6cd89c5a8c9c54",
+      "file": "ncbiRefSeqLink.sql"
+    },
+    {
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/chromInfo.txt.gz",
+      "last_modified": "Wed, 26 Oct 2022 08:39:12 GMT",
+      "bytes": 6159,
+      "sha256": "6788b62a18f994c9357b1afb132a832a7377106e4f542f9e84b4f6d63b131d97",
+      "file": "chromInfo.txt.gz"
+    },
+    {
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/chromInfo.sql",
+      "last_modified": "Wed, 26 Oct 2022 08:39:12 GMT",
+      "bytes": 1435,
+      "sha256": "6c78f0be7d27212b4ccfedc45b664f703187c4747feda49f9d06efc58d8c754f",
+      "file": "chromInfo.sql"
+    }
+  ],
+  "primary_chromosomes": [
+    "chr1",
+    "chr2",
+    "chr3",
+    "chr4",
+    "chr5",
+    "chr6",
+    "chr7",
+    "chr8",
+    "chr9",
+    "chr10",
+    "chr11",
+    "chr12",
+    "chr13",
+    "chr14",
+    "chr15",
+    "chr16",
+    "chr17",
+    "chr18",
+    "chr19",
+    "chr20",
+    "chr21",
+    "chr22",
+    "chrX",
+    "chrY",
+    "chrM"
+  ],
+  "files": {
+    "chromInfo.sql": "6c78f0be7d27212b4ccfedc45b664f703187c4747feda49f9d06efc58d8c754f",
+    "chromInfo.txt.gz": "6788b62a18f994c9357b1afb132a832a7377106e4f542f9e84b4f6d63b131d97",
+    "genes.json": "e30baf38927184d6b4d940a335ecdda5075526f35b2ce224e52b0e97a1c78090",
+    "mitochondrial-reference.xml": "a97065e862ae56799ca419378fea8acb4453c3cf3733bf88830f06573f7fe6f0",
+    "ncbiRefSeqCurated.sql": "46609be6ff019b56e27fb665fd6f2743d099b66bfdc769dd713bac1eb9274a9b",
+    "ncbiRefSeqCurated.txt.gz": "67090326b606658bdabdfe5f8dcb97b7943ac802c7945399522be7174ec021ca",
+    "ncbiRefSeqLink.sql": "b3c34dd5f5f08409816efb8e985051f3e8f6d7a6e4e99782be6cd89c5a8c9c54",
+    "ncbiRefSeqLink.txt.gz": "668e02d0c438d1012688cae73018e781135ec895fc58cd86e5e06517a25389f4",
+    "summary.json": "bbff1aabd5c0b2b6c043ae1a9e5c0951abde1bf12ff27b6f88532195c10789d6"
+  }
+}

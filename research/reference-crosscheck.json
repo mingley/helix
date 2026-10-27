@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "purpose": "Independent implementation crosscheck of strand-aware HBB sequence mechanisms, not independent biological replication.",
+  "checked_at": "2026-10-27T05:25:28.365547+00:00",
+  "reference_bundle": "datasets/hbb-reference",
+  "reference_manifest_sha256": "07e93d83339de7eef8f5dfe46279847bff52c839f75c1d2b93a59d9756b6b2ae",
+  "existing_clinvar_manifest_sha256": "a8b3e7b603cec4a402dd656fe959dfa6e155fbcd0a9af125b24e34fb35370fe4",
+  "mechanics_source_sha256": "9e616994f790ff4ff939a1bee23e4e6a3c3da93479795b7a76999bcb8f8e0ad9",
+  "independent_method": [
+    "Read pinned genomic, transcript and protein FASTAs and exon/CDS coordinates; do not import the Rust mechanism implementation.",
+    "Enumerate exonic genomic positions in descending genomic order because HBB is on the negative strand.",
+    "Filter that position list by genomic CDS bounds and complement the genomic base at each position to reconstruct the spliced CDS.",
+    "Locate each variant in the independent transcript/CDS position lists, replace the complemented alternate base, and slice the containing codon.",
+    "Use the pinned RefSeq protein for the reference residue and the standard genetic code for the altered codon; compare every field with the Rust engine through a temporary external client."
+  ],
+  "genetic_code_source": "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi#SG1",
+  "source_controls": {
+    "retrieval_request": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=clinvar&id=446729%2C15333%2C15302%2C15245%2C15213%2C15202%2C15126&retmode=json",
+    "response_sha256": "6b37e3284b69273ebe47219afb3779f1ab47c41c91822ceb89d85ea3b05a6896",
+    "records": [
+      {
+        "accession_version": "VCV000015333.183",
+        "clinvar_uid": "15333",
+        "title": "NM_000518.5(HBB):c.20A>T (p.Glu7Val)",
+        "canonical_spdi": "NC_000011.10:5227001:T:A",
+        "aliases": [
+          "E6V",
+          "HbS"
+        ],
+        "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/15333/"
+      },
+      {
+        "accession_version": "VCV000015126.162",
+        "clinvar_uid": "15126",
+        "title": "NM_000518.4(HBB):c.19G>A (p.Glu7Lys)",
+        "canonical_spdi": "NC_000011.10:5227002:C:T",
+        "aliases": [
+          "E6K",
+          "HbC"
+        ],
+        "source_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/15126/"
+      }
+    ]
+  },
+  "results": [
+    {
+      "name": "HbS",
+      "interpretation": "Canonical HbS: RefSeq p.Glu7Val; historical mature-chain beta6 Glu>Val.",
+      "expected": {
+        "name": "HbS",
+        "genomic_position_0based": 5227001,
+        "genomic_reference": "T",
+        "genomic_alternate": "A",
+        "transcript_position_1based": 70,
+        "cds_position_1based": 20,
+        "protein_position_1based": 7,
+        "reference_codon": "GAG",
+        "alternate_codon": "GTG",
+        "reference_amino_acid": "E",
+        "alternate_amino_acid": "V"
+      },
+      "mechanics_annotation": {
+        "alternate": "A",
+        "alternate_amino_acid": "V",
+        "alternate_codon": "GTG",
+        "cds_position_1based": 20,
+        "consequence": "missense",
+        "effect": "missense",
+        "genomic_position_0based": 5227001,
+        "notes": [
+          "Sequence-derived consequence only; pathogenicity, penetrance and clinical actionability are not inferred.",
+          "Protein coordinates include the initiator methionine; traditional mature beta-globin numbering differs by one."
+        ],
+        "protein_accession": "NP_000509.1",
+        "protein_position_1based": 7,
+        "reference": "T",
+        "reference_amino_acid": "E",
+        "reference_codon": "GAG",
+        "region": "coding",
+        "splice_proximity": [],
+        "splice_sites": [],
+        "strand": "-",
+        "transcript_accession": "NM_000518.5",
+        "transcript_position_1based": 70,
+        "variant_key": "GRCh38:11:5227001:T>A"
+      },
+      "comparison_fields": {
+        "genomic_position_0based": true,
+        "transcript_position_1based": true,
+        "cds_position_1based": true,
+        "protein_position_1based": true,
+        "reference_codon": true,
+        "alternate_codon": true,
+        "reference_amino_acid": true,
+        "alternate_amino_acid": true,
+        "genomic_reference": true,
+        "genomic_alternate": true
+      },
+      "implementation_agrees": true
+    },
+    {
+      "name": "requested_HbC_T>G",
+      "interpretation": "The requested alias is incorrect: chr11:5227002 T>G is p.Glu7Ala, not HbC.",
+      "expected": {
+        "name": "requested_HbC_T>G",
+        "genomic_position_0based": 5227001,
+        "genomic_reference": "T",
+        "genomic_alternate": "G",
+        "transcript_position_1based": 70,
+        "cds_position_1based": 20,
+        "protein_position_1based": 7,
+        "reference_codon": "GAG",
+        "alternate_codon": "GCG",
+        "reference_amino_acid": "E",
+        "alternate_amino_acid": "A"
+      },
+      "mechanics_annotation": {
+        "alternate": "G",
+        "alternate_amino_acid": "A",
+        "alternate_codon": "GCG",
+        "cds_position_1based": 20,
+        "consequence": "missense",
+        "effect": "missense",
+        "genomic_position_0based": 5227001,
+        "notes": [
+          "Sequence-derived consequence only; pathogenicity, penetrance and clinical actionability are not inferred.",
+          "Protein coordinates include the initiator methionine; traditional mature beta-globin numbering differs by one."
+        ],
+        "protein_accession": "NP_000509.1",
+        "protein_position_1based": 7,
+        "reference": "T",
+        "reference_amino_acid": "E",
+        "reference_codon": "GAG",
+        "region": "coding",
+        "splice_proximity": [],
+        "splice_sites": [],
+        "strand": "-",
+        "transcript_accession": "NM_000518.5",
+        "transcript_position_1based": 70,
+        "variant_key": "GRCh38:11:5227001:T>G"
+      },
+      "comparison_fields": {
+        "genomic_position_0based": true,
+        "transcript_position_1based": true,
+        "cds_position_1based": true,
+        "protein_position_1based": true,
+        "reference_codon": true,
+        "alternate_codon": true,
+        "reference_amino_acid": true,
+        "alternate_amino_acid": true,
+        "genomic_reference": true,
+        "genomic_alternate": true
+      },
+      "implementation_agrees": true
+    },
+    {
+      "name": "HbC_corrected",
+      "interpretation": "Canonical HbC: RefSeq p.Glu7Lys; historical mature-chain beta6 Glu>Lys.",
+      "expected": {
+        "name": "HbC_corrected",
+        "genomic_position_0based": 5227002,
+        "genomic_reference": "C",
+        "genomic_alternate": "T",
+        "transcript_position_1based": 69,
+        "cds_position_1based": 19,
+        "protein_position_1based": 7,
+        "reference_codon": "GAG",
+        "alternate_codon": "AAG",
+        "reference_amino_acid": "E",
+        "alternate_amino_acid": "K"
+      },
+      "mechanics_annotation": {
+        "alternate": "T",
+        "alternate_amino_acid": "K",
+        "alternate_codon": "AAG",
+        "cds_position_1based": 19,
+        "consequence": "missense",
+        "effect": "missense",
+        "genomic_position_0based": 5227002,
+        "notes": [
+          "Sequence-derived consequence only; pathogenicity, penetrance and clinical actionability are not inferred.",
+          "Protein coordinates include the initiator methionine; traditional mature beta-globin numbering differs by one."
+        ],
+        "protein_accession": "NP_000509.1",
+        "protein_position_1based": 7,
+        "reference": "C",
+        "reference_amino_acid": "E",
+        "reference_codon": "GAG",
+        "region": "coding",
+        "splice_proximity": [],
+        "splice_sites": [],
+        "strand": "-",
+        "transcript_accession": "NM_000518.5",
+        "transcript_position_1based": 69,
+        "variant_key": "GRCh38:11:5227002:C>T"
+      },
+      "comparison_fields": {
+        "genomic_position_0based": true,
+        "transcript_position_1based": true,
+        "cds_position_1based": true,
+        "protein_position_1based": true,
+        "reference_codon": true,
+        "alternate_codon": true,
+        "reference_amino_acid": true,
+        "alternate_amino_acid": true,
+        "genomic_reference": true,
+        "genomic_alternate": true
+      },
+      "implementation_agrees": true
+    },
+    {
+      "name": "His78Leu",
+      "interpretation": "Existing ClinVar snapshot: VCV004685642.1, c.233A>T, p.His78Leu.",
+      "expected": {
+        "name": "His78Leu",
+        "genomic_position_0based": 5226658,
+        "genomic_reference": "T",
+        "genomic_alternate": "A",
+        "transcript_position_1based": 283,
+        "cds_position_1based": 233,
+        "protein_position_1based": 78,
+        "reference_codon": "CAC",
+        "alternate_codon": "CTC",
+        "reference_amino_acid": "H",
+        "alternate_amino_acid": "L"
+      },
+      "mechanics_annotation": {
+        "alternate": "A",
+        "alternate_amino_acid": "L",
+        "alternate_codon": "CTC",
+        "cds_position_1based": 233,
+        "consequence": "missense",
+        "effect": "missense",
+        "genomic_position_0based": 5226658,
+        "notes": [
+          "Sequence-derived consequence only; pathogenicity, penetrance and clinical actionability are not inferred.",
+          "Protein coordinates include the initiator methionine; traditional mature beta-globin numbering differs by one."
+        ],
+        "protein_accession": "NP_000509.1",
+        "protein_position_1based": 78,
+        "reference": "T",
+        "reference_amino_acid": "H",
+        "reference_codon": "CAC",
+        "region": "coding",
+        "splice_proximity": [],
+        "splice_sites": [],
+        "strand": "-",
+        "transcript_accession": "NM_000518.5",
+        "transcript_position_1based": 283,
+        "variant_key": "GRCh38:11:5226658:T>A"
+      },
+      "comparison_fields": {
+        "genomic_position_0based": true,
+        "transcript_position_1based": true,
+        "cds_position_1based": true,
+        "protein_position_1based": true,
+        "reference_codon": true,
+        "alternate_codon": true,
+        "reference_amino_acid": true,
+        "alternate_amino_acid": true,
+        "genomic_reference": true,
+        "genomic_alternate": true
+      },
+      "implementation_agrees": true
+    },
+    {
+      "name": "His98Gln",
+      "interpretation": "Existing ClinVar snapshot: VCV003766487.1, c.294C>A, p.His98Gln.",
+      "expected": {
+        "name": "His98Gln",
+        "genomic_position_0based": 5226597,
+        "genomic_reference": "G",
+        "genomic_alternate": "T",
+        "transcript_position_1based": 344,
+        "cds_position_1based": 294,
+        "protein_position_1based": 98,
+        "reference_codon": "CAC",
+        "alternate_codon": "CAA",
+        "reference_amino_acid": "H",
+        "alternate_amino_acid": "Q"
+      },
+      "mechanics_annotation": {
+        "alternate": "T",
+        "alternate_amino_acid": "Q",
+        "alternate_codon": "CAA",
+        "cds_position_1based": 294,
+        "consequence": "missense",
+        "effect": "missense",
+        "genomic_position_0based": 5226597,
+        "notes": [
+          "Sequence-derived consequence only; pathogenicity, penetrance and clinical actionability are not inferred.",
+          "Protein coordinates include the initiator methionine; traditional mature beta-globin numbering differs by one."
+        ],
+        "protein_accession": "NP_000509.1",
+        "protein_position_1based": 98,
+        "reference": "G",
+        "reference_amino_acid": "H",
+        "reference_codon": "CAC",
+        "region": "coding",
+        "splice_proximity": [],
+        "splice_sites": [],
+        "strand": "-",
+        "transcript_accession": "NM_000518.5",
+        "transcript_position_1based": 344,
+        "variant_key": "GRCh38:11:5226597:G>T"
+      },
+      "comparison_fields": {
+        "genomic_position_0based": true,
+        "transcript_position_1based": true,
+        "cds_position_1based": true,
+        "protein_position_1based": true,
+        "reference_codon": true,
+        "alternate_codon": true,
+        "reference_amino_acid": true,
+        "alternate_amino_acid": true,
+        "genomic_reference": true,
+        "genomic_alternate": true
+      },
+      "implementation_agrees": true
+    },
+    {
+      "name": "Asn109Lys_C>A",
+      "interpretation": "Existing ClinVar snapshot: VCV004847669.1, c.327C>A, p.Asn109Lys.",
+      "expected": {
+        "name": "Asn109Lys_C>A",
+        "genomic_position_0based": 5225714,
+        "genomic_reference": "G",
+        "genomic_alternate": "T",
+        "transcript_position_1based": 377,
+        "cds_position_1based": 327,
+        "protein_position_1based": 109,
+        "reference_codon": "AAC",
+        "alternate_codon": "AAA",
+        "reference_amino_acid": "N",
+        "alternate_amino_acid": "K"
+      },
+      "mechanics_annotation": {
+        "alternate": "T",
+        "alternate_amino_acid": "K",
+        "alternate_codon": "AAA",
+        "cds_position_1based": 327,
+        "consequence": "missense",
+        "effect": "missense",
+        "genomic_position_0based": 5225714,
+        "notes": [
+          "Sequence-derived consequence only; pathogenicity, penetrance and clinical actionability are not inferred.",
+          "Protein coordinates include the initiator methionine; traditional mature beta-globin numbering differs by one."
+        ],
+        "protein_accession": "NP_000509.1",
+        "protein_position_1based": 109,
+        "reference": "G",
+        "reference_amino_acid": "N",
+        "reference_codon": "AAC",
+        "region": "coding",
+        "splice_proximity": [],
+        "splice_sites": [],
+        "strand": "-",
+        "transcript_accession": "NM_000518.5",
+        "transcript_position_1based": 377,
+        "variant_key": "GRCh38:11:5225714:G>T"
+      },
+      "comparison_fields": {
+        "genomic_position_0based": true,
+        "transcript_position_1based": true,
+        "cds_position_1based": true,
+        "protein_position_1based": true,
+        "reference_codon": true,
+        "alternate_codon": true,
+        "reference_amino_acid": true,
+        "alternate_amino_acid": true,
+        "genomic_reference": true,
+        "genomic_alternate": true
+      },
+      "implementation_agrees": true
+    },
+    {
+      "name": "Asn109Lys_C>G",
+      "interpretation": "Existing ClinVar snapshot: VCV003336287.4, c.327C>G, p.Asn109Lys.",
+      "expected": {
+        "name": "Asn109Lys_C>G",
+        "genomic_position_0based": 5225714,
+        "genomic_reference": "G",
+        "genomic_alternate": "C",
+        "transcript_position_1based": 377,
+        "cds_position_1based": 327,
+        "protein_position_1based": 109,
+        "reference_codon": "AAC",
+        "alternate_codon": "AAG",
+        "reference_amino_acid": "N",
+        "alternate_amino_acid": "K"
+      },
+      "mechanics_annotation": {
+        "alternate": "C",
+        "alternate_amino_acid": "K",
+        "alternate_codon": "AAG",
+        "cds_position_1based": 327,
+        "consequence": "missense",
+        "effect": "missense",
+        "genomic_position_0based": 5225714,
+        "notes": [
+          "Sequence-derived consequence only; pathogenicity, penetrance and clinical actionability are not inferred.",
+          "Protein coordinates include the initiator methionine; traditional mature beta-globin numbering differs by one."
+        ],
+        "protein_accession": "NP_000509.1",
+        "protein_position_1based": 109,
+        "reference": "G",
+        "reference_amino_acid": "N",
+        "reference_codon": "AAC",
+        "region": "coding",
+        "splice_proximity": [],
+        "splice_sites": [],
+        "strand": "-",
+        "transcript_accession": "NM_000518.5",
+        "transcript_position_1based": 377,
+        "variant_key": "GRCh38:11:5225714:G>C"
+      },
+      "comparison_fields": {
+        "genomic_position_0based": true,
+        "transcript_position_1based": true,
+        "cds_position_1based": true,
+        "protein_position_1based": true,
+        "reference_codon": true,
+        "alternate_codon": true,
+        "reference_amino_acid": true,
+        "alternate_amino_acid": true,
+        "genomic_reference": true,
+        "genomic_alternate": true
+      },
+      "implementation_agrees": true
+    }
+  ],
+  "summary": {
+    "alleles_checked": 7,
+    "implementation_mismatches": 0,
+    "requested_alias_corrections": 1
+  },
+  "limitations": [
+    "This validates agreement of independent implementations on shared frozen reference inputs; it does not supply independent clinical or functional observations.",
+    "RefSeq protein positions include the initiator methionine; historical mature beta-globin residue numbers are one lower.",
+    "ClinVar HbC currently names NM_000518.4 in its title; the canonical GRCh38 SPDI was independently projected onto NM_000518.5, rather than silently mixing transcript coordinate versions.",
+    "The source-control retrieval also returns haplotypes; only single-variant records matching the stated SPDI were accepted.",
+    "Consequence/codon agreement does not establish effect size, penetrance, tissue-specific function, splice disruption, or clinical utility."
+  ]
+}

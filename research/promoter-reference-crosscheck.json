@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "purpose": "Independent exact-reference mapping of the HBB promoter MPRA target; no score/outcome analysis or model fitting.",
+  "checked_at": "2026-10-27T05:33:34.036333+00:00",
+  "source": {
+    "score_set_urn": "urn:mavedb:00000018-a-1",
+    "metadata_url": "https://api.mavedb.org/api/v1/score-sets/urn:mavedb:00000018-a-1",
+    "metadata_snapshot_sha256": "1b3383dca72b028fcd484150a249766468d343cb3a81907e64281a7af7e2f11c",
+    "target_name": "HBB promoter",
+    "target_gene_id": 44,
+    "reported_coordinates": {
+      "chr": "11",
+      "end": 5227208,
+      "start": 5227022,
+      "reference": "hg38"
+    },
+    "license_metadata": {
+      "longName": "CC0 (Public domain)",
+      "shortName": "CC0",
+      "active": true,
+      "link": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "version": "1.0",
+      "id": 1,
+      "recordType": "ShortLicense"
+    }
+  },
+  "reference": {
+    "bundle": "datasets/hbb-reference",
+    "manifest_sha256": "07e93d83339de7eef8f5dfe46279847bff52c839f75c1d2b93a59d9756b6b2ae",
+    "genomic_fasta_sha256": "b20b21548d2110ba66193788a1f5ab2ae9af5c46fe920da761d2e3f96416337b",
+    "transcript_fasta_sha256": "ec3dafd5f4db5198cf12c778dc664f90c79305dfabc9483b22f5eaef34db6fbc",
+    "assembly": "GRCh38",
+    "chromosome": "11",
+    "accession": "NC_000011.10",
+    "reference_interval_0based": [
+      5225000,
+      5227500
+    ],
+    "gene_strand": "-",
+    "transcript_accession": "NM_000518.5"
+  },
+  "target": {
+    "sequence": "GGTGTCTGTTTGAGGTTGCTAGTGAACACAGTTGTGTCAGAAGCAAATGTAAGCAATAGATGGCTCTGCCCTGACTTTTATGCCCAGCCCTGGCTCCTGCCCTCCCTGCTCCTGGGAGTAGATTGGCCAACCCTAGGGTGTGGCTCCACAGGGTGAGGTCTAAGTGATGACAGCCGTACCTGTCCTT",
+    "length": 187,
+    "sequence_sha256": "4e7864ac41060a0caf76996f31ffcd06e2919341c627a6e301fcaef4be5ae0c0",
+    "genomic_start_0based": 5227021,
+    "genomic_end_exclusive": 5227208,
+    "target_sequence_strand": "+",
+    "native_gene_strand": "-",
+    "coordinate_interpretation": "Metadata start/end match one-based inclusive genomic coordinates; internally represented as zero-based half-open.",
+    "forward_reference_mismatches": 0,
+    "reverse_complement_reference_mismatches": 159,
+    "forward_matches_within_bundle": [
+      {
+        "start_0based": 5227021,
+        "end_exclusive": 5227208
+      }
+    ],
+    "reverse_complement_matches_within_bundle": []
+  },
+  "region_partition": [
+    {
+      "region": "RefSeq transcribed 5-prime UTR",
+      "genomic_start_0based": 5227021,
+      "genomic_end_exclusive": 5227071,
+      "bases": 50,
+      "target_positions_1based": [
+        1,
+        50
+      ],
+      "transcript_positions_1based": [
+        50,
+        1
+      ],
+      "hgvs_c_coordinate_range": [
+        "-1",
+        "-50"
+      ]
+    },
+    {
+      "region": "Upstream of annotated RefSeq transcription start; promoter-containing interval",
+      "genomic_start_0based": 5227071,
+      "genomic_end_exclusive": 5227208,
+      "bases": 137,
+      "target_positions_1based": [
+        51,
+        187
+      ],
+      "transcript_positions_1based": null
+    }
+  ],
+  "clinical_overlap_example": {
+    "accession_version": "VCV004910425.1",
+    "source_title": "NM_000518.5(HBB):c.-43C>T",
+    "canonical_spdi": "NC_000011.10:5227063:G:A",
+    "genomic_position_0based": 5227063,
+    "genomic_reference": "G",
+    "genomic_alternate": "A",
+    "target_position_1based": 43,
+    "target_hgvs_n": "n.43G>A",
+    "transcript_position_1based": 8,
+    "transcript_reference": "C",
+    "transcript_alternate": "T",
+    "transcript_hgvs_c": "c.-43C>T",
+    "refseq_region": "five_prime_utr",
+    "upstream_of_annotated_transcript": false,
+    "note": "Negative c. notation is relative to the coding start. It does not imply a base is upstream of the transcription start or a promoter-only variant."
+  },
+  "independent_method": [
+    "Fetch only score-set metadata and take its exact target DNA sequence; do not inspect score rows or score patterns.",
+    "Convert candidate metadata one-based inclusive coordinates to zero-based [start-1,end). Verify that interval length equals the 187-base target.",
+    "Compare both the forward genomic slice and its reverse complement with the entire target; additionally search both orientations across the 2,500-base verified reference bundle.",
+    "Intersect the resolved interval with explicit minus-strand transcript/CDS boundaries. Verify the 50-base transcribed portion equals the reverse complement of the first 50 bases of NM_000518.5.",
+    "Map the known c.-43C>T variant independently using genomic, target, and transcript position arithmetic, including complemented allele bases."
+  ],
+  "checks": {
+    "target_interval_length_agrees": true,
+    "target_exactly_matches_forward_reference": true,
+    "target_matches_reverse_complement": false,
+    "target_unique_within_bundle": true,
+    "transcribed_prefix_agrees_with_refseq_utr": true,
+    "region_bases_sum_to_target_length": true
+  },
+  "assumptions_and_limits": [
+    "Exact sequence agreement resolves coordinate/strand interpretation for this frozen target; it does not establish genome-wide uniqueness beyond the 2,500-base bundle.",
+    "The target DNA is stored in plus genomic orientation while HBB transcription uses the minus strand. Physical reporter insertion/orientation must be read from the experimental methods, not inferred solely from target sequence.",
+    "The assay label HBB promoter names the full fragment; it includes 50 transcribed 5-prime UTR bases as well as 137 upstream bases. Neither all bases nor all variants can be called promoter-only.",
+    "Mapping does not attribute a reporter phenotype to transcription-factor binding, RNA stability, splicing, translation, endogenous gene regulation or clinical disease.",
+    "No outcome distribution, assay score, training pattern, prediction threshold or classifier was inspected to establish this mapping.",
+    "Metadata advertise a CC0 score-set license. This records the metadata and does not alter the paper, third-party annotation, or reference-data license scope."
+  ]
+}

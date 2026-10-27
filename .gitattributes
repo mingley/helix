@@ -1,2 +1,7 @@
 # Preserve the exact NCBI EFetch response, including its terminal blank line.
 datasets/clinvar-hbb/reference.fasta whitespace=-blank-at-eof
+datasets/hbb-reference/*.fasta whitespace=-blank-at-eof
+datasets/hbb-reference/transcript.gb whitespace=-trailing-space
+datasets/hbb-reference/annotation.json whitespace=-trailing-space
+# Preserve the exact source CSV's CRLF bytes.
+datasets/hbb-promoter-assay/scores.csv -text whitespace=cr-at-eol

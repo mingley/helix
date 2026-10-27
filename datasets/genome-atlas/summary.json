@@ -1,0 +1,443 @@
+{
+  "schema_version": 1,
+  "assembly": "GRCh38/hg38",
+  "annotation": "UCSC ncbiRefSeqCurated with ncbiRefSeqLink, frozen snapshot",
+  "scope": "Primary chromosomes chr1-22, chrX, chrY, chrM only; curated RefSeq annotation is not a complete gene repertoire or functional map.",
+  "gene_loci": 29949,
+  "distinct_gene_ids": 29922,
+  "protein_coding_gene_loci": 19427,
+  "other_biotype_gene_loci": 10522,
+  "noncoding_rna_gene_loci": 9334,
+  "pseudogene_loci": 1188,
+  "unclassified_biotype_gene_loci": 0,
+  "gene_biotype_counts": {
+    "RNase_MRP_RNA": 1,
+    "RNase_P_RNA": 1,
+    "Y_RNA": 4,
+    "antisense_RNA": 19,
+    "lncRNA": 6716,
+    "miRNA": 1915,
+    "misc_RNA": 1,
+    "ncRNA": 29,
+    "ncRNA_pseudogene": 4,
+    "protein_coding": 19427,
+    "rRNA": 29,
+    "scRNA": 4,
+    "snRNA": 69,
+    "snoRNA": 541,
+    "telomerase_RNA": 1,
+    "transcribed_pseudogene": 1184,
+    "vault_RNA": 4
+  },
+  "retained_transcript_count": 93455,
+  "excluded_transcript_count": 11564,
+  "excluded_contig_count": 438,
+  "totals": {
+    "length": 3088286401,
+    "transcript_span_union_bases": 1421275766,
+    "exon_union_bases": 93083895,
+    "cds_union_bases": 34561429
+  },
+  "chromosomes": [
+    {
+      "name": "chr1",
+      "length": 248956422,
+      "gene_loci": 2975,
+      "transcript_count": 8739,
+      "transcript_span_union_bases": 121783244,
+      "exon_union_bases": 9250017,
+      "cds_union_bases": 3514269
+    },
+    {
+      "name": "chr2",
+      "length": 242193529,
+      "gene_loci": 1946,
+      "transcript_count": 6619,
+      "transcript_span_union_bases": 119284768,
+      "exon_union_bases": 6792642,
+      "cds_union_bases": 2541877
+    },
+    {
+      "name": "chr3",
+      "length": 198295559,
+      "gene_loci": 1634,
+      "transcript_count": 6030,
+      "transcript_span_union_bases": 103784268,
+      "exon_union_bases": 5441642,
+      "cds_union_bases": 1972091
+    },
+    {
+      "name": "chr4",
+      "length": 190214555,
+      "gene_loci": 1175,
+      "transcript_count": 3651,
+      "transcript_span_union_bases": 82641090,
+      "exon_union_bases": 3848255,
+      "cds_union_bases": 1386698
+    },
+    {
+      "name": "chr5",
+      "length": 181538259,
+      "gene_loci": 1392,
+      "transcript_count": 4222,
+      "transcript_span_union_bases": 81446231,
+      "exon_union_bases": 4560953,
+      "cds_union_bases": 1583096
+    },
+    {
+      "name": "chr6",
+      "length": 170805979,
+      "gene_loci": 1552,
+      "transcript_count": 4622,
+      "transcript_span_union_bases": 80320730,
+      "exon_union_bases": 4924430,
+      "cds_union_bases": 1742614
+    },
+    {
+      "name": "chr7",
+      "length": 159345973,
+      "gene_loci": 1415,
+      "transcript_count": 4532,
+      "transcript_span_union_bases": 82241621,
+      "exon_union_bases": 4551385,
+      "cds_union_bases": 1621113
+    },
+    {
+      "name": "chr8",
+      "length": 145138636,
+      "gene_loci": 1143,
+      "transcript_count": 3868,
+      "transcript_span_union_bases": 69380855,
+      "exon_union_bases": 3519469,
+      "cds_union_bases": 1182745
+    },
+    {
+      "name": "chr9",
+      "length": 138394717,
+      "gene_loci": 1173,
+      "transcript_count": 3648,
+      "transcript_span_union_bases": 55502763,
+      "exon_union_bases": 3724442,
+      "cds_union_bases": 1394689
+    },
+    {
+      "name": "chr10",
+      "length": 133797422,
+      "gene_loci": 1172,
+      "transcript_count": 4385,
+      "transcript_span_union_bases": 70381656,
+      "exon_union_bases": 3889802,
+      "cds_union_bases": 1345935
+    },
+    {
+      "name": "chr11",
+      "length": 135086622,
+      "gene_loci": 1802,
+      "transcript_count": 6161,
+      "transcript_span_union_bases": 69222128,
+      "exon_union_bases": 5176783,
+      "cds_union_bases": 2048492
+    },
+    {
+      "name": "chr12",
+      "length": 133275309,
+      "gene_loci": 1480,
+      "transcript_count": 5253,
+      "transcript_span_union_bases": 69205319,
+      "exon_union_bases": 4993447,
+      "cds_union_bases": 1811480
+    },
+    {
+      "name": "chr13",
+      "length": 114364328,
+      "gene_loci": 665,
+      "transcript_count": 1764,
+      "transcript_span_union_bases": 40959130,
+      "exon_union_bases": 1985066,
+      "cds_union_bases": 633733
+    },
+    {
+      "name": "chr14",
+      "length": 107043718,
+      "gene_loci": 981,
+      "transcript_count": 2916,
+      "transcript_span_union_bases": 42797726,
+      "exon_union_bases": 3008557,
+      "cds_union_bases": 1077362
+    },
+    {
+      "name": "chr15",
+      "length": 101991189,
+      "gene_loci": 1049,
+      "transcript_count": 3079,
+      "transcript_span_union_bases": 47372432,
+      "exon_union_bases": 3440416,
+      "cds_union_bases": 1195091
+    },
+    {
+      "name": "chr16",
+      "length": 90338345,
+      "gene_loci": 1214,
+      "transcript_count": 3520,
+      "transcript_span_union_bases": 41759240,
+      "exon_union_bases": 3504225,
+      "cds_union_bases": 1432168
+    },
+    {
+      "name": "chr17",
+      "length": 83257441,
+      "gene_loci": 1635,
+      "transcript_count": 4739,
+      "transcript_span_union_bases": 47752812,
+      "exon_union_bases": 4762220,
+      "cds_union_bases": 1973738
+    },
+    {
+      "name": "chr18",
+      "length": 80373285,
+      "gene_loci": 459,
+      "transcript_count": 1562,
+      "transcript_span_union_bases": 33827171,
+      "exon_union_bases": 1706211,
+      "cds_union_bases": 537766
+    },
+    {
+      "name": "chr19",
+      "length": 58617616,
+      "gene_loci": 1839,
+      "transcript_count": 5279,
+      "transcript_span_union_bases": 33264055,
+      "exon_union_bases": 4894057,
+      "cds_union_bases": 2267406
+    },
+    {
+      "name": "chr20",
+      "length": 64444167,
+      "gene_loci": 816,
+      "transcript_count": 2310,
+      "transcript_span_union_bases": 30219552,
+      "exon_union_bases": 2259118,
+      "cds_union_bases": 816596
+    },
+    {
+      "name": "chr21",
+      "length": 46709983,
+      "gene_loci": 432,
+      "transcript_count": 1078,
+      "transcript_span_union_bases": 16296595,
+      "exon_union_bases": 1160427,
+      "cds_union_bases": 343331
+    },
+    {
+      "name": "chr22",
+      "length": 50818468,
+      "gene_loci": 667,
+      "transcript_count": 1960,
+      "transcript_span_union_bases": 21711207,
+      "exon_union_bases": 1952281,
+      "cds_union_bases": 708952
+    },
+    {
+      "name": "chrX",
+      "length": 156040895,
+      "gene_loci": 1175,
+      "transcript_count": 3102,
+      "transcript_span_union_bases": 55451913,
+      "exon_union_bases": 3442734,
+      "cds_union_bases": 1327128
+    },
+    {
+      "name": "chrY",
+      "length": 57227415,
+      "gene_loci": 145,
+      "transcript_count": 403,
+      "transcript_span_union_bases": 4657919,
+      "exon_union_bases": 283975,
+      "cds_union_bases": 91718
+    },
+    {
+      "name": "chrM",
+      "length": 16569,
+      "gene_loci": 13,
+      "transcript_count": 13,
+      "transcript_span_union_bases": 11341,
+      "exon_union_bases": 11341,
+      "cds_union_bases": 11341
+    }
+  ],
+  "hbb": {
+    "gene_id": "3043",
+    "symbol": "HBB",
+    "biotype": "protein_coding",
+    "chromosome": "chr11",
+    "strand": "-",
+    "start": 5225463,
+    "end": 5227071,
+    "transcript_count": 1,
+    "transcript_intervals": [
+      [
+        5225463,
+        5227071
+      ]
+    ],
+    "exon_intervals": [
+      [
+        5225463,
+        5225726
+      ],
+      [
+        5226576,
+        5226799
+      ],
+      [
+        5226929,
+        5227071
+      ]
+    ],
+    "cds_intervals": [
+      [
+        5225597,
+        5225726
+      ],
+      [
+        5226576,
+        5226799
+      ],
+      [
+        5226929,
+        5227021
+      ]
+    ]
+  },
+  "hbb_neighbors": [
+    {
+      "gene_id": "3045",
+      "symbol": "HBD",
+      "biotype": "protein_coding",
+      "start": 5232837,
+      "end": 5234483,
+      "strand": "-",
+      "gap_bases": 5766,
+      "genomic_side": "higher_coordinate"
+    },
+    {
+      "gene_id": "3044",
+      "symbol": "HBBP1",
+      "biotype": "transcribed_pseudogene",
+      "start": 5241953,
+      "end": 5243592,
+      "strand": "-",
+      "gap_bases": 14882,
+      "genomic_side": "higher_coordinate"
+    },
+    {
+      "gene_id": "103344929",
+      "symbol": "BGLT3",
+      "biotype": "lncRNA",
+      "start": 5244553,
+      "end": 5245546,
+      "strand": "-",
+      "gap_bases": 17482,
+      "genomic_side": "higher_coordinate"
+    },
+    {
+      "gene_id": "3047",
+      "symbol": "HBG1",
+      "biotype": "protein_coding",
+      "start": 5248268,
+      "end": 5249857,
+      "strand": "-",
+      "gap_bases": 21197,
+      "genomic_side": "higher_coordinate"
+    },
+    {
+      "gene_id": "283111",
+      "symbol": "OR51V1",
+      "biotype": "protein_coding",
+      "start": 5199734,
+      "end": 5200682,
+      "strand": "-",
+      "gap_bases": 24781,
+      "genomic_side": "lower_coordinate"
+    },
+    {
+      "gene_id": "3048",
+      "symbol": "HBG2",
+      "biotype": "protein_coding",
+      "start": 5253187,
+      "end": 5254781,
+      "strand": "-",
+      "gap_bases": 26116,
+      "genomic_side": "higher_coordinate"
+    },
+    {
+      "gene_id": "3046",
+      "symbol": "HBE1",
+      "biotype": "protein_coding",
+      "start": 5268344,
+      "end": 5269945,
+      "strand": "-",
+      "gap_bases": 41273,
+      "genomic_side": "higher_coordinate"
+    },
+    {
+      "gene_id": "283110",
+      "symbol": "OR52Z1P",
+      "biotype": "transcribed_pseudogene",
+      "start": 5177713,
+      "end": 5178664,
+      "strand": "-",
+      "gap_bases": 46799,
+      "genomic_side": "lower_coordinate"
+    },
+    {
+      "gene_id": "23538",
+      "symbol": "OR52A1",
+      "biotype": "protein_coding",
+      "start": 5146823,
+      "end": 5154757,
+      "strand": "-",
+      "gap_bases": 70706,
+      "genomic_side": "lower_coordinate"
+    },
+    {
+      "gene_id": "79339",
+      "symbol": "OR51B4",
+      "biotype": "protein_coding",
+      "start": 5301013,
+      "end": 5301946,
+      "strand": "-",
+      "gap_bases": 73942,
+      "genomic_side": "higher_coordinate"
+    },
+    {
+      "gene_id": "390054",
+      "symbol": "OR52A5",
+      "biotype": "protein_coding",
+      "start": 5128775,
+      "end": 5138356,
+      "strand": "-",
+      "gap_bases": 87107,
+      "genomic_side": "lower_coordinate"
+    },
+    {
+      "gene_id": "79345",
+      "symbol": "OR51B2",
+      "biotype": "protein_coding",
+      "start": 5323358,
+      "end": 5324297,
+      "strand": "-",
+      "gap_bases": 96287,
+      "genomic_side": "higher_coordinate"
+    }
+  ],
+  "interpretation": [
+    "Intervals are zero-based, half-open; coverage is the length of merged unions, never a sum over overlapping isoforms.",
+    "Gene loci group NCBI Gene ID, chromosome and strand; genes in X/Y pseudoautosomal regions can occupy more than one locus.",
+    "Transcript spans include introns; exon coverage includes coding and untranslated exons; CDS coverage is coding parts of annotated exons.",
+    "Other biotypes include noncoding RNAs and pseudogenes; the exact biotype counts are reported separately.",
+    "Sequence outside these annotations is unannotated by this dataset, not demonstrated nonfunctional.",
+    "Physical proximity and gene annotation alone do not establish regulatory interactions or disease mechanisms.",
+    "The source table includes 13 mitochondrial coding models, represented by protein accessions; their GeneIDs come from NC_012920.1 CDS qualifiers. It omits mitochondrial RNA genes."
+  ]
+}

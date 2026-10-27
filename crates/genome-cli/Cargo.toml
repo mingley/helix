@@ -19,6 +19,11 @@ genome-proof.workspace = true
 genome-inference.workspace = true
 genome-agents.workspace = true
 genome-evaluation.workspace = true
+genome-mechanism.workspace = true
+genome-atlas.workspace = true
+genome-evidence-audit.workspace = true
+genome-research-stats.workspace = true
+genome-assay.workspace = true
 
 [lints]
 workspace = true

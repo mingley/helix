@@ -1,0 +1,18 @@
+[package]
+name = "genome-atlas"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+genome-types = { path = "../genome-types" }
+
+[dev-dependencies]
+tempfile.workspace = true
+
+[lints]
+workspace = true

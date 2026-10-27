@@ -13,6 +13,7 @@ use std::{
 
 pub const LEAN_VERSION: &str = "4.19.0";
 const PRELUDE: &str = include_str!("../../../proofs/Helix.lean");
+const MECHANISM_PRELUDE: &str = include_str!("../../../proofs/GenomeMechanisms.lean");
 
 #[derive(Debug, Serialize)]
 pub struct CheckedProof {
@@ -21,13 +22,26 @@ pub struct CheckedProof {
     pub scope: String,
 }
 pub fn source(derivation: &Derivation, arithmetic: &str) -> String {
+    export(PRELUDE, derivation, arithmetic)
+}
+pub fn mechanism_source(derivation: &Derivation, arithmetic: &str) -> String {
+    export(MECHANISM_PRELUDE, derivation, arithmetic)
+}
+fn export(prelude: &str, derivation: &Derivation, arithmetic: &str) -> String {
     format!(
-        "{PRELUDE}\nnamespace Helix.Generated\n{}\n{arithmetic}\nend Helix.Generated\n",
+        "{prelude}\nnamespace Helix.Generated\n{}\n{arithmetic}\nend Helix.Generated\n",
         derivation.lean()
     )
 }
 pub fn check(lean: &Path, source: &str) -> Result<CheckedProof> {
     validate_source(source)?;
+    check_export(lean, source, "Conditional propositional entailment and probability bounds only; scientific premises are not proved.")
+}
+pub fn check_mechanisms(lean: &Path, source: &str) -> Result<CheckedProof> {
+    validate_export(source, MECHANISM_PRELUDE)?;
+    check_export(lean, source, "Finite DNA complement definitions, coordinate/arithmetic identities, conditional entailment and proportion bounds. This does not verify Rust code or establish biological truth.")
+}
+fn check_export(lean: &Path, source: &str, scope: &str) -> Result<CheckedProof> {
     let version = Command::new(lean)
         .arg("--version")
         .output()
@@ -70,16 +84,19 @@ pub fn check(lean: &Path, source: &str) -> Result<CheckedProof> {
     Ok(CheckedProof {
         authority: version,
         source_sha256: format!("{:x}", Sha256::digest(source.as_bytes())),
-        scope: "Conditional propositional entailment and probability bounds only; scientific premises are not proved.".into(),
+        scope: scope.into(),
     })
 }
 
 /// Audit also consumes saved files. Restrict them to our finite proof language
 /// before invoking Lean; arbitrary Lean can execute IO through evaluation commands.
 fn validate_source(text: &str) -> Result<()> {
+    validate_export(text, PRELUDE)
+}
+fn validate_export(text: &str, prelude: &str) -> Result<()> {
     ensure!(text.len() <= 4_000_000, "proof source exceeds size budget");
     let generated = text
-        .strip_prefix(&format!("{PRELUDE}\nnamespace Helix.Generated\n"))
+        .strip_prefix(&format!("{prelude}\nnamespace Helix.Generated\n"))
         .and_then(|s| s.strip_suffix("\nend Helix.Generated\n"))
         .context("proof source is not a supported Helix export")?;
     let mut lines = generated.lines().filter(|line| !line.is_empty());
@@ -170,5 +187,23 @@ mod tests {
             assert!(validate_source(&source(&d, injection)).is_err());
         }
         assert!(validate_source(&source(&d, "")).is_ok());
+    }
+    #[test]
+    fn mechanism_export_is_checked_without_changing_legacy_proofs() {
+        let d = Derivation::derive(
+            vec!["reference assumptions".into()],
+            vec![],
+            "reference assumptions".into(),
+        )
+        .unwrap();
+        let text = mechanism_source(&d, "");
+        check_mechanisms(Path::new("lean"), &text).unwrap();
+        assert!(check(Path::new("lean"), &text).is_err());
+        assert!(validate_export(
+            &mechanism_source(&d, "#eval IO.println \"unsafe\""),
+            MECHANISM_PRELUDE
+        )
+        .is_err());
+        check(Path::new("lean"), &source(&d, "")).unwrap();
     }
 }
