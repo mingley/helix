@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "manifest_sha256": "861d838582ce1f0d52d846e6d20ee5d6c0f28c059db257032c9cff7a1fae6faf",
+  "controls": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s research/variant-transfer/prior-exposure-inventory -p test_inventory.py -v",
+    "tests": 7,
+    "failures": 0,
+    "test_source_sha256": "e6f362f307a44773539e3a85cd9766cb63dc2e0a4206505a85cf53c378081761"
+  },
+  "portable_replay": {
+    "out": "/tmp/helix-prior-inventory-replay-v1",
+    "files_checked": 13,
+    "all_byte_identical": true,
+    "checks": [
+      {
+        "file": "agarwal-cores.jsonl.gz",
+        "bytes": 8803270,
+        "sha256": "d21e5a46db9eb739729b716edcf6b51c9af124b9a4eb27c850a8b40706bff764",
+        "byte_identical_replay": true
+      },
+      {
+        "file": "hbb-auxiliary-loci.json",
+        "bytes": 5213,
+        "sha256": "a952ede629087e6ea8b03e6e12ecef2b6e7b409585d1647d25181e3159dfea74",
+        "byte_identical_replay": true
+      },
+      {
+        "file": "hbb-auxiliary-windows200.jsonl.gz",
+        "bytes": 278280,
+        "sha256": "d161547e84cd39e84239fbbff970a43e94d2b2ae3616ca3591ee04729565b46b",
+        "byte_identical_replay": true
+      },
+      {
+        "file": "implementation.py",
+        "bytes": 20083,
+        "sha256": "d60c19c7d540e9d226f20346bff0c3a5fe416fa147ce0a3c8952cdd6439a167d",
+        "byte_identical_replay": true
+      },
+      {
+        "file": "inputs.json",
+        "bytes": 30295,
+        "sha256": "19293dbccaea60cbabb2cc1016850a6018c21df5c72601853ba4aa078a204501",
+        "byte_identical_replay": true
+      },
+      {
+        "file": "kircher-deletion-windows200.jsonl.gz",
+        "bytes": 12014233,
+        "sha256": "13e0c1719be98d4efa3ef3696042c6447aed985fbc5890da09f7b381e5eb73c9",
+        "byte_identical_replay": true
+      },
+      {
+        "file": "kircher-loci.json",
+        "bytes": 15038,
+        "sha256": "da323a6b61e21427f866be9e6ec3bb25c692d0a259fcd42bc955e23cbc2feb71",
+        "byte_identical_replay": true
+      },
+      {
+        "file": "kircher-native-edits.jsonl.gz",
+        "bytes": 1254436,
+        "sha256": "8bfacd3f6d7b48f436667f376e4d5e4179fad9da68a551cadd8a6d38430966f9",
+        "byte_identical_replay": true
+      },
+      {
+        "file": "kircher-reference-windows200.jsonl.gz",
+        "bytes": 731906,
+        "sha256": "37fbcba56d7ab1c011e3ef02c75fe8611ec073043d4a7ed56133e4f7f23cc57c",
+        "byte_identical_replay": true
+      },
+      {
+        "file": "manifest.json",
+        "bytes": 1889,
+        "sha256": "861d838582ce1f0d52d846e6d20ee5d6c0f28c059db257032c9cff7a1fae6faf",
+        "byte_identical_replay": true
+      },
+      {
+        "file": "molecular-identity-bindings.json",
+        "bytes": 9592,
+        "sha256": "d9068eb3746fab14fa3f554ec0a974b1424749d7803daed1a984b6615536b37f",
+        "byte_identical_replay": true
+      },
+      {
+        "file": "summary.json",
+        "bytes": 2766,
+        "sha256": "ed5417dc4283aecb2b59684b6f1356be07d83f33b3495b4fd26374c70ebc48b3",
+        "byte_identical_replay": true
+      },
+      {
+        "file": "twobit_reference.py",
+        "bytes": 10957,
+        "sha256": "ffbb77304eb324b2028cf6fb29ca8e0ea4b6a1e9daaf77ee42ce4a8f629847a2",
+        "byte_identical_replay": true
+      }
+    ]
+  },
+  "prefit_implementation_correction": {
+    "initial_failure": "Metadata-selection assay records omit scores_file; original checker incorrectly required equality to records in later source manifest which add that field.",
+    "correction": "Require exact metadata projection excluding only scores_file, then bind the exact later manifest scores_file. No source identity, selected ID, DNA, coordinate, or numerical outcome changed.",
+    "outputs_existed_before_failure": false
+  },
+  "scope": "Old source DNA/reference inventory only; no new-study outcome file was opened.",
+  "offline_author_replay": {
+    "output": "/tmp/helix-prior-inventory-offline-v1",
+    "author_source": "research/variant-transfer/prior-exposure-inventory/raw-author-tables",
+    "files_checked": 13,
+    "all_byte_identical": true,
+    "requires_original_absolute_author_cache": false
+  }
+}

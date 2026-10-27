@@ -1,0 +1,516 @@
+{
+  "files": {
+    "datasets/clinvar-hbb/manifest.json": {
+      "bytes": 2299,
+      "sha256": "a8b3e7b603cec4a402dd656fe959dfa6e155fbcd0a9af125b24e34fb35370fe4"
+    },
+    "datasets/clinvar-hbb/reference.fasta": {
+      "bytes": 1608,
+      "sha256": "e01eb45348a91bc88c84cdd351531f9328fb011a63bb55fd160d4f5d9a41897b"
+    },
+    "datasets/context-panel/design-catalog-v1.json.gz": {
+      "bytes": 12522933,
+      "sha256": "be7251ca9f7423130c875c7692246698cc0011d746cb0d4043bad2a3f6817d51"
+    },
+    "datasets/context-panel/design-exclusions.json": {
+      "bytes": 273887,
+      "sha256": "2f49b5281987c534204bf13560655369c469df7dbd1fb5a39bfc4032f8e17f52"
+    },
+    "datasets/context-panel/design-reference-validation.json": {
+      "bytes": 816,
+      "sha256": "0604be6a06e2a0aa6ee50ae736227352845fe0f47ac0423ff3f5331795f43e31"
+    },
+    "datasets/context-panel/frozen-protocol-v2.json": {
+      "bytes": 26240,
+      "sha256": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec"
+    },
+    "datasets/context-panel/inclusion-report.json": {
+      "bytes": 1091527,
+      "sha256": "2ea1ebe1054350dcf49e76b67db042ca30f9d95134a4a29cadfd2c126b9d2bdd"
+    },
+    "datasets/context-panel/manifest.json": {
+      "bytes": 10844,
+      "sha256": "97f8375b7f0ed5dd02964fb339e3e8e7288c38f862120339a5df5533446432c8"
+    },
+    "datasets/context-panel/panel.json": {
+      "bytes": 37840164,
+      "sha256": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3"
+    },
+    "datasets/context-panel/raw/README-v1-count-claim-superseded.md": {
+      "bytes": 1562,
+      "sha256": "a3d2a933f24c69826e5cd4d6be8f17f94c4ed7a85218f1a503bff95e96a30713"
+    },
+    "datasets/context-panel/raw/README.md": {
+      "bytes": 2499,
+      "sha256": "e50610190af650e30aef7097f3e680a7e7b80e026fbc08f2f7e0b2951ecd28c0"
+    },
+    "datasets/context-panel/raw/Table-S7-joint-design.xlsx": {
+      "bytes": 8301566,
+      "sha256": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5"
+    },
+    "datasets/context-panel/raw/Table-S9-folds-performance.xlsx": {
+      "bytes": 3564742,
+      "sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a"
+    },
+    "datasets/context-panel/raw/design-metadata-inspection.json": {
+      "bytes": 2547,
+      "sha256": "cd007d225534e27951bcd6eed91b45762b400fe257ef577a127ad0592d27674b"
+    },
+    "datasets/context-panel/raw/id-only-join-audit.json": {
+      "bytes": 10683277,
+      "sha256": "1035d86ab6eaa97d01dd829f4298fcefb98b4a65eb2bc0a92f4b536bc6402ac2"
+    },
+    "datasets/context-panel/raw/retrieval.json": {
+      "bytes": 1505,
+      "sha256": "a44da011496b426f986169bd11086cd35560191f0255fb801cd448e18ea42460"
+    },
+    "datasets/context-panel/raw/schema-inspection.json": {
+      "bytes": 13761,
+      "sha256": "639b7a11d39fad20a0cd616440d383c99049e5691893eaaa994906dc16f7dd75"
+    },
+    "datasets/context-panel/raw/semantic-gate-corrected-metadata.json": {
+      "bytes": 2780,
+      "sha256": "7ab4f3e376012c71815c49bb919c356ebe93aca14df15118fb3fcd29d53d5eff"
+    },
+    "datasets/context-panel/raw/semantic-gate.json": {
+      "bytes": 2247,
+      "sha256": "e6b47fae288d670716f3f3ff08ea89721128b65a2cd239bcb9accb8390578b11"
+    },
+    "datasets/context-panel/raw/source-accounting-correction.json": {
+      "bytes": 4636,
+      "sha256": "e8e8128b763ac105354bc2978f91d56721ebd5a6484858a31dea6ce0d5c142eb"
+    },
+    "datasets/context-panel/raw/zenodo-record-metadata.json": {
+      "bytes": 7863,
+      "sha256": "3752aeec5463077fae96637a07ad734f9a7e29150e5cc73dcb937c386213f5e2"
+    },
+    "datasets/context-panel/reference-validation.json": {
+      "bytes": 1537,
+      "sha256": "65061df4cbbde3a44a9e2f28a6eda8c607ad62d3c232e635506cf95d7252aad8"
+    },
+    "datasets/context-panel/source-design-metadata-v2.json.gz": {
+      "bytes": 12314214,
+      "sha256": "1cd2b70a544a9442f03d3809f55a155ba3ab3a87b38e4593b5e0a23feb4c57c7"
+    },
+    "datasets/context-panel/source-schema-binding-v2.json": {
+      "bytes": 8611,
+      "sha256": "38cf7a81a051d7dc4634704d0886ddb4c3b1c0608daba455d891cb0c41cf9dfd"
+    },
+    "datasets/context-panel/v1-blocked-acquisition.json": {
+      "bytes": 638,
+      "sha256": "43a5b8d5609ad655b17dd407552b4e7f5cd092eda29b143356af2948f642175a"
+    },
+    "datasets/context-panel/v1-design-artifact-repacking.json": {
+      "bytes": 562,
+      "sha256": "c59cf218e7c7e23e6a9d73bf42f17695cd96ed69576f11965a61a9a3a22f29b0"
+    },
+    "datasets/context-panel/v1-source-schema-binding.json": {
+      "bytes": 4200,
+      "sha256": "2ae0ae9a03b71d1ec297e95a70e9d2b6fa3fd5154ae209cacbb78e8d8a34ea99"
+    },
+    "datasets/context-panel/v2-ess-inspection-gate.json": {
+      "bytes": 524,
+      "sha256": "2392ca4284aae0f7c80bc5baaaa5fa12ea3e5f4e47c94ca2ab34c35b720032f4"
+    },
+    "datasets/hbb-reference/genomic.fasta": {
+      "bytes": 2623,
+      "sha256": "b20b21548d2110ba66193788a1f5ab2ae9af5c46fe920da761d2e3f96416337b"
+    },
+    "datasets/hbb-reference/manifest.json": {
+      "bytes": 2609,
+      "sha256": "07e93d83339de7eef8f5dfe46279847bff52c839f75c1d2b93a59d9756b6b2ae"
+    },
+    "datasets/regulatory-cohort/00000015-a-1.metadata.json": {
+      "bytes": 11108,
+      "sha256": "8250b2c933b45c8ca0a76621ecfeeca5c4724d58228068757cc6a095702db71c"
+    },
+    "datasets/regulatory-cohort/00000015-a-1.scores.csv": {
+      "bytes": 76029,
+      "sha256": "a1e1c80f6caa22c33d6e462deccce590b96a495e7df601a2e131a053ba661e14"
+    },
+    "datasets/regulatory-cohort/00000016-a-1.metadata.json": {
+      "bytes": 11413,
+      "sha256": "bb82a8669ba3a419374c295c54c4f12ebfadb77eb14a0ec0a6fb24b2a70e38de"
+    },
+    "datasets/regulatory-cohort/00000016-a-1.scores.csv": {
+      "bytes": 162326,
+      "sha256": "655520e382eae9e6814ec0e7c82efae826bee0961f1f4433e9d226653c6eb0d9"
+    },
+    "datasets/regulatory-cohort/00000017-a-1.metadata.json": {
+      "bytes": 11225,
+      "sha256": "4f414047612b741dc5483972a1e18b572233a43a85255cd5e2e0552da145898d"
+    },
+    "datasets/regulatory-cohort/00000017-a-1.scores.csv": {
+      "bytes": 101320,
+      "sha256": "407e14088f2b4770450c13cb05103ba254b765e969bde2509db89eb289fb1c36"
+    },
+    "datasets/regulatory-cohort/00000018-a-1.metadata.json": {
+      "bytes": 11008,
+      "sha256": "1b3383dca72b028fcd484150a249766468d343cb3a81907e64281a7af7e2f11c"
+    },
+    "datasets/regulatory-cohort/00000018-a-1.scores.csv": {
+      "bytes": 48580,
+      "sha256": "ec8b189f70c740f0ab2a11863a0a464fb421d93fefb9da1240cd3831872f57c6"
+    },
+    "datasets/regulatory-cohort/00000019-a-1.metadata.json": {
+      "bytes": 11108,
+      "sha256": "07c4a2a1f2fb25ec553bfaee1d5caccf611dcba2ad19f813feec5a775fbc575f"
+    },
+    "datasets/regulatory-cohort/00000019-a-1.scores.csv": {
+      "bytes": 71065,
+      "sha256": "8a9e1d4c1ff15a5eb97f8cb4bd66455d83386f43fc62b35d8274da1e5ef66335"
+    },
+    "datasets/regulatory-cohort/00000020-a-1.metadata.json": {
+      "bytes": 11116,
+      "sha256": "1873e0e68ca7d79aa7954f5756166cd351472b72298c5de3b95afd8443631266"
+    },
+    "datasets/regulatory-cohort/00000020-a-1.scores.csv": {
+      "bytes": 77273,
+      "sha256": "6dc2555a40aaf5a96f75484442bd3d37c3569d1343d74c6a5a8034d53e6a7e9b"
+    },
+    "datasets/regulatory-cohort/00000023-a-1.metadata.json": {
+      "bytes": 10991,
+      "sha256": "ff6909b761e52c09c74b93272c440612ac1569827f03cc13aa1ac0c938e70df3"
+    },
+    "datasets/regulatory-cohort/00000023-a-1.scores.csv": {
+      "bytes": 83158,
+      "sha256": "5900bba4f317420f6814539d7100ab1076de1ccb138a68ce11376f8fdd18acc6"
+    },
+    "datasets/regulatory-cohort/00000023-a-2.metadata.json": {
+      "bytes": 10989,
+      "sha256": "46111d4d8f47e7449385973b03c03b2cc32e2ed3569783e6295f984975a663d4"
+    },
+    "datasets/regulatory-cohort/00000023-a-2.scores.csv": {
+      "bytes": 84106,
+      "sha256": "eb7fed22c8e38c24c89158ba7c6eb70ad5185728931e27b294d34c4c922d0cba"
+    },
+    "datasets/regulatory-cohort/00000024-a-1.metadata.json": {
+      "bytes": 11421,
+      "sha256": "908b899585a492b4d3277bb3d1f24c4e1476faa3af478bf7603eeca7ef12ac16"
+    },
+    "datasets/regulatory-cohort/00000024-a-1.scores.csv": {
+      "bytes": 160153,
+      "sha256": "e3cf661f6be83859bed5903d71c8f641190c2af7bcf910018ad1bc01fd62a3d1"
+    },
+    "datasets/regulatory-cohort/00000027-a-1.metadata.json": {
+      "bytes": 11351,
+      "sha256": "b49d006887b5e43463360c54fbc18a3365a52c9f617fefa5e715249a771d6832"
+    },
+    "datasets/regulatory-cohort/00000027-a-1.scores.csv": {
+      "bytes": 137868,
+      "sha256": "5b340753929f30090a25bcfd54e0392ff869d5be8e417347429b74b08276f835"
+    },
+    "datasets/regulatory-cohort/00000027-b-1.metadata.json": {
+      "bytes": 11353,
+      "sha256": "65268ca9ab92214c7c521974166aceb2f2171867dcf6de48a1e8a7d457c4bda0"
+    },
+    "datasets/regulatory-cohort/00000027-b-1.scores.csv": {
+      "bytes": 138931,
+      "sha256": "c2df8c0d1e6018c82615494e9020d06f00abdab0a61254787690da64fb185509"
+    },
+    "datasets/regulatory-cohort/00000031-a-1.metadata.json": {
+      "bytes": 11089,
+      "sha256": "0853dd8eab161fb4aa0042778317d29883ad4c502db9f516556170904a2ae8a4"
+    },
+    "datasets/regulatory-cohort/00000031-a-1.scores.csv": {
+      "bytes": 75124,
+      "sha256": "320f9e1d9446265f024367fde3994831d8dc4aa2f8b262fac77003929ae456d1"
+    },
+    "datasets/regulatory-cohort/00000031-b-1.metadata.json": {
+      "bytes": 11130,
+      "sha256": "fc202ebe0801f2d8031273182429496fae0b48e75f73f134f6fbbe5f8d262572"
+    },
+    "datasets/regulatory-cohort/00000031-b-1.scores.csv": {
+      "bytes": 74651,
+      "sha256": "8b0d9fb336572b414ffb71ba4618fa2cec5f7aca50884e1c1f905cd375d2eb68"
+    },
+    "datasets/regulatory-cohort/00000031-c-1.metadata.json": {
+      "bytes": 11216,
+      "sha256": "0a57aaaa41a7e9f51b2eb0fb51296d9eafb3a4b15135d929642f06b0eb5f694f"
+    },
+    "datasets/regulatory-cohort/00000031-c-1.scores.csv": {
+      "bytes": 75321,
+      "sha256": "6c82634425c57ccb07a104310ad64436da112fea9d65de9fee68fa2bdef26081"
+    },
+    "datasets/regulatory-cohort/00000031-d-1.metadata.json": {
+      "bytes": 10953,
+      "sha256": "e6105a5b92929ad94331842389df605780f6d4c24881c7cdf93468c8530f778b"
+    },
+    "datasets/regulatory-cohort/00000031-d-1.scores.csv": {
+      "bytes": 74903,
+      "sha256": "268e51296059b626d951c5da53f2c48540dcea53f0874f40a8ab5b7d404de790"
+    },
+    "datasets/regulatory-cohort/discovery-search.json": {
+      "bytes": 239590,
+      "sha256": "8fff467aa66fc413d8bfa2e737d837c67dbf0470f93d81115b17cfb6bcc766d4"
+    },
+    "datasets/regulatory-cohort/frozen-protocol.json": {
+      "bytes": 20335,
+      "sha256": "c8e97fabef2afe8ccaa5a01a7ef7bb952f9c9f15857e5c540af112a66e78cb58"
+    },
+    "datasets/regulatory-cohort/license-scope.json": {
+      "bytes": 1975,
+      "sha256": "95be55e9d60c58132dafc9c241f5926ee24c9dd14ab75f6a73c3405152e7a646"
+    },
+    "datasets/regulatory-cohort/manifest.json": {
+      "bytes": 49761,
+      "sha256": "200342ba098e4e302cb306af67f68b01fccf13291ad6650b7dcb1281d83ddae5"
+    },
+    "datasets/regulatory-cohort/metadata-manifest.json": {
+      "bytes": 2983,
+      "sha256": "ecae659e6f581976894d8cc725f14a7b89bded2459a2ce1c213406ed7bf9cdd2"
+    },
+    "datasets/regulatory-cohort/metadata-selection.json": {
+      "bytes": 30355,
+      "sha256": "ec1535148caa06e8af304aaeec971ee8c80d9d1fcfb33e1c098e421fa2cea404"
+    },
+    "datasets/regulatory-cohort/outcome-acquisition-gate.json": {
+      "bytes": 1033,
+      "sha256": "75ac4d7d0a06d1c011a05e7f70e64c9d85f5dccda91baf296871773a7b53d666"
+    },
+    "datasets/regulatory-cohort/reference-1-155301395-155301864.json": {
+      "bytes": 829,
+      "sha256": "d4e80afabcc7fe9dce1300f0f94527d184b606d53865aab023c971bd0d370262"
+    },
+    "datasets/regulatory-cohort/reference-10-46046244-46046834.json": {
+      "bytes": 949,
+      "sha256": "d4dcdc1b18aed1832de2bd1c55a8eb5ed44357dbdf8b76f8bf860c6f5c5a8d9c"
+    },
+    "datasets/regulatory-cohort/reference-11-5227022-5227208.json": {
+      "bytes": 543,
+      "sha256": "cf2d701085a7f6a87bfc4ee7d6de621fef7a39ef2d904af492e321c4f9fd6341"
+    },
+    "datasets/regulatory-cohort/reference-11-5249805-5250078.json": {
+      "bytes": 630,
+      "sha256": "243c50b7ffa36b0f761a08b81114042e7522306e7f15a3226fc456c62f7a4477"
+    },
+    "datasets/regulatory-cohort/reference-19-11089231-11089548.json": {
+      "bytes": 676,
+      "sha256": "c1a3c40ab8705877601fb9de9120dc2186233ae8741ba9059e8430e611598b72"
+    },
+    "datasets/regulatory-cohort/reference-20-44355520-44355804.json": {
+      "bytes": 643,
+      "sha256": "253411e0a714f4a13028d4a97a7781250e5f06d8dd33abf6ef241efd340c2897"
+    },
+    "datasets/regulatory-cohort/reference-22-19723266-19723650.json": {
+      "bytes": 743,
+      "sha256": "a1b01af7e361383d00891141f9979703bfe0c6075efa6a9f7a59e3a645e663a1"
+    },
+    "datasets/regulatory-cohort/reference-5-1294989-1295247.json": {
+      "bytes": 614,
+      "sha256": "82fec1602c02e0672083f6926293fe681046b6b9b9d5fdb458e2e8b65c9047dc"
+    },
+    "datasets/regulatory-cohort/reference-9-97853255-97853854.json": {
+      "bytes": 957,
+      "sha256": "9638889062ae6065d73ccb61d239cca48a6a5e9aa2539246873e0626196dc00b"
+    },
+    "datasets/regulatory-cohort/reference-X-139530463-139530765.json": {
+      "bytes": 662,
+      "sha256": "f00be709a8f2ca04a90f72642b079ee4402aa847d7b9e33cb494fbb31255312d"
+    },
+    "research/forensic-sources/osf-grch38-files.json": {
+      "bytes": 61133,
+      "sha256": "f99f62e4c122991277fb7bc03fa68c848d1e0a715a5a926aabee0c060c915cdc"
+    },
+    "research/results/context-activity-v3/core/artifacts.json": {
+      "bytes": 2100,
+      "sha256": "2ea476bc5413dc13486dec9f3d7e9162a50a0e47f1d83ce29efabc5f5cc5af9d"
+    },
+    "research/results/context-activity-v3/core/grouping.json": {
+      "bytes": 18339134,
+      "sha256": "333069c4ab41ed8ea6976b0bc50cd08de9a33118ab60d683533b7ee32a6f517f"
+    },
+    "research/variant-transfer/prior-exposure-inventory/author-acquisition.json": {
+      "bytes": 16600,
+      "sha256": "cf696fa233c15fd14bdc464e5b109f0fe481fc18ec8cc78307512b8f2926180f"
+    }
+  },
+  "old_author_tables": [
+    {
+      "bytes": 53410,
+      "cache_path": "/workspace/.tools/prior-exposure-author-tables/GRCh38_F9.tsv",
+      "content_type": "application/octet-stream",
+      "final_url": "https://idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com/cos-prod-osf-1-files-fra/4b39140ab3aa0c61ded08b40b8397905d2eee7f24777808638196d7fdbb9f2d8?response-content-disposition=attachment%3B+filename%3D%22GRCh38_F9.tsv%22%3B+filename%2A%3DUTF-8%27%27GRCh38_F9.tsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a1e5869d3122814cba7bd4265a84ad444199855%2F20261027%2Feu-frankfurt-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T222535Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=457de7e11610145ad9d274ddc45c1b3ed2fcb6d05f4f676fe9eab4fb6211466b",
+      "name": "GRCh38_F9.tsv",
+      "osf_version": 1,
+      "role": "Old explored-study molecular identity forensics only. Numeric outcome columns not inspected or used.",
+      "sha256": "4b39140ab3aa0c61ded08b40b8397905d2eee7f24777808638196d7fdbb9f2d8",
+      "status": 200,
+      "url": "https://osf.io/download/4t82y/"
+    },
+    {
+      "bytes": 108702,
+      "cache_path": "/workspace/.tools/prior-exposure-author-tables/GRCh38_FOXE1.tsv",
+      "content_type": "application/octet-stream",
+      "final_url": "https://idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com/cos-prod-osf-1-files-fra/da040a9459d2286e0c7cc1ac2e51f12ccf115ee77c93ecaaf51d155d50192a57?response-content-disposition=attachment%3B+filename%3D%22GRCh38_FOXE1.tsv%22%3B+filename%2A%3DUTF-8%27%27GRCh38_FOXE1.tsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a1e5869d3122814cba7bd4265a84ad444199855%2F20261027%2Feu-frankfurt-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T222535Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=a96b261ea998ece05ef728a8d17cc83d0d6cc1cf842e59dcc007a7324d2e675c",
+      "name": "GRCh38_FOXE1.tsv",
+      "osf_version": 1,
+      "role": "Old explored-study molecular identity forensics only. Numeric outcome columns not inspected or used.",
+      "sha256": "da040a9459d2286e0c7cc1ac2e51f12ccf115ee77c93ecaaf51d155d50192a57",
+      "status": 200,
+      "url": "https://osf.io/download/43qk5/"
+    },
+    {
+      "bytes": 71664,
+      "cache_path": "/workspace/.tools/prior-exposure-author-tables/GRCh38_GP1BA.tsv",
+      "content_type": "application/octet-stream",
+      "final_url": "https://idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com/cos-prod-osf-1-files-fra/54568b178b13ae42344002ecdb142919b3c502ebd83ced726839ab484c4ff2f0?response-content-disposition=attachment%3B+filename%3D%22GRCh38_GP1BA.tsv%22%3B+filename%2A%3DUTF-8%27%27GRCh38_GP1BA.tsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a1e5869d3122814cba7bd4265a84ad444199855%2F20261027%2Feu-frankfurt-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T222534Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=c195275504bae0d3c7bbc6b7f4cba30cc1910356928f523533a770c8c4696d37",
+      "name": "GRCh38_GP1BA.tsv",
+      "osf_version": 1,
+      "role": "Old explored-study molecular identity forensics only. Numeric outcome columns not inspected or used.",
+      "sha256": "54568b178b13ae42344002ecdb142919b3c502ebd83ced726839ab484c4ff2f0",
+      "status": 200,
+      "url": "https://osf.io/download/yd3eu/"
+    },
+    {
+      "bytes": 33879,
+      "cache_path": "/workspace/.tools/prior-exposure-author-tables/GRCh38_HBB.tsv",
+      "content_type": null,
+      "final_url": "https://osf.io/download/zpv8r/",
+      "name": "GRCh38_HBB.tsv",
+      "osf_version": 1,
+      "role": "Old explored-study molecular identity forensics only. Numeric outcome columns not inspected or used.",
+      "sha256": "705694a6d45cd61159883250393b165a5813b40cc06e1dcdbe3270faad58af07",
+      "status": "verified_retained_old_source",
+      "url": "https://osf.io/download/zpv8r/"
+    },
+    {
+      "bytes": 49575,
+      "cache_path": "/workspace/.tools/prior-exposure-author-tables/GRCh38_HBG1.tsv",
+      "content_type": "application/octet-stream",
+      "final_url": "https://idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com/cos-prod-osf-1-files-fra/8ee97d880f3d50fe1f1320dd01c026b70808f20dd8c027f4040091e2f12ad64d?response-content-disposition=attachment%3B+filename%3D%22GRCh38_HBG1.tsv%22%3B+filename%2A%3DUTF-8%27%27GRCh38_HBG1.tsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a1e5869d3122814cba7bd4265a84ad444199855%2F20261027%2Feu-frankfurt-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T222535Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=918e690f8e1060be08860fbcf8df359984c962db11f5561cbf5b618ab17a79d8",
+      "name": "GRCh38_HBG1.tsv",
+      "osf_version": 1,
+      "role": "Old explored-study molecular identity forensics only. Numeric outcome columns not inspected or used.",
+      "sha256": "8ee97d880f3d50fe1f1320dd01c026b70808f20dd8c027f4040091e2f12ad64d",
+      "status": 200,
+      "url": "https://osf.io/download/c4h9q/"
+    },
+    {
+      "bytes": 54775,
+      "cache_path": "/workspace/.tools/prior-exposure-author-tables/GRCh38_HNF4A.tsv",
+      "content_type": "application/octet-stream",
+      "final_url": "https://idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com/cos-prod-osf-1-files-fra/e819807da0d62048aaceb51b656cc9b0a789d8cff4be9766c5289ee6af5a8efb?response-content-disposition=attachment%3B+filename%3D%22GRCh38_HNF4A.tsv%22%3B+filename%2A%3DUTF-8%27%27GRCh38_HNF4A.tsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a1e5869d3122814cba7bd4265a84ad444199855%2F20261027%2Feu-frankfurt-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T222537Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=5f7f148e5abeabe3b1c60fe17dceffc702cfa280754fa10c553c039e5f77230b",
+      "name": "GRCh38_HNF4A.tsv",
+      "osf_version": 1,
+      "role": "Old explored-study molecular identity forensics only. Numeric outcome columns not inspected or used.",
+      "sha256": "e819807da0d62048aaceb51b656cc9b0a789d8cff4be9766c5289ee6af5a8efb",
+      "status": 200,
+      "url": "https://osf.io/download/dtzc7/"
+    },
+    {
+      "bytes": 59475,
+      "cache_path": "/workspace/.tools/prior-exposure-author-tables/GRCh38_LDLR.2.tsv",
+      "content_type": "application/octet-stream",
+      "final_url": "https://idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com/cos-prod-osf-1-files-fra/a4c48dc5939fd789bb8aea87841c7befd278d8497a60f1fdb6f683df3b446f5f?response-content-disposition=attachment%3B+filename%3D%22GRCh38_LDLR.2.tsv%22%3B+filename%2A%3DUTF-8%27%27GRCh38_LDLR.2.tsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a1e5869d3122814cba7bd4265a84ad444199855%2F20261027%2Feu-frankfurt-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T222538Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=ff60157b2640ec0bba5f052f6a48cf62ff00cd217c26799053264d60c18a1b68",
+      "name": "GRCh38_LDLR.2.tsv",
+      "osf_version": 1,
+      "role": "Old explored-study molecular identity forensics only. Numeric outcome columns not inspected or used.",
+      "sha256": "a4c48dc5939fd789bb8aea87841c7befd278d8497a60f1fdb6f683df3b446f5f",
+      "status": 200,
+      "url": "https://osf.io/download/caxb4/"
+    },
+    {
+      "bytes": 59044,
+      "cache_path": "/workspace/.tools/prior-exposure-author-tables/GRCh38_LDLR.tsv",
+      "content_type": "application/octet-stream",
+      "final_url": "https://idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com/cos-prod-osf-1-files-fra/9f32d4818a19deb5b678b116747227f5035fe266f9cac021743074ef7a754efb?response-content-disposition=attachment%3B+filename%3D%22GRCh38_LDLR.tsv%22%3B+filename%2A%3DUTF-8%27%27GRCh38_LDLR.tsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a1e5869d3122814cba7bd4265a84ad444199855%2F20261027%2Feu-frankfurt-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T222538Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=3065983475d1b9b2e25d935ce42ca7a5c41d16a88afcf8a119c0f315410f2496",
+      "name": "GRCh38_LDLR.tsv",
+      "osf_version": 1,
+      "role": "Old explored-study molecular identity forensics only. Numeric outcome columns not inspected or used.",
+      "sha256": "9f32d4818a19deb5b678b116747227f5035fe266f9cac021743074ef7a754efb",
+      "status": 200,
+      "url": "https://osf.io/download/qkmer/"
+    },
+    {
+      "bytes": 113536,
+      "cache_path": "/workspace/.tools/prior-exposure-author-tables/GRCh38_MSMB.tsv",
+      "content_type": "application/octet-stream",
+      "final_url": "https://idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com/cos-prod-osf-1-files-fra/18e1e4d6377b19c2c60eb59b1df4d1555d3e54e33a509584656cfbfaa4593e8a?response-content-disposition=attachment%3B+filename%3D%22GRCh38_MSMB.tsv%22%3B+filename%2A%3DUTF-8%27%27GRCh38_MSMB.tsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a1e5869d3122814cba7bd4265a84ad444199855%2F20261027%2Feu-frankfurt-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T222538Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=9862f400c941fe83ea5fbee988a63f51749a414907ed9107d7c0fbbf8cff52bf",
+      "name": "GRCh38_MSMB.tsv",
+      "osf_version": 1,
+      "role": "Old explored-study molecular identity forensics only. Numeric outcome columns not inspected or used.",
+      "sha256": "18e1e4d6377b19c2c60eb59b1df4d1555d3e54e33a509584656cfbfaa4593e8a",
+      "status": 200,
+      "url": "https://osf.io/download/5bfc21ea73771800170844be/"
+    },
+    {
+      "bytes": 95926,
+      "cache_path": "/workspace/.tools/prior-exposure-author-tables/GRCh38_PKLR-24h.tsv",
+      "content_type": "application/octet-stream",
+      "final_url": "https://idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com/cos-prod-osf-1-files-fra/786b49af6fde13e22a054d06dc8e98e1a289563a2f9fca0a127210770d50d87c?response-content-disposition=attachment%3B+filename%3D%22GRCh38_PKLR-24h.tsv%22%3B+filename%2A%3DUTF-8%27%27GRCh38_PKLR-24h.tsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a1e5869d3122814cba7bd4265a84ad444199855%2F20261027%2Feu-frankfurt-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T222540Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=b5a0e31123b57d6f2757635e57fde00053bae774fa1fd4bffbe20e9a572497b1",
+      "name": "GRCh38_PKLR-24h.tsv",
+      "osf_version": 1,
+      "role": "Old explored-study molecular identity forensics only. Numeric outcome columns not inspected or used.",
+      "sha256": "786b49af6fde13e22a054d06dc8e98e1a289563a2f9fca0a127210770d50d87c",
+      "status": 200,
+      "url": "https://osf.io/download/5bfc21eb73771800190844b0/"
+    },
+    {
+      "bytes": 96652,
+      "cache_path": "/workspace/.tools/prior-exposure-author-tables/GRCh38_PKLR-48h.tsv",
+      "content_type": "application/octet-stream",
+      "final_url": "https://idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com/cos-prod-osf-1-files-fra/4d7baad585558a7924c63e1c81769fe784e7512d01581e4402b78677bddc5638?response-content-disposition=attachment%3B+filename%3D%22GRCh38_PKLR-48h.tsv%22%3B+filename%2A%3DUTF-8%27%27GRCh38_PKLR-48h.tsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a1e5869d3122814cba7bd4265a84ad444199855%2F20261027%2Feu-frankfurt-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T222540Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=05b428efba6bdb3748a5c7329229601fd41b0a08e52c6d3ebb8fd380e6688616",
+      "name": "GRCh38_PKLR-48h.tsv",
+      "osf_version": 1,
+      "role": "Old explored-study molecular identity forensics only. Numeric outcome columns not inspected or used.",
+      "sha256": "4d7baad585558a7924c63e1c81769fe784e7512d01581e4402b78677bddc5638",
+      "status": 200,
+      "url": "https://osf.io/download/5bfc21ec737718001a08432a/"
+    },
+    {
+      "bytes": 51529,
+      "cache_path": "/workspace/.tools/prior-exposure-author-tables/GRCh38_TERT-GAa.tsv",
+      "content_type": "application/octet-stream",
+      "final_url": "https://idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com/cos-prod-osf-1-files-fra/4654c5674190723f50893ac8b19a5badbe92ff87b0e24a3098dc2a9534c3a1f1?response-content-disposition=attachment%3B+filename%3D%22GRCh38_TERT-GAa.tsv%22%3B+filename%2A%3DUTF-8%27%27GRCh38_TERT-GAa.tsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a1e5869d3122814cba7bd4265a84ad444199855%2F20261027%2Feu-frankfurt-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T222540Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=363ce84addb8c1b2df3384dbe0a1136b558f8b3f5f73d2e66076bcbc298605e5",
+      "name": "GRCh38_TERT-GAa.tsv",
+      "osf_version": 1,
+      "role": "Old explored-study molecular identity forensics only. Numeric outcome columns not inspected or used.",
+      "sha256": "4654c5674190723f50893ac8b19a5badbe92ff87b0e24a3098dc2a9534c3a1f1",
+      "status": 200,
+      "url": "https://osf.io/download/pnxwz/"
+    },
+    {
+      "bytes": 51826,
+      "cache_path": "/workspace/.tools/prior-exposure-author-tables/GRCh38_TERT-GBM.tsv",
+      "content_type": "application/octet-stream",
+      "final_url": "https://idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com/cos-prod-osf-1-files-fra/92bcdfab5aab64851dd120350d11511aab02d40e9e980dce94d9e90458aee1df?response-content-disposition=attachment%3B+filename%3D%22GRCh38_TERT-GBM.tsv%22%3B+filename%2A%3DUTF-8%27%27GRCh38_TERT-GBM.tsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a1e5869d3122814cba7bd4265a84ad444199855%2F20261027%2Feu-frankfurt-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T222541Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=1fa101fb6d53395e7533ded2835e4f5e1321b4fcb39acaa23f78588af212da24",
+      "name": "GRCh38_TERT-GBM.tsv",
+      "osf_version": 1,
+      "role": "Old explored-study molecular identity forensics only. Numeric outcome columns not inspected or used.",
+      "sha256": "92bcdfab5aab64851dd120350d11511aab02d40e9e980dce94d9e90458aee1df",
+      "status": 200,
+      "url": "https://osf.io/download/w3a75/"
+    },
+    {
+      "bytes": 51619,
+      "cache_path": "/workspace/.tools/prior-exposure-author-tables/GRCh38_TERT-GSc.tsv",
+      "content_type": "application/octet-stream",
+      "final_url": "https://idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com/cos-prod-osf-1-files-fra/7c9279fe1bc02d8ebf854d67beeb032b8ea0e8842cb6db28744b55410c98e897?response-content-disposition=attachment%3B+filename%3D%22GRCh38_TERT-GSc.tsv%22%3B+filename%2A%3DUTF-8%27%27GRCh38_TERT-GSc.tsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a1e5869d3122814cba7bd4265a84ad444199855%2F20261027%2Feu-frankfurt-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T222541Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=f09d527756fe484bced46e11288bb06917d9a18ca7265d7f5d08a8a0bdd35989",
+      "name": "GRCh38_TERT-GSc.tsv",
+      "osf_version": 1,
+      "role": "Old explored-study molecular identity forensics only. Numeric outcome columns not inspected or used.",
+      "sha256": "7c9279fe1bc02d8ebf854d67beeb032b8ea0e8842cb6db28744b55410c98e897",
+      "status": 200,
+      "url": "https://osf.io/download/3cpv2/"
+    },
+    {
+      "bytes": 50914,
+      "cache_path": "/workspace/.tools/prior-exposure-author-tables/GRCh38_TERT-HEK.tsv",
+      "content_type": "application/octet-stream",
+      "final_url": "https://idvyorynw6xy.compat.objectstorage.eu-frankfurt-1.oraclecloud.com/cos-prod-osf-1-files-fra/5b7e19ccc5a8f98b0ee42e9ab28658dbc0f0a04dcb7974609b15afc2828a9543?response-content-disposition=attachment%3B+filename%3D%22GRCh38_TERT-HEK.tsv%22%3B+filename%2A%3DUTF-8%27%27GRCh38_TERT-HEK.tsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=8a1e5869d3122814cba7bd4265a84ad444199855%2F20261027%2Feu-frankfurt-1%2Fs3%2Faws4_request&X-Amz-Date=20261027T222542Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=7027f1b48f25ca124ce012d9f3cf6be983efe0459019046ed3f50d7756cdb704",
+      "name": "GRCh38_TERT-HEK.tsv",
+      "osf_version": 1,
+      "role": "Old explored-study molecular identity forensics only. Numeric outcome columns not inspected or used.",
+      "sha256": "5b7e19ccc5a8f98b0ee42e9ab28658dbc0f0a04dcb7974609b15afc2828a9543",
+      "status": 200,
+      "url": "https://osf.io/download/afjzs/"
+    }
+  ],
+  "reference": {
+    "assembly": "GRCh38",
+    "bytes": 835393456,
+    "path": "/workspace/.tools/reference/hg38.2bit",
+    "sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0"
+  }
+}

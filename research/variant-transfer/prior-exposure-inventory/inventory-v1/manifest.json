@@ -1,0 +1,54 @@
+{
+  "files": {
+    "agarwal-cores.jsonl.gz": {
+      "bytes": 8803270,
+      "sha256": "d21e5a46db9eb739729b716edcf6b51c9af124b9a4eb27c850a8b40706bff764"
+    },
+    "hbb-auxiliary-loci.json": {
+      "bytes": 5213,
+      "sha256": "a952ede629087e6ea8b03e6e12ecef2b6e7b409585d1647d25181e3159dfea74"
+    },
+    "hbb-auxiliary-windows200.jsonl.gz": {
+      "bytes": 278280,
+      "sha256": "d161547e84cd39e84239fbbff970a43e94d2b2ae3616ca3591ee04729565b46b"
+    },
+    "implementation.py": {
+      "bytes": 20083,
+      "sha256": "d60c19c7d540e9d226f20346bff0c3a5fe416fa147ce0a3c8952cdd6439a167d"
+    },
+    "inputs.json": {
+      "bytes": 30295,
+      "sha256": "19293dbccaea60cbabb2cc1016850a6018c21df5c72601853ba4aa078a204501"
+    },
+    "kircher-deletion-windows200.jsonl.gz": {
+      "bytes": 12014233,
+      "sha256": "13e0c1719be98d4efa3ef3696042c6447aed985fbc5890da09f7b381e5eb73c9"
+    },
+    "kircher-loci.json": {
+      "bytes": 15038,
+      "sha256": "da323a6b61e21427f866be9e6ec3bb25c692d0a259fcd42bc955e23cbc2feb71"
+    },
+    "kircher-native-edits.jsonl.gz": {
+      "bytes": 1254436,
+      "sha256": "8bfacd3f6d7b48f436667f376e4d5e4179fad9da68a551cadd8a6d38430966f9"
+    },
+    "kircher-reference-windows200.jsonl.gz": {
+      "bytes": 731906,
+      "sha256": "37fbcba56d7ab1c011e3ef02c75fe8611ec073043d4a7ed56133e4f7f23cc57c"
+    },
+    "molecular-identity-bindings.json": {
+      "bytes": 9592,
+      "sha256": "d9068eb3746fab14fa3f554ec0a974b1424749d7803daed1a984b6615536b37f"
+    },
+    "summary.json": {
+      "bytes": 2766,
+      "sha256": "ed5417dc4283aecb2b59684b6f1356be07d83f33b3495b4fd26374c70ebc48b3"
+    },
+    "twobit_reference.py": {
+      "bytes": 10957,
+      "sha256": "ffbb77304eb324b2028cf6fb29ca8e0ea4b6a1e9daaf77ee42ce4a8f629847a2"
+    }
+  },
+  "schema_version": 1,
+  "summary_sha256": "ed5417dc4283aecb2b59684b6f1356be07d83f33b3495b4fd26374c70ebc48b3"
+}

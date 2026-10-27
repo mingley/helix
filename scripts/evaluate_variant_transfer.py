@@ -159,7 +159,11 @@ def association(observed, predicted):
     # Normalize first to avoid overflow in sums of products. Constant vectors
     # are explicitly nonestimable; no near-zero threshold or filtering is used.
     xscale, yscale = max(map(abs, dx)), max(map(abs, dy))
-    if xscale == 0 or yscale == 0:
+    # Summing rounded v/n terms can move a constant vector's mean by one ULP.
+    # Detect exact equality on the original values before relying on centering.
+    constant_input = (all(value == observed[0] for value in observed)
+                      or all(value == predicted[0] for value in predicted))
+    if constant_input or xscale == 0 or yscale == 0:
         correlation = {"estimable": False, "value": None, "reason": "constant observed or predicted vector"}
     else:
         xn, yn = [v / xscale for v in dx], [v / yscale for v in dy]

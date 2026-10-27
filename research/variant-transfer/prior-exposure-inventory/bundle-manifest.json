@@ -1,0 +1,151 @@
+{
+  "files": {
+    ".gitattributes": {
+      "bytes": 122,
+      "sha256": "e9263f7dd38c1e1cfab5931c26b35f05f883a82b520db9dac1c66c53c971ef44"
+    },
+    "README.md": {
+      "bytes": 7975,
+      "sha256": "2ae3e2b3a7126408952133e751d045e18c8b73615d6a0c25d5a7010e202b0e21"
+    },
+    "acquire_prior_author_metadata.py": {
+      "bytes": 3562,
+      "sha256": "efa00a374a05996f90cbfe99aebd37ecbf14ffbaaae1db249253d735e1815a00"
+    },
+    "author-acquisition.json": {
+      "bytes": 16600,
+      "sha256": "cf696fa233c15fd14bdc464e5b109f0fe481fc18ec8cc78307512b8f2926180f"
+    },
+    "author-md5-verification.json": {
+      "bytes": 6246,
+      "sha256": "ada92b1a2a865662a4116ebb032d493db35fdb30d87e3367d12332e63401d5df"
+    },
+    "build_inventory.py": {
+      "bytes": 20083,
+      "sha256": "d60c19c7d540e9d226f20346bff0c3a5fe416fa147ce0a3c8952cdd6439a167d"
+    },
+    "inventory-v1/agarwal-cores.jsonl.gz": {
+      "bytes": 8803270,
+      "sha256": "d21e5a46db9eb739729b716edcf6b51c9af124b9a4eb27c850a8b40706bff764"
+    },
+    "inventory-v1/hbb-auxiliary-loci.json": {
+      "bytes": 5213,
+      "sha256": "a952ede629087e6ea8b03e6e12ecef2b6e7b409585d1647d25181e3159dfea74"
+    },
+    "inventory-v1/hbb-auxiliary-windows200.jsonl.gz": {
+      "bytes": 278280,
+      "sha256": "d161547e84cd39e84239fbbff970a43e94d2b2ae3616ca3591ee04729565b46b"
+    },
+    "inventory-v1/implementation.py": {
+      "bytes": 20083,
+      "sha256": "d60c19c7d540e9d226f20346bff0c3a5fe416fa147ce0a3c8952cdd6439a167d"
+    },
+    "inventory-v1/inputs.json": {
+      "bytes": 30295,
+      "sha256": "19293dbccaea60cbabb2cc1016850a6018c21df5c72601853ba4aa078a204501"
+    },
+    "inventory-v1/kircher-deletion-windows200.jsonl.gz": {
+      "bytes": 12014233,
+      "sha256": "13e0c1719be98d4efa3ef3696042c6447aed985fbc5890da09f7b381e5eb73c9"
+    },
+    "inventory-v1/kircher-loci.json": {
+      "bytes": 15038,
+      "sha256": "da323a6b61e21427f866be9e6ec3bb25c692d0a259fcd42bc955e23cbc2feb71"
+    },
+    "inventory-v1/kircher-native-edits.jsonl.gz": {
+      "bytes": 1254436,
+      "sha256": "8bfacd3f6d7b48f436667f376e4d5e4179fad9da68a551cadd8a6d38430966f9"
+    },
+    "inventory-v1/kircher-reference-windows200.jsonl.gz": {
+      "bytes": 731906,
+      "sha256": "37fbcba56d7ab1c011e3ef02c75fe8611ec073043d4a7ed56133e4f7f23cc57c"
+    },
+    "inventory-v1/manifest.json": {
+      "bytes": 1889,
+      "sha256": "861d838582ce1f0d52d846e6d20ee5d6c0f28c059db257032c9cff7a1fae6faf"
+    },
+    "inventory-v1/molecular-identity-bindings.json": {
+      "bytes": 9592,
+      "sha256": "d9068eb3746fab14fa3f554ec0a974b1424749d7803daed1a984b6615536b37f"
+    },
+    "inventory-v1/summary.json": {
+      "bytes": 2766,
+      "sha256": "ed5417dc4283aecb2b59684b6f1356be07d83f33b3495b4fd26374c70ebc48b3"
+    },
+    "inventory-v1/twobit_reference.py": {
+      "bytes": 10957,
+      "sha256": "ffbb77304eb324b2028cf6fb29ca8e0ea4b6a1e9daaf77ee42ce4a8f629847a2"
+    },
+    "raw-author-tables/GRCh38_F9.tsv": {
+      "bytes": 53410,
+      "sha256": "4b39140ab3aa0c61ded08b40b8397905d2eee7f24777808638196d7fdbb9f2d8"
+    },
+    "raw-author-tables/GRCh38_FOXE1.tsv": {
+      "bytes": 108702,
+      "sha256": "da040a9459d2286e0c7cc1ac2e51f12ccf115ee77c93ecaaf51d155d50192a57"
+    },
+    "raw-author-tables/GRCh38_GP1BA.tsv": {
+      "bytes": 71664,
+      "sha256": "54568b178b13ae42344002ecdb142919b3c502ebd83ced726839ab484c4ff2f0"
+    },
+    "raw-author-tables/GRCh38_HBB.tsv": {
+      "bytes": 33879,
+      "sha256": "705694a6d45cd61159883250393b165a5813b40cc06e1dcdbe3270faad58af07"
+    },
+    "raw-author-tables/GRCh38_HBG1.tsv": {
+      "bytes": 49575,
+      "sha256": "8ee97d880f3d50fe1f1320dd01c026b70808f20dd8c027f4040091e2f12ad64d"
+    },
+    "raw-author-tables/GRCh38_HNF4A.tsv": {
+      "bytes": 54775,
+      "sha256": "e819807da0d62048aaceb51b656cc9b0a789d8cff4be9766c5289ee6af5a8efb"
+    },
+    "raw-author-tables/GRCh38_LDLR.2.tsv": {
+      "bytes": 59475,
+      "sha256": "a4c48dc5939fd789bb8aea87841c7befd278d8497a60f1fdb6f683df3b446f5f"
+    },
+    "raw-author-tables/GRCh38_LDLR.tsv": {
+      "bytes": 59044,
+      "sha256": "9f32d4818a19deb5b678b116747227f5035fe266f9cac021743074ef7a754efb"
+    },
+    "raw-author-tables/GRCh38_MSMB.tsv": {
+      "bytes": 113536,
+      "sha256": "18e1e4d6377b19c2c60eb59b1df4d1555d3e54e33a509584656cfbfaa4593e8a"
+    },
+    "raw-author-tables/GRCh38_PKLR-24h.tsv": {
+      "bytes": 95926,
+      "sha256": "786b49af6fde13e22a054d06dc8e98e1a289563a2f9fca0a127210770d50d87c"
+    },
+    "raw-author-tables/GRCh38_PKLR-48h.tsv": {
+      "bytes": 96652,
+      "sha256": "4d7baad585558a7924c63e1c81769fe784e7512d01581e4402b78677bddc5638"
+    },
+    "raw-author-tables/GRCh38_TERT-GAa.tsv": {
+      "bytes": 51529,
+      "sha256": "4654c5674190723f50893ac8b19a5badbe92ff87b0e24a3098dc2a9534c3a1f1"
+    },
+    "raw-author-tables/GRCh38_TERT-GBM.tsv": {
+      "bytes": 51826,
+      "sha256": "92bcdfab5aab64851dd120350d11511aab02d40e9e980dce94d9e90458aee1df"
+    },
+    "raw-author-tables/GRCh38_TERT-GSc.tsv": {
+      "bytes": 51619,
+      "sha256": "7c9279fe1bc02d8ebf854d67beeb032b8ea0e8842cb6db28744b55410c98e897"
+    },
+    "raw-author-tables/GRCh38_TERT-HEK.tsv": {
+      "bytes": 50914,
+      "sha256": "5b7e19ccc5a8f98b0ee42e9ab28658dbc0f0a04dcb7974609b15afc2828a9543"
+    },
+    "test_inventory.py": {
+      "bytes": 4265,
+      "sha256": "e6f362f307a44773539e3a85cd9766cb63dc2e0a4206505a85cf53c378081761"
+    },
+    "verification.json": {
+      "bytes": 4150,
+      "sha256": "b4d3e534b6617ad0b2112a57268c5a4d1733d725e9bda21857b6c36e7500e359"
+    }
+  },
+  "inventory_manifest_sha256": "861d838582ce1f0d52d846e6d20ee5d6c0f28c059db257032c9cff7a1fae6faf",
+  "schema_version": 1,
+  "scope": "Frozen complete old-DNA/source-exposure inventory, implementations, original author source tables, attribution and validation; no Siraj response file."
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "status": "preparation_error_not_protocol_authority",
+  "preparation_path": "grouping-preparation-v1/preparation.json",
+  "preparation_sha256": "e21845e9255da55ecf85335685279e0485168ee46b0f9f242c27c72beb90984a",
+  "error": "Prepared all-touched-1Mb-bin relation instead of the frozen floor(start/1000000) relation plus separate positive interval overlaps.",
+  "full_run_executed": false,
+  "outcome_payload_parsed": false,
+  "correction": "Preserve failed preparation bytes; use grouping-preparation-v1-corrected with exact frozen start-bin and interval-overlap rules."
+}

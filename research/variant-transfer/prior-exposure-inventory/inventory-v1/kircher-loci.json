@@ -1,0 +1,300 @@
+{
+  "coordinate_convention": "zero_based_half_open",
+  "loci": [
+    {
+      "assays": [
+        {
+          "assay_id": "urn:mavedb:00000015-a-1",
+          "cell_context": "HepG2",
+          "metadata_path": "datasets/regulatory-cohort/00000015-a-1.metadata.json",
+          "prior_role": "primary",
+          "scores_path": "datasets/regulatory-cohort/00000015-a-1.scores.csv"
+        }
+      ],
+      "assembly": "GRCh38",
+      "canonical_rc_sha256": "63603602a26ea5d113653c848867e0af679b7b66973bea7ff3d4ae41aa143c95",
+      "chromosome": "chrX",
+      "collection": "Kircher2019",
+      "coordinate_convention": "zero_based_half_open",
+      "element_id": "F9",
+      "end": 139530765,
+      "genome_wide_uniqueness_established": false,
+      "id": "Kircher2019:F9",
+      "length": 303,
+      "reference_strand": "+",
+      "sequence": "GTCCCACTGATGAACTGTGCTGCCACAGTAAATGTAGCCACTATGCCTATCTCCATTCTGAAGATGTGTCACTTCCTGTTTCAGACTCAAATCAGCCACAGTGGCAGAAGCCCACGAAATCAGAGGTGAAATTTAATAATGACCACTGCCCATTCTCTTCACTTGTCCCAAGAGGCCATTGGAAATAGTCCAAAGACCCATTGAGGGAGATGGACATTATTTCCCAGAAGTAAATACAGCTCAGCTTGTACTTTGGTACAACTAATCGACCTTACCACTTTCACAATCTGCTAGCAAAGGTTA",
+      "sequence_sha256": "63603602a26ea5d113653c848867e0af679b7b66973bea7ff3d4ae41aa143c95",
+      "source_coordinate_convention": "one_based_inclusive",
+      "start": 139530462
+    },
+    {
+      "assays": [
+        {
+          "assay_id": "urn:mavedb:00000016-a-1",
+          "cell_context": "HeLa",
+          "metadata_path": "datasets/regulatory-cohort/00000016-a-1.metadata.json",
+          "prior_role": "primary",
+          "scores_path": "datasets/regulatory-cohort/00000016-a-1.scores.csv"
+        }
+      ],
+      "assembly": "GRCh38",
+      "canonical_rc_sha256": "ceb77d1065c2aa7a4227a347615cd1ee697709e70432942f514ca58196e3a4e6",
+      "chromosome": "chr9",
+      "collection": "Kircher2019",
+      "coordinate_convention": "zero_based_half_open",
+      "element_id": "FOXE1",
+      "end": 97853854,
+      "genome_wide_uniqueness_established": false,
+      "id": "Kircher2019:FOXE1",
+      "length": 600,
+      "reference_strand": "+",
+      "sequence": "CTCGCCAGCGGTCCGCAGGGCTGGAGACCCACGCCGTGGAGAGGACCAGCCTCAGGTCGCCCCGCCTGGGCCCGCGCCCCGACCTCGCTGCCCCCGCCTCGCCTCTCTGCCCGTGGCGCTTACGGCCACCTTGGCCTCGGGGGCAGGGCATGGGCGGCCCCCGCCAGATCGCCCAGCGCCAGTACTAACTGCCCTCGCTCTGGCCTTCGAGCCCGAAGCCTCTTCTGCGCGCACAACCTAGGCAGTAATCCTAAACTAGCGGGCACCACAGACCAGCTGCAGCCACCCCAACCCAGGGATCACTTCCGGACCCCTCGACCGCCCGGCACCAGCGCGCAAGGGACCCTTCAGCCGGAGACCAGAGTCCAGTCCCGGTCACGAGGCCACCGCCGCTGCCCGCCTCGAGAAGCACCACGCGGGCTGAGCCGTCGGCTAGCGGGTCACTCCCGAGCCTCTGTCTGCACCGCGCCAGCCCCAGACCACGGACGCTGAGCCTCCAGCGCGTGCCAGCCTGGGCCGCTGGGCTCTCGGGGCCAGCCCGCGACGATCCCCTGAGCTCTCCGCAGAAGGGCCGAGCGTCCGTTCCGGGGACGCCAGGCC",
+      "sequence_sha256": "ceb77d1065c2aa7a4227a347615cd1ee697709e70432942f514ca58196e3a4e6",
+      "source_coordinate_convention": "one_based_inclusive",
+      "start": 97853254
+    },
+    {
+      "assays": [
+        {
+          "assay_id": "urn:mavedb:00000017-a-1",
+          "cell_context": "HEL 92.1.7",
+          "metadata_path": "datasets/regulatory-cohort/00000017-a-1.metadata.json",
+          "prior_role": "primary",
+          "scores_path": "datasets/regulatory-cohort/00000017-a-1.scores.csv"
+        }
+      ],
+      "assembly": "GRCh38",
+      "canonical_rc_sha256": "eb6a4063db58af20d897c20b8e3bc27ef3fd5f140bbb7300d44e319699d0a3f4",
+      "chromosome": "chr22",
+      "collection": "Kircher2019",
+      "coordinate_convention": "zero_based_half_open",
+      "element_id": "GP1BB",
+      "end": 19723650,
+      "genome_wide_uniqueness_established": false,
+      "id": "Kircher2019:GP1BB",
+      "length": 385,
+      "reference_strand": "+",
+      "sequence": "GTTGTGAATGCCGCGTCCTGTCCTGGTGACAGGAGAACAATGTTGGTGAACGTCGCAGCGGGTGTCCGAGTGCTCCGTGTGCCCCTGAGAGCGGGTGGGAGCGGAAGCCTGAGCGGCCTGCGGCCTCCGGCGATAGTGTGCTATCTGCCGCTGCAGCGCGCGTCCGCGCGGCCTCTGGGCTATTTCTGGCCAGGCCGCAGCACTGTGGTCGGTGCGGGCGTGGCAGGGGCGGGGCGGCCTTATCGCTCGGCTCTCCCGCCTACGCCTCCCGCTGCAGAGTAAGCCGGGCTGCCGTCTTCTCGCCATGGGCTCCGGTGAGTCTGGAGTCCGGTCGGGCCCCCGGCTGCTCCCTAGGCCGACCCGGGTTGAGAGGAGCTCTGGTCGT",
+      "sequence_sha256": "d7446543be4095c64597ec822192afd30ab9a5415bfc6671cd271c4ff0234de4",
+      "source_coordinate_convention": "one_based_inclusive",
+      "start": 19723265
+    },
+    {
+      "assays": [
+        {
+          "assay_id": "urn:mavedb:00000018-a-1",
+          "cell_context": "HEL 92.1.7",
+          "metadata_path": "datasets/regulatory-cohort/00000018-a-1.metadata.json",
+          "prior_role": "previously_exposed_reference",
+          "scores_path": "datasets/regulatory-cohort/00000018-a-1.scores.csv"
+        }
+      ],
+      "assembly": "GRCh38",
+      "canonical_rc_sha256": "7d24773d81187ff4ce17ed69de04bbe909eb4fcd1956ddee4067e4f9c5aa5337",
+      "chromosome": "chr11",
+      "collection": "Kircher2019",
+      "coordinate_convention": "zero_based_half_open",
+      "element_id": "HBB",
+      "end": 5227208,
+      "genome_wide_uniqueness_established": false,
+      "id": "Kircher2019:HBB",
+      "length": 187,
+      "reference_strand": "+",
+      "sequence": "GGTGTCTGTTTGAGGTTGCTAGTGAACACAGTTGTGTCAGAAGCAAATGTAAGCAATAGATGGCTCTGCCCTGACTTTTATGCCCAGCCCTGGCTCCTGCCCTCCCTGCTCCTGGGAGTAGATTGGCCAACCCTAGGGTGTGGCTCCACAGGGTGAGGTCTAAGTGATGACAGCCGTACCTGTCCTT",
+      "sequence_sha256": "4e7864ac41060a0caf76996f31ffcd06e2919341c627a6e301fcaef4be5ae0c0",
+      "source_coordinate_convention": "one_based_inclusive",
+      "start": 5227021
+    },
+    {
+      "assays": [
+        {
+          "assay_id": "urn:mavedb:00000019-a-1",
+          "cell_context": "HEL 92.1.7",
+          "metadata_path": "datasets/regulatory-cohort/00000019-a-1.metadata.json",
+          "prior_role": "primary",
+          "scores_path": "datasets/regulatory-cohort/00000019-a-1.scores.csv"
+        }
+      ],
+      "assembly": "GRCh38",
+      "canonical_rc_sha256": "ee41e7367f6151d7ce9ea59d4352e5a86142557200b59d9c8a8faa4a1f7dcd7f",
+      "chromosome": "chr11",
+      "collection": "Kircher2019",
+      "coordinate_convention": "zero_based_half_open",
+      "element_id": "HBG1",
+      "end": 5250078,
+      "genome_wide_uniqueness_established": false,
+      "id": "Kircher2019:HBG1",
+      "length": 274,
+      "reference_strand": "+",
+      "sequence": "GGCGTCTGGACTAGGAGCTTATTGATAACCTCAGACGTTCCAGAAGCGAGTGTGTGGAACTGCTGAAGGGTGCTTCCTTTTATTCTTCATCCCTAGCCAGCCGCCGGCCCCTGGCCTCACTGGATACTCTAAGACTATTGGTCAAGTTTGCCTTGTCAAGGCTATTGGTCAAGGCAAGGCTGGCCAACCCATGGGTGGAGTTTAGCCAGGGACCGTTTCAGACAGATATTTGCATTGAGATAGTGTGGGGAAGGGGCCCCCAAGAGGATACTGC",
+      "sequence_sha256": "f492122cb65b41c144075e69e312aaeda7888f2c6121eed870fd8e1fe8e5c863",
+      "source_coordinate_convention": "one_based_inclusive",
+      "start": 5249804
+    },
+    {
+      "assays": [
+        {
+          "assay_id": "urn:mavedb:00000020-a-1",
+          "cell_context": "HEK293T",
+          "metadata_path": "datasets/regulatory-cohort/00000020-a-1.metadata.json",
+          "prior_role": "primary",
+          "scores_path": "datasets/regulatory-cohort/00000020-a-1.scores.csv"
+        }
+      ],
+      "assembly": "GRCh38",
+      "canonical_rc_sha256": "1ccfc72478304139e5987ea14e0328600e7886a9c63df1c485ed36d263a1adca",
+      "chromosome": "chr20",
+      "collection": "Kircher2019",
+      "coordinate_convention": "zero_based_half_open",
+      "element_id": "HNF4A",
+      "end": 44355804,
+      "genome_wide_uniqueness_established": false,
+      "id": "Kircher2019:HNF4A",
+      "length": 285,
+      "reference_strand": "+",
+      "sequence": "CCCCAGAGTGCAGGACTAGGACCCGAGTGGACCTCAGGTCTGGCCAGGTCGCCATTGCCATGGAGACAGCAACAGTCCCCAGCCGCGGGTTCCCTAAGTGACTGGTTACTCTTTAACGTATCCACCCACCTTGGGTGATTAGAAGAATCAATAAGATAACCGGGCGGTGGCAGCTGGCCGCACTCACCGCCTTCCTGGTGGACGGGCTCCTGGTGGCTGTGCTGCTGCTGTGAGCGGGCCCCTGCTCCTCCATGCCCCCAGCTCTCCGGCTGGGTGGGCTTGGCC",
+      "sequence_sha256": "1ccfc72478304139e5987ea14e0328600e7886a9c63df1c485ed36d263a1adca",
+      "source_coordinate_convention": "one_based_inclusive",
+      "start": 44355519
+    },
+    {
+      "assays": [
+        {
+          "assay_id": "urn:mavedb:00000023-a-1",
+          "cell_context": "HepG2",
+          "metadata_path": "datasets/regulatory-cohort/00000023-a-1.metadata.json",
+          "prior_role": "primary",
+          "scores_path": "datasets/regulatory-cohort/00000023-a-1.scores.csv"
+        },
+        {
+          "assay_id": "urn:mavedb:00000023-a-2",
+          "cell_context": "HepG2",
+          "metadata_path": "datasets/regulatory-cohort/00000023-a-2.metadata.json",
+          "prior_role": "validation_only",
+          "scores_path": "datasets/regulatory-cohort/00000023-a-2.scores.csv"
+        }
+      ],
+      "assembly": "GRCh38",
+      "canonical_rc_sha256": "b4fc7bbdb98a7872a47392865ddd6ad3c318d90f8e4a1402b765cb0ad998bbb7",
+      "chromosome": "chr19",
+      "collection": "Kircher2019",
+      "coordinate_convention": "zero_based_half_open",
+      "element_id": "LDLR",
+      "end": 11089548,
+      "genome_wide_uniqueness_established": false,
+      "id": "Kircher2019:LDLR",
+      "length": 318,
+      "reference_strand": "+",
+      "sequence": "AGCTCTTCACCGGAGACCCAAATACAACAAATCAAGTCGCCTGCCCTGGCGACACTTTCGAAGGACTGGAGTGGGAATCAGAGCTTCACGGGTTAAAAAGCCGATGTCACATCGGCCGTTCGAAACTCCTCCTCTTGCAGTGAGGTGAAGACATTTGAAAATCACCCCACTGCAAACTCCTCCCCCTGCTAGAAACCTCACATTGAAATGCTGTAAATGACGTGGGCCCCGAGTGCAATCGCGGGAAGCCAGGGTTTCCAGCTAGGACACAGCAGGTCGTGATCCGGGTCGGGACACTGCCTGGCAGAGGCTGCGAGC",
+      "sequence_sha256": "b4fc7bbdb98a7872a47392865ddd6ad3c318d90f8e4a1402b765cb0ad998bbb7",
+      "source_coordinate_convention": "one_based_inclusive",
+      "start": 11089230
+    },
+    {
+      "assays": [
+        {
+          "assay_id": "urn:mavedb:00000024-a-1",
+          "cell_context": "HEK293T",
+          "metadata_path": "datasets/regulatory-cohort/00000024-a-1.metadata.json",
+          "prior_role": "primary",
+          "scores_path": "datasets/regulatory-cohort/00000024-a-1.scores.csv"
+        }
+      ],
+      "assembly": "GRCh38",
+      "canonical_rc_sha256": "4177d25c7293304cea51d142e26927110be5168b22713e71fbce217c197731fd",
+      "chromosome": "chr10",
+      "collection": "Kircher2019",
+      "coordinate_convention": "zero_based_half_open",
+      "element_id": "MSMB",
+      "end": 46046834,
+      "genome_wide_uniqueness_established": false,
+      "id": "Kircher2019:MSMB",
+      "length": 591,
+      "reference_strand": "+",
+      "sequence": "AAGCAGGACTCCTTATAGACAGGTACATCCAGGCAAAGCTGCATCAAACTTTTATACTGGAGAGGGCAACCACGCATTCGACATCATTGGGAATGATAACAAGGTGAGAACACATTGAGTGTTTACAGAGGGTTGACTATCAAAAGGAAAGTATGGTTTCAGATGATTTATGAGTTATTAATCAATCACATCTCCACCCAAGTTATGTGTTTACCTTGTCCCCACCCCGATCTGCATTTGCTGCTGACCTAAAAGAGCAGAGGAGGAGAGAACTTCTCTTTGCTGAGCCTTCGCCCTATGCTGGTGGATTGCTAGCACGTGATGTGTCCTTATTCGATTTTATACACAAAGAAACAGCCTCAGCGATGCCAGTCACAACAGCCAGGTGGTAAAGGTGGGTTTCCTGAAGGCATAAGAATAGCCCACAGGTCAGCCCACCAGGCCCACCGGGCCTGGGTCTGTGGCCCAGATGACCCTGCCCTTAGGGTCTGACATGAGAACAGAAATGGGTCAAGCCATCCTGCAGGGCACAGGAGAGCAAGAACTACATACAGCTCGGGGTTCCCTGACAAGCTGAATTGCTGGACCTTT",
+      "sequence_sha256": "868732b36a5c046dd6b1e2ba9ba3aa45571477e814c13f4eeadbd736f63e7b0f",
+      "source_coordinate_convention": "one_based_inclusive",
+      "start": 46046243
+    },
+    {
+      "assays": [
+        {
+          "assay_id": "urn:mavedb:00000027-a-1",
+          "cell_context": "K562",
+          "metadata_path": "datasets/regulatory-cohort/00000027-a-1.metadata.json",
+          "prior_role": "primary",
+          "scores_path": "datasets/regulatory-cohort/00000027-a-1.scores.csv"
+        },
+        {
+          "assay_id": "urn:mavedb:00000027-b-1",
+          "cell_context": "K562",
+          "metadata_path": "datasets/regulatory-cohort/00000027-b-1.metadata.json",
+          "prior_role": "validation_only",
+          "scores_path": "datasets/regulatory-cohort/00000027-b-1.scores.csv"
+        }
+      ],
+      "assembly": "GRCh38",
+      "canonical_rc_sha256": "8b7ec9bc6d42b55a29f7b33e794a4f7652088f674f84e963c74faf04972e95e4",
+      "chromosome": "chr1",
+      "collection": "Kircher2019",
+      "coordinate_convention": "zero_based_half_open",
+      "element_id": "PKLR",
+      "end": 155301864,
+      "genome_wide_uniqueness_established": false,
+      "id": "Kircher2019:PKLR",
+      "length": 470,
+      "reference_strand": "+",
+      "sequence": "TGCTTTCAGTGTGGGCCTGGGGCTGCGGGACCATGGAATGAGAGGGAGAGGATGACAAAACTGCTGGTCTTATCTAAGGGAGACAGAGAAGAGAAAAGGGGCACACCCAGTAGGCCACCCTGTCCCCACAGAATCCCTCCCCCAGAACGGCCTGCTCTCTGCCCTCATCTCCTGGCATTTCCTCTCATCCTTTTTTCCTGATAAATTTTCAATCCATTCATACTATCTGGTCATCCACGTGAATAGATATTTTTTTTTTGGCCAGTCATATGGCCCCATTTTCTTTGTACTTTACTGAAGTTAGCTCTAGTGAATCCAGGGAGCAGGGGCTGTAGGGTGGGGCTGGAGCCTGAAGAAAGACAAAAGGGATCACTGTGATAATATGGTGGGGGGAGGGTTACCCAGTTCTGACCACTTTTTTTCTCTGTCTCAACCAAGAAATGCAGAGTGCCTTCACCACTCTGTAACCT",
+      "sequence_sha256": "de01acad56140fc9258f7bbb414954c922d86d0ca61c0f4c5d01dee7a02d4afb",
+      "source_coordinate_convention": "one_based_inclusive",
+      "start": 155301394
+    },
+    {
+      "assays": [
+        {
+          "assay_id": "urn:mavedb:00000031-a-1",
+          "cell_context": "HEK293T",
+          "metadata_path": "datasets/regulatory-cohort/00000031-a-1.metadata.json",
+          "prior_role": "primary",
+          "scores_path": "datasets/regulatory-cohort/00000031-a-1.scores.csv"
+        },
+        {
+          "assay_id": "urn:mavedb:00000031-b-1",
+          "cell_context": "SF7996",
+          "metadata_path": "datasets/regulatory-cohort/00000031-b-1.metadata.json",
+          "prior_role": "validation_only",
+          "scores_path": "datasets/regulatory-cohort/00000031-b-1.scores.csv"
+        },
+        {
+          "assay_id": "urn:mavedb:00000031-c-1",
+          "cell_context": "SF7996",
+          "metadata_path": "datasets/regulatory-cohort/00000031-c-1.metadata.json",
+          "prior_role": "validation_only",
+          "scores_path": "datasets/regulatory-cohort/00000031-c-1.scores.csv"
+        },
+        {
+          "assay_id": "urn:mavedb:00000031-d-1",
+          "cell_context": "SF7996",
+          "metadata_path": "datasets/regulatory-cohort/00000031-d-1.metadata.json",
+          "prior_role": "validation_only",
+          "scores_path": "datasets/regulatory-cohort/00000031-d-1.scores.csv"
+        }
+      ],
+      "assembly": "GRCh38",
+      "canonical_rc_sha256": "c83a00a1b79db581aa674ba9577ac5c7177d033408ea90b63361755a840616ec",
+      "chromosome": "chr5",
+      "collection": "Kircher2019",
+      "coordinate_convention": "zero_based_half_open",
+      "element_id": "TERT",
+      "end": 1295247,
+      "genome_wide_uniqueness_established": false,
+      "id": "Kircher2019:TERT",
+      "length": 259,
+      "reference_strand": "+",
+      "sequence": "TCGCGGGGGTGGCCGGGGCCAGGGCTTCCCACGTGCGCAGCAGGACGCAGCGCTGCCTGAAACTCGCGCCGCGAGGAGAGGGCGGGGCCGCGGAAAGGAAGGGGAGGGGCTGGGAGGGCCCGGAGGGGGCTGGGCCGGGGACCCGGGAGGGGTCGGGACGGGGCGGGGTCCGCGCGGAGGAGGCGGAGCTGGAAGGTGAAGGGGCAGGACGGGTGCCCGGGTCCCCAGTCCCTCCGCCACGTGGGAAGCGCGGTCCTGG",
+      "sequence_sha256": "6f0a26dce2c9a0d6821f2647f621ea1af798edf5b488b92c21fc192b9c0bb30d",
+      "source_coordinate_convention": "one_based_inclusive",
+      "start": 1294988
+    }
+  ]
+}

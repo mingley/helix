@@ -99,6 +99,16 @@ class VariantEvaluationTests(unittest.TestCase):
         self.assertEqual(preserved["empty_original_component_ids"], ["B"])
         self.assertEqual(result["loci"][1]["variant_ids"], ["b1"])
 
+    def test_nonzero_exact_constants_remain_nonestimable_after_rounding(self):
+        for value, count in [(0.1, 11), (0.3, 37), (0.7, 35)]:
+            constant = [value] * count
+            varying = list(range(count))
+            for observed, predicted in [(constant, varying), (varying, constant)]:
+                with self.subTest(value=value, count=count):
+                    result = M.association(observed, predicted)
+                    self.assertFalse(result["pearson"]["estimable"])
+                    self.assertIsNone(result["pearson"]["value"])
+
     def test_support_gate_is_separate_from_positive_performance(self):
         variants = [row(f"v{j:03}", f"g{j // 10}", [1.0, 2.0], [1.0, 2.0]) for j in range(100)]
         result = M.evaluate(variants, replicates=8)

@@ -1,0 +1,2 @@
+# Preserve unchanged source tables, including original whitespace and newlines.
+raw-author-tables/*.tsv -text -whitespace
