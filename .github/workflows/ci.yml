@@ -48,6 +48,7 @@ jobs:
           python3 -m unittest discover -s research/independent-context-activity-replication -p 'test_*.py'
           python3 -m unittest discover -s research/variant-transfer -p 'test_*.py'
           python3 -m unittest discover -s research/variant-transfer/prior-exposure-inventory -p 'test_*.py'
+          python3 -W error::ResourceWarning -m unittest discover -s research/variant-transfer/independent-grouping-v1 -p 'test_*.py'
           python3 research/variant-transfer/source/map_design.py --self-test
           python3 scripts/audit_context_ess_cohort.py --self-test --primary-root research/results/context-endpoint-recovery-v1/primary
       # Full empirical reproduction is scripts/check_study.sh. Its known

@@ -23,6 +23,12 @@ import xml.etree.ElementTree as ET
 import zipfile
 
 PROTOCOL_SHA256 = "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149"
+# Exact authority registry; v1 remains the default and cannot acquire a new
+# missing-token policy through a mutable binding or command-line option.
+PROTOCOLS = {
+    "variant-transfer-v1": PROTOCOL_SHA256,
+    "variant-transfer-v2": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c",
+}
 MODEL_SHA256 = "2ea476bc5413dc13486dec9f3d7e9162a50a0e47f1d83ce29efabc5f5cc5af9d"
 CONTEXTS = ["K562", "HepG2"]
 SHEET = "S4.MPRA results"
@@ -91,6 +97,26 @@ def valid_digest(value):
     return isinstance(value, str) and bool(HEX.fullmatch(value))
 
 
+OPERATIONAL_MISSINGNESS = {
+    "interpretation": "literal_unreported_unknown_reason",
+    "rule": "exclude_variant_unless_both_contexts_ordinary_finite_numeric",
+    "source_semantics_established": False,
+}
+
+
+def validate_operational_missingness(binding, protocol):
+    require(binding.get("operational_missingness") == OPERATIONAL_MISSINGNESS,
+            "v2 requires exact operational missingness metadata; author semantics remain unknown")
+    exposure = binding.get("exposure")
+    require(isinstance(exposure, dict) and exposure.get("v1_failure_observed") is True,
+            "v2 requires explicit prior-v1-failure exposure")
+    require(protocol.get("protocol_id") == "variant-transfer-v2",
+            "operational NA exclusion requires the separately authorized v2 protocol")
+    require(protocol.get("operational_missingness") == OPERATIONAL_MISSINGNESS
+            and protocol.get("exposure", {}).get("v1_failure_observed") is True,
+            "v2 protocol must bind the operational rule and previous failure exposure")
+
+
 def validate_binding(binding_path, expected_sha256, protocol_path, source_path, cohort_path):
     """Never open source ZIP or cohort payload before the sealed gate passes."""
     require(valid_digest(expected_sha256) and sha256(binding_path) == expected_sha256,
@@ -98,12 +124,17 @@ def validate_binding(binding_path, expected_sha256, protocol_path, source_path, 
     binding = read_json(binding_path)
     require(type(binding.get("schema_version")) is int and binding["schema_version"] == 1,
             "unexpected binding schema")
-    require(binding.get("protocol_id") == "variant-transfer-v1"
-            and binding.get("protocol_sha256") == PROTOCOL_SHA256, "unexpected semantic protocol binding")
+    protocol_id = binding.get("protocol_id")
+    require(isinstance(protocol_id, str) and protocol_id in PROTOCOLS
+            and binding.get("protocol_sha256") == PROTOCOLS[protocol_id],
+            "unexpected semantic protocol binding")
     require(isinstance(binding.get("source_cohort_gate"), dict)
             and binding["source_cohort_gate"].get("passed") is True, "sealed source/cohort gate failed")
     require(binding.get("model_artifacts_sha256") == MODEL_SHA256, "frozen model binding mismatch")
-    require(sha256(protocol_path) == PROTOCOL_SHA256, "semantic protocol bytes changed")
+    require(sha256(protocol_path) == PROTOCOLS[protocol_id], "semantic protocol bytes changed")
+    protocol = read_json(protocol_path)
+    require(protocol.get("protocol_id") == protocol_id and protocol.get("status") == "frozen",
+            "semantic protocol identity/status differs")
     sheet = binding.get("sheet", {})
     require(sheet.get("name") == SHEET and sheet.get("header_row_1based") == 2
             and type(sheet.get("header_row_1based")) is int and sheet.get("headers") == HEADERS,
@@ -111,8 +142,12 @@ def validate_binding(binding_path, expected_sha256, protocol_path, source_path, 
     require(binding.get("effects") == EFFECTS, "cell-to-column binding differs")
     policy = binding.get("missing_policy", {})
     tokens = policy.get("allowed_tokens")
-    require(tokens in ([], ["NA"]), "only a source-documented exact NA token may be allowed")
-    require(not tokens or bool(policy.get("evidence")), "missing token requires source evidence")
+    if protocol_id == "variant-transfer-v1":
+        require(tokens == [], "frozen v1 has no authorized missing token")
+    else:
+        require(tokens == ["NA"], "exploratory v2 authorizes only the literal NA token")
+        require(bool(policy.get("evidence")), "operational NA policy requires exposure evidence")
+        validate_operational_missingness(binding, protocol)
     source = binding.get("source", {})
     require(valid_digest(source.get("sha256")) and type(source.get("bytes")) is int
             and 0 < source["bytes"] <= MAX_ARCHIVE_BYTES, "invalid source byte commitment")
@@ -257,7 +292,7 @@ def effect_cell(cell, shared, allowed_tokens):
             text = text_cell(cell, shared)
             record["text"] = text
             require(text in allowed_tokens, "unexplained text or numeric string in effect cell")
-            record.update(status="source_documented_missing", value=None, float64_le_hex=None)
+            record.update(status="operational_unreported_unknown_reason", value=None, float64_le_hex=None)
             return record
         require(kind == "n", "effect is an error, boolean, date or unsupported type")
         require(raw is not None and bool(NUMBER.fullmatch(raw)), "unexplained blank or invalid numeric literal")
@@ -351,6 +386,7 @@ def parse_source(path, cohort, allowed_tokens, id_ledger, effect_ledger):
 def build(args):
     require(not args.out.exists(), "output path exists; preserve all attempts")
     binding = validate_binding(args.binding, args.expected_binding_sha256, args.protocol, args.source, args.cohort)
+    selected_protocol_sha256 = binding["protocol_sha256"]
     cohort = load_cohort(args.cohort, binding)
     args.out.mkdir(parents=True)
     shutil.copyfile(Path(__file__), args.out / "implementation.py")
@@ -378,13 +414,16 @@ def build(args):
                     pairs.append({"id": identity + "::" + context, "context": context,
                                   "position_0based": 99, "reference": metadata["reference"],
                                   "alternate": metadata["alternate"]})
-        payload = {"schema_version": 1, "protocol_sha256": PROTOCOL_SHA256,
-                   "binding_sha256": args.expected_binding_sha256, "variants": variants}
+        payload = {"schema_version": 1, "protocol_id": binding["protocol_id"],
+                   "protocol_sha256": selected_protocol_sha256,
+                   "binding_sha256": args.expected_binding_sha256,
+                   "operational_missingness": binding.get("operational_missingness"), "variants": variants}
         write_gzip(args.out / "observations.json.gz", payload)
         (args.out / "completecasepairs.json").write_bytes(encoded({"schema_version": 1, "pairs": pairs}))
         write_jsonl(args.out / "missingness.jsonl.gz", missing)
         component_counts = Counter(row["component"] for row in variants if row["complete_case"])
-        summary = {"schema_version": 1, "protocol_sha256": PROTOCOL_SHA256,
+        summary = {"schema_version": 1, "protocol_id": binding["protocol_id"],
+                   "protocol_sha256": selected_protocol_sha256,
                    "binding_sha256": args.expected_binding_sha256, "model_artifacts_sha256": MODEL_SHA256,
                    "source_sha256": binding["source"]["sha256"], "source_bytes": binding["source"]["bytes"],
                    "cohort_sha256": binding["cohort"]["sha256"], "source_cohort_gate": binding["source_cohort_gate"],
@@ -395,18 +434,24 @@ def build(args):
                    "missing_cells_by_component": dict(Counter(row["component"] for row in missing)),
                    "minimum_support_gate_passed": len(pairs) // 2 >= 100 and len(component_counts) >= 10,
                    "models_fitted": False, "predictions_computed": False,
+                   "operational_missingness": binding.get("operational_missingness"),
+                   "exposure": binding.get("exposure"),
+                   "analysis_status": ("exploratory_after_v1_missingness_failure"
+                       if binding["protocol_id"] == "variant-transfer-v2" else "original_strict_protocol"),
                    "limits": "Literal published allelic-effect cells only; complete-case rule changes no metadata eligibility or grouping."}
         (args.out / "summary.json").write_bytes(encoded(summary))
         print(json.dumps({key: summary[key] for key in ("metadata_eligible_variants", "complete_case_variants", "missing_cells")}, sort_keys=True))
     except BaseException as error:
         (args.out / "failure.json").write_bytes(encoded({"error_type": type(error).__name__, "error": str(error),
+            "protocol_sha256": selected_protocol_sha256, "protocol_id": binding["protocol_id"],
             "binding_sha256": args.expected_binding_sha256, "source_observation_gate_passed": False}))
         raise
     finally:
         write_jsonl(args.out / "source-IDs.jsonl.gz", ids)
         write_jsonl(args.out / "source-type-float-ledger.jsonl.gz", cells)
         (args.out / "manifest.json").write_bytes(encoded({"schema_version": 1,
-            "protocol_sha256": PROTOCOL_SHA256, "binding_sha256": args.expected_binding_sha256,
+            "protocol_id": binding["protocol_id"],
+            "protocol_sha256": selected_protocol_sha256, "binding_sha256": args.expected_binding_sha256,
             "source_sha256": binding["source"]["sha256"], "cohort_sha256": binding["cohort"]["sha256"],
             "files": {path.name: {"bytes": path.stat().st_size, "sha256": sha256(path)}
                       for path in sorted(args.out.iterdir()) if path.name != "manifest.json"}}))

@@ -1,0 +1,31 @@
+{
+  "S2": {
+    "bytes": 40795798,
+    "exposure": "DNA-only S2 was acquired and its header/schema inspected before this semantic freeze. Full sequence/reference and cohort-overlap checks remain pending. No numeric S4 outcome payload was acquired.",
+    "header_row_1based": 2,
+    "headers": [
+      "Variant",
+      "Allele 1 Oligo",
+      "Allele 2 Oligo"
+    ],
+    "name": "Supplementary Table 2, Variant oligo sequences",
+    "reported_data_rows": 365762,
+    "sha256": "4b6e20d1789021ee8f11f57af366a65680d25496de9351a9e781e9424716d824",
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM4_ESM.xlsx",
+    "worksheet": "S2.Variant Oligo Seqs"
+  },
+  "S4": {
+    "bytes": 224405074,
+    "path": "/workspace/.tools/variant-transfer-v1/S4.xlsx",
+    "sha256": "723c4a0e1cfdb2c9c6ae55b3fa9206855dd95e0241319b9fc8d0831d3b42f9c2"
+  },
+  "binding_sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79",
+  "cohort_sha256": "4d1fd2725ee0ed2952cf95cefa555ba4418c1338bdcd047a34d849d0b95ddc8b",
+  "component_partition_authenticated_not_independently_reconstructed": true,
+  "frozen_model_artifacts_sha256": "2ea476bc5413dc13486dec9f3d7e9162a50a0e47f1d83ce29efabc5f5cc5af9d",
+  "implementation_sha256": "daf67f2ae579608596511938d0ba07d59891b7f3c1dbbc3ad946b4742fda587b",
+  "models_refitted": false,
+  "numpy_version": "2.3.5",
+  "protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+  "second_freeze_commit": "a21fd6f44f493b20cddc51e6cde7c7ae14e490e4"
+}

@@ -212,6 +212,60 @@ class IndependentTransferTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "sealed source/cohort gate"):
                 M.validate_empirical_binding(args)
 
+    def test_v1_policy_cannot_be_reinterpreted_after_failure(self):
+        protocol = {"protocol_id": "variant-transfer-v1"}
+        M.check_missing_policy(protocol, {"missing_policy": {"allowed_tokens": []}})
+        with self.assertRaisesRegex(ValueError, "v1 remains strict"):
+            M.check_missing_policy(protocol, {"missing_policy": {"allowed_tokens": ["NA"]}})
+
+    def test_v2_requires_explicit_exposure_and_unknown_operational_semantics(self):
+        protocol = {"protocol_id": "variant-transfer-v2",
+            "analysis_classification": "exploratory_after_v1_source_failure",
+            "parent_protocol_sha256": M.PROTOCOL_SHA,
+            "operational_missingness": copy.deepcopy(M.V2_OPERATIONAL_MISSINGNESS)}
+        binding = {"missing_policy": {"allowed_tokens": ["NA"]},
+            "operational_missingness": copy.deepcopy(M.V2_OPERATIONAL_MISSINGNESS),
+            "exposure": {"v1_failure_observed": True}}
+        M.check_missing_policy(protocol, binding)
+        for mutation in ("exposure", "semantic_claim", "classification", "parent"):
+            p, b = copy.deepcopy(protocol), copy.deepcopy(binding)
+            if mutation == "exposure":
+                b["exposure"]["v1_failure_observed"] = False
+            elif mutation == "semantic_claim":
+                b["operational_missingness"]["source_semantics_established"] = True
+            elif mutation == "classification":
+                p["analysis_classification"] = "outcome_naive"
+            else:
+                p["parent_protocol_sha256"] = "0" * 64
+            with self.subTest(mutation=mutation), self.assertRaises(ValueError):
+                M.check_missing_policy(p, b)
+
+    def test_operational_NA_is_exact_and_accepts_no_other_missing_aliases(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "S4.xlsx"
+            for token in ["NA ", "na", "N/A", ""]:
+                commitment = workbook(path, "effects", values={40: token})
+                with self.subTest(token=token), self.assertRaises(ValueError):
+                    M.read_s4_effects(path, commitment, {"chr1:100:A:C"}, ["NA"])
+
+    def test_v2_exposure_receipt_preserves_both_parser_counts_and_v1_failure(self):
+        receipt = {"protocol_id": "variant-transfer-v2", "protocol_sha256": M.V2_PROTOCOL_SHA,
+            "binding_sha256": "a" * 64, "analysis_classification": "exploratory_after_v1_source_failure",
+            "v1_primary_selected_numeric_cells_before_failure": 240,
+            "v1_independent_selected_numeric_cells_before_failure": 240,
+            "v1_primary_selected_effect_cell_ledger_entries": 241,
+            "v1_independent_selected_effect_cell_ledger_entries": 241,
+            "v1_predictive_performance_evaluated": False, "v1_bootstrap_computed": False,
+            "v1_primary_predictions_computed": False, "v1_independent_fixed_predictions_computed": True,
+            "v1_comparison_sha256": "a13b8ea6aaf77a473ee50898e0d35031324af5bba6932a9a554d5ab013fc38fc"}
+        M.check_second_freeze_exposure(receipt, "a" * 64)
+        for field, value in [("v1_independent_selected_numeric_cells_before_failure", 0),
+            ("v1_primary_selected_effect_cell_ledger_entries", True),
+            ("v1_independent_fixed_predictions_computed", False),
+            ("v1_predictive_performance_evaluated", True)]:
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                M.check_second_freeze_exposure(receipt | {field: value}, "a" * 64)
+
     def test_second_freeze_requires_committed_exact_bytes(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

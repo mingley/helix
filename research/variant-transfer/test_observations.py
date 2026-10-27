@@ -49,9 +49,9 @@ def metadata(identity="v1", component="group1"):
             "gc_preserving": False, "position_0based": 99}
 
 
-def binding(source, cohort, count=1, tokens=None):
-    return {"schema_version": 1, "protocol_id": "variant-transfer-v1",
-            "protocol_sha256": M.PROTOCOL_SHA256, "model_artifacts_sha256": M.MODEL_SHA256,
+def binding(source, cohort, count=1, tokens=None, protocol_id="variant-transfer-v1"):
+    result = {"schema_version": 1, "protocol_id": protocol_id,
+            "protocol_sha256": M.PROTOCOLS[protocol_id], "model_artifacts_sha256": M.MODEL_SHA256,
             "source_cohort_gate": {"passed": True},
             "source": {"sha256": M.sha256(source), "bytes": source.stat().st_size},
             "sheet": {"name": M.SHEET, "header_row_1based": 2, "headers": M.HEADERS},
@@ -59,6 +59,10 @@ def binding(source, cohort, count=1, tokens=None):
             "missing_policy": {"allowed_tokens": [] if tokens is None else tokens,
                                "evidence": "synthetic source fixture statement"},
             "cohort": {"sha256": M.sha256(cohort), "format": "json", "variant_count": count}}
+    if protocol_id == "variant-transfer-v2":
+        result["operational_missingness"] = dict(M.OPERATIONAL_MISSINGNESS)
+        result["exposure"] = {"v1_failure_observed": True}
+    return result
 
 
 class ObservationTests(unittest.TestCase):
@@ -181,12 +185,12 @@ class ObservationTests(unittest.TestCase):
                 M.validate_binding(file, "0" * 64, Path("never-open-protocol"), self.source, self.cohort)
 
     def test_unsubstantiated_NA_policy_and_tampered_cohort_rejected(self):
-        value = binding(self.source, self.cohort, tokens=["NA"])
+        value = binding(self.source, self.cohort, tokens=["NA"], protocol_id="variant-transfer-v2")
         value["missing_policy"]["evidence"] = ""
         file = self.root / "binding.json"
         file.write_bytes(M.encoded(value))
-        protocol = Path(__file__).resolve().parents[2] / "experiments/variant-transfer-v1.json"
-        with self.assertRaisesRegex(ValueError, "requires source evidence"):
+        protocol = Path(__file__).resolve().parents[2] / "experiments/variant-transfer-v2.json"
+        with self.assertRaisesRegex(ValueError, "requires exposure evidence"):
             M.validate_binding(file, M.sha256(file), protocol, self.source, self.cohort)
         value["missing_policy"]["evidence"] = "fixture source metadata"
         value["cohort"]["sha256"] = "0" * 64
@@ -194,21 +198,85 @@ class ObservationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "cohort SHA256"):
             M.validate_binding(file, M.sha256(file), protocol, self.source, self.cohort)
 
+    def test_v1_cannot_authorize_NA_through_modified_binding(self):
+        value = binding(self.source, self.cohort, tokens=["NA"])
+        file = self.root / "binding.json"
+        file.write_bytes(M.encoded(value))
+        protocol = Path(__file__).resolve().parents[2] / "experiments/variant-transfer-v1.json"
+        with mock.patch.object(M.zipfile, "ZipFile", side_effect=AssertionError("source ZIP opened")):
+            with self.assertRaisesRegex(ValueError, "v1 has no authorized missing token"):
+                M.validate_binding(file, M.sha256(file), protocol, self.source, self.cohort)
+
+    def test_v1_NA_response_remains_gate_failure_with_original_provenance(self):
+        workbook(self.source, [(3, text("A", 3, "v1") + number("AN", 3, "1") + text("AO", 3, "NA"))])
+        file = self.root / "binding.json"
+        file.write_bytes(M.encoded(binding(self.source, self.cohort)))
+        args = types.SimpleNamespace(binding=file, expected_binding_sha256=M.sha256(file), source=self.source,
+            cohort=self.cohort, protocol=Path(__file__).resolve().parents[2] / "experiments/variant-transfer-v1.json", out=self.root / "strict-v1")
+        with self.assertRaises(M.ObservationCellError):
+            M.build(args)
+        self.assertFalse((args.out / "observations.json.gz").exists())
+        for name in ["failure.json", "manifest.json"]:
+            self.assertEqual(M.read_json(args.out / name)["protocol_sha256"], M.PROTOCOL_SHA256)
+
+    def test_v1_numeric_success_keeps_original_protocol_identity(self):
+        file = self.root / "binding.json"
+        file.write_bytes(M.encoded(binding(self.source, self.cohort)))
+        args = types.SimpleNamespace(binding=file, expected_binding_sha256=M.sha256(file), source=self.source,
+            cohort=self.cohort, protocol=Path(__file__).resolve().parents[2] / "experiments/variant-transfer-v1.json", out=self.root / "numeric-v1")
+        M.build(args)
+        for name in ["summary.json", "manifest.json"]:
+            self.assertEqual(M.read_json(args.out / name)["protocol_sha256"], M.PROTOCOL_SHA256)
+        payload = json.loads(gzip.decompress((args.out / "observations.json.gz").read_bytes()))
+        self.assertEqual(payload["protocol_sha256"], M.PROTOCOL_SHA256)
+        self.assertEqual(payload["protocol_id"], "variant-transfer-v1")
+        self.assertIsNone(payload["operational_missingness"])
+
+    def test_v2_requires_exposure_and_unknown_reason_operational_rule(self):
+        original = binding(self.source, self.cohort, tokens=["NA"], protocol_id="variant-transfer-v2")
+        protocol = Path(__file__).resolve().parents[2] / "experiments/variant-transfer-v2.json"
+        changes = [("exposure", {}), ("exposure", {"v1_failure_observed": False}),
+                   ("operational_missingness", {}),
+                   ("operational_missingness", dict(M.OPERATIONAL_MISSINGNESS, source_semantics_established=True))]
+        for key, changed in changes:
+            with self.subTest(key=key, changed=changed):
+                value = dict(original, **{key: changed})
+                file = self.root / "binding.json"
+                file.write_bytes(M.encoded(value))
+                with self.assertRaisesRegex(ValueError, "operational missingness|prior-v1-failure"):
+                    M.validate_binding(file, M.sha256(file), protocol, self.source, self.cohort)
+
+    def test_protocol_ID_SHA_cross_binding_and_unknown_version_are_rejected(self):
+        value = binding(self.source, self.cohort, tokens=["NA"], protocol_id="variant-transfer-v2")
+        value["protocol_sha256"] = M.PROTOCOL_SHA256
+        file = self.root / "binding.json"
+        protocol = Path(__file__).resolve().parents[2] / "experiments/variant-transfer-v2.json"
+        for version in ["variant-transfer-v2", "variant-transfer-v3"]:
+            value["protocol_id"] = version
+            file.write_bytes(M.encoded(value))
+            with self.assertRaisesRegex(ValueError, "unexpected semantic protocol"):
+                M.validate_binding(file, M.sha256(file), protocol, self.source, self.cohort)
+
     def test_full_build_records_missing_cell_and_excludes_whole_variant(self):
         self.cohort.write_bytes(M.encoded({"schema_version": 1, "pairs": [metadata(), metadata("v2", "group2")]}))
         workbook(self.source, [(3, text("A", 3, "v1") + number("AN", 3, "1") + number("AO", 3, "2")),
                                (4, text("A", 4, "v2") + text("AN", 4, "NA") + number("AO", 4, "3")),
                                (5, text("A", 5, "unselected") + number("AN", 5, "garbage", "b"))])
         file = self.root / "binding.json"
-        file.write_bytes(M.encoded(binding(self.source, self.cohort, count=2, tokens=["NA"])))
+        file.write_bytes(M.encoded(binding(self.source, self.cohort, count=2, tokens=["NA"], protocol_id="variant-transfer-v2")))
         args = types.SimpleNamespace(binding=file, expected_binding_sha256=M.sha256(file), source=self.source,
-            cohort=self.cohort, protocol=Path(__file__).resolve().parents[2] / "experiments/variant-transfer-v1.json", out=self.root / "out")
+            cohort=self.cohort, protocol=Path(__file__).resolve().parents[2] / "experiments/variant-transfer-v2.json", out=self.root / "out")
         M.build(args)
         summary = M.read_json(args.out / "summary.json")
         self.assertEqual((summary["metadata_eligible_variants"], summary["complete_case_variants"], summary["missing_cells"]), (2, 1, 1))
+        self.assertEqual(summary["protocol_sha256"], M.PROTOCOLS["variant-transfer-v2"])
+        self.assertEqual(summary["analysis_status"], "exploratory_after_v1_missingness_failure")
+        self.assertFalse(summary["operational_missingness"]["source_semantics_established"])
+        self.assertEqual(M.read_json(args.out / "manifest.json")["protocol_sha256"], M.PROTOCOLS["variant-transfer-v2"])
         pairs = M.read_json(args.out / "completecasepairs.json")["pairs"]
         self.assertEqual([r["id"] for r in pairs], ["v1::K562", "v1::HepG2"])
         observations = json.loads(gzip.decompress((args.out / "observations.json.gz").read_bytes()))
+        self.assertEqual(observations["protocol_sha256"], M.PROTOCOLS["variant-transfer-v2"])
         self.assertEqual(len(observations["variants"]), 2)
         self.assertEqual(observations["variants"][1]["missing_contexts"], ["HepG2"])
         with gzip.open(args.out / "source-type-float-ledger.jsonl.gz", "rt") as handle:

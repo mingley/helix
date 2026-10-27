@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "protocol_id": "variant-transfer-v1",
+  "status": "frozen",
+  "prepared_at_utc": "2026-10-27T22:17:52.684309+00:00",
+  "objective": "Test whether fixed sequence-composition slopes learned from the Agarwal published activity panel transfer to signed single-nucleotide reporter effects in an independent Siraj experiment, without any new-outcome fitting or calibration.",
+  "exposure": {
+    "known": "Earlier Kircher/HBB outcomes, Agarwal specificity/activity values and fitted coefficients, source-selection discussion, and Siraj publisher methods and aggregate metadata are explored. DNA-only Siraj S2 has been acquired and its exact schema is known. No Siraj numeric S4 outcome payload has been acquired or parsed at this freeze. The exact source-stage history must be retained in subsequent binding receipts.",
+    "independence": "Separate experimental study and source panel. Same named cell lines do not establish identical biological or assay conditions. Source investigator overlap is disclosed. The source itself selected fine-mapped variants and controls; this is not a genome-wide random sample.",
+    "registration": "This is a repository-frozen computational protocol, not a claim of external preregistration. Its Git commit must precede the first S4 acquisition request.",
+    "metadata_update_before_freeze": "DNA-only inventory completed before this final semantic freeze: all 365,762 S2 variant IDs unique; 336,475 primary-chromosome SNVs have exact 200 nt single-change pairs at zero-based position99 consistent with the ID reference/alternate bases. Sixteen old-panel exact/RC allele-match records are already known. These are metadata/DNA observations, not response values or a final admitted cohort. Source-build confirmation, chain/reference validation and full prior-source exclusion inventory remain pending."
+  },
+  "source": {
+    "title": "Functional dissection of complex trait variants at single-nucleotide resolution",
+    "doi": "10.1038/s41586-026-10121-6",
+    "author": "Siraj et al.",
+    "publication_date": "2026-02-25",
+    "preferred_distribution": "Exact publisher-linked S2 DNA and S4 main-panel MPRA summary, rather than Zenodo satmut or predictive-model products.",
+    "design_table": {
+      "name": "Supplementary Table 2, Variant oligo sequences",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM4_ESM.xlsx",
+      "sha256": "4b6e20d1789021ee8f11f57af366a65680d25496de9351a9e781e9424716d824",
+      "bytes": 40795798,
+      "worksheet": "S2.Variant Oligo Seqs",
+      "header_row_1based": 2,
+      "headers": [
+        "Variant",
+        "Allele 1 Oligo",
+        "Allele 2 Oligo"
+      ],
+      "reported_data_rows": 365762,
+      "exposure": "DNA-only S2 was acquired and its header/schema inspected before this semantic freeze. Full sequence/reference and cohort-overlap checks remain pending. No numeric S4 outcome payload was acquired."
+    },
+    "outcome_table": {
+      "name": "Supplementary Table 4, MPRA result summary",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM6_ESM.xlsx",
+      "expected_semantic_header": "Cell-specific log2Skew/Log2Skew producer name for the Alt-vs-Ref by RNA-vs-DNA interaction; exact textual spreadsheet columns still require a separately committed header binding. Names alone do not prove units/orientation."
+    },
+    "license_gate": "Retain publisher CC-BY4.0 statement and verify no source-workbook contrary credit/terms before redistribution. Zenodo record15297965 is CC-BY-NC4.0; no assumption that its license equals publisher article. Record full source receipt even if source bytes cached outside Git.",
+    "no_fallback": "Do not substitute satmut, S7 multivariate-shrunken results, meta-analysis, diplotypes, source significance calls or another study to rescue failure.",
+    "acquisition_limits": {
+      "max_download_bytes": 400000000,
+      "max_total_xml_bytes": 2000000000,
+      "max_zip_members": 10000,
+      "requirements": "Finite connection/read/total timeouts and bounded streaming download. Preserve inherited proxy and CA trust; TLS verification remains enabled. Reject HTTP failures, HTML/error bodies, incomplete lengths, wrong magic, encrypted ZIP entries, duplicate member names, unsafe absolute/traversal/backslash paths, and symbolic-link entries. Check every member CRC and declared versus actual decompressed size while streaming within the total XML budget. Do not extract outside a new task-owned directory or follow symlinks. Hash and retain acquisition URL/status/headers, byte count and SHA-256. CRC scanning is byte-level integrity work and does not authorize decoding outcome cells.",
+      "failure": "A source asset exceeding these bounds or failing integrity is a gate failure; do not silently relax limits. Any changed bound requires a new explicit metadata-only protocol version before numeric outcome parsing.",
+      "max_total_uncompressed_bytes": 2000000000
+    }
+  },
+  "freeze_sequence": [
+    "Commit this model/endpoint/population contract before downloading the new numeric S4 outcome asset. DNA-only S2 has already been acquired and its schema is known; disclose that exposure.",
+    "Acquire exact official files with normal TLS/proxy, bounded response/ZIP checks and full SHA256/size receipts. Source bytes may be cached outside Git when exceeding 100 MB.",
+    "Inspect only workbook archive metadata, textual header rows and legends/license/schema metadata. Do not decode response values, print numeric outcome rows, summarize outcomes or choose columns by agreement.",
+    "Write and commit a separate exact schema-binding receipt mapping source cell labels, IDs, reference/alternate orientation, sequence field/adaptor boundaries, source build/coordinates, published QC, the literal numeric endpoint, types and missing tokens. Header offsets may be bound only by textual source evidence. Integer coordinates, source classes and explicitly bound support metadata may be read for metadata/QC checks, but the allelic-effect and activity response cells remain unopened. Original protocol choices cannot change.",
+    "Bind all DNA/coordinate eligibility and source-independent overlap grouping, the complete explored HBB/Kircher inventory, and all five exact old fitted models before decoding numeric outcomes. Commit the exact metadata-eligible ID list, metadata exclusions, source/header fingerprints and coefficient hashes. This second freeze is required even if the metadata inspection succeeds.",
+    "Only after both committed freezes decode the selected exact outcome columns, enforce numeric/missingness gates and execute the fixed comparison. Any semantic ambiguity stops this protocol; a new version is required before further outcome exposure."
+  ],
+  "contexts": {
+    "primary": [
+      "K562",
+      "HepG2"
+    ],
+    "selection": "Both prespecified contexts; neither may be selected after outcomes. All finite paired observations of each eligible variant are retained in both contexts under the fixed complete-case rule below. Cell-specific results are secondary; no across-five-cell meta estimate."
+  },
+  "endpoint": {
+    "definition": "Source cell-specific DESeq2 allelic interaction estimate: (RNA/DNA activity at Alt) minus (RNA/DNA activity at Ref), in delta log2 fold-change units.",
+    "units": "Published summit-shift-normalized DESeq2 RNA/DNA allelic interaction delta log2FC. This is not a raw-count ratio, absolute expression, or a posterior/shrunken saturation-mutagenesis effect.",
+    "transform": "None. Preserve source floats; no sample centering, standardization, clipping, sign flipping by observed effects, cross-study gain fitting or refitting. Source-provided negative-positive orientation must be bound from methods/code before values.",
+    "exclude": "Do not use empiricalBayes/mashr effects, significance/FDR, TF predictions, effect-selected classes or cell-combined meta-analysis as outcomes."
+  },
+  "eligibility": {
+    "DNA": "Human primary chr1..chr22,chrX,chrY sequences. Both inserted genomic cores exactly 200 nt uppercase ACGT after removal of exactly documented 15 nt adaptors if present. Reject ambiguous bases, silent case repair, inferred/truncated cores or padded strings. Exactly one reference-to-alternative nucleotide substitution, equal lengths, no indels/diplotypes/satmut backgrounds.",
+    "source_classes": "Include every original-main-panel genuine human SNV in source design metadata, including fine-mapped/eQTL/trait variants and genuine location/annotation/null controls. Exclude technical controls reused from earlier experiments and all synthetic/shuffled controls based on source class metadata. No PIP, CRE, activity, emVar, FDR or effect-magnitude threshold.",
+    "source_qc": "Respect published filtering of DNA count <30 or RNA count =0 for either allele and source coverage-based choice of duplicate library. Do not choose libraries by outcome. If S4 is already deduplicated and prefiltered, use that table unchanged and record this source preprocessing; do not reconstruct unknown counts. If explicit counts/library records required to resolve these semantics are absent, stop rather than guess.",
+    "duplicates": "Exact variant and construct/library IDs must have a unique authoritative source-selected result per context; conflicting or unexplained duplicates block fitting. Preserve a complete duplicate ledger.",
+    "coverage": "Primary cohort is the metadata-eligible, previous-source-disjoint set with ordinary finite numeric S4 allelic effects in both K562 and HepG2 after the frozen source QC. Source-documented NA/missing tokens exclude that variant from the complete-case primary and are fully counted by cell/component with IDs retained. Formula cells, error cells, bools, numeric strings, unexplained missing or contradictory IDs are gate failures, not exclusions.",
+    "minimum_support": "At least 100 complete variant pairs and 10 independent components required for primary interval claim; otherwise retain all descriptive results and declare inferential support gate failed. No replacement source or favorable subgroup."
+  },
+  "grouping": {
+    "principle": "No new-study fitting. All external variants form one test set. Whole components define overlap exclusion and resampling, rather than fictional train/test folds on the new outcomes.",
+    "relations": "Transitive union of exact/reverse-complement sequence identities, source shared locus/parent IDs, overlapping inserted genomic intervals, fixed 1,000,000-base bins, and equal-length ungapped >=90% identity in either strand for either allele. For zero-based half-open interval [start,end), the bin is floor(start/1,000,000), keyed jointly by reference build and chromosome. All contexts, library occurrences, and reference/alternate sequences of a variant remain together. Shared source loci and homology links can join bins; do not break resulting components.",
+    "coordinates": "Bind source genome build and coordinate convention from metadata. Use existing reference only after exact build concordance or independently checksum-bound one-to-one conversion and full200nt reference-core equality. Never compare hg19 positions to hg38 directly. Missing/ambiguous mappings are recorded metadata exclusions before outcomes; do not silently lift or infer.",
+    "prior_source_exclusion": "Exclude an entire external component if any member has exact/RC identity or >=90% full-200nt ungapped identity to any old Agarwal training core, or a same-build genomic interval gap <=10,000 bp to any old trained locus. A gap is zero for overlapping or adjacent half-open intervals; the 10,000-bp boundary is inclusive. Apply across the union of all five old-fold training IDs, not just one selected fold. Before numeric outcomes are parsed, retain and hash a complete explicit interval/sequence inventory of all previously explored HBB/Kircher loci, including their reported human genomic contexts. Exclude entire new components linked to any of those explored loci by coordinate overlap/10,000-bp guard or the declared sequence-identity/homology relations. An incomplete explored-source inventory blocks this protocol.",
+    "resource_policy": "Freeze and report exhaustive/indexed candidate algorithm and budget before outcome parsing; failure to establish all declared relations blocks study. Never drop hard candidate pairs to complete a run."
+  },
+  "pretrained_model": {
+    "source_protocol_sha256": "64e14037fb1f42ddc1ecaca1d23bb8096fabac1f1e892d105eaa20f525fbbb20",
+    "source_run": "research/results/context-activity-v3/core/study.json.gz; all five fold fits from the final clean published activity run. Verify its artifact manifest and exact per-file hashes before use.",
+    "primary": "Arithmetic average of the five independently-context-fitted I model delta predictions for the corresponding exact K562 or HepG2 context. No averaging across contexts in the predictor.",
+    "features": "Existing 32 RC-canonical overlapping 3mer frequencies plus GC, in the source 33-feature order. Fixed 200 nt: trimer denominator 198 and GC denominator 200.",
+    "delta_formula": "mean_f sum_j (standardized_coefficient_fcj / training_feature_scale_fj) * (feature_alt_j-feature_ref_j); intercept and training feature mean cancel exactly.",
+    "hyperparameters": "Existing alpha 10 fitted on old data only. No new training, fine-tuning, model selection, response calibration, sign choice or coefficient editing.",
+    "secondary": "Frozen shared A/S slope ensemble under same five-fit rule. A/S yield same pair difference.",
+    "GC_baseline": "No new GC-only fit is authorized by this protocol. Do not label the full-model GC contribution as a separately trained GC-only model. The baseline is zero delta; GC-preserving SNVs form a metadata-defined secondary diagnostic only.",
+    "source_artifacts_path": "research/results/context-activity-v3/core/artifacts.json",
+    "source_artifacts_sha256": "2ea476bc5413dc13486dec9f3d7e9162a50a0e47f1d83ce29efabc5f5cc5af9d",
+    "source_code_commit": "035ca5731fe594622cd2c3c27cd3bb51ec65c924"
+  },
+  "primary": {
+    "baseline": "zero delta for every variant/context",
+    "candidate": "fixed matched-cell I ensemble delta",
+    "per_variant_loss": "Average squared prediction error equally across the two K562/HepG2 contexts.",
+    "per_component_loss": "Average per-variant loss across all admitted variants in that component.",
+    "metric": "Equal-component macroMSE improvement: mean_g[MSE_g(zero)-MSE_g(fixedI)], in squared delta log2FC units. Positive means transfer beats no-effect baseline.",
+    "success_rule": "Evidence of useful transfer requires positive observed macroMSE improvement and positive lower endpoint of the prespecified conditional 95% interval. A negative result is retained unchanged. Numerical reproduction and scientific performance are separate flags."
+  },
+  "secondary": [
+    "All candidate/baseline macroMSE and MAE; same primary comparison separately in K562 and HepG2; equal-variant pooled sensitivity.",
+    "Shared-A/S ensemble transfer versus zero, reported as secondary regardless of I result.",
+    "Pearson signed correlation and exact sign agreement, retaining exact-zero outcomes/predictions explicitly. No significance or near-zero filtering; no rank result used to rescue primary.",
+    "GC-preserving versusGC-changing SNV diagnostics defined only by alleles; all components preserved.",
+    "Within each source-defined locus, report all predictions/errors rather than only favorable loci."
+  ],
+  "uncertainty": {
+    "method": "2,000 paired whole-component bootstrap draws with replacement from lexicographically sorted component IDs; each draw samples G components, carrying all their variants/contexts and fixed predictions. Macro loss is arithmetic mean of sampled component means.",
+    "rng": "Existing verified SplitMix64, seed 0x2026102801",
+    "interval": "Type7 quantiles 0.025 and 0.975. Fixed-fit conditional selected-panel percentile range, not a calibrated p-value, new biological replicate or assay-normalization uncertainty.",
+    "retention": "Retain all draw indices and all sampled losses/gains; no adaptive resampling."
+  },
+  "synthetic_controls": [
+    "Identical 200 nt DNA yields exactly zero feature/prediction delta.",
+    "Swapping reference/alternate negates delta; RC of both preserves feature/prediction delta.",
+    "Hand-computed single SNV changes only containing 3mer windows and GC, with exact integer count bridge.",
+    "Separated substitutions at positions distance>=3 have exactly additive delta and zero predicted epistasis for fixed length; include boundary cases.",
+    "Explicitly fail lowercased/ambiguous/padded/wronglengthDNAs and erroneous allele orientation.",
+    "Macro component averaging and joint cell/variant resampling checked against hand-computed unequal-component-size fixture."
+  ],
+  "independent_reproduction": {
+    "source": "Independent reader directly parses original XLSX selected cells and DNA, not normalized target cache. Exact source-ID/float/feature bindings required.",
+    "predictions": "Independently re-extract counts and apply five old fit ensembles; all observations, eligibility/exclusion IDs, components, coefficients, predictions, losses, draw indices and intervals compared.",
+    "tolerances": "Exact integer counts, IDs, source float bits and resampling indices; maximum absolute 1e-10 for predictions/metrics, no relative tolerance. Rank diagnostics not primary. All failed comparisons retained; no tolerance widening."
+  },
+  "outputs": [
+    "Exact protocol and two-stage freeze/source/header/fit bindings, license statements and acquisition/hash receipts.",
+    "Complete DNA eligibility, explored-source exclusion, source QC/missingness/duplicate/component ledgers.",
+    "All admitted observed signed effects, fixed predictions, fold contributions, model/component/cell losses.",
+    "All bootstrap indices/statistics and exact independent comparison.",
+    "Standalone all-locus tables, plot data, figures, bounded report and failure history."
+  ],
+  "failure_policy": "Stop dependent work on source/license/schema/coordinate/identity/predictiongate failure; keep all outputs. Do not select another endpoint, population, transform, scale, source, sign, model, tolerance or favorable subgroup. Later scientific changes need a new explicitly exposed protocol version.",
+  "claims": "Bounded external-study transfer test of a fixed small sequence-composition model on source-selected 200 nt human reporter constructs in two measured cell types. Not clinical risk, endogenous regulatory causality, universal mechanism, absolute expression or global novelty.",
+  "frozen_at_utc": "2026-10-27T22:21:30.598229+00:00",
+  "metadata_adaptation_policy": "The second freeze may bind exact textual headers, worksheet/header offsets, source-documented missing tokens, coordinate conventions and implementation fingerprints that realize the already frozen semantic choices. Such bindings must be based on source metadata and recorded before numeric outcome parsing. Any change to source, endpoint, allele direction, contexts, length, population, QC, duplicate resolution, grouping/guard, model, metric, resampling, tolerance or acquisition bounds requires a new explicitly exposed protocol version before any new numeric outcome parsing; do not edit this frozen version. A source semantic ambiguity is a stop condition, not permission to select a convenient column.",
+  "analysis_contract": {
+    "contexts": [
+      "K562",
+      "HepG2"
+    ],
+    "primary_weighting": "equal_component",
+    "baseline": "zero",
+    "candidate": "I",
+    "bootstrap": {
+      "replicates": 2000,
+      "rng": "SplitMix64",
+      "seed": 138077546497,
+      "quantiles": [
+        0.025,
+        0.975
+      ],
+      "quantile_type": 7
+    },
+    "minimum_variants": 100,
+    "minimum_components": 10
+  }
+}

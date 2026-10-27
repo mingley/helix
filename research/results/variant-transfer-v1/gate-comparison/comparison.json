@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "kind": "independently_reproduced_variant_transfer_v1_source_gate_failure",
+  "protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+  "binding_sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79",
+  "primary_manifest": {
+    "sha256": "de0da56ca02616947d57ebe71b50506437c0b5993d1ffd9a0494cd1c2315398a",
+    "bytes": 1229
+  },
+  "independent_manifest": {
+    "sha256": "ae8d2d568a767d3adeff641c5c15f652cbb95f89a23166ca7195dbbd9e84508f",
+    "bytes": 1301
+  },
+  "source_gate_failure_reproduced": true,
+  "source_observation_gate_passed": false,
+  "selected_cell_comparisons": 241,
+  "ordinary_numeric_float_bits_compared_exactly": 240,
+  "fully_decoded_paired_variants_before_failure": 120,
+  "failure_count": 0,
+  "failures": [],
+  "first_failure": {
+    "id": "chr12:72652619:A:G",
+    "context": "K562",
+    "coordinate": "AO42972",
+    "row_1based": 42972,
+    "xml_type": "s",
+    "literal_text": "NA"
+  },
+  "allowed_missing_tokens": [],
+  "predictive_performance_evaluated": false,
+  "bootstrap_computed": false,
+  "performance_result": null,
+  "full_protocol_independent_reproduction_claimed": false,
+  "limits": [
+    "This reproduces a failed source gate; it does not estimate transfer performance.",
+    "The first unsupported string is retained without reinterpreting it as source-documented missingness.",
+    "Openpyxl may instantiate nonselected worksheet cell values internally; only selected-cell use is audited here.",
+    "No numeric agreement can make the frozen source gate pass."
+  ]
+}

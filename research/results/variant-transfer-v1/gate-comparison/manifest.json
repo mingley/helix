@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "files": {
+    "comparison.json": {
+      "sha256": "a13b8ea6aaf77a473ee50898e0d35031324af5bba6932a9a554d5ab013fc38fc",
+      "bytes": 1590
+    },
+    "implementation.py": {
+      "sha256": "ad69a5b5a46b647ecdb65629ab5f146d6d6a2ceb19879f8a89176d5599765130",
+      "bytes": 6077
+    },
+    "selected-cell-checks.json": {
+      "sha256": "3f31a2a433c5710a2e55a5fe7e001eeee1f1725e152bf12792dd7c859c0d5fae",
+      "bytes": 47664
+    }
+  }
+}

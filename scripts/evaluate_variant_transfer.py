@@ -321,12 +321,21 @@ def evaluate(variants, replicates=REPLICATES, seed=SEED):
 
 
 def check_protocol(protocol):
-    require(protocol.get("protocol_id") == "variant-transfer-v1"
+    require(protocol.get("protocol_id") in {"variant-transfer-v1", "variant-transfer-v2"}
             and protocol.get("status") == "frozen",
-            "protocol must be variant-transfer-v1 with frozen status")
+            "protocol must be a frozen supported variant-transfer authority")
     require(protocol.get("contexts", {}).get("primary") == CONTEXTS
             and protocol.get("analysis_contract") == ANALYSIS_CONTRACT,
             "protocol analysis contract differs from implemented fixed analysis")
+    if protocol["protocol_id"] == "variant-transfer-v2":
+        require(protocol.get("analysis_classification") == "exploratory_after_v1_source_failure"
+                and protocol.get("parent_protocol_sha256")
+                == "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149"
+                and protocol.get("operational_missingness") == {
+                    "interpretation": "literal_unreported_unknown_reason",
+                    "rule": "exclude_variant_unless_both_contexts_ordinary_finite_numeric",
+                    "source_semantics_established": False},
+                "v2 must retain its exposed exploratory complete-case classification")
 
 
 def verify_prediction_directory(root, model, pins, variants, protocol):
@@ -383,7 +392,7 @@ def verify_handoff(args):
         require(not path.is_symlink() and sha256(path) == pins[key], f"{key} mismatch")
     protocol, binding, payload = load_json(args.protocol), load_json(args.binding), load_json(args.input)
     check_protocol(protocol)
-    require(binding.get("protocol_id") == "variant-transfer-v1"
+    require(binding.get("protocol_id") == protocol["protocol_id"]
             and binding.get("protocol_sha256") == pins["protocol_sha256"]
             and binding.get("source_cohort_gate", {}).get("passed") is True,
             "sealed source/cohort handoff gate not passed")
@@ -409,8 +418,13 @@ def main(argv=None):
     with (args.out / "evaluation.json.gz").open("wb") as raw:
         with gzip.GzipFile(filename="", mode="wb", fileobj=raw, mtime=0) as handle:
             handle.write(encoded(result))
-    (args.out / "summary.json").write_bytes(encoded({key: value for key, value in result.items()
-        if key not in {"per_variant", "resampling"}}))
+    protocol = load_json(args.protocol)
+    summary = {key: value for key, value in result.items()
+               if key not in {"per_variant", "resampling"}}
+    summary.update(protocol_id=protocol["protocol_id"], protocol_sha256=pins["protocol_sha256"],
+                   analysis_classification=protocol.get("analysis_classification", "frozen_v1"),
+                   operational_missingness=protocol.get("operational_missingness"))
+    (args.out / "summary.json").write_bytes(encoded(summary))
     for name, source in [("normalized-input.json", args.input), ("protocol.json", args.protocol),
                          ("binding.json", args.binding), ("pins.json", args.pins)]:
         shutil.copyfile(source, args.out / name)

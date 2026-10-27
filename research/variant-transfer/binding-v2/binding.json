@@ -1,0 +1,121 @@
+{
+  "S4_numeric_effect_values_read": true,
+  "S4_numeric_effect_values_read_during_v2_preparation": false,
+  "analysis_classification": "exploratory_after_v1_source_failure",
+  "cohort": {
+    "component_count": 172,
+    "format": "jsonl.gz",
+    "path": "research/variant-transfer/binding-v2/cohort.jsonl.gz",
+    "sha256": "4d1fd2725ee0ed2952cf95cefa555ba4418c1338bdcd047a34d849d0b95ddc8b",
+    "variant_count": 2172
+  },
+  "effects": {
+    "HepG2": "AN",
+    "K562": "AO"
+  },
+  "exposure": {
+    "independent_reader_scope": "The independent v1 reader may have internally decoded nonselected worksheet values as part of XLSX row iteration; exposure is not certified to be limited to the primary240 selected numeric cells.",
+    "independent_retained_fixed_predictions": {
+      "interpretation": "A fixed-predictor artifact exists from the independent v1 attempt. It must not be described as no predictions having existed. No new-outcome fitting or target-performance result is established by this artifact.",
+      "path": "history/independent-v1/fixed-predictions.json.gz",
+      "sha256": "b6552fd7e5fa633c65188f8faeefe31c4105e211dec2113c184fd8a4ae27ceeb"
+    },
+    "primary_first_blocking_cell": {
+      "context": "K562",
+      "coordinate": "AO42972",
+      "literal_text": "NA",
+      "variant_id": "chr12:72652619:A:G",
+      "xml_type": "s"
+    },
+    "primary_selected_effect_cell_ledger_entries": 241,
+    "primary_selected_numeric_cells_before_failure": 240,
+    "primary_status": "Strict import failed before primary prediction/evaluation. No new model fitting, calibration or observed-target performance result was computed.",
+    "registration": "No outcome-naive validation or external-preregistration claim. Repository commit freezing v2 must precede bulk remaining effect parsing.",
+    "source_experiment": "Separate Siraj experimental study; the analysis is now explicitly outcome-exposed and exploratory.",
+    "v1_exact_binding_commit": "a21fd6f",
+    "v1_exact_binding_sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79",
+    "v1_failure_observed": true,
+    "v1_semantic_protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+    "v2_preparation": "No new S4 effect value was read during this metadata/protocol preparation."
+  },
+  "inputs": {
+    "S30_match_ledger_sha256": "971e90cb2d24bdaf60846efc3f00415aa1e1b495461d2677e6edc108bdf90759",
+    "S4_ID_metadata_sha256": "07c666b692cf1eb5b1578d3afed0708442abb087a16c9b84b5e1aebd7916b357",
+    "primary_group_manifest_sha256": "c276cb6e2fc06e4318c3029d83e497f769792fa14029d55f7e3e59ed8bd6b5a2",
+    "prior_inventory_manifest_sha256": "861d838582ce1f0d52d846e6d20ee5d6c0f28c059db257032c9cff7a1fae6faf",
+    "source_manifest_sha256": "61b9756522156b2406e692113cf1268df525125441a6d348cfa99f3795875117",
+    "v1_independent_failure_manifest_sha256": "ae8d2d568a767d3adeff641c5c15f652cbb95f89a23166ca7195dbbd9e84508f",
+    "v1_primary_failure_manifest_sha256": "de0da56ca02616947d57ebe71b50506437c0b5993d1ffd9a0494cd1c2315398a"
+  },
+  "metadata_counts": {
+    "S30_control_components": 3,
+    "S30_control_variant_ids": 41,
+    "complete_external_population": 332719,
+    "final_components": 172,
+    "final_variants": 2172,
+    "global_components": 1171
+  },
+  "metadata_minimum_support": {
+    "at_least100_variants_and10_components": true,
+    "limit": "2172/172 is the unchanged pre-complete-case metadata upper bound; final ordinary-finite numeric coverage and support remain unknown."
+  },
+  "missing_policy": {
+    "allowed_tokens": [
+      "NA"
+    ],
+    "evidence": "research/variant-transfer/binding-v2/operational-missingness-evidence.json",
+    "evidence_sha256": "258ba99807985b50677eb4eb69a45071ed833bf0fea98b9db188f8a3ce35617d",
+    "source_semantics_established": false
+  },
+  "model_artifacts_sha256": "2ea476bc5413dc13486dec9f3d7e9162a50a0e47f1d83ce29efabc5f5cc5af9d",
+  "no_regrouping_after_exclusion": true,
+  "operational_missingness": {
+    "interpretation": "literal_unreported_unknown_reason",
+    "rule": "exclude_variant_unless_both_contexts_ordinary_finite_numeric",
+    "source_semantics_established": false
+  },
+  "parent_binding_sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79",
+  "parent_protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+  "protocol_id": "variant-transfer-v2",
+  "protocol_sha256": "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-10-27T23:00:10.802967+00:00",
+  "sheet": {
+    "header_row_1based": 2,
+    "headers": {
+      "A": "Variant",
+      "AN": "log2Skew in HEPG2",
+      "AO": "log2Skew in K562"
+    },
+    "name": "S4.MPRA results"
+  },
+  "source": {
+    "bytes": 224405074,
+    "path": "/workspace/.tools/variant-transfer-v1/S4.xlsx",
+    "sha256": "723c4a0e1cfdb2c9c6ae55b3fa9206855dd95e0241319b9fc8d0831d3b42f9c2"
+  },
+  "source_cohort_gate": {
+    "S4_ID_membership_verified": true,
+    "analysis_classification": "exploratory_after_v1_source_failure",
+    "independent_grouping": {
+      "checks_passed": 4689,
+      "comparison_path": "research/variant-transfer/independent-grouping-v1/comparison-v1/comparison.json",
+      "comparison_sha256": "93f2b9d82c5b45d9dbb6344a350e48f24ac99ad0ce496d8993b813fb8d1faa60",
+      "failed_checks": [],
+      "independent_manifest_sha256": "e25231628756da32f961f6553999a58132353b9e223e6e3df7f467f817ede33b",
+      "new_numeric_outcome_access": false,
+      "primary_manifest_sha256": "c276cb6e2fc06e4318c3029d83e497f769792fa14029d55f7e3e59ed8bd6b5a2",
+      "scope": "Full outcome-free new-component and prior-exposure reconstruction. Excluded-component witness catalogs need not enumerate every old hit; exact component reason classes are compared. S30 technical-control flags retained separately until source-cohort binding.",
+      "status": "matched"
+    },
+    "numeric_effect_type_coverage_status": "v1_strict_import_failed_at_literal_NA; v2_complete_case_coverage_pending",
+    "passed": true,
+    "scope": "same frozen metadata cohort with explicit exploratory operational NA exclusion; final complete-case source gate remains untested",
+    "whole_component_S30_exclusion": true
+  },
+  "upstream_source_QC": {
+    "policy": "Use unchanged authoritative source-preprocessed unique S4 results; no guessed count rethreshold or alternate library selection.",
+    "review": "/workspace/helix/research/variant-transfer/source/source-semantics-review.json",
+    "review_sha256": "ea958c80f6c81a9e59fa74d59734de6d21a181c41973967bf924a64014b7ca71"
+  }
+}

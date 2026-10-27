@@ -33,6 +33,14 @@ REPLICATES = 2000
 MAX_INDICES = 50_000_000
 TOLERANCE = 1e-10
 PROTOCOL_SHA = "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149"
+V2_PROTOCOL_SHA = "26861a28a1c049bcb6da66d17ff25bb13143f45cbf166a224af2a5aa27f2e04c"
+V2_EXPOSURE_SHA = "c7ea409a90bd5911220cdf528ee2352cc2e38250f8af726fcf9931f9366cdc93"
+PROTOCOL_AUTHORITIES = {PROTOCOL_SHA: "variant-transfer-v1", V2_PROTOCOL_SHA: "variant-transfer-v2"}
+V2_OPERATIONAL_MISSINGNESS = {
+    "interpretation": "literal_unreported_unknown_reason",
+    "rule": "exclude_variant_unless_both_contexts_ordinary_finite_numeric",
+    "source_semantics_established": False,
+}
 MODEL_SHA = "2ea476bc5413dc13486dec9f3d7e9162a50a0e47f1d83ce29efabc5f5cc5af9d"
 DNA = "ACGT"
 TRANS = str.maketrans("ACGT", "TGCA")
@@ -471,7 +479,17 @@ def write_json(path, value):
 def manifest_directory(root):
     files = {str(path.relative_to(root)): {"sha256": sha256(path), "bytes": path.stat().st_size}
              for path in sorted(root.rglob("*")) if path.is_file() and path.name != "manifest.json"}
-    write_json(root / "manifest.json", {"schema_version": 1, "files": files})
+    manifest = {"schema_version": 1, "files": files}
+    for name in ("inputs.json", "comparison.json", "binding.json"):
+        if (root / name).exists():
+            metadata = read_json(root / name)
+            selected = metadata.get("protocol_sha256")
+            if selected in PROTOCOL_AUTHORITIES:
+                manifest.update(protocol_sha256=selected, protocol_id=PROTOCOL_AUTHORITIES[selected])
+                if metadata.get("analysis_classification") is not None:
+                    manifest["analysis_classification"] = metadata["analysis_classification"]
+                break
+    write_json(root / "manifest.json", manifest)
 
 
 def check_committed_input(repo_root, commit, path, expected_sha):
@@ -492,32 +510,74 @@ def check_committed_input(repo_root, commit, path, expected_sha):
     require(result == 0 and digest == expected_sha, "input bytes were not frozen in the named commit: " + member)
 
 
+def check_missing_policy(protocol, binding):
+    tokens = binding.get("missing_policy", {}).get("allowed_tokens")
+    if protocol["protocol_id"] == "variant-transfer-v1":
+        require(tokens == [], "v1 remains strict and failed; its missing-token policy cannot be changed")
+    else:
+        require(protocol["protocol_id"] == "variant-transfer-v2" and tokens == ["NA"],
+                "only the separate v2 authority permits exact literal NA exclusion")
+        require(protocol.get("analysis_classification") == "exploratory_after_v1_source_failure"
+                and protocol.get("parent_protocol_sha256") == PROTOCOL_SHA,
+                "v2 must disclose its exposed exploratory authority")
+        require(protocol.get("operational_missingness") == binding.get("operational_missingness")
+                == V2_OPERATIONAL_MISSINGNESS and binding.get("exposure", {}).get("v1_failure_observed") is True,
+                "v2 operational policy must preserve unknown source semantics and prior exposure")
+
+
+def check_second_freeze_exposure(receipt, binding_sha):
+    require(receipt.get("protocol_id") == "variant-transfer-v2"
+            and receipt.get("protocol_sha256") == V2_PROTOCOL_SHA
+            and receipt.get("binding_sha256") == binding_sha
+            and receipt.get("analysis_classification") == "exploratory_after_v1_source_failure",
+            "v2 exposure receipt identifies another authority")
+    for implementation in ("primary", "independent"):
+        for suffix, expected in (("selected_numeric_cells_before_failure", 240),
+                                 ("selected_effect_cell_ledger_entries", 241)):
+            value = receipt.get("v1_" + implementation + "_" + suffix)
+            require(type(value) is int and value == expected, "both v1 parser exposures must be retained exactly")
+    require(receipt.get("v1_predictive_performance_evaluated") is False
+            and receipt.get("v1_bootstrap_computed") is False
+            and receipt.get("v1_primary_predictions_computed") is False
+            and receipt.get("v1_independent_fixed_predictions_computed") is True
+            and receipt.get("v1_comparison_sha256") == "a13b8ea6aaf77a473ee50898e0d35031324af5bba6932a9a554d5ab013fc38fc",
+            "v1 failure/performance/fixed-prediction provenance was altered")
+
+
 def validate_empirical_binding(args):
     # This gate runs before importing openpyxl or opening any source ZIP.
     require(sha256(args.binding) == args.expected_binding_sha256, "binding SHA256 differs")
     binding = read_json(args.binding)
-    require(binding.get("schema_version") == 1 and binding.get("protocol_id") == "variant-transfer-v1"
-            and binding.get("protocol_sha256") == PROTOCOL_SHA, "wrong semantic protocol")
+    authority = binding.get("protocol_sha256")
+    require(type(binding.get("schema_version")) is int and binding["schema_version"] == 1
+            and authority in PROTOCOL_AUTHORITIES
+            and binding.get("protocol_id") == PROTOCOL_AUTHORITIES[authority], "wrong semantic protocol")
     require(binding.get("source_cohort_gate", {}).get("passed") is True,
             "sealed source/cohort gate is not passed; no raw outcome workbook will be opened")
     require(binding.get("model_artifacts_sha256") == MODEL_SHA, "wrong frozen activity fits")
-    require(sha256(args.protocol) == PROTOCOL_SHA, "semantic protocol changed")
+    require(sha256(args.protocol) == authority, "semantic protocol changed")
+    protocol = read_json(args.protocol)
+    check_missing_policy(protocol, binding)
+    if protocol["protocol_id"] == "variant-transfer-v2":
+        require(args.exposure_receipt is not None, "v2 requires the committed second-freeze exposure receipt")
+        require(sha256(args.exposure_receipt) == V2_EXPOSURE_SHA, "v2 exposure receipt bytes differ")
+        check_second_freeze_exposure(read_json(args.exposure_receipt), args.expected_binding_sha256)
+        check_committed_input(args.repo_root, args.freeze_commit, args.exposure_receipt,
+                              V2_EXPOSURE_SHA)
     sheet = binding.get("sheet", {})
     require(sheet.get("name") == "S4.MPRA results" and sheet.get("header_row_1based") == 2
         and sheet.get("headers") == {"A": "Variant", "AN": "log2Skew in HEPG2", "AO": "log2Skew in K562"},
         "unexpected exact source sheet/header binding")
     require(binding.get("effects") == {"HepG2": "AN", "K562": "AO"}, "effect column orientation differs")
-    tokens = binding.get("missing_policy", {}).get("allowed_tokens")
-    require(tokens in ([], ["NA"]), "missing tokens are not a frozen exact source policy")
-    require(not tokens or binding["missing_policy"].get("evidence"), "NA requires source documentation")
     require(binding.get("cohort", {}).get("format") in ("json", "jsonl.gz")
             and type(binding["cohort"].get("variant_count")) is int
             and binding["cohort"]["variant_count"] > 0, "invalid frozen metadata cohort contract")
     require(sha256(args.cohort) == binding["cohort"]["sha256"], "metadata cohort bytes differ")
-    for path, pin in ((args.binding, args.expected_binding_sha256), (args.protocol, PROTOCOL_SHA),
+    for path, pin in ((args.binding, args.expected_binding_sha256), (args.protocol, authority),
                       (args.cohort, binding["cohort"]["sha256"])):
         check_committed_input(args.repo_root, args.freeze_commit, path, pin)
-    protocol = read_json(args.protocol)
+    require(protocol.get("protocol_id") == PROTOCOL_AUTHORITIES[authority]
+            and protocol.get("status") == "frozen", "unfrozen or misidentified protocol")
     require(protocol["contexts"]["primary"] == CELLS, "frozen cell order differs")
     require(protocol["analysis_contract"] == {"contexts": CELLS,
         "primary_weighting": "equal_component", "baseline": "zero", "candidate": "I",
@@ -557,13 +617,23 @@ def load_frozen_cohort(path, binding):
 def run_empirical(args):
     require(not args.out.exists(), "preserve all previous empirical attempts")
     protocol, binding = validate_empirical_binding(args)
+    authority = binding["protocol_sha256"]
     cohort = load_frozen_cohort(args.cohort, binding)
     args.out.mkdir(parents=True)
     for name, path in (("implementation.py", Path(__file__)), ("binding.json", args.binding),
                        ("protocol.json", args.protocol)):
         shutil.copyfile(path, args.out / name)
+    exposure_receipt = None
+    if args.exposure_receipt is not None:
+        shutil.copyfile(args.exposure_receipt, args.out / "second-freeze-exposure.json")
+        exposure_receipt = {"sha256": sha256(args.exposure_receipt), "contents": read_json(args.exposure_receipt)}
     write_json(args.out / "metadata-cohort.json.gz", cohort)
-    write_json(args.out / "inputs.json", {"protocol_sha256": PROTOCOL_SHA,
+    write_json(args.out / "inputs.json", {"protocol_sha256": authority,
+        "protocol_id": PROTOCOL_AUTHORITIES[authority], "exposure": protocol.get("exposure"),
+        "analysis_classification": protocol.get("analysis_classification"),
+        "operational_missingness": protocol.get("operational_missingness"),
+        "second_freeze_exposure_receipt": exposure_receipt,
+        "missing_policy": binding["missing_policy"],
         "binding_sha256": args.expected_binding_sha256, "second_freeze_commit": args.freeze_commit,
         "cohort_sha256": binding["cohort"]["sha256"], "S4": binding["source"],
         "S2": protocol["source"]["design_table"], "frozen_model_artifacts_sha256": MODEL_SHA,
@@ -606,14 +676,16 @@ def run_empirical(args):
         write_json(args.out / "status.json", {"status": "complete", "metadata_variants": len(cohort),
             "complete_case_variants": len(variants), "incomplete_variants": len(missing["incomplete"]),
             "source_DNA_inventory": dna_report, "source_outcome_unique_IDs": missing["all_source_unique_ids"],
-            "protocol_sha256": PROTOCOL_SHA, "binding_sha256": args.expected_binding_sha256,
+            "protocol_sha256": authority, "protocol_id": PROTOCOL_AUTHORITIES[authority],
+            "binding_sha256": args.expected_binding_sha256,
             "openpyxl_source_float_bits_recorded": True,
             "component_partition_authenticated_not_independently_reconstructed": True,
             "full_protocol_independent_reproduction_claimed": False})
         print(json.dumps({"complete_variants": len(variants), "primary": result["primary"]}))
     except BaseException as error:
         write_json(args.out / "failure.json", {"error_type": type(error).__name__, "error": str(error),
-            "protocol_sha256": PROTOCOL_SHA, "binding_sha256": args.expected_binding_sha256})
+            "protocol_sha256": authority, "protocol_id": PROTOCOL_AUTHORITIES[authority],
+            "binding_sha256": args.expected_binding_sha256})
         raise
     finally:
         write_json(args.out / "source-cell-type-ledger.json.gz", cells)
@@ -649,7 +721,8 @@ def compare_raw_sources_and_predictions(own_root, observations_root, prediction_
     fixed = read_json(own_root / "fixed-predictions.json.gz")
     primary_observations = read_json(observations_root / "observations.json.gz")
     inputs = read_json(own_root / "inputs.json")
-    require(primary_observations["protocol_sha256"] == inputs["protocol_sha256"] == PROTOCOL_SHA
+    require(primary_observations["protocol_sha256"] == inputs["protocol_sha256"]
+            and inputs["protocol_sha256"] in PROTOCOL_AUTHORITIES
             and primary_observations["binding_sha256"] == inputs["binding_sha256"],
             "source comparison does not identify the same committed contract")
     expected_ids = set(metadata)
@@ -731,6 +804,8 @@ def compare_raw_sources_and_predictions(own_root, observations_root, prediction_
                        fixed["fold_predictions"][model][cell][i][f])
         checks.append({"name": model + "_all_integer_numerators_DNA_hashes_folds_and_ensembles", "matched": before == len(failures)})
     return {"matched": not failures, "checks": checks, "failures": failures, "failure_count": len(failures),
+        "protocol_sha256": inputs["protocol_sha256"],
+        "protocol_id": PROTOCOL_AUTHORITIES[inputs["protocol_sha256"]],
         "parent_manifests": parents, "source_float_bits_exact_comparisons": source_bits,
         "exact_integer_feature_numerators_compared": exact_numerators,
         "fixed_prediction_numbers_compared": prediction_cells, "maximum_absolute_prediction_error": maximum_error,
@@ -752,6 +827,7 @@ def main():
     parser.add_argument("--expected-binding-sha256")
     parser.add_argument("--cohort", type=Path)
     parser.add_argument("--freeze-commit")
+    parser.add_argument("--exposure-receipt", type=Path)
     parser.add_argument("--repo-root", type=Path, default=Path.cwd())
     parser.add_argument("--protocol", type=Path, default=Path("experiments/variant-transfer-v1.json"))
     parser.add_argument("--s2-workbook", type=Path)
@@ -788,6 +864,8 @@ def main():
                 {"I": args.prediction_I, "S": args.prediction_S})
             result.update(primary_manifest=primary_pin, independent_manifest=own_pin,
                 normalized_handoff_comparison=normalized, raw_source_and_fixed_prediction_comparison=source,
+                protocol_sha256=source["protocol_sha256"], protocol_id=source["protocol_id"],
+                analysis_classification=read_json(args.independent_run / "inputs.json").get("analysis_classification"),
                 component_partition_authenticated_not_independently_reconstructed=True,
                 full_protocol_independent_reproduction_claimed=False)
             result["matched"] = result["matched"] and normalized["matched"] and source["matched"]

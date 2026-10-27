@@ -1,0 +1,1930 @@
+[
+  {
+    "selected_cell_ordinal_0based": 0,
+    "id": "chr10:109922740:A:G",
+    "context": "K562",
+    "source_row_1based": 1296,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 1,
+    "id": "chr10:109922740:A:G",
+    "context": "HepG2",
+    "source_row_1based": 1296,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 2,
+    "id": "chr10:110123994:C:T",
+    "context": "K562",
+    "source_row_1based": 1297,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 3,
+    "id": "chr10:110123994:C:T",
+    "context": "HepG2",
+    "source_row_1based": 1297,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 4,
+    "id": "chr10:110701972:G:A",
+    "context": "K562",
+    "source_row_1based": 1301,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 5,
+    "id": "chr10:110701972:G:A",
+    "context": "HepG2",
+    "source_row_1based": 1301,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 6,
+    "id": "chr10:54821346:C:G",
+    "context": "K562",
+    "source_row_1based": 9232,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 7,
+    "id": "chr10:54821346:C:G",
+    "context": "HepG2",
+    "source_row_1based": 9232,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 8,
+    "id": "chr10:54821704:G:A",
+    "context": "K562",
+    "source_row_1based": 9233,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 9,
+    "id": "chr10:54821704:G:A",
+    "context": "HepG2",
+    "source_row_1based": 9233,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 10,
+    "id": "chr10:54822276:A:G",
+    "context": "K562",
+    "source_row_1based": 9234,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 11,
+    "id": "chr10:54822276:A:G",
+    "context": "HepG2",
+    "source_row_1based": 9234,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 12,
+    "id": "chr10:54918880:C:T",
+    "context": "K562",
+    "source_row_1based": 9237,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 13,
+    "id": "chr10:54918880:C:T",
+    "context": "HepG2",
+    "source_row_1based": 9237,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 14,
+    "id": "chr10:54920920:A:G",
+    "context": "K562",
+    "source_row_1based": 9238,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 15,
+    "id": "chr10:54920920:A:G",
+    "context": "HepG2",
+    "source_row_1based": 9238,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 16,
+    "id": "chr10:54991034:G:A",
+    "context": "K562",
+    "source_row_1based": 9241,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 17,
+    "id": "chr10:54991034:G:A",
+    "context": "HepG2",
+    "source_row_1based": 9241,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 18,
+    "id": "chr10:54993854:A:G",
+    "context": "K562",
+    "source_row_1based": 9242,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 19,
+    "id": "chr10:54993854:A:G",
+    "context": "HepG2",
+    "source_row_1based": 9242,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 20,
+    "id": "chr10:55076459:G:A",
+    "context": "K562",
+    "source_row_1based": 9243,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 21,
+    "id": "chr10:55076459:G:A",
+    "context": "HepG2",
+    "source_row_1based": 9243,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 22,
+    "id": "chr10:55267191:G:A",
+    "context": "K562",
+    "source_row_1based": 9245,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 23,
+    "id": "chr10:55267191:G:A",
+    "context": "HepG2",
+    "source_row_1based": 9245,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 24,
+    "id": "chr10:55296950:G:A",
+    "context": "K562",
+    "source_row_1based": 9246,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 25,
+    "id": "chr10:55296950:G:A",
+    "context": "HepG2",
+    "source_row_1based": 9246,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 26,
+    "id": "chr10:55321931:A:G",
+    "context": "K562",
+    "source_row_1based": 9247,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 27,
+    "id": "chr10:55321931:A:G",
+    "context": "HepG2",
+    "source_row_1based": 9247,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 28,
+    "id": "chr10:55355543:G:A",
+    "context": "K562",
+    "source_row_1based": 9248,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 29,
+    "id": "chr10:55355543:G:A",
+    "context": "HepG2",
+    "source_row_1based": 9248,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 30,
+    "id": "chr10:55359257:T:C",
+    "context": "K562",
+    "source_row_1based": 9249,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 31,
+    "id": "chr10:55359257:T:C",
+    "context": "HepG2",
+    "source_row_1based": 9249,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 32,
+    "id": "chr10:55425915:C:T",
+    "context": "K562",
+    "source_row_1based": 9251,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 33,
+    "id": "chr10:55425915:C:T",
+    "context": "HepG2",
+    "source_row_1based": 9251,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 34,
+    "id": "chr10:55501569:A:G",
+    "context": "K562",
+    "source_row_1based": 9254,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 35,
+    "id": "chr10:55501569:A:G",
+    "context": "HepG2",
+    "source_row_1based": 9254,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 36,
+    "id": "chr10:55504337:G:A",
+    "context": "K562",
+    "source_row_1based": 9255,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 37,
+    "id": "chr10:55504337:G:A",
+    "context": "HepG2",
+    "source_row_1based": 9255,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 38,
+    "id": "chr10:55507302:A:G",
+    "context": "K562",
+    "source_row_1based": 9256,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 39,
+    "id": "chr10:55507302:A:G",
+    "context": "HepG2",
+    "source_row_1based": 9256,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 40,
+    "id": "chr10:55564355:C:T",
+    "context": "K562",
+    "source_row_1based": 9258,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 41,
+    "id": "chr10:55564355:C:T",
+    "context": "HepG2",
+    "source_row_1based": 9258,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 42,
+    "id": "chr10:55595054:G:T",
+    "context": "K562",
+    "source_row_1based": 9259,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 43,
+    "id": "chr10:55595054:G:T",
+    "context": "HepG2",
+    "source_row_1based": 9259,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 44,
+    "id": "chr10:56775106:A:G",
+    "context": "K562",
+    "source_row_1based": 9356,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 45,
+    "id": "chr10:56775106:A:G",
+    "context": "HepG2",
+    "source_row_1based": 9356,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 46,
+    "id": "chr10:56844958:G:A",
+    "context": "K562",
+    "source_row_1based": 9358,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 47,
+    "id": "chr10:56844958:G:A",
+    "context": "HepG2",
+    "source_row_1based": 9358,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 48,
+    "id": "chr10:56854627:A:T",
+    "context": "K562",
+    "source_row_1based": 9360,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 49,
+    "id": "chr10:56854627:A:T",
+    "context": "HepG2",
+    "source_row_1based": 9360,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 50,
+    "id": "chr10:57098859:A:T",
+    "context": "K562",
+    "source_row_1based": 9372,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 51,
+    "id": "chr10:57098859:A:T",
+    "context": "HepG2",
+    "source_row_1based": 9372,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 52,
+    "id": "chr10:57098876:A:G",
+    "context": "K562",
+    "source_row_1based": 9373,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 53,
+    "id": "chr10:57098876:A:G",
+    "context": "HepG2",
+    "source_row_1based": 9373,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 54,
+    "id": "chr10:57186201:A:G",
+    "context": "K562",
+    "source_row_1based": 9376,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 55,
+    "id": "chr10:57186201:A:G",
+    "context": "HepG2",
+    "source_row_1based": 9376,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 56,
+    "id": "chr10:57195172:T:C",
+    "context": "K562",
+    "source_row_1based": 9377,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 57,
+    "id": "chr10:57195172:T:C",
+    "context": "HepG2",
+    "source_row_1based": 9377,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 58,
+    "id": "chr10:57357489:C:T",
+    "context": "K562",
+    "source_row_1based": 9380,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 59,
+    "id": "chr10:57357489:C:T",
+    "context": "HepG2",
+    "source_row_1based": 9380,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 60,
+    "id": "chr10:57358796:T:C",
+    "context": "K562",
+    "source_row_1based": 9381,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 61,
+    "id": "chr10:57358796:T:C",
+    "context": "HepG2",
+    "source_row_1based": 9381,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 62,
+    "id": "chr10:57359819:T:C",
+    "context": "K562",
+    "source_row_1based": 9382,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 63,
+    "id": "chr10:57359819:T:C",
+    "context": "HepG2",
+    "source_row_1based": 9382,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 64,
+    "id": "chr10:57438024:T:C",
+    "context": "K562",
+    "source_row_1based": 9383,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 65,
+    "id": "chr10:57438024:T:C",
+    "context": "HepG2",
+    "source_row_1based": 9383,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 66,
+    "id": "chr10:57501086:T:C",
+    "context": "K562",
+    "source_row_1based": 9384,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 67,
+    "id": "chr10:57501086:T:C",
+    "context": "HepG2",
+    "source_row_1based": 9384,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 68,
+    "id": "chr10:57529034:G:A",
+    "context": "K562",
+    "source_row_1based": 9385,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 69,
+    "id": "chr10:57529034:G:A",
+    "context": "HepG2",
+    "source_row_1based": 9385,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 70,
+    "id": "chr10:57591820:A:C",
+    "context": "K562",
+    "source_row_1based": 9386,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 71,
+    "id": "chr10:57591820:A:C",
+    "context": "HepG2",
+    "source_row_1based": 9386,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 72,
+    "id": "chr10:57593789:C:T",
+    "context": "K562",
+    "source_row_1based": 9387,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 73,
+    "id": "chr10:57593789:C:T",
+    "context": "HepG2",
+    "source_row_1based": 9387,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 74,
+    "id": "chr11:134874355:G:C",
+    "context": "K562",
+    "source_row_1based": 19847,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 75,
+    "id": "chr11:134874355:G:C",
+    "context": "HepG2",
+    "source_row_1based": 19847,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 76,
+    "id": "chr11:134944160:C:G",
+    "context": "K562",
+    "source_row_1based": 19848,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 77,
+    "id": "chr11:134944160:C:G",
+    "context": "HepG2",
+    "source_row_1based": 19848,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 78,
+    "id": "chr11:38445747:T:G",
+    "context": "K562",
+    "source_row_1based": 22856,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 79,
+    "id": "chr11:38445747:T:G",
+    "context": "HepG2",
+    "source_row_1based": 22856,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 80,
+    "id": "chr11:38833284:G:A",
+    "context": "K562",
+    "source_row_1based": 22865,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 81,
+    "id": "chr11:38833284:G:A",
+    "context": "HepG2",
+    "source_row_1based": 22865,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 82,
+    "id": "chr11:38980108:T:C",
+    "context": "K562",
+    "source_row_1based": 22868,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 83,
+    "id": "chr11:38980108:T:C",
+    "context": "HepG2",
+    "source_row_1based": 22868,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 84,
+    "id": "chr11:39264929:G:C",
+    "context": "K562",
+    "source_row_1based": 22870,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 85,
+    "id": "chr11:39264929:G:C",
+    "context": "HepG2",
+    "source_row_1based": 22870,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 86,
+    "id": "chr11:39449572:A:G",
+    "context": "K562",
+    "source_row_1based": 22872,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 87,
+    "id": "chr11:39449572:A:G",
+    "context": "HepG2",
+    "source_row_1based": 22872,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 88,
+    "id": "chr11:39454685:G:A",
+    "context": "K562",
+    "source_row_1based": 22873,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 89,
+    "id": "chr11:39454685:G:A",
+    "context": "HepG2",
+    "source_row_1based": 22873,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 90,
+    "id": "chr11:39516544:A:G",
+    "context": "K562",
+    "source_row_1based": 22874,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 91,
+    "id": "chr11:39516544:A:G",
+    "context": "HepG2",
+    "source_row_1based": 22874,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 92,
+    "id": "chr11:39547434:G:A",
+    "context": "K562",
+    "source_row_1based": 22876,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 93,
+    "id": "chr11:39547434:G:A",
+    "context": "HepG2",
+    "source_row_1based": 22876,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 94,
+    "id": "chr11:39623299:A:C",
+    "context": "K562",
+    "source_row_1based": 22877,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 95,
+    "id": "chr11:39623299:A:C",
+    "context": "HepG2",
+    "source_row_1based": 22877,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 96,
+    "id": "chr11:39740063:G:C",
+    "context": "K562",
+    "source_row_1based": 22879,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 97,
+    "id": "chr11:39740063:G:C",
+    "context": "HepG2",
+    "source_row_1based": 22879,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 98,
+    "id": "chr11:39756974:G:A",
+    "context": "K562",
+    "source_row_1based": 22880,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 99,
+    "id": "chr11:39756974:G:A",
+    "context": "HepG2",
+    "source_row_1based": 22880,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 100,
+    "id": "chr11:39757244:G:A",
+    "context": "K562",
+    "source_row_1based": 22881,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 101,
+    "id": "chr11:39757244:G:A",
+    "context": "HepG2",
+    "source_row_1based": 22881,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 102,
+    "id": "chr11:39799927:A:C",
+    "context": "K562",
+    "source_row_1based": 22883,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 103,
+    "id": "chr11:39799927:A:C",
+    "context": "HepG2",
+    "source_row_1based": 22883,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 104,
+    "id": "chr11:39990003:G:A",
+    "context": "K562",
+    "source_row_1based": 22884,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 105,
+    "id": "chr11:39990003:G:A",
+    "context": "HepG2",
+    "source_row_1based": 22884,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 106,
+    "id": "chr11:42120342:A:G",
+    "context": "K562",
+    "source_row_1based": 22934,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 107,
+    "id": "chr11:42120342:A:G",
+    "context": "HepG2",
+    "source_row_1based": 22934,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 108,
+    "id": "chr11:42158697:T:C",
+    "context": "K562",
+    "source_row_1based": 22935,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 109,
+    "id": "chr11:42158697:T:C",
+    "context": "HepG2",
+    "source_row_1based": 22935,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 110,
+    "id": "chr11:42239339:C:A",
+    "context": "K562",
+    "source_row_1based": 22936,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 111,
+    "id": "chr11:42239339:C:A",
+    "context": "HepG2",
+    "source_row_1based": 22936,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 112,
+    "id": "chr11:42242595:A:C",
+    "context": "K562",
+    "source_row_1based": 22937,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 113,
+    "id": "chr11:42242595:A:C",
+    "context": "HepG2",
+    "source_row_1based": 22937,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 114,
+    "id": "chr11:42259731:G:A",
+    "context": "K562",
+    "source_row_1based": 22938,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 115,
+    "id": "chr11:42259731:G:A",
+    "context": "HepG2",
+    "source_row_1based": 22938,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 116,
+    "id": "chr11:42318216:G:A",
+    "context": "K562",
+    "source_row_1based": 22939,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 117,
+    "id": "chr11:42318216:G:A",
+    "context": "HepG2",
+    "source_row_1based": 22939,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 118,
+    "id": "chr11:42473171:A:G",
+    "context": "K562",
+    "source_row_1based": 22940,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 119,
+    "id": "chr11:42473171:A:G",
+    "context": "HepG2",
+    "source_row_1based": 22940,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 120,
+    "id": "chr11:42789952:A:G",
+    "context": "K562",
+    "source_row_1based": 22942,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 121,
+    "id": "chr11:42789952:A:G",
+    "context": "HepG2",
+    "source_row_1based": 22942,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 122,
+    "id": "chr11:50354680:T:C",
+    "context": "K562",
+    "source_row_1based": 23878,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 123,
+    "id": "chr11:50354680:T:C",
+    "context": "HepG2",
+    "source_row_1based": 23878,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 124,
+    "id": "chr11:50355364:G:A",
+    "context": "K562",
+    "source_row_1based": 23879,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 125,
+    "id": "chr11:50355364:G:A",
+    "context": "HepG2",
+    "source_row_1based": 23879,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 126,
+    "id": "chr11:50511417:C:T",
+    "context": "K562",
+    "source_row_1based": 23884,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 127,
+    "id": "chr11:50511417:C:T",
+    "context": "HepG2",
+    "source_row_1based": 23884,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 128,
+    "id": "chr11:51483353:G:A",
+    "context": "K562",
+    "source_row_1based": 23919,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 129,
+    "id": "chr11:51483353:G:A",
+    "context": "HepG2",
+    "source_row_1based": 23919,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 130,
+    "id": "chr11:80723955:T:A",
+    "context": "K562",
+    "source_row_1based": 28642,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 131,
+    "id": "chr11:80723955:T:A",
+    "context": "HepG2",
+    "source_row_1based": 28642,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 132,
+    "id": "chr11:80756066:G:A",
+    "context": "K562",
+    "source_row_1based": 28644,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 133,
+    "id": "chr11:80756066:G:A",
+    "context": "HepG2",
+    "source_row_1based": 28644,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 134,
+    "id": "chr11:81185712:T:C",
+    "context": "K562",
+    "source_row_1based": 28651,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 135,
+    "id": "chr11:81185712:T:C",
+    "context": "HepG2",
+    "source_row_1based": 28651,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 136,
+    "id": "chr11:81430144:G:C",
+    "context": "K562",
+    "source_row_1based": 28676,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 137,
+    "id": "chr11:81430144:G:C",
+    "context": "HepG2",
+    "source_row_1based": 28676,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 138,
+    "id": "chr11:81453571:G:A",
+    "context": "K562",
+    "source_row_1based": 28678,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 139,
+    "id": "chr11:81453571:G:A",
+    "context": "HepG2",
+    "source_row_1based": 28678,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 140,
+    "id": "chr11:81704900:T:C",
+    "context": "K562",
+    "source_row_1based": 28702,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 141,
+    "id": "chr11:81704900:T:C",
+    "context": "HepG2",
+    "source_row_1based": 28702,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 142,
+    "id": "chr11:97917823:T:C",
+    "context": "K562",
+    "source_row_1based": 30242,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 143,
+    "id": "chr11:97917823:T:C",
+    "context": "HepG2",
+    "source_row_1based": 30242,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 144,
+    "id": "chr11:98061238:T:C",
+    "context": "K562",
+    "source_row_1based": 30252,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 145,
+    "id": "chr11:98061238:T:C",
+    "context": "HepG2",
+    "source_row_1based": 30252,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 146,
+    "id": "chr11:98088258:T:C",
+    "context": "K562",
+    "source_row_1based": 30254,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 147,
+    "id": "chr11:98088258:T:C",
+    "context": "HepG2",
+    "source_row_1based": 30254,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 148,
+    "id": "chr11:98093591:C:T",
+    "context": "K562",
+    "source_row_1based": 30255,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 149,
+    "id": "chr11:98093591:C:T",
+    "context": "HepG2",
+    "source_row_1based": 30255,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 150,
+    "id": "chr11:98344643:T:C",
+    "context": "K562",
+    "source_row_1based": 30266,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 151,
+    "id": "chr11:98344643:T:C",
+    "context": "HepG2",
+    "source_row_1based": 30266,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 152,
+    "id": "chr11:98365301:A:G",
+    "context": "K562",
+    "source_row_1based": 30267,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 153,
+    "id": "chr11:98365301:A:G",
+    "context": "HepG2",
+    "source_row_1based": 30267,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 154,
+    "id": "chr11:98461972:T:C",
+    "context": "K562",
+    "source_row_1based": 30268,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 155,
+    "id": "chr11:98461972:T:C",
+    "context": "HepG2",
+    "source_row_1based": 30268,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 156,
+    "id": "chr11:98542830:A:G",
+    "context": "K562",
+    "source_row_1based": 30271,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 157,
+    "id": "chr11:98542830:A:G",
+    "context": "HepG2",
+    "source_row_1based": 30271,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 158,
+    "id": "chr11:98606907:G:A",
+    "context": "K562",
+    "source_row_1based": 30272,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 159,
+    "id": "chr11:98606907:G:A",
+    "context": "HepG2",
+    "source_row_1based": 30272,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 160,
+    "id": "chr11:98704692:A:G",
+    "context": "K562",
+    "source_row_1based": 30274,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 161,
+    "id": "chr11:98704692:A:G",
+    "context": "HepG2",
+    "source_row_1based": 30274,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 162,
+    "id": "chr11:98744891:G:A",
+    "context": "K562",
+    "source_row_1based": 30275,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 163,
+    "id": "chr11:98744891:G:A",
+    "context": "HepG2",
+    "source_row_1based": 30275,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 164,
+    "id": "chr11:98746170:G:A",
+    "context": "K562",
+    "source_row_1based": 30276,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 165,
+    "id": "chr11:98746170:G:A",
+    "context": "HepG2",
+    "source_row_1based": 30276,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 166,
+    "id": "chr11:98774134:G:A",
+    "context": "K562",
+    "source_row_1based": 30277,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 167,
+    "id": "chr11:98774134:G:A",
+    "context": "HepG2",
+    "source_row_1based": 30277,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 168,
+    "id": "chr11:98786212:C:A",
+    "context": "K562",
+    "source_row_1based": 30278,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 169,
+    "id": "chr11:98786212:C:A",
+    "context": "HepG2",
+    "source_row_1based": 30278,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 170,
+    "id": "chr11:98787610:C:T",
+    "context": "K562",
+    "source_row_1based": 30279,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 171,
+    "id": "chr11:98787610:C:T",
+    "context": "HepG2",
+    "source_row_1based": 30279,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 172,
+    "id": "chr11:98836091:C:T",
+    "context": "K562",
+    "source_row_1based": 30280,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 173,
+    "id": "chr11:98836091:C:T",
+    "context": "HepG2",
+    "source_row_1based": 30280,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 174,
+    "id": "chr11:98848558:C:T",
+    "context": "K562",
+    "source_row_1based": 30281,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 175,
+    "id": "chr11:98848558:C:T",
+    "context": "HepG2",
+    "source_row_1based": 30281,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 176,
+    "id": "chr11:98848689:C:T",
+    "context": "K562",
+    "source_row_1based": 30282,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 177,
+    "id": "chr11:98848689:C:T",
+    "context": "HepG2",
+    "source_row_1based": 30282,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 178,
+    "id": "chr12:100001352:G:C",
+    "context": "K562",
+    "source_row_1based": 30369,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 179,
+    "id": "chr12:100001352:G:C",
+    "context": "HepG2",
+    "source_row_1based": 30369,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 180,
+    "id": "chr12:100052669:T:C",
+    "context": "K562",
+    "source_row_1based": 30370,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 181,
+    "id": "chr12:100052669:T:C",
+    "context": "HepG2",
+    "source_row_1based": 30370,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 182,
+    "id": "chr12:100296344:T:C",
+    "context": "K562",
+    "source_row_1based": 30378,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 183,
+    "id": "chr12:100296344:T:C",
+    "context": "HepG2",
+    "source_row_1based": 30378,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 184,
+    "id": "chr12:100296841:G:T",
+    "context": "K562",
+    "source_row_1based": 30379,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 185,
+    "id": "chr12:100296841:G:T",
+    "context": "HepG2",
+    "source_row_1based": 30379,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 186,
+    "id": "chr12:38242360:G:C",
+    "context": "K562",
+    "source_row_1based": 38163,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 187,
+    "id": "chr12:38242360:G:C",
+    "context": "HepG2",
+    "source_row_1based": 38163,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 188,
+    "id": "chr12:38260148:C:A",
+    "context": "K562",
+    "source_row_1based": 38164,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 189,
+    "id": "chr12:38260148:C:A",
+    "context": "HepG2",
+    "source_row_1based": 38164,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 190,
+    "id": "chr12:38264486:G:A",
+    "context": "K562",
+    "source_row_1based": 38165,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 191,
+    "id": "chr12:38264486:G:A",
+    "context": "HepG2",
+    "source_row_1based": 38165,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 192,
+    "id": "chr12:60445885:T:G",
+    "context": "K562",
+    "source_row_1based": 41307,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 193,
+    "id": "chr12:60445885:T:G",
+    "context": "HepG2",
+    "source_row_1based": 41307,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 194,
+    "id": "chr12:60742422:A:G",
+    "context": "K562",
+    "source_row_1based": 41325,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 195,
+    "id": "chr12:60742422:A:G",
+    "context": "HepG2",
+    "source_row_1based": 41325,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 196,
+    "id": "chr12:60787337:T:C",
+    "context": "K562",
+    "source_row_1based": 41326,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 197,
+    "id": "chr12:60787337:T:C",
+    "context": "HepG2",
+    "source_row_1based": 41326,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 198,
+    "id": "chr12:60952519:G:A",
+    "context": "K562",
+    "source_row_1based": 41328,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 199,
+    "id": "chr12:60952519:G:A",
+    "context": "HepG2",
+    "source_row_1based": 41328,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 200,
+    "id": "chr12:60953472:C:A",
+    "context": "K562",
+    "source_row_1based": 41329,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 201,
+    "id": "chr12:60953472:C:A",
+    "context": "HepG2",
+    "source_row_1based": 41329,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 202,
+    "id": "chr12:60960164:G:C",
+    "context": "K562",
+    "source_row_1based": 41330,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 203,
+    "id": "chr12:60960164:G:C",
+    "context": "HepG2",
+    "source_row_1based": 41330,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 204,
+    "id": "chr12:60964108:A:G",
+    "context": "K562",
+    "source_row_1based": 41331,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 205,
+    "id": "chr12:60964108:A:G",
+    "context": "HepG2",
+    "source_row_1based": 41331,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 206,
+    "id": "chr12:60966740:T:C",
+    "context": "K562",
+    "source_row_1based": 41332,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 207,
+    "id": "chr12:60966740:T:C",
+    "context": "HepG2",
+    "source_row_1based": 41332,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 208,
+    "id": "chr12:60968236:G:T",
+    "context": "K562",
+    "source_row_1based": 41333,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 209,
+    "id": "chr12:60968236:G:T",
+    "context": "HepG2",
+    "source_row_1based": 41333,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 210,
+    "id": "chr12:60968576:A:C",
+    "context": "K562",
+    "source_row_1based": 41334,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 211,
+    "id": "chr12:60968576:A:C",
+    "context": "HepG2",
+    "source_row_1based": 41334,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 212,
+    "id": "chr12:72439746:C:A",
+    "context": "K562",
+    "source_row_1based": 42944,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 213,
+    "id": "chr12:72439746:C:A",
+    "context": "HepG2",
+    "source_row_1based": 42944,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 214,
+    "id": "chr12:72498191:A:G",
+    "context": "K562",
+    "source_row_1based": 42947,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 215,
+    "id": "chr12:72498191:A:G",
+    "context": "HepG2",
+    "source_row_1based": 42947,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 216,
+    "id": "chr12:72648077:T:C",
+    "context": "K562",
+    "source_row_1based": 42959,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 217,
+    "id": "chr12:72648077:T:C",
+    "context": "HepG2",
+    "source_row_1based": 42959,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 218,
+    "id": "chr12:72648287:T:C",
+    "context": "K562",
+    "source_row_1based": 42960,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 219,
+    "id": "chr12:72648287:T:C",
+    "context": "HepG2",
+    "source_row_1based": 42960,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 220,
+    "id": "chr12:72648290:A:G",
+    "context": "K562",
+    "source_row_1based": 42961,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 221,
+    "id": "chr12:72648290:A:G",
+    "context": "HepG2",
+    "source_row_1based": 42961,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 222,
+    "id": "chr12:72648499:T:C",
+    "context": "K562",
+    "source_row_1based": 42962,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 223,
+    "id": "chr12:72648499:T:C",
+    "context": "HepG2",
+    "source_row_1based": 42962,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 224,
+    "id": "chr12:72648511:A:G",
+    "context": "K562",
+    "source_row_1based": 42963,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 225,
+    "id": "chr12:72648511:A:G",
+    "context": "HepG2",
+    "source_row_1based": 42963,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 226,
+    "id": "chr12:72648939:T:C",
+    "context": "K562",
+    "source_row_1based": 42964,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 227,
+    "id": "chr12:72648939:T:C",
+    "context": "HepG2",
+    "source_row_1based": 42964,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 228,
+    "id": "chr12:72649690:A:C",
+    "context": "K562",
+    "source_row_1based": 42966,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 229,
+    "id": "chr12:72649690:A:C",
+    "context": "HepG2",
+    "source_row_1based": 42966,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 230,
+    "id": "chr12:72650382:G:A",
+    "context": "K562",
+    "source_row_1based": 42967,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 231,
+    "id": "chr12:72650382:G:A",
+    "context": "HepG2",
+    "source_row_1based": 42967,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 232,
+    "id": "chr12:72650603:T:C",
+    "context": "K562",
+    "source_row_1based": 42968,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 233,
+    "id": "chr12:72650603:T:C",
+    "context": "HepG2",
+    "source_row_1based": 42968,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 234,
+    "id": "chr12:72650898:T:A",
+    "context": "K562",
+    "source_row_1based": 42969,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 235,
+    "id": "chr12:72650898:T:A",
+    "context": "HepG2",
+    "source_row_1based": 42969,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 236,
+    "id": "chr12:72651492:G:T",
+    "context": "K562",
+    "source_row_1based": 42970,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 237,
+    "id": "chr12:72651492:G:T",
+    "context": "HepG2",
+    "source_row_1based": 42970,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 238,
+    "id": "chr12:72652265:G:T",
+    "context": "K562",
+    "source_row_1based": 42971,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 239,
+    "id": "chr12:72652265:G:T",
+    "context": "HepG2",
+    "source_row_1based": 42971,
+    "status": "ordinary_finite_numeric",
+    "matched": true
+  },
+  {
+    "selected_cell_ordinal_0based": 240,
+    "id": "chr12:72652619:A:G",
+    "context": "K562",
+    "source_row_1based": 42972,
+    "status": "gate_failure",
+    "matched": true
+  }
+]

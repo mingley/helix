@@ -1,0 +1,33 @@
+{
+  "binding_sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79",
+  "cohort_sha256": "4d1fd2725ee0ed2952cf95cefa555ba4418c1338bdcd047a34d849d0b95ddc8b",
+  "files": {
+    "binding.json": {
+      "bytes": 3771,
+      "sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79"
+    },
+    "failure.json": {
+      "bytes": 238,
+      "sha256": "c01ec5d6ec00d20b9fcdbf727e80d23a746824b8e5b78accec55851301c31717"
+    },
+    "implementation.py": {
+      "bytes": 22154,
+      "sha256": "d83d007b296707e77df221688a166941a9ffeb24396ddfcdd371e119a7411452"
+    },
+    "protocol.json": {
+      "bytes": 20084,
+      "sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149"
+    },
+    "source-IDs.jsonl.gz": {
+      "bytes": 343205,
+      "sha256": "9c38e41a6b5b6e91538894edae1e3f51be7a844c7e4b5e24639c121316537632"
+    },
+    "source-type-float-ledger.jsonl.gz": {
+      "bytes": 9173,
+      "sha256": "b9d948e009ab36e01ec1f7012ccbb8836e2cbe776cdc4e28f1cfa2c04f8b6ea8"
+    }
+  },
+  "protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+  "schema_version": 1,
+  "source_sha256": "723c4a0e1cfdb2c9c6ae55b3fa9206855dd95e0241319b9fc8d0831d3b42f9c2"
+}

@@ -1,0 +1,129 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 1369,
+      "sha256": "bef5e5d546f129440781177a79b6fcd62fcc53373bd6f4e44cc7982e4576e412"
+    },
+    "gate-comparison/comparison.json": {
+      "bytes": 1590,
+      "sha256": "a13b8ea6aaf77a473ee50898e0d35031324af5bba6932a9a554d5ab013fc38fc"
+    },
+    "gate-comparison/implementation.py": {
+      "bytes": 6077,
+      "sha256": "ad69a5b5a46b647ecdb65629ab5f146d6d6a2ceb19879f8a89176d5599765130"
+    },
+    "gate-comparison/manifest.json": {
+      "bytes": 464,
+      "sha256": "bc93b85530e9a1f730e63d777f8078788b1af9d5fcc16cb0e607e5e22c24e0f3"
+    },
+    "gate-comparison/selected-cell-checks.json": {
+      "bytes": 47664,
+      "sha256": "3f31a2a433c5710a2e55a5fe7e001eeee1f1725e152bf12792dd7c859c0d5fae"
+    },
+    "independent-source/binding.json": {
+      "bytes": 3771,
+      "sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79"
+    },
+    "independent-source/failure.json": {
+      "bytes": 277,
+      "sha256": "aad12b0a460395c97ce213ccbf803c1160fd90caa166fa2d92d292d1755b0495"
+    },
+    "independent-source/fixed-predictions.json.gz": {
+      "bytes": 353893,
+      "sha256": "b6552fd7e5fa633c65188f8faeefe31c4105e211dec2113c184fd8a4ae27ceeb"
+    },
+    "independent-source/implementation.py": {
+      "bytes": 47354,
+      "sha256": "daf67f2ae579608596511938d0ba07d59891b7f3c1dbbc3ad946b4742fda587b"
+    },
+    "independent-source/inputs.json": {
+      "bytes": 1594,
+      "sha256": "9e92e255cc38bb21c1a09f3cc38d84c0c988a8dfcc671ddc8c7a810789467e6d"
+    },
+    "independent-source/manifest.json": {
+      "bytes": 1301,
+      "sha256": "ae8d2d568a767d3adeff641c5c15f652cbb95f89a23166ca7195dbbd9e84508f"
+    },
+    "independent-source/metadata-cohort.json.gz": {
+      "bytes": 205636,
+      "sha256": "791f0b1b6c374b22ea5e21022b543928bba996250fe3a70e3c5c3338dcaf1369"
+    },
+    "independent-source/protocol.json": {
+      "bytes": 20084,
+      "sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149"
+    },
+    "independent-source/source-DNA.json.gz": {
+      "bytes": 343028,
+      "sha256": "61d1d83082492cc5c255356585a36825e0e77d4fe395fff9b557da30c9be0293"
+    },
+    "independent-source/source-cell-type-ledger.json.gz": {
+      "bytes": 7394,
+      "sha256": "693983ff560389bb132e77dc71014ddec0e2c2f0d8d84f70893ab99c49ef91cc"
+    },
+    "packaging-implementation.py": {
+      "bytes": 7635,
+      "sha256": "676d78e504d91052d7e7a22f982b09585d77a35f9028988d0e2e4bc75e64d16c"
+    },
+    "primary-source/binding.json": {
+      "bytes": 3771,
+      "sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79"
+    },
+    "primary-source/failure.json": {
+      "bytes": 238,
+      "sha256": "c01ec5d6ec00d20b9fcdbf727e80d23a746824b8e5b78accec55851301c31717"
+    },
+    "primary-source/implementation.py": {
+      "bytes": 22154,
+      "sha256": "d83d007b296707e77df221688a166941a9ffeb24396ddfcdd371e119a7411452"
+    },
+    "primary-source/manifest.json": {
+      "bytes": 1229,
+      "sha256": "de0da56ca02616947d57ebe71b50506437c0b5993d1ffd9a0494cd1c2315398a"
+    },
+    "primary-source/protocol.json": {
+      "bytes": 20084,
+      "sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149"
+    },
+    "primary-source/source-IDs.jsonl.gz": {
+      "bytes": 343205,
+      "sha256": "9c38e41a6b5b6e91538894edae1e3f51be7a844c7e4b5e24639c121316537632"
+    },
+    "primary-source/source-type-float-ledger.jsonl.gz": {
+      "bytes": 9173,
+      "sha256": "b9d948e009ab36e01ec1f7012ccbb8836e2cbe776cdc4e28f1cfa2c04f8b6ea8"
+    }
+  },
+  "original_runs": {
+    "comparison": "runs/variant-transfer-v1-gate-comparison",
+    "independent": "runs/variant-transfer-v1-independent",
+    "primary": "runs/variant-transfer-v1-observations"
+  },
+  "schema_version": 1,
+  "status": {
+    "binding_sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79",
+    "exact_numeric_float_cells": 240,
+    "failure_reproduced": true,
+    "first_failure": {
+      "context": "K562",
+      "coordinate": "AO42972",
+      "id": "chr12:72652619:A:G",
+      "literal_text": "NA",
+      "row_1based": 42972,
+      "xml_type": "s"
+    },
+    "fully_decoded_paired_variants": 120,
+    "gate_comparison_sha256": "a13b8ea6aaf77a473ee50898e0d35031324af5bba6932a9a554d5ab013fc38fc",
+    "independent_fixed_predictions_retained": true,
+    "kind": "variant-transfer-v1-source-failure",
+    "limits": [
+      "Reproduced source-gate failure, not a model-accuracy result.",
+      "Independent fixed predictions exist; no target-performance/bootstrap was computed.",
+      "Openpyxl can instantiate nonselected numeric cells internally."
+    ],
+    "protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+    "second_freeze_commit": "a21fd6f44f493b20cddc51e6cde7c7ae14e490e4",
+    "selected_cell_comparisons": 241,
+    "source_observation_gate_passed": false,
+    "transfer_performance_computed": false
+  }
+}

@@ -161,6 +161,24 @@ class VariantEvaluationTests(unittest.TestCase):
             with self.subTest(mutation=mutation), self.assertRaises(ValueError):
                 M.check_protocol(p)
 
+    def test_v2_requires_explicit_exploratory_parent_and_unknown_missingness(self):
+        p = protocol()
+        p.update(protocol_id="variant-transfer-v2",
+                 analysis_classification="exploratory_after_v1_source_failure",
+                 parent_protocol_sha256="811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149",
+                 operational_missingness={"interpretation": "literal_unreported_unknown_reason",
+                     "rule": "exclude_variant_unless_both_contexts_ordinary_finite_numeric",
+                     "source_semantics_established": False})
+        M.check_protocol(p)
+        for field in ("analysis_classification", "parent_protocol_sha256", "operational_missingness"):
+            invalid = copy.deepcopy(p)
+            del invalid[field]
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                M.check_protocol(invalid)
+        p["operational_missingness"]["source_semantics_established"] = True
+        with self.assertRaises(ValueError):
+            M.check_protocol(p)
+
     def make_handoff(self, root):
         proto = protocol()
         (root / "protocol.json").write_bytes(M.encoded(proto))

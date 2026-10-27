@@ -1,0 +1,6 @@
+{
+  "binding_sha256": "9c26b3fc628f16bd6bb677dee8eed01e509b6102d44f95c0037ae2f55676ba79",
+  "error": "source effect is not an ordinary finite numeric cell",
+  "error_type": "ValueError",
+  "protocol_sha256": "811930c2d3a5ee763014ea611acda4d2c84404b7d5ae399c7843c62d0a828149"
+}
