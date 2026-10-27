@@ -36,7 +36,7 @@ constraints.
 
 The [exploratory external test](variant-transfer-v2-study.md) uses a separate
 Siraj experiment and the five old activity fits without retraining. Across
-2,153 complete-case SNVs in 172 unexposed components, fixed I macro MSE is
+2,153 complete-case SNVs in 172 components passing the frozen prior-source exclusion guards, fixed I macro MSE is
 0.2033556 versus 0.2033201 for zero effect. Improvement is −0.00003545, with
 conditional 95% range [−0.00144180, 0.00140062]. The useful-transfer rule fails;
 modest gains or harm remain compatible with that range.

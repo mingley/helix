@@ -1,0 +1,20 @@
+{
+  "kind": "documentation_clarification",
+  "previous_documentation": {
+    "README.md": {
+      "bytes": 1864,
+      "sha256": "900291bf9736afff0480cd3a49bee26ea8c921ab32200993f8796707c698c09e"
+    },
+    "packaging-implementation.py": {
+      "bytes": 16097,
+      "sha256": "2149c2f5186989414fb5bb7f92cca5b1f6fd8e89f31fcb9d43e9587ee75dffa3"
+    },
+    "publication.json": {
+      "bytes": 10934,
+      "sha256": "20d5aa28db98970c191ae090649f13daf73bb949c803c9640023d5b0b45ac7bc"
+    }
+  },
+  "previous_source_commit": "30319fe729d0e2b1c7ae0430a69487e7d9ac3b4a",
+  "reason": "Replace ambiguous untouched with prior-source exclusion terminology; v2 follows disclosed v1 outcome exposure.",
+  "scientific_artifacts_changed": false
+}

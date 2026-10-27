@@ -20,8 +20,8 @@ independent exhaustive calculations establish these representation limits;
 they do not establish biological neutrality.
 
 The [external variant-effect test](research/variant-transfer-v2-study.md) now
-shows **no observed advantage over zero effect** on 2,153 SNVs in 172 untouched
-components from a separate experiment. Macro MSE is 0.2033556 versus 0.2033201;
+shows **no observed advantage over zero effect** on 2,153 SNVs in 172 components passing the frozen prior-source
+exclusion guards from a separate experiment. Macro MSE is 0.2033556 versus 0.2033201;
 the conditional improvement interval includes zero. All 17 independent numeric
 comparison categories pass. This analysis is explicitly exploratory after a
 retained v1 source-token failure; literal NA is excluded operationally with an

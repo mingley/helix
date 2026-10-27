@@ -8,7 +8,7 @@ Lean theorems prove local SNV effects and zero ideal predicted interaction for
 substitutions separated by at least three positions.
 
 The [external test](../research/variant-transfer-v2-study.md) retains a negative
-result on 2,153 SNVs in 172 untouched components: the fixed model shows no
+result on 2,153 SNVs in 172 components passing the frozen prior-source exclusion guards: the fixed model shows no
 observed macro-MSE advantage over zero effect. All 17 independent numerical
 categories pass; global grouping separately passes 4,689 checks. V1 failed its
 strict NA-token gate, and v2 is explicitly exploratory with operational numeric
@@ -87,15 +87,16 @@ deletions. Their apparent duplicate-identity prediction constraint disappears
 under the preexisting tag-quality rule. This is source-estimate accounting,
 not a biological noise floor. See the [documented findings](../research/regulatory-study.md).
 
-## Next: perturbation prediction in a separate study
+## Next: measure interactions that the current representation omits
 
 1. Establish an independent experiment's source genealogy, actual variant/insert
    DNA, observed assay units, replicate context and reuse terms before outcomes.
-2. Freeze the small model, whole-locus/homology groups, context-matched baselines,
-   perturbation endpoint and uncertainty. Existing HBB/Kircher and Agarwal data
-   are explored evidence, not pristine validation.
-3. Test signed variant effects and conditional uncertainty at untouched loci.
-   Whole-fragment activity gains do not establish single-base effect accuracy.
+2. Freeze reference/single1/single2/double construct groups, allele separation,
+   common within-cell normalization, baselines and replicate uncertainty.
+   HBB/Kircher, Agarwal and the used Siraj main-panel outcomes are explored.
+3. Test zero predicted epistasis for substitutions at distance three or greater.
+   Retain every eligible group and distinguish replicate noise from nonadditivity;
+   do not select positive outcomes as a new untouched validation panel.
 4. Require directed or endogenous evidence that distinguishes composition-based
    prediction from a specific regulatory interaction before a mechanistic claim.
 5. Continue upstream normalization provenance as a separate source audit, keeping

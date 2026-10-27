@@ -9,8 +9,8 @@
       "sha256": "b8e0efdf1bc02cc669910bfddf6e2737a6c5b45832e9cc90ce6c05e6699c9580"
     },
     "README.md": {
-      "bytes": 1864,
-      "sha256": "900291bf9736afff0480cd3a49bee26ea8c921ab32200993f8796707c698c09e"
+      "bytes": 1903,
+      "sha256": "5f0d52481a7e2f099e70c1d5471dda5078987ea685d72151c2d3360aac35b4b1"
     },
     "S/manifest.json": {
       "bytes": 807,
@@ -64,6 +64,10 @@
       "bytes": 3433515,
       "sha256": "2edbdaf24b837707382751845cd61315d14cd204203fad088a9e10c7a3bf72ad"
     },
+    "exposure-wording-clarification.json": {
+      "bytes": 734,
+      "sha256": "707a59a4e1a6595634d7ce85bd2d5634c4465edff816f874f26b3f95d8ea66d3"
+    },
     "figures/01-model-transfer.png": {
       "bytes": 143112,
       "sha256": "3ae53f7458b8420e9f42756fbe9a3be42f54613d25930cc390be6827d9dc7987"
@@ -111,6 +115,18 @@
     "handoff/pins.json": {
       "bytes": 679,
       "sha256": "414688a974df1c1cff31265f78012728153ec89c68f1246f886849e4396373d9"
+    },
+    "history/exposure-wording-v1/README.md": {
+      "bytes": 1864,
+      "sha256": "900291bf9736afff0480cd3a49bee26ea8c921ab32200993f8796707c698c09e"
+    },
+    "history/exposure-wording-v1/packaging-implementation.py": {
+      "bytes": 16097,
+      "sha256": "2149c2f5186989414fb5bb7f92cca5b1f6fd8e89f31fcb9d43e9587ee75dffa3"
+    },
+    "history/exposure-wording-v1/publication.json": {
+      "bytes": 10934,
+      "sha256": "20d5aa28db98970c191ae090649f13daf73bb949c803c9640023d5b0b45ac7bc"
     },
     "independent/binding.json": {
       "bytes": 6614,
@@ -217,8 +233,8 @@
       "sha256": "d5380cb5dba643d80a0f813783511f79212fff6f60541987b84f2cc8e76c64f0"
     },
     "packaging-implementation.py": {
-      "bytes": 16097,
-      "sha256": "2149c2f5186989414fb5bb7f92cca5b1f6fd8e89f31fcb9d43e9587ee75dffa3"
+      "bytes": 16136,
+      "sha256": "c6e7530253156d8529871b42f6bba565d151a93cc5e8dc30c73058ca07f78ec9"
     }
   },
   "original_runs": {

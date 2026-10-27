@@ -191,7 +191,7 @@ def main():
         (args.out / "README.md").write_text('''# Exploratory external variant-effect transfer
 
 The fixed five-fit model does not beat zero-effect prediction on 2,153 complete
-variants in 172 untouched components. Macro MSE is 0.2033556 versus 0.2033201;
+variants in 172 components passing the frozen prior-source exclusion guards. Macro MSE is 0.2033556 versus 0.2033201;
 zero-minus-model gain is -0.0000354532, conditional 95% range
 [-0.00144180, 0.00140062]. Useful-transfer rule: **false**.
 

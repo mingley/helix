@@ -1,8 +1,8 @@
 # Exploratory external test of signed variant effects
 
 The frozen composition model shows **no observed advantage over zero-effect
-prediction** on 2,153 complete-case variants across 172 previously unexposed
-components in the separate Siraj 2026 reporter study. The primary macro MSE is
+prediction** on 2,153 complete-case variants across 172 components passing the frozen prior-source
+exclusion guards in the separate Siraj 2026 reporter study. The primary macro MSE is
 **0.2033556** for the fixed cell-specific model versus **0.2033201** for zero.
 Zero-minus-model improvement is **−0.0000354532**, with conditional 95% range
 **[−0.00144180, 0.00140062]**. The useful-transfer rule fails. The range includes

@@ -129,6 +129,34 @@ replacement of all commitments creates another internally consistent experiment.
 The process is trusted to follow API boundaries; shell-capable agents require
 separate capabilities and an inaccessible holdout store.
 
+## Fixed external transfer and source-gate separation
+
+The variant-transfer path reuses five saved activity fits. Its typed JSON handoff
+contains literal paired source effects, exact 200nt alleles, component IDs and
+SHA-bound predictions; it accepts no new training or calibration. The observation
+builder verifies a committed source/header/cohort binding before parsing selected
+S4 cells. Exact feature numerators bridge DNA to fixed fold/ensemble predictions.
+
+V1 retains a strict failed source gate on literal NA. The distinct v2 protocol
+declares an exploratory numeric-complete-case population after that exposure,
+preserving unknown missingness semantics. Its metadata, preprocessing and numerical
+evaluation gates have separate statuses. A useful-transfer result is also separate
+from numerical reproduction: all 17 comparison categories pass while the primary
+observed improvement is negative and its conditional range crosses zero.
+
+Global grouping is reconstructed by separate Python and C++ implementations on
+the complete mapped DNA population before exclusion. The source/cohort seal
+preserves original groups through prior-exposure, technical-control and source-ID
+filtering. The independent numerical reader separately parses original XLSX DNA
+and effects, then rederives features, predictions, losses and resampling with
+NumPy. Assembly and source-class preparation remain authenticated handoffs rather
+than fully independently rediscovered inputs. Publication manifests retain both
+failed and exploratory runs, immutable implementations, ledgers and figures.
+
+`bash scripts/check_variant_transfer.sh runs/NEW_PREFIX` executes the exploratory
+numeric replay on the locked cohort; `--verify-published` checks retained bytes
+without raw-source access. See the [report](../research/variant-transfer-v2-study.md).
+
 ## Current boundaries
 
 The new `helix context-activity` path shares the generic ridge engine but binds a

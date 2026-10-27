@@ -1,0 +1,69 @@
+{
+  "all_directory_bytes_identical": true,
+  "directories": {
+    "I": {
+      "byte_identical": true,
+      "changed_files": [],
+      "files": 2,
+      "original_manifest_sha256": "11779b2b575386712b1f74d288546018656062b3f043579603028e8ca9a35b37",
+      "replay_manifest_sha256": "11779b2b575386712b1f74d288546018656062b3f043579603028e8ca9a35b37"
+    },
+    "S": {
+      "byte_identical": true,
+      "changed_files": [],
+      "files": 2,
+      "original_manifest_sha256": "25287b6f5e39571a23b66d92f0785ef609fd887bfdaa1ad3ec0d57800286b51a",
+      "replay_manifest_sha256": "25287b6f5e39571a23b66d92f0785ef609fd887bfdaa1ad3ec0d57800286b51a"
+    },
+    "comparison": {
+      "byte_identical": true,
+      "changed_files": [],
+      "files": 3,
+      "original_manifest_sha256": "64c8a4814296534a7a516a3096666ffcf2e543f2d10972f3b1c559ae446b8134",
+      "replay_manifest_sha256": "64c8a4814296534a7a516a3096666ffcf2e543f2d10972f3b1c559ae446b8134"
+    },
+    "evaluation": {
+      "byte_identical": true,
+      "changed_files": [],
+      "files": 8,
+      "original_manifest_sha256": "3b1346e0a6c051e6ff53892bd0d0d4db1e7430fc7082ccb347685db9cd549493",
+      "replay_manifest_sha256": "3b1346e0a6c051e6ff53892bd0d0d4db1e7430fc7082ccb347685db9cd549493"
+    },
+    "figures": {
+      "byte_identical": true,
+      "changed_files": [],
+      "files": 8,
+      "original_manifest_sha256": "041a5c38d8378faeefa5efd05b445cfda82393c4db06eec534f3eafe8a8934c6",
+      "replay_manifest_sha256": "041a5c38d8378faeefa5efd05b445cfda82393c4db06eec534f3eafe8a8934c6"
+    },
+    "handoff": {
+      "byte_identical": true,
+      "changed_files": [],
+      "files": 4,
+      "original_manifest_sha256": "17c55a74c60f556831505adbe5755aadba0a18933560efe18fee89b4b6d7918e",
+      "replay_manifest_sha256": "17c55a74c60f556831505adbe5755aadba0a18933560efe18fee89b4b6d7918e"
+    },
+    "independent": {
+      "byte_identical": true,
+      "changed_files": [],
+      "files": 16,
+      "original_manifest_sha256": "5e6ac31bad6e4edf98eee9a21b22df5b731713ca34209730dd8f9015f49648fe",
+      "replay_manifest_sha256": "5e6ac31bad6e4edf98eee9a21b22df5b731713ca34209730dd8f9015f49648fe"
+    },
+    "observations": {
+      "byte_identical": true,
+      "changed_files": [],
+      "files": 10,
+      "original_manifest_sha256": "a4594f7c9fbd9c538db735383fbf5fc4ff0286e40428a4bef906428f7ecd663b",
+      "replay_manifest_sha256": "a4594f7c9fbd9c538db735383fbf5fc4ff0286e40428a4bef906428f7ecd663b"
+    }
+  },
+  "interpretation": "Repeated numerical workflow on the same frozen source and fits, not independent biological replication; exploratory classification and negative useful-transfer rule remain unchanged.",
+  "launch_commit": "30319fe729d0e2b1c7ae0430a69487e7d9ac3b4a",
+  "numeric_source_freeze_commit": "156c5676c4f79328153edc517a737a2d83c97a48",
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-27T23:21:37.361775+00:00",
+  "workflow": "bash scripts/check_variant_transfer.sh runs/variant-transfer-v2-workflow-replay",
+  "workflow_sha256": "31e47ecab061b34c26972f839014c99ead67ceda2cd86e88c5991128de25ca8a",
+  "wrapper_exit_code": 0
+}
