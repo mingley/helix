@@ -1,0 +1,523 @@
+{
+  "schema_version": 1,
+  "protocol_id": "context-prediction-v1",
+  "status": "frozen",
+  "frozen_at_utc": "2026-10-27T13:22:36.512476+00:00",
+  "frozen_before_source_member_payload_acquisition": true,
+  "study_status": "Retrospective public-data evaluation, selected panel, known assay contexts; outcome-unseen analysis specification, not prospective raw-count preprocessing or independent experimental validation.",
+  "goal": "Test context information beyond shared DNA and context means, and sequence-by-context slopes beyond additive offsets on held-out sequence families; retain negative results.",
+  "source": {
+    "publication_doi": "10.1038/s41586-024-08430-9",
+    "repository_doi": "10.5281/zenodo.10558183",
+    "record_url": "https://zenodo.org/records/10558183",
+    "data_license": "CC-BY-4.0 as declared by the source Zenodo record; retain source attribution and license snapshot, fail closed if score-data reuse scope is contradicted.",
+    "source_version_caveat": "Zenodo10558183 is a preprint-associated release: Table S7 joint lib design.xlsx must not silently be called final-paper Supplementary Table10. Establish identity/schema from actual source headers and authoritative methods. Do not assert all final-paper sequences or endpoints are present.",
+    "selection_caveat": "Joint panel deliberately selected using prior activity bins, with variable-promoter selection; not a random or unselected genomic sample. Fixed source panel, not a score-selected favorable subset.",
+    "contexts": [
+      "HepG2",
+      "K562",
+      "WTC11"
+    ],
+    "design_workbook": {
+      "key": "Table S7 - joint lib design.xlsx",
+      "url": "https://zenodo.org/api/records/10558183/files/Table%20S7%20-%20joint%20lib%20design.xlsx/content",
+      "size_bytes": 8301566,
+      "md5": "5d9b71452e9648e8473edd74a4ae26fc"
+    },
+    "archive": {
+      "key": "final_joint_dump.zip",
+      "url": "https://zenodo.org/api/records/10558183/files/final_joint_dump.zip/content",
+      "size_bytes": 3967659598,
+      "md5": "edf24033ce6adf8e3cb27e465730c329",
+      "whole_archive_downloaded": false,
+      "integrity": "A partial member acquisition cannot verify whole-archive MD5. Validate ZIP local/central metadata, compressed bounds, decompression, exact uncompressed size and CRC32; retain range/HTTP receipts and SHA256 of each member."
+    },
+    "archive_index": {
+      "path": "research/context-source-alternatives/joint-archive-index.json",
+      "sha256": "42e5032c42a6abfc79a1574dae2f10cf17b4bb094a183a66412e948e8a69522c"
+    },
+    "permitted_archive_members": [
+      {
+        "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_1.tsv",
+        "compressed_bytes": 76164,
+        "uncompressed_bytes": 206795,
+        "crc32": "4eb907b1",
+        "compression_method": 8,
+        "local_header_offset": 686835
+      },
+      {
+        "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_10.tsv",
+        "compressed_bytes": 76339,
+        "uncompressed_bytes": 207498,
+        "crc32": "ae79f03b",
+        "compression_method": 8,
+        "local_header_offset": 76718
+      },
+      {
+        "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_2.tsv",
+        "compressed_bytes": 76133,
+        "uncompressed_bytes": 206786,
+        "crc32": "2f509877",
+        "compression_method": 8,
+        "local_header_offset": 455
+      },
+      {
+        "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_3.tsv",
+        "compressed_bytes": 76011,
+        "uncompressed_bytes": 207100,
+        "crc32": "112658af",
+        "compression_method": 8,
+        "local_header_offset": 229646
+      },
+      {
+        "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_4.tsv",
+        "compressed_bytes": 76005,
+        "uncompressed_bytes": 207133,
+        "crc32": "a062921f",
+        "compression_method": 8,
+        "local_header_offset": 458225
+      },
+      {
+        "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_5.tsv",
+        "compressed_bytes": 76051,
+        "uncompressed_bytes": 206744,
+        "crc32": "457fbee4",
+        "compression_method": 8,
+        "local_header_offset": 382044
+      },
+      {
+        "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_6.tsv",
+        "compressed_bytes": 76328,
+        "uncompressed_bytes": 207378,
+        "crc32": "c5b7c958",
+        "compression_method": 8,
+        "local_header_offset": 153188
+      },
+      {
+        "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_7.tsv",
+        "compressed_bytes": 76127,
+        "uncompressed_bytes": 206834,
+        "crc32": "4db58204",
+        "compression_method": 8,
+        "local_header_offset": 305787
+      },
+      {
+        "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_8.tsv",
+        "compressed_bytes": 76168,
+        "uncompressed_bytes": 207389,
+        "crc32": "bc277169",
+        "compression_method": 8,
+        "local_header_offset": 610537
+      },
+      {
+        "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_9.tsv",
+        "compressed_bytes": 76047,
+        "uncompressed_bytes": 207129,
+        "crc32": "346dd23e",
+        "compression_method": 8,
+        "local_header_offset": 534360
+      },
+      {
+        "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_1.tsv",
+        "compressed_bytes": 76819,
+        "uncompressed_bytes": 206927,
+        "crc32": "eae95268",
+        "compression_method": 8,
+        "local_header_offset": 1455561
+      },
+      {
+        "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_10.tsv",
+        "compressed_bytes": 76713,
+        "uncompressed_bytes": 206902,
+        "crc32": "2e54371a",
+        "compression_method": 8,
+        "local_header_offset": 840217
+      },
+      {
+        "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_2.tsv",
+        "compressed_bytes": 76751,
+        "uncompressed_bytes": 207052,
+        "crc32": "3720119f",
+        "compression_method": 8,
+        "local_header_offset": 763337
+      },
+      {
+        "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_3.tsv",
+        "compressed_bytes": 76709,
+        "uncompressed_bytes": 206709,
+        "crc32": "cb87e763",
+        "compression_method": 8,
+        "local_header_offset": 993864
+      },
+      {
+        "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_4.tsv",
+        "compressed_bytes": 76890,
+        "uncompressed_bytes": 207027,
+        "crc32": "1f0cb18f",
+        "compression_method": 8,
+        "local_header_offset": 1224583
+      },
+      {
+        "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_5.tsv",
+        "compressed_bytes": 76791,
+        "uncompressed_bytes": 206827,
+        "crc32": "0818abfb",
+        "compression_method": 8,
+        "local_header_offset": 1147663
+      },
+      {
+        "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_6.tsv",
+        "compressed_bytes": 76675,
+        "uncompressed_bytes": 206954,
+        "crc32": "038d815f",
+        "compression_method": 8,
+        "local_header_offset": 917060
+      },
+      {
+        "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_7.tsv",
+        "compressed_bytes": 76832,
+        "uncompressed_bytes": 207109,
+        "crc32": "17ae84a8",
+        "compression_method": 8,
+        "local_header_offset": 1070702
+      },
+      {
+        "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_8.tsv",
+        "compressed_bytes": 76786,
+        "uncompressed_bytes": 207419,
+        "crc32": "788d2723",
+        "compression_method": 8,
+        "local_header_offset": 1378646
+      },
+      {
+        "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_9.tsv",
+        "compressed_bytes": 76915,
+        "uncompressed_bytes": 207104,
+        "crc32": "8ebc82a6",
+        "compression_method": 8,
+        "local_header_offset": 1301602
+      },
+      {
+        "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_1.tsv",
+        "compressed_bytes": 76762,
+        "uncompressed_bytes": 205022,
+        "crc32": "40e49791",
+        "compression_method": 8,
+        "local_header_offset": 2224327
+      },
+      {
+        "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_10.tsv",
+        "compressed_bytes": 76957,
+        "uncompressed_bytes": 205848,
+        "crc32": "9e42c9e8",
+        "compression_method": 8,
+        "local_header_offset": 1609444
+      },
+      {
+        "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_2.tsv",
+        "compressed_bytes": 76595,
+        "uncompressed_bytes": 205337,
+        "crc32": "8f5e88b9",
+        "compression_method": 8,
+        "local_header_offset": 1532719
+      },
+      {
+        "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_3.tsv",
+        "compressed_bytes": 76583,
+        "uncompressed_bytes": 205197,
+        "crc32": "172bce4c",
+        "compression_method": 8,
+        "local_header_offset": 1763506
+      },
+      {
+        "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_4.tsv",
+        "compressed_bytes": 76820,
+        "uncompressed_bytes": 205631,
+        "crc32": "052cc0d1",
+        "compression_method": 8,
+        "local_header_offset": 1993875
+      },
+      {
+        "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_5.tsv",
+        "compressed_bytes": 76650,
+        "uncompressed_bytes": 205299,
+        "crc32": "5786bc0d",
+        "compression_method": 8,
+        "local_header_offset": 1917095
+      },
+      {
+        "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_6.tsv",
+        "compressed_bytes": 76844,
+        "uncompressed_bytes": 205401,
+        "crc32": "cf49bb81",
+        "compression_method": 8,
+        "local_header_offset": 1686532
+      },
+      {
+        "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_7.tsv",
+        "compressed_bytes": 76746,
+        "uncompressed_bytes": 204881,
+        "crc32": "3cebb665",
+        "compression_method": 8,
+        "local_header_offset": 1840219
+      },
+      {
+        "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_8.tsv",
+        "compressed_bytes": 76591,
+        "uncompressed_bytes": 205426,
+        "crc32": "ac51f5cb",
+        "compression_method": 8,
+        "local_header_offset": 2147606
+      },
+      {
+        "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_9.tsv",
+        "compressed_bytes": 76651,
+        "uncompressed_bytes": 204994,
+        "crc32": "93789a72",
+        "compression_method": 8,
+        "local_header_offset": 2070825
+      }
+    ],
+    "member_role": "Candidate measured-label provenance only, not assumed ground truth. Source fold names never define our folds. Reject CNN predictions/augmentations as empirical labels.",
+    "acquisition_scope": "Only the two listed workbooks and 30 listed source archive members under this version. Header/schema inspection and verification permitted after freezing. If they lack required measured endpoint or sequence/coordinates, record blocked acquisition and stop; no substitute data, endpoint or score source without separately versioned protocol.",
+    "folds_workbook": {
+      "key": "Table S9 - folds and performance.xlsx",
+      "url": "https://zenodo.org/api/records/10558183/files/Table%20S9%20-%20folds%20and%20performance.xlsx/content",
+      "size_bytes": 3564742,
+      "md5": "ef967c8388d84da9ec81d22e11c868bd"
+    },
+    "acquisition_order": "Inspect both bounded workbooks first: Table S7 then Table S9. Retrieve listed archive members only if necessary to establish or cross-check measured labels under the semantic endpoint contract; prediction-only files do not justify continued label acquisition."
+  },
+  "semantic_endpoint_contract": {
+    "endpoint_id": "mean-of-three-median-normalized-log2-rna-dna-activity",
+    "required_measurement": "Observed lentiMPRA reporter activity: arithmetic mean of three published per-replicate median-normalized log2(RNA/DNA) activity measurements in each context, or a documented published aggregate exactly equal to that mean.",
+    "units": "log2 reporter RNA/DNA activity; MSE squared log2 units; MAE log2 units",
+    "forbidden_labels": [
+      "source model predictions",
+      "CNN predictions",
+      "prediction.N columns",
+      "ensemble predictions",
+      "ESS",
+      "expression specificity score",
+      "full-panel z-scores",
+      "activity bins used for design selection",
+      "surrogate scores inferred from source column names alone"
+    ],
+    "fail_closed": true,
+    "schema_binding": "After header-only inspection, create a source-hashed schema-binding artifact naming every measured replicate/aggregate, assayed-DNA, stableID, parent and coordinate field plus authoritative semantic evidence. Headers alone cannot prove empirical-label identity. No fitting or outcome-pattern inspection unless all contract requirements pass. Binding may map columns and documented NA tokens but cannot change endpoint, transform, cohort source, models or loss.",
+    "source_priority": "Inspect S7 then S9; use unambiguously documented measured endpoint in either workbook. The listed archive members may supply or cross-check measured values only if explicitly observed, never predicted. If multiple legitimate measured copies disagree beyond documented source precision, fail rather than selecting a favorable copy.",
+    "source_normalization": "Accept explicitly documented published median normalization as part of the source endpoint; it may use the entire source experiment. No claim to prospective/training-only raw-count normalization. No new all-panel z-scoring, activity centering or response scaling.",
+    "replicates": "Replicates, barcodes, molecules, augmentations and repeated file copies are not independent elements. Do not average source predictions. Require all three finite measured replicates or a documented exact three-replicate aggregate; no invented pseudocounts or reconstruction from predictions."
+  },
+  "cohort": {
+    "primary": "All source joint-library element identities with an unambiguous same assayed insert in all three contexts, finite required observed activity, unambiguous same-assembly coordinates and valid sequence, subject only to this fixed semantic/metadata eligibility.",
+    "same_dna_across_contexts_required": true,
+    "complete_contexts_required": [
+      "HepG2",
+      "K562",
+      "WTC11"
+    ],
+    "sequence_alphabet": "uppercase ACGT only",
+    "minimum_sequence_length": 3,
+    "coordinates": "Verified single reference assembly and chromosome naming, zero-based half-open start/end, start>=0,end>start. Establish source coordinate convention from evidence; do not guess or silently liftover.",
+    "reference_mapping": "Record strand, assayed sequence, reference mapping and any documented synthetic/adapter differences. Interval must refer unambiguously to the assayed element; if this cannot be shown, block the primary analysis.",
+    "duplicates": "Preserve distinct source element IDs including exact/RC DNA duplicates, group them together and report duplicate multiplicities. Reject duplicate element/context observations from repeated files unless exact duplicate provenance is recorded and only one copy contributes. Different source IDs are not evidence of independent experiments.",
+    "exclusions": "No activity magnitude/rank, pvalue, activity-bin, observed predictability or replicate-agreement threshold. Missing/nonfinite endpoint, incomplete context, invalid DNA or ambiguous sequence/coordinate semantics excluded with reason; all excluded source records retained in an audit. Do not silently add new raw count filters.",
+    "missingness_report": "Retain incomplete records separately with counts and reasons by context and source; no outcome imputation and no primary complete-case claim about missing elements.",
+    "external_scope": "No unseen-context or across-study transfer claim. All three contexts belong to one source study; study selection and prior activity ascertainment constrain generalization."
+  },
+  "grouping": {
+    "algorithm_id": "context-sequence-supercomponents-v1",
+    "union_rules": [
+      "same documented parent/family ID",
+      "exact or reverse-complement DNA identity",
+      "positive-length same-assembly genomic overlap",
+      "any shared touched1000000bp genomic bin anchored0",
+      "equal-length global ungapped identity>=90percent in either orientation"
+    ],
+    "bin_bp": 1000000,
+    "bins": "For[start,end), floor(start/1000000)..floor((end-1)/1000000), inclusive; a crossing interval unions both bins.",
+    "hamming": "For length L, k=floor(L/10). Join iff min(Hamming(a,b),Hamming(a,reverse_complement(b)))<=k. Unequal-length, indel and partial homology not guaranteed.",
+    "candidate_generation": "Exact exhaustive pigeonhole index: k+1 nonempty segments with boundaries floor(j*L/(k+1)), j=0..k+1; index both orientations by(length,segment_index,exact_substring), deduplicate unordered source-element pairs, exact fullHamming verification. Equivalent exact implementation permitted with identical components.",
+    "max_unordered_candidate_pairs": 100000000,
+    "budget_policy": "Abort before fitting if more than100000000 distinct unordered candidate pairs or resource failure; never cap/skip buckets, discard sequences, approximate completeness or continue partial results. Retain abort receipt.",
+    "connected_components": "Transitive union of all rules; never split a component for fold balance.",
+    "component_id": "SHA256 UTF8 newline-joined lexicographically sorted stable source element IDs; reject IDs containing newline. Store member list and hash.",
+    "feasibility": {
+      "minimum_components": 100,
+      "maximum_largest_component_fraction": 0.4,
+      "failure": "Abort primary study; do not weaken grouping after outcomes."
+    }
+  },
+  "outer_folds": {
+    "count": 5,
+    "algorithm": "Sort components by decreasing element count then ascending component_id; lexicographic sortedID list is final collision tiebreak. Greedily assign to fold with smallest current element count; foldindex0..4 breaks ties. All three contexts of each element stay together.",
+    "guard_bp": 10000,
+    "guard": "Exclude an entire training component if any of its intervals has same-chromosome distance<=10000bp to any test interval. Distance0 for overlap or adjacency, otherwise half-open gap. Preserve every test element and its three contexts.",
+    "feasibility": {
+      "minimum_training_fraction_of_all_primary_elements": 0.5,
+      "all_contexts_required": true,
+      "failure": "Abort if any guarded fold violates fraction or context coverage, or has no test elements; do not report a successful primary fit."
+    },
+    "ledger": "Persist preoutcome element/group/fold metadata, candidate count, all guard exclusions, sizes and minimum distances; source testfold labels are not our folds."
+  },
+  "features": {
+    "names": [
+      "rc3mer_AAA",
+      "rc3mer_AAC",
+      "rc3mer_AAG",
+      "rc3mer_AAT",
+      "rc3mer_ACA",
+      "rc3mer_ACC",
+      "rc3mer_ACG",
+      "rc3mer_ACT",
+      "rc3mer_AGA",
+      "rc3mer_AGC",
+      "rc3mer_AGG",
+      "rc3mer_ATA",
+      "rc3mer_ATC",
+      "rc3mer_ATG",
+      "rc3mer_CAA",
+      "rc3mer_CAC",
+      "rc3mer_CAG",
+      "rc3mer_CCA",
+      "rc3mer_CCC",
+      "rc3mer_CCG",
+      "rc3mer_CGA",
+      "rc3mer_CGC",
+      "rc3mer_CTA",
+      "rc3mer_CTC",
+      "rc3mer_GAA",
+      "rc3mer_GAC",
+      "rc3mer_GCA",
+      "rc3mer_GCC",
+      "rc3mer_GGA",
+      "rc3mer_GTA",
+      "rc3mer_TAA",
+      "rc3mer_TCA",
+      "gc_fraction"
+    ],
+    "definition": "Count overlapping canonical 3mers, canonical=min(trimer,reverse_complement(trimer)); divide integer counts once by L-2. GC=count(G orC)/L. Counts, length and DNA hashes reported but length not predictor.",
+    "orientation": "Reverse-complement invariant insert composition; no vector/adaptor flanks or implicit extra sequence.",
+    "forbidden": [
+      "activity",
+      "source predictions",
+      "ESS",
+      "pvalues",
+      "barcodes",
+      "RNA/DNA counts",
+      "replicate outcomes",
+      "activity selection bins",
+      "clinical labels",
+      "test-derived statistics"
+    ],
+    "scaling": "One training-only transform from unique training element records, shared all contexts. Population SD ddof0; SD<=1e-12 ->scale1. No test sequence or response enters scaling."
+  },
+  "fit": {
+    "alpha": 10.0,
+    "intercept": "unpenalized training mean",
+    "response_scaling": "none",
+    "shared_objective": "n sequence-mean targets: sum_s(mean_c(y_sc)-m-z_s*beta)^2 +10*||beta||^2. Equivalent pooled n*C row objective uses C*10 penalty.",
+    "context_objective": "Each context n targets: sum_s(y_sc-m_c-z_s*beta_c)^2+10*||beta_c||^2.",
+    "solve": "(ZtransposeZ+10I)beta=Ztranspose centered_target; fixed ridge; no tuning or feature selection.",
+    "models": [
+      {
+        "id": "global_mean",
+        "prediction": "grand training mean m"
+      },
+      {
+        "id": "context_mean",
+        "prediction": "training context mean m_c"
+      },
+      {
+        "id": "shared_dna",
+        "prediction": "m+dot(z,beta); beta fitted once to per-element context-mean target"
+      },
+      {
+        "id": "additive_context",
+        "prediction": "m_c+dot(z,beta), direct contextmean-plus-dot arithmetic, exact same stored slope object asshared_dna"
+      },
+      {
+        "id": "independent_context",
+        "prediction": "m_c+dot(z,beta_c), fixed separate ridge response per observed context, common training design/scaler/factorization"
+      }
+    ],
+    "invariants": [
+      "shared/additive slopes identical",
+      "mean_c(beta_c)=shared beta within fixed numerical tolerance",
+      "mean_c(independent predictions)=mean_c(additive predictions) within fixed tolerance",
+      "test-only outcome perturbation leaves all fitted quantities unchanged"
+    ]
+  },
+  "evaluation": {
+    "primary_loss": "MSE: mean across3contexts per eligible assayed element, then mean across elements; equal-element weighting, not equal-component weighting.",
+    "secondary_loss": "MAE with the same weighting; percontext MSE/MAE; equal-component MSE as fixed sensitivity only.",
+    "comparisons": [
+      {
+        "id": "context_beyond_shared_dna",
+        "baseline": "shared_dna",
+        "candidate": "additive_context"
+      },
+      {
+        "id": "dna_beyond_context_means",
+        "baseline": "context_mean",
+        "candidate": "additive_context"
+      },
+      {
+        "id": "sequence_context_interaction",
+        "baseline": "additive_context",
+        "candidate": "independent_context"
+      }
+    ],
+    "improvement_sign": "baselineMSE-candidateMSE; positive favors candidate; retain all3comparisons and5models.",
+    "pair_context_diagnostic": "All3contextpairs: observed y_c-y_d and predicted differences for additive andindependent models; report equal-element MSE/MAE for everypair, no bestpair selection.",
+    "pair_contrast_identity": "WithC=3andmatchedweights, MSE(additive)-MSE(independent)=(1/3)*mean_pair[contrastMSE(additive)-contrastMSE(independent)], within fixed tolerance.",
+    "rank_metrics": "No exact-rank endpoint or acceptance criterion. No rankepsilon, selected precision grid or rank-based success claim.",
+    "claims": "Activity prediction in fixed known contexts only. Offsets alone are not context-dependent DNA effects. Interaction improvement is model-relative predictive evidence, not a causal mechanism or discovery of context dependence, which prior source work already studies."
+  },
+  "resampling": {
+    "method": "Conditional paired connected-component bootstrap of fixed out-of-fold losses; no refitting.",
+    "replicates": 2000,
+    "seed_hex": "0x2026102702",
+    "seed_u64": 138077546242,
+    "prng": "SplitMix64 unsigned64 wrapping; state+=0x9E3779B97F4A7C15; z=(z xor(z>>30))*0xBF58476D1CE4E5B9; z=(z xor(z>>27))*0x94D049BB133111EB; output=z xor(z>>31). index=output modulo component_count.",
+    "unit_order": "component_id ascending",
+    "draws": "For each replicate draw K component IDs independently with replacement, K=number of components. Same index table for all3contrasts and reported5model loss summaries. Keep full member/context clusters.",
+    "statistic": "Pool per-element context-mean paired-loss sums across sampled components with multiplicity; divide by sampled element count. Uniform component sampling does not mean averaging component means. Primary remains equal-element.",
+    "interval": "Type7 empirical quantiles0.025and0.975, 95percent conditional percentile ranges; report all3without significance declaration or selectedinterval.",
+    "inference_limitations": "Fixed selected panel and fitted predictions; ignores refitting uncertainty, finite-source selection, residual intercomponent correlations and study-to-study variation. Not calibrated biologicalpvalues or genome-population confidence guarantees.",
+    "null_pvalues": "none; no hypothesis-significance or novelty claim from percentile ranges.",
+    "first_three_u64_hex_fixture": [
+      "311730414543f7d5",
+      "b0ee1155b9089752",
+      "fea23a01dc5344f1"
+    ]
+  },
+  "independent_verification": {
+    "exact": [
+      "input hashes and schema binding",
+      "eligibleID/context sets",
+      "sequence features as integercount+length fractions",
+      "component/fold membership",
+      "guard exclusions",
+      "PRNGdraws"
+    ],
+    "prediction_absolute_tolerance": 1e-07,
+    "metric_absolute_tolerance": 1e-08,
+    "failures": "Retain failed attempts; diagnose semantic bugs explicitly; do not silently widen tolerances or claim complete reproduction if any requiredcheckfails."
+  },
+  "required_outputs": [
+    "source/protocol/schema-binding hashes",
+    "range/CRC/integrity receipts",
+    "semantic endpoint acceptance or blocked-acquisition report",
+    "full cohort and exclusion/missingness ledger",
+    "group/fold/guard ledger and budget result",
+    "all5fits/OOFpredictions/losses",
+    "all3contrasts/common bootstrapdraws andranges",
+    "all3context-pair diagnostics/invariantchecks",
+    "equal-component sensitivity",
+    "independentimplementation comparison",
+    "source-selection/attempt ledger including negative results"
+  ],
+  "amendments": "This frozen protocol is immutable after announced SHA256. Header/schema binding may instantiate its fixed semantic fields but cannot change them. Any new file/endpoint/model/group threshold after failure needs a new separatelyversioned protocol and explicit outcome-exposure disclosure."
+}

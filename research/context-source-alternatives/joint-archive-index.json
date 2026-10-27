@@ -1,0 +1,2535 @@
+{
+  "archive_url": "https://zenodo.org/api/records/10558183/files/final_joint_dump.zip/content",
+  "archive_size_bytes": 3967659598,
+  "restriction": "Metadata-only ZIP central-directory inspection; entry payloads not retrieved.",
+  "entries": [
+    {
+      "path": "final_joint_dump/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "compression_method": 0,
+      "local_header_offset": 0
+    },
+    {
+      "path": "final_joint_dump/scores/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "compression_method": 0,
+      "local_header_offset": 75
+    },
+    {
+      "path": "final_joint_dump/scores/final/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "compression_method": 0,
+      "local_header_offset": 157
+    },
+    {
+      "path": "final_joint_dump/scores/final/HepG2/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "compression_method": 0,
+      "local_header_offset": 245
+    },
+    {
+      "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "compression_method": 0,
+      "local_header_offset": 339
+    },
+    {
+      "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_2.tsv",
+      "compressed_bytes": 76133,
+      "uncompressed_bytes": 206786,
+      "crc32": "2f509877",
+      "compression_method": 8,
+      "local_header_offset": 455
+    },
+    {
+      "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_10.tsv",
+      "compressed_bytes": 76339,
+      "uncompressed_bytes": 207498,
+      "crc32": "ae79f03b",
+      "compression_method": 8,
+      "local_header_offset": 76718
+    },
+    {
+      "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_6.tsv",
+      "compressed_bytes": 76328,
+      "uncompressed_bytes": 207378,
+      "crc32": "c5b7c958",
+      "compression_method": 8,
+      "local_header_offset": 153188
+    },
+    {
+      "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_3.tsv",
+      "compressed_bytes": 76011,
+      "uncompressed_bytes": 207100,
+      "crc32": "112658af",
+      "compression_method": 8,
+      "local_header_offset": 229646
+    },
+    {
+      "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_7.tsv",
+      "compressed_bytes": 76127,
+      "uncompressed_bytes": 206834,
+      "crc32": "4db58204",
+      "compression_method": 8,
+      "local_header_offset": 305787
+    },
+    {
+      "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_5.tsv",
+      "compressed_bytes": 76051,
+      "uncompressed_bytes": 206744,
+      "crc32": "457fbee4",
+      "compression_method": 8,
+      "local_header_offset": 382044
+    },
+    {
+      "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_4.tsv",
+      "compressed_bytes": 76005,
+      "uncompressed_bytes": 207133,
+      "crc32": "a062921f",
+      "compression_method": 8,
+      "local_header_offset": 458225
+    },
+    {
+      "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_9.tsv",
+      "compressed_bytes": 76047,
+      "uncompressed_bytes": 207129,
+      "crc32": "346dd23e",
+      "compression_method": 8,
+      "local_header_offset": 534360
+    },
+    {
+      "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_8.tsv",
+      "compressed_bytes": 76168,
+      "uncompressed_bytes": 207389,
+      "crc32": "bc277169",
+      "compression_method": 8,
+      "local_header_offset": 610537
+    },
+    {
+      "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_1.tsv",
+      "compressed_bytes": 76164,
+      "uncompressed_bytes": 206795,
+      "crc32": "4eb907b1",
+      "compression_method": 8,
+      "local_header_offset": 686835
+    },
+    {
+      "path": "final_joint_dump/scores/final/K562/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "compression_method": 0,
+      "local_header_offset": 763129
+    },
+    {
+      "path": "final_joint_dump/scores/final/K562/joint_results_testaug/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "compression_method": 0,
+      "local_header_offset": 763222
+    },
+    {
+      "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_2.tsv",
+      "compressed_bytes": 76751,
+      "uncompressed_bytes": 207052,
+      "crc32": "3720119f",
+      "compression_method": 8,
+      "local_header_offset": 763337
+    },
+    {
+      "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_10.tsv",
+      "compressed_bytes": 76713,
+      "uncompressed_bytes": 206902,
+      "crc32": "2e54371a",
+      "compression_method": 8,
+      "local_header_offset": 840217
+    },
+    {
+      "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_6.tsv",
+      "compressed_bytes": 76675,
+      "uncompressed_bytes": 206954,
+      "crc32": "038d815f",
+      "compression_method": 8,
+      "local_header_offset": 917060
+    },
+    {
+      "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_3.tsv",
+      "compressed_bytes": 76709,
+      "uncompressed_bytes": 206709,
+      "crc32": "cb87e763",
+      "compression_method": 8,
+      "local_header_offset": 993864
+    },
+    {
+      "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_7.tsv",
+      "compressed_bytes": 76832,
+      "uncompressed_bytes": 207109,
+      "crc32": "17ae84a8",
+      "compression_method": 8,
+      "local_header_offset": 1070702
+    },
+    {
+      "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_5.tsv",
+      "compressed_bytes": 76791,
+      "uncompressed_bytes": 206827,
+      "crc32": "0818abfb",
+      "compression_method": 8,
+      "local_header_offset": 1147663
+    },
+    {
+      "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_4.tsv",
+      "compressed_bytes": 76890,
+      "uncompressed_bytes": 207027,
+      "crc32": "1f0cb18f",
+      "compression_method": 8,
+      "local_header_offset": 1224583
+    },
+    {
+      "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_9.tsv",
+      "compressed_bytes": 76915,
+      "uncompressed_bytes": 207104,
+      "crc32": "8ebc82a6",
+      "compression_method": 8,
+      "local_header_offset": 1301602
+    },
+    {
+      "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_8.tsv",
+      "compressed_bytes": 76786,
+      "uncompressed_bytes": 207419,
+      "crc32": "788d2723",
+      "compression_method": 8,
+      "local_header_offset": 1378646
+    },
+    {
+      "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_1.tsv",
+      "compressed_bytes": 76819,
+      "uncompressed_bytes": 206927,
+      "crc32": "eae95268",
+      "compression_method": 8,
+      "local_header_offset": 1455561
+    },
+    {
+      "path": "final_joint_dump/scores/final/WTC11/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "compression_method": 0,
+      "local_header_offset": 1532509
+    },
+    {
+      "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "compression_method": 0,
+      "local_header_offset": 1532603
+    },
+    {
+      "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_2.tsv",
+      "compressed_bytes": 76595,
+      "uncompressed_bytes": 205337,
+      "crc32": "8f5e88b9",
+      "compression_method": 8,
+      "local_header_offset": 1532719
+    },
+    {
+      "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_10.tsv",
+      "compressed_bytes": 76957,
+      "uncompressed_bytes": 205848,
+      "crc32": "9e42c9e8",
+      "compression_method": 8,
+      "local_header_offset": 1609444
+    },
+    {
+      "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_6.tsv",
+      "compressed_bytes": 76844,
+      "uncompressed_bytes": 205401,
+      "crc32": "cf49bb81",
+      "compression_method": 8,
+      "local_header_offset": 1686532
+    },
+    {
+      "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_3.tsv",
+      "compressed_bytes": 76583,
+      "uncompressed_bytes": 205197,
+      "crc32": "172bce4c",
+      "compression_method": 8,
+      "local_header_offset": 1763506
+    },
+    {
+      "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_7.tsv",
+      "compressed_bytes": 76746,
+      "uncompressed_bytes": 204881,
+      "crc32": "3cebb665",
+      "compression_method": 8,
+      "local_header_offset": 1840219
+    },
+    {
+      "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_5.tsv",
+      "compressed_bytes": 76650,
+      "uncompressed_bytes": 205299,
+      "crc32": "5786bc0d",
+      "compression_method": 8,
+      "local_header_offset": 1917095
+    },
+    {
+      "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_4.tsv",
+      "compressed_bytes": 76820,
+      "uncompressed_bytes": 205631,
+      "crc32": "052cc0d1",
+      "compression_method": 8,
+      "local_header_offset": 1993875
+    },
+    {
+      "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_9.tsv",
+      "compressed_bytes": 76651,
+      "uncompressed_bytes": 204994,
+      "crc32": "93789a72",
+      "compression_method": 8,
+      "local_header_offset": 2070825
+    },
+    {
+      "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_8.tsv",
+      "compressed_bytes": 76591,
+      "uncompressed_bytes": 205426,
+      "crc32": "ac51f5cb",
+      "compression_method": 8,
+      "local_header_offset": 2147606
+    },
+    {
+      "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_1.tsv",
+      "compressed_bytes": 76762,
+      "uncompressed_bytes": 205022,
+      "crc32": "40e49791",
+      "compression_method": 8,
+      "local_header_offset": 2224327
+    },
+    {
+      "path": "final_joint_dump/models/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "compression_method": 0,
+      "local_header_offset": 2301219
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "compression_method": 0,
+      "local_header_offset": 2301301
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test6_val1.ckpt",
+      "compressed_bytes": 14687621,
+      "uncompressed_bytes": 16028195,
+      "crc32": "2285564c",
+      "compression_method": 8,
+      "local_header_offset": 2301389
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test6_val3.ckpt",
+      "compressed_bytes": 14691811,
+      "uncompressed_bytes": 16028195,
+      "crc32": "01b1741d",
+      "compression_method": 8,
+      "local_header_offset": 16989124
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test1_val5.ckpt",
+      "compressed_bytes": 14692438,
+      "uncompressed_bytes": 16028195,
+      "crc32": "441126dd",
+      "compression_method": 8,
+      "local_header_offset": 31681049
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test5_val6.ckpt",
+      "compressed_bytes": 14686247,
+      "uncompressed_bytes": 16028195,
+      "crc32": "cdbf68c1",
+      "compression_method": 8,
+      "local_header_offset": 46373601
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test1_val10.ckpt",
+      "compressed_bytes": 14683093,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b0b20342",
+      "compression_method": 8,
+      "local_header_offset": 61059962
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test5_val8.ckpt",
+      "compressed_bytes": 14692398,
+      "uncompressed_bytes": 16028195,
+      "crc32": "aff391a1",
+      "compression_method": 8,
+      "local_header_offset": 75743170
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test2_val10.ckpt",
+      "compressed_bytes": 14685747,
+      "uncompressed_bytes": 16028195,
+      "crc32": "9f490f4a",
+      "compression_method": 8,
+      "local_header_offset": 90435682
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test10_val2.ckpt",
+      "compressed_bytes": 14685747,
+      "uncompressed_bytes": 16028195,
+      "crc32": "6a3e5f1a",
+      "compression_method": 8,
+      "local_header_offset": 105121544
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test9_val7.ckpt",
+      "compressed_bytes": 14682859,
+      "uncompressed_bytes": 16028195,
+      "crc32": "59ed9c72",
+      "compression_method": 8,
+      "local_header_offset": 119807406
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test10_val8.ckpt",
+      "compressed_bytes": 14685577,
+      "uncompressed_bytes": 16028195,
+      "crc32": "01ee7e06",
+      "compression_method": 8,
+      "local_header_offset": 134490379
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test5_val2.ckpt",
+      "compressed_bytes": 14681225,
+      "uncompressed_bytes": 16028195,
+      "crc32": "04196268",
+      "compression_method": 8,
+      "local_header_offset": 149176071
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test8_val10.ckpt",
+      "compressed_bytes": 14686959,
+      "uncompressed_bytes": 16028195,
+      "crc32": "16ac554a",
+      "compression_method": 8,
+      "local_header_offset": 163857410
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test10_val4.ckpt",
+      "compressed_bytes": 14692414,
+      "uncompressed_bytes": 16028195,
+      "crc32": "2336cac9",
+      "compression_method": 8,
+      "local_header_offset": 178544484
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test5_val9.ckpt",
+      "compressed_bytes": 14685682,
+      "uncompressed_bytes": 16028195,
+      "crc32": "581b8fb5",
+      "compression_method": 8,
+      "local_header_offset": 193237013
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test8_val2.ckpt",
+      "compressed_bytes": 14691064,
+      "uncompressed_bytes": 16028195,
+      "crc32": "634d6d02",
+      "compression_method": 8,
+      "local_header_offset": 207922809
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test3_val2.ckpt",
+      "compressed_bytes": 14688740,
+      "uncompressed_bytes": 16028195,
+      "crc32": "d7ca82e8",
+      "compression_method": 8,
+      "local_header_offset": 222613987
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test1_val3.ckpt",
+      "compressed_bytes": 14681392,
+      "uncompressed_bytes": 16028195,
+      "crc32": "9ce42be2",
+      "compression_method": 8,
+      "local_header_offset": 237302841
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test7_val5.ckpt",
+      "compressed_bytes": 14680517,
+      "uncompressed_bytes": 16028195,
+      "crc32": "1b68ba39",
+      "compression_method": 8,
+      "local_header_offset": 251984347
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test9_val2.ckpt",
+      "compressed_bytes": 14681773,
+      "uncompressed_bytes": 16028195,
+      "crc32": "577574fd",
+      "compression_method": 8,
+      "local_header_offset": 266664978
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test4_val6.ckpt",
+      "compressed_bytes": 14682115,
+      "uncompressed_bytes": 16028195,
+      "crc32": "2cd1fba2",
+      "compression_method": 8,
+      "local_header_offset": 281346865
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test8_val3.ckpt",
+      "compressed_bytes": 14676682,
+      "uncompressed_bytes": 16028195,
+      "crc32": "6cad87e6",
+      "compression_method": 8,
+      "local_header_offset": 296029094
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test6_val8.ckpt",
+      "compressed_bytes": 14691922,
+      "uncompressed_bytes": 16028195,
+      "crc32": "ec68d51e",
+      "compression_method": 8,
+      "local_header_offset": 310705890
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test3_val7.ckpt",
+      "compressed_bytes": 14687388,
+      "uncompressed_bytes": 16028195,
+      "crc32": "8766772a",
+      "compression_method": 8,
+      "local_header_offset": 325397926
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test1_val4.ckpt",
+      "compressed_bytes": 14682665,
+      "uncompressed_bytes": 16028195,
+      "crc32": "a879c5f4",
+      "compression_method": 8,
+      "local_header_offset": 340085428
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test2_val7.ckpt",
+      "compressed_bytes": 14681926,
+      "uncompressed_bytes": 16028195,
+      "crc32": "888330da",
+      "compression_method": 8,
+      "local_header_offset": 354768207
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test1_val6.ckpt",
+      "compressed_bytes": 14686154,
+      "uncompressed_bytes": 16028195,
+      "crc32": "a0ed4398",
+      "compression_method": 8,
+      "local_header_offset": 369450247
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test8_val4.ckpt",
+      "compressed_bytes": 14684710,
+      "uncompressed_bytes": 16028195,
+      "crc32": "23d6de75",
+      "compression_method": 8,
+      "local_header_offset": 384136515
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test7_val2.ckpt",
+      "compressed_bytes": 14680683,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b38c8e73",
+      "compression_method": 8,
+      "local_header_offset": 398821339
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test7_val3.ckpt",
+      "compressed_bytes": 14686275,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c54128a0",
+      "compression_method": 8,
+      "local_header_offset": 413502136
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test10_val5.ckpt",
+      "compressed_bytes": 14686478,
+      "uncompressed_bytes": 16028195,
+      "crc32": "4e425be9",
+      "compression_method": 8,
+      "local_header_offset": 428188525
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test3_val8.ckpt",
+      "compressed_bytes": 14678558,
+      "uncompressed_bytes": 16028195,
+      "crc32": "bcb4f932",
+      "compression_method": 8,
+      "local_header_offset": 442875118
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test2_val9.ckpt",
+      "compressed_bytes": 14684533,
+      "uncompressed_bytes": 16028195,
+      "crc32": "f44a1a95",
+      "compression_method": 8,
+      "local_header_offset": 457553790
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test7_val6.ckpt",
+      "compressed_bytes": 14691499,
+      "uncompressed_bytes": 16028195,
+      "crc32": "db314102",
+      "compression_method": 8,
+      "local_header_offset": 472238437
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test4_val3.ckpt",
+      "compressed_bytes": 14685924,
+      "uncompressed_bytes": 16028195,
+      "crc32": "31123a54",
+      "compression_method": 8,
+      "local_header_offset": 486930050
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test6_val9.ckpt",
+      "compressed_bytes": 14687108,
+      "uncompressed_bytes": 16028195,
+      "crc32": "4eb2068c",
+      "compression_method": 8,
+      "local_header_offset": 501616088
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test6_val5.ckpt",
+      "compressed_bytes": 14686257,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b9961ad7",
+      "compression_method": 8,
+      "local_header_offset": 516303310
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test8_val1.ckpt",
+      "compressed_bytes": 14681432,
+      "uncompressed_bytes": 16028195,
+      "crc32": "2cdf0568",
+      "compression_method": 8,
+      "local_header_offset": 530989681
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/config.json",
+      "compressed_bytes": 288,
+      "uncompressed_bytes": 612,
+      "crc32": "e4c0b4b6",
+      "compression_method": 8,
+      "local_header_offset": 545671227
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test10_val6.ckpt",
+      "compressed_bytes": 14684342,
+      "uncompressed_bytes": 16028195,
+      "crc32": "588e3182",
+      "compression_method": 8,
+      "local_header_offset": 545671614
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test6_val2.ckpt",
+      "compressed_bytes": 14688338,
+      "uncompressed_bytes": 16028195,
+      "crc32": "ec359c1f",
+      "compression_method": 8,
+      "local_header_offset": 560356071
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test5_val4.ckpt",
+      "compressed_bytes": 14680322,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c3db8b48",
+      "compression_method": 8,
+      "local_header_offset": 575044523
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test1_val8.ckpt",
+      "compressed_bytes": 14681431,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c54d0bc8",
+      "compression_method": 8,
+      "local_header_offset": 589724959
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test6_val7.ckpt",
+      "compressed_bytes": 14691496,
+      "uncompressed_bytes": 16028195,
+      "crc32": "be2edb17",
+      "compression_method": 8,
+      "local_header_offset": 604406504
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test8_val5.ckpt",
+      "compressed_bytes": 14692398,
+      "uncompressed_bytes": 16028195,
+      "crc32": "164b07f6",
+      "compression_method": 8,
+      "local_header_offset": 619098114
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test4_val5.ckpt",
+      "compressed_bytes": 14679388,
+      "uncompressed_bytes": 16028195,
+      "crc32": "3e0c1c13",
+      "compression_method": 8,
+      "local_header_offset": 633790626
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test2_val8.ckpt",
+      "compressed_bytes": 14685374,
+      "uncompressed_bytes": 16028195,
+      "crc32": "d9386e2d",
+      "compression_method": 8,
+      "local_header_offset": 648470128
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test9_val4.ckpt",
+      "compressed_bytes": 14680864,
+      "uncompressed_bytes": 16028195,
+      "crc32": "94b6a617",
+      "compression_method": 8,
+      "local_header_offset": 663155616
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test3_val4.ckpt",
+      "compressed_bytes": 14683395,
+      "uncompressed_bytes": 16028195,
+      "crc32": "4d690433",
+      "compression_method": 8,
+      "local_header_offset": 677836594
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test4_val10.ckpt",
+      "compressed_bytes": 14692364,
+      "uncompressed_bytes": 16028195,
+      "crc32": "f4821394",
+      "compression_method": 8,
+      "local_header_offset": 692520103
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test9_val8.ckpt",
+      "compressed_bytes": 14679457,
+      "uncompressed_bytes": 16028195,
+      "crc32": "55f2241a",
+      "compression_method": 8,
+      "local_header_offset": 707212582
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test4_val7.ckpt",
+      "compressed_bytes": 14682625,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c36d80ea",
+      "compression_method": 8,
+      "local_header_offset": 721892153
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test8_val6.ckpt",
+      "compressed_bytes": 14691920,
+      "uncompressed_bytes": 16028195,
+      "crc32": "f8b800a0",
+      "compression_method": 8,
+      "local_header_offset": 736574892
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test5_val1.ckpt",
+      "compressed_bytes": 14692437,
+      "uncompressed_bytes": 16028195,
+      "crc32": "95ebcba3",
+      "compression_method": 8,
+      "local_header_offset": 751266926
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test2_val1.ckpt",
+      "compressed_bytes": 14684736,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c568922e",
+      "compression_method": 8,
+      "local_header_offset": 765959477
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test2_val6.ckpt",
+      "compressed_bytes": 14688337,
+      "uncompressed_bytes": 16028195,
+      "crc32": "f4c9b7aa",
+      "compression_method": 8,
+      "local_header_offset": 780644327
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test1_val2.ckpt",
+      "compressed_bytes": 14684740,
+      "uncompressed_bytes": 16028195,
+      "crc32": "17b1f33e",
+      "compression_method": 8,
+      "local_header_offset": 795332778
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test3_val1.ckpt",
+      "compressed_bytes": 14681395,
+      "uncompressed_bytes": 16028195,
+      "crc32": "822cfb41",
+      "compression_method": 8,
+      "local_header_offset": 810017632
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test4_val8.ckpt",
+      "compressed_bytes": 14684043,
+      "uncompressed_bytes": 16028195,
+      "crc32": "51db479e",
+      "compression_method": 8,
+      "local_header_offset": 824699141
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test7_val8.ckpt",
+      "compressed_bytes": 14687805,
+      "uncompressed_bytes": 16028195,
+      "crc32": "93c9007d",
+      "compression_method": 8,
+      "local_header_offset": 839383298
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test7_val10.ckpt",
+      "compressed_bytes": 14688461,
+      "uncompressed_bytes": 16028195,
+      "crc32": "207404be",
+      "compression_method": 8,
+      "local_header_offset": 854071217
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test5_val7.ckpt",
+      "compressed_bytes": 14678142,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c1c6fa50",
+      "compression_method": 8,
+      "local_header_offset": 868759793
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test10_val1.ckpt",
+      "compressed_bytes": 14684042,
+      "uncompressed_bytes": 16028195,
+      "crc32": "dd323539",
+      "compression_method": 8,
+      "local_header_offset": 883438049
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test9_val10.ckpt",
+      "compressed_bytes": 14682656,
+      "uncompressed_bytes": 16028195,
+      "crc32": "4178a109",
+      "compression_method": 8,
+      "local_header_offset": 898122206
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test6_val10.ckpt",
+      "compressed_bytes": 14684335,
+      "uncompressed_bytes": 16028195,
+      "crc32": "d51349e8",
+      "compression_method": 8,
+      "local_header_offset": 912804977
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test2_val3.ckpt",
+      "compressed_bytes": 14688409,
+      "uncompressed_bytes": 16028195,
+      "crc32": "91b42832",
+      "compression_method": 8,
+      "local_header_offset": 927489427
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test3_val5.ckpt",
+      "compressed_bytes": 14685510,
+      "uncompressed_bytes": 16028195,
+      "crc32": "1d20b273",
+      "compression_method": 8,
+      "local_header_offset": 942177950
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test10_val9.ckpt",
+      "compressed_bytes": 14682786,
+      "uncompressed_bytes": 16028195,
+      "crc32": "0f1b0c07",
+      "compression_method": 8,
+      "local_header_offset": 956863574
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test8_val9.ckpt",
+      "compressed_bytes": 14678253,
+      "uncompressed_bytes": 16028195,
+      "crc32": "666a77c6",
+      "compression_method": 8,
+      "local_header_offset": 971546475
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test1_val7.ckpt",
+      "compressed_bytes": 14684829,
+      "uncompressed_bytes": 16028195,
+      "crc32": "05f0967d",
+      "compression_method": 8,
+      "local_header_offset": 986224842
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test1_val9.ckpt",
+      "compressed_bytes": 14687625,
+      "uncompressed_bytes": 16028195,
+      "crc32": "52f93eca",
+      "compression_method": 8,
+      "local_header_offset": 1000909785
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test2_val5.ckpt",
+      "compressed_bytes": 14679447,
+      "uncompressed_bytes": 16028195,
+      "crc32": "1cf07123",
+      "compression_method": 8,
+      "local_header_offset": 1015597524
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test8_val7.ckpt",
+      "compressed_bytes": 14690411,
+      "uncompressed_bytes": 16028195,
+      "crc32": "6b67d1ce",
+      "compression_method": 8,
+      "local_header_offset": 1030277085
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test6_val4.ckpt",
+      "compressed_bytes": 14684294,
+      "uncompressed_bytes": 16028195,
+      "crc32": "590cdb61",
+      "compression_method": 8,
+      "local_header_offset": 1044967610
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test7_val1.ckpt",
+      "compressed_bytes": 14684833,
+      "uncompressed_bytes": 16028195,
+      "crc32": "55423e8e",
+      "compression_method": 8,
+      "local_header_offset": 1059652018
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test10_val7.ckpt",
+      "compressed_bytes": 14688461,
+      "uncompressed_bytes": 16028195,
+      "crc32": "596ecdef",
+      "compression_method": 8,
+      "local_header_offset": 1074336965
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test5_val3.ckpt",
+      "compressed_bytes": 14685511,
+      "uncompressed_bytes": 16028195,
+      "crc32": "bd7b011a",
+      "compression_method": 8,
+      "local_header_offset": 1089025541
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test4_val1.ckpt",
+      "compressed_bytes": 14682664,
+      "uncompressed_bytes": 16028195,
+      "crc32": "bbb153fe",
+      "compression_method": 8,
+      "local_header_offset": 1103711166
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test5_val10.ckpt",
+      "compressed_bytes": 14686470,
+      "uncompressed_bytes": 16028195,
+      "crc32": "521d204c",
+      "compression_method": 8,
+      "local_header_offset": 1118393944
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test9_val3.ckpt",
+      "compressed_bytes": 14671000,
+      "uncompressed_bytes": 16028195,
+      "crc32": "07a7bf7e",
+      "compression_method": 8,
+      "local_header_offset": 1133080529
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test3_val10.ckpt",
+      "compressed_bytes": 14689777,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c04bf896",
+      "compression_method": 8,
+      "local_header_offset": 1147751643
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test3_val9.ckpt",
+      "compressed_bytes": 14671001,
+      "uncompressed_bytes": 16028195,
+      "crc32": "d5519fd9",
+      "compression_method": 8,
+      "local_header_offset": 1162441535
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test3_val6.ckpt",
+      "compressed_bytes": 14690136,
+      "uncompressed_bytes": 16028195,
+      "crc32": "77a55eab",
+      "compression_method": 8,
+      "local_header_offset": 1177112650
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test9_val6.ckpt",
+      "compressed_bytes": 14688848,
+      "uncompressed_bytes": 16028195,
+      "crc32": "e82c314f",
+      "compression_method": 8,
+      "local_header_offset": 1191802900
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test10_val3.ckpt",
+      "compressed_bytes": 14691392,
+      "uncompressed_bytes": 16028195,
+      "crc32": "e4ec10b7",
+      "compression_method": 8,
+      "local_header_offset": 1206491862
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test4_val9.ckpt",
+      "compressed_bytes": 14680857,
+      "uncompressed_bytes": 16028195,
+      "crc32": "f7d4568a",
+      "compression_method": 8,
+      "local_header_offset": 1221183369
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test4_val2.ckpt",
+      "compressed_bytes": 14688134,
+      "uncompressed_bytes": 16028195,
+      "crc32": "1efe1491",
+      "compression_method": 8,
+      "local_header_offset": 1235864340
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test7_val4.ckpt",
+      "compressed_bytes": 14682626,
+      "uncompressed_bytes": 16028195,
+      "crc32": "f8ea1419",
+      "compression_method": 8,
+      "local_header_offset": 1250552588
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test7_val9.ckpt",
+      "compressed_bytes": 14686619,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c113ac7c",
+      "compression_method": 8,
+      "local_header_offset": 1265235328
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test2_val4.ckpt",
+      "compressed_bytes": 14688130,
+      "uncompressed_bytes": 16028195,
+      "crc32": "a2d8bfcb",
+      "compression_method": 8,
+      "local_header_offset": 1279922061
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test9_val1.ckpt",
+      "compressed_bytes": 14688121,
+      "uncompressed_bytes": 16028195,
+      "crc32": "ed5dcc84",
+      "compression_method": 8,
+      "local_header_offset": 1294610305
+    },
+    {
+      "path": "final_joint_dump/models/HepG2/best_model_test9_val5.ckpt",
+      "compressed_bytes": 14685682,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b7460d4e",
+      "compression_method": 8,
+      "local_header_offset": 1309298540
+    },
+    {
+      "path": "final_joint_dump/models/K562/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "compression_method": 0,
+      "local_header_offset": 1323984336
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test6_val1.ckpt",
+      "compressed_bytes": 14689410,
+      "uncompressed_bytes": 16028195,
+      "crc32": "ceb0a220",
+      "compression_method": 8,
+      "local_header_offset": 1323984423
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test6_val3.ckpt",
+      "compressed_bytes": 14695161,
+      "uncompressed_bytes": 16028195,
+      "crc32": "cc524e70",
+      "compression_method": 8,
+      "local_header_offset": 1338673946
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test1_val5.ckpt",
+      "compressed_bytes": 14699897,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b49adde8",
+      "compression_method": 8,
+      "local_header_offset": 1353369220
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test5_val6.ckpt",
+      "compressed_bytes": 14689477,
+      "uncompressed_bytes": 16028195,
+      "crc32": "6e14ccc0",
+      "compression_method": 8,
+      "local_header_offset": 1368069230
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test1_val10.ckpt",
+      "compressed_bytes": 14693139,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c387bc1f",
+      "compression_method": 8,
+      "local_header_offset": 1382758820
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test5_val8.ckpt",
+      "compressed_bytes": 14688517,
+      "uncompressed_bytes": 16028195,
+      "crc32": "85b885c0",
+      "compression_method": 8,
+      "local_header_offset": 1397452073
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test2_val10.ckpt",
+      "compressed_bytes": 14695131,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c3eb863e",
+      "compression_method": 8,
+      "local_header_offset": 1412140703
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test10_val2.ckpt",
+      "compressed_bytes": 14694931,
+      "uncompressed_bytes": 16028195,
+      "crc32": "a1cf8a41",
+      "compression_method": 8,
+      "local_header_offset": 1426835948
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test9_val7.ckpt",
+      "compressed_bytes": 14692939,
+      "uncompressed_bytes": 16028195,
+      "crc32": "efad4908",
+      "compression_method": 8,
+      "local_header_offset": 1441530993
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test10_val8.ckpt",
+      "compressed_bytes": 14689506,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b6dbf36a",
+      "compression_method": 8,
+      "local_header_offset": 1456224045
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test5_val2.ckpt",
+      "compressed_bytes": 14692844,
+      "uncompressed_bytes": 16028195,
+      "crc32": "8e6dd8b5",
+      "compression_method": 8,
+      "local_header_offset": 1470913665
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test8_val10.ckpt",
+      "compressed_bytes": 14689506,
+      "uncompressed_bytes": 16028195,
+      "crc32": "29b0e8f7",
+      "compression_method": 8,
+      "local_header_offset": 1485606622
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test10_val4.ckpt",
+      "compressed_bytes": 14693599,
+      "uncompressed_bytes": 16028195,
+      "crc32": "25236e17",
+      "compression_method": 8,
+      "local_header_offset": 1500296242
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test5_val9.ckpt",
+      "compressed_bytes": 14687774,
+      "uncompressed_bytes": 16028195,
+      "crc32": "a3fb5144",
+      "compression_method": 8,
+      "local_header_offset": 1514989955
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test8_val2.ckpt",
+      "compressed_bytes": 14689584,
+      "uncompressed_bytes": 16028195,
+      "crc32": "f45f2bb6",
+      "compression_method": 8,
+      "local_header_offset": 1529677842
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test3_val2.ckpt",
+      "compressed_bytes": 14687941,
+      "uncompressed_bytes": 16028195,
+      "crc32": "2b90e943",
+      "compression_method": 8,
+      "local_header_offset": 1544367539
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test1_val3.ckpt",
+      "compressed_bytes": 14690418,
+      "uncompressed_bytes": 16028195,
+      "crc32": "3a323406",
+      "compression_method": 8,
+      "local_header_offset": 1559055593
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test7_val5.ckpt",
+      "compressed_bytes": 14686268,
+      "uncompressed_bytes": 16028195,
+      "crc32": "8b101450",
+      "compression_method": 8,
+      "local_header_offset": 1573746124
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test9_val2.ckpt",
+      "compressed_bytes": 14694209,
+      "uncompressed_bytes": 16028195,
+      "crc32": "2b1d2546",
+      "compression_method": 8,
+      "local_header_offset": 1588432505
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test4_val6.ckpt",
+      "compressed_bytes": 14683968,
+      "uncompressed_bytes": 16028195,
+      "crc32": "65d9d337",
+      "compression_method": 8,
+      "local_header_offset": 1603126827
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test8_val3.ckpt",
+      "compressed_bytes": 14692529,
+      "uncompressed_bytes": 16028195,
+      "crc32": "0a461208",
+      "compression_method": 8,
+      "local_header_offset": 1617810908
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test6_val8.ckpt",
+      "compressed_bytes": 14688577,
+      "uncompressed_bytes": 16028195,
+      "crc32": "e9798a2b",
+      "compression_method": 8,
+      "local_header_offset": 1632503550
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test3_val7.ckpt",
+      "compressed_bytes": 14689245,
+      "uncompressed_bytes": 16028195,
+      "crc32": "95009e91",
+      "compression_method": 8,
+      "local_header_offset": 1647192240
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test1_val4.ckpt",
+      "compressed_bytes": 14688953,
+      "uncompressed_bytes": 16028195,
+      "crc32": "6be8c2c5",
+      "compression_method": 8,
+      "local_header_offset": 1661881598
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test2_val7.ckpt",
+      "compressed_bytes": 14691646,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c09cdc0d",
+      "compression_method": 8,
+      "local_header_offset": 1676570664
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test1_val6.ckpt",
+      "compressed_bytes": 14691254,
+      "uncompressed_bytes": 16028195,
+      "crc32": "06b6521b",
+      "compression_method": 8,
+      "local_header_offset": 1691262423
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test8_val4.ckpt",
+      "compressed_bytes": 14687321,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b68175d3",
+      "compression_method": 8,
+      "local_header_offset": 1705953790
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test7_val2.ckpt",
+      "compressed_bytes": 14691729,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c5ee2d99",
+      "compression_method": 8,
+      "local_header_offset": 1720641224
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test7_val3.ckpt",
+      "compressed_bytes": 14691326,
+      "uncompressed_bytes": 16028195,
+      "crc32": "cc6f2fc9",
+      "compression_method": 8,
+      "local_header_offset": 1735333066
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test10_val5.ckpt",
+      "compressed_bytes": 14688094,
+      "uncompressed_bytes": 16028195,
+      "crc32": "a6c4b022",
+      "compression_method": 8,
+      "local_header_offset": 1750024505
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test3_val8.ckpt",
+      "compressed_bytes": 14691818,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b6b79ff4",
+      "compression_method": 8,
+      "local_header_offset": 1764712713
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test2_val9.ckpt",
+      "compressed_bytes": 14694191,
+      "uncompressed_bytes": 16028195,
+      "crc32": "4863706f",
+      "compression_method": 8,
+      "local_header_offset": 1779404644
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test7_val6.ckpt",
+      "compressed_bytes": 14690495,
+      "uncompressed_bytes": 16028195,
+      "crc32": "4f569e8c",
+      "compression_method": 8,
+      "local_header_offset": 1794098948
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test4_val3.ckpt",
+      "compressed_bytes": 14695672,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c56321f6",
+      "compression_method": 8,
+      "local_header_offset": 1808789556
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test6_val9.ckpt",
+      "compressed_bytes": 14691359,
+      "uncompressed_bytes": 16028195,
+      "crc32": "13a475d0",
+      "compression_method": 8,
+      "local_header_offset": 1823485341
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test6_val5.ckpt",
+      "compressed_bytes": 14691564,
+      "uncompressed_bytes": 16028195,
+      "crc32": "1fc152c3",
+      "compression_method": 8,
+      "local_header_offset": 1838176813
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test8_val1.ckpt",
+      "compressed_bytes": 14686242,
+      "uncompressed_bytes": 16028195,
+      "crc32": "f057fedf",
+      "compression_method": 8,
+      "local_header_offset": 1852868490
+    },
+    {
+      "path": "final_joint_dump/models/K562/config.json",
+      "compressed_bytes": 284,
+      "uncompressed_bytes": 610,
+      "crc32": "3dfa83e2",
+      "compression_method": 8,
+      "local_header_offset": 1867554845
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test10_val6.ckpt",
+      "compressed_bytes": 14687385,
+      "uncompressed_bytes": 16028195,
+      "crc32": "bb8e9a47",
+      "compression_method": 8,
+      "local_header_offset": 1867555227
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test6_val2.ckpt",
+      "compressed_bytes": 14686742,
+      "uncompressed_bytes": 16028195,
+      "crc32": "e3233385",
+      "compression_method": 8,
+      "local_header_offset": 1882242726
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test5_val4.ckpt",
+      "compressed_bytes": 14695060,
+      "uncompressed_bytes": 16028195,
+      "crc32": "3db9c233",
+      "compression_method": 8,
+      "local_header_offset": 1896929581
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test1_val8.ckpt",
+      "compressed_bytes": 14681775,
+      "uncompressed_bytes": 16028195,
+      "crc32": "43e05d30",
+      "compression_method": 8,
+      "local_header_offset": 1911624754
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test6_val7.ckpt",
+      "compressed_bytes": 14690479,
+      "uncompressed_bytes": 16028195,
+      "crc32": "efc76323",
+      "compression_method": 8,
+      "local_header_offset": 1926306642
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test8_val5.ckpt",
+      "compressed_bytes": 14687548,
+      "uncompressed_bytes": 16028195,
+      "crc32": "da9c80d8",
+      "compression_method": 8,
+      "local_header_offset": 1940997234
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test4_val5.ckpt",
+      "compressed_bytes": 14695060,
+      "uncompressed_bytes": 16028195,
+      "crc32": "a7ad18ac",
+      "compression_method": 8,
+      "local_header_offset": 1955684895
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test2_val8.ckpt",
+      "compressed_bytes": 14690943,
+      "uncompressed_bytes": 16028195,
+      "crc32": "37838bcd",
+      "compression_method": 8,
+      "local_header_offset": 1970380068
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test9_val4.ckpt",
+      "compressed_bytes": 14690534,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c4d29ad5",
+      "compression_method": 8,
+      "local_header_offset": 1985071124
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test3_val4.ckpt",
+      "compressed_bytes": 14695673,
+      "uncompressed_bytes": 16028195,
+      "crc32": "371be470",
+      "compression_method": 8,
+      "local_header_offset": 1999761771
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test4_val10.ckpt",
+      "compressed_bytes": 14692884,
+      "uncompressed_bytes": 16028195,
+      "crc32": "5989bd0c",
+      "compression_method": 8,
+      "local_header_offset": 2014457557
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test9_val8.ckpt",
+      "compressed_bytes": 14687453,
+      "uncompressed_bytes": 16028195,
+      "crc32": "8a8160f8",
+      "compression_method": 8,
+      "local_header_offset": 2029150555
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test4_val7.ckpt",
+      "compressed_bytes": 14697547,
+      "uncompressed_bytes": 16028195,
+      "crc32": "e6c86723",
+      "compression_method": 8,
+      "local_header_offset": 2043838121
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test8_val6.ckpt",
+      "compressed_bytes": 14691018,
+      "uncompressed_bytes": 16028195,
+      "crc32": "473582c4",
+      "compression_method": 8,
+      "local_header_offset": 2058535781
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test5_val1.ckpt",
+      "compressed_bytes": 14700885,
+      "uncompressed_bytes": 16028195,
+      "crc32": "80c68c0b",
+      "compression_method": 8,
+      "local_header_offset": 2073226912
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test2_val1.ckpt",
+      "compressed_bytes": 14694283,
+      "uncompressed_bytes": 16028195,
+      "crc32": "01fa08ca",
+      "compression_method": 8,
+      "local_header_offset": 2087927910
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test2_val6.ckpt",
+      "compressed_bytes": 14693134,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c08073fb",
+      "compression_method": 8,
+      "local_header_offset": 2102622306
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test1_val2.ckpt",
+      "compressed_bytes": 14694284,
+      "uncompressed_bytes": 16028195,
+      "crc32": "57f99262",
+      "compression_method": 8,
+      "local_header_offset": 2117315553
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test3_val1.ckpt",
+      "compressed_bytes": 14690418,
+      "uncompressed_bytes": 16028195,
+      "crc32": "cba9cb9b",
+      "compression_method": 8,
+      "local_header_offset": 2132009950
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test4_val8.ckpt",
+      "compressed_bytes": 14687322,
+      "uncompressed_bytes": 16028195,
+      "crc32": "54d420f4",
+      "compression_method": 8,
+      "local_header_offset": 2146700481
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test7_val8.ckpt",
+      "compressed_bytes": 14687022,
+      "uncompressed_bytes": 16028195,
+      "crc32": "dd5d5e38",
+      "compression_method": 8,
+      "local_header_offset": 2161387916
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test7_val10.ckpt",
+      "compressed_bytes": 14688455,
+      "uncompressed_bytes": 16028195,
+      "crc32": "82e7e62e",
+      "compression_method": 8,
+      "local_header_offset": 2176075051
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test5_val7.ckpt",
+      "compressed_bytes": 14686200,
+      "uncompressed_bytes": 16028195,
+      "crc32": "8dfbd09f",
+      "compression_method": 8,
+      "local_header_offset": 2190763620
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test10_val1.ckpt",
+      "compressed_bytes": 14696135,
+      "uncompressed_bytes": 16028195,
+      "crc32": "002f3cc5",
+      "compression_method": 8,
+      "local_header_offset": 2205449933
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test9_val10.ckpt",
+      "compressed_bytes": 14688732,
+      "uncompressed_bytes": 16028195,
+      "crc32": "8e9b6062",
+      "compression_method": 8,
+      "local_header_offset": 2220146182
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test6_val10.ckpt",
+      "compressed_bytes": 14689778,
+      "uncompressed_bytes": 16028195,
+      "crc32": "fe36e38b",
+      "compression_method": 8,
+      "local_header_offset": 2234835028
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test2_val3.ckpt",
+      "compressed_bytes": 14687948,
+      "uncompressed_bytes": 16028195,
+      "crc32": "65999890",
+      "compression_method": 8,
+      "local_header_offset": 2249524920
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test3_val5.ckpt",
+      "compressed_bytes": 14688360,
+      "uncompressed_bytes": 16028195,
+      "crc32": "ac6b0ebc",
+      "compression_method": 8,
+      "local_header_offset": 2264212981
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test10_val9.ckpt",
+      "compressed_bytes": 14688732,
+      "uncompressed_bytes": 16028195,
+      "crc32": "1b82871c",
+      "compression_method": 8,
+      "local_header_offset": 2278901454
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test8_val9.ckpt",
+      "compressed_bytes": 14687450,
+      "uncompressed_bytes": 16028195,
+      "crc32": "7a89a652",
+      "compression_method": 8,
+      "local_header_offset": 2293590300
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test1_val7.ckpt",
+      "compressed_bytes": 14686649,
+      "uncompressed_bytes": 16028195,
+      "crc32": "394f49a8",
+      "compression_method": 8,
+      "local_header_offset": 2308277863
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test1_val9.ckpt",
+      "compressed_bytes": 14685100,
+      "uncompressed_bytes": 16028195,
+      "crc32": "a8d16d16",
+      "compression_method": 8,
+      "local_header_offset": 2322964625
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test2_val5.ckpt",
+      "compressed_bytes": 14692543,
+      "uncompressed_bytes": 16028195,
+      "crc32": "0cec08d0",
+      "compression_method": 8,
+      "local_header_offset": 2337649838
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test8_val7.ckpt",
+      "compressed_bytes": 14690463,
+      "uncompressed_bytes": 16028195,
+      "crc32": "fdd4e8fd",
+      "compression_method": 8,
+      "local_header_offset": 2352342494
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test6_val4.ckpt",
+      "compressed_bytes": 14685483,
+      "uncompressed_bytes": 16028195,
+      "crc32": "9ef79076",
+      "compression_method": 8,
+      "local_header_offset": 2367033070
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test7_val1.ckpt",
+      "compressed_bytes": 14687860,
+      "uncompressed_bytes": 16028195,
+      "crc32": "f3fbb964",
+      "compression_method": 8,
+      "local_header_offset": 2381718666
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test10_val7.ckpt",
+      "compressed_bytes": 14688456,
+      "uncompressed_bytes": 16028195,
+      "crc32": "aaf07072",
+      "compression_method": 8,
+      "local_header_offset": 2396406639
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test5_val3.ckpt",
+      "compressed_bytes": 14690964,
+      "uncompressed_bytes": 16028195,
+      "crc32": "ef014f07",
+      "compression_method": 8,
+      "local_header_offset": 2411095209
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test4_val1.ckpt",
+      "compressed_bytes": 14688952,
+      "uncompressed_bytes": 16028195,
+      "crc32": "ece3a372",
+      "compression_method": 8,
+      "local_header_offset": 2425786286
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test5_val10.ckpt",
+      "compressed_bytes": 14692247,
+      "uncompressed_bytes": 16028195,
+      "crc32": "64603c39",
+      "compression_method": 8,
+      "local_header_offset": 2440475351
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test9_val3.ckpt",
+      "compressed_bytes": 14690323,
+      "uncompressed_bytes": 16028195,
+      "crc32": "40c181a9",
+      "compression_method": 8,
+      "local_header_offset": 2455167712
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test3_val10.ckpt",
+      "compressed_bytes": 14694458,
+      "uncompressed_bytes": 16028195,
+      "crc32": "f0fd5d31",
+      "compression_method": 8,
+      "local_header_offset": 2469858148
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test3_val9.ckpt",
+      "compressed_bytes": 14691583,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c40c69be",
+      "compression_method": 8,
+      "local_header_offset": 2484552720
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test3_val6.ckpt",
+      "compressed_bytes": 14695162,
+      "uncompressed_bytes": 16028195,
+      "crc32": "a03c87dd",
+      "compression_method": 8,
+      "local_header_offset": 2499244416
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test9_val6.ckpt",
+      "compressed_bytes": 14690417,
+      "uncompressed_bytes": 16028195,
+      "crc32": "9cb6e701",
+      "compression_method": 8,
+      "local_header_offset": 2513939691
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test10_val3.ckpt",
+      "compressed_bytes": 14693366,
+      "uncompressed_bytes": 16028195,
+      "crc32": "15759d97",
+      "compression_method": 8,
+      "local_header_offset": 2528630221
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test4_val9.ckpt",
+      "compressed_bytes": 14690533,
+      "uncompressed_bytes": 16028195,
+      "crc32": "53ab71c2",
+      "compression_method": 8,
+      "local_header_offset": 2543323701
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test4_val2.ckpt",
+      "compressed_bytes": 14690433,
+      "uncompressed_bytes": 16028195,
+      "crc32": "4a9c4859",
+      "compression_method": 8,
+      "local_header_offset": 2558014347
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test7_val4.ckpt",
+      "compressed_bytes": 14693065,
+      "uncompressed_bytes": 16028195,
+      "crc32": "6de33e17",
+      "compression_method": 8,
+      "local_header_offset": 2572704893
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test7_val9.ckpt",
+      "compressed_bytes": 14692940,
+      "uncompressed_bytes": 16028195,
+      "crc32": "29125583",
+      "compression_method": 8,
+      "local_header_offset": 2587398071
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test2_val4.ckpt",
+      "compressed_bytes": 14688561,
+      "uncompressed_bytes": 16028195,
+      "crc32": "529cbe61",
+      "compression_method": 8,
+      "local_header_offset": 2602091124
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test9_val1.ckpt",
+      "compressed_bytes": 14688552,
+      "uncompressed_bytes": 16028195,
+      "crc32": "0f4234e9",
+      "compression_method": 8,
+      "local_header_offset": 2616779798
+    },
+    {
+      "path": "final_joint_dump/models/K562/best_model_test9_val5.ckpt",
+      "compressed_bytes": 14688329,
+      "uncompressed_bytes": 16028195,
+      "crc32": "536b1f78",
+      "compression_method": 8,
+      "local_header_offset": 2631468463
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "compression_method": 0,
+      "local_header_offset": 2646156905
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test6_val1.ckpt",
+      "compressed_bytes": 14679758,
+      "uncompressed_bytes": 16028195,
+      "crc32": "751112dc",
+      "compression_method": 8,
+      "local_header_offset": 2646156993
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test6_val3.ckpt",
+      "compressed_bytes": 14682871,
+      "uncompressed_bytes": 16028195,
+      "crc32": "e2d499d0",
+      "compression_method": 8,
+      "local_header_offset": 2660836865
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test1_val5.ckpt",
+      "compressed_bytes": 14674135,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b1ea81f0",
+      "compression_method": 8,
+      "local_header_offset": 2675519850
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test5_val6.ckpt",
+      "compressed_bytes": 14673329,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c727bcaf",
+      "compression_method": 8,
+      "local_header_offset": 2690194099
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test1_val10.ckpt",
+      "compressed_bytes": 14682319,
+      "uncompressed_bytes": 16028195,
+      "crc32": "80451d52",
+      "compression_method": 8,
+      "local_header_offset": 2704867542
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test5_val8.ckpt",
+      "compressed_bytes": 14683891,
+      "uncompressed_bytes": 16028195,
+      "crc32": "38ddf754",
+      "compression_method": 8,
+      "local_header_offset": 2719549976
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test2_val10.ckpt",
+      "compressed_bytes": 14680091,
+      "uncompressed_bytes": 16028195,
+      "crc32": "30f73f6d",
+      "compression_method": 8,
+      "local_header_offset": 2734233981
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test10_val2.ckpt",
+      "compressed_bytes": 14680092,
+      "uncompressed_bytes": 16028195,
+      "crc32": "1d952088",
+      "compression_method": 8,
+      "local_header_offset": 2748914187
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test9_val7.ckpt",
+      "compressed_bytes": 14680356,
+      "uncompressed_bytes": 16028195,
+      "crc32": "0fd51082",
+      "compression_method": 8,
+      "local_header_offset": 2763594394
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test10_val8.ckpt",
+      "compressed_bytes": 14683460,
+      "uncompressed_bytes": 16028195,
+      "crc32": "496ae3bb",
+      "compression_method": 8,
+      "local_header_offset": 2778274864
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test5_val2.ckpt",
+      "compressed_bytes": 14683392,
+      "uncompressed_bytes": 16028195,
+      "crc32": "e1075fbe",
+      "compression_method": 8,
+      "local_header_offset": 2792958439
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test8_val10.ckpt",
+      "compressed_bytes": 14685295,
+      "uncompressed_bytes": 16028195,
+      "crc32": "208f5abe",
+      "compression_method": 8,
+      "local_header_offset": 2807641945
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test10_val4.ckpt",
+      "compressed_bytes": 14686401,
+      "uncompressed_bytes": 16028195,
+      "crc32": "71ca4df3",
+      "compression_method": 8,
+      "local_header_offset": 2822327355
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test5_val9.ckpt",
+      "compressed_bytes": 14675182,
+      "uncompressed_bytes": 16028195,
+      "crc32": "4a68ee61",
+      "compression_method": 8,
+      "local_header_offset": 2837013871
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test8_val2.ckpt",
+      "compressed_bytes": 14686515,
+      "uncompressed_bytes": 16028195,
+      "crc32": "6484f23f",
+      "compression_method": 8,
+      "local_header_offset": 2851689167
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test3_val2.ckpt",
+      "compressed_bytes": 14684029,
+      "uncompressed_bytes": 16028195,
+      "crc32": "d41bf41d",
+      "compression_method": 8,
+      "local_header_offset": 2866375796
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test1_val3.ckpt",
+      "compressed_bytes": 14684122,
+      "uncompressed_bytes": 16028195,
+      "crc32": "64dd0c8f",
+      "compression_method": 8,
+      "local_header_offset": 2881059939
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test7_val5.ckpt",
+      "compressed_bytes": 14676867,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c4f34ecb",
+      "compression_method": 8,
+      "local_header_offset": 2895744175
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test9_val2.ckpt",
+      "compressed_bytes": 14688464,
+      "uncompressed_bytes": 16028195,
+      "crc32": "87e0511e",
+      "compression_method": 8,
+      "local_header_offset": 2910421156
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test4_val6.ckpt",
+      "compressed_bytes": 14685263,
+      "uncompressed_bytes": 16028195,
+      "crc32": "a651cfdd",
+      "compression_method": 8,
+      "local_header_offset": 2925109734
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test8_val3.ckpt",
+      "compressed_bytes": 14682979,
+      "uncompressed_bytes": 16028195,
+      "crc32": "082ad7df",
+      "compression_method": 8,
+      "local_header_offset": 2939795111
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test6_val8.ckpt",
+      "compressed_bytes": 14677634,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b2c90cf0",
+      "compression_method": 8,
+      "local_header_offset": 2954478204
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test3_val7.ckpt",
+      "compressed_bytes": 14680204,
+      "uncompressed_bytes": 16028195,
+      "crc32": "facf866e",
+      "compression_method": 8,
+      "local_header_offset": 2969155952
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test1_val4.ckpt",
+      "compressed_bytes": 14681470,
+      "uncompressed_bytes": 16028195,
+      "crc32": "d7266266",
+      "compression_method": 8,
+      "local_header_offset": 2983836270
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test2_val7.ckpt",
+      "compressed_bytes": 14686170,
+      "uncompressed_bytes": 16028195,
+      "crc32": "72b97a91",
+      "compression_method": 8,
+      "local_header_offset": 2998517854
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test1_val6.ckpt",
+      "compressed_bytes": 14679758,
+      "uncompressed_bytes": 16028195,
+      "crc32": "92e115bb",
+      "compression_method": 8,
+      "local_header_offset": 3013204138
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test8_val4.ckpt",
+      "compressed_bytes": 14686371,
+      "uncompressed_bytes": 16028195,
+      "crc32": "a6e489f7",
+      "compression_method": 8,
+      "local_header_offset": 3027884010
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test7_val2.ckpt",
+      "compressed_bytes": 14684663,
+      "uncompressed_bytes": 16028195,
+      "crc32": "99d740cc",
+      "compression_method": 8,
+      "local_header_offset": 3042570495
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test7_val3.ckpt",
+      "compressed_bytes": 14679740,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b0932954",
+      "compression_method": 8,
+      "local_header_offset": 3057255272
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test10_val5.ckpt",
+      "compressed_bytes": 14685832,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b4280946",
+      "compression_method": 8,
+      "local_header_offset": 3071935126
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test3_val8.ckpt",
+      "compressed_bytes": 14680566,
+      "uncompressed_bytes": 16028195,
+      "crc32": "53ec3b25",
+      "compression_method": 8,
+      "local_header_offset": 3086621073
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test2_val9.ckpt",
+      "compressed_bytes": 14686554,
+      "uncompressed_bytes": 16028195,
+      "crc32": "7e52c6b6",
+      "compression_method": 8,
+      "local_header_offset": 3101301753
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test7_val6.ckpt",
+      "compressed_bytes": 14688673,
+      "uncompressed_bytes": 16028195,
+      "crc32": "1f055a63",
+      "compression_method": 8,
+      "local_header_offset": 3115988421
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test4_val3.ckpt",
+      "compressed_bytes": 14686467,
+      "uncompressed_bytes": 16028195,
+      "crc32": "84a7b48e",
+      "compression_method": 8,
+      "local_header_offset": 3130677208
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test6_val9.ckpt",
+      "compressed_bytes": 14684031,
+      "uncompressed_bytes": 16028195,
+      "crc32": "3a186243",
+      "compression_method": 8,
+      "local_header_offset": 3145363789
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test6_val5.ckpt",
+      "compressed_bytes": 14673321,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c434dfa0",
+      "compression_method": 8,
+      "local_header_offset": 3160047934
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test8_val1.ckpt",
+      "compressed_bytes": 14683317,
+      "uncompressed_bytes": 16028195,
+      "crc32": "9ddbfaa5",
+      "compression_method": 8,
+      "local_header_offset": 3174721369
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/config.json",
+      "compressed_bytes": 287,
+      "uncompressed_bytes": 612,
+      "crc32": "468bb39c",
+      "compression_method": 8,
+      "local_header_offset": 3189404800
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test10_val6.ckpt",
+      "compressed_bytes": 14682854,
+      "uncompressed_bytes": 16028195,
+      "crc32": "d10f5509",
+      "compression_method": 8,
+      "local_header_offset": 3189405186
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test6_val2.ckpt",
+      "compressed_bytes": 14683323,
+      "uncompressed_bytes": 16028195,
+      "crc32": "df707ce7",
+      "compression_method": 8,
+      "local_header_offset": 3204088155
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test5_val4.ckpt",
+      "compressed_bytes": 14681188,
+      "uncompressed_bytes": 16028195,
+      "crc32": "8f0d318b",
+      "compression_method": 8,
+      "local_header_offset": 3218771592
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test1_val8.ckpt",
+      "compressed_bytes": 14683317,
+      "uncompressed_bytes": 16028195,
+      "crc32": "4f25d2c2",
+      "compression_method": 8,
+      "local_header_offset": 3233452894
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test6_val7.ckpt",
+      "compressed_bytes": 14688116,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b951f97d",
+      "compression_method": 8,
+      "local_header_offset": 3248136325
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test8_val5.ckpt",
+      "compressed_bytes": 14683888,
+      "uncompressed_bytes": 16028195,
+      "crc32": "4870a311",
+      "compression_method": 8,
+      "local_header_offset": 3262824555
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test4_val5.ckpt",
+      "compressed_bytes": 14680974,
+      "uncompressed_bytes": 16028195,
+      "crc32": "47210677",
+      "compression_method": 8,
+      "local_header_offset": 3277508557
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test2_val8.ckpt",
+      "compressed_bytes": 14686268,
+      "uncompressed_bytes": 16028195,
+      "crc32": "e136384a",
+      "compression_method": 8,
+      "local_header_offset": 3292189645
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test9_val4.ckpt",
+      "compressed_bytes": 14686698,
+      "uncompressed_bytes": 16028195,
+      "crc32": "1d6e423d",
+      "compression_method": 8,
+      "local_header_offset": 3306876027
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test3_val4.ckpt",
+      "compressed_bytes": 14685546,
+      "uncompressed_bytes": 16028195,
+      "crc32": "de81a42a",
+      "compression_method": 8,
+      "local_header_offset": 3321562839
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test4_val10.ckpt",
+      "compressed_bytes": 14684592,
+      "uncompressed_bytes": 16028195,
+      "crc32": "6a2748fe",
+      "compression_method": 8,
+      "local_header_offset": 3336248499
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test9_val8.ckpt",
+      "compressed_bytes": 14674894,
+      "uncompressed_bytes": 16028195,
+      "crc32": "138368c9",
+      "compression_method": 8,
+      "local_header_offset": 3350933206
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test4_val7.ckpt",
+      "compressed_bytes": 14681035,
+      "uncompressed_bytes": 16028195,
+      "crc32": "229f43f3",
+      "compression_method": 8,
+      "local_header_offset": 3365608214
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test8_val6.ckpt",
+      "compressed_bytes": 14677284,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c546b98b",
+      "compression_method": 8,
+      "local_header_offset": 3380289363
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test5_val1.ckpt",
+      "compressed_bytes": 14678046,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c971e7df",
+      "compression_method": 8,
+      "local_header_offset": 3394966761
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test2_val1.ckpt",
+      "compressed_bytes": 14686182,
+      "uncompressed_bytes": 16028195,
+      "crc32": "3187be5c",
+      "compression_method": 8,
+      "local_header_offset": 3409644921
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test2_val6.ckpt",
+      "compressed_bytes": 14687128,
+      "uncompressed_bytes": 16028195,
+      "crc32": "e2c486ef",
+      "compression_method": 8,
+      "local_header_offset": 3424331217
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test1_val2.ckpt",
+      "compressed_bytes": 14686181,
+      "uncompressed_bytes": 16028195,
+      "crc32": "7adde244",
+      "compression_method": 8,
+      "local_header_offset": 3439018459
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test3_val1.ckpt",
+      "compressed_bytes": 14684872,
+      "uncompressed_bytes": 16028195,
+      "crc32": "f9b5f77e",
+      "compression_method": 8,
+      "local_header_offset": 3453704754
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test4_val8.ckpt",
+      "compressed_bytes": 14686371,
+      "uncompressed_bytes": 16028195,
+      "crc32": "ed8f67f5",
+      "compression_method": 8,
+      "local_header_offset": 3468389740
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test7_val8.ckpt",
+      "compressed_bytes": 14685822,
+      "uncompressed_bytes": 16028195,
+      "crc32": "04276e22",
+      "compression_method": 8,
+      "local_header_offset": 3483076225
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test7_val10.ckpt",
+      "compressed_bytes": 14685765,
+      "uncompressed_bytes": 16028195,
+      "crc32": "5745e302",
+      "compression_method": 8,
+      "local_header_offset": 3497762161
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test5_val7.ckpt",
+      "compressed_bytes": 14680539,
+      "uncompressed_bytes": 16028195,
+      "crc32": "15bcae4d",
+      "compression_method": 8,
+      "local_header_offset": 3512448041
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test10_val1.ckpt",
+      "compressed_bytes": 14682927,
+      "uncompressed_bytes": 16028195,
+      "crc32": "daf481d2",
+      "compression_method": 8,
+      "local_header_offset": 3527128694
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test9_val10.ckpt",
+      "compressed_bytes": 14687683,
+      "uncompressed_bytes": 16028195,
+      "crc32": "210ea4cc",
+      "compression_method": 8,
+      "local_header_offset": 3541811736
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test6_val10.ckpt",
+      "compressed_bytes": 14682724,
+      "uncompressed_bytes": 16028195,
+      "crc32": "e426903b",
+      "compression_method": 8,
+      "local_header_offset": 3556499534
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test2_val3.ckpt",
+      "compressed_bytes": 14683046,
+      "uncompressed_bytes": 16028195,
+      "crc32": "22965745",
+      "compression_method": 8,
+      "local_header_offset": 3571182373
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test3_val5.ckpt",
+      "compressed_bytes": 14685454,
+      "uncompressed_bytes": 16028195,
+      "crc32": "26c48fe9",
+      "compression_method": 8,
+      "local_header_offset": 3585865533
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test10_val9.ckpt",
+      "compressed_bytes": 14687679,
+      "uncompressed_bytes": 16028195,
+      "crc32": "efdc9410",
+      "compression_method": 8,
+      "local_header_offset": 3600551101
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test8_val9.ckpt",
+      "compressed_bytes": 14674901,
+      "uncompressed_bytes": 16028195,
+      "crc32": "c756f480",
+      "compression_method": 8,
+      "local_header_offset": 3615238895
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test1_val7.ckpt",
+      "compressed_bytes": 14682769,
+      "uncompressed_bytes": 16028195,
+      "crc32": "8e596fe6",
+      "compression_method": 8,
+      "local_header_offset": 3629913910
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test1_val9.ckpt",
+      "compressed_bytes": 14679641,
+      "uncompressed_bytes": 16028195,
+      "crc32": "6c55ae63",
+      "compression_method": 8,
+      "local_header_offset": 3644596793
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test2_val5.ckpt",
+      "compressed_bytes": 14677790,
+      "uncompressed_bytes": 16028195,
+      "crc32": "e2f35840",
+      "compression_method": 8,
+      "local_header_offset": 3659276548
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test8_val7.ckpt",
+      "compressed_bytes": 14685591,
+      "uncompressed_bytes": 16028195,
+      "crc32": "0ca7c54f",
+      "compression_method": 8,
+      "local_header_offset": 3673954452
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test6_val4.ckpt",
+      "compressed_bytes": 14684247,
+      "uncompressed_bytes": 16028195,
+      "crc32": "376099f0",
+      "compression_method": 8,
+      "local_header_offset": 3688640157
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test7_val1.ckpt",
+      "compressed_bytes": 14682766,
+      "uncompressed_bytes": 16028195,
+      "crc32": "d056a36d",
+      "compression_method": 8,
+      "local_header_offset": 3703324518
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test10_val7.ckpt",
+      "compressed_bytes": 14685765,
+      "uncompressed_bytes": 16028195,
+      "crc32": "03842761",
+      "compression_method": 8,
+      "local_header_offset": 3718007398
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test5_val3.ckpt",
+      "compressed_bytes": 14685454,
+      "uncompressed_bytes": 16028195,
+      "crc32": "ea31a433",
+      "compression_method": 8,
+      "local_header_offset": 3732693278
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test4_val1.ckpt",
+      "compressed_bytes": 14676517,
+      "uncompressed_bytes": 16028195,
+      "crc32": "87f89f01",
+      "compression_method": 8,
+      "local_header_offset": 3747378846
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test5_val10.ckpt",
+      "compressed_bytes": 14687294,
+      "uncompressed_bytes": 16028195,
+      "crc32": "9a25f34b",
+      "compression_method": 8,
+      "local_header_offset": 3762055477
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test9_val3.ckpt",
+      "compressed_bytes": 14684891,
+      "uncompressed_bytes": 16028195,
+      "crc32": "30ce9461",
+      "compression_method": 8,
+      "local_header_offset": 3776742886
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test3_val10.ckpt",
+      "compressed_bytes": 14682790,
+      "uncompressed_bytes": 16028195,
+      "crc32": "7f2e3cee",
+      "compression_method": 8,
+      "local_header_offset": 3791427891
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test3_val9.ckpt",
+      "compressed_bytes": 14680870,
+      "uncompressed_bytes": 16028195,
+      "crc32": "51ee195e",
+      "compression_method": 8,
+      "local_header_offset": 3806110796
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test3_val6.ckpt",
+      "compressed_bytes": 14683014,
+      "uncompressed_bytes": 16028195,
+      "crc32": "66c36aec",
+      "compression_method": 8,
+      "local_header_offset": 3820791780
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test9_val6.ckpt",
+      "compressed_bytes": 14684030,
+      "uncompressed_bytes": 16028195,
+      "crc32": "0bc06a5b",
+      "compression_method": 8,
+      "local_header_offset": 3835474908
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test10_val3.ckpt",
+      "compressed_bytes": 14682565,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b5013ac0",
+      "compression_method": 8,
+      "local_header_offset": 3850159052
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test4_val9.ckpt",
+      "compressed_bytes": 14685354,
+      "uncompressed_bytes": 16028195,
+      "crc32": "9d4eace3",
+      "compression_method": 8,
+      "local_header_offset": 3864841732
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test4_val2.ckpt",
+      "compressed_bytes": 14686659,
+      "uncompressed_bytes": 16028195,
+      "crc32": "0223858d",
+      "compression_method": 8,
+      "local_header_offset": 3879527200
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test7_val4.ckpt",
+      "compressed_bytes": 14683350,
+      "uncompressed_bytes": 16028195,
+      "crc32": "790af5a8",
+      "compression_method": 8,
+      "local_header_offset": 3894213973
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test7_val9.ckpt",
+      "compressed_bytes": 14677165,
+      "uncompressed_bytes": 16028195,
+      "crc32": "30b7b821",
+      "compression_method": 8,
+      "local_header_offset": 3908897437
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test2_val4.ckpt",
+      "compressed_bytes": 14686658,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b51563fb",
+      "compression_method": 8,
+      "local_header_offset": 3923574716
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test9_val1.ckpt",
+      "compressed_bytes": 14682730,
+      "uncompressed_bytes": 16028195,
+      "crc32": "d21827f7",
+      "compression_method": 8,
+      "local_header_offset": 3938261488
+    },
+    {
+      "path": "final_joint_dump/models/WTC11/best_model_test9_val5.ckpt",
+      "compressed_bytes": 14675187,
+      "uncompressed_bytes": 16028195,
+      "crc32": "b2ac9d58",
+      "compression_method": 8,
+      "local_header_offset": 3952944332
+    }
+  ]
+}
