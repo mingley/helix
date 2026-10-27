@@ -1,0 +1,378 @@
+{
+  "schema_version": 1,
+  "protocol_id": "context-specificity-v2",
+  "protocol_sha256": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+  "endpoint": "published_element_specificity_score",
+  "numerical_replication_matched": true,
+  "source_simple_zero_sum_formula_verified": false,
+  "source_formula_status": "unresolved_discrepancy_for_frozen_preprint_associated_release",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "source_manifest_sha256": "97f8375b7f0ed5dd02964fb339e3e8e7288c38f862120339a5df5533446432c8",
+  "panel_sha256": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3",
+  "source_workbooks": {
+    "design_workbook": {
+      "file": "datasets/context-panel/raw/Table-S7-joint-design.xlsx",
+      "bytes": 8301566,
+      "sha256": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5",
+      "md5": "5d9b71452e9648e8473edd74a4ae26fc"
+    },
+    "folds_workbook": {
+      "file": "datasets/context-panel/raw/Table-S9-folds-performance.xlsx",
+      "bytes": 3564742,
+      "sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+      "md5": "ef967c8388d84da9ec81d22e11c868bd"
+    }
+  },
+  "reference": {
+    "path": "/workspace/.tools/reference/hg38.2bit",
+    "bytes": 835393456,
+    "sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0",
+    "md5": "dcc3ea27079aa6dc3f9deccd7275e0f8"
+  },
+  "counts": {
+    "source_design_ids": 60000,
+    "source_score_ids": 55338,
+    "eligible_elements": 55276,
+    "observations": 165828,
+    "models": 5,
+    "individual_predictions": 829140,
+    "components": 2761,
+    "unordered_hamming_candidates": 372850,
+    "guarded_folds": 5,
+    "bootstrap_replicates": 2000,
+    "bootstrap_indices": 5522000,
+    "integer_trimer_counts": 1768832,
+    "exact_feature_fractions": 1824108
+  },
+  "comparison": {
+    "file": "comparison-v2.json",
+    "sha256": "b294cf162281fedb31bd0ad84468eb7dab863e50366d27884134c4cd77028469",
+    "matched": true,
+    "failure_count": 0,
+    "check_categories": 243,
+    "numeric_values_checked": 8076615,
+    "maximum_prediction_absolute_difference": 8.745865143211518e-12,
+    "prediction_fit_tolerance": 1e-07,
+    "metric_tolerance": 1e-08,
+    "source_observation_and_feature_fraction_tolerance": 0.0,
+    "no_rank_endpoint": true
+  },
+  "model_summaries": [
+    {
+      "model": "global_mean",
+      "sequence_weighted_mse": 0.9999258822409737,
+      "sequence_weighted_mae": 0.7146385877803858,
+      "macro_group_mse": 1.0281359581166976,
+      "macro_group_mae": 0.717079915982783,
+      "by_context": [
+        {
+          "context": "HepG2",
+          "mse": 0.9997486084172237,
+          "mae": 0.7106576439630471
+        },
+        {
+          "context": "K562",
+          "mse": 1.000240966087306,
+          "mae": 0.6994591452447361
+        },
+        {
+          "context": "WTC11",
+          "mse": 0.9997880722183915,
+          "mae": 0.7337989741333741
+        }
+      ]
+    },
+    {
+      "model": "context_mean",
+      "sequence_weighted_mse": 0.9999692981873374,
+      "sequence_weighted_mae": 0.71464808882982,
+      "macro_group_mse": 1.0281937684982216,
+      "macro_group_mae": 0.7170939825687666,
+      "by_context": [
+        {
+          "context": "HepG2",
+          "mse": 0.9997899502370592,
+          "mae": 0.7106125987096537
+        },
+        {
+          "context": "K562",
+          "mse": 1.000252862585293,
+          "mae": 0.6994955877891179
+        },
+        {
+          "context": "WTC11",
+          "mse": 0.9998650817396599,
+          "mae": 0.7338360799906882
+        }
+      ]
+    },
+    {
+      "model": "shared_dna",
+      "sequence_weighted_mse": 0.9996467886913267,
+      "sequence_weighted_mae": 0.7146643521127497,
+      "macro_group_mse": 1.0278810058635819,
+      "macro_group_mae": 0.7170915758400472,
+      "by_context": [
+        {
+          "context": "HepG2",
+          "mse": 0.9973163933564427,
+          "mae": 0.7099903038994476
+        },
+        {
+          "context": "K562",
+          "mse": 0.9900598224892386,
+          "mae": 0.6950694619975601
+        },
+        {
+          "context": "WTC11",
+          "mse": 1.0115641502282986,
+          "mae": 0.7389332904412412
+        }
+      ]
+    },
+    {
+      "model": "additive_context_dna",
+      "sequence_weighted_mse": 0.9996902046376903,
+      "sequence_weighted_mae": 0.7146733536620821,
+      "macro_group_mse": 1.027938816245106,
+      "macro_group_mae": 0.7171028722559237,
+      "by_context": [
+        {
+          "context": "HepG2",
+          "mse": 0.9973573823706555,
+          "mae": 0.7099434825858926
+        },
+        {
+          "context": "K562",
+          "mse": 0.9900717628562631,
+          "mae": 0.6951064281249165
+        },
+        {
+          "context": "WTC11",
+          "mse": 1.0116414686861521,
+          "mae": 0.7389701502754369
+        }
+      ]
+    },
+    {
+      "model": "independent_context_dna",
+      "sequence_weighted_mse": 0.8653891890041023,
+      "sequence_weighted_mae": 0.666989055525946,
+      "macro_group_mse": 0.9028599228907317,
+      "macro_group_mae": 0.6756893815562404,
+      "by_context": [
+        {
+          "context": "HepG2",
+          "mse": 0.8792909936467084,
+          "mae": 0.6698184217443839
+        },
+        {
+          "context": "K562",
+          "mse": 0.8950166216005964,
+          "mae": 0.6685475498134793
+        },
+        {
+          "context": "WTC11",
+          "mse": 0.821859951765002,
+          "mae": 0.6626011950199743
+        }
+      ]
+    }
+  ],
+  "primary_comparison": {
+    "baseline": "additive_context_dna",
+    "candidate": "independent_context_dna",
+    "mse_improvement": 0.13430101563358798,
+    "relative_mse_improvement": 0.13434263435867277,
+    "comparison": {
+      "baseline": "additive_context_dna",
+      "candidate": "independent_context_dna"
+    },
+    "observed_mse_improvement": 0.13430101563358965,
+    "observed_mae_improvement": 0.047684298136135284,
+    "mse_interval": [
+      0.12989620714545858,
+      0.13892740432548403
+    ],
+    "mae_interval": [
+      0.0457391908538374,
+      0.049716104829386334
+    ]
+  },
+  "other_fixed_comparisons": [
+    {
+      "comparison": {
+        "baseline": "shared_dna",
+        "candidate": "additive_context_dna"
+      },
+      "observed_mse_improvement": -4.3415946370806147e-05,
+      "observed_mae_improvement": -9.001549332032788e-06,
+      "mse_interval": [
+        -7.604041913110982e-05,
+        -8.655730158768663e-06
+      ],
+      "mae_interval": [
+        -2.6900812571625796e-05,
+        1.0140877164080399e-05
+      ]
+    },
+    {
+      "comparison": {
+        "baseline": "context_mean",
+        "candidate": "additive_context_dna"
+      },
+      "observed_mse_improvement": 0.000279093549646392,
+      "observed_mae_improvement": -2.526483225784304e-05,
+      "mse_interval": [
+        0.00026556812286035735,
+        0.00029302404856311747
+      ],
+      "mae_interval": [
+        -7.325632662378012e-05,
+        2.2504004405163287e-05
+      ]
+    }
+  ],
+  "equal_component_sensitivity": [
+    {
+      "comparison": {
+        "baseline": "shared_dna",
+        "candidate": "additive_context_dna"
+      },
+      "observed_mse_improvement": -5.7810381517642284e-05,
+      "observed_mae_improvement": -1.1296415874051391e-05,
+      "mse_interval": [
+        -0.00010597516880245239,
+        -9.98712502727213e-06
+      ],
+      "mae_interval": [
+        -3.566850983942327e-05,
+        1.3884447577727765e-05
+      ]
+    },
+    {
+      "comparison": {
+        "baseline": "context_mean",
+        "candidate": "additive_context_dna"
+      },
+      "observed_mse_improvement": 0.00025495225312210934,
+      "observed_mae_improvement": -8.889687154733927e-06,
+      "mse_interval": [
+        0.00023593422872660862,
+        0.0002746832874060911
+      ],
+      "mae_interval": [
+        -8.251418143300493e-05,
+        6.908829480505301e-05
+      ]
+    },
+    {
+      "comparison": {
+        "baseline": "additive_context_dna",
+        "candidate": "independent_context_dna"
+      },
+      "observed_mse_improvement": 0.12507889335437294,
+      "observed_mae_improvement": 0.04141349069968103,
+      "mse_interval": [
+        0.11840626422184675,
+        0.13197424295680876
+      ],
+      "mae_interval": [
+        0.038550532199630845,
+        0.04446602763840022
+      ]
+    }
+  ],
+  "balanced_design_checks": {
+    "max_abs_mean_independent_beta_minus_shared_beta": 9.083740704074472e-13,
+    "max_abs_mean_independent_prediction_minus_shared_prediction": 8.981704269217516e-14,
+    "max_abs_per_sequence_mse_contrast_identity_residual": 2.6645352591003757e-14
+  },
+  "source_endpoint_audit": {
+    "file": "source-endpoint-audit-v2.json",
+    "sha256": "287d47c15f0771d571b8622f019808d32a1f5b2c9164568bf25c533741b91f56",
+    "maximum_absolute_sum": 1.0987267147462894,
+    "mean_absolute_sum": 0.09727808652891988,
+    "root_mean_squared_sum": 0.13946098296508042,
+    "count_abs_sum_gt1e-12": 55276,
+    "count_abs_sum_gt1e-8": 55276,
+    "count_abs_sum_gt1e-6": 55275,
+    "source_values_corrected_or_normalized": false
+  },
+  "tests": {
+    "command": "source scripts/research-env.sh && OPENBLAS_NUM_THREADS=1 python3 -m unittest discover -s research/independent-context-replication -p 'test_context_replication.py' -v",
+    "passed": 34,
+    "all_synthetic": true
+  },
+  "integrity_audit": {
+    "command": "source scripts/env.sh && cargo run --release -p genome-cli -- audit runs/context-integration-v2-rust-corrected",
+    "exit_code": 0,
+    "separate_from_numerical_or_biological_validation": true
+  },
+  "attempts": [
+    {
+      "role": "independent_replay",
+      "path": "runs/context-integration-v2-python",
+      "status": "passed",
+      "reason": "First and only independent Python fit; all raw source cells, reference intervals, eligibility and group memberships verified before fitting.",
+      "manifest_file": "manifest.json",
+      "manifest_sha256": "01c40f44087702902ac3c81b5f1f713f5d598f9bb8305c47905a8b09ad6787e7"
+    },
+    {
+      "role": "initial_rust",
+      "path": "runs/context-integration-v2-rust",
+      "status": "numerically_matched_but_separate_integrity_audit_failed",
+      "reason": "Bootstrap ledger commitment used struct order while auditor used sorted Value serialization; parent retained this attempt.",
+      "manifest_file": "artifacts.json",
+      "manifest_sha256": "e84a5c6a09109359ec4356bcc7b538bc1d76694f32f7b12d0c6af98dfb62557c"
+    },
+    {
+      "role": "initial_comparison",
+      "path": "runs/context-integration-v2-comparison",
+      "status": "numerically_matched",
+      "reason": "Full numerical comparison passed before complete source-feature dump was added; not the final all-feature comparison.",
+      "manifest_file": "manifest.json",
+      "manifest_sha256": "26f92f8f63d70cc03e86eee703334eafdca5b234d4bfe17985fa8f9a21b8e9fa"
+    },
+    {
+      "role": "corrected_rust",
+      "path": "runs/context-integration-v2-rust-corrected",
+      "status": "integrity_audit_and_full_independent_comparison_passed",
+      "reason": "Canonical ledger commitment fix plus all-source feature dump and unresolved source-semantics metadata; no target, feature, alpha or model changes.",
+      "manifest_file": "artifacts.json",
+      "manifest_sha256": "f0d8b2e65e40bab9371fff2c6435b21b748290598b39f79ff7c7500b80d5bac6"
+    },
+    {
+      "role": "corrected_comparison",
+      "path": "runs/context-integration-v2-comparison-corrected",
+      "status": "passed_all_required_numerical_and_exact_feature_checks",
+      "reason": "Final comparison; zero failures with original frozen tolerances.",
+      "manifest_file": "manifest.json",
+      "manifest_sha256": "de5f4062ba6bdc0fdf19bda1016b83c3abd90706cfb7704fe201bba248d3129b"
+    },
+    {
+      "role": "endpoint_source_audit",
+      "path": "runs/context-integration-v2-endpoint-audit",
+      "status": "completed_formula_discrepancy_retained",
+      "reason": "Prespecified exact-rational zero-sum audit on unchanged raw cell literals; no fit or target correction.",
+      "manifest_file": "manifest.json",
+      "manifest_sha256": "51520608461abcf6ad06e5f8dd3901eaa4a8e228ff314c61fd85278210392bbc"
+    }
+  ],
+  "commands": {
+    "replay": "OPENBLAS_NUM_THREADS=1 python3 scripts/replicate_context_study.py --dataset datasets/context-panel --groups runs/context-integration-v2-groups.json --out runs/context-integration-v2-python",
+    "initial_comparison": "OPENBLAS_NUM_THREADS=1 python3 scripts/replicate_context_study.py --compare-rust runs/context-integration-v2-rust/study.json.gz --independent-run runs/context-integration-v2-python --out runs/context-integration-v2-comparison",
+    "final_comparison": "OPENBLAS_NUM_THREADS=1 python3 scripts/replicate_context_study.py --compare-rust runs/context-integration-v2-rust-corrected/study.json.gz --independent-run runs/context-integration-v2-python --out runs/context-integration-v2-comparison-corrected",
+    "endpoint_audit": "python3 scripts/replicate_context_study.py --audit-endpoint --independent-run runs/context-integration-v2-python --out runs/context-integration-v2-endpoint-audit"
+  },
+  "history_note": "Current comparator requires the complete corrected source-feature inventory. Initial comparison is retained with its own implementation snapshot. Subsequent script additions are comparison/reporting/provenance only; no second independent real-data fit was performed. The original first-fit reader version is pinned by research/context-reference/manifest.json; later replays additionally snapshot that reader alongside implementation.py.",
+  "limits": [
+    "Published source whole-panel normalization includes held-out elements; model fitting alone is grouped/training-only.",
+    "Selected fixed panel and three known cells, not unseen-cell/genome-population or independent-study validation.",
+    "ESS formula/source-version discrepancy unresolved; source literals unchanged.",
+    "Conditional fixed-loss bootstrap ranges do not establish calibrated biological significance, causality or novelty."
+  ]
+}

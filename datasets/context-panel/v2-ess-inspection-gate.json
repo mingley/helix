@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "protocol_id": "context-specificity-v2",
+  "protocol_sha256": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+  "raw_acquisition_protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2",
+  "raw_source_receipt_sha256": "a44da011496b426f986169bd11086cd35560191f0255fb801cd448e18ea42460",
+  "frozen_before_ess_numeric_inspection": true,
+  "ess_interpretation": "Published source ESS unchanged; source whole-panel preprocessing is not training-only."
+}

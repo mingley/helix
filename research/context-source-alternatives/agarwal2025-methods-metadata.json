@@ -1,0 +1,99 @@
+{
+  "study": "agarwal2025",
+  "article_source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11903340/fullTextXML",
+  "article_response_sha256": "41a554f31ea67adb1ce983b05ed9194e8fa1596bd4e6d2208df1854de9f33320",
+  "article_bytes": 233913,
+  "restriction": "Only methods/availability/license metadata extracted; no processed or supplementary outcome table downloaded",
+  "permissions": [
+    "\u00a9 The Author(s) 2025 2025 https://creativecommons.org/licenses/by/4.0/ Open Access  This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article\u2019s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article\u2019s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit  http://creativecommons.org/licenses/by/4.0/ ."
+  ],
+  "metadata_sections": [
+    {
+      "title": "Generation of MPRA libraries",
+      "text": "Generation of MPRA libraries The MPRA libraries were generated as previously described 16 . In brief, the Agilent oligonucleotide pool was amplified by 5-cycle PCR using forward primer (pLSmP-enh-f, Supplementary Table  13 ) and reverse primer (minP-enh-r, Supplementary Table  13 ) that adds a minimal promoter and spacer sequences downstream of the cCRE. The amplified fragments were purified with 0.8x AMPure XP (Beckman coulter), and amplified for 15 additional cycles using the forward primer (pLSmP-enh-f) and reverse primer (pLSmP-bc-primer-r, Supplementary Table  13 ) to add 15\u2009bp of random sequence that serves as a barcode. The amplified fragments were then inserted into  SbfI / AgeI  site of the pLS-SceI vector (Addgene, 137725) using NEBuilder HiFi DNA Assembly mix (NEB), followed by transformation into 10-beta competent cells (NEB, C3020) using the Gemini X2 machine (BTX). Colonies were allowed to grow up overnight on carbenicillin plates and midiprepped (Qiagen, 12945). For HepG2 and K562 pilot libraries, we collected approximately 1 million and 1.3 million colonies, so that on average 50 and 100 barcodes were associated with each cCRE, respectively. For HepG2, K562 and WTC11 large-scale libraries, we collected approximately 8 million, 12 million and 3 million colonies aiming to associate approximately 50, 50 and 40 barcodes per cCRE, respectively. For the joint library, we collected approximately 3.3 million colonies, aiming to associate approximately 55 barcodes per cCRE. To determine the sequences of the random barcodes and their association to each cCRE, the cCRE-mP-barcodes fragment was amplified from each plasmid library using primers that contain flowcell adapters (P7-pLSmP-ass-gfp and P5-pLSmP-ass-i17, Supplementary Table  13 ). The fragment was then sequenced with a NextSeq mid-output 300 cycle kit using custom primers (Read 1, pLSmP-ass-seq-R1; Index read, pLSmP-ass-seq-ind1; Read 2, pLSmP-ass-seq-R2, Supplementary Table  13 ).",
+      "links": []
+    },
+    {
+      "title": "Cell culture, lentivirus packaging and titration",
+      "text": "Cell culture, lentivirus packaging and titration HepG2 (ATCC, HB-8065) and K562 (ATCC, CCL-243) cell culture were performed as previously described 10 . WTC11 human iPS cells (RRID:CVCL_Y803) were cultured in mTeSR plus medium (Stemcell technologies, 100-0276) and passaged using ReLeSR (Stemcell technologies, 100-0484), according to the manufacturer\u2019s instructions. WTC11 cells were used for the MPRA experiments at passage 43\u201349. Cells were not authenticated or checked for mycoplasma contamination. Lentivirus packaging was performed using HEK293T (ATCC, CRL-3216), as previously described with modifications 16 . In brief, 50,000 cells per cm 2  HEK293T cells were seeded in T175 flasks and cultured for 48\u2009h. The cells were co-transfected with 7.5\u2009\u03bcg per flask of plasmid libraries, 2.5\u2009\u03bcg per flask of pMD2.G (Addgene 12259), and 5\u2009\u03bcg per flask of psPAX2 (Addgene 12260) using EndoFectin Lenti transfection reagent (GeneCopoeia) according to the manufacturer\u2019s instructions. After 8\u2009h, cell culture media was refreshed and ViralBoost reagent (Alstem) was added. The transfected cells were cultured for 2 days to complete lentivirus packaging. The lentivirus libraries in the culture media were separated from the HEK293T cells and concentrated using the Lenti-X concentrator (Takara) according to the manufacturer\u2019s protocol. To measure DNA titre for the lentiviral libraries in HepG2, K562, or WTC11, cells were seeded at 1\u2009\u00d7\u200910 5  cells per well in 24-well plates and incubated for 24\u2009h. Serial volume (0, 2, 4, 8, 16 and 32\u2009\u03bcl) of the lentivirus was added along with Polybrene at a final concentration of 8\u2009\u03bcg\u2009ml \u22121 . The infected cells were cultured for three days and then washed with PBS three times. Genomic DNA was extracted using the Wizard SV genomic DNA purification kit (Promega). Multiplicity of infection (MOI) was measured as relative amount of viral DNA (WPRE region, forward; 5\u2032-TACGCTGCTTTAATGCCTTTG-3\u2032, reverse; 5\u2032-GGGCCACAACTCCTCATAAAG-3\u2032) over that of genomic DNA (intronic region of LIPC gene, forward; 5\u2032-TCCTCCGGAGTTATTCTTGGCA-3\u2032, reverse; 5\u2032-CCCCCCATCTGATCTGTTTCAC-3\u2032) by quantitative PCR using SsoFast EvaGreen Supermix (Bio-Rad), according to the manufacturer\u2019s protocol.",
+      "links": []
+    },
+    {
+      "title": "Lentiviral infections and DNA and RNA barcode sequencing",
+      "text": "Lentiviral infections and DNA and RNA barcode sequencing For the HepG2 and K562 pilot libraries, 2.4\u2009M HepG2 or 10\u2009M K562 cells per replicate were seeded in 10\u2009cm dishes or T75 flasks, respectively, and incubated for 24\u2009h. The HepG2 and K562 cells were infected with the lentiviral libraries along with 8\u2009\u03bcg\u2009ml \u22121  Polybrene, with an estimated MOI of 50 or 10, respectively. The higher MOI in HepG2 is due to these cells being adherent compared to K562 that grow in suspension. For the large-scale HepG2 library, 15\u2009M HepG2 cells per replicate were seeded in 3\u00d7 15\u2009cm dishes (5 million per dish), incubated for 24\u2009h, and infected with the library along with 8\u2009\u03bcg\u2009ml \u22121  Polybrene, with an estimated MOI of 50. For the large-scale K562 library, 85 million K562 cells per replicate were seeded in 3 T225 flasks (28.3\u2009M per flask), incubated for 24\u2009h, and infected with the library along with 8\u2009\u03bcg\u2009ml \u22121  Polybrene, with an estimated MOI of 10. For the large-scale WTC11 library, 38.4 million WTC11 cells per replicate were seeded in four 10\u2009cm dishes (9.6\u2009M per dish), incubated for 24\u2009h, and infected with the library along with 8\u2009\u03bcg\u2009ml \u22121  Polybrene, with an estimated MOI of 10, due to higher MOIs being lethal for these cells. For the joint library, 5 million HepG2, 28 million K562 and 38.4 million WTC11 cells were infected with the estimated MOI of 50, 10 and 10, respectively. For each experiment, three independent infections were performed to obtain three biological replicates. After three days of culture, genomic DNA and total RNA were extracted from the infected cells using AllPrep DNA/RNA mini kit (Qiagen), and sequencing library preparations were performed as previously described 16 . The libraries were then sequenced with a NextSeq high-output 75 cycle kit using custom primers (Read 1, pLSmP-5bc-seq-R1; Index1 (unique molecular idenitifier (UMI) read), pLSmP-UMI-seq; Index2, pLSmP-5bc-seq-R2; Read 2, pLSmP-bc-seq; Supplementary Table  13 ) 16 .",
+      "links": []
+    },
+    {
+      "title": "Replicates, normalization and RNA/DNA activity scores",
+      "text": "Replicates, normalization and RNA/DNA activity scores For each of the indexed DNA and RNA libraries, we demultiplexed the sequencing run and generated Fastq files with bcl2fastq v.2.20 (parameters \u201c--barcode-mismatches 2 --sample-sheet SampleSheet.csv --use-bases-mask Y*,Y*,I*,Y* --no-lane-splitting --minimum-trimmed-read-length 0 --mask-short-adapter-reads 0\u201d), where SampleSheet.csv catalogued the correspondence between the index sequence and DNA or RNA replicate sample of origin. In several instances, the \u201c--barcode-mismatches 2\u201d resulted in an index assignment clash, requiring us to instead use \u201c--barcode-mismatches 1\u201d. These commands split the sequencing data into paired-end read files delineating the barcodes (R1 and R3) and a file indicating the UMI (R2) for each DNA or RNA replicate sample. We compiled a table of these files to indicate the 3 RNA and 3 DNA files for each of the three replicates in the file experiment.csv. Finally, we used the count utility of MPRAflow 1.0 16  (run as: nextflow run count.nf --e \u201cexperiment.csv\u201d --design \u201cdesigned_sequences.fa\u201d --association \u201cfiltered_coords_to_barcodes.pickle\u201d) to compute activity scores for each element and replicate as log 2 (RNA/DNA). Elements with which were measured with fewer than 10 independent barcodes were removed to reduce the impact of measurement noise in downstream analysis. This filter led to the following number of retained elements: (1) HepG2 pilot library, 9,153/9,372 (97.7%); (2) K562 pilot library, 7,323/7,500 (97.6%); (3) HepG2 large-scale library, 139,886/164,307 (85.1%); (4) K562 large-scale library, 226,255/243,780 (92.8%); (5) WTC11 large-scale library, 56,093/75,542 (74.2%); (6) HepG2 joint library, 56,018/60,000 (93.4%); (7) K562 joint library, 56,008/60,000 (93.3%); and (8) WTC11 joint library, 55,983/60,000 (93.3%). To combine the data from all three replicates, the distribution of activity values was normalized to the median activity value within each replicate, and then the activity values were averaged across the three replicates.",
+      "links": []
+    }
+  ],
+  "supplementary_descriptors": [
+    {
+      "id": "MOESM1",
+      "media": [
+        [
+          {
+            "{http://www.w3.org/1999/xlink}href": "41586_2024_8430_MOESM1_ESM.docx",
+            "position": "float",
+            "orientation": "portrait"
+          },
+          "Supplementary Results, Discussion and Supplementary Methods This files contents additional results about the biochemical features that predict regulatory activity and methods for motif-enrichment analysis, regression modelling, MPRAnn hyperparameter optimization, MPRALegNet architecture and data augmentation strategy and variant effect prediction."
+        ]
+      ]
+    },
+    {
+      "id": "MOESM2",
+      "media": [
+        [
+          {
+            "{http://www.w3.org/1999/xlink}href": "41586_2024_8430_MOESM2_ESM.pdf",
+            "position": "float",
+            "orientation": "portrait"
+          },
+          "Reporting Summary"
+        ]
+      ]
+    },
+    {
+      "id": "MOESM3",
+      "media": [
+        [
+          {
+            "{http://www.w3.org/1999/xlink}href": "41586_2024_8430_MOESM3_ESM.pdf",
+            "position": "float",
+            "orientation": "portrait"
+          },
+          "Supplementary Figures Supplementary Figs. 1\u201311"
+        ]
+      ]
+    },
+    {
+      "id": "MOESM4",
+      "media": [
+        [
+          {
+            "{http://www.w3.org/1999/xlink}href": "41586_2024_8430_MOESM4_ESM.pdf",
+            "position": "float",
+            "orientation": "portrait"
+          },
+          "Peer Review File"
+        ]
+      ]
+    },
+    {
+      "id": "MOESM5",
+      "media": [
+        [
+          {
+            "{http://www.w3.org/1999/xlink}href": "41586_2024_8430_MOESM5_ESM.zip",
+            "position": "float",
+            "orientation": "portrait"
+          },
+          "Supplementary Tables Supplementary Tables 1\u201313."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "method": "full_GET",
+      "status": "rejected_incomplete_HTTP_content_length",
+      "expected_bytes": 835393456,
+      "received_bytes": 816927924,
+      "received_sha256": "825894df7992903089a9cbb41adb4ea56885c4ca156be264d6646287e0e275d2",
+      "received_md5": "3dd396d7624e8bda6b1d9632b7a797b7"
+    },
+    {
+      "attempt": 2,
+      "method": "range_GET",
+      "requested_offset": 816927924,
+      "received_bytes": 18465532,
+      "http_headers": {
+        "Content-Length": "18465532",
+        "Content-Range": "bytes 816927924-835393455/835393456",
+        "Content-Type": null,
+        "Last-Modified": "Thu, 30 Apr 2015 23:16:38 GMT",
+        "ETag": "\"31cb17b0-514f9499d2180\"",
+        "Content-Encoding": null
+      },
+      "status": "complete"
+    }
+  ]
+}

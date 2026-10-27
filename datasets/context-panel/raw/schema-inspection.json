@@ -1,0 +1,580 @@
+{
+  "Table-S7-joint-design.xlsx": [
+    {
+      "sheet": "joint library",
+      "max_row": 60002,
+      "max_column": 11,
+      "schema_rows_numeric_redacted": [
+        {
+          "row": 1,
+          "nonempty_cells": []
+        },
+        {
+          "row": 2,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "name"
+            },
+            {
+              "column": "B",
+              "value": "category"
+            },
+            {
+              "column": "C",
+              "value": "chr.hg19"
+            },
+            {
+              "column": "D",
+              "value": "start.hg19"
+            },
+            {
+              "column": "E",
+              "value": "stop.hg19"
+            },
+            {
+              "column": "F",
+              "value": "str.hg19"
+            },
+            {
+              "column": "G",
+              "value": "chr.hg38"
+            },
+            {
+              "column": "H",
+              "value": "start.hg38"
+            },
+            {
+              "column": "I",
+              "value": "stop.hg38"
+            },
+            {
+              "column": "J",
+              "value": "str.hg38"
+            },
+            {
+              "column": "K",
+              "value": "230nt sequence (15nt 5' adaptor - 200nt element - 15nt 3' adaptor)"
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "WTC11_seq1000_F"
+            },
+            {
+              "column": "B",
+              "value": "potential enhancer, WTC11"
+            },
+            {
+              "column": "C",
+              "value": "NA"
+            },
+            {
+              "column": "D",
+              "value": "NA"
+            },
+            {
+              "column": "E",
+              "value": "NA"
+            },
+            {
+              "column": "F",
+              "value": "NA"
+            },
+            {
+              "column": "G",
+              "value": "<numeric>"
+            },
+            {
+              "column": "H",
+              "value": "<numeric>"
+            },
+            {
+              "column": "I",
+              "value": "<numeric>"
+            },
+            {
+              "column": "J",
+              "value": "+"
+            },
+            {
+              "column": "K",
+              "value": "AGGACCGGATCAACTGTAGGACCAGGCTCTGCCTCCTTCTCTCTCCCCCGACCCACCTGCCACTCCTTGGAGCTCCTGGCTGAGGCGGAGCTTCACCCAGCCTGAGCTGAGCATGGGCATCCAGAGGCACTCCAGTCGGGGTCTGTTTCACAGAAGCAGGCCCTTCGTGAATATGCATGAGGGGCATGAGCTGGCTTCCACGCATGCTTCCTGCTCATTGCGTGAACCGA"
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "WTC11_seq10002_F"
+            },
+            {
+              "column": "B",
+              "value": "potential enhancer, WTC11"
+            },
+            {
+              "column": "C",
+              "value": "NA"
+            },
+            {
+              "column": "D",
+              "value": "NA"
+            },
+            {
+              "column": "E",
+              "value": "NA"
+            },
+            {
+              "column": "F",
+              "value": "NA"
+            },
+            {
+              "column": "G",
+              "value": "<numeric>"
+            },
+            {
+              "column": "H",
+              "value": "<numeric>"
+            },
+            {
+              "column": "I",
+              "value": "<numeric>"
+            },
+            {
+              "column": "J",
+              "value": "+"
+            },
+            {
+              "column": "K",
+              "value": "AGGACCGGATCAACTTGTACTTGCCTTAGGAGGTCAAACACATTAGGTATACCAACATATCGACCACCAAAAGCCAATGCACAGAACAGAGGTCCTCGGGCAAACAGGTTGAACCATAGTTGCAAGGTCAAGCCATTATAATGCAAAGCATCCAAGGGTGACCATCATGCTTTCCCCTGCGTTTCTGCAAAGCACAGATTTTCCCAGGGATTGCTCATTGCGTGAACCGA"
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "WTC11_seq10004_F"
+            },
+            {
+              "column": "B",
+              "value": "potential enhancer, WTC11"
+            },
+            {
+              "column": "C",
+              "value": "NA"
+            },
+            {
+              "column": "D",
+              "value": "NA"
+            },
+            {
+              "column": "E",
+              "value": "NA"
+            },
+            {
+              "column": "F",
+              "value": "NA"
+            },
+            {
+              "column": "G",
+              "value": "<numeric>"
+            },
+            {
+              "column": "H",
+              "value": "<numeric>"
+            },
+            {
+              "column": "I",
+              "value": "<numeric>"
+            },
+            {
+              "column": "J",
+              "value": "+"
+            },
+            {
+              "column": "K",
+              "value": "AGGACCGGATCAACTTAGCTCAACACAAATCCATCACTGAAAGCAGTGCAACCAAGGCAGCGGCGAGGTTGGTGGGGGCTGGGAGGAATCAACTTCTCTAATGACAGACAAGGCTGTGCTTCACTTCCACATGGCCACAAGGTGGCAGTGTTTCTCCTGGTACTAAAATTTGCCCCTGCTTGTATGAAAAAGACTTATTCCCTATGGAAACAATGCATTGCGTGAACCGA"
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "WTC11_seq10005_F"
+            },
+            {
+              "column": "B",
+              "value": "potential enhancer, WTC11"
+            },
+            {
+              "column": "C",
+              "value": "NA"
+            },
+            {
+              "column": "D",
+              "value": "NA"
+            },
+            {
+              "column": "E",
+              "value": "NA"
+            },
+            {
+              "column": "F",
+              "value": "NA"
+            },
+            {
+              "column": "G",
+              "value": "<numeric>"
+            },
+            {
+              "column": "H",
+              "value": "<numeric>"
+            },
+            {
+              "column": "I",
+              "value": "<numeric>"
+            },
+            {
+              "column": "J",
+              "value": "+"
+            },
+            {
+              "column": "K",
+              "value": "AGGACCGGATCAACTGACCCTAAATCAGTATGGGGAAAGGTCCCCACTGCAGCACTTTCTACACCTCATCCTCCTATATTCTACTTGTGCCTGTGGCCTTTTCTCCACCCCGCCCCCTGCCCACTCAGCACTCAACTGACCTATGCATAACACCTTAGTCATCCTTTCACTGAGAAAGGACTTTCTTAAGAACTTAGAATGCGGAAAGTCCCTTTCATTGCGTGAACCGA"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Table-S9-folds-performance.xlsx": [
+    {
+      "sheet": "Fold assignment, joint library",
+      "max_row": 59108,
+      "max_column": 5,
+      "schema_rows_numeric_redacted": [
+        {
+          "row": 1,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "Fold"
+            },
+            {
+              "column": "B",
+              "value": "Sequence ID"
+            },
+            {
+              "column": "C",
+              "value": "HepG2, Element Specificity Score"
+            },
+            {
+              "column": "D",
+              "value": "K562, Element Specificity Score"
+            },
+            {
+              "column": "E",
+              "value": "WTC11, Element Specificity Score"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "<numeric>"
+            },
+            {
+              "column": "B",
+              "value": "ENSG00000000971"
+            },
+            {
+              "column": "C",
+              "value": "<numeric>"
+            },
+            {
+              "column": "D",
+              "value": "<numeric>"
+            },
+            {
+              "column": "E",
+              "value": "<numeric>"
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "<numeric>"
+            },
+            {
+              "column": "B",
+              "value": "ENSG00000001630"
+            },
+            {
+              "column": "C",
+              "value": "<numeric>"
+            },
+            {
+              "column": "D",
+              "value": "<numeric>"
+            },
+            {
+              "column": "E",
+              "value": "<numeric>"
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "<numeric>"
+            },
+            {
+              "column": "B",
+              "value": "ENSG00000002726"
+            },
+            {
+              "column": "C",
+              "value": "<numeric>"
+            },
+            {
+              "column": "D",
+              "value": "<numeric>"
+            },
+            {
+              "column": "E",
+              "value": "<numeric>"
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "<numeric>"
+            },
+            {
+              "column": "B",
+              "value": "ENSG00000003056"
+            },
+            {
+              "column": "C",
+              "value": "<numeric>"
+            },
+            {
+              "column": "D",
+              "value": "<numeric>"
+            },
+            {
+              "column": "E",
+              "value": "<numeric>"
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "<numeric>"
+            },
+            {
+              "column": "B",
+              "value": "ENSG00000003096"
+            },
+            {
+              "column": "C",
+              "value": "<numeric>"
+            },
+            {
+              "column": "D",
+              "value": "<numeric>"
+            },
+            {
+              "column": "E",
+              "value": "<numeric>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sheet": "Benchmarking results",
+      "max_row": 38,
+      "max_column": 6,
+      "schema_rows_numeric_redacted": [
+        {
+          "row": 1,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "HepG2"
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "Test fold"
+            },
+            {
+              "column": "B",
+              "value": "Biochemical (cell-type matched)"
+            },
+            {
+              "column": "C",
+              "value": "MPRAnn"
+            },
+            {
+              "column": "D",
+              "value": "MPRALegNet"
+            },
+            {
+              "column": "E",
+              "value": "Sei"
+            },
+            {
+              "column": "F",
+              "value": "Enformer"
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "<numeric>"
+            },
+            {
+              "column": "B",
+              "value": "<numeric>"
+            },
+            {
+              "column": "C",
+              "value": "<numeric>"
+            },
+            {
+              "column": "D",
+              "value": "<numeric>"
+            },
+            {
+              "column": "E",
+              "value": "<numeric>"
+            },
+            {
+              "column": "F",
+              "value": "<numeric>"
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "<numeric>"
+            },
+            {
+              "column": "B",
+              "value": "<numeric>"
+            },
+            {
+              "column": "C",
+              "value": "<numeric>"
+            },
+            {
+              "column": "D",
+              "value": "<numeric>"
+            },
+            {
+              "column": "E",
+              "value": "<numeric>"
+            },
+            {
+              "column": "F",
+              "value": "<numeric>"
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "<numeric>"
+            },
+            {
+              "column": "B",
+              "value": "<numeric>"
+            },
+            {
+              "column": "C",
+              "value": "<numeric>"
+            },
+            {
+              "column": "D",
+              "value": "<numeric>"
+            },
+            {
+              "column": "E",
+              "value": "<numeric>"
+            },
+            {
+              "column": "F",
+              "value": "<numeric>"
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "nonempty_cells": [
+            {
+              "column": "A",
+              "value": "<numeric>"
+            },
+            {
+              "column": "B",
+              "value": "<numeric>"
+            },
+            {
+              "column": "C",
+              "value": "<numeric>"
+            },
+            {
+              "column": "D",
+              "value": "<numeric>"
+            },
+            {
+              "column": "E",
+              "value": "<numeric>"
+            },
+            {
+              "column": "F",
+              "value": "<numeric>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

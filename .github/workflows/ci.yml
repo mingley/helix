@@ -38,6 +38,8 @@ jobs:
         run: |
           source scripts/research-env.sh
           python3 research/independent-regulatory-replication/test_replication.py
+          python3 research/independent-context-replication/test_context_replication.py
+          python3 scripts/audit_context_source_arithmetic.py --self-test
           python3 scripts/analyze_rank_sensitivity.py --self-test
       # Full empirical reproduction is scripts/check_study.sh. Its known
       # secondary-rank failures remain exit 2 and are not masked as CI success.

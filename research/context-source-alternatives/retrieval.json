@@ -1,0 +1,290 @@
+[
+  {
+    "file": "search-agarwal.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=AUTH_LAST%3AAgarwal+AND+%28lentiMPRA+OR+%22massively+parallel+reporter%22%29&format=json&pageSize=25&resultType=core",
+    "query": "AUTH_LAST:Agarwal AND (lentiMPRA OR \"massively parallel reporter\")",
+    "retrieved_at": "2026-10-27T13:05:16.472616+00:00",
+    "sha256": "2bab2abc994fbf4e2c8dbb40bb82780d006d149282b3a660d427f6a194cfe63b",
+    "size_bytes": 8517
+  },
+  {
+    "file": "search-tewhey.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22Direct+Identification+of+Hundreds+of+Expression-Modulating+Variants%22&format=json&pageSize=25&resultType=core",
+    "query": "TITLE_ABS:\"Direct Identification of Hundreds of Expression-Modulating Variants\"",
+    "retrieved_at": "2026-10-27T13:05:16.472852+00:00",
+    "sha256": "79e2c7b9e7e857029f179a9e699f1776007cfe06b9b36edfa8a1a7e89e60c485",
+    "size_bytes": 12184
+  },
+  {
+    "file": "search-ulirsch.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22Systematic+Functional+Dissection+of+Common+Genetic+Variation%22&format=json&pageSize=25&resultType=core",
+    "query": "TITLE_ABS:\"Systematic Functional Dissection of Common Genetic Variation\"",
+    "retrieved_at": "2026-10-27T13:05:16.473039+00:00",
+    "sha256": "1e0c78ae101fa8dffa27a94e70dc45808813fd580f56b1aa35f5552770648f64",
+    "size_bytes": 9233
+  },
+  {
+    "file": "search-multi_cell.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28lentiMPRA+OR+MPRA%29+AND+%28K562+AND+HepG2+AND+GM12878%29&format=json&pageSize=25&resultType=core",
+    "query": "(lentiMPRA OR MPRA) AND (K562 AND HepG2 AND GM12878)",
+    "retrieved_at": "2026-10-27T13:05:16.494736+00:00",
+    "sha256": "ed4cd0a1807a57b21fb506269812dee112483d791eba700cda95e0583304003c",
+    "size_bytes": 216927
+  },
+  {
+    "file": "search-agarwal-broad.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Agarwal+AND+lentiMPRA&format=json&pageSize=25&resultType=core",
+    "retrieved_at": "2026-10-27T13:06:01.176188+00:00",
+    "sha256": "2b35d8dea89133a8982bdc747eb5f9aab699804b43fbf17375140e992fda1f3f",
+    "size_bytes": 191332
+  },
+  {
+    "file": "search-lenti-large.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=lentiMPRA+AND+%28%222025%22+OR+%222024%22%29&format=json&pageSize=25&resultType=core",
+    "retrieved_at": "2026-10-27T13:06:01.180101+00:00",
+    "sha256": "3520767d1a3c5b198f3679fd5957d9b50227eb2c06a2c8bf553b8da91fba7ac4",
+    "size_bytes": 235602
+  },
+  {
+    "file": "search-sherwood.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Sherwood+AND+%22reporter+assay%22&format=json&pageSize=25&resultType=core",
+    "retrieved_at": "2026-10-27T13:06:01.864452+00:00",
+    "sha256": "8d6cec400ba9343dffe7b4ab719d1292412c00d9429b028408f88455f73e6b39",
+    "size_bytes": 249421
+  },
+  {
+    "file": "search-gtex.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=GTEx+AND+MPRA+AND+%28K562+OR+GM12878+OR+HepG2%29&format=json&pageSize=25&resultType=core",
+    "retrieved_at": "2026-10-27T13:06:01.868207+00:00",
+    "sha256": "7b913c3576ca652ea412e8bfe53653ab1a9ae96af026280e5d06c59f732ed59d",
+    "size_bytes": 226367
+  },
+  {
+    "file": "agarwal2025-methods-metadata.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11903340/fullTextXML",
+    "retrieved_at": "2026-10-27T13:07:07.097223+00:00",
+    "sha256": "4d73363c1f01bcaf2aa2c719177e9f4f16f0a3f4292f7d3c7f58df3b4884de9b",
+    "size_bytes": 12293,
+    "transformation": "Methods, availability, licenses and supplementary descriptors extracted from article XML; raw quantitative tables not retained"
+  },
+  {
+    "file": "tewhey2016-methods-metadata.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4957403/fullTextXML",
+    "retrieved_at": "2026-10-27T13:07:07.097506+00:00",
+    "sha256": "c433347b07628318643bd49f3c7bbe90dcd87c52fa6f4a399e58e2227eb0b6d3",
+    "size_bytes": 55,
+    "transformation": "Methods, availability, licenses and supplementary descriptors extracted from article XML; raw quantitative tables not retained"
+  },
+  {
+    "file": "ulirsch2016-methods-metadata.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4893171/fullTextXML",
+    "retrieved_at": "2026-10-27T13:07:07.097565+00:00",
+    "sha256": "c433347b07628318643bd49f3c7bbe90dcd87c52fa6f4a399e58e2227eb0b6d3",
+    "size_bytes": 55,
+    "transformation": "Methods, availability, licenses and supplementary descriptors extracted from article XML; raw quantitative tables not retained"
+  },
+  {
+    "file": "agarwal2025-availability.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11903340/fullTextXML",
+    "retrieved_at": "2026-10-27T13:07:53.919943+00:00",
+    "sha256": "d20fc9ac67068ed524c3f42a78e078f836a2b3bea297b69a1c33861f5354ce62",
+    "size_bytes": 3213,
+    "transformation": "Availability notes and repository links only"
+  },
+  {
+    "file": "zenodo10558183-metadata.json",
+    "url": "https://zenodo.org/api/records/10558183",
+    "retrieved_at": "2026-10-27T13:09:38.083982+00:00",
+    "sha256": "3752aeec5463077fae96637a07ad734f9a7e29150e5cc73dcb937c386213f5e2",
+    "size_bytes": 7863
+  },
+  {
+    "file": "zenodo13908857-metadata.json",
+    "url": "https://zenodo.org/api/records/13908857",
+    "retrieved_at": "2026-10-27T13:09:40.283265+00:00",
+    "sha256": "b33489d4670c8117a29ab38b37f8e554d9c5631968d6434609eab47caaabb267",
+    "size_bytes": 4583
+  },
+  {
+    "file": "github-sequence-cnn.json",
+    "url": "https://api.github.com/repos/visze/sequence_cnn_models",
+    "retrieved_at": "2026-10-27T13:09:40.283457+00:00",
+    "sha256": "400f0074a8aa836c49f27de104811117ce81f3086f596d5bc0a790b23e2d82ed",
+    "size_bytes": 5476
+  },
+  {
+    "file": "github-human-legnet.json",
+    "url": "https://api.github.com/repos/autosome-ru/human_legnet",
+    "retrieved_at": "2026-10-27T13:09:40.283579+00:00",
+    "sha256": "0a40591d3ef067a12b27e0003b2fdebd1ae9fc3110aeea4c90a437156f566f90",
+    "size_bytes": 6548
+  },
+  {
+    "file": "sequence-cnn-tree.json",
+    "url": "https://api.github.com/repos/visze/sequence_cnn_models/git/trees/master?recursive=1",
+    "retrieved_at": "2026-10-27T13:10:27.132309+00:00",
+    "sha256": "20a5db73f13b3008d697e389c9d6c09b2c448be8c60cb0d7cfb7d2ab5dba9022",
+    "size_bytes": 36119
+  },
+  {
+    "file": "human-legnet-tree.json",
+    "url": "https://api.github.com/repos/autosome-ru/human_legnet/git/trees/main?recursive=1",
+    "retrieved_at": "2026-10-27T13:10:27.235451+00:00",
+    "sha256": "fd6e62b0f09e395d2101c5dd9ccd8ccbeb8eeca3c068bcc4e6431259c05fde10",
+    "size_bytes": 10582
+  },
+  {
+    "file": "sequence-cnn-README.md",
+    "url": "https://raw.githubusercontent.com/visze/sequence_cnn_models/7638fce137db0445123efe8d7e2c35e248fafc5f/README.md",
+    "retrieved_at": "2026-10-27T13:10:35.451077+00:00",
+    "sha256": "8c9616cb9464c9f1e47b5f7045367fb3e01037f650badbb0db52a6e9f6bccc78",
+    "size_bytes": 9409
+  },
+  {
+    "file": "human-legnet-README.md",
+    "url": "https://raw.githubusercontent.com/autosome-ru/human_legnet/a20dbc7d0b08daae3af1aebcfb8a71d9f198ab5d/README.md",
+    "retrieved_at": "2026-10-27T13:10:35.463271+00:00",
+    "sha256": "7410126d8d2f1771a59e48018ae1c4147aa0ce71086fbf4e507bf8c3d7c9ece9",
+    "size_bytes": 5974
+  },
+  {
+    "file": "joint-archive-eocd.bin",
+    "url": "https://zenodo.org/api/records/10558183/files/final_joint_dump.zip/content",
+    "requested_range": "bytes=3967659576-3967659597",
+    "retrieved_at": "2026-10-27T13:12:11.887576+00:00",
+    "sha256": "e19653cd88f6b8edca383b68f37e8f81aece7fa8bf5e381500dde0ad7a65a819",
+    "size_bytes": 22,
+    "classification": "ZIP metadata only; no outcome or model payload"
+  },
+  {
+    "file": "joint-archive-central-directory.bin",
+    "url": "https://zenodo.org/api/records/10558183/files/final_joint_dump.zip/content",
+    "requested_range": "bytes=3967619633-3967659575",
+    "retrieved_at": "2026-10-27T13:12:20.324799+00:00",
+    "sha256": "8c411a0e85b32bbbb83a92a14325d8dbcaf0e77863c5bf5ab922a9434beb4e8c",
+    "size_bytes": 39943,
+    "classification": "ZIP metadata only; no outcome or model payload"
+  },
+  {
+    "file": "joint-archive-index.json",
+    "url": "https://zenodo.org/api/records/10558183/files/final_joint_dump.zip/content",
+    "retrieved_at": "2026-10-27T13:12:20.327738+00:00",
+    "sha256": "42e5032c42a6abfc79a1574dae2f10cf17b4bb094a183a66412e948e8a69522c",
+    "size_bytes": 81617,
+    "transformation": "Decoded only ZIP central-directory metadata"
+  },
+  {
+    "file": "legnet-core.py",
+    "url": "https://raw.githubusercontent.com/autosome-ru/human_legnet/a20dbc7d0b08daae3af1aebcfb8a71d9f198ab5d/core.py",
+    "retrieved_at": "2026-10-27T13:14:36.605002+00:00",
+    "sha256": "a341e44f64176ad794064f47d7380aea17eaad444e2d32016506d14594ba6b5e",
+    "size_bytes": 6584
+  },
+  {
+    "file": "legnet-test_predict.py",
+    "url": "https://raw.githubusercontent.com/autosome-ru/human_legnet/a20dbc7d0b08daae3af1aebcfb8a71d9f198ab5d/test_predict.py",
+    "retrieved_at": "2026-10-27T13:14:36.610320+00:00",
+    "sha256": "f2165a422d9e9eaab40558e30964c055159f3b8370c70ccfc83a14d011951b21",
+    "size_bytes": 880
+  },
+  {
+    "file": "legnet-re_predict.py",
+    "url": "https://raw.githubusercontent.com/autosome-ru/human_legnet/a20dbc7d0b08daae3af1aebcfb8a71d9f198ab5d/re_predict.py",
+    "retrieved_at": "2026-10-27T13:14:36.625903+00:00",
+    "sha256": "7aed0cf7289129e1920beba82a92b52ac0d4eab4309cfa4be262b2902d96315f",
+    "size_bytes": 2533
+  },
+  {
+    "file": "legnet-dataset.py",
+    "url": "https://raw.githubusercontent.com/autosome-ru/human_legnet/a20dbc7d0b08daae3af1aebcfb8a71d9f198ab5d/dataset.py",
+    "retrieved_at": "2026-10-27T13:14:36.626137+00:00",
+    "sha256": "52eafb4a5d2d3830b852ded6119380e13d22865fd3f07497a859cd0a5cf2abd7",
+    "size_bytes": 5461
+  },
+  {
+    "file": "legnet-model.py",
+    "url": "https://raw.githubusercontent.com/autosome-ru/human_legnet/a20dbc7d0b08daae3af1aebcfb8a71d9f198ab5d/model.py",
+    "retrieved_at": "2026-10-27T13:14:36.669922+00:00",
+    "sha256": "8a5650b788662db07fda0e82566697b0aa1b81a1e6ff7a53448f138d00c40975",
+    "size_bytes": 6400
+  },
+  {
+    "file": "cnn-workflow_scripts_predict_regression.py",
+    "url": "https://raw.githubusercontent.com/visze/sequence_cnn_models/7638fce137db0445123efe8d7e2c35e248fafc5f/workflow/scripts/predict_regression.py",
+    "retrieved_at": "2026-10-27T13:15:00.788361+00:00",
+    "sha256": "026096893d40c80c0be6a48c7d0ff4df367c5c1688c62e4ee11f41f0a8fd98ed",
+    "size_bytes": 2844
+  },
+  {
+    "file": "cnn-workflow_scripts_lib_prediction_legnet.py",
+    "url": "https://raw.githubusercontent.com/visze/sequence_cnn_models/7638fce137db0445123efe8d7e2c35e248fafc5f/workflow/scripts/lib/prediction_legnet.py",
+    "retrieved_at": "2026-10-27T13:15:00.928706+00:00",
+    "sha256": "579674c2dfb60753aea677e51867820c837153ae175ce79523e484eb651fbdb5",
+    "size_bytes": 3484
+  },
+  {
+    "file": "cnn-workflow_scripts_lib_prediction_tf.py",
+    "url": "https://raw.githubusercontent.com/visze/sequence_cnn_models/7638fce137db0445123efe8d7e2c35e248fafc5f/workflow/scripts/lib/prediction_tf.py",
+    "retrieved_at": "2026-10-27T13:15:00.965780+00:00",
+    "sha256": "f475012dbe18033b0e5508b7d72b87f1c087c1fde0b23ef5df0ce3b6578f88c3",
+    "size_bytes": 799
+  },
+  {
+    "file": "cnn-workflow_rules_predict.smk",
+    "url": "https://raw.githubusercontent.com/visze/sequence_cnn_models/7638fce137db0445123efe8d7e2c35e248fafc5f/workflow/rules/predict.smk",
+    "retrieved_at": "2026-10-27T13:15:01.028864+00:00",
+    "sha256": "6e783e5e45b0662ae62ef18694a75e93f41a670654ac1ec8edbf5ed68c92fbb0",
+    "size_bytes": 14171
+  },
+  {
+    "file": "cnn-workflow_rules_regression_input.smk",
+    "url": "https://raw.githubusercontent.com/visze/sequence_cnn_models/7638fce137db0445123efe8d7e2c35e248fafc5f/workflow/rules/regression_input.smk",
+    "retrieved_at": "2026-10-27T13:15:01.029596+00:00",
+    "sha256": "8c076d7db3670bfb4e3cc8d8d15ac8528014b5a39b46920d25e8e20f4dd0edef",
+    "size_bytes": 3473
+  },
+  {
+    "file": "tewhey2016-bioc-metadata.json",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC4957403/unicode",
+    "retrieved_at": "2026-10-27T13:17:25.707385+00:00",
+    "sha256": "03cae004218b6ff474b12cd411a639e61bbac556aeec3550ba5e3ff21813c037",
+    "size_bytes": 51,
+    "transformation": "Methods/availability metadata extracted; no score files acquired"
+  },
+  {
+    "file": "ulirsch2016-bioc-metadata.json",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/PMC4893171/unicode",
+    "retrieved_at": "2026-10-27T13:17:25.756301+00:00",
+    "sha256": "03cae004218b6ff474b12cd411a639e61bbac556aeec3550ba5e3ff21813c037",
+    "size_bytes": 51,
+    "transformation": "Methods/availability metadata extracted; no score files acquired"
+  },
+  {
+    "file": "sequence-cnn-MIT-LICENSE",
+    "url": "https://raw.githubusercontent.com/visze/sequence_cnn_models/7638fce137db0445123efe8d7e2c35e248fafc5f/LICENSE",
+    "retrieved_at": "2026-10-27T13:17:56.316114+00:00",
+    "sha256": "4c7f6aa809faecf1c7b4fecaa41a6de395b8f3d3705458239d3ace242f850f50",
+    "size_bytes": 1104
+  },
+  {
+    "file": "human-legnet-MIT-LICENSE",
+    "url": "https://raw.githubusercontent.com/autosome-ru/human_legnet/a20dbc7d0b08daae3af1aebcfb8a71d9f198ab5d/LICENSE",
+    "retrieved_at": "2026-10-27T13:17:56.329657+00:00",
+    "sha256": "a43c0517b34d46afbb75b48bee74c0e52ae3612f9b860a81d566320ea49c0f15",
+    "size_bytes": 1070
+  },
+  {
+    "file": "design-coordinate-example-1.json",
+    "url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38&chrom=chr1&start=19461350&end=19461550",
+    "retrieved_at": "2026-10-27T13:33:50.238362+00:00",
+    "sha256": "20dc69e8571c129dea96ebcad785f9ffc2871b46b4e7f3b2e8257bb099da5869",
+    "size_bytes": 357
+  },
+  {
+    "file": "design-coordinate-example-2.json",
+    "url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38&chrom=chr12&start=20849&end=21049",
+    "retrieved_at": "2026-10-27T13:33:50.314957+00:00",
+    "sha256": "85f4ddda41bb9b55cbd12b2c22701c75bbe00f367a83ec44eceb702b233d68be",
+    "size_bytes": 352
+  }
+]

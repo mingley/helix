@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "assembly": "hg38",
+  "reference_path": "/workspace/.tools/reference/hg38.2bit",
+  "reference_filename": "hg38.2bit",
+  "source_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.2bit",
+  "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.2bit",
+  "resumed_retrieval_started_at": "2026-10-27T13:22:58.528950+00:00",
+  "retrieved_at": "2026-10-27T13:23:02.303547+00:00",
+  "bytes": 835393456,
+  "sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0",
+  "md5": "dcc3ea27079aa6dc3f9deccd7275e0f8",
+  "published_md5": "dcc3ea27079aa6dc3f9deccd7275e0f8",
+  "published_md5_match": true,
+  "checksum_evidence_file": "published-checksum.json",
+  "checksum_response_file": "ucsc-hg38-bigZips-md5sum.txt",
+  "checksum_response_sha256": "25c4eb8362dcfb6e9bff1a6ab1b9d11fcf2334dce8a6984a091c59851f6e1145",
+  "download_attempts_file": "download-attempts.json",
+  "download_attempts_sha256": "4b0009d7f0c9eb5c33e7a32b4746dfc742b836e141e44a7843f1d53013d7e15a",
+  "http_headers_final_range_response": {
+    "Content-Length": "18465532",
+    "Content-Range": "bytes 816927924-835393455/835393456",
+    "Content-Type": null,
+    "Last-Modified": "Thu, 30 Apr 2015 23:16:38 GMT",
+    "ETag": "\"31cb17b0-514f9499d2180\"",
+    "Content-Encoding": null
+  },
+  "transport": "verified HTTPS via inherited proxy and CA trust; identity content encoding",
+  "local_storage": "Outside repository under /workspace/.tools/reference; no reference binary committed",
+  "assembly_scope": "UCSC hg38 2bit only; no substitution for source hg19/other assembly permitted"
+}

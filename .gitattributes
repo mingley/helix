@@ -16,3 +16,15 @@ research/forensic-sources/*.soft -text -whitespace
 # Preserve the hashed Matplotlib/CSV output exactly as generated.
 research/results/regulatory-v1/figures/*.svg -text whitespace=-trailing-space
 research/results/regulatory-v1/figures/*.csv -text whitespace=cr-at-eol
+# Hash-bound upstream reference and source-code snapshots.
+research/context-reference/ucsc-*.json -text whitespace=-trailing-space
+research/context-source-review/*.soft -text -whitespace
+research/context-source-review/*.html -text -whitespace
+research/context-source-alternatives/cnn-* -text -whitespace
+research/context-source-alternatives/legnet-* -text -whitespace
+research/context-source-alternatives/*README.md -text -whitespace
+research/context-source-alternatives/*LICENSE -text -whitespace
+research/context-source-alternatives/design-coordinate-example-*.json -text whitespace=-trailing-space
+datasets/context-panel/raw/*.xlsx -text
+research/results/context-specificity-v2/figures/*.svg -text whitespace=-trailing-space
+research/results/context-specificity-v2/figures/*.csv -text whitespace=cr-at-eol

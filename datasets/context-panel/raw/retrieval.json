@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2",
+  "files": [
+    {
+      "file": "Table-S7-joint-design.xlsx",
+      "original_filename": "Table S7 - joint lib design.xlsx",
+      "url": "https://zenodo.org/api/records/10558183/files/Table%20S7%20-%20joint%20lib%20design.xlsx/content",
+      "retrieved_at": "2026-10-27T13:26:10.140096+00:00",
+      "http_status_or_reuse": 200,
+      "size_bytes": 8301566,
+      "declared_md5": "md5:5d9b71452e9648e8473edd74a4ae26fc",
+      "observed_md5": "5d9b71452e9648e8473edd74a4ae26fc",
+      "sha256": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5",
+      "md5_verified": true,
+      "protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2"
+    },
+    {
+      "file": "Table-S9-folds-performance.xlsx",
+      "original_filename": "Table S9 - folds and performance.xlsx",
+      "url": "https://zenodo.org/api/records/10558183/files/Table%20S9%20-%20folds%20and%20performance.xlsx/content",
+      "retrieved_at": "2026-10-27T13:26:21.983546+00:00",
+      "http_status_or_reuse": 200,
+      "size_bytes": 3564742,
+      "declared_md5": "md5:ef967c8388d84da9ec81d22e11c868bd",
+      "observed_md5": "ef967c8388d84da9ec81d22e11c868bd",
+      "sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+      "md5_verified": true,
+      "protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2"
+    }
+  ]
+}

@@ -33,6 +33,7 @@ genome-research-stats = { path = "crates/genome-research-stats" }
 genome-assay = { path = "crates/genome-assay" }
 genome-regulatory = { path = "crates/genome-regulatory" }
 genome-regulatory-data = { path = "crates/genome-regulatory-data" }
+genome-context-model = { path = "crates/genome-context-model" }
 
 [workspace.lints.rust]
 unsafe_code = "forbid"

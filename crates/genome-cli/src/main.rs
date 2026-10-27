@@ -14,6 +14,7 @@ use std::{
     path::{Path, PathBuf},
     process::Command,
 };
+mod context_study;
 mod research;
 mod study;
 mod study_context;
@@ -30,6 +31,8 @@ struct Cli {
 }
 #[derive(Subcommand)]
 enum Commands {
+    /// Evaluate the frozen published cell-specificity endpoint on grouped loci.
+    ContextStudy(context_study::ContextArgs),
     /// Execute the frozen multi-promoter regulatory prediction study.
     Study(study::StudyArgs),
     /// Reconstruct HBB mechanisms, audit evidence, and map primary-genome context.
@@ -48,7 +51,7 @@ enum Commands {
         #[arg(long, default_value_t = 1000)]
         max_steps: usize,
     },
-    /// Verify artifact integrity, revision ordering, and the saved Lean proof.
+    /// Verify artifact integrity, revision ordering, and saved proofs where present.
     Audit {
         directory: PathBuf,
         #[arg(long, default_value = "lean")]
@@ -63,6 +66,7 @@ struct Artifacts {
 
 fn main() -> Result<()> {
     match Cli::parse().command {
+        Commands::ContextStudy(args) => context_study::run(&args),
         Commands::Study(args) => study::run(&args),
         Commands::Research(args) => research::run(&args),
         Commands::Demo {
@@ -235,6 +239,9 @@ fn write_new(path: &Path, bytes: &[u8]) -> Result<()> {
 fn audit(directory: &Path, lean: &Path) -> Result<()> {
     let root = directory.canonicalize()?;
     let artifacts: Artifacts = serde_json::from_slice(&fs::read(root.join("artifacts.json"))?)?;
+    if artifacts.schema_version == 4 {
+        return context_study::audit(&root, &artifacts);
+    }
     if artifacts.schema_version == 3 {
         return study::audit(&root, &artifacts, lean);
     }

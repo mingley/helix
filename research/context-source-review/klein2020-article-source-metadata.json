@@ -1,0 +1,37 @@
+{
+  "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=7727316",
+  "source_response_sha256": "2deeb844229df42a6446c5da4419f32b8c7896c7143aaa7d8e6edb232676b443",
+  "source_response_bytes": 129659,
+  "retained_at": "2026-10-27T13:09:18.561539+00:00",
+  "licenses": [
+    {
+      "text": "Users may view, print, copy, and download text and data-mine the content in such documents, for the purposes of academic research, subject always to the full Conditions of use: http://www.nature.com/authors/editorial_policies/license.html#terms",
+      "attributes": {}
+    }
+  ],
+  "availability_sections": [
+    {
+      "title": "DATA AVAILABILITY",
+      "text": "DATA AVAILABILITY We developed a fully reproducible MPRA processing pipeline available to process the data into final enhancer activity scores. Raw and processed data has been deposited in the Gene Expression Omnibus (GEO) at accession number  GSE142696 ."
+    },
+    {
+      "title": "CODE AVAILABILITY",
+      "text": "CODE AVAILABILITY A reproducible processing pipeline for MPRA data is available as a Nextflow-based MPRA processing pipeline named MPRAflow ( https://github.com/shendurelab/MPRAflow ) 44 ."
+    }
+  ],
+  "links": [
+    {
+      "href": "MK484105",
+      "text": "MK484105"
+    },
+    {
+      "href": "GSE142696",
+      "text": "GSE142696"
+    },
+    {
+      "href": "https://github.com/shendurelab/MPRAflow)44",
+      "text": "https://github.com/shendurelab/MPRAflow"
+    }
+  ],
+  "retained_scope": "Article metadata, availability/code links, correction notice and license text only; no linked quantitative processed-data file retrieved."
+}

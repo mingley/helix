@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "protocol_id": "context-prediction-v1",
+  "protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2",
+  "status": "blocked_missing_required_observed_activity_endpoint",
+  "fitting_performed": false,
+  "source_schema_binding_sha256": "2ae0ae9a03b71d1ec297e95a70e9d2b6fa3fd5154ae209cacbb78e8d8a34ea99",
+  "reasons": [
+    "S7 contains design and coordinate metadata without observed activity columns.",
+    "S9 labels each cell column Element Specificity Score, explicitly forbidden as a V1 observed activity label.",
+    "CNN prediction output cannot fill missing measurements."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2",
+  "status": "blocked_required_empirical_endpoint_absent",
+  "required_endpoint": "observed mean-of3 per-replicate-median-normalized log2RNA/DNA, not ESS, zscores or modelpredictions",
+  "raw_files_md5_verified": true,
+  "raw_retrieval_receipt": "retrieval.json",
+  "source_schema_inspection": "schema-inspection.json",
+  "design": {
+    "file": "Table-S7-joint-design.xlsx",
+    "sheet": "joint library",
+    "data_rows": 60000,
+    "header_row": 2,
+    "id_column": "name",
+    "sequence_column": "230nt sequence (15nt 5' adaptor - 200nt element - 15nt 3' adaptor)",
+    "sequence_contract": "15nt5primeadaptor +200ntgenomiccore +15nt3primeadaptor",
+    "coordinate_fields": [
+      "chr.hg38",
+      "start.hg38",
+      "stop.hg38",
+      "str.hg38"
+    ],
+    "full_reference_validation_completed": false,
+    "observed_activity_columns_present": false
+  },
+  "label_candidate": {
+    "file": "Table-S9-folds-performance.xlsx",
+    "sheet": "Fold assignment, joint library",
+    "data_rows": 59107,
+    "header_row": 1,
+    "columns": [
+      "Fold",
+      "Sequence ID",
+      "HepG2, Element Specificity Score",
+      "K562, Element Specificity Score",
+      "WTC11, Element Specificity Score"
+    ],
+    "label_type": "Element Specificity Score, explicitly prohibited by frozen protocol",
+    "admissible_empirical_activity_columns": []
+  },
+  "excluded_other_sheet": {
+    "file": "Table-S9-folds-performance.xlsx",
+    "sheet": "Benchmarking results",
+    "reason": "Modelbenchmarkmetrics, not individual observedactivity"
+  },
+  "archive_tsv_status": "Not acquired. Sourceprediction-exportcode andfilenamescannotcertifyobservedactivity; nofallback to predictions.",
+  "scientific_actions": {
+    "model_fitting_performed": false,
+    "prediction_performance_computed": false,
+    "ess_values_used_as_targets": false,
+    "protocol_modified": false,
+    "panel_json_created": false
+  },
+  "next_step": "Find an explicitly measured rawactivity source or stop this protocol with preservedblockedstatus. Any ESS endpoint would require a separately stated scientificquestion and newprotocol, never a silentcolumnsubstitution."
+}

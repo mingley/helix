@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "bundle_id": "ucsc-hg38-sequence-only-reference-v1",
+  "assembly": "hg38",
+  "reference_evidence_file": "hg38-reference.json",
+  "validation_file": "validation.json",
+  "reader_file": "scripts/twobit_reference.py",
+  "reader_sha256": "ffbb77304eb324b2028cf6fb29ca8e0ea4b6a1e9daaf77ee42ce4a8f629847a2",
+  "reference_binary_committed": false,
+  "reference_path": "/workspace/.tools/reference/hg38.2bit",
+  "reference_bytes": 835393456,
+  "reference_sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0",
+  "reference_published_md5": "dcc3ea27079aa6dc3f9deccd7275e0f8",
+  "files": {
+    "README.md": "6904acda8ec73afae5ed451abad325ad63b62bc622e5fac67c05f4ee5394182e",
+    "api-crosscheck-sources.json": "da2dffd6aa0164652948030f8520943834fbd08290b0fe641028c9b6b0918fa8",
+    "download-attempts.json": "4b0009d7f0c9eb5c33e7a32b4746dfc742b836e141e44a7843f1d53013d7e15a",
+    "hg38-reference.json": "f3006ec436ee14db4d8afa4aeb41ff13c24ac0731127e01229e168bd829cf5f5",
+    "published-checksum.json": "e370f3794b16d6b23f980134036a45f23dd5e8ff03253c1aefc0e908f3b49a8f",
+    "test_twobit_reference.py": "bf8324da77ba78ea9c2e91391236253468c2d19160718c147b42224faedd5ee0",
+    "twobit-structure.json": "c1ddfe023cbb6cbe849b5e0a248f324b48c54c6d41c8229b5f9c3c0680e0045a",
+    "ucsc-api-chr1-10000-10230.json": "5a6b9c89c1fa0714a4569b0b3544b46bfe2fc79e7720abd98207ac50a16c7f98",
+    "ucsc-api-chr11-5225000-5227500.json": "1199331cbe834e207445f3e141f7c28ccf91221f18ea03725cbc72d68088982d",
+    "ucsc-api-chrM-0-16569.json": "a1a66813ed710f745e032ba2ac4df685b50abdfee6e000402f12120bc26c2dec",
+    "ucsc-api-chrX-10000000-10000200.json": "162ec7a6f49af3e96195c1fc955c0dd53ea80cf0a3aaf6f0c6a96588c96f7aaa",
+    "ucsc-hg38-bigZips-md5sum.txt": "25c4eb8362dcfb6e9bff1a6ab1b9d11fcf2334dce8a6984a091c59851f6e1145",
+    "validation.json": "2d70512604c32d703971801d27f55c3250335e9ba1e441cf85fe640857254b9a"
+  }
+}

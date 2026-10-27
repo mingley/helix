@@ -22,3 +22,7 @@ python3 scripts/fetch_regulatory_motifs.py --validate-existing datasets/regulato
 python3 research/forensic-sources/reconcile_hbb.py --self-test
 python3 research/forensic-sources/reconcile_hbb.py --verify
 python3 scripts/independently_verify_deletion_identity.py
+python3 -m unittest discover -s research/context-reference -p test_twobit_reference.py
+python3 scripts/group_context_panel.py --self-test
+python3 scripts/fetch_context_panel.py self-test
+python3 scripts/fetch_context_panel.py verify datasets/context-panel

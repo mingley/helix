@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "phase": "metadata_only_before_outcome_acquisition",
+  "recommended_candidate": {
+    "study": "Agarwal et al.2025, Massively parallel characterization of transcriptional regulatory elements",
+    "doi": "10.1038/s41586-024-08430-9",
+    "pmid": "39814889",
+    "pmcid": "PMC11903340",
+    "unit": "common 60,000-cCRE joint lentiMPRA library, not the union of different cell-specific libraries",
+    "contexts": [
+      {
+        "cell": "HepG2",
+        "accession": "ENCSR405QCT",
+        "moi": 50
+      },
+      {
+        "cell": "K562",
+        "accession": "ENCSR203UFY",
+        "moi": 10
+      },
+      {
+        "cell": "WTC11",
+        "accession": "ENCSR336MKI",
+        "moi": 10,
+        "identity": "human iPSC RRID:CVCL_Y803, passages43\u201349"
+      }
+    ],
+    "replicate_unit": "three independent infections per context from one constructed joint library",
+    "declared_endpoint": "per-replicate log2(RNA/DNA), median-normalized within each replicate, averaged over three replicates",
+    "excluded_target": "ESS or across-cell z-scored specificity is not the same endpoint",
+    "source_panel_ascertainment": "chosen using previous activity bins and high across-cell variance; not a random genomic panel",
+    "independence": "distinct source study/data from Kircher2019, but overlapping investigators and technology; not independent laboratory replication",
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "publication_license": "CC BY4.0"
+  },
+  "source_candidates": {
+    "joint_design_workbook": {
+      "key": "Table S7 - joint lib design.xlsx",
+      "url": "https://zenodo.org/api/records/10558183/files/Table%20S7%20-%20joint%20lib%20design.xlsx/content",
+      "size_bytes": 8301566,
+      "checksum": "md5:5d9b71452e9648e8473edd74a4ae26fc",
+      "schema_status": "not acquired; may contain outcomes; older Zenodo/preprint numbering differs from finalpaper Table10"
+    },
+    "joint_archive": {
+      "url": "https://zenodo.org/api/records/10558183/files/final_joint_dump.zip/content",
+      "size_bytes": 3967659598,
+      "checksum": "md5:edf24033ce6adf8e3cb27e465730c329",
+      "full_archive_checksum_verified": false,
+      "metadata_only_ranges": [
+        {
+          "start": 3967659576,
+          "end": 3967659597,
+          "type": "EOCD22bytes"
+        },
+        {
+          "start": 3967619633,
+          "end": 3967659575,
+          "type": "centraldirectory39943bytes"
+        }
+      ],
+      "small_tsv_members": [
+        {
+          "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_2.tsv",
+          "compressed_bytes": 76133,
+          "uncompressed_bytes": 206786,
+          "crc32": "2f509877",
+          "compression_method": 8,
+          "local_header_offset": 455
+        },
+        {
+          "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_10.tsv",
+          "compressed_bytes": 76339,
+          "uncompressed_bytes": 207498,
+          "crc32": "ae79f03b",
+          "compression_method": 8,
+          "local_header_offset": 76718
+        },
+        {
+          "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_6.tsv",
+          "compressed_bytes": 76328,
+          "uncompressed_bytes": 207378,
+          "crc32": "c5b7c958",
+          "compression_method": 8,
+          "local_header_offset": 153188
+        },
+        {
+          "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_3.tsv",
+          "compressed_bytes": 76011,
+          "uncompressed_bytes": 207100,
+          "crc32": "112658af",
+          "compression_method": 8,
+          "local_header_offset": 229646
+        },
+        {
+          "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_7.tsv",
+          "compressed_bytes": 76127,
+          "uncompressed_bytes": 206834,
+          "crc32": "4db58204",
+          "compression_method": 8,
+          "local_header_offset": 305787
+        },
+        {
+          "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_5.tsv",
+          "compressed_bytes": 76051,
+          "uncompressed_bytes": 206744,
+          "crc32": "457fbee4",
+          "compression_method": 8,
+          "local_header_offset": 382044
+        },
+        {
+          "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_4.tsv",
+          "compressed_bytes": 76005,
+          "uncompressed_bytes": 207133,
+          "crc32": "a062921f",
+          "compression_method": 8,
+          "local_header_offset": 458225
+        },
+        {
+          "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_9.tsv",
+          "compressed_bytes": 76047,
+          "uncompressed_bytes": 207129,
+          "crc32": "346dd23e",
+          "compression_method": 8,
+          "local_header_offset": 534360
+        },
+        {
+          "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_8.tsv",
+          "compressed_bytes": 76168,
+          "uncompressed_bytes": 207389,
+          "crc32": "bc277169",
+          "compression_method": 8,
+          "local_header_offset": 610537
+        },
+        {
+          "path": "final_joint_dump/scores/final/HepG2/joint_results_testaug/testfold_1.tsv",
+          "compressed_bytes": 76164,
+          "uncompressed_bytes": 206795,
+          "crc32": "4eb907b1",
+          "compression_method": 8,
+          "local_header_offset": 686835
+        },
+        {
+          "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_2.tsv",
+          "compressed_bytes": 76751,
+          "uncompressed_bytes": 207052,
+          "crc32": "3720119f",
+          "compression_method": 8,
+          "local_header_offset": 763337
+        },
+        {
+          "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_10.tsv",
+          "compressed_bytes": 76713,
+          "uncompressed_bytes": 206902,
+          "crc32": "2e54371a",
+          "compression_method": 8,
+          "local_header_offset": 840217
+        },
+        {
+          "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_6.tsv",
+          "compressed_bytes": 76675,
+          "uncompressed_bytes": 206954,
+          "crc32": "038d815f",
+          "compression_method": 8,
+          "local_header_offset": 917060
+        },
+        {
+          "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_3.tsv",
+          "compressed_bytes": 76709,
+          "uncompressed_bytes": 206709,
+          "crc32": "cb87e763",
+          "compression_method": 8,
+          "local_header_offset": 993864
+        },
+        {
+          "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_7.tsv",
+          "compressed_bytes": 76832,
+          "uncompressed_bytes": 207109,
+          "crc32": "17ae84a8",
+          "compression_method": 8,
+          "local_header_offset": 1070702
+        },
+        {
+          "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_5.tsv",
+          "compressed_bytes": 76791,
+          "uncompressed_bytes": 206827,
+          "crc32": "0818abfb",
+          "compression_method": 8,
+          "local_header_offset": 1147663
+        },
+        {
+          "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_4.tsv",
+          "compressed_bytes": 76890,
+          "uncompressed_bytes": 207027,
+          "crc32": "1f0cb18f",
+          "compression_method": 8,
+          "local_header_offset": 1224583
+        },
+        {
+          "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_9.tsv",
+          "compressed_bytes": 76915,
+          "uncompressed_bytes": 207104,
+          "crc32": "8ebc82a6",
+          "compression_method": 8,
+          "local_header_offset": 1301602
+        },
+        {
+          "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_8.tsv",
+          "compressed_bytes": 76786,
+          "uncompressed_bytes": 207419,
+          "crc32": "788d2723",
+          "compression_method": 8,
+          "local_header_offset": 1378646
+        },
+        {
+          "path": "final_joint_dump/scores/final/K562/joint_results_testaug/testfold_1.tsv",
+          "compressed_bytes": 76819,
+          "uncompressed_bytes": 206927,
+          "crc32": "eae95268",
+          "compression_method": 8,
+          "local_header_offset": 1455561
+        },
+        {
+          "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_2.tsv",
+          "compressed_bytes": 76595,
+          "uncompressed_bytes": 205337,
+          "crc32": "8f5e88b9",
+          "compression_method": 8,
+          "local_header_offset": 1532719
+        },
+        {
+          "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_10.tsv",
+          "compressed_bytes": 76957,
+          "uncompressed_bytes": 205848,
+          "crc32": "9e42c9e8",
+          "compression_method": 8,
+          "local_header_offset": 1609444
+        },
+        {
+          "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_6.tsv",
+          "compressed_bytes": 76844,
+          "uncompressed_bytes": 205401,
+          "crc32": "cf49bb81",
+          "compression_method": 8,
+          "local_header_offset": 1686532
+        },
+        {
+          "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_3.tsv",
+          "compressed_bytes": 76583,
+          "uncompressed_bytes": 205197,
+          "crc32": "172bce4c",
+          "compression_method": 8,
+          "local_header_offset": 1763506
+        },
+        {
+          "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_7.tsv",
+          "compressed_bytes": 76746,
+          "uncompressed_bytes": 204881,
+          "crc32": "3cebb665",
+          "compression_method": 8,
+          "local_header_offset": 1840219
+        },
+        {
+          "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_5.tsv",
+          "compressed_bytes": 76650,
+          "uncompressed_bytes": 205299,
+          "crc32": "5786bc0d",
+          "compression_method": 8,
+          "local_header_offset": 1917095
+        },
+        {
+          "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_4.tsv",
+          "compressed_bytes": 76820,
+          "uncompressed_bytes": 205631,
+          "crc32": "052cc0d1",
+          "compression_method": 8,
+          "local_header_offset": 1993875
+        },
+        {
+          "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_9.tsv",
+          "compressed_bytes": 76651,
+          "uncompressed_bytes": 204994,
+          "crc32": "93789a72",
+          "compression_method": 8,
+          "local_header_offset": 2070825
+        },
+        {
+          "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_8.tsv",
+          "compressed_bytes": 76591,
+          "uncompressed_bytes": 205426,
+          "crc32": "ac51f5cb",
+          "compression_method": 8,
+          "local_header_offset": 2147606
+        },
+        {
+          "path": "final_joint_dump/scores/final/WTC11/joint_results_testaug/testfold_1.tsv",
+          "compressed_bytes": 76762,
+          "uncompressed_bytes": 205022,
+          "crc32": "40e49791",
+          "compression_method": 8,
+          "local_header_offset": 2224327
+        }
+      ],
+      "total_member_compressed_bytes": 2296453,
+      "total_member_uncompressed_bytes": 6193852,
+      "schema_status": "not acquired. Generic author prediction-export code emits model predictions only; cannot certify these members as observed activity without inspecting schema after a freeze."
+    }
+  },
+  "readiness": {
+    "metadata_source_identity_and_license_verified": true,
+    "complete_reference_or_oligo_sequence_join_verified": false,
+    "observed_activity_target_column_verified": false,
+    "outcome_tables_acquired": false,
+    "model_weights_acquired": false,
+    "next_step": "Freeze exact acquisition+endpoint+failclosed rules before any table/member payload. Verify workbook checksum, memberCRC+newSHA, source sequence IDs and observed mean labels; never substitute prediction or ESS columns."
+  },
+  "access_observations": [
+    {
+      "resource": "all3official ENCODE joint experiment JSON URLs",
+      "result": "403Forbidden; no processed files acquired"
+    },
+    {
+      "resource": "Tewhey2016 and Ulirsch2016 fulltext metadata endpoints",
+      "result": "EuropePMC500 and NCBIBioC429; no repeated unchanged retries and no score acquisition"
+    }
+  ],
+  "alternatives": [
+    {
+      "study": "Tewhey2016",
+      "doi": "10.1016/j.cell.2016.04.027",
+      "pmid": "27259153",
+      "status": "publication metadata confirmed; matched-context processedmatrix/schema/license not established;2018correction must review"
+    },
+    {
+      "study": "Ulirsch2016",
+      "doi": "10.1016/j.cell.2016.04.048",
+      "pmid": "27259154",
+      "status": "publication metadata confirmed; matched-context processedmatrix/schema/license not established"
+    },
+    {
+      "study": "Sherwood/GTEx broad search",
+      "status": "not selected; broad publication matches insufficient for exact matched-input contextual endpoint"
+    }
+  ],
+  "post_freeze_acquisition": {
+    "protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2",
+    "status": "blocked_required_empirical_endpoint_absent",
+    "receipt_path": "datasets/context-panel/raw/retrieval.json",
+    "gate_path": "datasets/context-panel/raw/semantic-gate.json",
+    "finding": "S7hasdesignonly; S9labelsareexplicitElementSpecificityScore, notrequiredobservedmean; nomodelfit."
+  }
+}

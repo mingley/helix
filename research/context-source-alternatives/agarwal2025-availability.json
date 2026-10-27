@@ -1,0 +1,49 @@
+{
+  "article_source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11903340/fullTextXML",
+  "article_sha256": "41a554f31ea67adb1ce983b05ed9194e8fa1596bd4e6d2208df1854de9f33320",
+  "availability": [
+    {
+      "title": "Data availability",
+      "text": "Data availability Raw sequencing data and processed files generated in this study are available in the ENCODE portal for the pilot libraries (HepG2:  ENCSR463IRX ; K562:  ENCSR460LZI ), large-scale libraries (HepG2:  ENCSR022GQD ; K562:  ENCSR382BVV ; WTC11:  ENCSR244FWB ), and joint libraries (HepG2:  ENCSR405QCT ; K562:  ENCSR203UFY ; WTC11:  ENCSR336MKI ).",
+      "links": [
+        "https://www.encodeproject.org/functional-characterization-experiments/ENCSR463IRX/",
+        "https://www.encodeproject.org/functional-characterization-experiments/ENCSR460LZI/",
+        "https://www.encodeproject.org/search/?searchTerm=ENCSR022GQD",
+        "https://www.encodeproject.org/functional-characterization-experiments/ENCSR382BVV/",
+        "https://www.encodeproject.org/functional-characterization-experiments/ENCSR244FWB/",
+        "https://www.encodeproject.org/functional-characterization-experiments/ENCSR405QCT/",
+        "https://www.encodeproject.org/functional-characterization-experiments/ENCSR203UFY/",
+        "https://www.encodeproject.org/functional-characterization-experiments/ENCSR336MKI/"
+      ]
+    },
+    {
+      "title": "Code availability",
+      "text": "Code availability Code to train and interpret MPRAnn and MPRALegNet is available at  https://github.com/visze/sequence_cnn_models  and  https://github.com/autosome-ru/human_legnet . Pretrained models and code have also been deposited at Zenodo ( https://zenodo.org/records/10558183  (ref.  67 ) and  https://zenodo.org/records/13908857  (ref.  68 )).",
+      "links": [
+        "https://github.com/visze/sequence_cnn_models",
+        "https://github.com/autosome-ru/human_legnet",
+        "https://zenodo.org/records/10558183",
+        "https://zenodo.org/records/13908857"
+      ]
+    }
+  ],
+  "repository_links": [
+    "https://github.com/Altius/hotspot2",
+    "https://github.com/ENCODE-DCC/atac-seq-pipeline",
+    "https://github.com/autosome-ru/human_legnet",
+    "https://github.com/jmschrei/apricot/",
+    "https://github.com/jmschrei/tfmodisco-lite",
+    "https://github.com/visze/sequence_cnn_models",
+    "https://www.encodeproject.org/functional-characterization-experiments/ENCSR203UFY/",
+    "https://www.encodeproject.org/functional-characterization-experiments/ENCSR244FWB/",
+    "https://www.encodeproject.org/functional-characterization-experiments/ENCSR336MKI/",
+    "https://www.encodeproject.org/functional-characterization-experiments/ENCSR382BVV/",
+    "https://www.encodeproject.org/functional-characterization-experiments/ENCSR405QCT/",
+    "https://www.encodeproject.org/functional-characterization-experiments/ENCSR460LZI/",
+    "https://www.encodeproject.org/functional-characterization-experiments/ENCSR463IRX/",
+    "https://www.encodeproject.org/search/?searchTerm=ENCSR022GQD",
+    "https://zenodo.org/records/10558183",
+    "https://zenodo.org/records/13908857"
+  ],
+  "restriction": "No linked processed outcome files retrieved"
+}

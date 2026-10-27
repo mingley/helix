@@ -27,6 +27,7 @@ genome-research-stats.workspace = true
 genome-assay.workspace = true
 genome-regulatory.workspace = true
 genome-regulatory-data.workspace = true
+genome-context-model.workspace = true
 
 [lints]
 workspace = true

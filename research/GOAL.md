@@ -6,6 +6,53 @@ explicit assumptions, measured endpoints and falsifiable questions. Annotation,
 logical consistency, clinical classification and molecular measurements remain
 different kinds of evidence.
 
+## Current result: reproducible prediction with unresolved source meaning
+
+The [context-specificity benchmark](context-specificity-study.md) has
+**13.434% lower held-out MSE** for context-specific sequence slopes than
+additive DNA/context prediction on three fixed published source columns.
+The panel contains 55,276 reference-valid elements in 2,761 sequence/locus
+groups. All 243 independent numerical comparison categories pass, including
+1,824,108 exact feature fractions and 829,140 model predictions.
+
+**The scientific source-formula check fails.** Every admitted score triple has
+a nonzero sum beyond rounding, contradicting the cited simple ESS formula.
+A separately frozen arithmetic audit finds a weighted rank-two constraint
+compatible with additional column scaling, but does not establish historical
+normalization. No targets, fits or primary losses were repaired. The complete
+workflow reports numerical success separately and exits 2 for the unresolved
+scientific source validation.
+
+The earlier raw-activity `context-prediction-v1` remains
+[blocked before fitting](context-v1-source-gate.md); the available files
+contained ESS rather than its required activity means. The distinct v2 is a
+bounded benchmark of published columns, not a retrospective v1 pass or a new
+discovery that sequence/context affects expression. See the
+[source-semantic review](context-specificity-semantic-review.md) and
+[retained snapshot](results/context-specificity-v2/README.md).
+
+## Next falsifiable goal: establish the endpoint before extending the model
+
+Recover authoritative, version-linked source normalization and underlying
+activity, or obtain independently compatible measurements with an explicit
+observation contract. Keep the current numerical result and semantic failure
+unchanged while resolving what the source columns mean.
+
+1. Trace the frozen S9 release to documented preprocessing code, operation order
+   and version-linked intermediate/output tables. A fitted weighted plane proves
+   an algebraic representation, not the producer's history.
+2. Verify the documented transform against the unchanged source values. If raw
+   activity is recovered, establish units, replicate aggregation, missingness
+   and normalization before specifying a separately versioned study.
+3. If provenance remains unavailable, select an endpoint-compatible independent
+   assay and freeze its acquisition/mapping/grouping/model contract before
+   inspection. Preserve source selection and failed acquisition history.
+4. Evaluate whole sequence/locus groups against context-appropriate baselines.
+   Separate model agreement, endpoint validation and independent experimental
+   evidence. Do not project or rescale scores to force the old formula to pass.
+5. Require directed sequence/TF perturbations and endogenous or other
+   discriminating observations before claiming a regulatory mechanism.
+
 ## Completed foundation
 
 The workspace now reconstructs HBB's reference DNA → spliced RNA → translated
@@ -18,7 +65,7 @@ These are computational consistency checks and evidence integration. They do not
 establish the downstream effect of every variant or a complete model of the
 human genome.
 
-## Current result: the frozen regulatory study is negative
+## Retained negative regulatory study and earlier limitations
 
 The [study report](regulatory-study.md) tests six fixed models across nine
 held-out promoter elements. None of the five nonconstant models beats the
@@ -42,30 +89,6 @@ The [novelty assessment](regulatory-novelty-review.md) distinguishes established
 motif/context biology and known source-problem classes from this analysis's
 specific quantification. No new biological mechanism or global-first claim is
 established.
-
-## Next falsifiable goal: predict across experimentally defined contexts
-
-Test whether adding explicitly measured context improves regulatory-effect
-prediction on independent data beyond context-appropriate mean and sequence-only
-baselines. Keep the negative v1 study unchanged.
-
-Before fitting the next round:
-
-1. Freeze a new endpoint, source selection, licensing, sequence mapping and
-   experimental-unit split. Prefer independent studies and matched same-element
-   measurements over treating nearby alleles or library records as independent.
-2. State which context is observed: cell state, construct, time, perturbation
-   and available factor measurements. Do not infer a reporter RNA sequence from
-   native annotation alone.
-3. Fix features, models, baselines, inclusion/QC, uncertainty and reporting
-   precision before inspecting evaluation outcomes. A finite rank grid, if used,
-   needs a scientific justification and a separately declared estimand.
-4. Evaluate the predefined primary error on withheld experimental units and
-   retain all comparisons, exclusions and failed controls. A claimed gain must
-   survive the declared baseline and uncertainty checks, not one favorable split.
-5. Use independent endogenous or other discriminating observations to test any
-   proposed biological mechanism. Reporter coefficients alone do not establish
-   clinical outcomes or native-chromatin function.
 
 ## Standing research rules
 

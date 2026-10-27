@@ -309,6 +309,7 @@ dependencies = [
  "genome-agents",
  "genome-assay",
  "genome-atlas",
+ "genome-context-model",
  "genome-data",
  "genome-evaluation",
  "genome-evidence-audit",
@@ -325,6 +326,17 @@ dependencies = [
  "serde_json",
  "sha2",
  "tempfile",
+]
+
+[[package]]
+name = "genome-context-model"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "genome-regulatory",
+ "genome-research-stats",
+ "serde",
+ "sha2",
 ]
 
 [[package]]

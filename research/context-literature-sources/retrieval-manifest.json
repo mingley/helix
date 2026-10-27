@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "retrieval_date_utc": "2026-10-27",
+  "retained_files": {
+    "publications.json": {
+      "bytes": 10616,
+      "sha256": "dd76cdd63025d007e189b73dffa19f034220acb2ba7165adad8a97c22700ec77"
+    },
+    "review.json": {
+      "bytes": 9764,
+      "sha256": "9dd4d9aa49b17a4f20ae28545b6c9dcb840f6fcaf460d81e51d559bc593763e2"
+    }
+  },
+  "article_reading_receipts": [
+    {
+      "citation": "C01",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11903340/fullTextXML",
+      "bytes": 233913,
+      "sha256": "41a554f31ea67adb1ce983b05ed9194e8fa1596bd4e6d2208df1854de9f33320",
+      "repository_copy": false,
+      "purpose": "Paper reading and source-hash provenance; not row-level assay data acquisition.",
+      "reuse_note": "CC BY4.0 stated in article"
+    },
+    {
+      "citation": "C02",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5204343/fullTextXML",
+      "bytes": 211165,
+      "sha256": "a969b2241fa812c7f1dd0e78ca14c82941928c90ff6e4987ffe309ea93b272d6",
+      "repository_copy": false,
+      "purpose": "Paper reading and source-hash provenance; not row-level assay data acquisition.",
+      "reuse_note": "CC BY-NC4.0 stated in article; not relicensed or redistributed here"
+    },
+    {
+      "citation": "C03",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC7727316/unicode",
+      "bytes": 112556,
+      "sha256": "185f44a304016533e5ad0bf473647d62dd21f69c7ec71d6b8de6ef52f9a90d0a",
+      "repository_copy": false,
+      "purpose": "Paper reading and source-hash provenance; not row-level assay data acquisition.",
+      "reuse_note": "Public reading access; no redistribution permission inferred"
+    },
+    {
+      "citation": "C04",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC4957403/unicode",
+      "bytes": 116818,
+      "sha256": "f8ea9df9ccafe6dd87ae2b268c6e9b7d5d542475c3d7a5a3513a15a83286306b",
+      "repository_copy": false,
+      "purpose": "Paper reading and source-hash provenance; not row-level assay data acquisition.",
+      "reuse_note": "Public reading access; no redistribution permission inferred"
+    },
+    {
+      "citation": "C05",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC4893171/unicode",
+      "bytes": 108745,
+      "sha256": "a8c9b4bc972c07adc97c1ab8826e9b703ee5165cfccd384fa47e01d8c274ce3f",
+      "repository_copy": false,
+      "purpose": "Paper reading and source-hash provenance; not row-level assay data acquisition.",
+      "reuse_note": "Public reading access; no redistribution permission inferred"
+    },
+    {
+      "citation": "C06",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6687891/fullTextXML",
+      "bytes": 184360,
+      "sha256": "8a137e659d29fca939d70f10cb249d19dd3f83645e593cb62f19674c4dd1be7c",
+      "repository_copy": false,
+      "purpose": "Paper reading and source-hash provenance; not row-level assay data acquisition.",
+      "reuse_note": "CC BY4.0 stated in article"
+    }
+  ],
+  "unavailable_or_nonarticle_responses": [
+    {
+      "citation": "C02a",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5932618/fullTextXML",
+      "result": "HTTP500"
+    },
+    {
+      "citation": "C02a",
+      "url": "https://genome.cshlp.org/content/28/5/766.3.full",
+      "result": "HTTP403"
+    },
+    {
+      "citation": "C02a",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC5932618/unicode",
+      "result": "HTTP429 followed by non-XML response; correction text unverified"
+    },
+    {
+      "citation": "C04a",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pubmed.cgi/BioC_xml/29474912/unicode",
+      "result": "Title only; no correction text"
+    },
+    {
+      "citation": "C03",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7727316/fullTextXML",
+      "result": "HTTP500; official NCBI BioC article text used instead"
+    },
+    {
+      "citation": "C03",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7727316/",
+      "result": "Challenge page; not treated as article text"
+    }
+  ],
+  "metadata_projection": "publications.json",
+  "notes": "Only minimal citation metadata and original paraphrased research notes are redistributed. Downloaded paper XML/BioC text was read from temporary storage and is not incorporated into repository-license claims. No new row-level quantitative outcomes acquired."
+}

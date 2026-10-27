@@ -2,35 +2,44 @@
 
 Helix connects typed genomic representations, source provenance, conditional
 Lean reasoning and quantitative experiments. The Rust workspace contains
-**16 crates** and builds inspectable partial models of human genome function.
+**17 crates** and builds inspectable partial models of human genome function.
 
-The current [regulatory study](research/regulatory-study.md) has a **negative
-primary predictive result**: none of five fixed nonconstant models beats the
-training-mean baseline across nine held-out promoter elements. It also exposes
-source-identity and numerical-reproducibility hazards. No new biological
-mechanism or globally first finding is claimed. The next goal is context-aware
-prediction on independent data, compared with context-appropriate mean and
-sequence-only baselines.
+The current [context-score benchmark](research/context-specificity-study.md)
+reduces held-out MSE by **13.434%** on fixed published source columns. Independent
+implementations reproduce every required numerical comparison, including exact
+features and all 829,140 model predictions.
+
+**Scientific source-formula validation remains unresolved.** The supplied
+columns fail the published ESS zero-sum formula by far more than rounding.
+Numerical reproduction does not resolve their preprocessing history or certify
+the stated biological endpoint. The workflow retains this failure and returns
+exit status 2. No target projection, repair or refit is used to force agreement.
+
+The next goal is to recover authoritative, version-linked normalization/raw
+activity or independently compatible measurements. No new biological mechanism
+or global novelty is established.
 
 Start with the [research objective](research/GOAL.md),
-[study report](research/regulatory-study.md),
-[retained artifact snapshot](research/results/regulatory-v1/README.md), and
-[novelty review](research/regulatory-novelty-review.md).
+[context study](research/context-specificity-study.md),
+[retained snapshot](research/results/context-specificity-v2/README.md), and
+[source-semantic review](research/context-specificity-semantic-review.md).
 
 ## Current evidence
 
 | Result | Scope |
 | --- | --- |
-| Primary macro MSE: mean 0.11639219; full model 0.11798887 | Nine selected promoter elements from one study; squared log2 reporter-effect units |
-| 62 HBB database equality rows reconcile to original deletions | 53 distinct edited targets before QC; 35 rows/35 identities after predefined QC |
-| 131,112 Rust/Python predictions agree within 7.73e−12 | Primary losses, fits and controls reproduce; this verifies computation |
-| 26 of 240 frozen exact-Spearman checks fail | Full frozen secondary-rank reproduction remains failed |
-| Every separately declared prediction grid matches 240/240 checks | Post-hoc numerical sensitivity; changes the rank estimand and does not repair v1 |
+| Context-specific MSE 0.86538919 versus additive 0.99969020 | 13.434% lower MSE on 55,276 selected, reference-valid elements in three known contexts |
+| All 243 independent comparison categories pass | 1,824,108 feature fractions match exactly; 829,140 model predictions reproduce within frozen tolerance |
+| Every admitted score triple violates the stated zero-sum formula | Maximum absolute sum 1.0987267; source-normalization provenance remains unresolved |
+| Source columns instead occupy a fitted weighted rank-two plane | Compatible with extra column scaling; no proof of historical preprocessing or new biology |
+| Raw-activity context-prediction-v1 stopped before fitting | Available files contained ESS rather than the required activity means; v2 is a distinct protocol |
 
-The raw deletion identity bound is not a biological noise floor. The motif model's
-tiny advantage over chemistry alone is uncertain and still loses to the mean.
-Known motif biology, assay-context effects and legacy deletion/equality problems
-have substantial prior art.
+The earlier [regulatory study](research/regulatory-study.md) remains negative:
+none of five fixed nonconstant models beats the mean across nine held-out
+promoters. Its 26/240 exact-rank failures remain failed; separate post-hoc grid
+agreement does not repair that endpoint. HBB deletion/QC forensics remain
+source accounting, not a biological noise floor. Known context/motif prediction
+has substantial prior art.
 
 ## Set up and reproduce the study
 
@@ -43,25 +52,40 @@ bash scripts/setup.sh
 bash scripts/setup_research.sh
 source scripts/research-env.sh
 bash scripts/check.sh
-bash scripts/check_study.sh runs/study-review
+bash scripts/check_context_study.sh runs/context-review
 ```
 
-Choose a new output prefix. The study command creates separate Rust, Python,
-comparison, figures and rank-sensitivity directories. It retains every fixed
-model, 99 spatial controls, 2,000 resamples, predictions, fitted preprocessing,
-source commitments and failed comparisons.
+Choose a new output prefix. The context check rebuilds groups and guards,
+replays reference validation, runs Rust and independent Python, retains all five
+models and 2,000 paired resamples, compares artifacts, and generates figures
+and source diagnostics. **Exit status 2 is expected because scientific
+source-formula validation remains unresolved, despite numerical reproduction
+passing.** It must not be presented as a complete scientific pass.
 
-**The study check returns exit status 2 for the retained secondary-rank
-failures**, after producing its figures and diagnostics. Core software/source
-checks and successful primary numerical checks are separate from a complete
-frozen-study pass. The post-hoc all-grid agreement must not be substituted for
-the failed raw exact-rank endpoint.
+Full rederivation obtains a checksum-verified **835 MB hg38 reference**. Cache
+it separately if desired:
 
-See the [independent implementation](research/independent-regulatory-replication/README.md),
-[frozen protocol](experiments/regulatory-prediction-v1.json),
-[statistical review](research/regulatory-statistical-review.md), and
-[rank sensitivity](research/rank-sensitivity-review.md).
-The published snapshot supports inspection without refitting.
+```bash
+bash scripts/setup_reference.sh
+```
+
+Snapshot inspection and direct fitting of the frozen panel do not require that
+download. To create a new grouping receipt and run the Rust path directly:
+
+```bash
+python3 scripts/group_context_panel.py --panel datasets/context-panel/panel.json \
+  --out runs/context-direct-groups.json
+cargo run --release --frozen -- context-study \
+  --groups runs/context-direct-groups.json --out runs/context-direct-rust
+cargo run --release --frozen -- audit runs/context-direct-rust
+```
+
+See the [independent replay](research/independent-context-replication/README.md),
+[v2 protocol](experiments/context-specificity-v2.json), and
+[source interpretation](research/context-literature.md).
+The [earlier study snapshot](research/results/regulatory-v1/README.md) remains
+available. Reproduce it with `bash scripts/check_study.sh runs/study-review`;
+that workflow returns 2 for its retained secondary-rank failures.
 
 Setup installs tools outside the checkout, under `/workspace/.tools` in cloud
 tasks or a local data directory otherwise. Set `HELIX_TOOLS_DIR` before activation
@@ -156,6 +180,7 @@ variant contracts. The deletion analysis is a source-specific forensic crosswalk
 | `genome-assay` | Reference-mapped reporter effects, units and context |
 | `genome-regulatory-data` | Multi-promoter sources, identities, quality and assay roles |
 | `genome-regulatory` | Frozen features, ridge fits, guarded tests and controls |
+| `genome-context-model` | Matched-context sequence features, ridge models and paired losses |
 
 The runtime research agent is deterministic. Live LLM literature retrieval and
 foundation-model adapters remain future work. Input types exclude held-out

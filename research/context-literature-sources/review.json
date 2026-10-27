@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "review_date_utc": "2026-10-27",
+  "source_exposure": "Publication methods, published findings and bibliographic metadata reviewed. No new row-level quantitative assay outcomes, count matrices, supplementary outcome workbooks or prediction arrays acquired by this agent.",
+  "facts": [
+    {
+      "id": "CTX-DESIGN-01",
+      "source": "C01",
+      "locator": "Methods: Joint library tested in HepG2, K562, and WTC11 cells",
+      "claim": "Common 60,000-element joint library; candidate enhancer selection uses earlier activity bins; promoter selection uses earlier across-cell mean activity bins plus the top 1,000 variable promoters. Controls are also selected.",
+      "type": "published_design",
+      "interpretation_limit": "Fixed selected panel, not random genomic ascertainment."
+    },
+    {
+      "id": "CTX-DESIGN-02",
+      "source": "C01",
+      "locator": "Methods: Lentiviral infections and DNA and RNA barcode sequencing",
+      "claim": "Three independent infections per experiment; joint library intended MOI 50 HepG2 and 10 K562/WTC11; collection after three days.",
+      "type": "published_design",
+      "interpretation_limit": "Different cell contexts include delivery/experimental conditions, not an isolated TF intervention."
+    },
+    {
+      "id": "CTX-ENDPOINT-01",
+      "source": "C01",
+      "locator": "Methods: Replicates, normalization and RNA/DNA activity scores",
+      "claim": "Activity derived as log2 RNA/DNA; remove estimates with fewer than 10 independent barcodes; each replicate normalized to its median before averaging three replicates.",
+      "type": "published_processing",
+      "interpretation_limit": "Full-library source preprocessing includes the eventual evaluation panel. Published endpoint is relative activity, not absolute transcripts/cell."
+    },
+    {
+      "id": "CTX-ENDPOINT-02",
+      "source": "C01",
+      "locator": "Methods: Element specificity scores",
+      "claim": "Source ESS first z-score transforms each cell activity vector, then subtracts the element across-cell mean. Final publication assigns the full ESS table to Supplementary Table 10.",
+      "type": "published_processing",
+      "interpretation_limit": "Pairwise published base-activity differences are not the source ESS estimand. Do not silently import source ESS rescaling into a train-only model claim."
+    },
+    {
+      "id": "CTX-PRIOR-01",
+      "source": "C01",
+      "locator": "Fig5; Methods: Data pre-processing and model training; interpreting motifs",
+      "claim": "Source already predicts cell specificity using multi-task sequence models, groups each element across cells in one CV fold, and interprets cell-specific motifs.",
+      "type": "prior_art",
+      "interpretation_limit": "General cell-specific sequence prediction is not new; a stricter fixed-small-model benchmark is a bounded reanalysis."
+    },
+    {
+      "id": "CTX-PRIOR-02",
+      "source": "C01",
+      "locator": "Results: Sequence-based models predict activity; Characterization of cell-specific factors",
+      "claim": "Reported cell-specific motif priors include HNF4A/G in HepG2, GATA-TAL1 in K562, POU5F1-SOX2 in WTC11; source warns of shared-family recognition and pretrained test-locus annotation exposure.",
+      "type": "prior_art",
+      "interpretation_limit": "Motif family association is not unique TF identification or causal binding evidence."
+    },
+    {
+      "id": "CTX-PRIOR-03",
+      "source": "C02",
+      "locator": "Design/construct sections; Methods: Lentivirus packaging, titration, and infection",
+      "claim": "Same 171-base candidate library tested with wild-type versus mutant-integrase lentivirus in HepG2; native loci not restored; collection timing and intended viral copy numbers differ.",
+      "type": "published_design",
+      "interpretation_limit": "Integration/episomal contrast does not isolate native chromatin causality."
+    },
+    {
+      "id": "CTX-PRIOR-04",
+      "source": "C03",
+      "locator": "Methods: design of enhancer library; feature generation; regression",
+      "claim": "Reuses existing 2,440-element Inoue array and fits sequence/biochemical lasso models to activity and loess residual assay contrasts. Genomic 2,236 candidates reused for orientation/length designs.",
+      "type": "prior_art",
+      "interpretation_limit": "New measurements are not independent sequence-panel selection. Differential assay prediction already established."
+    },
+    {
+      "id": "CTX-PRIOR-05",
+      "source": "C03",
+      "locator": "Results/discussion: assay comparisons and orientation; Methods: normalization",
+      "claim": "Transcribed 3-prime UTR inserts can reflect RNA stability/splicing; feature multicollinearity limits causal interpretation; source records poorer-quality replicate exclusions in two nonintegrating designs.",
+      "type": "prior_art",
+      "interpretation_limit": "RNA mechanisms require matching reporter/transcript architecture; correlation does not isolate causal features."
+    },
+    {
+      "id": "CTX-ALT-01",
+      "source": "C04",
+      "locator": "Methods: library generation; cell transfection; analysis",
+      "claim": "Variant MPRA in NA12878 and NA19239 LCLs and HepG2 using 150-base genomic allele inserts and minimal promoter; original data GSE75661.",
+      "type": "published_design",
+      "interpretation_limit": "Variant effects differ from whole-fragment activity; eQTL selection and correction scope require accounting."
+    },
+    {
+      "id": "CTX-ALT-02",
+      "source": "C05",
+      "locator": "Methods: MPRA screen and analysis; Introduction/discussion: functional follow-up",
+      "claim": "K562 and GATA1-overexpressing K562 variant MPRA; selected endogenous editing and target-gene follow-up; source quantile-normalizes replicates.",
+      "type": "published_design",
+      "interpretation_limit": "Factor overexpression can alter broader cell state; reporter association is not a complete gene/phenotype mechanism."
+    },
+    {
+      "id": "CTX-INDEPENDENCE-01",
+      "source": [
+        "C01",
+        "C02",
+        "C03",
+        "C06"
+      ],
+      "locator": "Article author lists; methods library generation; data availability",
+      "claim": "Agarwal, Inoue, Klein and Kircher have overlapping investigators/assay lineage; distinct accessions establish distinct study records, not unrelated laboratory replication or genomic disjointness.",
+      "type": "logical_provenance_deduction",
+      "interpretation_limit": "Exact sequence, locus and control overlap requires the designed sequence records."
+    },
+    {
+      "id": "CTX-CORRECTION-01",
+      "source": [
+        "C02a",
+        "C04a"
+      ],
+      "locator": "Europe PMC MED commentCorrectionList",
+      "claim": "Inoue 2017 has a 2018 corrigendum PMID 29717003; Tewhey 2016 has a 2018 correction PMID 29474912. Existence verified, content not obtained.",
+      "type": "bibliographic_fact",
+      "interpretation_limit": "No assumption about correction scope or quantitative validity; resolve before quantitative reuse."
+    }
+  ],
+  "questions": [
+    {
+      "id": "QCTX-01",
+      "question": "Can fixed sequence-by-cell features improve held-out-locus same-fragment contrast prediction beyond shared slopes and cell intercepts?",
+      "status": "proposed_unexecuted",
+      "falsifier": "No useful improvement under declared loss/uncertainty, or gain attributable to split overlap or source mixture.",
+      "missing_evidence": [
+        "New quantitative source data",
+        "Frozen protocol and overlap policy",
+        "Independent implementation",
+        "Discriminating matched experimental contexts"
+      ]
+    },
+    {
+      "id": "QCTX-02",
+      "question": "Do prespecified TF-family features add context-contrast information beyond composition?",
+      "status": "proposed_unexecuted",
+      "falsifier": "No incremental held-out gain, outcome-selected features, or category/composition-dependent result.",
+      "missing_evidence": [
+        "Frozen motif set and scoring",
+        "Quantitative model evaluation",
+        "TF occupancy/perturbation and directed motif validation"
+      ]
+    },
+    {
+      "id": "QCTX-03",
+      "question": "Is apparent predictive improvement robust across predeclared source classes rather than dominated by controls or outcome-enriched categories?",
+      "status": "proposed_unexecuted",
+      "falsifier": "Gains restricted to selected classes or unstable across grouped folds.",
+      "missing_evidence": [
+        "Verified source classes",
+        "Prespecified subgroup accounting",
+        "Independent source sampling for population claims"
+      ]
+    },
+    {
+      "id": "QCTX-04",
+      "question": "Are predicted cell contrasts consistent across independent infection estimates?",
+      "status": "proposed_unexecuted",
+      "falsifier": "Direction or improvement unstable across infection estimates or precision strata.",
+      "missing_evidence": [
+        "Replicate endpoint availability",
+        "Frozen precision/uncertainty analysis",
+        "New matched biological replicates"
+      ]
+    }
+  ],
+  "novelty_status": "General context-aware sequence prediction is prior art; no new biological mechanism demonstrated; global novelty of any future reanalysis remains unestablished.",
+  "uncertainties": [
+    "Correction text/scope for Inoue 2017 and Tewhey 2016 not obtained.",
+    "Exact genomic/sequence/control overlap between candidate new panel and Kircher2019 not measured in this review.",
+    "Zenodo preprint workbook numbering cannot be identified with final-publication numbering from its filename alone.",
+    "Source assay endpoint relative to full-library median is not prospective raw-count processing."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "records_checked": 55276,
+  "exact_forward_matches": 54195,
+  "reverse_complement_matches": 1081,
+  "excluded_counts": {
+    "blank_source_id": 1,
+    "deposited_core_does_not_match_declared_hg38_interval": 52,
+    "genomic_core_coordinate_length_mismatch": 10,
+    "no_exact_source_ess_id": 4662
+  },
+  "reference_sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0",
+  "reference_md5": "dcc3ea27079aa6dc3f9deccd7275e0f8",
+  "reference_verified": true,
+  "reference_size_bytes": 835393456,
+  "source_design_validation": {
+    "schema_version": 1,
+    "source_design_rows": 60000,
+    "reference_checked_design_records": 59264,
+    "exact_forward_matches": 58081,
+    "reverse_complement_matches": 1183,
+    "excluded_counts": {
+      "deposited_core_does_not_match_declared_hg38_interval": 55,
+      "genomic_core_coordinate_length_mismatch": 11,
+      "missing_chromosome": 670
+    },
+    "declared_strand_disagreements": 0,
+    "reference_sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0",
+    "reference_md5": "dcc3ea27079aa6dc3f9deccd7275e0f8",
+    "reference_size_bytes": 835393456,
+    "reference_verified": true,
+    "source_coordinate_convention": "zero-based half-open supported by exact200nt matches at the unshifted declared intervals",
+    "endpoint_status": "design_only_no_observations"
+  },
+  "match_policy": "Every admitted core200 matches independenthg38 at the exact unshifted declared coordinate and strand; no lookup rescue or liftover."
+}

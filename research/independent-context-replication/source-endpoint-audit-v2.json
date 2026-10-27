@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "endpoint": "published_element_specificity_score",
+  "elements": 55276,
+  "contexts": [
+    "HepG2",
+    "K562",
+    "WTC11"
+  ],
+  "measurement_count": 165828,
+  "source_cell_mapping": {
+    "HepG2": "HepG2, Element Specificity Score",
+    "K562": "K562, Element Specificity Score",
+    "WTC11": "WTC11, Element Specificity Score"
+  },
+  "source_numeric_arithmetic": "exact fractions parsed independently from raw XLSX XML numeric literals",
+  "mean_signed_sum": 1.8432337655324107e-05,
+  "mean_absolute_sum": 0.09727808652891988,
+  "root_mean_squared_sum": 0.13946098296508042,
+  "maximum_absolute_sum": 1.0987267147462894,
+  "count_abs_sum_gt1e-12": 55276,
+  "count_abs_sum_gt1e-8": 55276,
+  "count_abs_sum_gt1e-6": 55275,
+  "maximum_source_row": {
+    "id": "K562_peak46638",
+    "score_source_row_1based": 28170,
+    "source_literals": {
+      "HepG2": "-2.1243548522111699",
+      "K562": "7.8814064486789697",
+      "WTC11": "-4.6583248817215104"
+    },
+    "sum_exact_numerator": "5493633573731447",
+    "sum_exact_denominator": "5000000000000000",
+    "sum_float": 1.0987267147462894
+  },
+  "fixed_zero": {
+    "mse": 0.9999258199302244,
+    "mae": 0.7146374721448708,
+    "per_context": [
+      {
+        "context": "HepG2",
+        "mse": 0.9997475405899585,
+        "mae": 0.7106547446494209
+      },
+      {
+        "context": "K562",
+        "mse": 1.0002401374408163,
+        "mae": 0.6994572836248882
+      },
+      {
+        "context": "WTC11",
+        "mse": 0.9997897817598981,
+        "mae": 0.7338003881603031
+      }
+    ]
+  },
+  "simple_element_centering_formula_audit": "discrepancy",
+  "policy": "All source values retained unchanged; no recentering, snapping, exclusion, new feature, model or refit",
+  "interpretation": "The exact S9 headers identify these numbers as published ESS. Residuals test applicability of the cited simple final-paper formula to this preprint-associated source release; they do not reconstruct raw activity or identify an alternative normalization.",
+  "protocol_sha256": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+  "input_commitments": {
+    "independent_manifest": {
+      "file": "/workspace/helix/runs/context-integration-v2-python/manifest.json",
+      "sha256": "01c40f44087702902ac3c81b5f1f713f5d598f9bb8305c47905a8b09ad6787e7"
+    },
+    "source_records": {
+      "file": "runs/context-integration-v2-python/source-records.json.gz",
+      "raw_bytes": 8135169,
+      "raw_sha256": "928943bf1bb3426dd3182377cfbf37df42adb65ab6f8e5d337d5cc50209a2db6",
+      "decoded_bytes": 39239172,
+      "decoded_sha256": "c39ef59c60e16638008cc5491fdbd5cc63159770726f458492c67c4d37afe317"
+    },
+    "source_manifest_sha256": "97f8375b7f0ed5dd02964fb339e3e8e7288c38f862120339a5df5533446432c8",
+    "panel_sha256": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3"
+  }
+}

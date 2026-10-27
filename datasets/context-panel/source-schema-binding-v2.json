@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "protocol_id": "context-specificity-v2",
+  "protocol_sha256": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+  "endpoint": "published_element_specificity_score",
+  "semantic_endpoint_acceptance": true,
+  "required_workbooks": {
+    "Table-S7-joint-design.xlsx": {
+      "role": "design_and_coordinate_metadata_only",
+      "sheet": "joint library",
+      "header_row": 2,
+      "headers": [
+        "name",
+        "category",
+        "chr.hg19",
+        "start.hg19",
+        "stop.hg19",
+        "str.hg19",
+        "chr.hg38",
+        "start.hg38",
+        "stop.hg38",
+        "str.hg38",
+        "230nt sequence (15nt 5' adaptor - 200nt element - 15nt 3' adaptor)"
+      ]
+    },
+    "Table-S9-folds-performance.xlsx": {
+      "role": "published_element_specificity_score_not_raw_reporter_activity",
+      "sheet": "Fold assignment, joint library",
+      "header_row": 1,
+      "headers": [
+        "Fold",
+        "Sequence ID",
+        "HepG2, Element Specificity Score",
+        "K562, Element Specificity Score",
+        "WTC11, Element Specificity Score"
+      ]
+    }
+  },
+  "schema_binding": {
+    "design": {
+      "sheet": "joint library",
+      "header_row_1based": 2,
+      "first_data_row_1based": 3,
+      "id_column": "name",
+      "category_column_audit_only": "category",
+      "chromosome_column": "chr.hg38",
+      "start_column": "start.hg38",
+      "end_column": "stop.hg38",
+      "strand_column": "str.hg38",
+      "sequence_column": "230nt sequence (15nt 5' adaptor - 200nt element - 15nt 3' adaptor)",
+      "all_header_columns": [
+        "name",
+        "category",
+        "chr.hg19",
+        "start.hg19",
+        "stop.hg19",
+        "str.hg19",
+        "chr.hg38",
+        "start.hg38",
+        "stop.hg38",
+        "str.hg38",
+        "230nt sequence (15nt 5' adaptor - 200nt element - 15nt 3' adaptor)"
+      ]
+    },
+    "scores": {
+      "sheet": "Fold assignment, joint library",
+      "header_row_1based": 1,
+      "first_data_row_1based": 2,
+      "id_column": "Sequence ID",
+      "ignored_source_fold_column": "Fold",
+      "context_columns": {
+        "HepG2": "HepG2, Element Specificity Score",
+        "K562": "K562, Element Specificity Score",
+        "WTC11": "WTC11, Element Specificity Score"
+      }
+    },
+    "id_join": "Exact case-sensitive S9 Sequence ID == S7 name, one-to-one. No suffix, prefix, fuzzy or score-dependent transform; _F fallback was unnecessary in the metadata audit and is not permitted in v2. Preserve both source IDs and source row references.",
+    "id_only_audit_before_ess_inspection": {
+      "design_nonempty_unique_ids": 60000,
+      "score_nonempty_unique_ids": 55338,
+      "score_exact_unique_design_matches": 55338,
+      "duplicate_design_ids": 0,
+      "duplicate_score_ids": 0,
+      "suffix_F_matches": 0,
+      "unresolved_ids": 0,
+      "competing_exact_or_forward_or_reverse_matches": 0,
+      "score_sheet_dimension": "A1:E59108",
+      "score_sheet_actual_xml_row_elements": 55340,
+      "score_sheet_nonempty_id_cells": 55338,
+      "note": "Worksheet maximum row is not a record count. Count actual nonempty IDs; retain blank/gap audit. Protocol author inspected only ID columns, never ESS numeric values."
+    },
+    "sequence_core": "Require full design sequence length230 and exact ACGT alphabet; 5prime adapter=sequence[0:15], feature/reference element=sequence[15:215] length200, 3prime adapter=sequence[215:230]. These are zero-based slices from the explicit header. Retain full230DNA and all3hashes; do not infer a new core by matching activity or reference.",
+    "reference_contract": "Use hg38/GRCh38 source intervals as verified zero-based half-open, require stop-start==200, nonmissing coordinates and source strand+or-. The core200 must match exactly the pinned hg38 interval in declared source orientation (reverse-complement for minus). No offset search, silent strand correction, liftover gap rescue, sequence replacement or score-dependent acceptance. Invalid/missing/mismatched rows are excluded with reasons, all retained in audit. All verified declared hg38 contigs, including alternate contigs, are eligible; do not impose an unstated primary-chromosome-only filter. Any one-to-one contig naming alias requires a recorded reference metadata mapping.",
+    "reference_receipts": "Pin authoritative hg38 reference URL, accession/version/checksum and retrieval receipt before model fitting; independently validate every admitted core, interval and declared strand. Reference retrieval is design validation, not new outcome acquisition.",
+    "known_design_metadata_before_ess_inspection": {
+      "design_rows": 60000,
+      "full_sequence_length_230": 60000,
+      "hg38_span_200": 59319,
+      "hg38_non200_spans": 11,
+      "hg38_missing_coordinates": 670,
+      "note": "Known metadata exclusions: missing/non200 intervals cannot be rescued in v2. Source categories and activity selection bins are audit metadata only."
+    },
+    "id_audit_receipt": {
+      "path": "datasets/context-panel/raw/id-only-join-audit.json",
+      "sha256": "1035d86ab6eaa97d01dd829f4298fcefb98b4a65eb2bc0a92f4b536bc6402ac2"
+    }
+  },
+  "source_semantic_evidence": {
+    "endpoint_id": "published-three-context-element-specificity-score",
+    "required_measurement": "Use exactly the three published Element Specificity Score columns in frozen S9, unchanged. They are derived experimental activity specificity scores, not raw activity or source CNN predictions.",
+    "formula": "For element i and context c, source z_ic=zscore_across_source_elements(raw_mean_log2_RNA_DNA_ic) within cell context; published ESS_ic=z_ic-(z_iHepG2+z_iK562+z_iWTC11)/3. Use supplied ESS, do not reconstruct zscores, raw activities, source means or source SDs.",
+    "methods_heading": "Calculation of element specificity scores",
+    "methods_quote": "To compute element specificity scores (ESSs) using activity scores from the joint library, log2(RNA/DNA) values from each cell line were first z-score-transformed. Then an ESS for each element was computed by subtracting the element\u2019s score in each cell type by the mean element score across cell types. A full table of ESSs is provided (Supplementary Table 10).",
+    "methods_source": {
+      "doi": "10.1038/s41586-024-08430-9",
+      "pmcid": "PMC11903340",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11903340/fullTextXML",
+      "sha256": "41a554f31ea67adb1ce983b05ed9194e8fa1596bd4e6d2208df1854de9f33320",
+      "size_bytes": 233913
+    },
+    "units": "dimensionless published ESS; MSE in squared ESS units, MAE in ESS units; not log2 raw-activity units",
+    "source_normalization": "Whole-source-panel per-cell zscoring and per-element across-cell centering are part of the published target, not our training-only transformation. This construction includes information from future test elements. Exact source normalization population size and SD ddof are not specified by the cited paragraph or reconstructed here. Evaluate the fixed published target; no prospective or leakage-free target-preprocessing claim.",
+    "no_additional_target_normalization": true,
+    "forbidden_labels": [
+      "source model predictions",
+      "CNN predictions",
+      "prediction.N columns",
+      "ensemble predictions",
+      "raw activity inferred from ESS",
+      "design activity bins",
+      "a recomputed or forcibly zero-sum ESS"
+    ],
+    "fail_closed": true,
+    "schema_binding": "Exactly bind the frozen worksheet/ID/ESS headers and S7 sequence/coordinate fields below, retain source-cell provenance and raw numeric representation where possible. No alias search, column selection by outcomes, source prediction substitution, recomputation or target change.",
+    "replicates": "ESS is a source-provided aggregate/transform. Replicate-level independence is not claimed, and unavailable raw replicates are neither reconstructed nor counted as extra observations."
+  },
+  "source_roles": {
+    "S7": "design_sequence_coordinates",
+    "S9": "published_ESS_not_rawactivity",
+    "source_CNN_predictions": "not_consumed_not_empirical"
+  },
+  "source_version_caveat": "Zenodo10558183 is preprint-associated: S7 joint design and S9 folds/performance are named and hashed exactly; do not claim S9 is byte-identical to final-paper Supplementary Table10 or contains every final-paper element. Final-paper methods explain the ESS endpoint class; use the frozen source S9 values as published.",
+  "no_new_normalization": true,
+  "previous_v1_status": "blocked_missing_required_observed_activity_endpoint"
+}

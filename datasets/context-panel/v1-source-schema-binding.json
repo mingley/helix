@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "workbooks": {
+    "Table-S7-joint-design.xlsx": {
+      "role": "design_and_coordinate_metadata_only",
+      "sheet": "joint library",
+      "header_row": 2,
+      "headers": [
+        "name",
+        "category",
+        "chr.hg19",
+        "start.hg19",
+        "stop.hg19",
+        "str.hg19",
+        "chr.hg38",
+        "start.hg38",
+        "stop.hg38",
+        "str.hg38",
+        "230nt sequence (15nt 5' adaptor - 200nt element - 15nt 3' adaptor)"
+      ]
+    },
+    "Table-S9-folds-performance.xlsx": {
+      "role": "published_element_specificity_score_not_raw_reporter_activity",
+      "sheet": "Fold assignment, joint library",
+      "header_row": 1,
+      "headers": [
+        "Fold",
+        "Sequence ID",
+        "HepG2, Element Specificity Score",
+        "K562, Element Specificity Score",
+        "WTC11, Element Specificity Score"
+      ]
+    }
+  },
+  "v1_required_endpoint": "mean-of-three-median-normalized-log2-rna-dna-activity",
+  "v1_semantic_endpoint_acceptance": false,
+  "v1_failure_reasons": [
+    "S7 contains design and coordinate metadata without observed activity columns.",
+    "S9 labels each cell column Element Specificity Score, explicitly forbidden as a V1 observed activity label.",
+    "CNN prediction output cannot fill missing measurements."
+  ],
+  "no_ess_values_parsed_for_v1": true,
+  "core_extraction": {
+    "explicit_source_header": "230nt sequence (15nt 5' adaptor - 200nt element - 15nt 3' adaptor)",
+    "assayed_oligo_length": 230,
+    "left_adapter_bases": 15,
+    "genomic_core_bases": 200,
+    "right_adapter_bases": 15,
+    "python_slice": "sequence[15:215]"
+  },
+  "coordinate_binding": "Declared chr.hg38/start.hg38/stop.hg38; verify each 200nt core against independent hg38 with the unmodified declared interval. No coordinate searching or silent liftover.",
+  "parent_binding": "No separate parent field in S7; preserve stable design IDs and let ROOT-owned grouping establish documented unions.",
+  "input_receipt": {
+    "protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2",
+    "raw_acquisition_protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2",
+    "retrieval_receipt_sha256": "a44da011496b426f986169bd11086cd35560191f0255fb801cd448e18ea42460",
+    "sources": [
+      {
+        "file": "Table-S7-joint-design.xlsx",
+        "original_filename": "Table S7 - joint lib design.xlsx",
+        "url": "https://zenodo.org/api/records/10558183/files/Table%20S7%20-%20joint%20lib%20design.xlsx/content",
+        "retrieved_at": "2026-10-27T13:26:10.140096+00:00",
+        "http_status_or_reuse": 200,
+        "size_bytes": 8301566,
+        "declared_md5": "md5:5d9b71452e9648e8473edd74a4ae26fc",
+        "observed_md5": "5d9b71452e9648e8473edd74a4ae26fc",
+        "sha256": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5",
+        "md5_verified": true,
+        "protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2",
+        "independently_rechecked": {
+          "sha256": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5",
+          "md5": "5d9b71452e9648e8473edd74a4ae26fc",
+          "size_bytes": 8301566
+        }
+      },
+      {
+        "file": "Table-S9-folds-performance.xlsx",
+        "original_filename": "Table S9 - folds and performance.xlsx",
+        "url": "https://zenodo.org/api/records/10558183/files/Table%20S9%20-%20folds%20and%20performance.xlsx/content",
+        "retrieved_at": "2026-10-27T13:26:21.983546+00:00",
+        "http_status_or_reuse": 200,
+        "size_bytes": 3564742,
+        "declared_md5": "md5:ef967c8388d84da9ec81d22e11c868bd",
+        "observed_md5": "ef967c8388d84da9ec81d22e11c868bd",
+        "sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+        "md5_verified": true,
+        "protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2",
+        "independently_rechecked": {
+          "sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+          "md5": "ef967c8388d84da9ec81d22e11c868bd",
+          "size_bytes": 3564742
+        }
+      }
+    ]
+  }
+}

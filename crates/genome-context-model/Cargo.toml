@@ -1,0 +1,15 @@
+[package]
+name = "genome-context-model"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+sha2.workspace = true
+genome-regulatory = { path = "../genome-regulatory" }
+genome-research-stats = { path = "../genome-research-stats" }
+
+[lints]
+workspace = true

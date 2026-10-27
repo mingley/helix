@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "role": "lossless_repacking_of_design_only_v1_generated_artifact",
+  "original_name": "design-catalog.json",
+  "original_bytes": 86316311,
+  "original_sha256": "05ba3e0f6aad5c4b1dd147180621d75da32c37646fc7073efd006e3299b398ef",
+  "retained_file": "design-catalog-v1.json.gz",
+  "retained_bytes": 12522933,
+  "retained_sha256": "be7251ca9f7423130c875c7692246698cc0011d746cb0d4043bad2a3f6817d51",
+  "scientific_content_changed": false,
+  "reason": "Preserve the complete generated design-only attempt without an83MB trackedJSON file."
+}

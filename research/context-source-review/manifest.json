@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "retained_at": "2026-10-27T13:17:17.943033+00:00",
+  "phase": "metadata_only_before_new_outcome_acquisition",
+  "quantitative_outcome_tables_retrieved": false,
+  "sources": [
+    {
+      "file": "inoue2017-publication-metadata.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22A%20systematic%20comparison%20reveals%20substantial%20differences%20in%20chromosomal%20versus%20episomal%20encoding%20of%20enhancer%20activity%22&format=json&resultType=core",
+      "sha256": "09f94e42bb5b7852057871b8fac48666489ccd503955d3b88d770a9de429a297",
+      "role": "metadata_or_source_terms"
+    },
+    {
+      "file": "klein2020-publication-metadata.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22A%20systematic%20evaluation%20of%20the%20design%20and%20context%20dependencies%20of%20massively%20parallel%20reporter%20assays%22&format=json&resultType=core",
+      "sha256": "774fa17e0ac529f22d6bf19cbe77942cf929c5c2cbb54609e96a3ed1c080faac",
+      "role": "metadata_or_source_terms"
+    },
+    {
+      "file": "inoue2017-geo-series.soft",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83894&targ=self&form=text&view=brief",
+      "sha256": "b52957660fc3822a884a33d61540ede7e310e12fda6ca19c2b946cfa476d59f8",
+      "role": "metadata_or_source_terms"
+    },
+    {
+      "file": "klein2020-geo-series.soft",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE142696&targ=self&form=text&view=brief",
+      "sha256": "82e835ab59521ff148eea75160643b8b6b4199d55e000bc461334d6801b93773",
+      "role": "metadata_or_source_terms"
+    },
+    {
+      "file": "inoue2017-geo-sample-metadata.soft",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83894&targ=gsm&form=text&view=brief",
+      "sha256": "e27f47b0ad895a8629f5e33e642a2cdeec1c30eff03344c225d3bb6c8c5b9080",
+      "role": "metadata_or_source_terms"
+    },
+    {
+      "file": "klein2020-geo-sample-metadata.soft",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE142696&targ=gsm&form=text&view=brief",
+      "sha256": "df98038f430fb38945cbde50cf7e0c0b2e45da151690ea56d5dea9210a23e0bf",
+      "role": "metadata_or_source_terms"
+    },
+    {
+      "file": "inoue2017-geo-supplement-list.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE83nnn/GSE83894/suppl/",
+      "sha256": "edabf8beab613bd9ba6052904799148d90a85b7e483fedd6cd1139f8106c4b06",
+      "role": "metadata_or_source_terms"
+    },
+    {
+      "file": "klein2020-geo-supplement-list.html",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142696/suppl/",
+      "sha256": "7a8a8935ff5d289b1f1a7e874d08a8331707d5ae7d7d370d34f5b8d93fb8d3b6",
+      "role": "metadata_or_source_terms"
+    },
+    {
+      "file": "inoue2017-column-descriptions.tsv.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE83nnn/GSE83894/suppl/GSE83894_ColumnDescriptionsActivityRatios.tsv.gz",
+      "sha256": "608c6982f038baecf016f7ddc986b5ff40884830e56d68ea09e32d649c5daa36",
+      "role": "metadata_or_source_terms"
+    },
+    {
+      "file": "mpraflow-repository-metadata.json",
+      "url": "https://api.github.com/repos/shendurelab/MPRAflow",
+      "sha256": "3af1105987e5ad6c7572ca0b254b91c33169ce732b55bbd669f10ed7ed8dcfeb",
+      "role": "metadata_or_source_terms"
+    },
+    {
+      "file": "geo-info-disclaimer.html",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html",
+      "sha256": "b939098934e39a72d60721f8589dd69444243f2573bd538ab1ca29929f4b0ca0",
+      "role": "metadata_or_source_terms"
+    },
+    {
+      "file": "ncbi-policies.html",
+      "url": "https://www.ncbi.nlm.nih.gov/home/about/policies/",
+      "sha256": "8ad8f6f186ca51ec73a5fb8935ecfa17b8cbaad300b7025b381898ab72621869",
+      "role": "metadata_or_source_terms"
+    }
+  ],
+  "derived_metadata_files": {
+    "README.md": "4dba10e8a2d9d2e46d4d2e684f4484a6c5978eb9b2fbd7a37b5fe5f2ddbfaafa",
+    "candidate-review.json": "b614174cf90c71209eeed7744332b744f684c896e9feca7115798f2fea18e065",
+    "inoue2017-article-source-metadata.json": "d942e425e23f26300c7b81568b8188ffbf2223908ab55b9ab1d5d8ee24abff6b",
+    "inoue2017-sample-file-inventory.json": "f24130734a9b236626bc4d4dfc640d00a8a6b529d5b42f9e1681f2a536e70fed",
+    "inoue2018-corrigendum-article-source-metadata.json": "c1000893e0f032de3510595d8c0c2822de5bdead68658a15bc547cae51ad32ea",
+    "klein2020-article-source-metadata.json": "c9950b4555e5d9639c0b5a2f959baaa50622d53f04accaae1d65ed2343cb1fa7",
+    "klein2020-methods-source-metadata.json": "ff0134977073e3eaa07a437cc22bdfbd39cf8de98743be230c441c2ce9f8e783",
+    "klein2020-sample-file-inventory.json": "d077010f9592c248982c2dc53c543a6517b3cbb30dcea8f8871601b179a5f9a5"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "correction_status": "supersedes_dimension_as_record_count_only",
+  "corrected_at_utc": "2026-10-27T13:43:24.797816+00:00",
+  "scope": "Metadata and identifier accounting only; no ESS numeric value parsed or inspected. Reuses existing ID-only audit, does not reparse outcome cells.",
+  "error_acknowledgment": "The initial semantic receipt and summary used worksheet max_row minus the header as a record count. This counted dimension space, not populated records.",
+  "s9": {
+    "file": "Table-S9-folds-performance.xlsx",
+    "sheet": "Fold assignment, joint library",
+    "declared_excel_dimension": "A1:E59108",
+    "dimension_last_row": 59108,
+    "dimension_rows_below_header": 59107,
+    "stored_xml_row_elements_including_header": 55340,
+    "stored_xml_rows_after_header": 55339,
+    "blank_or_invalid_id_rows_after_header": 1,
+    "actual_nonempty_id_rows": 55338,
+    "unique_nonempty_ids": 55338,
+    "all_nonempty_ids_exactly_match_unique_s7_names": true,
+    "exact_s7_matches": 55338,
+    "suffix_mapping_required": false,
+    "unmatched_or_duplicate_ids": 0
+  },
+  "s7": {
+    "actual_unique_design_ids": 60000,
+    "duplicate_names": 0
+  },
+  "authoritative_id_audit": {
+    "path": "id-only-join-audit.json",
+    "sha256": "1035d86ab6eaa97d01dd829f4298fcefb98b4a65eb2bc0a92f4b536bc6402ac2",
+    "owner": "genome_context",
+    "independent_confirmation": "evaluation_protocol independently counted XML rows and sharedString IDs without parsing ESS numeric values"
+  },
+  "preserved_superseded_evidence": [
+    {
+      "path": "semantic-gate.json",
+      "sha256": "e6b47fae288d670716f3f3ff08ea89721128b65a2cd239bcb9accb8390578b11",
+      "superseded_claim": "label_candidate.data_rows=59107; dimension-derived estimate, not actual records",
+      "preservation": "Original bytes unchanged; v1 endpoint semantic failure remains valid"
+    },
+    {
+      "path": "schema-inspection.json",
+      "sha256": "639b7a11d39fad20a0cd616440d383c99049e5691893eaaa994906dc16f7dd75",
+      "clarification": "max_row59108 is accurate worksheet dimension, not populated record count",
+      "preservation": "Original bytes unchanged"
+    },
+    {
+      "path": "README-v1-count-claim-superseded.md",
+      "sha256": "a3d2a933f24c69826e5cd4d6be8f17f94c4ed7a85218f1a503bff95e96a30713",
+      "superseded_claim": "S9 provides59107 fold/sequence IDs"
+    }
+  ],
+  "unchanged_acquisition_provenance": {
+    "path": "retrieval.json",
+    "sha256": "a44da011496b426f986169bd11086cd35560191f0255fb801cd448e18ea42460",
+    "original_protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2",
+    "workbook_receipts": [
+      {
+        "file": "Table-S7-joint-design.xlsx",
+        "original_filename": "Table S7 - joint lib design.xlsx",
+        "url": "https://zenodo.org/api/records/10558183/files/Table%20S7%20-%20joint%20lib%20design.xlsx/content",
+        "retrieved_at": "2026-10-27T13:26:10.140096+00:00",
+        "http_status_or_reuse": 200,
+        "size_bytes": 8301566,
+        "declared_md5": "md5:5d9b71452e9648e8473edd74a4ae26fc",
+        "observed_md5": "5d9b71452e9648e8473edd74a4ae26fc",
+        "sha256": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5",
+        "md5_verified": true,
+        "protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2"
+      },
+      {
+        "file": "Table-S9-folds-performance.xlsx",
+        "original_filename": "Table S9 - folds and performance.xlsx",
+        "url": "https://zenodo.org/api/records/10558183/files/Table%20S9%20-%20folds%20and%20performance.xlsx/content",
+        "retrieved_at": "2026-10-27T13:26:21.983546+00:00",
+        "http_status_or_reuse": 200,
+        "size_bytes": 3564742,
+        "declared_md5": "md5:ef967c8388d84da9ec81d22e11c868bd",
+        "observed_md5": "ef967c8388d84da9ec81d22e11c868bd",
+        "sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+        "md5_verified": true,
+        "protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2"
+      }
+    ],
+    "source_license": "CC BY4.0, verified from author Zenodo record10558183",
+    "source_license_metadata_path": "research/context-source-alternatives/zenodo10558183-metadata.json",
+    "source_license_metadata_sha256": "3752aeec5463077fae96637a07ad734f9a7e29150e5cc73dcb937c386213f5e2"
+  },
+  "v1_gate_status": "blocked_required_empirical_endpoint_absent",
+  "v1_gate_interpretation": "Count correction does not repair v1: S9 contains ESS, not required observed mean log2RNA/DNA; no fitting or endpoint substitution occurred under v1."
+}

@@ -1,0 +1,118 @@
+{
+  "phase": "design_metadata_only_waiting_v2_ESS_freeze",
+  "headers": [
+    "name",
+    "category",
+    "chr.hg19",
+    "start.hg19",
+    "stop.hg19",
+    "str.hg19",
+    "chr.hg38",
+    "start.hg38",
+    "stop.hg38",
+    "str.hg38",
+    "230nt sequence (15nt 5' adaptor - 200nt element - 15nt 3' adaptor)"
+  ],
+  "rows": 60000,
+  "coordinate_spans": {
+    "200": 59319,
+    "202": 3,
+    "201": 6,
+    "210": 1,
+    "209": 1
+  },
+  "missing_coordinate_rows": 670,
+  "missing_coordinate_categories": {
+    "potential enhancer, HepG2": 13,
+    "promoter": 7,
+    "positive, synthetic control, HepG2 (Smith et al 2013)": 181,
+    "negative control, shuffled": 300,
+    "negative, synthetic control, HepG2 (Smith et al 2013)": 169
+  },
+  "sequence_lengths": {
+    "230": 60000
+  },
+  "strands": {
+    "+": 58137,
+    "-": 1193,
+    "NA": 670
+  },
+  "name_suffixes": {
+    "F": 18946,
+    "no_orientation_suffix": 41054
+  },
+  "five_prime_adaptors": {
+    "AGGACCGGATCAACT": 60000
+  },
+  "three_prime_adaptors": {
+    "CATTGCGTGAACCGA": 60000
+  },
+  "coordinate_examples": [
+    {
+      "id": "WTC11_seq1000_F",
+      "chromosome": 1,
+      "start": 19461350,
+      "end": 19461550,
+      "strand": "+",
+      "span": 200
+    },
+    {
+      "id": "WTC11_seq10002_F",
+      "chromosome": 10,
+      "start": 88965538,
+      "end": 88965738,
+      "strand": "+",
+      "span": 200
+    },
+    {
+      "id": "WTC11_seq10004_F",
+      "chromosome": 10,
+      "start": 89029900,
+      "end": 89030100,
+      "strand": "+",
+      "span": 200
+    }
+  ],
+  "missing_coordinate_examples": [
+    {
+      "id": "HepG2_DNasePeakNoPromoter16843",
+      "category": "potential enhancer, HepG2",
+      "chromosome": "NA",
+      "start": "NA",
+      "end": "NA",
+      "strand": "NA"
+    },
+    {
+      "id": "HepG2_DNasePeakNoPromoter19044",
+      "category": "potential enhancer, HepG2",
+      "chromosome": "NA",
+      "start": "NA",
+      "end": "NA",
+      "strand": "NA"
+    },
+    {
+      "id": "HepG2_DNasePeakNoPromoter24807",
+      "category": "potential enhancer, HepG2",
+      "chromosome": "NA",
+      "start": "NA",
+      "end": "NA",
+      "strand": "NA"
+    },
+    {
+      "id": "HepG2_DNasePeakNoPromoter29239",
+      "category": "potential enhancer, HepG2",
+      "chromosome": "NA",
+      "start": "NA",
+      "end": "NA",
+      "strand": "NA"
+    },
+    {
+      "id": "HepG2_DNasePeakNoPromoter3396",
+      "category": "potential enhancer, HepG2",
+      "chromosome": "NA",
+      "start": "NA",
+      "end": "NA",
+      "strand": "NA"
+    }
+  ]
+}

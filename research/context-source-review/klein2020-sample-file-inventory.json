@@ -1,0 +1,20 @@
+{
+  "source": "GEO sample brief metadata",
+  "sample_count": 98,
+  "supplementary_urls": [
+    "NONE",
+    "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4237nnn/GSM4237951/suppl/GSM4237951_ShortMedLong_sequences_coordinates.tsv.gz",
+    "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4237nnn/GSM4237951/suppl/GSM4237951_shortMedLong_assignments.tsv.gz",
+    "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4237nnn/GSM4237951/suppl/GSM4237951_shortMedLong_elements.fa.gz",
+    "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4237nnn/GSM4237952/suppl/GSM4237952_fwd_assignments.tsv.gz",
+    "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4237nnn/GSM4237952/suppl/GSM4237952_fwd_elements.fa.gz",
+    "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4237nnn/GSM4237953/suppl/GSM4237953_rev_assignments.tsv.gz",
+    "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4237nnn/GSM4237953/suppl/GSM4237953_rev_elements.fa.gz",
+    "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4237nnn/GSM4237954/suppl/GSM4237954_9MPRA_assignments.tsv.gz",
+    "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4237nnn/GSM4237954/suppl/GSM4237954_9MPRA_elements.fa.gz",
+    "ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4237nnn/GSM4237954/suppl/GSM4237954_9MPRA_sequences_coordinates.tsv.gz"
+  ],
+  "genome_build_declarations": [
+    "Genome_build: GRCh37"
+  ]
+}

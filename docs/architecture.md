@@ -1,8 +1,35 @@
 # Architecture and trust boundaries
 
-The current research workflow combines the original clinical demonstration with
-a reference mechanism engine, a curated genome-context atlas and a separately
-produced regulatory assay:
+The **17-crate workspace** keeps numerical reproduction and scientific endpoint
+validation as separate gates. The current matched-context benchmark has
+13.434% lower held-out MSE on its fixed published columns and passes all 243
+independent numerical comparison categories. Its source columns fail the
+published ESS formula, so scientific source-formula validation remains
+unresolved and the complete check exits 2. No target projection repairs that
+status.
+
+```mermaid
+flowchart TD
+    W[Frozen source workbooks and exact column binding] --> D[Exact IDs and 200-base core extraction]
+    D --> R[Declared-strand hg38 reference validation]
+    R --> G[Metadata-only root groups and guarded folds]
+    G --> M[Five fixed matched-context models]
+    M --> N[Independent feature, membership, fit and loss replay]
+    N --> P[Numerical comparison passes]
+    W --> S[Source formula and arithmetic checks]
+    S --> U[Formula fails; normalization history unresolved]
+    P --> O[Report retains distinct statuses]
+    U --> O
+```
+
+The next scientific goal is authoritative normalization/raw-activity provenance
+or independently compatible measurements. A weighted rank-two source relation
+narrows compatible arithmetic descriptions; it does not identify the producer's
+history. See the [study](../research/context-specificity-study.md) and
+[source-semantic review](../research/context-specificity-semantic-review.md).
+
+The HBB workflow combines the original clinical demonstration with a reference
+mechanism engine, a curated atlas and separately produced reporter evidence:
 
 ```mermaid
 flowchart TD
@@ -99,6 +126,35 @@ The process is trusted to follow API boundaries; shell-capable agents require
 separate capabilities and an inaccessible holdout store.
 
 ## Current boundaries
+
+The `helix context-study` path uses `genome-context-model` for a small generic
+matched-context ridge model. The crate enforces engineering contracts; the
+frozen scientific protocol separately binds source, endpoint, core, grouping,
+guard, features, penalty and interpretation. The CLI verifies the protocol and
+input commitments and retains all model fits, predictions, source-feature
+dumps, losses and resampling artifacts. The model does not choose a biological
+endpoint or establish one from a label's name.
+
+Independent Python reparses the raw workbooks, extracts source230[15:215]
+cores, validates every declared hg38 interval/strand, rebuilds group/guard
+membership and computes the features without importing Rust. All 55,276
+integer-count vectors and 1,824,108 feature fractions match exactly; 829,140
+model predictions and every required numerical comparison pass within frozen
+tolerances. Independent implementations remain computation checks rather than
+independent experimental measurements.
+
+Source ESS semantics have a separate failed/unresolved flag. The observed
+columns do not obey the cited zero-sum formula; fitting a weighted plane does
+not validate an undocumented normalization. Published values remain unchanged.
+The full-library source transformation also prevents a prospective,
+training-only target-preprocessing claim. Model training uses only its training
+features/labels, but cannot undo the source's panel-level processing.
+
+The complete `scripts/check_context_study.sh` replay produces numerical and
+source diagnostics before returning 2 for unresolved scientific validation.
+Direct model execution or an integrity audit must not be interpreted as passing
+that separate gate. The [context snapshot](../research/results/context-specificity-v2/README.md)
+retains the failed source interpretation alongside reproduced computation.
 
 The separate `helix study` path uses `genome-regulatory-data` to validate a
 metadata-selected, source-frozen cohort and `genome-regulatory` to execute the

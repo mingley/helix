@@ -1,0 +1,18 @@
+{
+  "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=7727316",
+  "retained_scope": "Concise method metadata only; no quantitative outcome file or table",
+  "sequence_family_ancestry": {
+    "factual_summary": "The 2020 study reused the existing 2440-sequence, 171bp candidate-enhancer array from Inoue2017. Nested 192/354/678bp contexts and both orientations share source sequence families.",
+    "short_source_quote": "We used an existing array library from Inoue et al. This library consists of 2,440 unique 171 bp candidate enhancer sequences, based on ChIP-seq peaks in HepG2."
+  },
+  "endpoint": {
+    "formula": "log2(RNA counts-per-million / DNA counts-per-million)",
+    "replicate_normalization": "The source scales RNA/DNA ratios by the median for each replicate before averaging, so contextwise processed outputs are not raw molecular abundances."
+  },
+  "replicates": {
+    "nine_designs": "Most named designs have three matched DNA/RNA replicate labels in GEO.",
+    "length_and_orientation": "ShortMedLong and forwardReverse have four DNA/RNA replicate labels.",
+    "source_exclusions": "First replicates of 5prime/3prime MT and 3prime/3prime MT were excluded during averaging after technical resequencing data were pooled. Individual-replicate files and stated exclusions must be preserved."
+  },
+  "inference_limit": "A length change alters input sequence, and an assay-design change can alter both chromosomal location and transcription/translation architecture. Do not label every design contrast as an isolated cellular-context intervention."
+}

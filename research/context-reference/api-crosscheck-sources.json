@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "assembly": "hg38",
+  "windows": [
+    {
+      "chromosome": "chr1",
+      "start0": 10000,
+      "end0": 10230,
+      "source_url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chr1;start=10000;end=10230",
+      "resolved_url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chr1;start=10000;end=10230",
+      "retrieved_at": "2026-10-27T13:23:46.845338+00:00",
+      "raw_file": "ucsc-api-chr1-10000-10230.json",
+      "raw_bytes": 381,
+      "raw_sha256": "5a6b9c89c1fa0714a4569b0b3544b46bfe2fc79e7720abd98207ac50a16c7f98"
+    },
+    {
+      "chromosome": "chr11",
+      "start0": 5225000,
+      "end0": 5227500,
+      "source_url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chr11;start=5225000;end=5227500",
+      "resolved_url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chr11;start=5225000;end=5227500",
+      "retrieved_at": "2026-10-27T13:23:46.926058+00:00",
+      "raw_file": "ucsc-api-chr11-5225000-5227500.json",
+      "raw_bytes": 2656,
+      "raw_sha256": "1199331cbe834e207445f3e141f7c28ccf91221f18ea03725cbc72d68088982d"
+    },
+    {
+      "chromosome": "chrX",
+      "start0": 10000000,
+      "end0": 10000200,
+      "source_url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chrX;start=10000000;end=10000200",
+      "resolved_url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chrX;start=10000000;end=10000200",
+      "retrieved_at": "2026-10-27T13:23:46.858892+00:00",
+      "raw_file": "ucsc-api-chrX-10000000-10000200.json",
+      "raw_bytes": 357,
+      "raw_sha256": "162ec7a6f49af3e96195c1fc955c0dd53ea80cf0a3aaf6f0c6a96588c96f7aaa"
+    },
+    {
+      "chromosome": "chrM",
+      "start0": 0,
+      "end0": 16569,
+      "source_url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chrM;start=0;end=16569",
+      "resolved_url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chrM;start=0;end=16569",
+      "retrieved_at": "2026-10-27T13:23:46.814058+00:00",
+      "raw_file": "ucsc-api-chrM-0-16569.json",
+      "raw_bytes": 16716,
+      "raw_sha256": "a1a66813ed710f745e032ba2ac4df685b50abdfee6e000402f12120bc26c2dec"
+    }
+  ]
+}

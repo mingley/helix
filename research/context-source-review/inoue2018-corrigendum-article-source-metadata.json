@@ -1,0 +1,16 @@
+{
+  "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=5932618",
+  "source_response_sha256": "8b1cc37ba41b2917082867bd6bde79bee9dc5c550aebbfe65f61113da3c2a833",
+  "source_response_bytes": 6337,
+  "retained_at": "2026-10-27T13:09:18.562270+00:00",
+  "licenses": [],
+  "availability_sections": [],
+  "links": [
+    {
+      "href": "http://genome.cshlp.org/site/misc/terms.xhtml",
+      "text": "Published by Cold Spring Harbor Laboratory Press"
+    }
+  ],
+  "retained_scope": "Article metadata, availability/code links, correction notice and license text only; no linked quantitative processed-data file retrieved.",
+  "notice_text": "Genome Res Genome Res 102 genores 9518021 GENOME Genome Research 1088-9051 1549-5469 Cold Spring Harbor Laboratory Press PMC5932618 PMC5932618.1 5932618 5932618 29717003 10.1101/gr.237321.118 1 Corrigenda Corrigendum: A systematic comparison reveals substantial differences in chromosomal versus episomal encoding of enhancer activity Inoue Fumitaka Kircher Martin Martin Beth Cooper Gregory M. Witten Daniela M. McManus Michael T. Ahituv Nadav Shendure Jay 5 2018 28 5 311950 766.3 766.3 01 05 2018 31 05 2018 01 06 2018 Published by Cold Spring Harbor Laboratory Press 2018 A systematic comparison reveals substantial differences in chromosomal versus episomal encoding of enhancer activity 27 1 1 2017 38 52 Genome Research PMC5204343 27831498 pmc-status-qastatus 0 pmc-status-live yes pmc-status-embargo no pmc-status-released yes pmc-prop-open-access no pmc-prop-olf no pmc-prop-manuscript no pmc-prop-legally-suppressed no pmc-prop-has-pdf yes pmc-prop-has-supplement no pmc-prop-pdf-only no pmc-prop-suppress-copyright no pmc-prop-is-real-version no pmc-prop-is-scanned-article no pmc-prop-preprint no pmc-prop-in-epmc yes"
+}

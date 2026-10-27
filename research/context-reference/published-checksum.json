@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "assembly": "hg38",
+  "source_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/md5sum.txt",
+  "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/md5sum.txt",
+  "retrieved_at": "2026-10-27T13:18:21.053397+00:00",
+  "raw_file": "ucsc-hg38-bigZips-md5sum.txt",
+  "raw_sha256": "25c4eb8362dcfb6e9bff1a6ab1b9d11fcf2334dce8a6984a091c59851f6e1145",
+  "raw_bytes": 720,
+  "reference_filename": "hg38.2bit",
+  "published_md5": "dcc3ea27079aa6dc3f9deccd7275e0f8",
+  "reference_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.2bit",
+  "checksum_scope": "UCSC-published MD5 verifies upstream bytes; local SHA256 is recorded separately"
+}

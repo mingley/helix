@@ -1,0 +1,40 @@
+{
+  "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5204343/fullTextXML",
+  "retrieved_at": "2026-10-27T13:06:00.557505+00:00",
+  "source_response_sha256": "a969b2241fa812c7f1dd0e78ca14c82941928c90ff6e4987ffe309ea93b272d6",
+  "source_response_bytes": 211165,
+  "retained_scope": "Article frontmatter/license, data/code availability and supplementary-file descriptions only; no quantitative outcome table was retrieved from linked data files.",
+  "pmcid": "PMC5204343",
+  "licenses": [
+    {
+      "text": "https://creativecommons.org/licenses/by-nc/4.0/ This article is distributed exclusively by Cold Spring Harbor Laboratory Press for the first six months after the full-issue publication date (see  http://genome.cshlp.org/site/misc/terms.xhtml ). After six months, it is available under a Creative Commons License (Attribution-NonCommercial 4.0 International), as described at  http://creativecommons.org/licenses/by-nc/4.0/ .",
+      "attributes": {
+        "license-type": "creative-commons",
+        "{http://www.w3.org/1999/xlink}href": "http://creativecommons.org/licenses/by-nc/4.0/"
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "GSE83894",
+      "text": "GSE83894"
+    }
+  ],
+  "availability_sections": [
+    {
+      "title": "Data access",
+      "text": "Data access The sequencing data, designed oligo sequences, and processed count and RNA/DNA ratio data including annotations have been submitted to the NCBI Gene Expression Omnibus (GEO;  http://www.ncbi.nlm.nih.gov/geo/ ) under accession number  GSE83894 ."
+    }
+  ],
+  "supplementary_descriptions": [
+    {
+      "attributes": {
+        "id": "PMC_1",
+        "content-type": "local-data",
+        "position": "float",
+        "orientation": "portrait"
+      },
+      "text": "Supplemental Material"
+    }
+  ]
+}

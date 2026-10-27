@@ -1,0 +1,25 @@
+{
+  "restriction": "Design and publicreference only; noESSoutcomesinspected",
+  "checks": [
+    {
+      "id": "WTC11_seq1000_F",
+      "chromosome": "chr1",
+      "start": 19461350,
+      "end": 19461550,
+      "strand": "+",
+      "core_sha256": "133efc2644338537d8614aea1c0216b27e8ecfbf6dd42cb4ef344ff7f4a8ccaf",
+      "zero_based_half_open_reference_matches": true,
+      "scope": "One metadata-selected first valid design row per orientation, not all-panel validation."
+    },
+    {
+      "id": "HepG2_DNasePeakNoPromoter12142",
+      "chromosome": "chr12",
+      "start": 20849,
+      "end": 21049,
+      "strand": "-",
+      "core_sha256": "01f4583dce1a161c9d0e07e410854f7563ef0e559d5127a3027d896316277c2a",
+      "zero_based_half_open_reference_matches": true,
+      "scope": "One metadata-selected first valid design row per orientation, not all-panel validation."
+    }
+  ]
+}

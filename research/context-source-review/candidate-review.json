@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "phase": "metadata_only_before_new_outcome_acquisition",
+  "outcome_access": "No processed RNA/DNA activity table, score matrix, raw count table, or library count archive was requested. Only publication/GEO metadata, a column-description file, source terms and repository metadata were retained.",
+  "preferred_next_source": "Agarwal2025 candidate reviewed by a separate agent; historical sources below are backups pending data-license scope and exact sequence-family reconciliation.",
+  "candidates": [
+    {
+      "id": "inoue2017",
+      "doi": "10.1101/gr.212092.116",
+      "pmid": "27831498",
+      "pmcid": "PMC5204343",
+      "geo": "GSE83894",
+      "bioproject": "PRJNA327312",
+      "design": "Same candidate liver enhancer sequences in integration-competent versus integration-defective lentiviral constructs in HepG2.",
+      "contexts": [
+        "MT: mutant integrase, nonintegrating/episomal",
+        "WT: wild-type integrase, integrating/chromosomal"
+      ],
+      "replicate_columns": [
+        "MT1",
+        "MT2",
+        "MT3",
+        "WT1",
+        "WT2",
+        "WT3"
+      ],
+      "endpoint_units": "Descriptor says RNA/DNA ratio, not an already log2-transformed effect. Inspect exact source processing before selecting a transformation.",
+      "design_sequence_url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2221nnn/GSM2221119/suppl/GSM2221119_liverEnhancer_design.tsv.gz",
+      "outcome_url_not_requested": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE83nnn/GSE83894/suppl/GSE83894_ActivityRatios.tsv.gz",
+      "outcome_size_listing": "1.5M compressed",
+      "descriptor_file": "inoue2017-column-descriptions.tsv.gz",
+      "descriptor_columns": 402,
+      "reference_build": "GRCh37/hg19 from sample metadata; do not relabel as GRCh38.",
+      "license_status": {
+        "article": "CC-BY-NC4.0 after initial embargo",
+        "data": "No explicit per-file CC0/CC-BY grant established in reviewed GEO metadata; NCBI hosting policy does not remove possible third-party rights."
+      },
+      "correction": {
+        "doi": "10.1101/gr.237321.118",
+        "pmcid": "PMC5932618",
+        "status": "Correction notice exists. Retrieved official PMC XML contains bibliographic/frontmatter only, so substantive correction remains unresolved."
+      },
+      "selection_limits": [
+        "Candidate enhancers are an annotated/selected HepG2 library, not random independent genomic families.",
+        "Barcodes and DNA/RNA samples are not independent sequence families.",
+        "Integration status changes a vector context; it is not proof of endogenous-locus behavior.",
+        "Exact design/Region join and all eligible matched families must be verified after protocol freeze."
+      ],
+      "metadata_declared_sequence_designs": {
+        "candidate_enhancers": 2236,
+        "controls": 204,
+        "total_designed_sequences": 2440
+      },
+      "independent_sequence_family_count": "Not established by metadata; exact DNA/RC, overlap and shared-design grouping required before counting independent units."
+    },
+    {
+      "id": "klein2020",
+      "doi": "10.1038/s41592-020-0965-y",
+      "pmid": "33046894",
+      "pmcid": "PMC7727316",
+      "geo": "GSE142696",
+      "bioproject": "PRJNA598033",
+      "design": "Nine MPRA designs in HepG2, with separate forward/reverse and nested192/354/678bp comparisons.",
+      "ancestry": "Explicit reuse of Inoue2017 existing2440 unique171bp candidate-enhancer array. Same sequence families cannot be counted as independent families across the two studies.",
+      "contexts": [
+        "5prime/5prime WT and MT",
+        "5prime/3prime WT and MT",
+        "3prime/3prime WT and MT",
+        "ORI",
+        "HSS",
+        "pGL4",
+        "Forward/Reverse",
+        "Short/Medium/Long"
+      ],
+      "replicates": "Most9MPRA samplegroups have3 matched DNA/RNA replicate labels; length andorientation series have4. Technicalresequencing is pooled, not new biological replication. Firstreplicate of5prime/3primeMT and3prime/3primeMT excluded bysource duringaveraging.",
+      "endpoint_units": "Source Methods describes log2(RNAcpm/DNAcpm) and replicate-specific median ratio scaling beforeaveraging. Exact processed aggregate transformation/order needs source-code/header reconciliation before protocol freeze.",
+      "reference_build": "GRCh37 from GEO samplemetadata.",
+      "files_not_requested": [
+        {
+          "role": "nine_design_mean_activity",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142696/suppl/GSE142696_9MPRA.ActivityRatios.tsv.gz",
+          "listing_size": "122K"
+        },
+        {
+          "role": "nine_design_individual_replicates",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142696/suppl/GSE142696_9MPRA.ActivityRatios.IndividualReps.tsv.gz",
+          "listing_size": "257K"
+        },
+        {
+          "role": "nine_design_sequence_map",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4237nnn/GSM4237954/suppl/GSM4237954_9MPRA_sequences_coordinates.tsv.gz"
+        },
+        {
+          "role": "nine_design_exact_sequences",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4237nnn/GSM4237954/suppl/GSM4237954_9MPRA_elements.fa.gz"
+        },
+        {
+          "role": "orientation_mean_activity",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142696/suppl/GSE142696_ForwardReverse.ActivityRatios.tsv.gz",
+          "listing_size": "40K"
+        },
+        {
+          "role": "orientation_sequence_map",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142696/suppl/GSE142696_ForwardReverse_sequences_coordinates.tsv.gz",
+          "listing_size": "185K"
+        },
+        {
+          "role": "length_mean_activity",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE142nnn/GSE142696/suppl/GSE142696_ShortMedLong.ActivityRatios.tsv.gz",
+          "listing_size": "48K"
+        },
+        {
+          "role": "length_sequence_map",
+          "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4237nnn/GSM4237951/suppl/GSM4237951_ShortMedLong_sequences_coordinates.tsv.gz"
+        }
+      ],
+      "code_repository": "https://github.com/shendurelab/MPRAflow",
+      "code_license": "Apache2.0 applies to software; not a processed-data grant.",
+      "license_status": {
+        "article_manuscript": "PMC license text permits academicresearch text/data mining subject to Nature conditions; it does not declare a general CC-BY grant.",
+        "data": "No separate permissive per-data license established from current metadata."
+      },
+      "selection_limits": [
+        "Different assaydesigns can change genomic integration, reporter architecture and RNA context together; do not isolate a single biological cause from each contrast.",
+        "Nestedlength versions and oppositeorientations belong to commonsequencefamilies.",
+        "GEO98samples are not98independent sequencefamilies.",
+        "Use source-statedreplicateexclusions; do not average excluded replicas back in without a new declared endpoint."
+      ],
+      "metadata_declared_sequence_designs": 2440,
+      "independent_sequence_family_count": "Not established by metadata; exact DNA/RC, overlap and shared-design grouping required before counting independent units."
+    }
+  ]
+}
