@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "input_study_manifest_sha256": "7b0a976d5fe9c8e776b5172d88c74a80751b799952c065ca6b0ace958e1cfd61",
+  "script_sha256": "5b8f728174c7e59539d749a886a1f5397968e16e1417083bc5052b3ba07fd640",
+  "arithmetic_artifacts_sha256": "bb7e32e4abecfe482dc0f7c7200d0582955d5bd0737cafed48698ed7403bc4a3",
+  "software": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5"
+  },
+  "files": {
+    "01-model-errors.svg": "1802ef6e0e9b554916b9551b2798e9f70f8e2fd4d2f0337a2513b3922dd647ab",
+    "01-model-errors.png": "165a5a8238fb468200c7cd83c55792a9a2bba3772562bf4c80b69e9d024f470b",
+    "model-errors.csv": "adb7c41221cd63c9d4395432c8d0dac3346a312f273f8aa0deb34c1aec1e5d57",
+    "02-context-contrasts.svg": "2eb5a6c322f0bb5ee18dda3496c1df2b3ebee89f182f2d019b04d181db57d8f0",
+    "02-context-contrasts.png": "a304acd1b426e9f71f1b778730ec2dd85325fe6a86541e5e3ab645c90e1c1b76",
+    "context-contrasts.csv": "6d5915f90de80a5f6ab19ec7e10e7723616650644e4a7732e8f35b46582aa4b5",
+    "03-fold-support.svg": "2898a1d2cb872086502aeb99ac393a9bdb76760bc44599e765e2ad913a1c4639",
+    "03-fold-support.png": "d052ea766f4ecf26df667c75083ed193a46f02f23bb75045a4a56aaa3f1be858",
+    "04-specificity-estimand.svg": "855d301652020c40d8062484d737c5045293048d33cf6e762171c9c34dbc5269",
+    "04-specificity-estimand.png": "fa887fdedc7185516db036a73fe6e634ec28f5433196a3fceeda650641de02e3",
+    "05-source-score-plane.svg": "488b9256c80f64500d424703f8a31ec87c9d1ce3d3283ef18b91a19da1b59f74",
+    "05-source-score-plane.png": "aadc47507c5d6a4260c251fc2e127d1b0021a8d95e9198138c5399a3efa0ee6c"
+  },
+  "scope": "Published ESS reanalysis. Whole-source-panel preprocessing includes future held-out elements; no raw activity or new biological mechanism claim."
+}

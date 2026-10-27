@@ -1,0 +1,503 @@
+{
+  "schema_version": 1,
+  "policy": "All attempted artifacts are byte-preserved as deduplicated content-addressed objects. Objects whose original encoding was compressed are stored unchanged; text objects are losslessly gzip-compressed. Initial Rust implementation source snapshots were not captured; inputs contain implementation file hashes. Final published code/run has a clean commit and complete independent snapshots. Historical narratives/acceptance flags may predate the source-formula failure and are not current acceptance.",
+  "attempts": [
+    {
+      "original_path": "runs/context-integration-v2-groups.json",
+      "kind": "metadata_grouping",
+      "reason": "Sequence-only groups computed before first model fit; unchanged frozen algorithm.",
+      "files": [
+        {
+          "name": "context-integration-v2-groups.json",
+          "original_bytes": 18339134,
+          "original_sha256": "333069c4ab41ed8ea6976b0bc50cd08de9a33118ab60d683533b7ee32a6f517f",
+          "object": "objects/333069c4ab41ed8ea6976b0bc50cd08de9a33118ab60d683533b7ee32a6f517f.gz",
+          "encoding": "gzip",
+          "stored_sha256": "958ee435ba38e2190f10702c9c607a862511f59451a34677a2b594b8a44ea4f6",
+          "stored_bytes": 1742155
+        }
+      ]
+    },
+    {
+      "original_path": "runs/context-integration-v2-rust",
+      "kind": "initial_rust",
+      "reason": "Numerical outcomes retained. First integrity audit failed bootstrap commitment due struct-key versus canonical-Value serialization; original code snapshot was not captured, file hashes were.",
+      "files": [
+        {
+          "name": "artifacts.json",
+          "original_bytes": 939,
+          "original_sha256": "e84a5c6a09109359ec4356bcc7b538bc1d76694f32f7b12d0c6af98dfb62557c",
+          "object": "objects/e84a5c6a09109359ec4356bcc7b538bc1d76694f32f7b12d0c6af98dfb62557c.gz",
+          "encoding": "gzip",
+          "stored_sha256": "55dd0652bb2c94b99c489ce0928f0ea35a97d3a9afc6580e7eab0f5d9f2468c4",
+          "stored_bytes": 562
+        },
+        {
+          "name": "findings.md",
+          "original_bytes": 1091,
+          "original_sha256": "4ad8ea617e542bde3d92d486d5ab64ff31f245370785c633e169a4af8eaad782",
+          "object": "objects/4ad8ea617e542bde3d92d486d5ab64ff31f245370785c633e169a4af8eaad782.gz",
+          "encoding": "gzip",
+          "stored_sha256": "afd84e24fb489d1079cf7d6cacf9c6f0d8f9cacbc20d5da17c1ce561faf6d209",
+          "stored_bytes": 624
+        },
+        {
+          "name": "grouping.json",
+          "original_bytes": 18339134,
+          "original_sha256": "fb651120a058ecdc1d6f55792c8a617dfe3231d8445ae5599ed9b831acafb0fa",
+          "object": "objects/fb651120a058ecdc1d6f55792c8a617dfe3231d8445ae5599ed9b831acafb0fa.gz",
+          "encoding": "gzip",
+          "stored_sha256": "62983a54e23edf33af877b8197d2fab094c0f53bee2f4732eda6a3707b224a02",
+          "stored_bytes": 1745673
+        },
+        {
+          "name": "inputs.json",
+          "original_bytes": 6606,
+          "original_sha256": "6634a1448b60fa621cf3489d2800cb2d5a4b297215388f4288974463e4737f7e",
+          "object": "objects/6634a1448b60fa621cf3489d2800cb2d5a4b297215388f4288974463e4737f7e.gz",
+          "encoding": "gzip",
+          "stored_sha256": "815900a6cee8a308c9040ed37a36ca8c6f7fd6d3d20bfde696ec16b0264967a9",
+          "stored_bytes": 2981
+        },
+        {
+          "name": "ledger.json",
+          "original_bytes": 46193615,
+          "original_sha256": "4824bf883daafc9bcd2c050f45c1550f69ef3bb8f8f6d09790daaf1bf6ccc4c9",
+          "object": "objects/4824bf883daafc9bcd2c050f45c1550f69ef3bb8f8f6d09790daaf1bf6ccc4c9.gz",
+          "encoding": "gzip",
+          "stored_sha256": "4da554e047d69f1869d6bcae02fe5d68697f89e61132aa28d67522d09460c500",
+          "stored_bytes": 4400248
+        },
+        {
+          "name": "protocol.json",
+          "original_bytes": 26240,
+          "original_sha256": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+          "object": "objects/8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec.gz",
+          "encoding": "gzip",
+          "stored_sha256": "3cf3e0e884d1618ec5ace4a6cd7d0f1703b28453cdf4b869da057baff9011558",
+          "stored_bytes": 9795
+        },
+        {
+          "name": "reference.json",
+          "original_bytes": 1537,
+          "original_sha256": "ee59a16c9dff58ba9e47f33459876f735e5936cc091e7cec54d796fa270edde5",
+          "object": "objects/ee59a16c9dff58ba9e47f33459876f735e5936cc091e7cec54d796fa270edde5.gz",
+          "encoding": "gzip",
+          "stored_sha256": "912c53b38837af912368d0c41bda7fbf03323602234e369a51a87de6a7c93344",
+          "stored_bytes": 633
+        },
+        {
+          "name": "resampling.json.gz",
+          "original_bytes": 11401770,
+          "original_sha256": "f418d1137ca2f7ae05058a1ad0bb3a44e2bf4fe54693b1ec96f3257afc01c31b",
+          "object": "objects/f418d1137ca2f7ae05058a1ad0bb3a44e2bf4fe54693b1ec96f3257afc01c31b.bin",
+          "encoding": "identity",
+          "stored_sha256": "f418d1137ca2f7ae05058a1ad0bb3a44e2bf4fe54693b1ec96f3257afc01c31b",
+          "stored_bytes": 11401770
+        },
+        {
+          "name": "source-manifest.json",
+          "original_bytes": 10844,
+          "original_sha256": "97f8375b7f0ed5dd02964fb339e3e8e7288c38f862120339a5df5533446432c8",
+          "object": "objects/97f8375b7f0ed5dd02964fb339e3e8e7288c38f862120339a5df5533446432c8.gz",
+          "encoding": "gzip",
+          "stored_sha256": "04b36fcfbb6bb2ad2fcbe7a21ef3770b822c85acddc9893899e1eae90a8f5f6a",
+          "stored_bytes": 4348
+        },
+        {
+          "name": "study.json.gz",
+          "original_bytes": 40078504,
+          "original_sha256": "5ebc4bce42b3bc8727614afa0831eedefbfb790dee9767828ddf321ac8683858",
+          "object": "objects/5ebc4bce42b3bc8727614afa0831eedefbfb790dee9767828ddf321ac8683858.bin",
+          "encoding": "identity",
+          "stored_sha256": "5ebc4bce42b3bc8727614afa0831eedefbfb790dee9767828ddf321ac8683858",
+          "stored_bytes": 40078504
+        },
+        {
+          "name": "summary.json",
+          "original_bytes": 22408159,
+          "original_sha256": "242114e16d97e7d97d7c686055dbde092e8444465dab72d81c47b6da5240102b",
+          "object": "objects/242114e16d97e7d97d7c686055dbde092e8444465dab72d81c47b6da5240102b.gz",
+          "encoding": "gzip",
+          "stored_sha256": "ca7174a70b9b5b6e287f2d84e582f338ca4e2d391dceaac118c3e376892896b8",
+          "stored_bytes": 2608630
+        }
+      ]
+    },
+    {
+      "original_path": "runs/context-integration-v2-rust-corrected",
+      "kind": "corrected_rust",
+      "reason": "All243 independent numeric/feature checks passed. Original audit passed; later strict byte-binding review found reserialized archived grouping differed from raw input commitment. Superseded by final clean run, without outcome/model changes.",
+      "files": [
+        {
+          "name": "artifacts.json",
+          "original_bytes": 1031,
+          "original_sha256": "f0d8b2e65e40bab9371fff2c6435b21b748290598b39f79ff7c7500b80d5bac6",
+          "object": "objects/f0d8b2e65e40bab9371fff2c6435b21b748290598b39f79ff7c7500b80d5bac6.gz",
+          "encoding": "gzip",
+          "stored_sha256": "522964440327728048c7be4f428091ec1b46fe2ce41068be47faa0f889f807ec",
+          "stored_bytes": 608
+        },
+        {
+          "name": "features.json.gz",
+          "original_bytes": 5015625,
+          "original_sha256": "1a9b093ca7d0ae56b19294a53c427f0d7d00ee4821ff09e03d8384d601b9417a",
+          "object": "objects/1a9b093ca7d0ae56b19294a53c427f0d7d00ee4821ff09e03d8384d601b9417a.bin",
+          "encoding": "identity",
+          "stored_sha256": "1a9b093ca7d0ae56b19294a53c427f0d7d00ee4821ff09e03d8384d601b9417a",
+          "stored_bytes": 5015625
+        },
+        {
+          "name": "findings.md",
+          "original_bytes": 1330,
+          "original_sha256": "b64fbb605f14fb1842e5f4ec73f5d3bae6605104b279f3cdda5219040bc6bc04",
+          "object": "objects/b64fbb605f14fb1842e5f4ec73f5d3bae6605104b279f3cdda5219040bc6bc04.gz",
+          "encoding": "gzip",
+          "stored_sha256": "62d6fc379444fb5e2eef240d21bb7b424a2d1017562c672adbe4b2f590cfb799",
+          "stored_bytes": 746
+        },
+        {
+          "name": "grouping.json",
+          "original_bytes": 18339134,
+          "original_sha256": "fb651120a058ecdc1d6f55792c8a617dfe3231d8445ae5599ed9b831acafb0fa",
+          "object": "objects/fb651120a058ecdc1d6f55792c8a617dfe3231d8445ae5599ed9b831acafb0fa.gz",
+          "encoding": "gzip",
+          "stored_sha256": "62983a54e23edf33af877b8197d2fab094c0f53bee2f4732eda6a3707b224a02",
+          "stored_bytes": 1745673
+        },
+        {
+          "name": "inputs.json",
+          "original_bytes": 6606,
+          "original_sha256": "3ca4e5f79cc817ed048c2b68b90c5f960af4ab5b3f04dfadb9b6ca923961a46d",
+          "object": "objects/3ca4e5f79cc817ed048c2b68b90c5f960af4ab5b3f04dfadb9b6ca923961a46d.gz",
+          "encoding": "gzip",
+          "stored_sha256": "d38c65c150d2ebf19e58ef9ebb0d487bb540031d6fca36fd0249102043ded471",
+          "stored_bytes": 2981
+        },
+        {
+          "name": "ledger.json",
+          "original_bytes": 46194175,
+          "original_sha256": "e430b601a918cd3e926a9a43eb933f16a1e5db6fd89ff0274a07e343c7e065b1",
+          "object": "objects/e430b601a918cd3e926a9a43eb933f16a1e5db6fd89ff0274a07e343c7e065b1.gz",
+          "encoding": "gzip",
+          "stored_sha256": "ee4142f81486deb044a4662b5a1cd8259b8a637bc50548949948abe45a03b7d9",
+          "stored_bytes": 4400537
+        },
+        {
+          "name": "protocol.json",
+          "original_bytes": 26240,
+          "original_sha256": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+          "object": "objects/8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec.gz",
+          "encoding": "gzip",
+          "stored_sha256": "3cf3e0e884d1618ec5ace4a6cd7d0f1703b28453cdf4b869da057baff9011558",
+          "stored_bytes": 9795
+        },
+        {
+          "name": "reference.json",
+          "original_bytes": 1537,
+          "original_sha256": "ee59a16c9dff58ba9e47f33459876f735e5936cc091e7cec54d796fa270edde5",
+          "object": "objects/ee59a16c9dff58ba9e47f33459876f735e5936cc091e7cec54d796fa270edde5.gz",
+          "encoding": "gzip",
+          "stored_sha256": "912c53b38837af912368d0c41bda7fbf03323602234e369a51a87de6a7c93344",
+          "stored_bytes": 633
+        },
+        {
+          "name": "resampling.json.gz",
+          "original_bytes": 11401770,
+          "original_sha256": "f418d1137ca2f7ae05058a1ad0bb3a44e2bf4fe54693b1ec96f3257afc01c31b",
+          "object": "objects/f418d1137ca2f7ae05058a1ad0bb3a44e2bf4fe54693b1ec96f3257afc01c31b.bin",
+          "encoding": "identity",
+          "stored_sha256": "f418d1137ca2f7ae05058a1ad0bb3a44e2bf4fe54693b1ec96f3257afc01c31b",
+          "stored_bytes": 11401770
+        },
+        {
+          "name": "source-manifest.json",
+          "original_bytes": 10844,
+          "original_sha256": "97f8375b7f0ed5dd02964fb339e3e8e7288c38f862120339a5df5533446432c8",
+          "object": "objects/97f8375b7f0ed5dd02964fb339e3e8e7288c38f862120339a5df5533446432c8.gz",
+          "encoding": "gzip",
+          "stored_sha256": "04b36fcfbb6bb2ad2fcbe7a21ef3770b822c85acddc9893899e1eae90a8f5f6a",
+          "stored_bytes": 4348
+        },
+        {
+          "name": "study.json.gz",
+          "original_bytes": 40078504,
+          "original_sha256": "5ebc4bce42b3bc8727614afa0831eedefbfb790dee9767828ddf321ac8683858",
+          "object": "objects/5ebc4bce42b3bc8727614afa0831eedefbfb790dee9767828ddf321ac8683858.bin",
+          "encoding": "identity",
+          "stored_sha256": "5ebc4bce42b3bc8727614afa0831eedefbfb790dee9767828ddf321ac8683858",
+          "stored_bytes": 40078504
+        },
+        {
+          "name": "summary.json",
+          "original_bytes": 22408631,
+          "original_sha256": "b1f0f6bf22c65afddefeb909ab2cd5023837c7d67ef1b19c0b17b1493cfbd8de",
+          "object": "objects/b1f0f6bf22c65afddefeb909ab2cd5023837c7d67ef1b19c0b17b1493cfbd8de.gz",
+          "encoding": "gzip",
+          "stored_sha256": "e00a159e0ec6e4ed3d21902d18506ee83f30c89a61e25fd7532e966a4c92cada",
+          "stored_bytes": 2608873
+        }
+      ]
+    },
+    {
+      "original_path": "runs/context-integration-v2-python",
+      "kind": "independent_fit",
+      "reason": "First full independent fit; exact implementation snapshot retained. Reader was pinned by reference evidence before later runs additionally snapshot it.",
+      "files": [
+        {
+          "name": "evaluation.json.gz",
+          "original_bytes": 21387592,
+          "original_sha256": "7df76fdb1bf33b78be83899134714dce380e7bc4c81efc687e76fd134591ed10",
+          "object": "objects/7df76fdb1bf33b78be83899134714dce380e7bc4c81efc687e76fd134591ed10.bin",
+          "encoding": "identity",
+          "stored_sha256": "7df76fdb1bf33b78be83899134714dce380e7bc4c81efc687e76fd134591ed10",
+          "stored_bytes": 21387592
+        },
+        {
+          "name": "group-input.json",
+          "original_bytes": 136,
+          "original_sha256": "2be7f79395768a073ebf306c245d84a0880db94d9fc372cb747dc5f7886be68c",
+          "object": "objects/2be7f79395768a073ebf306c245d84a0880db94d9fc372cb747dc5f7886be68c.gz",
+          "encoding": "gzip",
+          "stored_sha256": "14e0067c0750654d6324ea9dd9669a1e2e98e5f5c6fc074600a59f7a2a43596a",
+          "stored_bytes": 137
+        },
+        {
+          "name": "grouping-comparison.json",
+          "original_bytes": 181,
+          "original_sha256": "bd660495ecef73f1edf049d2f1e4067eb2eefc04a3a65f665b02488196cd89d5",
+          "object": "objects/bd660495ecef73f1edf049d2f1e4067eb2eefc04a3a65f665b02488196cd89d5.gz",
+          "encoding": "gzip",
+          "stored_sha256": "155370825294a811ff5fddaa04a535e2f4dc945a9d083835c4e38dd08e621260",
+          "stored_bytes": 158
+        },
+        {
+          "name": "grouping.json.gz",
+          "original_bytes": 1741554,
+          "original_sha256": "7f74e656d2d6cb0db931f741ae41df68d094bd9fd7790dd0682df3e042da4a90",
+          "object": "objects/7f74e656d2d6cb0db931f741ae41df68d094bd9fd7790dd0682df3e042da4a90.bin",
+          "encoding": "identity",
+          "stored_sha256": "7f74e656d2d6cb0db931f741ae41df68d094bd9fd7790dd0682df3e042da4a90",
+          "stored_bytes": 1741554
+        },
+        {
+          "name": "implementation.py",
+          "original_bytes": 72891,
+          "original_sha256": "9560a507b49d881e851a90328609c358d67b21e83b6b199227c24a69d318f6ae",
+          "object": "objects/9560a507b49d881e851a90328609c358d67b21e83b6b199227c24a69d318f6ae.gz",
+          "encoding": "gzip",
+          "stored_sha256": "0046f9f269fe16e9ea3a345b1439f1fdef6d73bfaebf8aa3b9551c71256ccff6",
+          "stored_bytes": 19045
+        },
+        {
+          "name": "inputs.json",
+          "original_bytes": 3124,
+          "original_sha256": "94a9fe33d4dbc97b469048a67f62fe42e839d60e0bcd4d67d7fc442c64a2b45e",
+          "object": "objects/94a9fe33d4dbc97b469048a67f62fe42e839d60e0bcd4d67d7fc442c64a2b45e.gz",
+          "encoding": "gzip",
+          "stored_sha256": "488c10b67e474d641696ffe2353fc9b1f181bd755a904ce96a4884d152253aef",
+          "stored_bytes": 1618
+        },
+        {
+          "name": "manifest.json",
+          "original_bytes": 1210,
+          "original_sha256": "01c40f44087702902ac3c81b5f1f713f5d598f9bb8305c47905a8b09ad6787e7",
+          "object": "objects/01c40f44087702902ac3c81b5f1f713f5d598f9bb8305c47905a8b09ad6787e7.gz",
+          "encoding": "gzip",
+          "stored_sha256": "07fb11d83a58187877e0fbb8b09e178ed608554f3ae55df51a52922bcd549920",
+          "stored_bytes": 704
+        },
+        {
+          "name": "resampling.json.gz",
+          "original_bytes": 12317218,
+          "original_sha256": "57f169ff86b19f4952cd0c0395cff52532e18a43fe2c4b0b47a6daf381538953",
+          "object": "objects/57f169ff86b19f4952cd0c0395cff52532e18a43fe2c4b0b47a6daf381538953.bin",
+          "encoding": "identity",
+          "stored_sha256": "57f169ff86b19f4952cd0c0395cff52532e18a43fe2c4b0b47a6daf381538953",
+          "stored_bytes": 12317218
+        },
+        {
+          "name": "source-records.json.gz",
+          "original_bytes": 8135169,
+          "original_sha256": "928943bf1bb3426dd3182377cfbf37df42adb65ab6f8e5d337d5cc50209a2db6",
+          "object": "objects/928943bf1bb3426dd3182377cfbf37df42adb65ab6f8e5d337d5cc50209a2db6.bin",
+          "encoding": "identity",
+          "stored_sha256": "928943bf1bb3426dd3182377cfbf37df42adb65ab6f8e5d337d5cc50209a2db6",
+          "stored_bytes": 8135169
+        },
+        {
+          "name": "source-verification.json",
+          "original_bytes": 373162,
+          "original_sha256": "bf8ff8b6e4e11d442844508d181bb79bc38e17bc7da872a368fdbd1e66cbcd04",
+          "object": "objects/bf8ff8b6e4e11d442844508d181bb79bc38e17bc7da872a368fdbd1e66cbcd04.gz",
+          "encoding": "gzip",
+          "stored_sha256": "5b4a24b37a2560abae7c87a49821aa11aa4a290a7a108947e2749432b279e052",
+          "stored_bytes": 29434
+        },
+        {
+          "name": "status.json",
+          "original_bytes": 284,
+          "original_sha256": "759d011155798ea835e29bbddd3e85a48d227a318e00496278db24c3782b0914",
+          "object": "objects/759d011155798ea835e29bbddd3e85a48d227a318e00496278db24c3782b0914.gz",
+          "encoding": "gzip",
+          "stored_sha256": "0750d57108760bf9468f058a23f69a27640e159f32bad05adc50c4959db3cd0d",
+          "stored_bytes": 216
+        },
+        {
+          "name": "summary.json",
+          "original_bytes": 4372,
+          "original_sha256": "8a1a3aa031c9b82981b5a71cbc083e452a8e278a7191802f95c17409e856b7f6",
+          "object": "objects/8a1a3aa031c9b82981b5a71cbc083e452a8e278a7191802f95c17409e856b7f6.gz",
+          "encoding": "gzip",
+          "stored_sha256": "451e3a94e0e1d644cdf1f282c9ad2f34690109fccf868484f32b5e166b12a113",
+          "stored_bytes": 1270
+        }
+      ]
+    },
+    {
+      "original_path": "runs/context-integration-v2-comparison",
+      "kind": "initial_comparison",
+      "reason": "Initial prediction/error/control match before full raw-feature comparison.",
+      "files": [
+        {
+          "name": "comparison.json",
+          "original_bytes": 46904,
+          "original_sha256": "c527eb09b5f115fb6a822f54267b5162dd5425b1847220e9f3e5663e2f496393",
+          "object": "objects/c527eb09b5f115fb6a822f54267b5162dd5425b1847220e9f3e5663e2f496393.gz",
+          "encoding": "gzip",
+          "stored_sha256": "bd3963a92b9ea4e647b88ffee7eb852b86c18ec581050c44149c6ae9a0350736",
+          "stored_bytes": 4062
+        },
+        {
+          "name": "implementation.py",
+          "original_bytes": 92867,
+          "original_sha256": "f880c5f44edae070ff94dfc80d07d2fbb244b77a3a0bbc9cfe2e169e928fea44",
+          "object": "objects/f880c5f44edae070ff94dfc80d07d2fbb244b77a3a0bbc9cfe2e169e928fea44.gz",
+          "encoding": "gzip",
+          "stored_sha256": "7522a56cc72a9eeb22ba90e48abce76eceec80f0727def4b601706cb89741b63",
+          "stored_bytes": 22994
+        },
+        {
+          "name": "manifest.json",
+          "original_bytes": 316,
+          "original_sha256": "26f92f8f63d70cc03e86eee703334eafdca5b234d4bfe17985fa8f9a21b8e9fa",
+          "object": "objects/26f92f8f63d70cc03e86eee703334eafdca5b234d4bfe17985fa8f9a21b8e9fa.gz",
+          "encoding": "gzip",
+          "stored_sha256": "c538ecfa0ac7a4cc9ff73c31e4acd55f5d4b866810e36e85e1cb7cee954514f0",
+          "stored_bytes": 243
+        }
+      ]
+    },
+    {
+      "original_path": "runs/context-integration-v2-comparison-corrected",
+      "kind": "corrected_comparison",
+      "reason": "All243 exact/numeric checks match; source formula remains unresolved.",
+      "files": [
+        {
+          "name": "comparison.json",
+          "original_bytes": 48808,
+          "original_sha256": "b294cf162281fedb31bd0ad84468eb7dab863e50366d27884134c4cd77028469",
+          "object": "objects/b294cf162281fedb31bd0ad84468eb7dab863e50366d27884134c4cd77028469.gz",
+          "encoding": "gzip",
+          "stored_sha256": "2c9f7d6aba3ea2f6b6af084f90a86b1a6f360c8a2a6fc785b7800a188b6b7d35",
+          "stored_bytes": 4433
+        },
+        {
+          "name": "implementation.py",
+          "original_bytes": 100165,
+          "original_sha256": "90424f6dbf437c7b16fba08e5ef46627a357585fc4ab73dfac38969dd16d630b",
+          "object": "objects/90424f6dbf437c7b16fba08e5ef46627a357585fc4ab73dfac38969dd16d630b.gz",
+          "encoding": "gzip",
+          "stored_sha256": "0c0c1323f93eb609dcad5800189f7bdc17a6343e40e390c7ffd0b78491698367",
+          "stored_bytes": 24772
+        },
+        {
+          "name": "manifest.json",
+          "original_bytes": 316,
+          "original_sha256": "de5f4062ba6bdc0fdf19bda1016b83c3abd90706cfb7704fe201bba248d3129b",
+          "object": "objects/de5f4062ba6bdc0fdf19bda1016b83c3abd90706cfb7704fe201bba248d3129b.gz",
+          "encoding": "gzip",
+          "stored_sha256": "02c0e69af3306c5387571ef1b7cd04e7e873aa066f8ce9e02022abbc772f3eda",
+          "stored_bytes": 244
+        }
+      ]
+    },
+    {
+      "original_path": "runs/context-integration-v2-endpoint-audit",
+      "kind": "exact_source_audit",
+      "reason": "Independent exact-decimal source-formula discrepancy; no target transformation.",
+      "files": [
+        {
+          "name": "endpoint-audit.json",
+          "original_bytes": 2885,
+          "original_sha256": "287d47c15f0771d571b8622f019808d32a1f5b2c9164568bf25c533741b91f56",
+          "object": "objects/287d47c15f0771d571b8622f019808d32a1f5b2c9164568bf25c533741b91f56.gz",
+          "encoding": "gzip",
+          "stored_sha256": "3efdefdbcc95b5de2eaa9a1bb560a86266facf3fa7789aa96bb2cbfd90cc482f",
+          "stored_bytes": 1377
+        },
+        {
+          "name": "implementation.py",
+          "original_bytes": 97970,
+          "original_sha256": "6964e1eb13ae0b4006a329828ee1cb09667d2a202c65369de6525fc563fbd589",
+          "object": "objects/6964e1eb13ae0b4006a329828ee1cb09667d2a202c65369de6525fc563fbd589.gz",
+          "encoding": "gzip",
+          "stored_sha256": "0a7299ceb769b92168a0c1cb8a70f446fa109794a05e7400338ffc5cb8cb50ba",
+          "stored_bytes": 24282
+        },
+        {
+          "name": "manifest.json",
+          "original_bytes": 320,
+          "original_sha256": "51520608461abcf6ad06e5f8dd3901eaa4a8e228ff314c61fd85278210392bbc",
+          "object": "objects/51520608461abcf6ad06e5f8dd3901eaa4a8e228ff314c61fd85278210392bbc.gz",
+          "encoding": "gzip",
+          "stored_sha256": "2aadc9d56079b473f5f07cdc290a8de2e5f1c12c33af23c58457f6f7688e45b1",
+          "stored_bytes": 248
+        }
+      ]
+    },
+    {
+      "original_path": "runs/context-source-arithmetic-audit-v1",
+      "kind": "source_arithmetic_original",
+      "reason": "Separately frozen post-hoc moment/SVD audit; derived weights never used in fitting.",
+      "files": [
+        {
+          "name": "artifacts.json",
+          "original_bytes": 386,
+          "original_sha256": "bb7e32e4abecfe482dc0f7c7200d0582955d5bd0737cafed48698ed7403bc4a3",
+          "object": "objects/bb7e32e4abecfe482dc0f7c7200d0582955d5bd0737cafed48698ed7403bc4a3.gz",
+          "encoding": "gzip",
+          "stored_sha256": "f9789d62dc2c8ff1435928c26643fe561fcfa3038500e482ebf895c6e7332186",
+          "stored_bytes": 247
+        },
+        {
+          "name": "implementation.py",
+          "original_bytes": 15689,
+          "original_sha256": "9a9779f80ea3002eab0ba904530cf1ec5c1bc3d7bb2f96155018d0369a3dbf42",
+          "object": "objects/9a9779f80ea3002eab0ba904530cf1ec5c1bc3d7bb2f96155018d0369a3dbf42.gz",
+          "encoding": "gzip",
+          "stored_sha256": "1b8e0ee3ed16a2d35b56b23c6b49c28c8c8ae33249660b8f4bcd85a6883f85bb",
+          "stored_bytes": 5279
+        },
+        {
+          "name": "protocol.json",
+          "original_bytes": 2586,
+          "original_sha256": "8f092c7ff075d7f455791e5a72f189781e611e3a6bda69b0fd9d8a7947990eae",
+          "object": "objects/8f092c7ff075d7f455791e5a72f189781e611e3a6bda69b0fd9d8a7947990eae.gz",
+          "encoding": "gzip",
+          "stored_sha256": "c7e7ad5682602937c6887c241472a382b5e826da5a42fe7ac60561d70a51d974",
+          "stored_bytes": 1373
+        },
+        {
+          "name": "summary.json",
+          "original_bytes": 12422,
+          "original_sha256": "acf227b68396006a2934aedae4f088f867f4cbcf937d4586668d20d0d589be3a",
+          "object": "objects/acf227b68396006a2934aedae4f088f867f4cbcf937d4586668d20d0d589be3a.gz",
+          "encoding": "gzip",
+          "stored_sha256": "cd5d9f6002ebcf860aca9b3517bc85921458010f07e523c15bf16521ef14679c",
+          "stored_bytes": 2948
+        }
+      ]
+    }
+  ]
+}

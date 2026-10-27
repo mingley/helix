@@ -1,0 +1,16 @@
+{
+  "schema_version": 4,
+  "files": {
+    "features.json.gz": "1a9b093ca7d0ae56b19294a53c427f0d7d00ee4821ff09e03d8384d601b9417a",
+    "findings.md": "b64fbb605f14fb1842e5f4ec73f5d3bae6605104b279f3cdda5219040bc6bc04",
+    "grouping.json": "333069c4ab41ed8ea6976b0bc50cd08de9a33118ab60d683533b7ee32a6f517f",
+    "inputs.json": "caa4a0ee2b12129310eaeade2407dd91b51d8e3946a1b97c898b1b717796647b",
+    "ledger.json": "5423feb94aa8526d90e3c29c12790aad24c3f086b243c80703e407a8ce8d6c68",
+    "protocol.json": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+    "reference.json": "65061df4cbbde3a44a9e2f28a6eda8c607ad62d3c232e635506cf95d7252aad8",
+    "resampling.json.gz": "f418d1137ca2f7ae05058a1ad0bb3a44e2bf4fe54693b1ec96f3257afc01c31b",
+    "source-manifest.json": "97f8375b7f0ed5dd02964fb339e3e8e7288c38f862120339a5df5533446432c8",
+    "study.json.gz": "5ebc4bce42b3bc8727614afa0831eedefbfb790dee9767828ddf321ac8683858",
+    "summary.json": "2659324534375c0fc104e1f6cdc286985d9e1dc0e78f0aa3f0eedd664da04da5"
+  }
+}

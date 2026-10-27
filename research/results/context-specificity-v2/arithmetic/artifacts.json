@@ -1,0 +1,14 @@
+{
+  "implementation.py": {
+    "bytes": 15689,
+    "sha256": "9a9779f80ea3002eab0ba904530cf1ec5c1bc3d7bb2f96155018d0369a3dbf42"
+  },
+  "protocol.json": {
+    "bytes": 2586,
+    "sha256": "8f092c7ff075d7f455791e5a72f189781e611e3a6bda69b0fd9d8a7947990eae"
+  },
+  "summary.json": {
+    "bytes": 12422,
+    "sha256": "acf227b68396006a2934aedae4f088f867f4cbcf937d4586668d20d0d589be3a"
+  }
+}

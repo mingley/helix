@@ -1,0 +1,400 @@
+{
+  "schema_version": 1,
+  "protocol_id": "context-specificity-v2",
+  "status": "frozen",
+  "frozen_at_utc": "2026-10-27T13:39:07.406725+00:00",
+  "study_status": "Retrospective evaluation of published panel-normalized specificity scores on a deliberately selected source panel, with known contexts; not raw activity, prospective target normalization, unseen-cell validation or a new source study.",
+  "goal": "Evaluate a fixed small DNA-composition model of published cell specificity under loci/homology grouping; primary question is context-specific slopes beyond additive offsets. This is not discovery that regulatory context matters.",
+  "source": {
+    "publication_doi": "10.1038/s41586-024-08430-9",
+    "repository_doi": "10.5281/zenodo.10558183",
+    "record_url": "https://zenodo.org/records/10558183",
+    "data_license": "CC-BY-4.0 as declared by the source Zenodo record; retain source attribution and license snapshot, fail closed if score-data reuse scope is contradicted.",
+    "source_version_caveat": "Zenodo10558183 is preprint-associated: S7 joint design and S9 folds/performance are named and hashed exactly; do not claim S9 is byte-identical to final-paper Supplementary Table10 or contains every final-paper element. Final-paper methods explain the ESS endpoint class; use the frozen source S9 values as published.",
+    "selection_caveat": "Joint panel deliberately selected using prior activity bins, with variable-promoter selection; not a random or unselected genomic sample. Fixed source panel, not a score-selected favorable subset.",
+    "contexts": [
+      "HepG2",
+      "K562",
+      "WTC11"
+    ],
+    "design_workbook": {
+      "key": "Table S7 - joint lib design.xlsx",
+      "url": "https://zenodo.org/api/records/10558183/files/Table%20S7%20-%20joint%20lib%20design.xlsx/content",
+      "size_bytes": 8301566,
+      "md5": "5d9b71452e9648e8473edd74a4ae26fc",
+      "local_path": "datasets/context-panel/raw/Table-S7-joint-design.xlsx",
+      "sha256": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5"
+    },
+    "acquisition_scope": "Only the listed S7 and S9 workbooks provide design/score data under this version. Authoritative hg38 reference data may be obtained with a source/checksum/coordinate validation receipt. No substitute source, additional outcome table or endpoint without separately versioned protocol.",
+    "folds_workbook": {
+      "key": "Table S9 - folds and performance.xlsx",
+      "url": "https://zenodo.org/api/records/10558183/files/Table%20S9%20-%20folds%20and%20performance.xlsx/content",
+      "size_bytes": 3564742,
+      "md5": "ef967c8388d84da9ec81d22e11c868bd",
+      "local_path": "datasets/context-panel/raw/Table-S9-folds-performance.xlsx",
+      "sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a"
+    },
+    "acquisition_order": "The two already acquired workbooks only; verify their frozen bytes before parsing ESS. No archive CNN prediction members are an eligible source or necessary for v2.",
+    "prior_work": "The source already analyzes and predicts ESS. A new result here would be a fixed small-model benchmark/control finding under strict grouping, not a novel biological finding that sequence and context interact."
+  },
+  "semantic_endpoint_contract": {
+    "endpoint_id": "published-three-context-element-specificity-score",
+    "required_measurement": "Use exactly the three published Element Specificity Score columns in frozen S9, unchanged. They are derived experimental activity specificity scores, not raw activity or source CNN predictions.",
+    "formula": "For element i and context c, source z_ic=zscore_across_source_elements(raw_mean_log2_RNA_DNA_ic) within cell context; published ESS_ic=z_ic-(z_iHepG2+z_iK562+z_iWTC11)/3. Use supplied ESS, do not reconstruct zscores, raw activities, source means or source SDs.",
+    "methods_heading": "Calculation of element specificity scores",
+    "methods_quote": "To compute element specificity scores (ESSs) using activity scores from the joint library, log2(RNA/DNA) values from each cell line were first z-score-transformed. Then an ESS for each element was computed by subtracting the element’s score in each cell type by the mean element score across cell types. A full table of ESSs is provided (Supplementary Table 10).",
+    "methods_source": {
+      "doi": "10.1038/s41586-024-08430-9",
+      "pmcid": "PMC11903340",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11903340/fullTextXML",
+      "sha256": "41a554f31ea67adb1ce983b05ed9194e8fa1596bd4e6d2208df1854de9f33320",
+      "size_bytes": 233913
+    },
+    "units": "dimensionless published ESS; MSE in squared ESS units, MAE in ESS units; not log2 raw-activity units",
+    "source_normalization": "Whole-source-panel per-cell zscoring and per-element across-cell centering are part of the published target, not our training-only transformation. This construction includes information from future test elements. Exact source normalization population size and SD ddof are not specified by the cited paragraph or reconstructed here. Evaluate the fixed published target; no prospective or leakage-free target-preprocessing claim.",
+    "no_additional_target_normalization": true,
+    "forbidden_labels": [
+      "source model predictions",
+      "CNN predictions",
+      "prediction.N columns",
+      "ensemble predictions",
+      "raw activity inferred from ESS",
+      "design activity bins",
+      "a recomputed or forcibly zero-sum ESS"
+    ],
+    "fail_closed": true,
+    "schema_binding": "Exactly bind the frozen worksheet/ID/ESS headers and S7 sequence/coordinate fields below, retain source-cell provenance and raw numeric representation where possible. No alias search, column selection by outcomes, source prediction substitution, recomputation or target change.",
+    "replicates": "ESS is a source-provided aggregate/transform. Replicate-level independence is not claimed, and unavailable raw replicates are neither reconstructed nor counted as extra observations."
+  },
+  "cohort": {
+    "primary": "All exact-joined S7/S9 source element IDs with finite published ESS in all3contexts, valid core200 DNA and exact declared-strand hg38 reference validation. No score or source category selection.",
+    "same_dna_across_contexts_required": true,
+    "complete_contexts_required": [
+      "HepG2",
+      "K562",
+      "WTC11"
+    ],
+    "sequence_alphabet": "uppercase ACGT only",
+    "minimum_sequence_length": 200,
+    "coordinates": "hg38 source fields interpreted as independently verified zero-based half-open; start>=0,end>start,end-start==200, nonmissing declared strand+or-.",
+    "reference_mapping": "Every admitted200nt core must exactly match authoritative hg38 at declared coordinates/strand; preserve source230nt construct and adapter hashes. Exclude missing/non200/invalid/unmatched design with reason; no source-coordinate rescue.",
+    "duplicates": "Preserve distinct source element IDs including exact/RC DNA duplicates, group them together and report duplicate multiplicities. Reject duplicate element/context observations from repeated files unless exact duplicate provenance is recorded and only one copy contributes. Different source IDs are not evidence of independent experiments.",
+    "exclusions": "No ESS magnitude/rank, pvalue, category/activity-bin, predictability, zero-sum residual or source-fold threshold. Exclude only missing/nonfinite ESS, incompletecontext, invalid/ambiguous DNA or failed fixed ID/reference eligibility; retain all excluded source rows and reasons. No raw count or replicate agreement filters.",
+    "missingness_report": "Keep S7-only, S9-only, blank/gap IDs, incomplete/nonfinite context and all reference/design exclusions separately, with counts percontext/category only as source audit. No imputation or favorable subset.",
+    "external_scope": "Known-cell prediction of fixed source-transformed specificity. Source-level whole-panel target construction includes test-element information; grouping protects model fitting but cannot undo source preprocessing or establish unseen-cell/cross-study generalization.",
+    "required_sequence_length": 200
+  },
+  "grouping": {
+    "algorithm_id": "context-sequence-supercomponents-v1",
+    "union_rules": [
+      "same documented parent/family ID",
+      "exact or reverse-complement DNA identity",
+      "positive-length same-assembly genomic overlap",
+      "any shared touched1000000bp genomic bin anchored0",
+      "equal-length global ungapped identity>=90percent in either orientation"
+    ],
+    "bin_bp": 1000000,
+    "bins": "For[start,end), floor(start/1000000)..floor((end-1)/1000000), inclusive; a crossing interval unions both bins.",
+    "hamming": "For length L, k=floor(L/10). Join iff min(Hamming(a,b),Hamming(a,reverse_complement(b)))<=k. Unequal-length, indel and partial homology not guaranteed.",
+    "candidate_generation": "Exact exhaustive pigeonhole index: k+1 nonempty segments with boundaries floor(j*L/(k+1)), j=0..k+1; index both orientations by(length,segment_index,exact_substring), deduplicate unordered source-element pairs, exact fullHamming verification. Equivalent exact implementation permitted with identical components.",
+    "max_unordered_candidate_pairs": 100000000,
+    "budget_policy": "Abort before fitting if more than100000000 distinct unordered candidate pairs or resource failure; never cap/skip buckets, discard sequences, approximate completeness or continue partial results. Retain abort receipt.",
+    "connected_components": "Transitive union of all rules; never split a component for fold balance.",
+    "component_id": "SHA256 UTF8 newline-joined lexicographically sorted stable source element IDs; reject IDs containing newline. Store member list and hash.",
+    "feasibility": {
+      "minimum_components": 100,
+      "maximum_largest_component_fraction": 0.4,
+      "failure": "Abort primary study; do not weaken grouping after outcomes."
+    },
+    "parent_identity_contract": "S7 has no explicit separate parent column. Union only documented source parent/family relations with retained evidence; absent such a relation use the element itself as parent. Do not infer common parent from broad category, cell prefix or outcome bins."
+  },
+  "outer_folds": {
+    "count": 5,
+    "algorithm": "Sort components by decreasing element count then ascending component_id; lexicographic sortedID list is final collision tiebreak. Greedily assign to fold with smallest current element count; foldindex0..4 breaks ties. All three contexts of each element stay together.",
+    "guard_bp": 10000,
+    "guard": "Exclude an entire training component if any of its intervals has same-chromosome distance<=10000bp to any test interval. Distance0 for overlap or adjacency, otherwise half-open gap. Preserve every test element and its three contexts.",
+    "feasibility": {
+      "minimum_training_fraction_of_all_primary_elements": 0.5,
+      "all_contexts_required": true,
+      "failure": "Abort if any guarded fold violates fraction or context coverage, or has no test elements; do not report a successful primary fit."
+    },
+    "ledger": "Persist preoutcome element/group/fold metadata, candidate count, all guard exclusions, sizes and minimum distances; source testfold labels are not our folds."
+  },
+  "features": {
+    "names": [
+      "rc3mer_AAA",
+      "rc3mer_AAC",
+      "rc3mer_AAG",
+      "rc3mer_AAT",
+      "rc3mer_ACA",
+      "rc3mer_ACC",
+      "rc3mer_ACG",
+      "rc3mer_ACT",
+      "rc3mer_AGA",
+      "rc3mer_AGC",
+      "rc3mer_AGG",
+      "rc3mer_ATA",
+      "rc3mer_ATC",
+      "rc3mer_ATG",
+      "rc3mer_CAA",
+      "rc3mer_CAC",
+      "rc3mer_CAG",
+      "rc3mer_CCA",
+      "rc3mer_CCC",
+      "rc3mer_CCG",
+      "rc3mer_CGA",
+      "rc3mer_CGC",
+      "rc3mer_CTA",
+      "rc3mer_CTC",
+      "rc3mer_GAA",
+      "rc3mer_GAC",
+      "rc3mer_GCA",
+      "rc3mer_GCC",
+      "rc3mer_GGA",
+      "rc3mer_GTA",
+      "rc3mer_TAA",
+      "rc3mer_TCA",
+      "gc_fraction"
+    ],
+    "definition": "On the200nt core only, count overlapping canonical3mers and divide integercounts once by198; GC=count(GorC)/200. Full230construct/adapters/reference coordinates/length are audit metadata, not predictors.",
+    "orientation": "Reverse-complement invariant insert composition; no vector/adaptor flanks or implicit extra sequence.",
+    "forbidden": [
+      "activity",
+      "source predictions",
+      "ESS",
+      "pvalues",
+      "barcodes",
+      "RNA/DNA counts",
+      "replicate outcomes",
+      "activity selection bins",
+      "clinical labels",
+      "test-derived statistics"
+    ],
+    "scaling": "One training-only transform from unique training element records, shared all contexts. Population SD ddof0; SD<=1e-12 ->scale1. No test sequence or response enters scaling."
+  },
+  "fit": {
+    "alpha": 10.0,
+    "intercept": "unpenalized training mean",
+    "response_scaling": "none beyond accepting published source ESS; do not force source rowmeans, contextmeans, sharedslopes or predictions tozero.",
+    "shared_objective": "n sequence-mean targets: sum_s(mean_c(y_sc)-m-z_s*beta)^2 +10*||beta||^2. Equivalent pooled n*C row objective uses C*10 penalty.",
+    "context_objective": "Each context n targets: sum_s(y_sc-m_c-z_s*beta_c)^2+10*||beta_c||^2.",
+    "solve": "(ZtransposeZ+10I)beta=Ztranspose centered_target; fixed ridge; no tuning or feature selection.",
+    "models": [
+      {
+        "id": "global_mean",
+        "prediction": "grand training mean m"
+      },
+      {
+        "id": "context_mean",
+        "prediction": "training context mean m_c"
+      },
+      {
+        "id": "shared_dna",
+        "prediction": "m+dot(z,beta); beta fitted once to per-element context-mean target"
+      },
+      {
+        "id": "additive_context",
+        "prediction": "m_c+dot(z,beta), direct contextmean-plus-dot arithmetic, exact same stored slope object asshared_dna"
+      },
+      {
+        "id": "independent_context",
+        "prediction": "m_c+dot(z,beta_c), fixed separate ridge response per observed context, common training design/scaler/factorization"
+      }
+    ],
+    "invariants": [
+      "shared/additive slopes identical",
+      "mean_c(beta_c)=shared beta within fixed numerical tolerance",
+      "mean_c(independent predictions)=mean_c(additive predictions) within fixed tolerance",
+      "test-only outcome perturbation leaves all fitted quantities unchanged"
+    ]
+  },
+  "evaluation": {
+    "primary_loss": "MSE in squared ESS units: mean across3contexts per eligible assayed element, then mean across elements; equal-element weighting, not equal-component weighting.",
+    "secondary_loss": "MAE in ESS units with the same weighting; all percontext/model losses; equal-component MSE as a fixed sensitivity only.",
+    "comparisons": [
+      {
+        "id": "context_beyond_shared_dna",
+        "baseline": "shared_dna",
+        "candidate": "additive_context",
+        "role": "fixed_diagnostic"
+      },
+      {
+        "id": "dna_beyond_context_means",
+        "baseline": "context_mean",
+        "candidate": "additive_context",
+        "role": "fixed_diagnostic"
+      },
+      {
+        "id": "sequence_context_interaction",
+        "baseline": "additive_context",
+        "candidate": "independent_context",
+        "role": "primary"
+      }
+    ],
+    "improvement_sign": "baselineMSE-candidateMSE; positive favors candidate. PrimaryAminusI only; retain AminusS andAminusC as fixed diagnostics, not co-primary because source normalization induces degeneracy.",
+    "pair_context_diagnostic": "All3contextpairs: observed y_c-y_d and predicted differences for additive andindependent models; report equal-element MSE/MAE for everypair, no bestpair selection.",
+    "pair_contrast_identity": "WithC=3andmatchedweights, MSE(additive)-MSE(independent)=(1/3)*mean_pair[contrastMSE(additive)-contrastMSE(independent)], within fixed tolerance.",
+    "rank_metrics": "No exact-rank endpoint or acceptance criterion. No rankepsilon, selected precision grid or rank-based success claim.",
+    "claims": "PrimaryIvsA tests a fixed small-model specificity relationship for knowncells on heldoutsequencegroups. SourceESSconstruction removes shared activity and couples targets; diagnostics are not independent experiments. No rawactivity, independent-study, unseen-cell, causalmechanism or novelbiology claim. The sourcealready predictsESS.",
+    "primary_comparison_id": "sequence_context_interaction",
+    "zero_prediction_audit": {
+      "id": "fixed_zero",
+      "prediction": 0.0,
+      "role": "fixed audit diagnostic; no fit, no model selection, report MSE/MAE with same element/context weights and eachcontext"
+    },
+    "zero_sum_audit": {
+      "expected": "ESS_iH+ESS_iK+ESS_iW approximately0 by source formula; source rounding/serialization may leave residuals. Source G/sharedsequence fits therefore expected nearzero and context/additive nearidentical. These are checks, not exact enforced target constraints.",
+      "report": [
+        "count",
+        "mean_signed_sum",
+        "mean_absolute_sum",
+        "root_mean_squared_sum",
+        "maximum_absolute_sum",
+        "count_abs_sum_gt1e-12",
+        "count_abs_sum_gt1e-8",
+        "count_abs_sum_gt1e-6",
+        "sourceprecision/roundingmetadata",
+        "global/shared fitmagnitudes and context/additive difference"
+      ],
+      "policy": "Use actual published values; never project tozero, snap fitted terms, discard rows byresidual or select a tolerance for favorable performance. Report all thresholds. If residuals contradict source semantics, investigate and disclose a semantic/audit failure; do not invent a new endpoint."
+    }
+  },
+  "resampling": {
+    "method": "Conditional paired connected-component bootstrap of fixed out-of-fold losses; no refitting.",
+    "replicates": 2000,
+    "seed_hex": "0x2026102702",
+    "seed_u64": 138077546242,
+    "prng": "SplitMix64 unsigned64 wrapping; state+=0x9E3779B97F4A7C15; z=(z xor(z>>30))*0xBF58476D1CE4E5B9; z=(z xor(z>>27))*0x94D049BB133111EB; output=z xor(z>>31). index=output modulo component_count.",
+    "unit_order": "component_id ascending",
+    "draws": "For each replicate draw K component IDs independently with replacement, K=number of components. Same index table for all3contrasts and reported5model loss summaries. Keep full member/context clusters.",
+    "statistic": "Pool per-element context-mean paired-loss sums across sampled components with multiplicity; divide by sampled element count. Uniform component sampling does not mean averaging component means. Primary remains equal-element.",
+    "interval": "Type7 empirical quantiles0.025and0.975, 95percent conditional percentile ranges; report all3without significance declaration or selectedinterval.",
+    "inference_limitations": "Conditional fixed-prediction panel resampling only, with sourcewholepanel-normalized targets. Ignores target-normalization uncertainty, refitting, residual component dependence and studyvariation. No calibrated significance, rawactivity or genomepopulation guarantee. Primarycontrastone; other2ranges are fixed diagnostics.",
+    "null_pvalues": "none; no hypothesis-significance or novelty claim from percentile ranges.",
+    "first_three_u64_hex_fixture": [
+      "311730414543f7d5",
+      "b0ee1155b9089752",
+      "fea23a01dc5344f1"
+    ]
+  },
+  "independent_verification": {
+    "exact": [
+      "input hashes and schema binding",
+      "eligibleID/context sets",
+      "sequence features as integercount+length fractions",
+      "component/fold membership",
+      "guard exclusions",
+      "PRNGdraws"
+    ],
+    "prediction_absolute_tolerance": 1e-07,
+    "metric_absolute_tolerance": 1e-08,
+    "failures": "Retain failed attempts; diagnose semantic bugs explicitly; do not silently widen tolerances or claim complete reproduction if any requiredcheckfails."
+  },
+  "required_outputs": [
+    "source/protocol/schema-binding hashes",
+    "range/CRC/integrity receipts",
+    "semantic endpoint acceptance or blocked-acquisition report",
+    "full cohort and exclusion/missingness ledger",
+    "group/fold/guard ledger and budget result",
+    "all5fits/OOFpredictions/losses",
+    "all3contrasts/common bootstrapdraws andranges",
+    "all3context-pair diagnostics/invariantchecks",
+    "equal-component sensitivity",
+    "independentimplementation comparison",
+    "source-selection/attempt ledger including negative results",
+    "v1blockedstatus and exposure disclosure",
+    "exactS7-S9 ID/source-row join audit",
+    "full230/core200/adapter/reference match receipts",
+    "sourcezero-sum residual and modeldegeneracy audits without forcedcorrection",
+    "fixedzeroaudit losses"
+  ],
+  "amendments": "Immutable after announcedSHA256. V2 changes endpoint from blockedv1 openly; it does not retroactively passv1. ExactfrozenESScolumns/IDjoin/core/referencecontract required. Any newsource, target, mapping transform, scoreselection, feature, grouprule or hyperparameter afterfreeze needs separatelyversioned protocol and outcomeexposure disclosure.",
+  "frozen_before_ess_numeric_value_inspection_and_model_fitting": true,
+  "previous_protocol": {
+    "path": "experiments/context-prediction-v1.json",
+    "sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2",
+    "status": "blocked at semantic source gate before any model fit",
+    "reason": "S7 is design-only; S9 supplies derived ESS, explicitly forbidden as a v1 raw-activity label; the specified observed raw-activity endpoint is unavailable. V1 remains unchanged."
+  },
+  "exposure_disclosure": {
+    "workbooks_already_acquired_under_v1": true,
+    "known_before_freeze": [
+      "workbook hashes and headers",
+      "source ID columns and exact-join counts",
+      "S7 DNA/core extraction and genomic coordinate metadata",
+      "published ESS methods/formula and prior source prediction work"
+    ],
+    "protocol_author_inspected_numeric_ess_values": false,
+    "model_fitting_before_freeze": false,
+    "scope": "Separate outcome-unseen specificity-analysis specification after source-availability failure, not an untouched payload or pristine prospective holdout."
+  },
+  "schema_binding": {
+    "design": {
+      "sheet": "joint library",
+      "header_row_1based": 2,
+      "first_data_row_1based": 3,
+      "id_column": "name",
+      "category_column_audit_only": "category",
+      "chromosome_column": "chr.hg38",
+      "start_column": "start.hg38",
+      "end_column": "stop.hg38",
+      "strand_column": "str.hg38",
+      "sequence_column": "230nt sequence (15nt 5' adaptor - 200nt element - 15nt 3' adaptor)",
+      "all_header_columns": [
+        "name",
+        "category",
+        "chr.hg19",
+        "start.hg19",
+        "stop.hg19",
+        "str.hg19",
+        "chr.hg38",
+        "start.hg38",
+        "stop.hg38",
+        "str.hg38",
+        "230nt sequence (15nt 5' adaptor - 200nt element - 15nt 3' adaptor)"
+      ]
+    },
+    "scores": {
+      "sheet": "Fold assignment, joint library",
+      "header_row_1based": 1,
+      "first_data_row_1based": 2,
+      "id_column": "Sequence ID",
+      "ignored_source_fold_column": "Fold",
+      "context_columns": {
+        "HepG2": "HepG2, Element Specificity Score",
+        "K562": "K562, Element Specificity Score",
+        "WTC11": "WTC11, Element Specificity Score"
+      }
+    },
+    "id_join": "Exact case-sensitive S9 Sequence ID == S7 name, one-to-one. No suffix, prefix, fuzzy or score-dependent transform; _F fallback was unnecessary in the metadata audit and is not permitted in v2. Preserve both source IDs and source row references.",
+    "id_only_audit_before_ess_inspection": {
+      "design_nonempty_unique_ids": 60000,
+      "score_nonempty_unique_ids": 55338,
+      "score_exact_unique_design_matches": 55338,
+      "duplicate_design_ids": 0,
+      "duplicate_score_ids": 0,
+      "suffix_F_matches": 0,
+      "unresolved_ids": 0,
+      "competing_exact_or_forward_or_reverse_matches": 0,
+      "score_sheet_dimension": "A1:E59108",
+      "score_sheet_actual_xml_row_elements": 55340,
+      "score_sheet_nonempty_id_cells": 55338,
+      "note": "Worksheet maximum row is not a record count. Count actual nonempty IDs; retain blank/gap audit. Protocol author inspected only ID columns, never ESS numeric values."
+    },
+    "sequence_core": "Require full design sequence length230 and exact ACGT alphabet; 5prime adapter=sequence[0:15], feature/reference element=sequence[15:215] length200, 3prime adapter=sequence[215:230]. These are zero-based slices from the explicit header. Retain full230DNA and all3hashes; do not infer a new core by matching activity or reference.",
+    "reference_contract": "Use hg38/GRCh38 source intervals as verified zero-based half-open, require stop-start==200, nonmissing coordinates and source strand+or-. The core200 must match exactly the pinned hg38 interval in declared source orientation (reverse-complement for minus). No offset search, silent strand correction, liftover gap rescue, sequence replacement or score-dependent acceptance. Invalid/missing/mismatched rows are excluded with reasons, all retained in audit. All verified declared hg38 contigs, including alternate contigs, are eligible; do not impose an unstated primary-chromosome-only filter. Any one-to-one contig naming alias requires a recorded reference metadata mapping.",
+    "reference_receipts": "Pin authoritative hg38 reference URL, accession/version/checksum and retrieval receipt before model fitting; independently validate every admitted core, interval and declared strand. Reference retrieval is design validation, not new outcome acquisition.",
+    "known_design_metadata_before_ess_inspection": {
+      "design_rows": 60000,
+      "full_sequence_length_230": 60000,
+      "hg38_span_200": 59319,
+      "hg38_non200_spans": 11,
+      "hg38_missing_coordinates": 670,
+      "note": "Known metadata exclusions: missing/non200 intervals cannot be rescued in v2. Source categories and activity selection bins are audit metadata only."
+    },
+    "id_audit_receipt": {
+      "path": "datasets/context-panel/raw/id-only-join-audit.json",
+      "sha256": "1035d86ab6eaa97d01dd829f4298fcefb98b4a65eb2bc0a92f4b536bc6402ac2"
+    }
+  }
+}

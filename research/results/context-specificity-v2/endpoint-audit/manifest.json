@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+  "files": {
+    "endpoint-audit.json": "96966d9f19f8ac20cb030b59237b14ae7c8a91ab2af6f74f45e466467cc7b21a",
+    "implementation.py": "fc49199cbcf3e0e37344c54a8cbda55b0de510d23ddd16401e8d0f8c1191deed"
+  }
+}

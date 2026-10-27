@@ -1,0 +1,337 @@
+{
+  "protocol_id": "context-source-arithmetic-audit-v1",
+  "diagnostic_status": "completed post-hoc arithmetic diagnostic; no target/model changes",
+  "scientific_semantic_status": "unresolved: published S9 columns fail the unweighted zero-sum formula; a fitted weighted plane cannot establish historical source preprocessing",
+  "historical_normalization_verified": false,
+  "hashes": {
+    "audit_protocol_sha256": "8f092c7ff075d7f455791e5a72f189781e611e3a6bda69b0fd9d8a7947990eae",
+    "parent_protocol_sha256": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+    "source_workbook_sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+    "panel_sha256": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3",
+    "implementation_sha256": "9a9779f80ea3002eab0ba904530cf1ec5c1bc3d7bb2f96155018d0369a3dbf42"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "source_schema": {
+    "worksheet": "Fold assignment, joint library",
+    "headers": [
+      "Fold",
+      "Sequence ID",
+      "HepG2, Element Specificity Score",
+      "K562, Element Specificity Score",
+      "WTC11, Element Specificity Score"
+    ],
+    "xml_row_elements": 55340,
+    "blank_id_rows_after_header": 1,
+    "finite_unique_source_ids": 55338,
+    "dimension": "A1:E59108"
+  },
+  "source_panel_maximum_absolute_difference": 0.0,
+  "all55338finite_exact_source_score_IDs": {
+    "element_count": 55338,
+    "moments_by_context": {
+      "HepG2": {
+        "mean": -8.006393665477355e-16,
+        "population_sd_ddof0": 0.9999909645766233,
+        "sample_sd_ddof1": 1.0000000000000009,
+        "minimum": -4.5922263191094,
+        "maximum": 7.42271142669972
+      },
+      "K562": {
+        "mean": -1.2681797255807167e-15,
+        "population_sd_ddof0": 0.9999909645766286,
+        "sample_sd_ddof1": 1.0000000000000062,
+        "minimum": -7.43194603784591,
+        "maximum": 8.14051330811972
+      },
+      "WTC11": {
+        "mean": -6.785786328417928e-16,
+        "population_sd_ddof0": 0.9999909645766245,
+        "sample_sd_ddof1": 1.000000000000002,
+        "minimum": -6.18060018765607,
+        "maximum": 7.54480425605043
+      }
+    },
+    "row_sum": {
+      "arithmetic": "float64 context-order sum; exact-decimal maximum witness also reported",
+      "mean": 2.670730583651394e-17,
+      "rms": 0.13944581704221604,
+      "maximum_absolute": 1.0987267147462898,
+      "minimum": -0.9209951215514498,
+      "maximum": 1.0987267147462898,
+      "absolute_type7_quantiles": {
+        "0.0": 1.87394833872645e-07,
+        "0.5": 0.0665196524344617,
+        "0.95": 0.29930983386979365,
+        "1.0": 1.0987267147462898
+      },
+      "absolute_exceedance_counts": {
+        "1e-12": 55338,
+        "1e-08": 55338,
+        "1e-06": 55337
+      }
+    },
+    "raw_svd": {
+      "matrix": "raw",
+      "singular_values_descending": [
+        300.6652534938205,
+        274.9752813281526,
+        4.816478471139772e-13
+      ],
+      "relative_rank_cutoff": 1e-10,
+      "absolute_rank_cutoff": 3.006652534938205e-08,
+      "numerical_rank": 2,
+      "smallest_right_singular_vector_unit_norm": [
+        0.5901919564488346,
+        0.5226931343901382,
+        0.6151953688093807
+      ],
+      "weight_normalization": "mean one; sum positive",
+      "weights_by_context": {
+        "HepG2": 1.0245911059643587,
+        "K562": 0.907411107171192,
+        "WTC11": 1.0679977868644497
+      },
+      "all_weights_strictly_positive": true,
+      "minimum_weight": 0.907411107171192,
+      "maximum_weight": 1.0679977868644497,
+      "analyzed_matrix_weighted_residual": {
+        "mean": 2.995790045634867e-17,
+        "rms": 3.5497438873700546e-15,
+        "maximum_absolute": 3.0546849657068494e-14,
+        "minimum": -3.033952655099836e-14,
+        "maximum": 3.0546849657068494e-14
+      },
+      "raw_matrix_weighted_residual": {
+        "mean": 2.995790045634867e-17,
+        "rms": 3.5497438873700546e-15,
+        "maximum_absolute": 3.0546849657068494e-14,
+        "minimum": -3.033952655099836e-14,
+        "maximum": 3.0546849657068494e-14
+      },
+      "column_mean_dot_weights": -2.6958088210195433e-15,
+      "interpretation": "Forensic fitted linear constraint only; no identified historical transform.",
+      "exact_witness_raw_weighted_residual_float": -1.0362113749161276e-14
+    },
+    "column_centered_svd": {
+      "matrix": "column_centered",
+      "singular_values_descending": [
+        300.66525349382044,
+        274.9752813281526,
+        6.088829390783474e-13
+      ],
+      "relative_rank_cutoff": 1e-10,
+      "absolute_rank_cutoff": 3.0066525349382044e-08,
+      "numerical_rank": 2,
+      "smallest_right_singular_vector_unit_norm": [
+        0.5901919564488345,
+        0.5226931343901381,
+        0.6151953688093806
+      ],
+      "weight_normalization": "mean one; sum positive",
+      "weights_by_context": {
+        "HepG2": 1.0245911059643587,
+        "K562": 0.9074111071711918,
+        "WTC11": 1.0679977868644495
+      },
+      "all_weights_strictly_positive": true,
+      "minimum_weight": 0.9074111071711918,
+      "maximum_weight": 1.0679977868644495,
+      "analyzed_matrix_weighted_residual": {
+        "mean": 2.7385708207092354e-15,
+        "rms": 4.481306136290968e-15,
+        "maximum_absolute": 3.3791078369532155e-14,
+        "minimum": -2.891303023093833e-14,
+        "maximum": 3.3791078369532155e-14
+      },
+      "raw_matrix_weighted_residual": {
+        "mean": 2.9648917139615135e-17,
+        "rms": 3.547636884386386e-15,
+        "maximum_absolute": 3.163795965691908e-14,
+        "minimum": -3.163795965691908e-14,
+        "maximum": 3.130329209019653e-14
+      },
+      "column_mean_dot_weights": -2.695808821019543e-15,
+      "interpretation": "Forensic fitted linear constraint only; no identified historical transform.",
+      "exact_witness_raw_weighted_residual_float": -1.110411468058723e-14
+    },
+    "fixed_source_standardization_checks": {
+      "absolute_tolerance": 1e-08,
+      "all_column_means_near_zero": true,
+      "all_sample_sd_near_one": true,
+      "raw_smallest_vector_weights_all_positive": true,
+      "centered_smallest_vector_weights_all_positive": true,
+      "historical_normalization_verified": false
+    },
+    "exact_decimal_row_sum_witness": {
+      "selection": "maximum absolute exact-decimal row sum, ID order breaks ties",
+      "id": "K562_peak46638",
+      "source_row": 28170,
+      "raw_xml_decimal_values": {
+        "HepG2": "-2.1243548522111699",
+        "K562": "7.8814064486789697",
+        "WTC11": "-4.6583248817215104"
+      },
+      "exact_decimal_sum": "1.0987267147462894",
+      "exact_decimal_absolute_sum": "1.0987267147462894",
+      "binary_float_fsum": 1.0987267147462894
+    }
+  },
+  "all55276frozen_reference_valid_panel_IDs": {
+    "element_count": 55276,
+    "moments_by_context": {
+      "HepG2": {
+        "mean": -0.00025221000613072554,
+        "population_sd_ddof0": 0.9998737305180441,
+        "sample_sd_ddof1": 0.9998827750156315,
+        "minimum": -4.5922263191094,
+        "maximum": 7.42271142669972
+      },
+      "K562": {
+        "mean": 0.00019075863039700062,
+        "population_sd_ddof0": 1.0001200433207778,
+        "sample_sd_ddof1": 1.000129090046422,
+        "minimum": -7.43194603784591,
+        "maximum": 8.14051330811972
+      },
+      "WTC11": {
+        "mean": 7.988371338638242e-05,
+        "population_sd_ddof0": 0.9998948821643676,
+        "sample_sd_ddof1": 0.9999039268532852,
+        "minimum": -6.18060018765607,
+        "maximum": 7.54480425605043
+      }
+    },
+    "row_sum": {
+      "arithmetic": "float64 context-order sum; exact-decimal maximum witness also reported",
+      "mean": 1.843233765532205e-05,
+      "rms": 0.13946098296508042,
+      "maximum_absolute": 1.0987267147462898,
+      "minimum": -0.9209951215514498,
+      "maximum": 1.0987267147462898,
+      "absolute_type7_quantiles": {
+        "0.0": 1.87394833872645e-07,
+        "0.5": 0.06650422819271223,
+        "0.95": 0.29935958443532845,
+        "1.0": 1.0987267147462898
+      },
+      "absolute_exceedance_counts": {
+        "1e-12": 55276,
+        "1e-08": 55276,
+        "1e-06": 55275
+      }
+    },
+    "raw_svd": {
+      "matrix": "raw",
+      "singular_values_descending": [
+        300.4520466554957,
+        274.8531726720889,
+        4.780604761050711e-13
+      ],
+      "relative_rank_cutoff": 1e-10,
+      "absolute_rank_cutoff": 3.004520466554957e-08,
+      "numerical_rank": 2,
+      "smallest_right_singular_vector_unit_norm": [
+        0.5901919564488346,
+        0.5226931343901383,
+        0.6151953688093805
+      ],
+      "weight_normalization": "mean one; sum positive",
+      "weights_by_context": {
+        "HepG2": 1.0245911059643587,
+        "K562": 0.9074111071711921,
+        "WTC11": 1.0679977868644492
+      },
+      "all_weights_strictly_positive": true,
+      "minimum_weight": 0.9074111071711921,
+      "maximum_weight": 1.0679977868644492,
+      "analyzed_matrix_weighted_residual": {
+        "mean": 3.0613380363637127e-17,
+        "rms": 3.530098231322216e-15,
+        "maximum_absolute": 3.256625817968025e-14,
+        "minimum": -3.256625817968025e-14,
+        "maximum": 2.9395199264224195e-14
+      },
+      "raw_matrix_weighted_residual": {
+        "mean": 3.0613380363637127e-17,
+        "rms": 3.530098231322216e-15,
+        "maximum_absolute": 3.256625817968025e-14,
+        "minimum": -3.256625817968025e-14,
+        "maximum": 2.9395199264224195e-14
+      },
+      "column_mean_dot_weights": -2.5848202531949533e-15,
+      "interpretation": "Forensic fitted linear constraint only; no identified historical transform.",
+      "exact_witness_raw_weighted_residual_float": -7.405223513512558e-15
+    },
+    "column_centered_svd": {
+      "matrix": "column_centered",
+      "singular_values_descending": [
+        300.4520433135823,
+        274.85316562814654,
+        6.001351794987045e-13
+      ],
+      "relative_rank_cutoff": 1e-10,
+      "absolute_rank_cutoff": 3.004520433135823e-08,
+      "numerical_rank": 2,
+      "smallest_right_singular_vector_unit_norm": [
+        0.5901919564488346,
+        0.5226931343901386,
+        0.6151953688093806
+      ],
+      "weight_normalization": "mean one; sum positive",
+      "weights_by_context": {
+        "HepG2": 1.0245911059643584,
+        "K562": 0.9074111071711924,
+        "WTC11": 1.0679977868644492
+      },
+      "all_weights_strictly_positive": true,
+      "minimum_weight": 0.9074111071711924,
+      "maximum_weight": 1.0679977868644492,
+      "analyzed_matrix_weighted_residual": {
+        "mean": 2.5779005790945484e-15,
+        "rms": 4.401889662862861e-15,
+        "maximum_absolute": 3.3465290680496645e-14,
+        "minimum": -3.035518875834622e-14,
+        "maximum": 3.3465290680496645e-14
+      },
+      "raw_matrix_weighted_residual": {
+        "mean": 3.062098925588262e-17,
+        "rms": 3.567701455419571e-15,
+        "maximum_absolute": 3.43426150190805e-14,
+        "minimum": -3.43426150190805e-14,
+        "maximum": 3.081013204931255e-14
+      },
+      "column_mean_dot_weights": -2.5846982804505487e-15,
+      "interpretation": "Forensic fitted linear constraint only; no identified historical transform.",
+      "exact_witness_raw_weighted_residual_float": -4.740688254412182e-15
+    },
+    "fixed_source_standardization_checks": {
+      "absolute_tolerance": 1e-08,
+      "all_column_means_near_zero": false,
+      "all_sample_sd_near_one": false,
+      "raw_smallest_vector_weights_all_positive": true,
+      "centered_smallest_vector_weights_all_positive": true,
+      "historical_normalization_verified": false
+    },
+    "exact_decimal_row_sum_witness": {
+      "selection": "maximum absolute exact-decimal row sum, ID order breaks ties",
+      "id": "K562_peak46638",
+      "source_row": 28170,
+      "raw_xml_decimal_values": {
+        "HepG2": "-2.1243548522111699",
+        "K562": "7.8814064486789697",
+        "WTC11": "-4.6583248817215104"
+      },
+      "exact_decimal_sum": "1.0987267147462894",
+      "exact_decimal_absolute_sum": "1.0987267147462894",
+      "binary_float_fsum": 1.0987267147462894
+    }
+  },
+  "prohibitions_observed": [
+    "No target modification, projection, rescaling, filtering or predictive refitting.",
+    "No fitted source weights enter the frozen benchmark.",
+    "No historical normalization identification or biological discovery from a fitted plane."
+  ]
+}

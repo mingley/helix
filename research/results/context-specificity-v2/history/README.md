@@ -1,0 +1,3 @@
+# Retained context-study attempts
+
+`attempts.json` maps every original filename to a shared object, its original byte count/SHA256, storage encoding and stored SHA256. For identity objects copy the object to the original filename; for gzip text objects decompress it. No object is discarded because an audit failed. Initial Rust source snapshots were not captured; file hashes remain, and the final published code/run has clean-commit provenance. Initial source-formula assumptions and artifact integrity failures are superseded, not accepted findings. Fits and source targets were never changed to repair the formula.

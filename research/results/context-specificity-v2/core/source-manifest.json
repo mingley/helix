@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "protocol_id": "context-specificity-v2",
+  "protocol_sha256": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+  "endpoint": "published_element_specificity_score",
+  "contexts": [
+    "HepG2",
+    "K562",
+    "WTC11"
+  ],
+  "record_count": 55276,
+  "files": {
+    "design-catalog-v1.json.gz": "be7251ca9f7423130c875c7692246698cc0011d746cb0d4043bad2a3f6817d51",
+    "design-exclusions.json": "2f49b5281987c534204bf13560655369c469df7dbd1fb5a39bfc4032f8e17f52",
+    "design-reference-validation.json": "0604be6a06e2a0aa6ee50ae736227352845fe0f47ac0423ff3f5331795f43e31",
+    "frozen-protocol-v2.json": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+    "inclusion-report.json": "2ea1ebe1054350dcf49e76b67db042ca30f9d95134a4a29cadfd2c126b9d2bdd",
+    "panel.json": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3",
+    "raw/README-v1-count-claim-superseded.md": "a3d2a933f24c69826e5cd4d6be8f17f94c4ed7a85218f1a503bff95e96a30713",
+    "raw/README.md": "e50610190af650e30aef7097f3e680a7e7b80e026fbc08f2f7e0b2951ecd28c0",
+    "raw/Table-S7-joint-design.xlsx": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5",
+    "raw/Table-S9-folds-performance.xlsx": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+    "raw/design-metadata-inspection.json": "cd007d225534e27951bcd6eed91b45762b400fe257ef577a127ad0592d27674b",
+    "raw/id-only-join-audit.json": "1035d86ab6eaa97d01dd829f4298fcefb98b4a65eb2bc0a92f4b536bc6402ac2",
+    "raw/retrieval.json": "a44da011496b426f986169bd11086cd35560191f0255fb801cd448e18ea42460",
+    "raw/schema-inspection.json": "639b7a11d39fad20a0cd616440d383c99049e5691893eaaa994906dc16f7dd75",
+    "raw/semantic-gate-corrected-metadata.json": "7ab4f3e376012c71815c49bb919c356ebe93aca14df15118fb3fcd29d53d5eff",
+    "raw/semantic-gate.json": "e6b47fae288d670716f3f3ff08ea89721128b65a2cd239bcb9accb8390578b11",
+    "raw/source-accounting-correction.json": "e8e8128b763ac105354bc2978f91d56721ebd5a6484858a31dea6ce0d5c142eb",
+    "raw/zenodo-record-metadata.json": "3752aeec5463077fae96637a07ad734f9a7e29150e5cc73dcb937c386213f5e2",
+    "reference-validation.json": "65061df4cbbde3a44a9e2f28a6eda8c607ad62d3c232e635506cf95d7252aad8",
+    "source-design-metadata-v2.json.gz": "1cd2b70a544a9442f03d3809f55a155ba3ab3a87b38e4593b5e0a23feb4c57c7",
+    "source-schema-binding-v2.json": "38cf7a81a051d7dc4634704d0886ddb4c3b1c0608daba455d891cb0c41cf9dfd",
+    "v1-blocked-acquisition.json": "43a5b8d5609ad655b17dd407552b4e7f5cd092eda29b143356af2948f642175a",
+    "v1-design-artifact-repacking.json": "c59cf218e7c7e23e6a9d73bf42f17695cd96ed69576f11965a61a9a3a22f29b0",
+    "v1-source-schema-binding.json": "2ae0ae9a03b71d1ec297e95a70e9d2b6fa3fd5154ae209cacbb78e8d8a34ea99",
+    "v2-ess-inspection-gate.json": "2392ca4284aae0f7c80bc5baaaa5fa12ea3e5f4e47c94ca2ab34c35b720032f4"
+  },
+  "raw_acquisition": {
+    "protocol_sha256": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+    "raw_acquisition_protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2",
+    "retrieval_receipt_sha256": "a44da011496b426f986169bd11086cd35560191f0255fb801cd448e18ea42460",
+    "source_license_metadata_sha256": "3752aeec5463077fae96637a07ad734f9a7e29150e5cc73dcb937c386213f5e2",
+    "source_license": "CC-BY-4.0 declared by the source Zenodo record, covering its listed workbooks; retain source attribution",
+    "sources": [
+      {
+        "file": "Table-S7-joint-design.xlsx",
+        "original_filename": "Table S7 - joint lib design.xlsx",
+        "url": "https://zenodo.org/api/records/10558183/files/Table%20S7%20-%20joint%20lib%20design.xlsx/content",
+        "retrieved_at": "2026-10-27T13:26:10.140096+00:00",
+        "http_status_or_reuse": 200,
+        "size_bytes": 8301566,
+        "declared_md5": "md5:5d9b71452e9648e8473edd74a4ae26fc",
+        "observed_md5": "5d9b71452e9648e8473edd74a4ae26fc",
+        "sha256": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5",
+        "md5_verified": true,
+        "protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2",
+        "independently_rechecked": {
+          "sha256": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5",
+          "md5": "5d9b71452e9648e8473edd74a4ae26fc",
+          "size_bytes": 8301566
+        }
+      },
+      {
+        "file": "Table-S9-folds-performance.xlsx",
+        "original_filename": "Table S9 - folds and performance.xlsx",
+        "url": "https://zenodo.org/api/records/10558183/files/Table%20S9%20-%20folds%20and%20performance.xlsx/content",
+        "retrieved_at": "2026-10-27T13:26:21.983546+00:00",
+        "http_status_or_reuse": 200,
+        "size_bytes": 3564742,
+        "declared_md5": "md5:ef967c8388d84da9ec81d22e11c868bd",
+        "observed_md5": "ef967c8388d84da9ec81d22e11c868bd",
+        "sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+        "md5_verified": true,
+        "protocol_sha256": "a089a6668ad73e943797df405b3ba510b1377190b416da1bd8df12bc368b77c2",
+        "independently_rechecked": {
+          "sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+          "md5": "ef967c8388d84da9ec81d22e11c868bd",
+          "size_bytes": 3564742
+        }
+      }
+    ]
+  },
+  "source_version": "Zenodo10558183 is preprint-associated: S7 joint design and S9 folds/performance are named and hashed exactly; do not claim S9 is byte-identical to final-paper Supplementary Table10 or contains every final-paper element. Final-paper methods explain the ESS endpoint class; use the frozen source S9 values as published.",
+  "source_endpoint": {
+    "endpoint_id": "published-three-context-element-specificity-score",
+    "required_measurement": "Use exactly the three published Element Specificity Score columns in frozen S9, unchanged. They are derived experimental activity specificity scores, not raw activity or source CNN predictions.",
+    "formula": "For element i and context c, source z_ic=zscore_across_source_elements(raw_mean_log2_RNA_DNA_ic) within cell context; published ESS_ic=z_ic-(z_iHepG2+z_iK562+z_iWTC11)/3. Use supplied ESS, do not reconstruct zscores, raw activities, source means or source SDs.",
+    "methods_heading": "Calculation of element specificity scores",
+    "methods_quote": "To compute element specificity scores (ESSs) using activity scores from the joint library, log2(RNA/DNA) values from each cell line were first z-score-transformed. Then an ESS for each element was computed by subtracting the element\u2019s score in each cell type by the mean element score across cell types. A full table of ESSs is provided (Supplementary Table 10).",
+    "methods_source": {
+      "doi": "10.1038/s41586-024-08430-9",
+      "pmcid": "PMC11903340",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11903340/fullTextXML",
+      "sha256": "41a554f31ea67adb1ce983b05ed9194e8fa1596bd4e6d2208df1854de9f33320",
+      "size_bytes": 233913
+    },
+    "units": "dimensionless published ESS; MSE in squared ESS units, MAE in ESS units; not log2 raw-activity units",
+    "source_normalization": "Whole-source-panel per-cell zscoring and per-element across-cell centering are part of the published target, not our training-only transformation. This construction includes information from future test elements. Exact source normalization population size and SD ddof are not specified by the cited paragraph or reconstructed here. Evaluate the fixed published target; no prospective or leakage-free target-preprocessing claim.",
+    "no_additional_target_normalization": true,
+    "forbidden_labels": [
+      "source model predictions",
+      "CNN predictions",
+      "prediction.N columns",
+      "ensemble predictions",
+      "raw activity inferred from ESS",
+      "design activity bins",
+      "a recomputed or forcibly zero-sum ESS"
+    ],
+    "fail_closed": true,
+    "schema_binding": "Exactly bind the frozen worksheet/ID/ESS headers and S7 sequence/coordinate fields below, retain source-cell provenance and raw numeric representation where possible. No alias search, column selection by outcomes, source prediction substitution, recomputation or target change.",
+    "replicates": "ESS is a source-provided aggregate/transform. Replicate-level independence is not claimed, and unavailable raw replicates are neither reconstructed nor counted as extra observations."
+  },
+  "source_selection": "Joint panel deliberately selected using prior activity bins, with variable-promoter selection; not a random or unselected genomic sample. Fixed source panel, not a score-selected favorable subset.",
+  "reference": {
+    "schema_version": 1,
+    "records_checked": 55276,
+    "exact_forward_matches": 54195,
+    "reverse_complement_matches": 1081,
+    "excluded_counts": {
+      "blank_source_id": 1,
+      "deposited_core_does_not_match_declared_hg38_interval": 52,
+      "genomic_core_coordinate_length_mismatch": 10,
+      "no_exact_source_ess_id": 4662
+    },
+    "reference_sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0",
+    "reference_md5": "dcc3ea27079aa6dc3f9deccd7275e0f8",
+    "reference_verified": true,
+    "reference_size_bytes": 835393456,
+    "source_design_validation": {
+      "schema_version": 1,
+      "source_design_rows": 60000,
+      "reference_checked_design_records": 59264,
+      "exact_forward_matches": 58081,
+      "reverse_complement_matches": 1183,
+      "excluded_counts": {
+        "deposited_core_does_not_match_declared_hg38_interval": 55,
+        "genomic_core_coordinate_length_mismatch": 11,
+        "missing_chromosome": 670
+      },
+      "declared_strand_disagreements": 0,
+      "reference_sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0",
+      "reference_md5": "dcc3ea27079aa6dc3f9deccd7275e0f8",
+      "reference_size_bytes": 835393456,
+      "reference_verified": true,
+      "source_coordinate_convention": "zero-based half-open supported by exact200nt matches at the unshifted declared intervals",
+      "endpoint_status": "design_only_no_observations"
+    },
+    "match_policy": "Every admitted core200 matches independenthg38 at the exact unshifted declared coordinate and strand; no lookup rescue or liftover."
+  },
+  "grouping_status": "ROOT-owned separate frozen grouping; no grouping or model fitting done by importer.",
+  "previous_failed_protocol": "context-prediction-v1",
+  "limitations": [
+    "PublishedESS includes whole-source-panel normalization and cell centering; these are not raw activities or train-only target preprocessing.",
+    "Three knowncellcontexts in one selectedsourcejointpanel; no unseen-cell or genomewide generalization claim.",
+    "Referenceverification is not empiricalfunctionalvalidation."
+  ]
+}

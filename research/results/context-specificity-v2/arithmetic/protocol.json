@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "protocol_id": "context-source-arithmetic-audit-v1",
+  "status": "post_hoc_diagnostic_before_structural_analysis",
+  "frozen_at_utc": "2026-10-27T13:52:50.494545+00:00",
+  "parent_protocol_sha256": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+  "exposure": "Initial frozen model results and source row-sum diagnostic were observed. Maximum admitted-row absolute sum is1.0987267147462898; independent exact-decimal audit confirms a genuine departure. This is not an outcome-naive protocol or predictive endpoint amendment. No source SVD/column moments have been inspected by root.",
+  "inputs": {
+    "source_workbook": "datasets/context-panel/raw/Table-S9-folds-performance.xlsx",
+    "source_sha256": "0f9ff22d4b46fab36d419399e6ab743dc08a0813f812dc7bd96f90eb7e0f2b8a",
+    "panel": "datasets/context-panel/panel.json",
+    "panel_sha256": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3"
+  },
+  "cohorts": [
+    "all55338finite_exact_source_score_IDs",
+    "all55276frozen_reference_valid_panel_IDs"
+  ],
+  "analyses": [
+    "Report all3column means, populationSD, sampleSD, minima,maxima.",
+    "Report row-sum absolute quantiles0,0.5,0.95,1 and counts exceeding1e-12,1e-8,1e-6.",
+    "Report all3 singular values of raw matrix and column-centered matrix; relative numerical rank threshold1e-10 times largest singular value.",
+    "Report smallest right-singular vector for both matrices, normalized to mean1 when its sum is nonzero; sign chosen for positive sum. Report every signed weight and min/max/residual RMS/max.",
+    "Test whether all weights are positive and source columns have means near0 and sampleSD near1 (fixed diagnostic tolerance1e-8). These conditions support a weighted linear constraint, not proof of historical preprocessing.",
+    "Report exact raw decimal source row-sum witness and compare unweightedzero-sum vs derived weighted residuals."
+  ],
+  "prohibitions": [
+    "Do not alter, project, scale, filter, re-center or refit frozen model targets.",
+    "No derived source weights enter models, folds, outcomes or evaluation.",
+    "Do not claim a historical normalization formula solely from a fitted null vector.",
+    "Do not reinterpret a structural score-plane result as regulatory biology, raw-expression recovery or an independent validation."
+  ],
+  "outputs": [
+    "full moment/rank/weight/residual tables for both cohorts",
+    "source/parent/implementation hashes",
+    "explicit scientific semantic status unresolved unless authoritative source provenance resolves it"
+  ]
+}
