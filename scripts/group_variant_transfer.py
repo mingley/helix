@@ -25,6 +25,7 @@ GUARD = 10_000
 CANDIDATE_BUDGET = 1_000_000_000
 HAMMING_MASK = int("01" * LENGTH, 2)
 PRIMARY = re.compile(r"chr(?:[1-9]|1\d|2[0-2]|X|Y)\Z")
+PRIOR_CONTIG = re.compile(r"chr[A-Za-z0-9_.-]+\Z")
 HEX = re.compile(r"[0-9a-f]{64}\Z")
 COMPLEMENT = str.maketrans("ACGT", "TGCA")
 BASE4 = str.maketrans("ACGT", "0123")
@@ -261,7 +262,10 @@ class GuardIndex:
         for row in rows:
             require(row.get("assembly") == "GRCh38" and row.get("coordinate_convention") == "zero_based_half_open",
                     "prior genomic guard uses unbound build or coordinate convention")
-            require(PRIMARY.fullmatch(row.get("chromosome", "")) and type(row.get("start")) is int
+            # The hash-bound old panel includes four validated alternate-contig
+            # cores. Retain their DNA for homology and their exact contig names
+            # for coordinate guards; new-pair eligibility stays primary-only.
+            require(PRIOR_CONTIG.fullmatch(row.get("chromosome", "")) and type(row.get("start")) is int
                     and type(row.get("end")) is int and 0 <= row["start"] < row["end"],
                     "invalid prior interval")
             grouped[row["chromosome"]].append((row["start"], row["end"], row["id"]))

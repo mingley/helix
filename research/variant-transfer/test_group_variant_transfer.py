@@ -127,6 +127,18 @@ class VariantGroupingTests(unittest.TestCase):
         self.assertEqual(witness["new_allele"], "sequence_alt")
         self.assertEqual(witness["mismatches"], 20)
 
+    def test_old_alternate_contigs_remain_in_homology_not_primary_coordinates(self):
+        sequence = random_dna(81)
+        previous = old("old_alt_contig", sequence, "chr22_KI270879v1_alt", 278415)
+        guard = M.GuardIndex([previous])
+        self.assertIsNone(guard.witness({"chromosome": "chr22", "start": 278415, "end": 278615}))
+        result = M.group([pair("new", sequence, 278415, chromosome="chr22")],
+                         [previous], [], {"old": guard}, M.Budget(100000))
+        self.assertEqual(result["retained_pairs"], [])
+        with self.assertRaises(ValueError):
+            M.validate_new([pair("invalid_new", sequence, 278415,
+                                 chromosome="chr22_KI270879v1_alt")])
+
     def test22segments_find_factorized21_mismatch_repair_missed_by21(self):
         reference = random_dna(12)
         positions = [j * 200 // 21 for j in range(21)]

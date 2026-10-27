@@ -1,0 +1,30 @@
+{
+  "algorithm": "2bit packed Hamming; k+1 disjoint segments guarantee a matching seed for <=k mismatches; all candidates verified exactly",
+  "bin_width": 1000000,
+  "candidate_budget": 1000000000,
+  "candidate_budget_rule": "Sum of distinct previous-new-variant candidate pairs outside currently connected buckets, plus oriented-new-allele/old-window candidates across old stages; abort without dropping if exceeded",
+  "factorized_SNV_rule": "Old reference windows plus observed single-SNV alternatives: <=20 reference mismatches matches reference; at21 require one allowed observed edit repairing a mismatch.22segments guarantee completeness at21.",
+  "guard_bp_inclusive": 10000,
+  "max_hamming_mismatches": 20,
+  "new_new_segments": 21,
+  "new_pair_count_expected": 332719,
+  "old_explicit_segments": 21,
+  "old_factorized_SNV_segments": 22,
+  "phase": "DNA_only_parameters_before_new_outcome_parsing",
+  "protocol_id": "variant-transfer-v1",
+  "relations": [
+    "both alleles belong to their variant; exact source parent",
+    "same chromosome and floor(GRCh38 start/1000000)",
+    "separate positive half-open interval overlap, including across start-bin boundaries",
+    "exact or reverse-complement DNA; full200nt ungapped >=90% any allele/either strand"
+  ],
+  "remaining_gates": [
+    "source technical-control classes",
+    "source/header/endpoint binding",
+    "numeric outcome coverage"
+  ],
+  "safe_pruning": "Skip new-new buckets already connected by union-find; after all new relations, coordinate-exposed components or components with one old-homology witness need no more old-screen queries",
+  "schema_version": 1,
+  "screening_scope": "Every retained component has every member/allele/orientation screened; witnesses for excluded components are sufficient examples, not an exhaustive hit catalog",
+  "sequence_length": 200
+}

@@ -47,6 +47,20 @@ class VariantTransferTests(unittest.TestCase):
         self.assertLess(scored["max_abs_direct_subtraction_check_error"], 1e-12)
         self.assertNotEqual(scored["predicted_alternate_minus_reference"], 0)
 
+    def test_saved_exact_numerators_bridge_all_prediction_features(self):
+        scored = self.score(pair())
+        ref = scored["reference_feature_numerators"]
+        alt = scored["alternate_feature_numerators"]
+        delta = scored["feature_numerator_delta"]
+        self.assertEqual(sum(ref[:-1]), 198)
+        self.assertEqual(ref[M.TRIMERS.index("AAA")], 198)
+        self.assertEqual(ref[-1], 0)
+        self.assertEqual(sum(alt[:-1]), 198)
+        self.assertEqual(delta[M.TRIMERS.index("AAA")], -3)
+        self.assertEqual(delta[-1], 1)
+        self.assertEqual(delta, [b - a for a, b in zip(ref, alt)])
+        self.assertTrue(all(type(value) is int for value in ref + alt + delta))
+
     def test_intercept_and_centering_cancel(self):
         f = synthetic_fits()
         old = self.score(pair(), f)["predicted_alternate_minus_reference"]
