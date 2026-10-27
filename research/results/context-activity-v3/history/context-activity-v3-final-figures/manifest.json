@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "endpoint": "published_joint_log2_rna_dna_activity",
+  "source_artifacts_sha256": "d90b0c0105a01b1f4dce931423042eabaf99ffd1ed222cf76ccf9420bbc66934",
+  "implementation_sha256": "163afd3491ffdbcebc47f4ca53244b35c042bfa4e3f8ce2ba4c1e558fe803ace",
+  "matplotlib_version": "3.10.8",
+  "fits_performed": false,
+  "all_source_elements_plotted": 55276,
+  "files": {
+    "01-model-activity.png": {
+      "bytes": 128500,
+      "sha256": "d165fcec6d557db433b4c7c45d696ee45290086bff230d43d81211ecc2733018"
+    },
+    "01-model-activity.svg": {
+      "bytes": 65257,
+      "sha256": "09461fd7a03bd2924cf4105d38e9fe0f9b517c3aba4eba6edcc406a6152f7ac6"
+    },
+    "02-common-activity.png": {
+      "bytes": 212028,
+      "sha256": "2f5d74348b86e7596a3708032e730d5178005d381e7f62eeb99e28fb224d77d4"
+    },
+    "02-common-activity.svg": {
+      "bytes": 92703,
+      "sha256": "20c1a96ec8b5a93e0b05134f6cdd6f965514b337778709136378e652c2accb58"
+    },
+    "03-cell-contrasts.png": {
+      "bytes": 60266,
+      "sha256": "a9e74fd2dfd706db3cefeaff3857dac21c7e4822bdc18ea46bd92d22c65ceda2"
+    },
+    "03-cell-contrasts.svg": {
+      "bytes": 42251,
+      "sha256": "2dabb91345cfc04b02c1bacfd4eefeedc9c133a3c30eb40f765fd7f427c54668"
+    },
+    "common-activity.csv": {
+      "bytes": 7998403,
+      "sha256": "326906259ef1e270aa14ed580d516bc1292e765a011f2ba26a4aee499bc191fd"
+    },
+    "model-errors.csv": {
+      "bytes": 434,
+      "sha256": "1177e38d2f6bc57ba277d2d629953ed8a85a7ecea4159db8a737dff90857c53c"
+    }
+  }
+}

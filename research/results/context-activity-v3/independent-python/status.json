@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "protocol_sha256": "64e14037fb1f42ddc1ecaca1d23bb8096fabac1f1e892d105eaa20f525fbbb20",
+  "endpoint": "published_joint_log2_rna_dna_activity",
+  "completed_at_utc": "2026-10-27T22:16:19.556140+00:00",
+  "elements": 55276,
+  "observations": 165828
+}

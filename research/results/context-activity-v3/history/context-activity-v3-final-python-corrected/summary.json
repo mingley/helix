@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "endpoint": "published_joint_log2_rna_dna_activity",
+  "protocol_sha256": "64e14037fb1f42ddc1ecaca1d23bb8096fabac1f1e892d105eaa20f525fbbb20",
+  "contexts": [
+    "HepG2",
+    "K562",
+    "WTC11"
+  ],
+  "model_order": [
+    "global_mean",
+    "context_mean",
+    "shared_dna",
+    "additive_context_dna",
+    "independent_context_dna"
+  ],
+  "sequence_count": 55276,
+  "group_count": 2761,
+  "measurement_count": 165828,
+  "models": [
+    {
+      "model": "global_mean",
+      "sequence_weighted_mse": 0.7574858933789231,
+      "sequence_weighted_mae": 0.6651726799395531,
+      "macro_group_mse": 0.7537091773907723,
+      "macro_group_mae": 0.6631293346219195,
+      "by_context": [
+        {
+          "context": "HepG2",
+          "mse": 0.5504870300450748,
+          "mae": 0.5649675568963214
+        },
+        {
+          "context": "K562",
+          "mse": 0.5884724144171098,
+          "mae": 0.5740663954447566
+        },
+        {
+          "context": "WTC11",
+          "mse": 1.1334982356745849,
+          "mae": 0.8564840874775812
+        }
+      ]
+    },
+    {
+      "model": "context_mean",
+      "sequence_weighted_mse": 0.7292543132648404,
+      "sequence_weighted_mae": 0.6463667333310416,
+      "macro_group_mse": 0.7305653563259356,
+      "macro_group_mae": 0.6471223845759423,
+      "by_context": [
+        {
+          "context": "HepG2",
+          "mse": 0.5355890553060454,
+          "mae": 0.574216031309057
+        },
+        {
+          "context": "K562",
+          "mse": 0.5748118692710281,
+          "mae": 0.58896669364337
+        },
+        {
+          "context": "WTC11",
+          "mse": 1.0773620152174477,
+          "mae": 0.7759174750406975
+        }
+      ]
+    },
+    {
+      "model": "shared_dna",
+      "sequence_weighted_mse": 0.6933143167140318,
+      "sequence_weighted_mae": 0.6341633361782554,
+      "macro_group_mse": 0.6929605645034973,
+      "macro_group_mae": 0.6296867293352043,
+      "by_context": [
+        {
+          "context": "HepG2",
+          "mse": 0.5359774089927684,
+          "mae": 0.5486090660970546
+        },
+        {
+          "context": "K562",
+          "mse": 0.5514755640709519,
+          "mae": 0.5548780138056679
+        },
+        {
+          "context": "WTC11",
+          "mse": 0.992489977078375,
+          "mae": 0.7990029286320436
+        }
+      ]
+    },
+    {
+      "model": "additive_context_dna",
+      "sequence_weighted_mse": 0.665082736599949,
+      "sequence_weighted_mae": 0.6129292760628563,
+      "macro_group_mse": 0.6698167434386606,
+      "macro_group_mae": 0.6111374936193982,
+      "by_context": [
+        {
+          "context": "HepG2",
+          "mse": 0.521165646128987,
+          "mae": 0.5558648837454485
+        },
+        {
+          "context": "K562",
+          "mse": 0.537897657283135,
+          "mae": 0.5651749838939186
+        },
+        {
+          "context": "WTC11",
+          "mse": 0.9361849063877248,
+          "mae": 0.7177479605492016
+        }
+      ]
+    },
+    {
+      "model": "independent_context_dna",
+      "sequence_weighted_mse": 0.6284936272403977,
+      "sequence_weighted_mae": 0.5936787398008737,
+      "macro_group_mse": 0.6360383936054074,
+      "macro_group_mae": 0.5934727555568139,
+      "by_context": [
+        {
+          "context": "HepG2",
+          "mse": 0.4919667262367478,
+          "mae": 0.5454837414921435
+        },
+        {
+          "context": "K562",
+          "mse": 0.518255018312153,
+          "mae": 0.5543467085168925
+        },
+        {
+          "context": "WTC11",
+          "mse": 0.8752591371722925,
+          "mae": 0.6812057693935849
+        }
+      ]
+    }
+  ],
+  "balanced_design_checks": {
+    "max_abs_mean_independent_beta_minus_shared_beta": 1.8206547380827942e-12,
+    "max_abs_mean_independent_prediction_minus_shared_prediction": 1.5443202272535927e-13,
+    "max_abs_per_sequence_mse_contrast_identity_residual": 5.638267630558857e-13
+  },
+  "primary_index": 1,
+  "planned_comparisons": [
+    {
+      "comparison": {
+        "baseline": "shared_dna",
+        "candidate": "additive_context_dna"
+      },
+      "observed_mse_improvement": 0.028231580114075117,
+      "observed_mae_improvement": 0.021234060115400077,
+      "mse_interval": [
+        0.026837926003759435,
+        0.029653565528788783
+      ],
+      "mae_interval": [
+        0.020503141130295978,
+        0.021953087084354263
+      ]
+    },
+    {
+      "comparison": {
+        "baseline": "context_mean",
+        "candidate": "additive_context_dna"
+      },
+      "observed_mse_improvement": 0.06417157666488416,
+      "observed_mae_improvement": 0.03343745726818326,
+      "mse_interval": [
+        0.059844002017479116,
+        0.0687169036356652
+      ],
+      "mae_interval": [
+        0.03149373772998349,
+        0.03544754901168715
+      ]
+    },
+    {
+      "comparison": {
+        "baseline": "additive_context_dna",
+        "candidate": "independent_context_dna"
+      },
+      "observed_mse_improvement": 0.03658910935954818,
+      "observed_mae_improvement": 0.01925053626198714,
+      "mse_interval": [
+        0.03540168203205135,
+        0.03783616741080767
+      ],
+      "mae_interval": [
+        0.018559897889666343,
+        0.019929167939724796
+      ]
+    }
+  ],
+  "common_activity": {
+    "scope": "Correlated algebraic diagnostic, not independent biological validation",
+    "global_mean_mse": 0.5087550463245456,
+    "shared_dna_mse": 0.4445834696596541,
+    "mean_activity_mse_improvement": 0.06417157666489147,
+    "primary_cell_mse_improvement": 0.06417157666489146,
+    "maximum_absolute_per_element_identity_residual": 1.0658141036401503e-14
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "acquisition_receipt_sha256": "db83eb9e73796a4881fcdbc8c3a08dfbfbb04893cda69b0d11feb0ef9f9e390f",
+  "all_members_crc_verified": true,
+  "archive_bytes": 342234089,
+  "archive_path": "/workspace/.tools/context-endpoint-recovery-v1/final-supplement.zip",
+  "archive_sha256": "aefb1974e9ebe5c196a89a00f4e868c0abaf69e3d3952e79c74bfb42f217f6a4",
+  "complete": true,
+  "cross_source_code_prediction": {
+    "interpretation": "Frozen downstream code prediction only; a discrepancy is a provenance finding, not permission to select a different payload.",
+    "matches_official_download": true,
+    "producer_digest": false,
+    "sha256": "aefb1974e9ebe5c196a89a00f4e868c0abaf69e3d3952e79c74bfb42f217f6a4"
+  },
+  "download_content_type": "application/octet-stream",
+  "expected_archive_sha256": "aefb1974e9ebe5c196a89a00f4e868c0abaf69e3d3952e79c74bfb42f217f6a4",
+  "finished_at_utc": "2026-10-27T18:46:45.293767+00:00",
+  "implementation_sha256": "b7ec7a2bc5a928d9a4bd11ed3a32c547741bfdc92cc2e8a92384187aafa241c4",
+  "inventory_sha256": "6ec0755fbe76363b5cc50664b29ad9accdd4060c6267778d5415ae42213b325a",
+  "member_count": 13,
+  "producer_checksum_asserted": false,
+  "protocol_path": "/workspace/helix/experiments/context-endpoint-recovery-v1.json",
+  "protocol_sha256": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868",
+  "schema_version": 1,
+  "scientific_values_interpreted": false,
+  "started_at_utc": "2026-10-27T18:46:43.700202+00:00",
+  "status": "archive_integrity_verified",
+  "total_uncompressed_bytes": 349004747
+}

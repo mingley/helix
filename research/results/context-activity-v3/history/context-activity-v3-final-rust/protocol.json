@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "protocol_id": "context-activity-v3",
+  "status": "frozen",
+  "frozen_at_utc": "2026-10-27T18:42:05.586647+00:00",
+  "objective": "Test whether the fixed DNA composition model predicts the across-context component of published reporter activity on grouped held-out elements. This component cannot in general be reconstructed from centered specificity.",
+  "exposure": {
+    "known": "All earlier S9 specificity values, models, arithmetic diagnostics and public methods/code/schema hypotheses are known. The final official archive is currently downloading under the separately frozen endpoint-recovery protocol; no new workbook headers or activity values have been inspected by this team at this freeze.",
+    "independence": "Same source experiment and selected panel as prior specificity study. This is a separately versioned endpoint analysis, not independent biological replication or outcome-naive source selection."
+  },
+  "required_recovery_protocol_sha256": "00175e41cf9fa0cbf177ce8fc7ef143eb508aec8b11d058f7acb4458284dc868",
+  "source": {
+    "doi": "10.1038/s41586-024-08430-9",
+    "jointdata_expected_sha256": "9c95ca2b8df0ff3edc7dda4fdcf337f33e652b96a0833a70e786bbcdc2b76b4e",
+    "expected_bytes": 53557805,
+    "worksheet": "all_cell_types_summary",
+    "id_header": "name",
+    "contexts": [
+      "HepG2",
+      "K562",
+      "WTC11"
+    ],
+    "columns": {
+      "HepG2": "HepG2 [log2(rna/dna)]",
+      "K562": "K562 [log2(rna/dna)]",
+      "WTC11": "WTC11 [log2(rna/dna)]"
+    },
+    "selection": "Exact official final Table11 member, published observed activity aggregate only. No ESS inversion, predictions, guessed columns or alternative source if gates fail."
+  },
+  "gates": [
+    "Official archive and selected member integrity independently verified under endpoint-recovery protocol.",
+    "Header-only schema binding confirms exact empirical activity columns and their published log2(RNA/DNA) units and within-study replicate context. Predicted or ambiguous scores block fitting.",
+    "All 55276 pre-existing admitted IDs have unique finite values in all three declared activity columns. No subset selection or imputation. Missing coverage blocks this v3.",
+    "Final design workbook byte-identical to the pinned original S7; exact DNA/coordinate identity of the admitted panel is preserved.",
+    "Recover and publish replicate-aggregate arithmetic status and all normalization uncertainties before fitting. The v3 endpoint is the unchanged published aggregate columns. It is not a claim that the blocked v1 normalization contract has passed."
+  ],
+  "endpoint": {
+    "id": "published_joint_log2_rna_dna_activity",
+    "transform": "None. Preserve published source float values exactly; no outcome centering, variance scaling, ESS projection or count reconstruction.",
+    "units": "Published library-normalized log2(RNA/DNA), not absolute transcripts per cell. Source full-library normalization and QC already precede grouped splitting.",
+    "aggregation_uncertainty": "Arithmetic checks and historical normalization provenance are reported separately. A literal published-aggregate binding does not establish raw count reconstruction or technical-noise calibration."
+  },
+  "panel": {
+    "path": "datasets/context-panel/panel.json",
+    "sha256": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3",
+    "elements": 55276,
+    "contexts": 3,
+    "observations": 165828,
+    "use": "DNA/metadata only; ignore old ESS outcome fields for all v3 fitting."
+  },
+  "grouping": {
+    "path": "research/results/context-specificity-v2/core/grouping.json",
+    "sha256": "333069c4ab41ed8ea6976b0bc50cd08de9a33118ab60d683533b7ee32a6f517f",
+    "use": "Reuse exact prior outcome-independent 2761 components, five folds and whole-component 10kb guards without recomputing by activity. All contexts and occurrences of an element retain their one split. Preserve exact source group receipt."
+  },
+  "features": {
+    "definition": "Identical fixed 32 reverse-complement-canonical overlapping 3mer frequencies plus GC fraction, in prior v2 order. No length, source IDs, activity bins, support counts or ESS predictors.",
+    "training_processing": "Population means and standard deviations from each outer training fold only; SD <=1e-12 replaced with1."
+  },
+  "models": {
+    "G": "Global training observation mean.",
+    "C": "Per-cell training mean.",
+    "S": "Shared DNA ridge slopes fitted to one across-cell mean activity per training element, free intercept.",
+    "A": "Exactly the S slopes plus per-cell training intercepts.",
+    "I": "Independent per-cell DNA ridge fits.",
+    "alpha": 10.0,
+    "objective": "Summed SSE with unpenalized intercept, same slope penalty for S and each I fit. No hyperparameter tuning."
+  },
+  "primary": {
+    "baseline": "C",
+    "candidate": "A",
+    "metric": "Equal-element, equal-cell out-of-fold MSE, original activity units squared.",
+    "improvement": "MSE(C)-MSE(A); positive means shared DNA improves prediction beyond context mean.",
+    "question": "Can these fixed DNA composition features predict the common across-context activity component on whole held-out sequence/locus groups?",
+    "no_success_requirement": "Retain negative or zero improvement unchanged."
+  },
+  "secondary": [
+    "A versus I MSE and MAE, describing context-dependent slopes.",
+    "All five model MSE and MAE by cell and pooled, equal-component sensitivity, every fold.",
+    "Across-cell mean activity prediction from S versus the training across-cell mean; check equality of its MSE improvement to the C-versus-A primary gain.",
+    "All three pairwise cell-contrast MSEs and existing balanced-design linearity identities. These are correlated diagnostics, not additional independent confirmations."
+  ],
+  "uncertainty": {
+    "method": "2000 paired component bootstrap draws from the same lexicographic component order, SplitMix64 seed0x2026102702; sample 2761 groups with replacement. Ratio of member loss sums to member counts for equal-element primary estimand.",
+    "interval": "Type7 quantiles0.025 and0.975, conditional on frozen fits and this selected same-study panel; no refit, calibrated p-value or genome-wide prevalence inference."
+  },
+  "independent_reproduction": {
+    "requirement": "Independent Python reconstruction of exact published raw activity values, training-only fits, all829140 predictions, all model errors and 2000 paired resamples. Reuse independently verified DNA/group metadata, with all raw/source bindings retained.",
+    "prediction_abs_rel_tolerance": 1e-07,
+    "metric_abs_rel_tolerance": 1e-08,
+    "features": "Exact integer counts and exact existing DNA-derived feature vectors."
+  },
+  "outputs": [
+    "Exact source and protocol bindings, schema gate and coverage ledger.",
+    "All fits, scalers, coefficients, held-out observations/predictions, component/fold memberships and errors.",
+    "All paired bootstrap draws and model/comparison statistics.",
+    "Independent comparison with every failed check retained.",
+    "Standalone figures, numeric tables, limits and source/implementation manifests."
+  ],
+  "claims": "A bounded computational study of source-selected 200nt reporter constructs in three measured cells. No unseen cell, independent source, causal regulatory mechanism, clinical consequence, absolute expression calibration or global-first discovery claim.",
+  "failure_policy": "Stop fitting on a source/schema/coverage gate failure. Preserve every attempt. Implementation corrections retain earlier artifacts and never alter endpoint, features, alpha, folds, metrics or targets to improve results."
+}

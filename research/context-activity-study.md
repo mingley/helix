@@ -216,8 +216,11 @@ independent comparison. After pinned setup, use a new prefix:
 bash scripts/check_context_activity.sh runs/activity-review
 ```
 
-The workflow script is provided with the release; source/reference commitments
-must remain intact. Numerical reproduction, source binding and the unresolved
+The complete workflow passed from clean source commit
+`035ca5731fe594622cd2c3c27cd3bb51ec65c924`, including source gates, Rust
+fit and audit, independent Python fit, all 258 comparisons and three figures.
+The publication records `working_tree_dirty: false` and retains the earlier
+attempts separately. Source/reference commitments must remain intact. Numerical reproduction, source binding and the unresolved
 upstream ESS history have separate flags. A complete numerical pass does not
 turn the old v2 formula failure into a success.
 

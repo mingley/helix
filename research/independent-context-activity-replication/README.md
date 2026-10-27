@@ -108,11 +108,12 @@ files. The corrected verifier requires essential receipts, accepts safe addition
 names and checks every listed hash. The failed attempt is retained; targets,
 models, penalty, folds, metric definitions and tolerances were unchanged.
 
-Successful replay: `runs/context-activity-v3-final-python-corrected`.
-Comparison: `runs/context-activity-v3-final-comparison`.
-The [published snapshot](../results/context-activity-v3/README.md) retains the
-successful directory under `independent-python/`, with failed history separately
-recorded.
+Final clean replay: `runs/context-activity-v3-clean-python`; comparison:
+`runs/context-activity-v3-clean-comparison`. The full wrapper passed from clean
+source commit `035ca5731fe594622cd2c3c27cd3bb51ec65c924`.
+The [published snapshot](../results/context-activity-v3/README.md) retains that
+replay under `independent-python/` and its comparison under `comparison/`.
+The earlier corrected replay and failed attempt remain in `history/`.
 
 Each manifest binds source/protocol/group commitments, parser and model-code
 snapshots, runtime/dependency hashes, exact source records, all fit/prediction

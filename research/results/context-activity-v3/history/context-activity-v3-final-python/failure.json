@@ -1,0 +1,8 @@
+{
+  "status": "failed_retained_attempt",
+  "error_type": "ValueError",
+  "error": "Activity source receipt inventory differs",
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/helix/scripts/replicate_context_activity.py\", line 294, in run_replay\n    gate, gate_commitments, workbook_path = verified_dataset_gate(dataset, protocol, digest)\n                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/helix/scripts/replicate_context_activity.py\", line 235, in verified_dataset_gate\n    raise ValueError(\"Activity source receipt inventory differs\")\nValueError: Activity source receipt inventory differs\n",
+  "started_at_utc": "2026-10-27T18:58:11.523170+00:00",
+  "model_fits_exported": false
+}

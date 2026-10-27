@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "64e14037fb1f42ddc1ecaca1d23bb8096fabac1f1e892d105eaa20f525fbbb20",
+  "endpoint": "published_joint_log2_rna_dna_activity",
+  "files": {
+    "common-activity.json.gz": "894e6cab70b9c9e2f222f6552deb8959d51746ae290f38f58b6d9671dc749fe9",
+    "evaluation.json.gz": "d5aaab5d8102a6def3226b2dff7dc1ed072a3256ba0331db113762b751d18bd6",
+    "group-input.json": "01e83e2d081596cb66eae031c7bead9d64d68322e55aca5605d2efc47d25c72a",
+    "implementation.py": "d9ac304bb319d3ba00050ddaf1ccb23af626ae78ac8527757b3f78818b1f543d",
+    "independent-context-base.py": "fc49199cbcf3e0e37344c54a8cbda55b0de510d23ddd16401e8d0f8c1191deed",
+    "inputs.json": "db198c683c6cd316c94950589c4a740c73589d58d35634d3073e6a59fbd1fefd",
+    "resampling.json.gz": "2b75e93e934650eb9704111e9c6777ba31ae668cce38b6e4bfc19b2db6d15fa1",
+    "source-records.json.gz": "09c9ac7b75aa416e4c56d2a45a46d7c799454b9f7b406266669954d3772d9352",
+    "source-verification.json": "602d40147e47809087531086f792b6ec0955cd66e98e77df44bed5373dac5ee1",
+    "status.json": "346b1a181fd5280d848a450512dc09420b8ad885efee4dd9510c25fd89ba0d83",
+    "summary.json": "e0ca25d67dd6165b0d1ff2f97e3925c1d8811eaf8bc12edccfd17ab0e0da9c07"
+  }
+}

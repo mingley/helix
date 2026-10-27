@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "64e14037fb1f42ddc1ecaca1d23bb8096fabac1f1e892d105eaa20f525fbbb20",
+  "endpoint": "published_joint_log2_rna_dna_activity",
+  "files": {
+    "comparison.json": "732c1a2129d87b934f3a75fd655ba97074a76d5c01094c107506909ed482d7f8",
+    "implementation.py": "d9ac304bb319d3ba00050ddaf1ccb23af626ae78ac8527757b3f78818b1f543d",
+    "independent-context-base.py": "fc49199cbcf3e0e37344c54a8cbda55b0de510d23ddd16401e8d0f8c1191deed"
+  }
+}
