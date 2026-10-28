@@ -1,0 +1,484 @@
+{
+  "description": "Exhaustive oriented minimal shared-window contexts for interior pairs, fixed-200nt features. Input edits are real substitutions at both sites.",
+  "prediction_units": "Interaction in original predicted common reporter activity units. Fractions use exact saved binary64 raw slopes, mean over five fits, trimer denominator 198; no refitting.",
+  "canonical_trimers": [
+    "AAA",
+    "AAC",
+    "AAG",
+    "AAT",
+    "ACA",
+    "ACC",
+    "ACG",
+    "ACT",
+    "AGA",
+    "AGC",
+    "AGG",
+    "ATA",
+    "ATC",
+    "ATG",
+    "CAA",
+    "CAC",
+    "CAG",
+    "CCA",
+    "CCC",
+    "CCG",
+    "CGA",
+    "CGC",
+    "CTA",
+    "CTC",
+    "GAA",
+    "GAC",
+    "GCA",
+    "GCC",
+    "GGA",
+    "GTA",
+    "TAA",
+    "TCA"
+  ],
+  "source_model": {
+    "path": "research/variant-locality/model-envelope-v1/saved-fits.json",
+    "bytes": 88581,
+    "sha256": "ff0b31e025224a8f7573d8fab1ce961d804a5b540aee111c426c6f074f2fd02e"
+  },
+  "outcomes_read": false,
+  "models_fitted": false,
+  "model_numbers_are_not_biological_effect_bounds": true,
+  "pair_summary": {
+    "1": {
+      "minimal_oriented_classes": 2304,
+      "distinct_interaction_vectors": 502,
+      "zero_feature_interactions": 0,
+      "count_l1_histogram": {
+        "4": 96,
+        "6": 768,
+        "8": 1440
+      },
+      "vector_multiplicity_histogram": {
+        "2": 40,
+        "4": 372,
+        "8": 88,
+        "16": 2
+      }
+    },
+    "2": {
+      "minimal_oriented_classes": 576,
+      "distinct_interaction_vectors": 144,
+      "zero_feature_interactions": 0,
+      "count_l1_histogram": {
+        "4": 576
+      },
+      "vector_multiplicity_histogram": {
+        "4": 144
+      }
+    }
+  },
+  "prediction_extrema": {
+    "1": {
+      "S": {
+        "absolute_max": 0.08570510263321371,
+        "exact_max_numerator": "3056973228798915931",
+        "exact_max_denominator": "35668509048774328320",
+        "ties": [
+          {
+            "reference_context": "TCAA",
+            "alt_first": "T",
+            "alt_second": "G",
+            "signed_value": 0.08570510263321371
+          },
+          {
+            "reference_context": "TCGA",
+            "alt_first": "T",
+            "alt_second": "A",
+            "signed_value": -0.08570510263321371
+          },
+          {
+            "reference_context": "TTAA",
+            "alt_first": "C",
+            "alt_second": "G",
+            "signed_value": -0.08570510263321371
+          },
+          {
+            "reference_context": "TTGA",
+            "alt_first": "C",
+            "alt_second": "A",
+            "signed_value": 0.08570510263321371
+          }
+        ]
+      },
+      "I:HepG2": {
+        "absolute_max": 0.1553290146255182,
+        "exact_max_numerator": "15389873232520823",
+        "exact_max_denominator": "99079191802150912",
+        "ties": [
+          {
+            "reference_context": "TCAA",
+            "alt_first": "T",
+            "alt_second": "G",
+            "signed_value": 0.1553290146255182
+          },
+          {
+            "reference_context": "TCGA",
+            "alt_first": "T",
+            "alt_second": "A",
+            "signed_value": -0.1553290146255182
+          },
+          {
+            "reference_context": "TTAA",
+            "alt_first": "C",
+            "alt_second": "G",
+            "signed_value": -0.1553290146255182
+          },
+          {
+            "reference_context": "TTGA",
+            "alt_first": "C",
+            "alt_second": "A",
+            "signed_value": 0.1553290146255182
+          }
+        ]
+      },
+      "I:K562": {
+        "absolute_max": 0.1402557204752197,
+        "exact_max_numerator": "1000542486982547351",
+        "exact_max_denominator": "7133701809754865664",
+        "ties": [
+          {
+            "reference_context": "ACAT",
+            "alt_first": "G",
+            "alt_second": "G",
+            "signed_value": -0.1402557204752197
+          },
+          {
+            "reference_context": "ACCT",
+            "alt_first": "T",
+            "alt_second": "G",
+            "signed_value": -0.1402557204752197
+          },
+          {
+            "reference_context": "ACGT",
+            "alt_first": "G",
+            "alt_second": "A",
+            "signed_value": 0.1402557204752197
+          },
+          {
+            "reference_context": "ACGT",
+            "alt_first": "T",
+            "alt_second": "C",
+            "signed_value": 0.1402557204752197
+          },
+          {
+            "reference_context": "AGAT",
+            "alt_first": "C",
+            "alt_second": "G",
+            "signed_value": 0.1402557204752197
+          },
+          {
+            "reference_context": "AGGT",
+            "alt_first": "C",
+            "alt_second": "A",
+            "signed_value": -0.1402557204752197
+          },
+          {
+            "reference_context": "ATCT",
+            "alt_first": "C",
+            "alt_second": "G",
+            "signed_value": 0.1402557204752197
+          },
+          {
+            "reference_context": "ATGT",
+            "alt_first": "C",
+            "alt_second": "C",
+            "signed_value": -0.1402557204752197
+          }
+        ]
+      },
+      "I:WTC11": {
+        "absolute_max": 0.10882214035997953,
+        "exact_max_numerator": "485190437267115001",
+        "exact_max_denominator": "4458563631096791040",
+        "ties": [
+          {
+            "reference_context": "AGCG",
+            "alt_first": "T",
+            "alt_second": "T",
+            "signed_value": 0.10882214035997953
+          },
+          {
+            "reference_context": "AGTG",
+            "alt_first": "T",
+            "alt_second": "C",
+            "signed_value": -0.10882214035997953
+          },
+          {
+            "reference_context": "ATCG",
+            "alt_first": "G",
+            "alt_second": "T",
+            "signed_value": -0.10882214035997953
+          },
+          {
+            "reference_context": "ATTG",
+            "alt_first": "G",
+            "alt_second": "C",
+            "signed_value": 0.10882214035997953
+          },
+          {
+            "reference_context": "CAAT",
+            "alt_first": "G",
+            "alt_second": "C",
+            "signed_value": 0.10882214035997953
+          },
+          {
+            "reference_context": "CACT",
+            "alt_first": "G",
+            "alt_second": "A",
+            "signed_value": -0.10882214035997953
+          },
+          {
+            "reference_context": "CGAT",
+            "alt_first": "A",
+            "alt_second": "C",
+            "signed_value": -0.10882214035997953
+          },
+          {
+            "reference_context": "CGCT",
+            "alt_first": "A",
+            "alt_second": "A",
+            "signed_value": 0.10882214035997953
+          }
+        ]
+      }
+    },
+    "2": {
+      "S": {
+        "absolute_max": 0.06637513526499204,
+        "exact_max_numerator": "4735004225625977227",
+        "exact_max_denominator": "71337018097548656640",
+        "ties": [
+          {
+            "reference_context": "ACA",
+            "alt_first": "T",
+            "alt_second": "G",
+            "signed_value": -0.06637513526499204
+          },
+          {
+            "reference_context": "ACG",
+            "alt_first": "T",
+            "alt_second": "A",
+            "signed_value": 0.06637513526499204
+          },
+          {
+            "reference_context": "CGA",
+            "alt_first": "T",
+            "alt_second": "T",
+            "signed_value": -0.06637513526499204
+          },
+          {
+            "reference_context": "CGT",
+            "alt_first": "T",
+            "alt_second": "A",
+            "signed_value": 0.06637513526499204
+          },
+          {
+            "reference_context": "TCA",
+            "alt_first": "A",
+            "alt_second": "G",
+            "signed_value": 0.06637513526499204
+          },
+          {
+            "reference_context": "TCG",
+            "alt_first": "A",
+            "alt_second": "A",
+            "signed_value": -0.06637513526499204
+          },
+          {
+            "reference_context": "TGA",
+            "alt_first": "C",
+            "alt_second": "T",
+            "signed_value": 0.06637513526499204
+          },
+          {
+            "reference_context": "TGT",
+            "alt_first": "C",
+            "alt_second": "A",
+            "signed_value": -0.06637513526499204
+          }
+        ]
+      },
+      "I:HepG2": {
+        "absolute_max": 0.0917066353109835,
+        "exact_max_numerator": "204439934463903893",
+        "exact_max_denominator": "2229281815548395520",
+        "ties": [
+          {
+            "reference_context": "ACA",
+            "alt_first": "T",
+            "alt_second": "G",
+            "signed_value": -0.0917066353109835
+          },
+          {
+            "reference_context": "ACG",
+            "alt_first": "T",
+            "alt_second": "A",
+            "signed_value": 0.0917066353109835
+          },
+          {
+            "reference_context": "CGA",
+            "alt_first": "T",
+            "alt_second": "T",
+            "signed_value": -0.0917066353109835
+          },
+          {
+            "reference_context": "CGT",
+            "alt_first": "T",
+            "alt_second": "A",
+            "signed_value": 0.0917066353109835
+          },
+          {
+            "reference_context": "TCA",
+            "alt_first": "A",
+            "alt_second": "G",
+            "signed_value": 0.0917066353109835
+          },
+          {
+            "reference_context": "TCG",
+            "alt_first": "A",
+            "alt_second": "A",
+            "signed_value": -0.0917066353109835
+          },
+          {
+            "reference_context": "TGA",
+            "alt_first": "C",
+            "alt_second": "T",
+            "signed_value": 0.0917066353109835
+          },
+          {
+            "reference_context": "TGT",
+            "alt_first": "C",
+            "alt_second": "A",
+            "signed_value": -0.0917066353109835
+          }
+        ]
+      },
+      "I:K562": {
+        "absolute_max": 0.08431529754805053,
+        "exact_max_numerator": "93981279798210631",
+        "exact_max_denominator": "1114640907774197760",
+        "ties": [
+          {
+            "reference_context": "ACC",
+            "alt_first": "T",
+            "alt_second": "G",
+            "signed_value": -0.08431529754805053
+          },
+          {
+            "reference_context": "ACG",
+            "alt_first": "T",
+            "alt_second": "C",
+            "signed_value": 0.08431529754805053
+          },
+          {
+            "reference_context": "CGA",
+            "alt_first": "G",
+            "alt_second": "T",
+            "signed_value": -0.08431529754805053
+          },
+          {
+            "reference_context": "CGT",
+            "alt_first": "G",
+            "alt_second": "A",
+            "signed_value": 0.08431529754805053
+          },
+          {
+            "reference_context": "GGA",
+            "alt_first": "C",
+            "alt_second": "T",
+            "signed_value": 0.08431529754805053
+          },
+          {
+            "reference_context": "GGT",
+            "alt_first": "C",
+            "alt_second": "A",
+            "signed_value": -0.08431529754805053
+          },
+          {
+            "reference_context": "TCC",
+            "alt_first": "A",
+            "alt_second": "G",
+            "signed_value": 0.08431529754805053
+          },
+          {
+            "reference_context": "TCG",
+            "alt_first": "A",
+            "alt_second": "C",
+            "signed_value": -0.08431529754805053
+          }
+        ]
+      },
+      "I:WTC11": {
+        "absolute_max": 0.07327018591511439,
+        "exact_max_numerator": "40834973270603669",
+        "exact_max_denominator": "557320453887098880",
+        "ties": [
+          {
+            "reference_context": "AAC",
+            "alt_first": "T",
+            "alt_second": "T",
+            "signed_value": -0.07327018591511439
+          },
+          {
+            "reference_context": "AAT",
+            "alt_first": "T",
+            "alt_second": "C",
+            "signed_value": 0.07327018591511439
+          },
+          {
+            "reference_context": "ATA",
+            "alt_first": "G",
+            "alt_second": "T",
+            "signed_value": -0.07327018591511439
+          },
+          {
+            "reference_context": "ATT",
+            "alt_first": "G",
+            "alt_second": "A",
+            "signed_value": 0.07327018591511439
+          },
+          {
+            "reference_context": "GTA",
+            "alt_first": "A",
+            "alt_second": "T",
+            "signed_value": 0.07327018591511439
+          },
+          {
+            "reference_context": "GTT",
+            "alt_first": "A",
+            "alt_second": "A",
+            "signed_value": -0.07327018591511439
+          },
+          {
+            "reference_context": "TAC",
+            "alt_first": "A",
+            "alt_second": "T",
+            "signed_value": 0.07327018591511439
+          },
+          {
+            "reference_context": "TAT",
+            "alt_first": "A",
+            "alt_second": "C",
+            "signed_value": -0.07327018591511439
+          }
+        ]
+      }
+    }
+  },
+  "checks": {
+    "local_full_rc_and_direction_classes": 2880,
+    "full_count_flank_comparisons": 737280,
+    "full_200nt_comparisons": 2880
+  },
+  "caveats": [
+    "The nonzero result concerns the feature vector, not necessarily a particular fitted prediction; exact cancellation with any coefficients is possible.",
+    "The zero-feature result is verified exhaustively for interior edits; boundary pairs may have fewer shared windows.",
+    "Maximum predictions concern these fixed fitted models, not biological interactions or measured reporter expression.",
+    "Fixed affine transformations preserve the feature mixed difference up to a linear map; GC and intercept cancel."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "all_checks_passed": true,
+  "classes_checked": 3072,
+  "collision_vectors": 93,
+  "exact_vectors": 1405,
+  "input_sha256": {
+    "research/variant-locality/collision-v1/summary.json": "2fcb70d3bb5904c735dde20c1b7d03d5e32b32686bf3e9259c268bb6c570b8e7",
+    "research/variant-locality/panel-scan-v1/opportunity-classes.csv": "d7e10b3ae852796de1511b133a591ba698abb21c8bcbe180a2f30c2bbda91cea"
+  },
+  "method": "Recompute counts from two full 200nt sequences per edit class and independently group by exact integer delta and RC orbit; source panel slot counts inherited",
+  "nonzero_collision_vectors": 92,
+  "outcomes_read": false
+}

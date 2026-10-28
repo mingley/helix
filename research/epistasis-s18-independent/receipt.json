@@ -1,0 +1,21 @@
+{
+  "accepted_distinct_pair_identifiers": 2156,
+  "accepted_group_details_checked": [
+    "row numbers",
+    "sequence edit positions",
+    "distance",
+    "labels",
+    "pair and window identifiers"
+  ],
+  "accepted_groups_exactly_matched": 7542,
+  "all_checks_passed": true,
+  "diplotype_row_counts_and_distance_distribution_match": true,
+  "groups_checked": 8904,
+  "method": "Separate stdlib streaming XLSX XML parser; all four sequences compared by polymorphic-column genotype patterns",
+  "outcome_workbooks_read": false,
+  "primary_report_sha256": "70dc4a6bd1813ea879b9699565cf75e8e9c21bff9ea1af5a46c25c1ad4686b0f",
+  "reject_reason_categories_independently_checked": false,
+  "rejected_group_keys_and_rows_exactly_matched": 1362,
+  "rows_checked": 35616,
+  "source_sha256": "92929b4cef82797237c4c2be770feb744daa97255ac6dbfe3d53d5a34c996fbb"
+}

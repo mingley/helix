@@ -1,0 +1,14 @@
+{
+  "source": "Siraj et al. (2026), Supplementary Table 18, oligo sequences for variant pairs",
+  "article_doi": "10.1038/s41586-026-10121-6",
+  "publisher_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-026-10121-6/MediaObjects/41586_2026_10121_MOESM9_ESM.xlsx",
+  "retrieval_date_utc": "2026-10-28",
+  "retrieval": "curl -fLsS over the configured HTTPS proxy; successful completion",
+  "file": "siraj2026-S18.xlsx",
+  "bytes": 1617092,
+  "sha256": "92929b4cef82797237c4c2be770feb744daa97255ac6dbfe3d53d5a34c996fbb",
+  "publisher_article_terms": "CC BY 4.0, subject to separately credited third-party material exceptions",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "separate_zenodo_record_terms": "CC BY-NC 4.0; not the source of this file",
+  "scope": "Source design table; no reporter outcomes"
+}

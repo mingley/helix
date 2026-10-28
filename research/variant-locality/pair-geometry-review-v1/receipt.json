@@ -1,0 +1,15 @@
+{
+  "all_checks_passed": true,
+  "classes_checked": 2880,
+  "exact_summary_extrema_checked": 8,
+  "feature_counts_checked": 95040,
+  "input_sha256": {
+    "research/variant-locality/model-envelope-v1/saved-fits.json": "ff0b31e025224a8f7573d8fab1ce961d804a5b540aee111c426c6f074f2fd02e",
+    "research/variant-locality/pair-geometry-v1/all-pairs.csv": "ed8ced980bb0f9a577a583ad8476318b2f7202848ff6c6e6c6e1a4538944690d",
+    "research/variant-locality/pair-geometry-v1/summary.json": "69d12e9a7d86c877f4e52a958b2b131e154527769f700015819976a2f59022e4"
+  },
+  "maximum_binary64_error": 0.0,
+  "method": "Four complete 200nt counts per class with independent flank; exact rational scores from five saved binary64 coefficient vectors",
+  "outcomes_read": false,
+  "predictions_checked": 11520
+}

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "all-pairs.csv": {
+      "bytes": 516730,
+      "sha256": "ed8ced980bb0f9a577a583ad8476318b2f7202848ff6c6e6c6e1a4538944690d"
+    },
+    "implementation.py": {
+      "bytes": 7570,
+      "sha256": "e72505a6b572af47b67da9d0bf82ce9b364bb8df00b91773ce351a4317b516c8"
+    },
+    "summary.json": {
+      "bytes": 13868,
+      "sha256": "69d12e9a7d86c877f4e52a958b2b131e154527769f700015819976a2f59022e4"
+    }
+  }
+}

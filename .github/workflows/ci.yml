@@ -51,5 +51,10 @@ jobs:
           python3 -W error::ResourceWarning -m unittest discover -s research/variant-transfer/independent-grouping-v1 -p 'test_*.py'
           python3 research/variant-transfer/source/map_design.py --self-test
           python3 scripts/audit_context_ess_cohort.py --self-test --primary-root research/results/context-endpoint-recovery-v1/primary
+          python3 -m unittest discover -s research/epistasis-design -p 'test_*.py'
+          python3 -m unittest discover -s research/epistasis-s18-independent -p 'test_*.py'
+          python3 research/epistasis-s18-independent/verify.py research/epistasis-source-audit/siraj2026-S18.xlsx
+          python3 research/variant-locality/pair-geometry-review-v1/verify.py
+          python3 research/variant-locality/pair-geometry-review-v1/verify_collisions.py
       # Full empirical reproduction is scripts/check_study.sh. Its known
       # secondary-rank failures remain exit 2 and are not masked as CI success.

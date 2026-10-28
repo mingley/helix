@@ -1,0 +1,32 @@
+{
+  "all_vector_orbit_count_histogram": {
+    "1": 1312,
+    "2": 88,
+    "4": 4,
+    "32": 1
+  },
+  "allele_swap": "reverse the direction; the integer delta negates, so a swap is not generally equal and is never separately quotiented",
+  "alternates_per_position": 3,
+  "beyond_rc_collision_directed_classes": 448,
+  "beyond_rc_collision_panel_slots": 5687716,
+  "beyond_rc_collision_vector_count": 93,
+  "directed_classes": 3072,
+  "directed_edit": "ordered reference 5mer and alternate center base; mutant 5mer differs only at center",
+  "exact_delta_vectors": 1405,
+  "input_sha256": "d7e10b3ae852796de1511b133a591ba698abb21c8bcbe180a2f30c2bbda91cea",
+  "interior_positions_per_record": 196,
+  "limitations": [
+    "A slot is an edit opportunity in an assay record, not a unique genomic variant, population frequency, mutation probability, or measured effect.",
+    "Equality holds for any fixed linear predictor on these features, not arbitrary nonlinear models or other feature sets.",
+    "These calculations read no assay outcomes and make no claim of biological equivalence."
+  ],
+  "maximum_rc_orbits_per_vector": 32,
+  "nonzero_beyond_rc_collision_directed_classes": 384,
+  "nonzero_beyond_rc_collision_panel_slots": 4942664,
+  "nonzero_beyond_rc_collision_vector_count": 92,
+  "panel_slot_denominator": 32502288,
+  "rc_orbit": "identify each directed edit with its reverse complement; do not merge an edit with its allele swap unless their delta vectors happen to coincide",
+  "rc_orbits": 1536,
+  "representation": "32 canonical overlapping trimer integer count deltas plus GC count delta; equal 200nt denominators 198 and 200 preserve equality",
+  "source_records": 55276
+}

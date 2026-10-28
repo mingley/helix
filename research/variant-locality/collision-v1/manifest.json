@@ -1,0 +1,24 @@
+{
+  "implementation": {
+    "repository_path": "research/variant-locality/collision-v1/analyze.py",
+    "sha256": "b273f8991a31622537018114fce380bac31d98e105c709a5f6116d1fc575e323"
+  },
+  "input": {
+    "repository_path": "research/variant-locality/panel-scan-v1/opportunity-classes.csv",
+    "sha256": "d7e10b3ae852796de1511b133a591ba698abb21c8bcbe180a2f30c2bbda91cea"
+  },
+  "outputs": {
+    "collision-classes.csv": {
+      "bytes": 45229,
+      "sha256": "b76847657971f18d2ccc8df79f9a34398a0e681c2bd9b0504aca0a888330327d"
+    },
+    "summary.json": {
+      "bytes": 1688,
+      "sha256": "2fcb70d3bb5904c735dde20c1b7d03d5e32b32686bf3e9259c268bb6c570b8e7"
+    },
+    "vectors.json": {
+      "bytes": 718520,
+      "sha256": "3dc9472471c23e8f3593e0cacdd63af5e116f4d15370523b18694d77910d796f"
+    }
+  }
+}

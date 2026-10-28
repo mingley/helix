@@ -55,6 +55,16 @@ theorems show the local-context restriction and zero ideal predicted interaction
 between substitutions at distance three or greater. These are model properties,
 not measured biological neutrality or proof of why external transfer failed.
 
+The [exhaustive nearby-pair analysis](variant-locality/pair-geometry-v1/README.md)
+shows nonzero feature interactions for every interior two-substitution class at
+distances one and two. Together with the distant-zero proof, this describes the
+interaction range of these particular features. The separate
+[collision analysis](variant-locality/collision-v1/README.md) finds 92 nonzero
+feature-delta groups shared across different reverse-complement edit orbits;
+they cover 4,942,664 of 32,502,288 proposed panel slots. These are exact model
+limitations, not measured frequencies or biological effect claims. Independent
+full-sequence and saved-coefficient checks reproduce the enumerated results.
+
 ## Next falsifiable goal: test a predicted absence of interaction
 
 Find source-compatible four-construct measurements: reference, each of two
@@ -75,6 +85,18 @@ measured interaction `activity(double) − activity(single1) − activity(single
 4. Require further endogenous or other discriminating evidence before claiming
    a biological regulatory mechanism. Continue the historical ESS-source trace
    as a separate provenance question.
+
+The [study-design note](epistasis-design.md) states a candidate replicate-aware
+estimand and its independence assumptions. It is not a frozen source-specific
+protocol; source feasibility and provenance must be settled before applying it.
+The [Siraj design audit](epistasis-source-audit/README.md), independently checked
+against the original XLSX, identifies 7,542 sequence-valid windows in 2,156
+pair identifiers. Those are design opportunities, not measured outcomes or
+independent biological replicates. The [endpoint review](epistasis/source/siraj-s20-semantics.md)
+records unresolved table export, common-library and replicate questions; the
+biological test remains open until a suitable endpoint and its limitations are
+established. The [prior-art note](epistasis-prior-art.md) describes related
+published work and existing exposure.
 
 ## Completed foundation
 
