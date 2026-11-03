@@ -27,6 +27,13 @@ experiment. All 7,542 reference inserts match their stated hg19 coordinates;
 independent implementation reproduces every hg38 mapping record. These are
 design checks, not measured interaction effects.
 
+In those designs, an independently verified
+[feature-collision audit](research/epistasis-feature-collisions-v1/README.md)
+finds 282 windows with distinct constructs that have identical 3-mer and GC
+features. Any deterministic predictor restricted to those features must assign
+each such pair the same prediction in a given context. These are testable
+model limitations, not measured equivalence of the constructs.
+
 The [external variant-effect test](research/variant-transfer-v2-study.md) now
 shows **no observed advantage over zero effect** on 2,153 SNVs in 172 components passing the frozen prior-source
 exclusion guards from a separate experiment. Macro MSE is 0.2033556 versus 0.2033201;

@@ -1,0 +1,86 @@
+{
+  "classification_pair_identifiers": {
+    "first_blind_only": 32,
+    "no_collision": 2078,
+    "opposite_nonzero": 4,
+    "same_nonzero": 10,
+    "second_blind_only": 32
+  },
+  "classification_windows": {
+    "first_blind_only": 104,
+    "no_collision": 7260,
+    "opposite_nonzero": 12,
+    "same_nonzero": 46,
+    "second_blind_only": 120
+  },
+  "classification_windows_by_hg38_status": {
+    "full_reference_mismatch": {
+      "no_collision": 58
+    },
+    "no_map": {
+      "no_collision": 4
+    },
+    "valid": {
+      "first_blind_only": 104,
+      "no_collision": 7198,
+      "opposite_nonzero": 12,
+      "same_nonzero": 46,
+      "second_blind_only": 120
+    }
+  },
+  "design_windows": 7542,
+  "distinct_pair_identifiers": 2156,
+  "distinct_unordered_exact_dna_pairs": 480,
+  "equal_feature_construct_pairs_over_windows": 506,
+  "equal_feature_pairs_that_are_global_reverse_complements": 0,
+  "feature_order": [
+    "rc3mer_AAA",
+    "rc3mer_AAC",
+    "rc3mer_AAG",
+    "rc3mer_AAT",
+    "rc3mer_ACA",
+    "rc3mer_ACC",
+    "rc3mer_ACG",
+    "rc3mer_ACT",
+    "rc3mer_AGA",
+    "rc3mer_AGC",
+    "rc3mer_AGG",
+    "rc3mer_ATA",
+    "rc3mer_ATC",
+    "rc3mer_ATG",
+    "rc3mer_CAA",
+    "rc3mer_CAC",
+    "rc3mer_CAG",
+    "rc3mer_CCA",
+    "rc3mer_CCC",
+    "rc3mer_CCG",
+    "rc3mer_CGA",
+    "rc3mer_CGC",
+    "rc3mer_CTA",
+    "rc3mer_CTC",
+    "rc3mer_GAA",
+    "rc3mer_GAC",
+    "rc3mer_GCA",
+    "rc3mer_GCC",
+    "rc3mer_GGA",
+    "rc3mer_GTA",
+    "rc3mer_TAA",
+    "rc3mer_TCA",
+    "gc_count"
+  ],
+  "features": "32 canonical overlapping 3mer integer counts followed by GC count, on 200-base DNA",
+  "first_delta": "AR minus RR",
+  "inputs_sha256": {
+    "design_reader": "66413f09afe3ad4ecb71ff8667cf8a95403ea9e4aa2a308585b3f73888ac8c4f",
+    "hg19_reference_ledger": "666b62d2259dc03e8a3e9148dadf4d1a503ed18353fdd0bd5997d1e8d2b53265",
+    "hg38_reference_ledger": "72800cd3748ecff22fc1cd3d2a9593053353274f91aa9479e47d67dc0b4c55e0",
+    "s18_design_report": "70dc4a6bd1813ea879b9699565cf75e8e9c21bff9ea1af5a46c25c1ad4686b0f",
+    "s18_workbook": "92929b4cef82797237c4c2be770feb744daa97255ac6dbfe3d53d5a34c996fbb"
+  },
+  "pair_identifiers_with_any_equal_feature_pair": 78,
+  "rules": "compare all four complete feature vectors; require AA - RR = first delta + second delta",
+  "schema_version": 1,
+  "scope": "S18 design sequences only; no outcomes or fitted coefficients read",
+  "second_delta": "RA minus RR",
+  "windows_with_any_equal_feature_pair": 282
+}

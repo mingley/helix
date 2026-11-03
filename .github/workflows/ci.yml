@@ -56,6 +56,10 @@ jobs:
           python3 -m unittest discover -s research/epistasis-reference-audit -p 'test_*.py'
           python3 -m unittest discover -s research/epistasis-hg19-audit -p 'test_*.py'
           python3 -m unittest discover -s research/epistasis-reference-independent -p 'test_*.py'
+          python3 -m unittest discover -s research/epistasis-feature-collisions-v1 -p 'test_*.py'
+          python3 -m unittest discover -s research/epistasis-feature-collisions-independent -p 'test_*.py'
+          python3 research/epistasis-feature-collisions-independent/verify.py --receipt "$RUNNER_TEMP/epistasis-feature-collisions.json"
+          cmp research/epistasis-feature-collisions-independent/receipt.json "$RUNNER_TEMP/epistasis-feature-collisions.json"
           python3 research/epistasis-s18-independent/verify.py research/epistasis-source-audit/siraj2026-S18.xlsx
           python3 research/variant-locality/pair-geometry-review-v1/verify.py
           python3 research/variant-locality/pair-geometry-review-v1/verify_collisions.py

@@ -65,6 +65,15 @@ they cover 4,942,664 of 32,502,288 proposed panel slots. These are exact model
 limitations, not measured frequencies or biological effect claims. Independent
 full-sequence and saved-coefficient checks reproduce the enumerated results.
 
+An outcome-free [audit of S18 four-construct designs](epistasis-feature-collisions-v1/README.md)
+finds feature-indistinguishable distinct constructs in 282 of 7,542 windows,
+including 46 windows where the two single-edit feature changes are equal and
+nonzero and 12 where they are nonzero opposites. In those windows, any
+deterministic predictor using only the same 3-mer/GC features and cell context
+must give equal predictions to at least one distinct construct pair. A separate
+implementation reconstructs all 7,542 records. Reporter activity differences,
+assay uncertainties and endogenous effects remain unmeasured by this audit.
+
 ## Next falsifiable goal: test a predicted absence of interaction
 
 Find source-compatible four-construct measurements: reference, each of two

@@ -1,0 +1,29 @@
+{
+  "accepted_design_groups": 7542,
+  "all_checks_passed": true,
+  "classes": {
+    "first_blind_only": 104,
+    "no_collision": 7260,
+    "opposite_nonzero": 12,
+    "same_nonzero": 46,
+    "second_blind_only": 120
+  },
+  "distinct_dna_pairs": 480,
+  "feature_equal_construct_pairs": 506,
+  "full_ledger_records_compared": 7542,
+  "global_reverse_complement_pairs": 0,
+  "hg19_reference_audit_sha256": "666b62d2259dc03e8a3e9148dadf4d1a503ed18353fdd0bd5997d1e8d2b53265",
+  "hg38_reference_audit_sha256": "72800cd3748ecff22fc1cd3d2a9593053353274f91aa9479e47d67dc0b4c55e0",
+  "implementation_sha256": "f07ecefaf4231d1d03196c899ad27ddc42deddc294ac1ebfeb39a88738646233",
+  "method": "Independent XML design reconstruction; complete-sequence RC 3-mer and GC counting",
+  "outcome_workbooks_read": false,
+  "pair_identifiers_with_feature_collisions": 78,
+  "primary_ledger_sha256": "53c2751cd093da20a2c1bad0cd602e8ed173b7f164456c60f9938a7e1efa9ce7",
+  "primary_manifest_sha256": "736d136c9d8503e0440b74da5a6008e23cfbd6ae3fa515c62340808481e8f0fc",
+  "primary_summary_sha256": "922b68c7e8a5ed92699be34a5cae02a380e7edad11805f515955e8499f9a4ea4",
+  "prior_design_sha256": "70dc4a6bd1813ea879b9699565cf75e8e9c21bff9ea1af5a46c25c1ad4686b0f",
+  "rejected_design_groups": 1362,
+  "source_rows": 35616,
+  "source_sha256": "92929b4cef82797237c4c2be770feb744daa97255ac6dbfe3d53d5a34c996fbb",
+  "windows_with_feature_collisions": 282
+}
