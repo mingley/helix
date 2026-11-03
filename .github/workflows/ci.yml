@@ -58,6 +58,7 @@ jobs:
           python3 -m unittest discover -s research/epistasis-reference-independent -p 'test_*.py'
           python3 -m unittest discover -s research/epistasis-feature-collisions-v1 -p 'test_*.py'
           python3 -m unittest discover -s research/epistasis-feature-collisions-independent -p 'test_*.py'
+          python3 -m unittest discover -s research/epistasis-collision-design -p 'test_*.py'
           python3 -m unittest discover -s research/epistasis-kreevan-source -p 'test_*.py'
           python3 -m unittest discover -s research/variant-locality/gc-trimer-identity-v1 -p 'test_*.py'
           python3 -m unittest discover -s research/variant-locality/gc-trimer-independent-v1 -p 'test_*.py'

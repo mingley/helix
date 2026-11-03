@@ -73,6 +73,10 @@ deterministic predictor using only the same 3-mer/GC features and cell context
 must give equal predictions to at least one distinct construct pair. A separate
 implementation reconstructs all 7,542 records. Reporter activity differences,
 assay uncertainties and endogenous effects remain unmeasured by this audit.
+The [collision-test design](epistasis-collision-design/README.md) defines an
+assay-specific lower bound and a candidate cross-replicate estimator, together
+with its covariance, shared-input and selection assumptions. It is not a
+source-specific frozen protocol or a measured result.
 
 A separately [proved GC/trimer identity](variant-locality/gc-trimer-identity-v1/README.md)
 shows that, at fixed sequence length and boundary GC mass, the GC feature is a
