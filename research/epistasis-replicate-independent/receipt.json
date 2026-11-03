@@ -1,0 +1,74 @@
+{
+  "all_checks_passed": true,
+  "design_sha256": "70dc4a6bd1813ea879b9699565cf75e8e9c21bff9ea1af5a46c25c1ad4686b0f",
+  "feature_ledger_sha256": "53c2751cd093da20a2c1bad0cd602e8ed173b7f164456c60f9938a7e1efa9ce7",
+  "implementation_sha256": "c37987951b395c61cd64980d538fd2327929ff41820444eac0d645da41adb768",
+  "lookup_gzip_sha256": "58f0c48c6d0a21b4a558794f31dcf38ccd6e8c766d56450512a28a27de059a15",
+  "lookup_uncompressed_md5": "c18ba6775c64fbef1da73cede0d29dea",
+  "method": "Independent csv TSV parser, streaming decompressed checksum, and centered-index name construction",
+  "numerical_fields_compared": 40,
+  "numerical_summary": {
+    "candidate_strings_reused_by_multiple_window_labels": 0,
+    "design_windows": 7542,
+    "distinct_candidate_strings": 30168,
+    "lookup_row_counts": {
+      "flag_0_rows": 10665365,
+      "flag_1_rows": 579603,
+      "flag_2_rows": 809340,
+      "multiple_name_rows": 579603,
+      "rows": 12054308
+    },
+    "lookup_uncompressed_bytes": 1039687724,
+    "schema_version": 1,
+    "seen_on_a_flag_0_single_name_row": {
+      "collision_classifications_for_four_string_windows": {
+        "first_blind_only": 4,
+        "opposite_nonzero": 2,
+        "second_blind_only": 6
+      },
+      "collision_pair_ids_with_four_string_window": 5,
+      "collision_windows_by_number_of_four_candidate_strings_present": {
+        "0": 246,
+        "1": 0,
+        "2": 24,
+        "3": 0,
+        "4": 12
+      },
+      "pair_ids_with_at_least_one_four_string_window": 105,
+      "windows_by_number_of_four_candidate_strings_present": {
+        "0": 7034,
+        "1": 0,
+        "2": 252,
+        "3": 0,
+        "4": 256
+      }
+    },
+    "seen_under_any_flag": {
+      "collision_classifications_for_four_string_windows": {
+        "first_blind_only": 4,
+        "opposite_nonzero": 2,
+        "second_blind_only": 6
+      },
+      "collision_pair_ids_with_four_string_window": 5,
+      "collision_windows_by_number_of_four_candidate_strings_present": {
+        "0": 246,
+        "1": 0,
+        "2": 24,
+        "3": 0,
+        "4": 12
+      },
+      "pair_ids_with_at_least_one_four_string_window": 105,
+      "windows_by_number_of_four_candidate_strings_present": {
+        "0": 7034,
+        "1": 0,
+        "2": 252,
+        "3": 0,
+        "4": 256
+      }
+    }
+  },
+  "primary_implementation_sha256": "9d4099594a4aea3c78802840e0d860a27c15321fadbe325571f941e265fdc073",
+  "primary_report_sha256": "bd216aef019472b669e19dcc238682edf5eeaf9d56fa1321807db5a1a12d4298",
+  "rna_or_reporter_outcome_table_read": false,
+  "source_scope": "Lookup names are syntactic candidates; mapping/QC columns instantiated but not interpreted except overall flag"
+}

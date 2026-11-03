@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "s29_workbook_sha256": "3e62a3876b70e9c75951df26ed09ba552c3ba6f9f3b318934c1b01a5a42403b1",
+  "s29_sheet": "S29.Data Source",
+  "s29_row_1based": 5,
+  "s29_row": [
+    "ENCSR857JFG",
+    "GSE266781",
+    "MPRA variant effect processed results for OL27 in K562 cells",
+    "ENCFF190GIK",
+    "UKBB/BBJ MPRA processed data",
+    "https://www.encodeproject.org/files/ENCFF190GIK/@@download/ENCFF190GIK.tsv"
+  ],
+  "count_table": {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE266nnn/GSE266781/suppl/GSE266781_ENCFF970OLE_element_quantifications_.tsv.gz",
+    "gzip_bytes": 212873667,
+    "encoded_source_accession": "ENCFF970OLE",
+    "uncompressed_bytes_per_geo_readme": 597656690,
+    "uncompressed_md5_per_geo_readme": "ba7a39efb756088f5d19525180cc3549",
+    "range_start": 0,
+    "range_end_inclusive": 65535,
+    "range_sha256": "85a235fc79803b0f8045822cf7c5635d5886c6cc8e1f8fb857ffe5d654d79f56",
+    "header": "Barcode\tOligo\tplasmid_r1\tplasmid_r2\tplasmid_r3\tplasmid_r4\tplasmid_r5\tk562_r1\tk562_r2\tk562_r3\tk562_r4\tk562_r5",
+    "compressed_bytes_fed_to_inflater": 197,
+    "uncompressed_bytes_through_newline": 109,
+    "uncompressed_bytes_returned_after_newline": 0
+  },
+  "lookup_table": {
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8254nnn/GSM8254614/suppl/GSM8254614_ENCFF823YWM_element_barcode_mapping_.tsv.gz",
+    "encoded_source_accession": "ENCFF823YWM",
+    "gzip_bytes": 296690753,
+    "gzip_sha256": "58f0c48c6d0a21b4a558794f31dcf38ccd6e8c766d56450512a28a27de059a15",
+    "uncompressed_bytes_per_geo_readme": 1039687724,
+    "uncompressed_md5_per_geo_readme": "c18ba6775c64fbef1da73cede0d29dea",
+    "range_sha256": "47b2f5850f2c1239fccd7519f50d3e66bc48fb7b62ba0b9c081bc745de3f6d07",
+    "first_line_was_data_not_header": true,
+    "first_line_decoded_and_printed": true,
+    "first_line_saved_in_git": false
+  },
+  "mprasuite_source": {
+    "historical_commit": "e853506aaa1edbae395c5d0870c141754a8fe667",
+    "model_code_url": "https://raw.githubusercontent.com/tewhey-lab/MPRASuite/e853506aaa1edbae395c5d0870c141754a8fe667/MPRAmodel/MPRAmodel.R",
+    "model_code_sha256": "e80aac9de3221f6d667664e17390813ee07fac11153773ea27d66585004452be",
+    "lookup_schema_commit": "da5861938be0b7f3f98539a4e029a3649b5a58f2",
+    "lookup_schema_url": "https://raw.githubusercontent.com/tewhey-lab/MPRASuite/da5861938be0b7f3f98539a4e029a3649b5a58f2/MPRAmatch/output_file_explanations.md",
+    "lookup_schema_sha256": "d84a910fd1244fa7f2eedf0527273e53c83f5ae68b4e9bd0064589902efb1e82",
+    "historical_code_proven_to_generate_this_exact_file": false
+  }
+}

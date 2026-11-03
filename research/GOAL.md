@@ -132,6 +132,15 @@ DNA. Its aggregate abstract results have been exposed; no individual count or
 response value was decoded in this review. Source-bound construct identity,
 replicate assumptions and a frozen protocol remain necessary before analysis.
 
+The [Siraj OL27 source review](epistasis-replicate-metadata/README.md) locates
+five RNA and five plasmid count columns and independently inventories its
+barcode lookup. It finds four hypothesized oligo-name strings for 256 eligible
+windows, including 12 collision windows, but the short-name-to-sequence mapping
+is unverified. A selected satmut design source corroborates 124 long-ID/sequence
+matches elsewhere and does not validate those 12 candidates. Replicate pairing,
+normalization and a source-specific protocol also remain open; no RNA or
+reporter-response values were read in this review.
+
 ## Completed foundation
 
 The workspace now reconstructs HBB's reference DNA → spliced RNA → translated
