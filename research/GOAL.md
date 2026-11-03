@@ -120,6 +120,14 @@ biological test remains open until a suitable endpoint and its limitations are
 established. The [prior-art note](epistasis-prior-art.md) describes related
 published work and existing exposure.
 
+An independently published [candidate pair assay](epistasis-kreevan-source/README.md)
+reports seven paired RNA/DNA preparations per cell type and provides barcode
+count columns. Its sequence-design table has not been located in the bounded
+sources reviewed, and an inspected oligo field is an identifier rather than
+DNA. Its aggregate abstract results have been exposed; no individual count or
+response value was decoded in this review. Source-bound construct identity,
+replicate assumptions and a frozen protocol remain necessary before analysis.
+
 ## Completed foundation
 
 The workspace now reconstructs HBB's reference DNA → spliced RNA → translated

@@ -1,0 +1,353 @@
+{
+  "count_header_columns": [
+    "Barcode",
+    "Oligo",
+    "Error",
+    "CIGAR",
+    "MD",
+    "Aln_Start:Stop",
+    "G1_cDNA",
+    "G1_pDNA",
+    "G2_cDNA",
+    "G2_pDNA",
+    "G3_cDNA",
+    "G3_pDNA",
+    "G4_cDNA",
+    "G4_pDNA",
+    "G5_cDNA",
+    "G5_pDNA",
+    "G6_cDNA",
+    "G6_pDNA",
+    "G7_cDNA",
+    "G7_pDNA",
+    "K1_cDNA",
+    "K1_pDNA",
+    "K2_cDNA",
+    "K2_pDNA",
+    "K3_cDNA",
+    "K3_pDNA",
+    "K4_cDNA",
+    "K4_pDNA",
+    "K5_cDNA",
+    "K5_pDNA",
+    "K6_cDNA",
+    "K6_pDNA",
+    "K7_cDNA",
+    "K7_pDNA"
+  ],
+  "count_or_response_values_decoded": false,
+  "design_metadata": {
+    "adapter_length_each_side": 15,
+    "assembly": "hg19 per GEO sample metadata",
+    "design_sequence_table_cited": "Table S1",
+    "genomic_insert_length": 170,
+    "haplotype_labels": [
+      "ancestral/ancestral",
+      "ancestral/derived",
+      "derived/ancestral",
+      "derived/derived"
+    ],
+    "maximum_pair_distance": 75
+  },
+  "first_oligo_field_is_literal_dna": false,
+  "geo_supplementary_files": [
+    "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE349nnn/GSE349490/suppl/GSE349490_TableS2_MPRA_BarcodeCount.txt.gz",
+    "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE349nnn/GSE349490/suppl/GSE349490_TableS4_k562_results.tsv.gz",
+    "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE349nnn/GSE349490/suppl/GSE349490_TableS8_gm12878_results.txt.gz"
+  ],
+  "independent_biological_replicates_established": false,
+  "samples": [
+    {
+      "accession": "GSM10096787",
+      "assembly": "hg19",
+      "cell": "GM12878",
+      "column": "G1_cDNA",
+      "material": "cDNA",
+      "replicate": 1,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520004",
+      "title": "GM12878 replicate 1 cDNA MPRA"
+    },
+    {
+      "accession": "GSM10096788",
+      "assembly": "hg19",
+      "cell": "GM12878",
+      "column": "G1_pDNA",
+      "material": "pDNA",
+      "replicate": 1,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520019",
+      "title": "GM12878 replicate 1 pDNA MPRA"
+    },
+    {
+      "accession": "GSM10096789",
+      "assembly": "hg19",
+      "cell": "GM12878",
+      "column": "G2_cDNA",
+      "material": "cDNA",
+      "replicate": 2,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520020",
+      "title": "GM12878 replicate 2 cDNA MPRA"
+    },
+    {
+      "accession": "GSM10096790",
+      "assembly": "hg19",
+      "cell": "GM12878",
+      "column": "G2_pDNA",
+      "material": "pDNA",
+      "replicate": 2,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520021",
+      "title": "GM12878 replicate 2 pDNA MPRA"
+    },
+    {
+      "accession": "GSM10096791",
+      "assembly": "hg19",
+      "cell": "GM12878",
+      "column": "G3_cDNA",
+      "material": "cDNA",
+      "replicate": 3,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520022",
+      "title": "GM12878 replicate 3 cDNA MPRA"
+    },
+    {
+      "accession": "GSM10096792",
+      "assembly": "hg19",
+      "cell": "GM12878",
+      "column": "G3_pDNA",
+      "material": "pDNA",
+      "replicate": 3,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520023",
+      "title": "GM12878 replicate 3 pDNA MPRA"
+    },
+    {
+      "accession": "GSM10096793",
+      "assembly": "hg19",
+      "cell": "GM12878",
+      "column": "G4_cDNA",
+      "material": "cDNA",
+      "replicate": 4,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520024",
+      "title": "GM12878 replicate 4 cDNA MPRA"
+    },
+    {
+      "accession": "GSM10096794",
+      "assembly": "hg19",
+      "cell": "GM12878",
+      "column": "G4_pDNA",
+      "material": "pDNA",
+      "replicate": 4,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520025",
+      "title": "GM12878 replicate 4 pDNA MPRA"
+    },
+    {
+      "accession": "GSM10096795",
+      "assembly": "hg19",
+      "cell": "GM12878",
+      "column": "G5_cDNA",
+      "material": "cDNA",
+      "replicate": 5,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520026",
+      "title": "GM12878 replicate 5 cDNA MPRA"
+    },
+    {
+      "accession": "GSM10096796",
+      "assembly": "hg19",
+      "cell": "GM12878",
+      "column": "G5_pDNA",
+      "material": "pDNA",
+      "replicate": 5,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520027",
+      "title": "GM12878 replicate 5 pDNA MPRA"
+    },
+    {
+      "accession": "GSM10096797",
+      "assembly": "hg19",
+      "cell": "GM12878",
+      "column": "G6_cDNA",
+      "material": "cDNA",
+      "replicate": 6,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520028",
+      "title": "GM12878 replicate 6 cDNA MPRA"
+    },
+    {
+      "accession": "GSM10096798",
+      "assembly": "hg19",
+      "cell": "GM12878",
+      "column": "G6_pDNA",
+      "material": "pDNA",
+      "replicate": 6,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520029",
+      "title": "GM12878 replicate 6 pDNA MPRA"
+    },
+    {
+      "accession": "GSM10096799",
+      "assembly": "hg19",
+      "cell": "GM12878",
+      "column": "G7_cDNA",
+      "material": "cDNA",
+      "replicate": 7,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520030",
+      "title": "GM12878 replicate 7 cDNA MPRA"
+    },
+    {
+      "accession": "GSM10096800",
+      "assembly": "hg19",
+      "cell": "GM12878",
+      "column": "G7_pDNA",
+      "material": "pDNA",
+      "replicate": 7,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520031",
+      "title": "GM12878 replicate 7 pDNA MPRA"
+    },
+    {
+      "accession": "GSM10096773",
+      "assembly": "hg19",
+      "cell": "K562",
+      "column": "K1_cDNA",
+      "material": "cDNA",
+      "replicate": 1,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520005",
+      "title": "K562 replicate 1 cDNA MPRA"
+    },
+    {
+      "accession": "GSM10096774",
+      "assembly": "hg19",
+      "cell": "K562",
+      "column": "K1_pDNA",
+      "material": "pDNA",
+      "replicate": 1,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520006",
+      "title": "K562 replicate 1 pDNA MPRA"
+    },
+    {
+      "accession": "GSM10096775",
+      "assembly": "hg19",
+      "cell": "K562",
+      "column": "K2_cDNA",
+      "material": "cDNA",
+      "replicate": 2,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520007",
+      "title": "K562 replicate 2 cDNA MPRA"
+    },
+    {
+      "accession": "GSM10096776",
+      "assembly": "hg19",
+      "cell": "K562",
+      "column": "K2_pDNA",
+      "material": "pDNA",
+      "replicate": 2,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520008",
+      "title": "K562 replicate 2 pDNA MPRA"
+    },
+    {
+      "accession": "GSM10096777",
+      "assembly": "hg19",
+      "cell": "K562",
+      "column": "K3_cDNA",
+      "material": "cDNA",
+      "replicate": 3,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520009",
+      "title": "K562 replicate 3 cDNA MPRA"
+    },
+    {
+      "accession": "GSM10096778",
+      "assembly": "hg19",
+      "cell": "K562",
+      "column": "K3_pDNA",
+      "material": "pDNA",
+      "replicate": 3,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520010",
+      "title": "K562 replicate 3 pDNA MPRA"
+    },
+    {
+      "accession": "GSM10096779",
+      "assembly": "hg19",
+      "cell": "K562",
+      "column": "K4_cDNA",
+      "material": "cDNA",
+      "replicate": 4,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520011",
+      "title": "K562 replicate 4 cDNA MPRA"
+    },
+    {
+      "accession": "GSM10096780",
+      "assembly": "hg19",
+      "cell": "K562",
+      "column": "K4_pDNA",
+      "material": "pDNA",
+      "replicate": 4,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520012",
+      "title": "K562 replicate 4 pDNA MPRA"
+    },
+    {
+      "accession": "GSM10096781",
+      "assembly": "hg19",
+      "cell": "K562",
+      "column": "K5_cDNA",
+      "material": "cDNA",
+      "replicate": 5,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520013",
+      "title": "K562 replicate 5 cDNA MPRA"
+    },
+    {
+      "accession": "GSM10096782",
+      "assembly": "hg19",
+      "cell": "K562",
+      "column": "K5_pDNA",
+      "material": "pDNA",
+      "replicate": 5,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520014",
+      "title": "K562 replicate 5 pDNA MPRA"
+    },
+    {
+      "accession": "GSM10096783",
+      "assembly": "hg19",
+      "cell": "K562",
+      "column": "K6_cDNA",
+      "material": "cDNA",
+      "replicate": 6,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520015",
+      "title": "K562 replicate 6 cDNA MPRA"
+    },
+    {
+      "accession": "GSM10096784",
+      "assembly": "hg19",
+      "cell": "K562",
+      "column": "K6_pDNA",
+      "material": "pDNA",
+      "replicate": 6,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520016",
+      "title": "K562 replicate 6 pDNA MPRA"
+    },
+    {
+      "accession": "GSM10096785",
+      "assembly": "hg19",
+      "cell": "K562",
+      "column": "K7_cDNA",
+      "material": "cDNA",
+      "replicate": 7,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520017",
+      "title": "K562 replicate 7 cDNA MPRA"
+    },
+    {
+      "accession": "GSM10096786",
+      "assembly": "hg19",
+      "cell": "K562",
+      "column": "K7_pDNA",
+      "material": "pDNA",
+      "replicate": 7,
+      "sra": "https://www.ncbi.nlm.nih.gov/sra?term=SRX35520018",
+      "title": "K562 replicate 7 pDNA MPRA"
+    }
+  ],
+  "sequence_identity_established": false,
+  "source": {
+    "article_doi": "10.64898/2026.09.10.750584",
+    "article_license": "CC BY 4.0",
+    "article_sha256": "71c19fda7b746be06ee7e9959be3eb37f7e9516627a702b37ff5be20e6f29b66",
+    "count_header_capture_sha256": "fbdc8b7202e1870700232a1c47192fcffad0bc6d7e4d185c193d12f4991a7502",
+    "first_oligo_capture_sha256": "daf20bfcec572b9f2a6faaf07de855026b746c77643d23ab7a345d322232fd07",
+    "geo_series": "GSE349490",
+    "inspection_implementation_sha256": "e177f6e6b87f1d9f966ccb20e886012ae8ccc2c1f91493b622f0a5ca4fa8f8dc",
+    "samples_sha256": "4f7e3facc4c7354ce72db508f910768016c675a719bf764efe2dca04c5bfbeb3",
+    "series_sha256": "8891217610f90ab81392de85e7df7e3bab46883aabc620202f9e793a9ef21dd6"
+  }
+}

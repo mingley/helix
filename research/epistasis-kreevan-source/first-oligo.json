@@ -1,0 +1,13 @@
+{
+  "compressed_bytes_fed_to_decoder": 318,
+  "compressed_prefix_sha256": "5999d3faf9d51aba48c5d6f3e0b3b264a639e9b78bc090dc4f00efdaf0747b1d",
+  "content_range": "bytes 0-8191/188701018",
+  "decoded_bytes_after_second_tab": 0,
+  "http_status": 206,
+  "leading_barcode_length": 15,
+  "oligo_field": "wide85_6702_ref1_alt2_T/A_anc/der",
+  "oligo_is_literal_acgt": false,
+  "oligo_length": 33,
+  "oligo_sha256": "05a3a6e2564e497e219cf7186a4a9d8473ea0c537cba60c31eb6bc731bb6b1e3",
+  "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE349nnn/GSE349490/suppl/GSE349490_TableS2_MPRA_BarcodeCount.txt.gz"
+}
