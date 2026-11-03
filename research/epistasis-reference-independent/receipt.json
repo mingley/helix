@@ -4,7 +4,7 @@
   "chain_sha256": "5c0598e500ceb5a78c73086929e8ef993aec309bcafb595139b53d440b125a1d",
   "design_report_sha256": "70dc4a6bd1813ea879b9699565cf75e8e9c21bff9ea1af5a46c25c1ad4686b0f",
   "detailed_rejection_reasons_checked": false,
-  "implementation_sha256": "5fe17bd3ef52d1eabcf8d147b1d1fdc0d23a2c24249e86081b5c682b52503233",
+  "implementation_sha256": "f434b1a8aa24ed911d1178d3a1ffc9188e194f248eba10bf4ef38a064de3ace5",
   "ledger_groups_checked": 7542,
   "ledger_sha256": "72800cd3748ecff22fc1cd3d2a9593053353274f91aa9479e47d67dc0b4c55e0",
   "method": "Independent XLSX XML genotype patterns, chain block endpoints, and on-demand 2bit decoding",

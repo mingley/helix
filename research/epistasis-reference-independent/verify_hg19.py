@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 
 from verify import (ROOT, SOURCE_SHA, TwoBit, VARIANT, collect_design, require,
-                    sha256)
+                    require_new_receipt, sha256, write_receipt)
 
 HG19_SHA = "797bdb4391cbe23bd30268d41d0d86676fd7b36b7f8e76797b1882d585766fa3"
 
@@ -53,6 +53,7 @@ def main():
     p.add_argument("--hg38-receipt", type=Path, default=ROOT / "research/epistasis-reference-independent/receipt.json")
     p.add_argument("--receipt", type=Path, required=True)
     args = p.parse_args()
+    require_new_receipt(args.receipt)
     require(sha256(args.source) == SOURCE_SHA, "S18 input SHA-256 mismatch")
     require(sha256(args.reference) == HG19_SHA, "hg19 input SHA-256 mismatch")
     count, accepted, rejected = collect_design(args.source)
@@ -115,7 +116,7 @@ def main():
                                                      for status in sorted(set(hg38_status.values()))},
                "detailed_rejection_reasons_checked": False, "outcome_values_read": False,
                "all_checks_passed": True}
-    args.receipt.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n")
+    write_receipt(args.receipt, receipt)
     print(json.dumps(receipt, indent=2, sort_keys=True))
 
 

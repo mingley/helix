@@ -19,7 +19,9 @@ ledger field matching. The [receipt](receipt.json) binds the source, reference,
 chain, design report, ledger and verification implementation by SHA-256.
 
 Reproduce from the repository root after obtaining the hash-pinned hg38 2bit
-reference via `scripts/setup_reference.sh`:
+reference via `scripts/setup_reference.sh`. Choose a new receipt path for each
+run: both verification commands refuse to overwrite existing paths, including
+the source workbook, reference, ledgers, and existing receipts.
 
 ```bash
 source scripts/env.sh

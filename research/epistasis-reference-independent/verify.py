@@ -39,6 +39,18 @@ def sha256(path):
     return h.hexdigest()
 
 
+def require_new_receipt(path):
+    """Reject existing files, including symlinks, before doing the audit."""
+    if path.exists() or path.is_symlink():
+        raise FileExistsError(f"receipt path already exists: {path}")
+
+
+def write_receipt(path, receipt):
+    """Create a receipt exclusively, including if the path appeared after preflight."""
+    with path.open("x", encoding="utf-8", newline="\n") as output:
+        output.write(json.dumps(receipt, indent=2, sort_keys=True) + "\n")
+
+
 def design_rows(path):
     """Read cells directly from the original S18 XLSX ZIP/XML, without openpyxl."""
     with zipfile.ZipFile(path) as z:
@@ -320,6 +332,7 @@ def main():
     p.add_argument("--ledger", type=Path, default=ROOT / "research/epistasis-reference-audit/ledger.jsonl")
     p.add_argument("--receipt", type=Path, required=True)
     args = p.parse_args()
+    require_new_receipt(args.receipt)
     for path, expected, name in [(args.source, SOURCE_SHA, "S18"), (args.chain, CHAIN_SHA, "chain"),
                                  (args.reference, REFERENCE_SHA, "hg38")]:
         require(sha256(path) == expected, f"{name} input SHA-256 mismatch")
@@ -365,7 +378,7 @@ def main():
                "ledger_groups_checked": len(seen), "status_counts": dict(sorted(statuses.items())),
                "detailed_rejection_reasons_checked": False, "outcome_values_read": False,
                "all_checks_passed": True}
-    args.receipt.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n")
+    write_receipt(args.receipt, receipt)
     print(json.dumps(receipt, indent=2, sort_keys=True))
 
 
