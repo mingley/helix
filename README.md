@@ -34,6 +34,13 @@ features. Any deterministic predictor restricted to those features must assign
 each such pair the same prediction in a given context. These are testable
 model limitations, not measured equivalence of the constructs.
 
+In the previously analyzed activity panel, a separate
+[post-hoc audit](research/context-activity-feature-collisions-v1/README.md)
+finds one equal-feature pair: reverse-complementary cores from the same locus.
+Their reported activities differ in all three cells, while all five saved
+models give each pair identical predictions. This is an observed-label example;
+measurement noise and construct effects remain possible explanations.
+
 An exact [GC/trimer identity](research/variant-locality/gc-trimer-identity-v1/README.md),
 also checked in Lean, shows that the GC feature adds only a weighted boundary
 term once the canonical 3-mer frequencies are known at a fixed length. This

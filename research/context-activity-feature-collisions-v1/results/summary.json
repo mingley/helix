@@ -1,0 +1,97 @@
+{
+  "arithmetic": "exact rational arithmetic on JSON-decoded binary64 activity labels",
+  "collision_class_size_distribution": {
+    "2": 1
+  },
+  "contexts": [
+    "HepG2",
+    "K562",
+    "WTC11"
+  ],
+  "distinct_exact_sequences": 55276,
+  "distinct_reverse_complement_sequences": 55275,
+  "endpoint": "published_joint_log2_rna_dna_activity",
+  "equal_feature_pair_relations": {
+    "distinct_non_reverse_complement": 0,
+    "distinct_reverse_complement": 1,
+    "same_group": 1,
+    "same_interval": 1,
+    "same_sequence": 0,
+    "same_test_fold": 1
+  },
+  "feature_classes": 55275,
+  "features_recomputed_and_snapshot_exact": 55276,
+  "input_sha256": {
+    "activity": "83b2df30128f3ea8326d6d5d1de73b36e32ced113cccebebc915d4fc06e8054b",
+    "features": "1a9b093ca7d0ae56b19294a53c427f0d7d00ee4821ff09e03d8384d601b9417a",
+    "grouping": "333069c4ab41ed8ea6976b0bc50cd08de9a33118ab60d683533b7ee32a6f517f",
+    "grouping_protocol": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+    "inputs": "fe78220d9f94b5022582e79e02ed8d1dbd927c8d292825655ac3d018d04ef6d1",
+    "panel": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3",
+    "protocol": "64e14037fb1f42ddc1ecaca1d23bb8096fabac1f1e892d105eaa20f525fbbb20",
+    "publication": "39cd6a1902ed3b7a4709294b293590309af5f38d2d8c578f82922da74a63a335",
+    "raw_workbook": "9c95ca2b8df0ff3edc7dda4fdcf337f33e652b96a0833a70e786bbcdc2b76b4e",
+    "source_manifest": "6a3371bed4061f9ca9fa1a95bfc0947ffee91daa22fe509063708e549d453730"
+  },
+  "members_in_multiple_member_classes": 2,
+  "multiple_member_feature_classes": 1,
+  "per_cell": {
+    "HepG2": {
+      "collision_label_sse": {
+        "denominator": "633825300114114700748351602688",
+        "numerator": "95170136462734565354602064641"
+      },
+      "collision_only_mse_floor": {
+        "denominator": "1267650600228229401496703205376",
+        "numerator": "95170136462734565354602064641"
+      },
+      "equal_element_panel_mse_floor": {
+        "denominator": "35035327289107804198565883190181888",
+        "numerator": "95170136462734565354602064641"
+      }
+    },
+    "K562": {
+      "collision_label_sse": {
+        "denominator": "2535301200456458802993406410752",
+        "numerator": "136378922174954074188252473161"
+      },
+      "collision_only_mse_floor": {
+        "denominator": "5070602400912917605986812821504",
+        "numerator": "136378922174954074188252473161"
+      },
+      "equal_element_panel_mse_floor": {
+        "denominator": "140141309156431216794263532760727552",
+        "numerator": "136378922174954074188252473161"
+      }
+    },
+    "WTC11": {
+      "collision_label_sse": {
+        "denominator": "2535301200456458802993406410752",
+        "numerator": "95170136462734565354602064641"
+      },
+      "collision_only_mse_floor": {
+        "denominator": "5070602400912917605986812821504",
+        "numerator": "95170136462734565354602064641"
+      },
+      "equal_element_panel_mse_floor": {
+        "denominator": "140141309156431216794263532760727552",
+        "numerator": "95170136462734565354602064641"
+      }
+    }
+  },
+  "pooled": {
+    "collision_only_mse_floor": {
+      "denominator": "2535301200456458802993406410752",
+      "numerator": "102038267414771150160210466061"
+    },
+    "equal_element_panel_mse_floor": {
+      "denominator": "70070654578215608397131766380363776",
+      "numerator": "102038267414771150160210466061"
+    }
+  },
+  "records": 55276,
+  "schema_version": 1,
+  "scope": "post-hoc published v3 activity labels; no new assay outcome source decoded",
+  "source_workbook_values_reparsed": false,
+  "weighting": "equal elements and equal cells, as in published context-activity-v3"
+}

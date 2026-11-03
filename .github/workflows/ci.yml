@@ -62,6 +62,10 @@ jobs:
           python3 -m unittest discover -s research/epistasis-kreevan-source -p 'test_*.py'
           python3 -m unittest discover -s research/epistasis-replicate-metadata -p 'test_*.py'
           python3 -m unittest discover -s research/epistasis-replicate-independent -p 'test_*.py'
+          python3 -m unittest discover -s research/context-activity-feature-collisions-v1 -p 'test_*.py'
+          python3 -m unittest discover -s research/context-activity-feature-collisions-independent-v1 -p 'test_*.py'
+          python3 research/context-activity-feature-collisions-independent-v1/verify.py --receipt "$RUNNER_TEMP/activity-feature-collisions.json"
+          cmp research/context-activity-feature-collisions-independent-v1/receipt.json "$RUNNER_TEMP/activity-feature-collisions.json"
           python3 research/epistasis-replicate-metadata/verify_metadata.py
           python3 -m unittest discover -s research/variant-locality/gc-trimer-identity-v1 -p 'test_*.py'
           python3 -m unittest discover -s research/variant-locality/gc-trimer-independent-v1 -p 'test_*.py'

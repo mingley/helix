@@ -85,6 +85,15 @@ boundaries, a single weighted endpoint term remains. This is a reparameterizatio
 of the exact fixed score, not a guarantee that refitting without GC preserves a
 ridge model or that observed biology follows the model.
 
+In a [post-hoc audit of the previously explored activity panel](context-activity-feature-collisions-v1/README.md),
+the only full-feature collision consists of two opposite-strand cores from the
+same locus. Their published activity labels differ in all three cells, while
+the five retained predictors give them identical within-cell predictions. The
+observed-label pair MSE floor is approximately 0.040247 averaged over cells;
+its contribution to the equal-element whole-panel floor is approximately
+0.00000145622. This one source-specific example includes measurement noise and
+does not identify a biological mechanism or supply independent validation.
+
 ## Next falsifiable goal: test a predicted absence of interaction
 
 Find source-compatible four-construct measurements: reference, each of two

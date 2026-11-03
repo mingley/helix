@@ -1,0 +1,169 @@
+{
+  "classes": [
+    {
+      "feature_counts": [
+        2,
+        4,
+        7,
+        1,
+        2,
+        2,
+        6,
+        6,
+        2,
+        5,
+        12,
+        0,
+        6,
+        3,
+        1,
+        7,
+        9,
+        6,
+        16,
+        10,
+        10,
+        18,
+        2,
+        7,
+        11,
+        5,
+        7,
+        14,
+        12,
+        0,
+        0,
+        5,
+        135
+      ],
+      "members": [
+        {
+          "chromosome": "chr3",
+          "end": 19947128,
+          "group": "0ca3f3029b92ca92912078f35f1688bcd982abff7424dc9880410845877f5ae0",
+          "id": "ENSG00000144566",
+          "observations": {
+            "HepG2": {
+              "binary64_hex": "0x1.d6872b020c49cp+0",
+              "repr": "1.838"
+            },
+            "K562": {
+              "binary64_hex": "0x1.1a1cac083126fp+1",
+              "repr": "2.204"
+            },
+            "WTC11": {
+              "binary64_hex": "0x1.922d0e5604189p+1",
+              "repr": "3.142"
+            }
+          },
+          "parent_id": "ENSG00000144566",
+          "reference_match_strand": "+",
+          "sequence_sha256": "582e648e08b2170e19bcf1bd0cfb3f75b6515183ac11a62ef46b0cead70d1313",
+          "source_declared_strand": "+",
+          "start": 19946928,
+          "test_fold": 4
+        },
+        {
+          "chromosome": "chr3",
+          "end": 19947128,
+          "group": "0ca3f3029b92ca92912078f35f1688bcd982abff7424dc9880410845877f5ae0",
+          "id": "ENSG00000163576",
+          "observations": {
+            "HepG2": {
+              "binary64_hex": "0x1.4a3d70a3d70a4p+0",
+              "repr": "1.29"
+            },
+            "K562": {
+              "binary64_hex": "0x1.e04189374bc6ap+0",
+              "repr": "1.876"
+            },
+            "WTC11": {
+              "binary64_hex": "0x1.6f1a9fbe76c8bp+1",
+              "repr": "2.868"
+            }
+          },
+          "parent_id": "ENSG00000163576",
+          "reference_match_strand": "-",
+          "sequence_sha256": "61ba1f0d0da2738c6322cbfd2810483deee3849beab44b82cd8dab6d08805e5d",
+          "source_declared_strand": "-",
+          "start": 19946928,
+          "test_fold": 4
+        }
+      ],
+      "pair_relations": [
+        {
+          "id1": "ENSG00000144566",
+          "id2": "ENSG00000163576",
+          "reverse_complement": true,
+          "same_group": true,
+          "same_interval": true,
+          "same_sequence": false,
+          "same_test_fold": true
+        }
+      ],
+      "per_cell": {
+        "HepG2": {
+          "class_mean_mse_floor": {
+            "denominator": "1267650600228229401496703205376",
+            "numerator": "95170136462734565354602064641"
+          },
+          "pair_differences": [
+            {
+              "first_minus_second": {
+                "denominator": "562949953421312",
+                "numerator": "308496574474879"
+              },
+              "id1": "ENSG00000144566",
+              "id2": "ENSG00000163576"
+            }
+          ],
+          "squared_error_sum": {
+            "denominator": "633825300114114700748351602688",
+            "numerator": "95170136462734565354602064641"
+          }
+        },
+        "K562": {
+          "class_mean_mse_floor": {
+            "denominator": "5070602400912917605986812821504",
+            "numerator": "136378922174954074188252473161"
+          },
+          "pair_differences": [
+            {
+              "first_minus_second": {
+                "denominator": "1125899906842624",
+                "numerator": "369295169444381"
+              },
+              "id1": "ENSG00000144566",
+              "id2": "ENSG00000163576"
+            }
+          ],
+          "squared_error_sum": {
+            "denominator": "2535301200456458802993406410752",
+            "numerator": "136378922174954074188252473161"
+          }
+        },
+        "WTC11": {
+          "class_mean_mse_floor": {
+            "denominator": "5070602400912917605986812821504",
+            "numerator": "95170136462734565354602064641"
+          },
+          "pair_differences": [
+            {
+              "first_minus_second": {
+                "denominator": "1125899906842624",
+                "numerator": "308496574474879"
+              },
+              "id1": "ENSG00000144566",
+              "id2": "ENSG00000163576"
+            }
+          ],
+          "squared_error_sum": {
+            "denominator": "2535301200456458802993406410752",
+            "numerator": "95170136462734565354602064641"
+          }
+        }
+      }
+    }
+  ],
+  "schema_version": 1
+}

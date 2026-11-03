@@ -1,0 +1,79 @@
+{
+  "all_checks_passed": true,
+  "all_five_saved_predictions_match_pairwise_in_each_cell": true,
+  "collision_member_ids": [
+    "ENSG00000144566",
+    "ENSG00000163576"
+  ],
+  "complete_230nt_designs_are_reverse_complements": false,
+  "complete_collision_and_summary_match": true,
+  "distinct_reverse_complement_cores": true,
+  "exact_collision_only_floor": {
+    "denominator": "2535301200456458802993406410752",
+    "numerator": "102038267414771150160210466061"
+  },
+  "exact_pooled_panel_floor": {
+    "denominator": "70070654578215608397131766380363776",
+    "numerator": "102038267414771150160210466061"
+  },
+  "identical_source_15nt_adapters": {
+    "left": "AGGACCGGATCAACT",
+    "right": "CATTGCGTGAACCGA"
+  },
+  "independent_implementation_sha256": "683f1881b8902c57933bd4ee79406de1869c60c71a99c9602419a5455bdd80e3",
+  "inputs_sha256": {
+    "activity": "83b2df30128f3ea8326d6d5d1de73b36e32ced113cccebebc915d4fc06e8054b",
+    "activity_xlsx": "9c95ca2b8df0ff3edc7dda4fdcf337f33e652b96a0833a70e786bbcdc2b76b4e",
+    "design_xlsx": "f9ec4c6c2d230b0ef507a39e5d5c73b3b36f90ccc5758c33b442c7561e20e7e5",
+    "features": "1a9b093ca7d0ae56b19294a53c427f0d7d00ee4821ff09e03d8384d601b9417a",
+    "grouping": "333069c4ab41ed8ea6976b0bc50cd08de9a33118ab60d683533b7ee32a6f517f",
+    "grouping_protocol": "8f0576845fecb5cfcf9bfa354fab446d849244448a3489905a6ce33bdeb21cec",
+    "inputs": "fe78220d9f94b5022582e79e02ed8d1dbd927c8d292825655ac3d018d04ef6d1",
+    "panel": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3",
+    "protocol": "64e14037fb1f42ddc1ecaca1d23bb8096fabac1f1e892d105eaa20f525fbbb20",
+    "publication": "39cd6a1902ed3b7a4709294b293590309af5f38d2d8c578f82922da74a63a335",
+    "source_manifest": "6a3371bed4061f9ca9fa1a95bfc0947ffee91daa22fe509063708e549d453730",
+    "study": "ac45559e8f16a094564250cc31a424f060791193f95cbdd9d4634fd37bf317d7"
+  },
+  "method": "Independent raw-DNA 3-mer counting, exact binary64 rational floors, direct source XLSX ZIP/XML reads, and saved-fold prediction check",
+  "panel_records_checked": 55276,
+  "primary_assignment_records_checked": 55276,
+  "primary_assignments_sha256": "5e395f902e53e6920b37591f8890a08d1b27974a01ef9a8ea455f63a1c5e3d47",
+  "primary_collisions_sha256": "6ccacd92ebc5f14972a9df47e6af76be3a6a9d0192fdf71d07376df4fb06d1d1",
+  "primary_implementation_sha256": "d159be95a4ccda3d56ae19aeee0fa9c8795563141993b4a9e8e83463b72a0b20",
+  "primary_summary_sha256": "93230967f0ab41bf7ea674675403fa2828da6b91328dc75671f03e6e3ac2ff75",
+  "published_feature_records_checked": 55276,
+  "same_interval": true,
+  "scope": "post-hoc reuse of already-explored v3 labels; no independent assay or biological validation",
+  "source_XML_exposure": "S11 streaming XML instantiates other row contents and the workbook-wide shared-string table; only selected IDs' six aggregate numeric cells are interpreted. All v3 activity labels were previously explored and are loaded by this verifier.",
+  "source_activity_rows_and_raw_lexemes": {
+    "ENSG00000144566": {
+      "lexemes": {
+        "HepG2": "1.8380000000000001",
+        "K562": "2.2040000000000002",
+        "WTC11": "3.1419999999999999"
+      },
+      "row": 55546
+    },
+    "ENSG00000163576": {
+      "lexemes": {
+        "HepG2": "1.29",
+        "K562": "1.8759999999999999",
+        "WTC11": "2.8679999999999999"
+      },
+      "row": 55266
+    }
+  },
+  "source_design_rows_and_strands": {
+    "ENSG00000144566": {
+      "row": 58011,
+      "strand": "+"
+    },
+    "ENSG00000163576": {
+      "row": 58298,
+      "strand": "-"
+    }
+  },
+  "source_lexemes_decode_to_exact_retained_binary64": true,
+  "source_numeric_precision": "Original XML numeric lexemes may differ from the v3 JSON decimal spellings; each selected lexeme decodes to the same binary64, and floors use those binary64 values exactly as rationals."
+}
