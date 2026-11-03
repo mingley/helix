@@ -13,17 +13,17 @@
   },
   "correlation_decimal": "0.999575814973870283865674138435",
   "correlation_squared_exact": {
-    "denominator": 111120261798596363227360,
-    "numerator": 111026010690482204379001
+    "denominator": "111120261798596363227360",
+    "numerator": "111026010690482204379001"
   },
-  "implementation_sha256": "6209382d9e1716d77d2ef602911281cb4774288e2917b90697205c5adb837b33",
+  "implementation_sha256": "6a79221ff3eb4fd1243dcc19c2f6bd72eca8cb5a7b6cf62caa6eaad44d5232d9",
   "method": "Raw sliding-trimer characters and positional multiplicity; separate exact rational and Decimal calculations",
   "old_panel_observation_fields_instantiated": true,
   "old_panel_observation_fields_used": false,
   "panel_length": 200,
   "panel_sha256": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3",
-  "primary_implementation_sha256": "fec7fa70a8796853207b4dad3df58e6317581ad9642c3a0841f381a064f160f2",
-  "primary_summary_sha256": "9708601614b03da978fd17a83ceb5678a560f559988ccaa7d54ecdb352926e75",
+  "primary_implementation_sha256": "97bffb325071285a9ab9fa6f719a47defc20b7ccfc22a3ec61c1bc8ff829be23",
+  "primary_summary_sha256": "e854ec25ec06a5fbe8606b99fdaa0417b7ca176c7b9fc06bbc8195174d3ff81f",
   "rational_score_checks": "two constructed witnesses and one sequence from each of seven edge-count classes; coefficient algebra for all 64 trimers at lengths 4, 5 and 200",
   "records_checked": 55276,
   "trimer_gc_identity_checked_per_panel_sequence": true

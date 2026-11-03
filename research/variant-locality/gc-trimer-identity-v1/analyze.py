@@ -107,8 +107,10 @@ def analyze():
         "boundary_GC": "2*GC(first) + GC(second) + GC(penultimate) + 2*GC(last)",
         "boundary_count_histogram": {str(k): histogram[k] for k in range(7)},
         "GC_count_vs_weighted_trimer_count_pearson_decimal": correlation,
-        "correlation_squared_exact": {"numerator": correlation_squared.numerator,
-                                      "denominator": correlation_squared.denominator},
+        # These exact integers exceed JavaScript's safe integer range. Keep
+        # them as decimal strings so JSON consumers can parse them losslessly.
+        "correlation_squared_exact": {"numerator": str(correlation_squared.numerator),
+                                      "denominator": str(correlation_squared.denominator)},
         "correlation_sufficient_statistics": {"sum_G": sum_g, "sum_T": sum_t,
                                                "sum_G2": sum_g2, "sum_T2": sum_t2,
                                                "sum_GT": sum_gt},

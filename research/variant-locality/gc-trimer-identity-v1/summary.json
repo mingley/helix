@@ -12,8 +12,8 @@
     "6": 3270
   },
   "correlation_squared_exact": {
-    "denominator": 111120261798596363227360,
-    "numerator": 111026010690482204379001
+    "denominator": "111120261798596363227360",
+    "numerator": "111026010690482204379001"
   },
   "correlation_sufficient_statistics": {
     "sum_G": 5740896,
@@ -23,7 +23,7 @@
     "sum_T2": 5408399360
   },
   "identity": "3 * GC_count = GC_weighted_canonical_trimer_count + boundary_GC",
-  "implementation_sha256": "fec7fa70a8796853207b4dad3df58e6317581ad9642c3a0841f381a064f160f2",
+  "implementation_sha256": "97bffb325071285a9ab9fa6f719a47defc20b7ccfc22a3ec61c1bc8ff829be23",
   "panel_sha256": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3",
   "records": 55276,
   "same_trimers_different_GC_example": {

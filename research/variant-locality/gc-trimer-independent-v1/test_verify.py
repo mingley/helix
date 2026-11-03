@@ -44,11 +44,12 @@ class IndependentIdentityTests(unittest.TestCase):
 
     def test_summary_tamper_is_rejected(self):
         expected = {"boundary_count_histogram": {"0": 2, "1": 1},
-                    "correlation_squared_exact": {"numerator": 3, "denominator": 4},
+                    "correlation_squared_exact": {"numerator": "3", "denominator": "4"},
                     "same_trimers_different_GC_example": {"second_GC_count": 67}}
         compare_summary(json.loads(json.dumps(expected)), expected)
         for key, value in (("boundary_count_histogram", {"0": 3, "1": 1}),
-                           ("correlation_squared_exact", {"numerator": 4, "denominator": 4}),
+                           ("correlation_squared_exact", {"numerator": "4", "denominator": "4"}),
+                           ("correlation_squared_exact", {"numerator": 3, "denominator": 4}),
                            ("same_trimers_different_GC_example", {"second_GC_count": 66})):
             tampered = dict(expected, **{key: value})
             with self.subTest(key=key), self.assertRaisesRegex(ValueError, "primary summary differs"):

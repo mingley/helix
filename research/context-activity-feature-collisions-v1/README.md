@@ -81,7 +81,9 @@ using the same complete input for both cores outputs a common `t`. The mean of
 their two squared residuals is at least `(y1 - y2)^2 / 4`. The v3 grouping
 places both records in the same test fold, so the same per-fold predictor is
 used for both when a v3 model uses these features and that cell context. The
-whole-panel cell floor weights each of its 55,276 records equally; pooled v3
+independent check confirms that all five saved v3 models actually have equal
+out-of-fold predictions for the two records in each cell. The whole-panel cell
+floor weights each of its 55,276 records equally; pooled v3
 weighting then averages the three cell floors. The numerator is the sum of
 within-class squared deviations, so singleton classes contribute zero. This is
 also the empirical optimum of an unrestricted lookup by exact feature vector
@@ -119,6 +121,9 @@ bindings. The panel JSON lines also contain older ESS values, but this audit
 selects and interprets only their DNA and source-metadata fields. The separate
 [independent check](../context-activity-feature-collisions-independent-v1/README.md)
 reconstructs the result independently and checks the colliding source values.
+Its full JSON reader instantiates the panel's previously explored ESS fields,
+which it does not use, and its workbook XML reader instantiates other row
+contents while interpreting the six selected activity cells.
 Hash equality establishes identity to these retained artifacts, not publisher
 authentication or empirical truth.
 

@@ -16,6 +16,9 @@ primary summary, including all seven boundary counts, all five correlation
 sufficient statistics, the exact squared-correlation fraction, and its
 30-digit decimal correlation `0.999575814973870283865674138435`. The decimal
 is independently reconstructed from the square root of the exact fraction.
+The exact fraction's numerator and denominator are decimal strings in both the
+summary and receipt, so JavaScript consumers can recover them with `BigInt`
+without losing precision during JSON parsing.
 
 The retained 200-base examples have the same 198 canonical 3-mers, but GC
 counts 66 and 67 and boundary values 0 and 3. Thus the original GC feature can

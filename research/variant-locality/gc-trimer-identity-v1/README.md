@@ -60,7 +60,9 @@ GC-weighted trimer count have Pearson correlation approximately **0.999576**
 on these records. This is a descriptive property of the fixed panel, including
 its duplicate or related sequences; it is not a population or biological
 effect estimate. Exact sufficient statistics and the squared correlation as a
-rational number are recorded in [summary.json](summary.json).
+rational number are recorded in [summary.json](summary.json). Its numerator and
+denominator are decimal strings because both exceed JavaScript's safe integer
+range; parse them as arbitrary-precision integers to recover the exact fraction.
 An [independent raw-window implementation](../gc-trimer-independent-v1/README.md)
 reproduces the full summary and checks the rational-score transformation.
 
