@@ -1,0 +1,12 @@
+{
+  "implementation_sha256": "371c2a1c3b989ca11f87cdb64ac8ff35c26e287dbbab0c3251b2500fe6a2ff94",
+  "summary.json": {
+    "bytes": 655,
+    "sha256": "2b7fd5f7401676b733a90de0e0637f6c49634e7e1dd7818c6879f53a62382796"
+  },
+  "twobit_reader_sha256": "ffbb77304eb324b2028cf6fb29ca8e0ea4b6a1e9daaf77ee42ce4a8f629847a2",
+  "windows.jsonl": {
+    "bytes": 2387149,
+    "sha256": "666b62d2259dc03e8a3e9148dadf4d1a503ed18353fdd0bd5997d1e8d2b53265"
+  }
+}

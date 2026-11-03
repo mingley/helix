@@ -19,6 +19,14 @@ separated by three or more positions. Twenty-one further Lean theorems and
 independent exhaustive calculations establish these representation limits;
 they do not establish biological neutrality.
 
+An outcome-free [reference audit](research/epistasis-reference-audit/README.md)
+checks 7,542 eligible four-construct design windows from a separate reporter
+experiment. All 7,542 reference inserts match their stated hg19 coordinates;
+7,480 also match hg38 after a unique whole-insert chain mapping. The remaining
+58 sequence mismatches and four missing whole-block mappings are retained. An
+independent implementation reproduces every hg38 mapping record. These are
+design checks, not measured interaction effects.
+
 The [external variant-effect test](research/variant-transfer-v2-study.md) now
 shows **no observed advantage over zero effect** on 2,153 SNVs in 172 components passing the frozen prior-source
 exclusion guards from a separate experiment. Macro MSE is 0.2033556 versus 0.2033201;

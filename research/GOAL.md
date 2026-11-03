@@ -92,7 +92,13 @@ protocol; source feasibility and provenance must be settled before applying it.
 The [Siraj design audit](epistasis-source-audit/README.md), independently checked
 against the original XLSX, identifies 7,542 sequence-valid windows in 2,156
 pair identifiers. Those are design opportunities, not measured outcomes or
-independent biological replicates. The [endpoint review](epistasis/source/siraj-s20-semantics.md)
+independent biological replicates. A further [reference audit](epistasis-reference-audit/README.md)
+checks signed coordinates and full reference inserts. All 7,542 match hg19,
+while 7,480 match hg38 after a unique whole-block mapping; 58 differ and four
+lack a whole-block mapping. All mapping records have been independently reproduced.
+The 62 failures of the hg38 rule remain recorded even though they match hg19;
+this does not select an analysis cohort or establish outcome availability. The
+[endpoint review](epistasis/source/siraj-s20-semantics.md)
 records unresolved table export, common-library and replicate questions; the
 biological test remains open until a suitable endpoint and its limitations are
 established. The [prior-art note](epistasis-prior-art.md) describes related

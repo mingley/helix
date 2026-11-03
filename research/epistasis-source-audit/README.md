@@ -113,3 +113,10 @@ The audit is intentionally limited to insert sequences and source IDs; it
 does not verify genomic assembly, source exclusion from prior studies,
 regulatory mechanism, or a model's predictive performance. In particular,
 design eligibility is not the number of measured or independent interactions.
+
+A later, separately recorded [reference audit](../epistasis-reference-audit/README.md)
+checks signed coordinate order as well as complete reference sequence. The
+original audit compared only absolute genomic and insert distances, so its
+criteria would also admit a reversed positional ordering. All 7,542 accepted
+source windows nevertheless pass the later signed check; the original design
+inventory and eligibility counts have not been changed.

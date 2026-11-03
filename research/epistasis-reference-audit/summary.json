@@ -1,0 +1,32 @@
+{
+  "counts_by_status": {
+    "full_reference_mismatch": 58,
+    "no_map": 4,
+    "valid": 7480
+  },
+  "design_windows": 7542,
+  "implementation_sha256": "66413f09afe3ad4ecb71ff8667cf8a95403ea9e4aa2a308585b3f73888ac8c4f",
+  "independent_biological_replicates_established": false,
+  "inputs_sha256": {
+    "chain_mapper": "4bfb65df9ceb9add57bbcde62f1f6b8f005dbc63991f08ed73ce1bed8bbd0212",
+    "hg19_to_hg38_chain": "5c0598e500ceb5a78c73086929e8ef993aec309bcafb595139b53d440b125a1d",
+    "hg38_twobit": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0",
+    "prior_design_audit": "70dc4a6bd1813ea879b9699565cf75e8e9c21bff9ea1af5a46c25c1ad4686b0f",
+    "s18_workbook": "92929b4cef82797237c4c2be770feb744daa97255ac6dbfe3d53d5a34c996fbb",
+    "twobit_reader": "ffbb77304eb324b2028cf6fb29ca8e0ea4b6a1e9daaf77ee42ce4a8f629847a2"
+  },
+  "ledger_sha256": "72800cd3748ecff22fc1cd3d2a9593053353274f91aa9479e47d67dc0b4c55e0",
+  "outcome_availability_established": false,
+  "pair_identifiers": 2156,
+  "pairs_with_all_eligible_windows_valid": 2137,
+  "pairs_with_at_least_one_valid_window": 2140,
+  "rules": [
+    "same nonnegative hg19 start implied by both signed positions",
+    "unique deduplicated 200nt single-chain-block mapping before sequence validation",
+    "primary hg38 chromosome and exact full 200nt RR sequence match"
+  ],
+  "schema_version": 1,
+  "scope": "S18 design-only genomic consistency; no S20 outcome workbook read",
+  "source_assembly": "hg19; variant IDs 1-based, insert intervals zero-based half-open",
+  "target_reference": "UCSC hg38.2bit, unmasked; source-oriented via chain strand"
+}

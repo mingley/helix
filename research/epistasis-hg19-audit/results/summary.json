@@ -1,0 +1,14 @@
+{
+  "coordinates": "0-based half-open insert intervals; 1-based mismatch positions",
+  "design_ledger_sha256": "70dc4a6bd1813ea879b9699565cf75e8e9c21bff9ea1af5a46c25c1ad4686b0f",
+  "distinct_pair_ids_checked": 2156,
+  "exact_match_windows": 7542,
+  "hg19_reference_bytes": 816241703,
+  "hg19_reference_sha256": "797bdb4391cbe23bd30268d41d0d86676fd7b36b7f8e76797b1882d585766fa3",
+  "mismatch_base_occurrences": 0,
+  "mismatch_pair_ids": 0,
+  "mismatch_windows": 0,
+  "scope": "S18 RR designs only; no outcome workbook or observations read",
+  "source_sha256": "92929b4cef82797237c4c2be770feb744daa97255ac6dbfe3d53d5a34c996fbb",
+  "windows_checked": 7542
+}

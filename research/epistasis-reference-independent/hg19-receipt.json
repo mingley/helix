@@ -1,0 +1,32 @@
+{
+  "accepted_groups": 7542,
+  "all_checks_passed": true,
+  "design_report_sha256": "70dc4a6bd1813ea879b9699565cf75e8e9c21bff9ea1af5a46c25c1ad4686b0f",
+  "detailed_rejection_reasons_checked": false,
+  "hg19_exact_match_by_hg38_status": {
+    "full_reference_mismatch": {
+      "match": 58,
+      "mismatch": 0
+    },
+    "no_map": {
+      "match": 4,
+      "mismatch": 0
+    },
+    "valid": {
+      "match": 7480,
+      "mismatch": 0
+    }
+  },
+  "hg19_reference_sha256": "797bdb4391cbe23bd30268d41d0d86676fd7b36b7f8e76797b1882d585766fa3",
+  "hg38_ledger_sha256": "72800cd3748ecff22fc1cd3d2a9593053353274f91aa9479e47d67dc0b4c55e0",
+  "hg38_receipt_sha256": "999c8eda89bba9ab26f7ba26f8fc9cb5f99f87715b3cceef4827c64565ddb6e6",
+  "implementation_sha256": "7ce424a638f9d52bf789198051651b9a655f6af6a5b8ca65970114444d03f32a",
+  "ledger_groups_checked": 7542,
+  "ledger_sha256": "666b62d2259dc03e8a3e9148dadf4d1a503ed18353fdd0bd5997d1e8d2b53265",
+  "method": "Independent XLSX XML genotype patterns and on-demand hg19 2bit decoding",
+  "outcome_values_read": false,
+  "rejected_groups": 1362,
+  "shared_reader_sha256": "5fe17bd3ef52d1eabcf8d147b1d1fdc0d23a2c24249e86081b5c682b52503233",
+  "source_rows": 35616,
+  "source_sha256": "92929b4cef82797237c4c2be770feb744daa97255ac6dbfe3d53d5a34c996fbb"
+}

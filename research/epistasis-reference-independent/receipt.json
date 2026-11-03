@@ -1,0 +1,21 @@
+{
+  "accepted_groups": 7542,
+  "all_checks_passed": true,
+  "chain_sha256": "5c0598e500ceb5a78c73086929e8ef993aec309bcafb595139b53d440b125a1d",
+  "design_report_sha256": "70dc4a6bd1813ea879b9699565cf75e8e9c21bff9ea1af5a46c25c1ad4686b0f",
+  "detailed_rejection_reasons_checked": false,
+  "implementation_sha256": "5fe17bd3ef52d1eabcf8d147b1d1fdc0d23a2c24249e86081b5c682b52503233",
+  "ledger_groups_checked": 7542,
+  "ledger_sha256": "72800cd3748ecff22fc1cd3d2a9593053353274f91aa9479e47d67dc0b4c55e0",
+  "method": "Independent XLSX XML genotype patterns, chain block endpoints, and on-demand 2bit decoding",
+  "outcome_values_read": false,
+  "reference_sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0",
+  "rejected_groups": 1362,
+  "source_rows": 35616,
+  "source_sha256": "92929b4cef82797237c4c2be770feb744daa97255ac6dbfe3d53d5a34c996fbb",
+  "status_counts": {
+    "full_reference_mismatch": 58,
+    "no_map": 4,
+    "valid": 7480
+  }
+}
