@@ -25,12 +25,19 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def require(condition, message):
+    # Source and comparison gates must remain active under ``python -O``.
+    if not condition:
+        raise ValueError(message)
+
+
 def extract(source):
-    assert sha(source) == EXPECTED
+    require(sha(source) == EXPECTED, 'unexpected S18 source hash')
     with zipfile.ZipFile(source) as z:
         workbook = ET.fromstring(z.read('xl/workbook.xml'))
         sheets = workbook.findall('.//' + NS + 'sheet')
-        assert len(sheets) == 1 and sheets[0].attrib['name'] == 'S18.Variant Pair Oligos'
+        require(len(sheets) == 1 and sheets[0].attrib['name'] == 'S18.Variant Pair Oligos',
+                'unexpected S18 workbook sheets')
         strings = []
         with z.open('xl/sharedStrings.xml') as data:
             for _, elem in ET.iterparse(data, events=('end',)):
@@ -45,17 +52,19 @@ def extract(source):
                 cells = {}
                 for cell in elem.findall(NS + 'c'):
                     match = re.fullmatch(r'([A-G])([0-9]+)', cell.attrib['r'])
-                    assert match and int(match.group(2)) == number
-                    assert cell.find(NS + 'f') is None
+                    require(match is not None and int(match.group(2)) == number,
+                            'unexpected cell reference')
+                    require(cell.find(NS + 'f') is None, 'formula cell in S18 workbook')
                     value = cell.find(NS + 'v')
-                    assert value is not None and value.text is not None
+                    require(value is not None and value.text is not None, 'missing cell value')
                     typ = cell.attrib.get('t', 'n')
                     if typ == 's':
                         obj = strings[int(value.text)]
                     else:
-                        assert typ == 'n' and re.fullmatch(r'\d+', value.text)
+                        require(typ == 'n' and re.fullmatch(r'\d+', value.text) is not None,
+                                'unexpected cell type or numeric value')
                         obj = int(value.text)
-                    assert match.group(1) not in cells
+                    require(match.group(1) not in cells, 'duplicate cell reference')
                     cells[match.group(1)] = obj
                 yield number, cells
                 elem.clear()
@@ -98,7 +107,7 @@ def eligible(key, items):
 
 
 def main():
-    assert len(sys.argv) == 2, 'provide S18 workbook path'
+    require(len(sys.argv) == 2, 'provide S18 workbook path')
     source = Path(sys.argv[1])
     expected_headers = ('Variant 1', 'Variant 2', 'Distance', 'Center Variant',
                         'Window', 'Diplotype', 'Oligo')
@@ -107,12 +116,14 @@ def main():
     labelcounts = collections.Counter()
     for rownum, cells in extract(source):
         if rownum == 1:
-            assert cells['A'] == 'Supplementary Table 18 | Oligo sequences for variant pairs'
+            require(cells['A'] == 'Supplementary Table 18 | Oligo sequences for variant pairs',
+                    'unexpected S18 worksheet title')
             continue
         if rownum == 2:
-            assert tuple(cells[x] for x in 'ABCDEFG') == expected_headers
+            require(tuple(cells[x] for x in 'ABCDEFG') == expected_headers,
+                    'unexpected S18 worksheet headers')
             continue
-        assert set(cells) == set('ABCDEFG')
+        require(set(cells) == set('ABCDEFG'), 'unexpected S18 worksheet row')
         key = tuple(cells[x] for x in ('A', 'B', 'D', 'E'))
         groups[key].append((rownum, cells['C'], cells['F'], cells['G']))
         labelcounts[cells['F']] += 1
@@ -128,17 +139,20 @@ def main():
     expected_accepted = {(x['variant1'], x['variant2'], x['center'], x['window']): x
                          for x in report['eligible_groups']}
     expected_rejected = {tuple(x['key']): sorted(x['rows']) for x in report['ineligible_groups']}
-    assert len(expected_accepted) == len(report['eligible_groups'])
-    assert len(expected_rejected) == len(report['ineligible_groups'])
-    assert accepted == expected_accepted
-    assert rejected == expected_rejected
-    assert rowcount == report['data_rows']
-    assert len(groups) == report['design_groups']
-    assert dict(labelcounts) == report['diplotype_rows']
-    assert len({(k[0], k[1]) for k in groups}) == report['distinct_pair_identifiers']
-    assert len({(k[0], k[1]) for k in accepted}) == report['eligible_distinct_pairs']
+    require(len(expected_accepted) == len(report['eligible_groups']), 'duplicate accepted report key')
+    require(len(expected_rejected) == len(report['ineligible_groups']), 'duplicate rejected report key')
+    require(accepted == expected_accepted, 'accepted group details differ from report')
+    require(rejected == expected_rejected, 'rejected group identities or rows differ from report')
+    require(rowcount == report['data_rows'], 'data row count differs from report')
+    require(len(groups) == report['design_groups'], 'design group count differs from report')
+    require(dict(labelcounts) == report['diplotype_rows'], 'diplotype counts differ from report')
+    require(len({(k[0], k[1]) for k in groups}) == report['distinct_pair_identifiers'],
+            'pair count differs from report')
+    require(len({(k[0], k[1]) for k in accepted}) == report['eligible_distinct_pairs'],
+            'accepted pair count differs from report')
     distances = collections.Counter(str(x['distance']) for x in accepted.values())
-    assert dict(distances) == report['eligible_distance_distribution']
+    require(dict(distances) == report['eligible_distance_distribution'],
+            'accepted distance distribution differs from report')
     receipt = {'method': 'Separate stdlib streaming XLSX XML parser; all four sequences compared by polymorphic-column genotype patterns',
                'source_sha256': sha(source), 'primary_report_sha256': sha(REPORT),
                'rows_checked': rowcount, 'groups_checked': len(groups),

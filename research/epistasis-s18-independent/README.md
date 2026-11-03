@@ -27,4 +27,9 @@ python3 -m unittest discover -s research/epistasis-s18-independent -p 'test_*.py
 The source SHA-256 is
 `92929b4cef82797237c4c2be770feb744daa97255ac6dbfe3d53d5a34c996fbb`.
 Tests exercise valid and malformed synthetic squares; they do not establish
-any biological effect. Results are design eligibility, not outcome availability.
+any biological effect. The verifier uses explicit checks that remain enabled
+under Python optimization; its tests also alter the source and report under
+`python -O` and check that neither failure overwrites an existing receipt. The
+original receipt was generated without optimization; this hardening does not
+change its reported comparisons. Results are design eligibility, not outcome
+availability.
