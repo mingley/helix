@@ -74,6 +74,13 @@ must give equal predictions to at least one distinct construct pair. A separate
 implementation reconstructs all 7,542 records. Reporter activity differences,
 assay uncertainties and endogenous effects remain unmeasured by this audit.
 
+A separately [proved GC/trimer identity](variant-locality/gc-trimer-identity-v1/README.md)
+shows that, at fixed sequence length and boundary GC mass, the GC feature is a
+linear combination of the canonical trimer frequencies. For arbitrary sequence
+boundaries, a single weighted endpoint term remains. This is a reparameterization
+of the exact fixed score, not a guarantee that refitting without GC preserves a
+ridge model or that observed biology follows the model.
+
 ## Next falsifiable goal: test a predicted absence of interaction
 
 Find source-compatible four-construct measurements: reference, each of two

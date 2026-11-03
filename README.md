@@ -34,6 +34,12 @@ features. Any deterministic predictor restricted to those features must assign
 each such pair the same prediction in a given context. These are testable
 model limitations, not measured equivalence of the constructs.
 
+An exact [GC/trimer identity](research/variant-locality/gc-trimer-identity-v1/README.md),
+also checked in Lean, shows that the GC feature adds only a weighted boundary
+term once the canonical 3-mer frequencies are known at a fixed length. This
+clarifies how to interpret the model's coefficients; it does not imply that
+refitting without GC would produce the same predictions.
+
 The [external variant-effect test](research/variant-transfer-v2-study.md) now
 shows **no observed advantage over zero effect** on 2,153 SNVs in 172 components passing the frozen prior-source
 exclusion guards from a separate experiment. Macro MSE is 0.2033556 versus 0.2033201;

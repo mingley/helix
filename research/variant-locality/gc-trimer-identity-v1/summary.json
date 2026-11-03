@@ -1,0 +1,44 @@
+{
+  "GC_count_vs_weighted_trimer_count_pearson_decimal": "0.999575814973870283865674138435",
+  "biological_effects_established": false,
+  "boundary_GC": "2*GC(first) + GC(second) + GC(penultimate) + 2*GC(last)",
+  "boundary_count_histogram": {
+    "0": 3702,
+    "1": 7038,
+    "2": 11202,
+    "3": 12956,
+    "4": 10602,
+    "5": 6506,
+    "6": 3270
+  },
+  "correlation_squared_exact": {
+    "denominator": 111120261798596363227360,
+    "numerator": 111026010690482204379001
+  },
+  "correlation_sufficient_statistics": {
+    "sum_G": 5740896,
+    "sum_G2": 612492640,
+    "sum_GT": 1820035778,
+    "sum_T": 17059820,
+    "sum_T2": 5408399360
+  },
+  "identity": "3 * GC_count = GC_weighted_canonical_trimer_count + boundary_GC",
+  "implementation_sha256": "fec7fa70a8796853207b4dad3df58e6317581ad9642c3a0841f381a064f160f2",
+  "panel_sha256": "fce6b2a1aaf5aa4d530a2e298dccb840bc7c594a05b6831fdb0c6c0f9e2a9be3",
+  "records": 55276,
+  "same_trimers_different_GC_example": {
+    "canonical_trimer_counts": {
+      "AAC": 66,
+      "ACA": 66,
+      "CAA": 66
+    },
+    "first_GC_count": 66,
+    "first_boundary_GC": 0,
+    "first_sequence": "AACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAA",
+    "second_GC_count": 67,
+    "second_boundary_GC": 3,
+    "second_sequence": "ACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAAC"
+  },
+  "scope": "Existing DNA panel only; previously explored observation fields instantiated but not used",
+  "sequence_length": 200
+}

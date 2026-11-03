@@ -58,6 +58,11 @@ jobs:
           python3 -m unittest discover -s research/epistasis-reference-independent -p 'test_*.py'
           python3 -m unittest discover -s research/epistasis-feature-collisions-v1 -p 'test_*.py'
           python3 -m unittest discover -s research/epistasis-feature-collisions-independent -p 'test_*.py'
+          python3 -m unittest discover -s research/variant-locality/gc-trimer-identity-v1 -p 'test_*.py'
+          python3 -m unittest discover -s research/variant-locality/gc-trimer-independent-v1 -p 'test_*.py'
+          python3 research/variant-locality/gc-trimer-identity-v1/analyze.py --verify
+          python3 research/variant-locality/gc-trimer-independent-v1/verify.py --receipt "$RUNNER_TEMP/gc-trimer-identity.json"
+          cmp research/variant-locality/gc-trimer-independent-v1/receipt.json "$RUNNER_TEMP/gc-trimer-identity.json"
           python3 research/epistasis-feature-collisions-independent/verify.py --receipt "$RUNNER_TEMP/epistasis-feature-collisions.json"
           cmp research/epistasis-feature-collisions-independent/receipt.json "$RUNNER_TEMP/epistasis-feature-collisions.json"
           python3 research/epistasis-s18-independent/verify.py research/epistasis-source-audit/siraj2026-S18.xlsx
