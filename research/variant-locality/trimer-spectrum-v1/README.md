@@ -67,7 +67,7 @@ non-root vertex, and order all other outgoing edges. Following the lists from
 the fixed first vertex gives a unique labelled trail. The degree balances force
 it to stop at `t`. Any remaining edges would imply a remaining non-root last
 exit path into `t`, which contradicts stopping there. The same argument
-covers a closed trail whose start equals `t).
+covers a closed trail whose start equals `t`.
 
 Let `T_t` be the number of labelled trees directed toward `t`. The directed
 matrix tree theorem computes it from the out-Laplacian minor with the row and
