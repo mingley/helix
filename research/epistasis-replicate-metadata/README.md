@@ -95,6 +95,10 @@ file was not present in the inspected Zenodo `data_preprocess.zip`, and the
 inspected `resources.zip` contains a chain file only. Filename searches do not
 prove that no source elsewhere can supply this crosswalk.
 
+The [OL27 design accession trace](ol27-design-reference.md) links the original
+ENCODE design accession to an IGVF reference intended for sequence lookup.
+Exact alias and insert comparison remain open.
+
 ## Partial long-ID and sequence check
 
 The separately licensed CC BY-NC 4.0 [Zenodo record 15297965](https://zenodo.org/records/15297965)'s
