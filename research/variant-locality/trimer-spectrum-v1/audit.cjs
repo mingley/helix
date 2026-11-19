@@ -96,7 +96,7 @@ function summarizePanel() {
         panel_sha256: PANEL_SHA256,
         records: records.length,
         distinct_input_sequences: distinctInputs.size,
-        records_with_no_reverse_complement_pairs_in_their_fixed_end_class: incompatibleEnds,
+        records_where_terminal_dinucleotides_exclude_reverse_complement_pairs: incompatibleEnds,
         records_with_at_least_1e50_reverse_complement_orbits: atLeast1e50,
         records_with_at_least_1e70_reverse_complement_orbits: atLeast1e70,
         fixed_end_oriented_trimer_class_sizes: distribution(strings),

@@ -91,7 +91,9 @@ orbits with identical 33-feature vectors for two reference-verified reporter
 inserts. Each counted sequence even preserves the oriented 3-mer counts and
 both terminal dinucleotides. This is a lower bound for the model's full
 equivalence class. Short-string enumeration and an independent determinant
-calculation check the method.
+calculation check the method. Scanning the full retained panel finds at least
+10^70 such orbits for 54,983 of the 55,276 records, with a median lower
+bound of 8.20 × 10^78.
 
 In a [post-hoc audit of the previously explored activity panel](context-activity-feature-collisions-v1/README.md),
 the only full-feature collision consists of two opposite-strand cores from the

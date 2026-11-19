@@ -27,6 +27,29 @@ The two verified designs supply the reference spectra for the counting
 calculation. [Exact counts](examples.json) ·
 [Reference coordinate check](../../context-source-alternatives/design-coordinate-crosscheck.json)
 
+## Counts across the frozen panel
+
+The exact count ran on all 55,276 retained 200-base sequences. For 54,983
+records (99.47%), the lower bound is at least 10^70 distinct
+reverse-complement orbits per record. Every record has at least 2.6091 × 10^24
+such orbits, with the displayed number rounded down. Terminal dinucleotides
+alone rule out reverse-complement pairs within the counted class for 51,284
+records.
+
+| Panel statistic | Exact fixed-end class size | Lower bound on reverse-complement orbits |
+| --- | ---: | ---: |
+| Minimum | 2.60911 × 10^24 | 2.60911 × 10^24 |
+| 25th percentile | 1.79706 × 10^77 | 1.71644 × 10^77 |
+| Median | 8.60568 × 10^78 | 8.19540 × 10^78 |
+| 75th percentile | 2.63805 × 10^80 | 2.50801 × 10^80 |
+| Maximum | 2.94894 × 10^86 | 2.94894 × 10^86 |
+
+These counts describe possible strings under the feature constraints for each
+input. The panel contains only the 55,276 original designs. The exact summary
+retains the complete integers and records each nearest-rank percentile.
+[Panel summary](panel-summary.json) ·
+[Recorded scan](https://github.com/mingley/helix/actions/runs/44610553987)
+
 ## Counting argument
 
 Represent a 3-mer `abc` by a directed edge from `ab` to `bc`. Each observed
@@ -83,7 +106,8 @@ As a synthetic illustration, put 49 fixed two-base blocks after an initial
 `TAC`, append `AC` after every block and finish with `T`. Use three copies of
 each possible block and one extra `AA`. Each block contributes the same four
 3-mers regardless of its position. The result has length 200, fixed GC count
-98, and exactly `49! / (4! × (3!)^15)` distinct block permutations. The roughly 5.39 × 10^49 strings therefore share one feature vector. All begin and end
+98, and exactly `49! / (4! × (3!)^15)` distinct block permutations. Roughly
+5.39 × 10^49 strings therefore share one feature vector. All begin and end
 in `T`, so reverse complementation takes them outside the family. A shorter
 anchor swap is checked in the tests and changes just two sites, three bases
 apart. These constructions make model equality testable on sequence pairs.
@@ -96,7 +120,7 @@ Run from the repository root with Node.js 18 or later.
 ```bash
 node --test research/variant-locality/trimer-spectrum-v1/test_count.cjs
 node research/variant-locality/trimer-spectrum-v1/audit.cjs --verify
-node research/variant-locality/trimer-spectrum-v1/audit.cjs --panel
+node research/variant-locality/trimer-spectrum-v1/audit.cjs --panel | diff -u research/variant-locality/trimer-spectrum-v1/panel-summary.json -
 ```
 
 The tests enumerate all 21,824 A/C/G/T strings of length three through seven
