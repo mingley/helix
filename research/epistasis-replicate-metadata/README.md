@@ -5,7 +5,7 @@ interaction cohort or evidence of a biological effect. It identifies a
 potential source of replicate-level barcode counts and explores whether a
 published four-construct design might be represented in one library. It does
 not establish the published S20 endpoint, sample pairing, usable construct
-coverage, normalization, or a verified original-design ID-to-sequence crosswalk.
+coverage, normalization, or an ID-to-sequence match on its own.
 The paper, previous Siraj single-variant outcomes, and selected pair-design
 information have already been explored in this project.
 
@@ -95,9 +95,11 @@ file was not present in the inspected Zenodo `data_preprocess.zip`, and the
 inspected `resources.zip` contains a chain file only. Filename searches do not
 prove that no source elsewhere can supply this crosswalk.
 
-The [OL27 design accession trace](ol27-design-reference.md) links the original
-ENCODE design accession to an IGVF reference intended for sequence lookup.
-Exact alias and insert comparison remain open.
+The [released-design crosswalk](ol27-design-reference.md) verifies all 48
+aliases and complete 200-base sequences in these 12 collision windows against
+the original ENCODE FASTA and IGVF design TSV. This validates the sequence
+identities for those windows. The barcode inventory remains a separate check
+of mapping presence.
 
 ## Partial long-ID and sequence check
 

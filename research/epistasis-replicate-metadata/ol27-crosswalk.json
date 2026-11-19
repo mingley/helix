@@ -1,0 +1,1491 @@
+{
+  "candidate_collision_windows": 12,
+  "candidate_construct_aliases": 48,
+  "encode_four_exact_sequences": 12,
+  "igvf_four_exact_sequences": 12,
+  "igvf_schema_failure": null,
+  "lookup_gzip_sha256": "58f0c48c6d0a21b4a558794f31dcf38ccd6e8c766d56450512a28a27de059a15",
+  "reference_gzip_sha256": {
+    "ENCFF715XTT.fasta.gz": "5b34c622239f7f1a69e196afeceeb256a3e53b00a63125391eec64caa3ac8c9c",
+    "IGVFFI9985FTZH.tsv.gz": "dc9b25208e0302f3ed439c999413dfd84c8ce4687209a139170884f3d03f4b28"
+  },
+  "s18_sha256": "92929b4cef82797237c4c2be770feb744daa97255ac6dbfe3d53d5a34c996fbb",
+  "windows": [
+    {
+      "constructs": {
+        "AA": {
+          "alias": "11:72946140:G:C:A:wL:Alt_11-72946279-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "4fd2038c509fb1b961fdcb86259f3effc7c42ed85edf77644a0f2d201c3ed0d3"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "4fd2038c509fb1b961fdcb86259f3effc7c42ed85edf77644a0f2d201c3ed0d3"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "4fd2038c509fb1b961fdcb86259f3effc7c42ed85edf77644a0f2d201c3ed0d3"
+        },
+        "AR": {
+          "alias": "11:72946140:G:C:A:wL:Alt_11-72946279-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "e2547eeac54c1a51b18d7d6df5821f87317e4114f87712fa602da71e66a7f0bf"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "e2547eeac54c1a51b18d7d6df5821f87317e4114f87712fa602da71e66a7f0bf"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "e2547eeac54c1a51b18d7d6df5821f87317e4114f87712fa602da71e66a7f0bf"
+        },
+        "RA": {
+          "alias": "11:72946140:G:C:R:wL:Alt_11-72946279-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "868141becc6766911fb54ecc0e410b677fab4fcf3199fa0fc0846100b1b01eb9"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "868141becc6766911fb54ecc0e410b677fab4fcf3199fa0fc0846100b1b01eb9"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "868141becc6766911fb54ecc0e410b677fab4fcf3199fa0fc0846100b1b01eb9"
+        },
+        "RR": {
+          "alias": "11:72946140:G:C:R:wL:Alt_11-72946279-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "1496054142da88d0f65821e8d39b975f58f04b1c696f9c08a40c5aa12a7c816a"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "1496054142da88d0f65821e8d39b975f58f04b1c696f9c08a40c5aa12a7c816a"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "1496054142da88d0f65821e8d39b975f58f04b1c696f9c08a40c5aa12a7c816a"
+        }
+      },
+      "feature_class": "first_blind_only",
+      "window": [
+        "chr11:72946140:G:C",
+        "chr11:72946279:T:C",
+        "var1",
+        "left"
+      ]
+    },
+    {
+      "constructs": {
+        "AA": {
+          "alias": "11:72946279:T:C:A:wR:Alt_11-72946140-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "5bbc1ed0d8bbc242976a5e306546551f1965f143dddb3ccc6948b54acc4cb38d"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "5bbc1ed0d8bbc242976a5e306546551f1965f143dddb3ccc6948b54acc4cb38d"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "5bbc1ed0d8bbc242976a5e306546551f1965f143dddb3ccc6948b54acc4cb38d"
+        },
+        "AR": {
+          "alias": "11:72946279:T:C:R:wR:Alt_11-72946140-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "886c6ccf1007c3e77bf2e1097659d8fcf05179b660ed7930cac9dc4b2939c0a0"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "886c6ccf1007c3e77bf2e1097659d8fcf05179b660ed7930cac9dc4b2939c0a0"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "886c6ccf1007c3e77bf2e1097659d8fcf05179b660ed7930cac9dc4b2939c0a0"
+        },
+        "RA": {
+          "alias": "11:72946279:T:C:A:wR:Alt_11-72946140-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "28e760e306a05c95fe8e2c6864d6eff52f49c5bd333b7cb78bd1fcb9c9fb1106"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "28e760e306a05c95fe8e2c6864d6eff52f49c5bd333b7cb78bd1fcb9c9fb1106"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "28e760e306a05c95fe8e2c6864d6eff52f49c5bd333b7cb78bd1fcb9c9fb1106"
+        },
+        "RR": {
+          "alias": "11:72946279:T:C:R:wR:Alt_11-72946140-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "56eef208dd3646fe162cd65bf0ca840f6efcffd1a5ac054c410603e3449efa00"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "56eef208dd3646fe162cd65bf0ca840f6efcffd1a5ac054c410603e3449efa00"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "56eef208dd3646fe162cd65bf0ca840f6efcffd1a5ac054c410603e3449efa00"
+        }
+      },
+      "feature_class": "first_blind_only",
+      "window": [
+        "chr11:72946140:G:C",
+        "chr11:72946279:T:C",
+        "var2",
+        "right"
+      ]
+    },
+    {
+      "constructs": {
+        "AA": {
+          "alias": "1:204955319:G:A:A:wR:Alt_1-204955329-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "4daa75bbc7f104bd39c3c9e4c365062f6f750384cafe17decb71a9d520a0719a"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "4daa75bbc7f104bd39c3c9e4c365062f6f750384cafe17decb71a9d520a0719a"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "4daa75bbc7f104bd39c3c9e4c365062f6f750384cafe17decb71a9d520a0719a"
+        },
+        "AR": {
+          "alias": "1:204955319:G:A:A:wR:Alt_1-204955329-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "0738270e0d4f0174ceee4953bae417ec60a272b13999e9a860ccc17b6e68aa5f"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "0738270e0d4f0174ceee4953bae417ec60a272b13999e9a860ccc17b6e68aa5f"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "0738270e0d4f0174ceee4953bae417ec60a272b13999e9a860ccc17b6e68aa5f"
+        },
+        "RA": {
+          "alias": "1:204955319:G:A:R:wR:Alt_1-204955329-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "5d2ee172cb70de0e0aa6a27badfbcfb78411b8ebb69bf72df6574222a034896d"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "5d2ee172cb70de0e0aa6a27badfbcfb78411b8ebb69bf72df6574222a034896d"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "5d2ee172cb70de0e0aa6a27badfbcfb78411b8ebb69bf72df6574222a034896d"
+        },
+        "RR": {
+          "alias": "1:204955319:G:A:R:wR:Alt_1-204955329-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "a4840017cfe7d249b0392d54276ba576e7edd709a21865d23a4cc39d7ec12c37"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "a4840017cfe7d249b0392d54276ba576e7edd709a21865d23a4cc39d7ec12c37"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "a4840017cfe7d249b0392d54276ba576e7edd709a21865d23a4cc39d7ec12c37"
+        }
+      },
+      "feature_class": "opposite_nonzero",
+      "window": [
+        "chr1:204955319:G:A",
+        "chr1:204955329:A:G",
+        "var1",
+        "right"
+      ]
+    },
+    {
+      "constructs": {
+        "AA": {
+          "alias": "1:204955329:A:G:A:wR:Alt_1-204955319-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "bbf818624d98bc6041b92e1f24eaeaa5c499bc8229b59076baea881852905168"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "bbf818624d98bc6041b92e1f24eaeaa5c499bc8229b59076baea881852905168"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "bbf818624d98bc6041b92e1f24eaeaa5c499bc8229b59076baea881852905168"
+        },
+        "AR": {
+          "alias": "1:204955329:A:G:R:wR:Alt_1-204955319-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "3c99c93066ea1f9b453dc36b28d6b88bc127bfceeea8c452da52e117725efe28"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "3c99c93066ea1f9b453dc36b28d6b88bc127bfceeea8c452da52e117725efe28"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "3c99c93066ea1f9b453dc36b28d6b88bc127bfceeea8c452da52e117725efe28"
+        },
+        "RA": {
+          "alias": "1:204955329:A:G:A:wR:Alt_1-204955319-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "4fdbd18c3009fe85e940207d78facd4d8a1d8a5e7ff04a8d90338c41dc5fd558"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "4fdbd18c3009fe85e940207d78facd4d8a1d8a5e7ff04a8d90338c41dc5fd558"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "4fdbd18c3009fe85e940207d78facd4d8a1d8a5e7ff04a8d90338c41dc5fd558"
+        },
+        "RR": {
+          "alias": "1:204955329:A:G:R:wR:Alt_1-204955319-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "399797c36ceab95ecee00f85d92c21cc74049b010d67325589ee8c4b00113f7b"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "399797c36ceab95ecee00f85d92c21cc74049b010d67325589ee8c4b00113f7b"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "399797c36ceab95ecee00f85d92c21cc74049b010d67325589ee8c4b00113f7b"
+        }
+      },
+      "feature_class": "opposite_nonzero",
+      "window": [
+        "chr1:204955319:G:A",
+        "chr1:204955329:A:G",
+        "var2",
+        "right"
+      ]
+    },
+    {
+      "constructs": {
+        "AA": {
+          "alias": "1:230295691:G:A:A:wL:Alt_1-230295789-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "079156b335a4a13f6a1fceb89792a12aa2d6fc543de183c2821e6a0d8a8a210f"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "079156b335a4a13f6a1fceb89792a12aa2d6fc543de183c2821e6a0d8a8a210f"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "079156b335a4a13f6a1fceb89792a12aa2d6fc543de183c2821e6a0d8a8a210f"
+        },
+        "AR": {
+          "alias": "1:230295691:G:A:A:wL:Alt_1-230295789-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "123d157fccdca29d324b8c6f182e03c9bfb81b962853b3c4d0ee1056a294ae95"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "123d157fccdca29d324b8c6f182e03c9bfb81b962853b3c4d0ee1056a294ae95"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "123d157fccdca29d324b8c6f182e03c9bfb81b962853b3c4d0ee1056a294ae95"
+        },
+        "RA": {
+          "alias": "1:230295691:G:A:R:wL:Alt_1-230295789-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "f1b9c82931b8abf7722475165561c75c0374b23b4dea499c10322a726dc71ccb"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "f1b9c82931b8abf7722475165561c75c0374b23b4dea499c10322a726dc71ccb"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "f1b9c82931b8abf7722475165561c75c0374b23b4dea499c10322a726dc71ccb"
+        },
+        "RR": {
+          "alias": "1:230295691:G:A:R:wL:Alt_1-230295789-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "bceade56040a2e584cec76884e93dfbc4bd1a99617deebb7832f214bd8d5aede"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "bceade56040a2e584cec76884e93dfbc4bd1a99617deebb7832f214bd8d5aede"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "bceade56040a2e584cec76884e93dfbc4bd1a99617deebb7832f214bd8d5aede"
+        }
+      },
+      "feature_class": "second_blind_only",
+      "window": [
+        "chr1:230295691:G:A",
+        "chr1:230295789:A:T",
+        "var1",
+        "left"
+      ]
+    },
+    {
+      "constructs": {
+        "AA": {
+          "alias": "1:230295789:A:T:A:wR:Alt_1-230295691-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "19c0831a21bd543cbcee470f1b3b13c054db5099b4968c6e02ec850ae2647d56"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "19c0831a21bd543cbcee470f1b3b13c054db5099b4968c6e02ec850ae2647d56"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "19c0831a21bd543cbcee470f1b3b13c054db5099b4968c6e02ec850ae2647d56"
+        },
+        "AR": {
+          "alias": "1:230295789:A:T:R:wR:Alt_1-230295691-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "fb95f4d3f10217d23491ceabddbec70e6efbdb0cb9295ecf99b4a6a2eef8511b"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "fb95f4d3f10217d23491ceabddbec70e6efbdb0cb9295ecf99b4a6a2eef8511b"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "fb95f4d3f10217d23491ceabddbec70e6efbdb0cb9295ecf99b4a6a2eef8511b"
+        },
+        "RA": {
+          "alias": "1:230295789:A:T:A:wR:Alt_1-230295691-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "7d512d849a7de2f9dc0f11e18f38e2a386154d302bab949ec7e7b19aea5c73dd"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "7d512d849a7de2f9dc0f11e18f38e2a386154d302bab949ec7e7b19aea5c73dd"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "7d512d849a7de2f9dc0f11e18f38e2a386154d302bab949ec7e7b19aea5c73dd"
+        },
+        "RR": {
+          "alias": "1:230295789:A:T:R:wR:Alt_1-230295691-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "d10894a02019bdc396b045b35fb6d31f30fcca0cb94dabde1dfdd5f511c2bc65"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "d10894a02019bdc396b045b35fb6d31f30fcca0cb94dabde1dfdd5f511c2bc65"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "d10894a02019bdc396b045b35fb6d31f30fcca0cb94dabde1dfdd5f511c2bc65"
+        }
+      },
+      "feature_class": "second_blind_only",
+      "window": [
+        "chr1:230295691:G:A",
+        "chr1:230295789:A:T",
+        "var2",
+        "right"
+      ]
+    },
+    {
+      "constructs": {
+        "AA": {
+          "alias": "8:101484612:G:C:A:wL:Alt_8-101484638-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "89ebc9f394c825d87188efb7820d1154a0c7bdaab9d7dea5108615587e0f3e56"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "89ebc9f394c825d87188efb7820d1154a0c7bdaab9d7dea5108615587e0f3e56"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "89ebc9f394c825d87188efb7820d1154a0c7bdaab9d7dea5108615587e0f3e56"
+        },
+        "AR": {
+          "alias": "8:101484612:G:C:A:wL:Alt_8-101484638-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "c8b7ae96085843369afed62b1b589997c41b6c88a7a15c5972728442f9ba239d"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "c8b7ae96085843369afed62b1b589997c41b6c88a7a15c5972728442f9ba239d"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "c8b7ae96085843369afed62b1b589997c41b6c88a7a15c5972728442f9ba239d"
+        },
+        "RA": {
+          "alias": "8:101484612:G:C:R:wL:Alt_8-101484638-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "8cef5b3175f2dd308301a6466f889af992f095cfbdff8faad8da8c7c9bcce185"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "8cef5b3175f2dd308301a6466f889af992f095cfbdff8faad8da8c7c9bcce185"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "8cef5b3175f2dd308301a6466f889af992f095cfbdff8faad8da8c7c9bcce185"
+        },
+        "RR": {
+          "alias": "8:101484612:G:C:R:wL:Alt_8-101484638-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "fcb6e7c463a0141b350b017da683d38ad6f78e5b6edaccefef3a7aad5ed920df"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "fcb6e7c463a0141b350b017da683d38ad6f78e5b6edaccefef3a7aad5ed920df"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "fcb6e7c463a0141b350b017da683d38ad6f78e5b6edaccefef3a7aad5ed920df"
+        }
+      },
+      "feature_class": "second_blind_only",
+      "window": [
+        "chr8:101484612:G:C",
+        "chr8:101484638:C:G",
+        "var1",
+        "left"
+      ]
+    },
+    {
+      "constructs": {
+        "AA": {
+          "alias": "8:101484612:G:C:A:wR:Alt_8-101484638-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "d45d6ba70eefe0bca9300f5960fe36b8d9cd39bcd364b09b95099527cd1832bc"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "d45d6ba70eefe0bca9300f5960fe36b8d9cd39bcd364b09b95099527cd1832bc"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "d45d6ba70eefe0bca9300f5960fe36b8d9cd39bcd364b09b95099527cd1832bc"
+        },
+        "AR": {
+          "alias": "8:101484612:G:C:A:wR:Alt_8-101484638-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "0b12633356c1310a37fad8068aba822cbad66044da7873f82a6eeb2cb25483e2"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "0b12633356c1310a37fad8068aba822cbad66044da7873f82a6eeb2cb25483e2"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "0b12633356c1310a37fad8068aba822cbad66044da7873f82a6eeb2cb25483e2"
+        },
+        "RA": {
+          "alias": "8:101484612:G:C:R:wR:Alt_8-101484638-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "72dc40e9263e08380252c2e0fef182fae1884904329396dbd821e0e74e9f0eee"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "72dc40e9263e08380252c2e0fef182fae1884904329396dbd821e0e74e9f0eee"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "72dc40e9263e08380252c2e0fef182fae1884904329396dbd821e0e74e9f0eee"
+        },
+        "RR": {
+          "alias": "8:101484612:G:C:R:wR:Alt_8-101484638-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "3070ebd4903098871bc1547c0d6f7ee3628e55b46d6e83afa2d2603b1a1e08e9"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "3070ebd4903098871bc1547c0d6f7ee3628e55b46d6e83afa2d2603b1a1e08e9"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "3070ebd4903098871bc1547c0d6f7ee3628e55b46d6e83afa2d2603b1a1e08e9"
+        }
+      },
+      "feature_class": "second_blind_only",
+      "window": [
+        "chr8:101484612:G:C",
+        "chr8:101484638:C:G",
+        "var1",
+        "right"
+      ]
+    },
+    {
+      "constructs": {
+        "AA": {
+          "alias": "8:101484638:C:G:A:wL:Alt_8-101484612-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "d9423a297be2ae60e9b7c7e514b46af56c90e77f214860e266b05c67e2c86fd2"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "d9423a297be2ae60e9b7c7e514b46af56c90e77f214860e266b05c67e2c86fd2"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "d9423a297be2ae60e9b7c7e514b46af56c90e77f214860e266b05c67e2c86fd2"
+        },
+        "AR": {
+          "alias": "8:101484638:C:G:R:wL:Alt_8-101484612-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "0d169cf0020b39d4a18a204b5fc991ae87f6f6277a8a02cbd031b75301966b01"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "0d169cf0020b39d4a18a204b5fc991ae87f6f6277a8a02cbd031b75301966b01"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "0d169cf0020b39d4a18a204b5fc991ae87f6f6277a8a02cbd031b75301966b01"
+        },
+        "RA": {
+          "alias": "8:101484638:C:G:A:wL:Alt_8-101484612-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "022ebbd46b4b17523d5d4cc02caf573af94858ef88e200c9cc38e69f5c6fe3f2"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "022ebbd46b4b17523d5d4cc02caf573af94858ef88e200c9cc38e69f5c6fe3f2"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "022ebbd46b4b17523d5d4cc02caf573af94858ef88e200c9cc38e69f5c6fe3f2"
+        },
+        "RR": {
+          "alias": "8:101484638:C:G:R:wL:Alt_8-101484612-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "f8fa04f2bb3e7369bcc1ef21442a87a8a0570e29d19064afe34adfcbe8f1253f"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "f8fa04f2bb3e7369bcc1ef21442a87a8a0570e29d19064afe34adfcbe8f1253f"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "f8fa04f2bb3e7369bcc1ef21442a87a8a0570e29d19064afe34adfcbe8f1253f"
+        }
+      },
+      "feature_class": "second_blind_only",
+      "window": [
+        "chr8:101484612:G:C",
+        "chr8:101484638:C:G",
+        "var2",
+        "left"
+      ]
+    },
+    {
+      "constructs": {
+        "AA": {
+          "alias": "8:101484638:C:G:A:wR:Alt_8-101484612-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "efa81701a727fdb1e935af1a3c240869ab84e1da3b46308ebb1195e790c8b3f3"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "efa81701a727fdb1e935af1a3c240869ab84e1da3b46308ebb1195e790c8b3f3"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "efa81701a727fdb1e935af1a3c240869ab84e1da3b46308ebb1195e790c8b3f3"
+        },
+        "AR": {
+          "alias": "8:101484638:C:G:R:wR:Alt_8-101484612-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "11f50b70f5c6ae157ad91f9f66de4fb3ee1de5c66e2256bdc31034f2120d90f9"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "11f50b70f5c6ae157ad91f9f66de4fb3ee1de5c66e2256bdc31034f2120d90f9"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "11f50b70f5c6ae157ad91f9f66de4fb3ee1de5c66e2256bdc31034f2120d90f9"
+        },
+        "RA": {
+          "alias": "8:101484638:C:G:A:wR:Alt_8-101484612-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "8bd496aed04688219c98d0529fc6f5f019413e13bdb65f64266e5587c1998ceb"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "8bd496aed04688219c98d0529fc6f5f019413e13bdb65f64266e5587c1998ceb"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "8bd496aed04688219c98d0529fc6f5f019413e13bdb65f64266e5587c1998ceb"
+        },
+        "RR": {
+          "alias": "8:101484638:C:G:R:wR:Alt_8-101484612-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "fcc472831d360d6c331cd1ca4d7131dbb333b6d4f215933eb5a8d3d41fd6aadd"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "fcc472831d360d6c331cd1ca4d7131dbb333b6d4f215933eb5a8d3d41fd6aadd"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "fcc472831d360d6c331cd1ca4d7131dbb333b6d4f215933eb5a8d3d41fd6aadd"
+        }
+      },
+      "feature_class": "second_blind_only",
+      "window": [
+        "chr8:101484612:G:C",
+        "chr8:101484638:C:G",
+        "var2",
+        "right"
+      ]
+    },
+    {
+      "constructs": {
+        "AA": {
+          "alias": "9:4083485:C:G:A:wL:Alt_9-4083587-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "1f101cfbad1740f45ef2ac1c0fef37c571fb12e98878a3e7c0ab02b1a7485b16"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "1f101cfbad1740f45ef2ac1c0fef37c571fb12e98878a3e7c0ab02b1a7485b16"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "1f101cfbad1740f45ef2ac1c0fef37c571fb12e98878a3e7c0ab02b1a7485b16"
+        },
+        "AR": {
+          "alias": "9:4083485:C:G:A:wL:Alt_9-4083587-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "9af81a886197fa9443e7d92e6cf7ff037119b17f09d865fa437445eebe8f5922"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "9af81a886197fa9443e7d92e6cf7ff037119b17f09d865fa437445eebe8f5922"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "9af81a886197fa9443e7d92e6cf7ff037119b17f09d865fa437445eebe8f5922"
+        },
+        "RA": {
+          "alias": "9:4083485:C:G:R:wL:Alt_9-4083587-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "c25d3ae965ca887173704ba98d45e78b53e6294c3bc26bc92b82356255a645e0"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "c25d3ae965ca887173704ba98d45e78b53e6294c3bc26bc92b82356255a645e0"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "c25d3ae965ca887173704ba98d45e78b53e6294c3bc26bc92b82356255a645e0"
+        },
+        "RR": {
+          "alias": "9:4083485:C:G:R:wL:Alt_9-4083587-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "f7ce907c69cd402c97419429a984e68d969ae8f77a6e9d55103bbef3b928b52c"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "f7ce907c69cd402c97419429a984e68d969ae8f77a6e9d55103bbef3b928b52c"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "f7ce907c69cd402c97419429a984e68d969ae8f77a6e9d55103bbef3b928b52c"
+        }
+      },
+      "feature_class": "first_blind_only",
+      "window": [
+        "chr9:4083485:C:G",
+        "chr9:4083587:A:G",
+        "var1",
+        "left"
+      ]
+    },
+    {
+      "constructs": {
+        "AA": {
+          "alias": "9:4083587:A:G:A:wR:Alt_9-4083485-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "01d59160f724823ef72884cf4e9ec047a4644500c96104a5cc24bfce5d973b5c"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "01d59160f724823ef72884cf4e9ec047a4644500c96104a5cc24bfce5d973b5c"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "01d59160f724823ef72884cf4e9ec047a4644500c96104a5cc24bfce5d973b5c"
+        },
+        "AR": {
+          "alias": "9:4083587:A:G:R:wR:Alt_9-4083485-A",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "f0b722f55d4daa4de936d69826d44ec7d687e072e50574babb44009ac4e7d7f9"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "f0b722f55d4daa4de936d69826d44ec7d687e072e50574babb44009ac4e7d7f9"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "f0b722f55d4daa4de936d69826d44ec7d687e072e50574babb44009ac4e7d7f9"
+        },
+        "RA": {
+          "alias": "9:4083587:A:G:A:wR:Alt_9-4083485-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "3a57946969cbfa319d17092443ae3968bfefcfd52ba6e57d3dacbe01bb93133c"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "3a57946969cbfa319d17092443ae3968bfefcfd52ba6e57d3dacbe01bb93133c"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "3a57946969cbfa319d17092443ae3968bfefcfd52ba6e57d3dacbe01bb93133c"
+        },
+        "RR": {
+          "alias": "9:4083587:A:G:R:wR:Alt_9-4083485-R",
+          "encode": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_fasta_header": 1
+                },
+                "sha256": "0b37a9fc278dfd38f31b20928f53cf3225871063d70a1f97a645e906b6947b07"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "igvf": {
+            "sequence_hashes": [
+              {
+                "length": 200,
+                "records_by_alias_type": {
+                  "literal_igvf_name": 1
+                },
+                "sha256": "0b37a9fc278dfd38f31b20928f53cf3225871063d70a1f97a645e906b6947b07"
+              }
+            ],
+            "status": "exact_sequence"
+          },
+          "s18_sequence_sha256": "0b37a9fc278dfd38f31b20928f53cf3225871063d70a1f97a645e906b6947b07"
+        }
+      },
+      "feature_class": "first_blind_only",
+      "window": [
+        "chr9:4083485:C:G",
+        "chr9:4083587:A:G",
+        "var2",
+        "right"
+      ]
+    }
+  ]
+}

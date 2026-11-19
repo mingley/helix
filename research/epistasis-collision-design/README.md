@@ -118,6 +118,38 @@ equal effect. Sequencing lanes or barcodes from one library are not, by
 themselves, independent biological replicates. Replicate transfections sharing a
 plasmid pool may still have this shared-input covariance.
 
+## RNA and plasmid samples without known pairing
+
+A separate candidate estimand applies when each RNA sample and each plasmid
+sample measures two verified constructs in the same library, with at least
+two independent units in each collection. Let `A_r` be the within-RNA log
+contrast for the construct pair, and `B_s` the within-plasmid log contrast.
+Their mean difference is `Delta = E[A] - E[B]`. Common per-sample log
+normalization factors cancel from the within-sample contrasts, provided the
+same offset applies to each construct. Pseudocounts and count filtering can
+change the target and must follow the source-specific protocol.
+
+```text
+U = mean_{r!=t}(A_r A_t) + mean_{s!=u}(B_s B_u) - 2 mean(A) mean(B)
+```
+
+Under common means within each collection, its expectation is `Delta^2`
+plus the sum of the average distinct RNA and plasmid covariances, minus twice
+the average covariance across all RNA-plasmid pairs. Pairwise uncorrelated
+errors across units and collections suffice. If `n` RNA and `n` plasmid samples
+have unknown one-to-one pairings with covariance `c` only for the paired
+samples, the bias is `-2c/n`. A synthetic control with `n=3` and `c=1` gives
+expectation 1/3 when `Delta^2=1`. Under independent collections the expectation
+is 1 for the same means. Technical lanes from one preparation share the
+preparation's error.
+
+The target is the difference of mean log contrasts. An activity estimate
+formed by pooling counts or fitting the source's DESeq2 model has a different
+definition. The same unpaired construction accepts a four-construct contrast
+in each sample with coefficients `(+1,-1,-1,+1)`. The OL27 sequence crosswalk
+binds the constructs. An inference protocol still needs measurements with
+usable support and a justified sample dependence model.
+
 ## Aggregate target and uncertainty
 
 Define classes, contexts and eligible replicate units from design and source

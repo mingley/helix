@@ -6,6 +6,7 @@ on:
       - 'research/epistasis-replicate-metadata/inspect_design_reference.py'
       - 'research/epistasis-replicate-metadata/audit_design_crosswalk.py'
       - 'research/epistasis-replicate-metadata/ol27-source-metadata.json'
+      - 'research/epistasis-replicate-metadata/ol27-crosswalk.json'
       - 'research/epistasis-replicate-metadata/test_design_crosswalk.py'
       - '.github/workflows/ol27-design-source.yml'
   workflow_dispatch:
@@ -22,4 +23,6 @@ jobs:
       - name: Verify alias comparison rules
         run: python3 -m unittest discover -s research/epistasis-replicate-metadata -p test_design_crosswalk.py
       - name: Replay exact S18 sequence joins on the OL27 designs
-        run: python3 research/epistasis-replicate-metadata/audit_design_crosswalk.py --download
+        run: |
+          python3 research/epistasis-replicate-metadata/audit_design_crosswalk.py --download > "$RUNNER_TEMP/ol27-crosswalk.json"
+          cmp research/epistasis-replicate-metadata/ol27-crosswalk.json "$RUNNER_TEMP/ol27-crosswalk.json"

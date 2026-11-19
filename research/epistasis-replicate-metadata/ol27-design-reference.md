@@ -1,12 +1,20 @@
-# OL27 design accession and sequence-reference lead
+# OL27 sequence matches for the collision designs
+
+All 48 construct aliases in the 12 candidate collision windows match their
+full 200-base S18 sequences in the released ENCODE FASTA and the released
+IGVF TSV. The 48 inserts are distinct. Each alias appears as a literal FASTA
+header and a literal IGVF name. These windows span five variant pairs and
+contain 22 feature-equality contrasts across single-edit and double-edit
+constructs. The join establishes the design identities. It leaves RNA
+and plasmid measurement coverage and sample dependence to the activity study.
+[Row-level evidence](ol27-crosswalk.json) ·
+[Crosswalk replay](https://github.com/mingley/helix/actions/runs/44612172271)
 
 The official ENCODE GEO submission records `ENCFF715XTT` as an upstream input
 of the OL27 barcode map `ENCFF823YWM`. The same record reports the barcode map's
 MD5, which agrees with the existing inventory. The IGVF catalog identifies
 `IGVFFI9985FTZH` as its reference for the ENCODE library `ENCFF715XTT` and
-provides a download URL. This establishes the accession chain down to the
-catalog reference. The sequence match for the 12 candidate collision windows
-still requires the file itself.
+provides a download URL for its sequence-design reference.
 [ENCODE submission record](https://github.com/ENCODE-DCC/geo-submission/blob/fc2d3daabfcf90655147ba2f9d11680f3a8d1045/experiments/ENCSR517VAN_modified.json) ·
 [IGVF accession mapping](https://github.com/IGVF-DACC/igvf-catalog/blob/1b9eca1d081920a8d2a2814a4b13e5971a65b475/data/data_sources/data_sources_file_fileset.yaml#L784) ·
 [IGVF reference configuration](https://github.com/IGVF-DACC/igvf-catalog/blob/1b9eca1d081920a8d2a2814a4b13e5971a65b475/data/data_sources/data_sources.yaml#L1819)
@@ -53,7 +61,8 @@ secondary alias evidence and reports the match type. The IGVF parser checks
 the expected design header before comparing aliases.
 
 ```bash
-python3 research/epistasis-replicate-metadata/audit_design_crosswalk.py --download
+python3 research/epistasis-replicate-metadata/audit_design_crosswalk.py --download |
+  diff -u research/epistasis-replicate-metadata/ol27-crosswalk.json -
 ```
 
 The downloaded inputs are temporary. A cached copy of the two design gzips

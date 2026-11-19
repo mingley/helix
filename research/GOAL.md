@@ -153,12 +153,11 @@ replicate assumptions and a frozen protocol remain necessary before analysis.
 
 The [Siraj OL27 source review](epistasis-replicate-metadata/README.md) locates
 five RNA and five plasmid count columns and independently inventories its
-barcode lookup. It finds four hypothesized oligo-name strings for 256 eligible
-windows, including 12 collision windows, but the short-name-to-sequence mapping
-is unverified. A selected satmut design source corroborates 124 long-ID/sequence
-matches elsewhere and does not validate those 12 candidates. Replicate pairing,
-normalization and a source-specific protocol also remain open; no RNA or
-reporter-response values were read in this review.
+barcode lookup. The [released-design crosswalk](epistasis-replicate-metadata/ol27-design-reference.md)
+verifies all four literal aliases and exact 200-base sequences in the 12
+candidate collision windows across five pairs. Both the original ENCODE FASTA
+and IGVF design TSV agree. Measurement coverage, replicate dependence,
+normalization and a source-specific analysis remain open.
 
 ## Completed foundation
 
