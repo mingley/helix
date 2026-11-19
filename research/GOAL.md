@@ -6,6 +6,12 @@ explicit assumptions, measured endpoints and falsifiable questions. Annotation,
 logical consistency, clinical classification and molecular measurements remain
 different kinds of evidence.
 
+The whole-reference toolkit starts with [Rust twoBit access](../README.md#query-a-whole-reference-from-rust).
+It provides literal coordinate queries and exact base totals under an explicit
+reference file identity. Use those reusable operations to check sequences
+before composing annotation, assay and model inputs. Whole-reference sequence
+coverage and evidence supporting a biological model are separate concerns.
+
 ## Current result: predict a measured activity component
 
 The [published-activity benchmark](context-activity-study.md) reduces grouped

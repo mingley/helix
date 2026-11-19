@@ -216,3 +216,78 @@ fn research_reconstructs_reference_enumerates_mechanisms_and_preserves_commitmen
     assert!(!rejected.status.success());
     assert!(String::from_utf8_lossy(&rejected.stderr).contains("five defined hypothesis IDs"));
 }
+
+#[test]
+fn reference_catalog_fetch_and_summary_are_deterministic_and_hash_bound() {
+    let temp = tempfile::tempdir().unwrap();
+    let path = temp.path().join("tiny.2bit");
+    // Independently packed twoBit records in non-alphabetical contig order.
+    let mut bytes = [0x1a412743_u32, 0, 2, 0]
+        .into_iter()
+        .flat_map(u32::to_be_bytes)
+        .collect::<Vec<_>>();
+    bytes.extend_from_slice(b"\x04chrZ\x00\x00\x00\x22\x04chrA\x00\x00\x00\x44");
+    bytes.extend(
+        [7_u32, 1, 2, 2, 1, 1, 4, 0]
+            .into_iter()
+            .flat_map(u32::to_be_bytes),
+    );
+    bytes.extend([0x9c, 0x58]); // ACGTCCA with N at [2,4) and mask at [1,5).
+    bytes.extend([4_u32, 0, 0, 0].into_iter().flat_map(u32::to_be_bytes));
+    bytes.push(0x0e); // TTGA.
+    fs::write(&path, &bytes).unwrap();
+    let check = |command: &[&str]| {
+        let mut args = vec![
+            "reference",
+            "--file",
+            path.to_str().unwrap(),
+            "--assembly",
+            "GRCh38",
+        ];
+        args.extend_from_slice(command);
+        invoke(&args)
+    };
+    let report = |command: &[&str]| -> serde_json::Value {
+        serde_json::from_slice(&success(check(command)).stdout).unwrap()
+    };
+
+    let expected = genome_data::sha256(&bytes);
+    let catalog = ["--expect-sha256", expected.as_str(), "catalog"];
+    let indexed = report(&catalog);
+    assert_eq!(indexed["schema_version"], 1);
+    assert_eq!(indexed["operation"], "catalog");
+    assert_eq!(indexed["reference"]["declared_assembly"], "GRCh38");
+    assert_eq!(indexed["reference"]["byte_order"], "big");
+    assert_eq!(indexed["reference"]["sha256"], expected.as_str());
+    assert_eq!(indexed["contigs"][0]["name"], "chrA");
+    assert_eq!(indexed["contigs"][1]["name"], "chrZ");
+    assert_eq!(indexed["contigs"][1]["length"], 7);
+    assert_eq!(indexed["contigs"][1]["n_blocks"], 1);
+    assert_eq!(indexed["contigs"][1]["mask_blocks"], 1);
+    assert_eq!(
+        success(check(&catalog)).stdout,
+        success(check(&catalog)).stdout
+    );
+
+    let extracted = report(&["fetch", "chrZ", "1", "6", "--strand=-", "--masked"]);
+    assert_eq!(extracted["operation"], "fetch");
+    assert_eq!(extracted["start0"], 1);
+    assert_eq!(extracted["end0"], 6);
+    assert_eq!(extracted["sequence"], "Ggnng");
+    assert!(extracted["reference"]["sha256"].is_null());
+    assert_eq!(report(&["fetch", "chrZ", "0", "7"])["sequence"], "ACNNCCA");
+
+    let summary = report(&["summary"]);
+    assert_eq!(summary["operation"], "summary");
+    assert_eq!(summary["contigs"][0]["name"], "chrA");
+    assert_eq!(
+        summary["total"],
+        serde_json::json!({"a": 3, "c": 3, "g": 1, "t": 2, "n": 2})
+    );
+    let rejected = check(&["--expect-sha256", &"0".repeat(64), "catalog"]);
+    assert!(!rejected.status.success());
+    assert!(rejected.stdout.is_empty());
+    assert!(String::from_utf8_lossy(&rejected.stderr).contains("SHA-256 mismatch"));
+    assert!(!check(&["fetch", "Z", "0", "7"]).status.success());
+    assert!(!check(&["fetch", "chrZ", "0", "8"]).status.success());
+}

@@ -13,6 +13,8 @@ use std::{
     path::{Path, PathBuf},
 };
 
+pub mod twobit;
+
 pub fn sha256(bytes: &[u8]) -> String {
     format!("{:x}", Sha256::digest(bytes))
 }

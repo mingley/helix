@@ -168,6 +168,39 @@ to choose another location. Python research dependencies are hash-pinned in
 `requirements/research.lock`. Setup needs network access; normal analysis uses
 frozen local inputs. Existing run directories are never overwritten.
 
+## Query a whole reference from Rust
+
+Helix reads local UCSC twoBit v0 files through the `genome_data::twobit`
+library and the `helix reference` CLI. The reader validates the index once
+per open and seeks directly to packed sequence for each interval. A summary
+counts A, C, G, T and N in bounded chunks across every indexed contig, including
+alternate sequences.
+
+```bash
+bash scripts/setup_reference.sh
+source scripts/env.sh
+reference="$HELIX_TOOLS_DIR/reference/hg38.2bit"
+
+cargo run --release --locked -- reference --file "$reference" --assembly GRCh38 catalog
+cargo run --release --locked -- reference --file "$reference" --assembly GRCh38 \
+  fetch chr11 5225000 5227500 --strand=- --masked
+cargo run --release --locked -- reference --file "$reference" --assembly GRCh38 \
+  --expect-sha256 1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0 summary
+```
+
+Coordinates are zero-based and half-open. Names are literal twoBit index names.
+Fetch emits uppercase A/C/G/T/N by default and preserves lowercase masks when
+requested. Each command emits one versioned JSON record. The twoBit file has
+no assembly label, so JSON records the caller's declaration and any verified
+SHA-256 separately. Whole-file hashing is optional for fast local interval
+reads. Reuse one library reader for many queries.
+
+Replay the pinned input and the independent UCSC sequence checks with:
+
+```bash
+cargo run --release --locked -p genome-data --example twobit_benchmark -- "$reference"
+```
+
 ## Explore the HBB mechanism map
 
 ```bash
@@ -240,7 +273,7 @@ variant contracts. The deletion analysis is a source-specific forensic crosswalk
 | Crate | Responsibility |
 | --- | --- |
 | `genome-types` | Assembly-indexed variants, biological contexts and probabilities |
-| `genome-data` | Noodles VCF ingestion, reference checks and frozen partitions |
+| `genome-data` | Seekable twoBit sequence, VCF ingestion and verified datasets |
 | `genome-knowledge` | Evidence, claim transitions and versioned revisions |
 | `genome-logic` | Context-sensitive contradictions and implication derivations |
 | `genome-proof` | Pinned Lean authority and checked proof artifacts |

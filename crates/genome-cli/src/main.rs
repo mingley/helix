@@ -16,6 +16,7 @@ use std::{
 };
 mod context_activity;
 mod context_study;
+mod reference;
 mod research;
 mod study;
 mod study_context;
@@ -40,6 +41,8 @@ enum Commands {
     Study(study::StudyArgs),
     /// Reconstruct HBB mechanisms, audit evidence, and map primary-genome context.
     Research(research::ResearchArgs),
+    /// Inspect a local UCSC twoBit reference.
+    Reference(reference::ReferenceArgs),
     /// Validate the frozen public fixture and execute a bounded offline research loop.
     Demo {
         #[arg(long, default_value = "datasets/clinvar-hbb")]
@@ -73,6 +76,7 @@ fn main() -> Result<()> {
         Commands::ContextStudy(args) => context_study::run(&args),
         Commands::Study(args) => study::run(&args),
         Commands::Research(args) => research::run(&args),
+        Commands::Reference(args) => reference::run(&args),
         Commands::Demo {
             dataset,
             out,
