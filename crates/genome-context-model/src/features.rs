@@ -1,8 +1,11 @@
 //! Sequence-only, reverse-complement-invariant features without fitted choices.
-use anyhow::{ensure, Result};
+use anyhow::{bail, ensure, Result};
 use serde::Serialize;
 
 pub const FEATURE_COUNT: usize = 33;
+const TRIMER_COUNT: usize = FEATURE_COUNT - 1;
+const TRIMER_CODE_COUNT: usize = 64;
+const TRIMER_CLASSES: [u8; TRIMER_CODE_COUNT] = trimer_classes();
 
 #[derive(Clone, Debug, PartialEq, Serialize)]
 pub struct SequenceFeatures {
@@ -26,10 +29,15 @@ impl SequenceFeatures {
 }
 
 pub fn feature_names() -> Vec<String> {
-    let mut names: Vec<_> = canonical_trimers()
-        .into_iter()
-        .map(|kmer| format!("rc3mer_{kmer}"))
-        .collect();
+    let mut names = Vec::with_capacity(FEATURE_COUNT);
+    for code in 0..TRIMER_CODE_COUNT {
+        if code < reverse_complement_code(code) {
+            let bases = b"ACGT";
+            let trimer = [bases[code >> 4], bases[(code >> 2) & 3], bases[code & 3]];
+            let name = std::str::from_utf8(&trimer).expect("ASCII DNA");
+            names.push(format!("rc3mer_{name}"));
+        }
+    }
     names.push("gc_fraction".to_owned());
     names
 }
@@ -42,30 +50,33 @@ pub fn canonical_reverse_complement(sequence: &str) -> Result<String> {
 }
 
 pub fn sequence_features(sequence: &str) -> Result<SequenceFeatures> {
-    validate_dna(sequence)?;
-    ensure!(
-        sequence.len() >= 3,
-        "3-mer features require at least three bases"
-    );
-    let trimers = canonical_trimers();
-    let mut counts = vec![0; trimers.len()];
-    for window in sequence.as_bytes().windows(3) {
-        let forward = std::str::from_utf8(window)?;
-        let reverse = reverse_complement(window);
-        let canonical = forward.min(reverse.as_str());
-        let index = trimers
-            .binary_search_by(|kmer| kmer.as_str().cmp(canonical))
-            .expect("every unambiguous trimer has a canonical class");
-        counts[index] += 1;
+    if sequence.len() < 3 {
+        validate_dna(sequence)?;
+        bail!("3-mer features require at least three bases");
     }
+    let mut counts = vec![0; TRIMER_COUNT];
+    let mut gc = 0;
+    let mut trimer = 0;
+    for (index, base) in sequence.bytes().enumerate() {
+        let code = match base {
+            b'A' => 0,
+            b'C' => 1,
+            b'G' => 2,
+            b'T' => 3,
+            _ => bail!("DNA must contain only uppercase A,C,G,T"),
+        };
+        gc += usize::from(matches!(code, 1 | 2));
+        // Keep the most recent three bases, two bits per base.
+        trimer = ((trimer << 2) | code) & (TRIMER_CODE_COUNT - 1);
+        if index >= 2 {
+            counts[usize::from(TRIMER_CLASSES[trimer])] += 1;
+        }
+    }
+
     let denominator = (sequence.len() - 2) as f64;
     Ok(SequenceFeatures {
         length: sequence.len(),
-        gc_fraction: sequence
-            .bytes()
-            .filter(|base| matches!(base, b'C' | b'G'))
-            .count() as f64
-            / sequence.len() as f64,
+        gc_fraction: gc as f64 / sequence.len() as f64,
         canonical_trimer_frequencies: counts
             .iter()
             .map(|count| *count as f64 / denominator)
@@ -99,25 +110,32 @@ fn reverse_complement(sequence: &[u8]) -> String {
         .collect()
 }
 
-fn canonical_trimers() -> Vec<String> {
-    let mut trimers = Vec::with_capacity(32);
-    for a in b"ACGT" {
-        for b in b"ACGT" {
-            for c in b"ACGT" {
-                let bases = [*a, *b, *c];
-                let kmer = std::str::from_utf8(&bases).expect("ASCII DNA");
-                if kmer <= reverse_complement(&bases).as_str() {
-                    trimers.push(kmer.to_owned());
-                }
-            }
+// A=0, C=1, G=2 and T=3 make packed code order equal to DNA lexicographic order.
+const fn reverse_complement_code(code: usize) -> usize {
+    ((3 - (code & 3)) << 4) | ((3 - ((code >> 2) & 3)) << 2) | (3 - (code >> 4))
+}
+
+const fn trimer_classes() -> [u8; TRIMER_CODE_COUNT] {
+    let mut classes = [0; TRIMER_CODE_COUNT];
+    let mut class = 0;
+    let mut code = 0;
+    while code < classes.len() {
+        let reverse = reverse_complement_code(code);
+        if code < reverse {
+            classes[code] = class;
+            classes[reverse] = class;
+            class += 1;
         }
+        code += 1;
     }
-    trimers
+    assert!(class as usize == TRIMER_COUNT);
+    classes
 }
 
 #[cfg(test)]
 mod tests {
     use super::*;
+    use std::collections::BTreeSet;
 
     #[test]
     fn canonical_counts_are_exact_and_reverse_complement_invariant() {
@@ -153,6 +171,68 @@ mod tests {
         assert_ne!(three.length, five.length);
         for invalid in ["", "AA", "acgt", "ACNT", "AC G"] {
             assert!(sequence_features(invalid).is_err());
+        }
+    }
+
+    fn dna_strings(length: u32) -> impl Iterator<Item = String> {
+        (0..4usize.pow(length)).map(move |mut value| {
+            let mut bases = vec![b'A'; length as usize];
+            for base in bases.iter_mut().rev() {
+                *base = b"ACGT"[value % 4];
+                value /= 4;
+            }
+            String::from_utf8(bases).unwrap()
+        })
+    }
+
+    #[test]
+    fn packed_counts_match_string_counting_and_lexicographic_order() {
+        let trimers: Vec<_> = dna_strings(3)
+            .map(|sequence| canonical_reverse_complement(&sequence).unwrap())
+            .collect::<BTreeSet<_>>()
+            .into_iter()
+            .collect();
+        assert_eq!(trimers.len(), TRIMER_COUNT);
+        let mut names: Vec<_> = trimers
+            .iter()
+            .map(|label| format!("rc3mer_{label}"))
+            .collect();
+        names.push("gc_fraction".to_owned());
+        assert_eq!(feature_names(), names);
+
+        for sequence in (3..=7).flat_map(dna_strings) {
+            let mut counts = vec![0; trimers.len()];
+            for window in sequence.as_bytes().windows(3) {
+                let window = std::str::from_utf8(window).unwrap();
+                let label = canonical_reverse_complement(window).unwrap();
+                counts[trimers.binary_search(&label).unwrap()] += 1;
+            }
+            let gc = sequence.bytes().filter(|base| matches!(base, b'C' | b'G'));
+            let expected = SequenceFeatures {
+                length: sequence.len(),
+                gc_fraction: gc.count() as f64 / sequence.len() as f64,
+                canonical_trimer_frequencies: counts
+                    .iter()
+                    .map(|count| *count as f64 / (sequence.len() - 2) as f64)
+                    .collect(),
+                canonical_trimer_counts: counts,
+            };
+            assert_eq!(sequence_features(&sequence).unwrap(), expected, "{sequence}");
+        }
+    }
+
+    #[test]
+    fn invalid_bases_keep_precedence_over_the_minimum_length_error() {
+        for (sequence, message) in [
+            ("", "DNA sequence is empty"),
+            ("A", "3-mer features require at least three bases"),
+            ("AG", "3-mer features require at least three bases"),
+            ("N", "DNA must contain only uppercase A,C,G,T"),
+            ("é", "DNA must contain only uppercase A,C,G,T"),
+            ("AGGé", "DNA must contain only uppercase A,C,G,T"),
+            ("ATg", "DNA must contain only uppercase A,C,G,T"),
+        ] {
+            assert_eq!(sequence_features(sequence).unwrap_err().to_string(), message);
         }
     }
 }
