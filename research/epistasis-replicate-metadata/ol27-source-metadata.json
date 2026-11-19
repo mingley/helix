@@ -1,0 +1,44 @@
+{
+  "encode_design": {
+    "http_status": 200,
+    "metadata": {
+      "accession": "ENCFF715XTT",
+      "content_md5sum": "bdf902c19a768c17d3b93ac8fdb525c8",
+      "file_format": "fasta",
+      "file_size": 2057984,
+      "href": "/files/ENCFF715XTT/@@download/ENCFF715XTT.fasta.gz",
+      "md5sum": "42c6e1a624a869e1f06656d84036a608",
+      "output_type": "elements reference",
+      "s3_uri": "s3://encode-public/2020/07/18/8c119afa-a4a8-4810-9092-94ca77479f52/ENCFF715XTT.fasta.gz",
+      "status": "released"
+    },
+    "response_sha256": "d38e9e34f6059e7aae398d524124d88b59d99b5126463ee47983a8cb603e51da",
+    "url": "https://www.encodeproject.org/files/ENCFF715XTT/?format=json"
+  },
+  "igvf_catalog": {
+    "failure": "HTTP response did not provide metadata",
+    "http_status": 404,
+    "url": "https://api.catalogkg.igvf.org/files-filesets?file_fileset_id=IGVFFI9985FTZH"
+  },
+  "igvf_reference": {
+    "http_status": 200,
+    "metadata": {
+      "accession": "IGVFFI9985FTZH",
+      "assembly": "GRCh38",
+      "content_md5sum": "773a9a0cf87b6efe80a3bbd19fa31fbe",
+      "content_type": "MPRA sequence designs",
+      "controlled_access": false,
+      "file_format": "tsv",
+      "file_format_specifications": [
+        "/documents/13a70f8a-428b-4b7e-ace1-7497b2c182c1/"
+      ],
+      "file_size": 2888359,
+      "href": "/tabular-files/IGVFFI9985FTZH/@@download/IGVFFI9985FTZH.tsv.gz",
+      "md5sum": "052aca8a7c5cf0cad6521a2a6d39850f",
+      "s3_uri": "s3://igvf-public/2026/08/28/9b98a4c2-65dd-4322-969f-f01e44723dcb/IGVFFI9985FTZH.tsv.gz",
+      "status": "released"
+    },
+    "response_sha256": "8d9d5dc2c341760311dc4141a3df7c2fe62887758e4d217fdf8b1261d8474cc8",
+    "url": "https://api.data.igvf.org/tabular-files/IGVFFI9985FTZH/?format=json"
+  }
+}

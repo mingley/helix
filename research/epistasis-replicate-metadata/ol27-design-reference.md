@@ -34,6 +34,31 @@ measurements. The input and reporter sample pairing and usable replicate
 coverage remain separate checks.
 [Existing barcode inventory](ol27-name-overlap.json)
 
+Both publisher portals returned HTTP 200 and confirmed the files are released.
+The original FASTA is a gzip file of 2,057,984 bytes with publisher MD5
+`42c6e1a624a869e1f06656d84036a608`. The IGVF portal describes its public
+2,888,359-byte file as MPRA sequence designs on GRCh38, with MD5
+`052aca8a7c5cf0cad6521a2a6d39850f`. The retained metadata includes the
+uncompressed MD5 for each and the URLs. The catalog API probe returned
+HTTP 404 separately from these two successful publisher responses.
+[Published metadata receipt](ol27-source-metadata.json) ·
+[Metadata replay](https://github.com/mingley/helix/actions/runs/44611075449)
+
+The crosswalk replay validates both checksums for each design file, recreates the
+12 candidates from the pinned design and barcode map, and compares each of the
+48 construct aliases to its audited S18 insert. It records distinct sequence
+hashes under each alias, preserving missing, conflicting and mismatched hits.
+It treats a semicolon-delimited member of a parenthesized FASTA header as
+secondary alias evidence and reports the match type. The IGVF parser checks
+the expected design header before comparing aliases.
+
+```bash
+python3 research/epistasis-replicate-metadata/audit_design_crosswalk.py --download
+```
+
+The downloaded inputs are temporary. A cached copy of the two design gzips
+and the pinned OL27 barcode map can be replayed with `--inputs DIRECTORY`.
+
 The source probe requests only object metadata and records response hashes,
 published file hashes and provenance fields when available. Run it with
 `python3 research/epistasis-replicate-metadata/inspect_design_reference.py`.
