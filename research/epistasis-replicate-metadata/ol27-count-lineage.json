@@ -1,0 +1,329 @@
+{
+  "barcode_map": "ENCFF823YWM",
+  "contexts": {
+    "A549": {
+      "element_quantifications": "ENCFF018AMJ",
+      "experiment": "ENCSR729IRS",
+      "replicate_libraries": [
+        {
+          "biological_replicate": 1,
+          "fastq_accessions": [
+            "ENCFF942JYX"
+          ],
+          "library": "ENCLB149XBM",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 2,
+          "fastq_accessions": [
+            "ENCFF296SZI"
+          ],
+          "library": "ENCLB597WTI",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 3,
+          "fastq_accessions": [
+            "ENCFF029WFZ"
+          ],
+          "library": "ENCLB970TPB",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 4,
+          "fastq_accessions": [
+            "ENCFF373FSD"
+          ],
+          "library": "ENCLB552YWY",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 5,
+          "fastq_accessions": [
+            "ENCFF264YWR"
+          ],
+          "library": "ENCLB737QPS",
+          "technical_replicate": 1
+        }
+      ],
+      "run_type": "single-ended",
+      "shared_plasmid_fastq_count": 10,
+      "source_git_blob_sha1": "8469c5903b3219e94576878d0edbad97ac55c169",
+      "source_url": "https://raw.githubusercontent.com/ENCODE-DCC/geo-submission/fc2d3daabfcf90655147ba2f9d11680f3a8d1045/experiments/ENCSR729IRS_modified.json"
+    },
+    "GM12878": {
+      "element_quantifications": "ENCFF345ASG",
+      "experiment": "ENCSR645CIP",
+      "replicate_libraries": [
+        {
+          "biological_replicate": 1,
+          "fastq_accessions": [
+            "ENCFF056SNV",
+            "ENCFF245WGI"
+          ],
+          "library": "ENCLB184DDG",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 2,
+          "fastq_accessions": [
+            "ENCFF078GQZ",
+            "ENCFF622MJU"
+          ],
+          "library": "ENCLB103QYZ",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 3,
+          "fastq_accessions": [
+            "ENCFF583KNH",
+            "ENCFF973FTF"
+          ],
+          "library": "ENCLB318OSR",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 4,
+          "fastq_accessions": [
+            "ENCFF358TMO",
+            "ENCFF791UHP"
+          ],
+          "library": "ENCLB333NYB",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 5,
+          "fastq_accessions": [
+            "ENCFF183UWS",
+            "ENCFF329XXK"
+          ],
+          "library": "ENCLB576XAF",
+          "technical_replicate": 1
+        }
+      ],
+      "run_type": "single-ended",
+      "shared_plasmid_fastq_count": 10,
+      "source_git_blob_sha1": "04b4ad1226d5d32aca5eab004afb5b3d708834a5",
+      "source_url": "https://raw.githubusercontent.com/ENCODE-DCC/geo-submission/fc2d3daabfcf90655147ba2f9d11680f3a8d1045/experiments/ENCSR645CIP_modified.json"
+    },
+    "HepG2": {
+      "element_quantifications": "ENCFF318XMJ",
+      "experiment": "ENCSR847SNQ",
+      "replicate_libraries": [
+        {
+          "biological_replicate": 1,
+          "fastq_accessions": [
+            "ENCFF339PEE",
+            "ENCFF466QAE"
+          ],
+          "library": "ENCLB956ZSD",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 2,
+          "fastq_accessions": [
+            "ENCFF316JIC",
+            "ENCFF931RGJ"
+          ],
+          "library": "ENCLB879YAS",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 3,
+          "fastq_accessions": [
+            "ENCFF701AKV",
+            "ENCFF775TQW"
+          ],
+          "library": "ENCLB585DAX",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 4,
+          "fastq_accessions": [
+            "ENCFF004PRP",
+            "ENCFF364SRH"
+          ],
+          "library": "ENCLB461KCV",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 5,
+          "fastq_accessions": [
+            "ENCFF261YSM",
+            "ENCFF891YOB"
+          ],
+          "library": "ENCLB630VKR",
+          "technical_replicate": 1
+        }
+      ],
+      "run_type": "single-ended",
+      "shared_plasmid_fastq_count": 10,
+      "source_git_blob_sha1": "7feaa964c0a9335f5ce9c43f310b900079ffa3ae",
+      "source_url": "https://raw.githubusercontent.com/ENCODE-DCC/geo-submission/fc2d3daabfcf90655147ba2f9d11680f3a8d1045/experiments/ENCSR847SNQ_modified.json"
+    },
+    "K562": {
+      "element_quantifications": "ENCFF970OLE",
+      "experiment": "ENCSR857JFG",
+      "replicate_libraries": [
+        {
+          "biological_replicate": 1,
+          "fastq_accessions": [
+            "ENCFF651KRP",
+            "ENCFF927HTV"
+          ],
+          "library": "ENCLB734JEU",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 2,
+          "fastq_accessions": [
+            "ENCFF309RLP",
+            "ENCFF884QRC"
+          ],
+          "library": "ENCLB701WNN",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 3,
+          "fastq_accessions": [
+            "ENCFF560JMN",
+            "ENCFF815RIH"
+          ],
+          "library": "ENCLB869ECF",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 4,
+          "fastq_accessions": [
+            "ENCFF447XNQ",
+            "ENCFF622WIJ"
+          ],
+          "library": "ENCLB825FHO",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 5,
+          "fastq_accessions": [
+            "ENCFF084HLZ",
+            "ENCFF832TDJ"
+          ],
+          "library": "ENCLB822WFU",
+          "technical_replicate": 1
+        }
+      ],
+      "run_type": "single-ended",
+      "shared_plasmid_fastq_count": 10,
+      "source_git_blob_sha1": "b36de81bf6d6e6cefaefad80b0d2dbdd720c858e",
+      "source_url": "https://raw.githubusercontent.com/ENCODE-DCC/geo-submission/fc2d3daabfcf90655147ba2f9d11680f3a8d1045/experiments/ENCSR857JFG_modified.json"
+    },
+    "SK-N-SH": {
+      "element_quantifications": "ENCFF996ECA",
+      "experiment": "ENCSR623DJZ",
+      "replicate_libraries": [
+        {
+          "biological_replicate": 1,
+          "fastq_accessions": [
+            "ENCFF614ITE",
+            "ENCFF939YFZ"
+          ],
+          "library": "ENCLB830RGG",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 2,
+          "fastq_accessions": [
+            "ENCFF559CHE",
+            "ENCFF867SET"
+          ],
+          "library": "ENCLB643EAA",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 3,
+          "fastq_accessions": [
+            "ENCFF545XBY",
+            "ENCFF635AQY"
+          ],
+          "library": "ENCLB643PCR",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 4,
+          "fastq_accessions": [
+            "ENCFF362TEB",
+            "ENCFF972PIO"
+          ],
+          "library": "ENCLB558UHQ",
+          "technical_replicate": 1
+        },
+        {
+          "biological_replicate": 5,
+          "fastq_accessions": [
+            "ENCFF563VZU",
+            "ENCFF689ZDD"
+          ],
+          "library": "ENCLB130GWY",
+          "technical_replicate": 1
+        }
+      ],
+      "run_type": "single-ended",
+      "shared_plasmid_fastq_count": 10,
+      "source_git_blob_sha1": "3c013ebec2501eafab9d9bf0b5d40332f70446fe",
+      "source_url": "https://raw.githubusercontent.com/ENCODE-DCC/geo-submission/fc2d3daabfcf90655147ba2f9d11680f3a8d1045/experiments/ENCSR623DJZ_modified.json"
+    }
+  },
+  "plasmid": {
+    "experiment": "ENCSR915INT",
+    "replicate_libraries": [
+      {
+        "biological_replicate": 1,
+        "fastq_accessions": [
+          "ENCFF349ABM",
+          "ENCFF497HDZ"
+        ],
+        "library": "ENCLB030ZWN",
+        "technical_replicate": 1
+      },
+      {
+        "biological_replicate": 2,
+        "fastq_accessions": [
+          "ENCFF018AMF",
+          "ENCFF745TCQ"
+        ],
+        "library": "ENCLB214PIC",
+        "technical_replicate": 1
+      },
+      {
+        "biological_replicate": 3,
+        "fastq_accessions": [
+          "ENCFF175ZVG",
+          "ENCFF478KAZ"
+        ],
+        "library": "ENCLB240WPJ",
+        "technical_replicate": 1
+      },
+      {
+        "biological_replicate": 4,
+        "fastq_accessions": [
+          "ENCFF163HXV",
+          "ENCFF333NCY"
+        ],
+        "library": "ENCLB731XPC",
+        "technical_replicate": 1
+      },
+      {
+        "biological_replicate": 5,
+        "fastq_accessions": [
+          "ENCFF277KKR",
+          "ENCFF695LPU"
+        ],
+        "library": "ENCLB068HRJ",
+        "technical_replicate": 1
+      }
+    ],
+    "run_type": "single-ended",
+    "source_git_blob_sha1": "c5e4ef009653b55afb1bd26788ff4791477b04a4",
+    "source_url": "https://raw.githubusercontent.com/ENCODE-DCC/geo-submission/fc2d3daabfcf90655147ba2f9d11680f3a8d1045/experiments/ENCSR915INT_modified.json"
+  },
+  "source_revision": "fc2d3daabfcf90655147ba2f9d11680f3a8d1045"
+}

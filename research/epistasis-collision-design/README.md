@@ -150,6 +150,27 @@ in each sample with coefficients `(+1,-1,-1,+1)`. The OL27 sequence crosswalk
 binds the constructs. An inference protocol still needs measurements with
 usable support and a justified sample dependence model.
 
+## Shared plasmid inputs across cell contexts
+
+The [OL27 input audit](../epistasis-replicate-metadata/README.md#plasmid-inputs-shared-by-the-five-ol27-count-tables)
+shows that all five count tables use the same plasmid sequencing files.
+For a fixed construct contrast, let `A_c` denote the mean within-RNA contrast
+in cell context `c` and `B` a single plasmid contrast calculated once.
+For identical construct weights, barcode inclusion and a shared computation
+of `B`, the difference between the corrected contrasts is
+
+```text
+(A_c - B) - (A_d - B) = A_c - A_d
+```
+
+This gives a candidate test of whether the contrast changes between cell
+contexts, with the shared plasmid term canceling exactly. If the resulting
+cell-specific estimates reuse `B`, their errors can be dependent even when
+their RNA observations are independent. If separate filters or normalization
+produce different plasmid contrasts, the cancellation requires verification.
+The metadata do not establish equal processed counts, replicate independence
+or sufficient construct coverage.
+
 ## Aggregate target and uncertainty
 
 Define classes, contexts and eligible replicate units from design and source

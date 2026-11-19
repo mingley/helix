@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths:
       - 'research/epistasis-replicate-metadata/inspect_design_reference.py'
+      - 'research/epistasis-replicate-metadata/audit_count_lineage.py'
+      - 'research/epistasis-replicate-metadata/ol27-count-lineage.json'
       - 'research/epistasis-replicate-metadata/audit_design_crosswalk.py'
       - 'research/epistasis-replicate-metadata/ol27-source-metadata.json'
       - 'research/epistasis-replicate-metadata/ol27-crosswalk.json'
@@ -18,6 +20,10 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+      - name: Verify the shared plasmid sequencing inputs
+        run: |
+          python3 research/epistasis-replicate-metadata/audit_count_lineage.py > "$RUNNER_TEMP/ol27-count-lineage.json"
+          cmp research/epistasis-replicate-metadata/ol27-count-lineage.json "$RUNNER_TEMP/ol27-count-lineage.json"
       - name: Read publisher metadata for the sequence design
         run: python3 research/epistasis-replicate-metadata/inspect_design_reference.py
       - name: Verify alias comparison rules

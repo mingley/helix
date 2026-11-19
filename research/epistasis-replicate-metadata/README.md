@@ -51,6 +51,43 @@ cross-replicate error. Replicate indexing, filtering, pairing, normalization,
 sequencing depth, shared library effects and a variance model all require
 source-specific resolution before confirmatory inference.
 
+## Plasmid inputs shared by the five OL27 count tables
+
+The official ENCODE GEO submission traces all five initial element-quantification
+tables to the same barcode map `ENCFF823YWM` and the same ten plasmid FASTQs
+from pooled-clone sequencing experiment `ENCSR915INT`. Each table also lists
+its own cell line's RNA FASTQs. The five sets of cell-specific RNA FASTQs are
+disjoint, and the ancestry lists contain no other inputs.
+[Plasmid metadata](https://github.com/ENCODE-DCC/geo-submission/blob/fc2d3daabfcf90655147ba2f9d11680f3a8d1045/experiments/ENCSR915INT_modified.json) ·
+[Accession and library ledger](ol27-count-lineage.json)
+
+| Cell line | Experiment | Element quantifications | RNA FASTQs |
+| --- | --- | --- | ---: |
+| A549 | ENCSR729IRS | ENCFF018AMJ | 5 |
+| GM12878 | ENCSR645CIP | ENCFF345ASG | 10 |
+| HepG2 | ENCSR847SNQ | ENCFF318XMJ | 10 |
+| K562 | ENCSR857JFG | ENCFF970OLE | 10 |
+| SK-N-SH | ENCSR623DJZ | ENCFF996ECA | 10 |
+
+The plasmid experiment and each RNA experiment have five distinct library
+accessions, labeled biological replicates 1 through 5 and technical replicate 1.
+Every FASTQ is recorded as single-ended. A549 has one file per label. Each
+other RNA experiment and the plasmid experiment have two files per label.
+Equal labels across experiments provide no evidence of matched DNA and RNA
+preparations. The ancestry establishes shared inputs across cell lines.
+Whether the producer processed the plasmid counts identically in all five
+tables and how the separate plasmid libraries were prepared remain open.
+
+A cross-context contrast using an identical plasmid correction for both
+cell lines cancels that correction exactly. Separate within-cell contrasts
+using the shared plasmid inputs can have correlated errors.
+[Contrast derivation](../epistasis-collision-design/README.md#shared-plasmid-inputs-across-cell-contexts)
+
+Run `python3 research/epistasis-replicate-metadata/audit_count_lineage.py` to
+reproduce the ledger from six pinned publisher metadata records. The audit
+checks the Git blob hashes, processing input lists and replicate labels.
+It reads no FASTQ, count table or activity values.
+
 ## Lookup-name inventory
 
 S29 also names OL27 barcode lookup `ENCFF823YWM`. Its GEO source is available

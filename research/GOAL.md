@@ -156,7 +156,10 @@ five RNA and five plasmid count columns and independently inventories its
 barcode lookup. The [released-design crosswalk](epistasis-replicate-metadata/ol27-design-reference.md)
 verifies all four literal aliases and exact 200-base sequences in the 12
 candidate collision windows across five pairs. Both the original ENCODE FASTA
-and IGVF design TSV agree. Measurement coverage, replicate dependence,
+and IGVF design TSV agree. The [sequencing input audit](epistasis-replicate-metadata/README.md#plasmid-inputs-shared-by-the-five-ol27-count-tables)
+establishes that five OL27 cell-context count tables reuse the same ten plasmid
+sequencing files. The common plasmid term cancels in a cross-context contrast
+when computed identically. Measurement coverage, replicate dependence,
 normalization and a source-specific analysis remain open.
 
 ## Completed foundation
