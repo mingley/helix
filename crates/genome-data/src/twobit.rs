@@ -295,10 +295,7 @@ fn parse(
     Ok((order, records))
 }
 
-fn read_index(
-    source: impl Read,
-    file_bytes: u64,
-) -> Result<(ByteOrder, Vec<(u64, String)>, u64)> {
+fn read_index(source: impl Read, file_bytes: u64) -> Result<(ByteOrder, Vec<(u64, String)>, u64)> {
     let mut index_source = source.take(file_bytes);
     let mut signature = [0; 4];
     index_source.read_exact(&mut signature)?;

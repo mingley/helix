@@ -217,7 +217,11 @@ mod tests {
                     .collect(),
                 canonical_trimer_counts: counts,
             };
-            assert_eq!(sequence_features(&sequence).unwrap(), expected, "{sequence}");
+            assert_eq!(
+                sequence_features(&sequence).unwrap(),
+                expected,
+                "{sequence}"
+            );
         }
     }
 
@@ -232,7 +236,10 @@ mod tests {
             ("AGGé", "DNA must contain only uppercase A,C,G,T"),
             ("ATg", "DNA must contain only uppercase A,C,G,T"),
         ] {
-            assert_eq!(sequence_features(sequence).unwrap_err().to_string(), message);
+            assert_eq!(
+                sequence_features(sequence).unwrap_err().to_string(),
+                message
+            );
         }
     }
 }
