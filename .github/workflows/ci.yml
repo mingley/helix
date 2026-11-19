@@ -77,5 +77,10 @@ jobs:
           python3 research/epistasis-s18-independent/verify.py research/epistasis-source-audit/siraj2026-S18.xlsx
           python3 research/variant-locality/pair-geometry-review-v1/verify.py
           python3 research/variant-locality/pair-geometry-review-v1/verify_collisions.py
+      - name: Verify exact trimer counts and scan the retained sequence panel
+        run: |
+          node --test research/variant-locality/trimer-spectrum-v1/test_count.cjs
+          node research/variant-locality/trimer-spectrum-v1/audit.cjs --verify
+          node research/variant-locality/trimer-spectrum-v1/audit.cjs --panel
       # Full empirical reproduction is scripts/check_study.sh. Its known
       # secondary-rank failures remain exit 2 and are not masked as CI success.

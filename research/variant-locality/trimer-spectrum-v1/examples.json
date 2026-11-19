@@ -1,0 +1,22 @@
+{
+  "examples": [
+    {
+      "id": "WTC11_seq1000_F",
+      "reference_snapshot": "research/context-source-alternatives/design-coordinate-example-1.json",
+      "sequence_sha256": "133efc2644338537d8614aea1c0216b27e8ecfbf6dd42cb4ef344ff7f4a8ccaf",
+      "prefix": "GT",
+      "suffix": "CT",
+      "fixed_end_oriented_trimer_class_size": "11722455721306609421684905298968634815003455653648416891935286886400000000000",
+      "reverse_complement_orbits_lower_bound": "11722455721306609421684905298968634815003455653648416891935286886400000000000"
+    },
+    {
+      "id": "HepG2_DNasePeakNoPromoter12142",
+      "reference_snapshot": "research/context-source-alternatives/design-coordinate-example-2.json",
+      "sequence_sha256": "01f4583dce1a161c9d0e07e410854f7563ef0e559d5127a3027d896316277c2a",
+      "prefix": "AT",
+      "suffix": "CT",
+      "fixed_end_oriented_trimer_class_size": "155336418396617324228133266333237803863781693042519273948609511424000000000000",
+      "reverse_complement_orbits_lower_bound": "155336418396617324228133266333237803863781693042519273948609511424000000000000"
+    }
+  ]
+}

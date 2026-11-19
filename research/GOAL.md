@@ -85,6 +85,14 @@ boundaries, a single weighted endpoint term remains. This is a reparameterizatio
 of the exact fixed score, not a guarantee that refitting without GC preserves a
 ridge model or that observed biology follows the model.
 
+An [exact trimer-spectrum count](variant-locality/trimer-spectrum-v1/README.md)
+finds at least 1.17 × 10^76 and 1.55 × 10^77 distinct reverse-complement
+orbits with identical 33-feature vectors for two reference-verified reporter
+inserts. Each counted sequence even preserves the oriented 3-mer counts and
+both terminal dinucleotides. This is a lower bound for the model's full
+equivalence class. Short-string enumeration and an independent determinant
+calculation check the method.
+
 In a [post-hoc audit of the previously explored activity panel](context-activity-feature-collisions-v1/README.md),
 the only full-feature collision consists of two opposite-strand cores from the
 same locus. Their published activity labels differ in all three cells, while
