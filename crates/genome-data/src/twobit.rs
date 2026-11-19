@@ -99,6 +99,12 @@ struct Block {
     end: u32,
 }
 
+struct SequenceIndex {
+    order: ByteOrder,
+    entries: Vec<(u64, String)>,
+    end: u64,
+}
+
 struct Record {
     length: u32,
     ns: Vec<Block>,
@@ -275,27 +281,27 @@ fn parse(
     file_bytes: u64,
 ) -> Result<(ByteOrder, BTreeMap<String, Record>)> {
     source.seek(SeekFrom::Start(0))?;
-    let (order, index, index_end) = read_index(&mut *source, file_bytes)?;
-    let mut physical_order = index.into_iter().peekable();
+    let index = read_index(&mut *source, file_bytes)?;
+    let mut physical_order = index.entries.into_iter().peekable();
     let mut records = BTreeMap::new();
     while let Some((offset, name)) = physical_order.next() {
         let limit = physical_order.peek().map_or(file_bytes, |next| next.0);
         ensure!(
-            index_end <= offset && offset < limit && limit <= file_bytes,
+            index.end <= offset && offset < limit && limit <= file_bytes,
             "twoBit record offsets are duplicated or outside the record region"
         );
         source.seek(SeekFrom::Start(offset))?;
-        let record = read_record((&mut *source).take(limit - offset), order, limit)
+        let record = read_record((&mut *source).take(limit - offset), index.order, limit)
             .with_context(|| format!("read twoBit record {name}"))?;
         ensure!(
             records.insert(name, record).is_none(),
             "duplicate twoBit contig name"
         );
     }
-    Ok((order, records))
+    Ok((index.order, records))
 }
 
-fn read_index(source: impl Read, file_bytes: u64) -> Result<(ByteOrder, Vec<(u64, String)>, u64)> {
+fn read_index(source: impl Read, file_bytes: u64) -> Result<SequenceIndex> {
     let mut index_source = source.take(file_bytes);
     let mut signature = [0; 4];
     index_source.read_exact(&mut signature)?;
@@ -338,7 +344,11 @@ fn read_index(source: impl Read, file_bytes: u64) -> Result<(ByteOrder, Vec<(u64
         index.push((offset, name));
     }
     index.sort_unstable_by_key(|(offset, _)| *offset);
-    Ok((order, index, file_bytes - index_source.limit()))
+    Ok(SequenceIndex {
+        order,
+        entries: index,
+        end: file_bytes - index_source.limit(),
+    })
 }
 
 fn read_record(
