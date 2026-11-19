@@ -201,6 +201,11 @@ Replay the pinned input and the independent UCSC sequence checks with:
 cargo run --release --locked -p genome-data --example twobit_benchmark -- "$reference"
 ```
 
+The optional [reference performance workflow](.github/workflows/reference-performance.yml)
+also compares the old and packed trimer feature kernels on the frozen panel,
+checks feature bits before timing, and verifies all hg38 base totals with the
+independent Python reader.
+
 ## Explore the HBB mechanism map
 
 ```bash

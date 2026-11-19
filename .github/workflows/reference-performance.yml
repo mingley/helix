@@ -1,0 +1,80 @@
+name: Reference performance
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/reference-performance.yml'
+      - 'scripts/benchmarks/compare_trimer_features.rs'
+      - 'crates/genome-data/examples/twobit_benchmark.rs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  context-feature-kernel:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Rust
+        run: rustup toolchain install 1.90.0 --profile minimal
+      - name: Compare feature bits and release timings on the frozen panel
+        run: |
+          baseline=fd693582ae93028299e3383b9255ff20fa982f51
+          git fetch --no-tags --depth=1 origin "$baseline"
+          mkdir -p crates/genome-cli/examples/baseline
+          git show "$baseline:crates/genome-context-model/src/features.rs" > crates/genome-cli/examples/baseline/mod.rs
+          cp scripts/benchmarks/compare_trimer_features.rs crates/genome-cli/examples/compare_trimer_features.rs
+          cargo +1.90.0 run --release --locked -p genome-cli --example compare_trimer_features
+  hg38-reference:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      HELIX_TOOLS_DIR: ${{ runner.temp }}/helix
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Rust
+        run: rustup toolchain install 1.90.0 --profile minimal
+      - name: Build the bounded reference reader and CLI
+        run: |
+          cargo +1.90.0 build --release --locked -p genome-data --example twobit_benchmark
+          cargo +1.90.0 build --release --locked -p genome-cli --bin helix
+      - name: Verify the pinned hg38 twoBit
+        run: bash scripts/setup_reference.sh
+      - name: Check real interval sequences and hash all 60,000 queries
+        run: target/release/examples/twobit_benchmark "$HELIX_TOOLS_DIR/reference/hg38.2bit"
+      - name: Independently reproduce the whole-reference base summary
+        run: |
+          reference="$HELIX_TOOLS_DIR/reference/hg38.2bit"
+          /usr/bin/time -f 'Rust reference summary took %e s, max RSS %M KiB' \
+            target/release/helix reference --file "$reference" --assembly GRCh38 summary \
+            > "$RUNNER_TEMP/hg38-counts.json"
+          python3 - "$reference" "$RUNNER_TEMP/hg38-counts.json" <<'PY'
+          import json
+          from pathlib import Path
+          import sys
+          sys.path.insert(0, "scripts")
+          from twobit_reference import TwoBitReader
+
+          with TwoBitReader(sys.argv[1]) as reference:
+              rows = json.loads(Path(sys.argv[2]).read_text())
+              sizes = reference.sequence_sizes
+              names = [row["name"] for row in rows["contigs"]]
+              assert names == sorted(sizes)
+              expected_total = dict.fromkeys("acgtn", 0)
+              for row in rows["contigs"]:
+                  name, length = row["name"], row["length"]
+                  assert length == sizes[name]
+                  expected = dict.fromkeys("acgtn", 0)
+                  for start in range(0, length, 1 << 20):
+                      sequence = reference.fetch(name, start, min(length, start + (1 << 20)))
+                      for base in expected:
+                          expected[base] += sequence.count(base.upper())
+                  assert sum(expected.values()) == length
+                  assert expected == row["counts"], name
+                  for base, count in expected.items():
+                      expected_total[base] += count
+              assert expected_total == rows["total"]
+              print(json.dumps({"verified_contigs": len(sizes),
+                                "verified_bases": sum(sizes.values()),
+                                "base_counts": expected_total}, sort_keys=True))
+          PY
