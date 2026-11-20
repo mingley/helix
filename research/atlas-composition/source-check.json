@@ -1,0 +1,82 @@
+{
+  "exonic_n_sites": [
+    {
+      "chromosome": "chr21",
+      "end0": 8217207,
+      "raw_exons": [
+        {
+          "exon_end0": 8219302,
+          "exon_start0": 8205987,
+          "site_in_cds": false,
+          "source_gene_symbol": "RNA45SN2",
+          "source_row_1based": 61753,
+          "strand": "+",
+          "transcript_accession": "NR_146144.1"
+        },
+        {
+          "exon_end0": 8218941,
+          "exon_start0": 8213887,
+          "site_in_cds": false,
+          "source_gene_symbol": "RNA28SN2",
+          "source_row_1based": 61757,
+          "strand": "+",
+          "transcript_accession": "NR_146148.1"
+        }
+      ],
+      "reference_base": "N",
+      "start0": 8217206
+    }
+  ],
+  "genepred_sha256": "67090326b606658bdabdfe5f8dcb97b7943ac802c7945399522be7174ec021ca",
+  "nuclear_called_gc_ordering": {
+    "chromosomes_compared": 24,
+    "chromosomes_in_strict_descending_order": 24,
+    "class_order": [
+      "cds",
+      "exon_outside_cds",
+      "transcript_span_outside_exon",
+      "outside_transcript_span"
+    ],
+    "smallest_adjacent_difference": {
+      "chromosome": "chr2",
+      "denominator": "13641180956683005",
+      "first_class": "transcript_span_outside_exon",
+      "numerator": "15600331931254",
+      "second_class": "outside_transcript_span"
+    }
+  },
+  "reference_sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0",
+  "retained_raw_models": 93455,
+  "total": {
+    "cds": {
+      "a": 8244705,
+      "c": 9052373,
+      "g": 9019616,
+      "n": 0,
+      "t": 8244735
+    },
+    "exon_outside_cds": {
+      "a": 15994766,
+      "c": 13243726,
+      "g": 13259283,
+      "n": 1,
+      "t": 16024690
+    },
+    "outside_transcript_span": {
+      "a": 453114840,
+      "c": 303581147,
+      "g": 305700605,
+      "n": 149910292,
+      "t": 454703751
+    },
+    "transcript_span_outside_exon": {
+      "a": 389799682,
+      "c": 273166651,
+      "g": 273535621,
+      "n": 720427,
+      "t": 390969490
+    }
+  },
+  "verified_bases": 3088286401,
+  "verified_chromosomes": 25
+}

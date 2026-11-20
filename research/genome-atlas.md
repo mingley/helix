@@ -45,11 +45,22 @@ The N column counts unresolved reference positions.
 | Transcript span outside exons | 1,328,191,871 | 720,427 | 41.18% |
 | Outside curated transcript spans | 1,667,010,635 | 149,910,292 | 40.16% |
 
-The same strict ordering of GC fractions holds within every one of the 24
-nuclear chromosomes. The two intermediate classes have zero width on chrM.
+The same strict ordering of GC fractions holds within all 24 nuclear
+chromosomes. The smallest adjacent difference is on chr2, where the transcript
+span outside exons exceeds the region outside transcript spans by 0.11436
+percentage points. The two intermediate classes have zero width on chrM.
+[Exact comparison from raw-source counts](atlas-composition/source-check.json)
+
 Across all primaries, 149,910,292 of the 150,630,720 N positions (99.52%)
-fall outside curated transcript spans. The sole N in the exon union falls on
-chr21 outside CDS. These fractions describe the frozen reference and annotation.
+fall outside curated transcript spans. The sole exonic N in the UCSC twoBit
+is at chr21 position 8,217,207 (1-based), or `[8217206, 8217207)`. It lies
+inside two overlapping plus-strand exons, the 45S ribosomal RNA precursor
+RNA45SN2 (`NR_146144.1`) and the 28S rRNA RNA28SN2 (`NR_146148.1`).
+Both models place it outside coding sequence. The source rows and exon
+boundaries are retained for replay.
+[Source records for the site](atlas-composition/source-check.json) ·
+[NCBI RNA45SN2](https://www.ncbi.nlm.nih.gov/gene/109864279/) ·
+[NCBI RNA28SN2](https://www.ncbi.nlm.nih.gov/gene/109864282/)
 
 An independent Python implementation read the raw UCSC genePred file,
 constructed the transcript, exon and CDS unions, counted bases in each union,

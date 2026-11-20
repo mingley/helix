@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check primary-chromosome composition from raw UCSC genePred and twoBit."""
 import argparse
+from fractions import Fraction
 import gzip
 import hashlib
 import json
@@ -180,6 +181,40 @@ def exclusive_counts(whole, layers):
     }
 
 
+def nuclear_called_gc_ordering(by_chrom):
+    class_order = ("cds", "exon_outside_cds", "transcript_span_outside_exon",
+                   "outside_transcript_span")
+    nuclear = [chrom for chrom in CHROMOSOMES if chrom != "chrM"]
+    ordered = 0
+    gaps = []
+    for chrom in nuclear:
+        fractions = {}
+        for label in class_order:
+            counts = by_chrom[chrom][label]
+            called = sum(counts[base] for base in "acgt")
+            require(called > 0, f"{chrom}/{label}: undefined GC fraction among called bases")
+            fractions[label] = Fraction(counts["g"] + counts["c"], called)
+        adjacent = [(fractions[first] - fractions[second], chrom, first, second)
+                    for first, second in zip(class_order, class_order[1:])]
+        ordered += all(gap > 0 for gap, _, _, _ in adjacent)
+        gaps.extend(adjacent)
+
+    gap, chrom, first, second = min(gaps, key=lambda entry: entry[0])
+    return {
+        "class_order": list(class_order),
+        "chromosomes_compared": len(nuclear),
+        "chromosomes_in_strict_descending_order": ordered,
+        "smallest_adjacent_difference": {
+            "chromosome": chrom,
+            "first_class": first,
+            "second_class": second,
+            # Keep the reduced fraction exact for consumers with 53-bit JSON integers.
+            "numerator": str(gap.numerator),
+            "denominator": str(gap.denominator),
+        },
+    }
+
+
 def compare_classes(label, observed, expected):
     require(observed.keys() == expected.keys(), f"{label}: annotation class names differ")
     for key, counts in expected.items():
@@ -235,6 +270,7 @@ def verify(reference_path, report_path):
 
         total = {label: dict.fromkeys("acgtn", 0) for label in FROZEN_LENGTHS}
         exonic_n_sites = []
+        independent_counts = {}
         for chrom, width_row, row in zip(CHROMOSOMES, annotation_rows, report_rows):
             length = sizes[chrom]
             require(type(row["length"]) is int and length == row["length"] == width_row["length"],
@@ -250,6 +286,7 @@ def verify(reference_path, report_path):
             for counts, width in zip(layers, UNION_WIDTHS):
                 require(sum(counts) == width_row[width], f"{chrom}: {width} differs")
             expected = exclusive_counts(whole, layers)
+            independent_counts[chrom] = expected
             compare_classes(chrom, row["classes"], expected)
             for category, counts in expected.items():
                 for base, count in counts.items():
@@ -272,6 +309,7 @@ def verify(reference_path, report_path):
         "reference_sha256": reference_hash,
         "total": total,
         "exonic_n_sites": exonic_n_sites,
+        "nuclear_called_gc_ordering": nuclear_called_gc_ordering(independent_counts),
     }
 
 

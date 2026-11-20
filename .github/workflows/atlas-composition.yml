@@ -42,6 +42,7 @@ jobs:
             "$HELIX_TOOLS_DIR/reference/hg38.2bit" "$RUNNER_TEMP/atlas-composition.json" \
             > "$RUNNER_TEMP/atlas-source-check.json"
           cat "$RUNNER_TEMP/atlas-source-check.json"
+          cmp research/atlas-composition/source-check.json "$RUNNER_TEMP/atlas-source-check.json"
       - name: Reconcile the mitochondrial partition with GenBank and retained UCSC sequence
         run: |
           python3 research/atlas-composition/mitochondrial_control.py --report "$RUNNER_TEMP/atlas-composition.json" \
@@ -51,3 +52,13 @@ jobs:
         run: |
           python3 -m json.tool --indent 2 "$RUNNER_TEMP/atlas-composition.json" "$RUNNER_TEMP/atlas-composition-pretty.json"
           cmp research/atlas-composition/summary.json "$RUNNER_TEMP/atlas-composition-pretty.json"
+      - name: Compare chromosome 21 against the accessioned NCBI genomic FASTA
+        env:
+          CHR21_FASTA_URL: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_assembly_structure/Primary_Assembly/assembled_chromosomes/FASTA/chr21.fna.gz
+        run: |
+          curl --fail --silent --show-error --location --retry 3 --connect-timeout 15 --max-time 120 \
+            "$CHR21_FASTA_URL" --output "$RUNNER_TEMP/chr21.fna.gz"
+          python3 research/atlas-composition/chr21_fasta_control.py "$RUNNER_TEMP/chr21.fna.gz" \
+            "$HELIX_TOOLS_DIR/reference/hg38.2bit" "$RUNNER_TEMP/atlas-source-check.json" \
+            > "$RUNNER_TEMP/chr21-fasta-control.json"
+          cat "$RUNNER_TEMP/chr21-fasta-control.json"
