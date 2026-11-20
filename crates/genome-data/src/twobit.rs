@@ -94,6 +94,16 @@ pub struct BaseCounts {
     pub n: u64,
 }
 
+impl std::ops::AddAssign for BaseCounts {
+    fn add_assign(&mut self, other: Self) {
+        self.a += other.a;
+        self.c += other.c;
+        self.g += other.g;
+        self.t += other.t;
+        self.n += other.n;
+    }
+}
+
 struct Block {
     start: u32,
     end: u32,
@@ -240,33 +250,94 @@ impl<R: Read + Seek> TwoBitReference<R> {
     /// Count bases directly from packed bytes, with N blocks overriding the DNA.
     /// Masking does not affect base counts.
     pub fn base_counts(&mut self, name: &str) -> Result<BaseCounts> {
+        let length = u64::from(find_record(&self.records, name)?.length);
+        if length == 0 {
+            return Ok(BaseCounts::default());
+        }
+        let [counts] = self.partition_base_counts::<1>(name, &[(length, 0)])?;
+        Ok(counts)
+    }
+
+    /// Count bases by class during one sequential scan of the contig.
+    ///
+    /// Each run gives its exclusive end coordinate and a class index below N.
+    /// The first run starts at zero and each subsequent run starts at the
+    /// previous end. Ends must strictly increase and reach the contig length.
+    /// An empty contig takes an empty slice. Unused classes have zero counts.
+    /// All runs are checked before reading packed DNA.
+    pub fn partition_base_counts<const N: usize>(
+        &mut self,
+        name: &str,
+        runs: &[(u64, usize)],
+    ) -> Result<[BaseCounts; N]> {
         let record = find_record(&self.records, name)?;
-        let mut known = [0; 4];
-        let mut unknown = 0;
+        let length = u64::from(record.length);
+        let mut previous_end = 0;
+        for &(end, class) in runs {
+            ensure!(
+                previous_end < end && end <= length,
+                "partition ends must strictly increase within the contig"
+            );
+            ensure!(class < N, "partition class {class} is out of bounds");
+            previous_end = end;
+        }
+        ensure!(
+            previous_end == length,
+            "partition must cover the whole contig"
+        );
+
+        let mut known = [[0; 4]; N];
+        let mut unknown = [0; N];
+        let mut run = 0;
+        let mut blocks = record.ns.iter();
+        let mut next_n = blocks.next();
         read_packed(
             &mut self.source,
             &mut self.scratch,
             record.packed_offset,
-            0..u64::from(record.length),
+            0..length,
             |chunk, base, span| {
-                let mut position = span.start;
-                for block in intersections(&record.ns, base, base + span.end as u64) {
-                    let start = (block.start - base) as usize;
-                    tally_span(chunk, position..start, &mut known);
-                    position = (block.end - base) as usize;
-                    unknown += block.end - block.start;
+                let mut position = base + span.start as u64;
+                let chunk_end = base + span.end as u64;
+                while position < chunk_end {
+                    let (run_end, class) = runs[run];
+                    let end = chunk_end.min(run_end);
+                    let (stop, is_n) = match next_n {
+                        Some(block) if position < u64::from(block.start) => {
+                            (end.min(u64::from(block.start)), false)
+                        }
+                        Some(block) => {
+                            let n_end = u64::from(block.end);
+                            if n_end <= end {
+                                next_n = blocks.next();
+                            }
+                            (end.min(n_end), true)
+                        }
+                        None => (end, false),
+                    };
+                    if is_n {
+                        unknown[class] += stop - position;
+                    } else {
+                        let local = (position - base) as usize..(stop - base) as usize;
+                        tally_span(chunk, local, &mut known[class]);
+                    }
+                    if stop == run_end {
+                        run += 1;
+                    }
+                    position = stop;
                 }
-                tally_span(chunk, position..span.end, &mut known);
             },
         )?;
-        let [t, c, a, g] = known;
-        Ok(BaseCounts {
-            a,
-            c,
-            g,
-            t,
-            n: unknown,
-        })
+        Ok(std::array::from_fn(|class| {
+            let [t, c, a, g] = known[class];
+            BaseCounts {
+                a,
+                c,
+                g,
+                t,
+                n: unknown[class],
+            }
+        }))
     }
 }
 
