@@ -39,8 +39,15 @@ jobs:
       - name: Verify all nucleotide counts against raw genePred and an independent reference reader
         run: |
           python3 research/atlas-composition/verify.py \
-            "$HELIX_TOOLS_DIR/reference/hg38.2bit" "$RUNNER_TEMP/atlas-composition.json"
+            "$HELIX_TOOLS_DIR/reference/hg38.2bit" "$RUNNER_TEMP/atlas-composition.json" \
+            > "$RUNNER_TEMP/atlas-source-check.json"
+          cat "$RUNNER_TEMP/atlas-source-check.json"
       - name: Reconcile the mitochondrial partition with GenBank and retained UCSC sequence
-        run: python3 research/atlas-composition/mitochondrial_control.py --report "$RUNNER_TEMP/atlas-composition.json"
-      - name: Report the verified primary composition
-        run: cat "$RUNNER_TEMP/atlas-composition.json"
+        run: |
+          python3 research/atlas-composition/mitochondrial_control.py --report "$RUNNER_TEMP/atlas-composition.json" \
+            > "$RUNNER_TEMP/mitochondrial-control.json"
+          cmp research/atlas-composition/mitochondrial-control.json "$RUNNER_TEMP/mitochondrial-control.json"
+      - name: Compare the full report with the retained source-bound counts
+        run: |
+          python3 -m json.tool --indent 2 "$RUNNER_TEMP/atlas-composition.json" "$RUNNER_TEMP/atlas-composition-pretty.json"
+          cmp research/atlas-composition/summary.json "$RUNNER_TEMP/atlas-composition-pretty.json"

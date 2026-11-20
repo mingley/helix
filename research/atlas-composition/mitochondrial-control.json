@@ -1,0 +1,58 @@
+{
+  "accession": "NC_012920.1",
+  "chromosome": "chrM",
+  "class_widths": {
+    "cds": 11341,
+    "exon_outside_cds": 0,
+    "outside_transcript_span": 5228,
+    "transcript_span_outside_exon": 0
+  },
+  "classes": {
+    "cds": {
+      "a": 3369,
+      "c": 3770,
+      "g": 1332,
+      "n": 0,
+      "t": 2870
+    },
+    "exon_outside_cds": {
+      "a": 0,
+      "c": 0,
+      "g": 0,
+      "n": 0,
+      "t": 0
+    },
+    "outside_transcript_span": {
+      "a": 1755,
+      "c": 1411,
+      "g": 837,
+      "n": 1,
+      "t": 1224
+    },
+    "transcript_span_outside_exon": {
+      "a": 0,
+      "c": 0,
+      "g": 0,
+      "n": 0,
+      "t": 0
+    }
+  },
+  "curated_models": 13,
+  "genbank_features": {
+    "CDS": 13,
+    "rRNA": 2,
+    "tRNA": 22
+  },
+  "length": 16569,
+  "outside_transcript_span_with_genbank_rna": {
+    "rRNA": 2513,
+    "tRNA": 1504,
+    "union": 4017
+  },
+  "schema_version": 1,
+  "source_sha256": {
+    "datasets/genome-atlas/mitochondrial-reference.xml": "a97065e862ae56799ca419378fea8acb4453c3cf3733bf88830f06573f7fe6f0",
+    "datasets/genome-atlas/ncbiRefSeqCurated.txt.gz": "67090326b606658bdabdfe5f8dcb97b7943ac802c7945399522be7174ec021ca",
+    "research/context-reference/ucsc-api-chrM-0-16569.json": "a1a66813ed710f745e032ba2ac4df685b50abdfee6e000402f12120bc26c2dec"
+  }
+}

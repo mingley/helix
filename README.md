@@ -228,6 +228,7 @@ frozen hg38 file by its digest. For another twoBit encoding in GRCh38
 coordinates, declare the assembly explicitly. Rust callers can reuse
 `Atlas::sequence_composition` or supply their own labeled coordinate runs to
 `TwoBitReference::partition_base_counts`.
+[Verified composition by chromosome](research/genome-atlas.md#reference-sequence-composition-by-annotation)
 
 ## Explore the HBB mechanism map
 

@@ -5,6 +5,7 @@ import gzip
 import hashlib
 import json
 from pathlib import Path
+import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -117,6 +118,55 @@ def chromosome_counts(reference, chrom, length, raw_layers, chunk_size=CHUNK_BAS
     return whole, counts
 
 
+def trace_exon_ns(reference, chrom, raw_exons):
+    positions = []
+    for left, right in merged(raw_exons):
+        for start in range(left, right, CHUNK_BASES):
+            sequence = reference.fetch(chrom, start, min(right, start + CHUNK_BASES))
+            positions.extend(start + match.start() for match in re.finditer("N", sequence))
+    return positions
+
+
+def attach_raw_exons(path, sites):
+    by_chrom = {}
+    for site in sites:
+        by_chrom.setdefault(site["chromosome"], []).append(site)
+    if not by_chrom:
+        return
+    seen_rows = set()
+    with gzip.open(path, "rt", encoding="utf-8") as source:
+        for row_number, line in enumerate(source, 1):
+            fields = line.rstrip("\r\n").split("\t")
+            chrom = fields[2]
+            if chrom not in by_chrom or line in seen_rows:
+                continue
+            tx_start, tx_end, cds_start, cds_end = map(int, fields[4:8])
+            enclosed = [site for site in by_chrom[chrom] if tx_start <= site["start0"] < tx_end]
+            if not enclosed:
+                continue
+            # The pinned UCSC genePred includes the bin column. name2 carries
+            # the source gene symbol in this RefSeq track.
+            starts = map(int, fields[9].rstrip(",").split(","))
+            ends = map(int, fields[10].rstrip(",").split(","))
+            for start, end in zip(starts, ends):
+                for site in enclosed:
+                    position = site["start0"]
+                    if start <= position < end:
+                        site["raw_exons"].append({
+                            "source_row_1based": row_number,
+                            "transcript_accession": fields[1],
+                            "source_gene_symbol": fields[12],
+                            "strand": fields[3],
+                            "exon_start0": start,
+                            "exon_end0": end,
+                            "site_in_cds": cds_start <= position < cds_end,
+                        })
+            # Distinct records sharing an accession or exon retain their rows.
+            seen_rows.add(line)
+    for site in sites:
+        require(site["raw_exons"], f"no raw genePred exon for {site['chromosome']}:{site['start0']}")
+
+
 def exclusive_counts(whole, layers):
     spans, exons, cds = layers
     def minus(outer, inner):
@@ -184,11 +234,19 @@ def verify(reference_path, report_path):
                 "retained raw model count differs from the frozen atlas")
 
         total = {label: dict.fromkeys("acgtn", 0) for label in FROZEN_LENGTHS}
+        exonic_n_sites = []
         for chrom, width_row, row in zip(CHROMOSOMES, annotation_rows, report_rows):
             length = sizes[chrom]
             require(type(row["length"]) is int and length == row["length"] == width_row["length"],
                     f"{chrom}: chromosome length differs")
-            whole, layers = chromosome_counts(reference, chrom, length, geometry.pop(chrom))
+            raw_layers = geometry.pop(chrom)
+            whole, layers = chromosome_counts(reference, chrom, length, raw_layers)
+            exon_ns = layers[1][BASES.index("N")]
+            if exon_ns:
+                positions = trace_exon_ns(reference, chrom, raw_layers[1])
+                require(len(positions) == exon_ns, f"{chrom}: localized exonic N count differs")
+                exonic_n_sites.extend({"chromosome": chrom, "start0": pos, "end0": pos + 1,
+                                       "reference_base": "N", "raw_exons": []} for pos in positions)
             for counts, width in zip(layers, UNION_WIDTHS):
                 require(sum(counts) == width_row[width], f"{chrom}: {width} differs")
             expected = exclusive_counts(whole, layers)
@@ -198,6 +256,12 @@ def verify(reference_path, report_path):
                     total[category][base] += count
 
     compare_classes("all primary chromosomes", report["total"], total)
+    attach_raw_exons(ATLAS / GENEPRED, exonic_n_sites)
+    coding_sites = sum(any(exon["site_in_cds"] for exon in site["raw_exons"])
+                       for site in exonic_n_sites)
+    require(coding_sites == total["cds"]["n"]
+            and len(exonic_n_sites) - coding_sites == total["exon_outside_cds"]["n"],
+            "raw site assignments disagree with the verified class counts")
     widths = {label: sum(counts.values()) for label, counts in total.items()}
     require(widths == FROZEN_LENGTHS, "exclusive lengths differ from the frozen atlas")
     return {
@@ -207,6 +271,7 @@ def verify(reference_path, report_path):
         "genepred_sha256": source_hash,
         "reference_sha256": reference_hash,
         "total": total,
+        "exonic_n_sites": exonic_n_sites,
     }
 
 

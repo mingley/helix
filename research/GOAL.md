@@ -11,6 +11,9 @@ It provides literal coordinate queries and exact base totals under an explicit
 reference file identity. Use those reusable operations to check sequences
 before composing annotation, assay and model inputs. Whole-reference sequence
 coverage and evidence supporting a biological model are separate concerns.
+The [primary atlas scan](genome-atlas.md#reference-sequence-composition-by-annotation)
+connects this reader to curated RefSeq intervals and independently reconciles
+base composition on all 25 primary chromosomes.
 
 ## Current result: predict a measured activity component
 

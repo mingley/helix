@@ -28,6 +28,47 @@ phenotype. The 93,455 curated models already demonstrate the importance of
 alternative transcript structure, but they are not all possible cell states or
 all human transcripts.
 
+## Reference sequence composition by annotation
+
+The 25 primary hg38 chromosomes contain 3,088,286,401 positions. The Rust scan
+assigned each position once, using the union across both strands and all
+93,455 curated transcript models. A position within any coding exon takes
+priority over other exons, and any exon takes priority over transcript spans.
+The counts use the forward reference sequence. GC is (G + C) / (A + C + G + T).
+The N column counts unresolved reference positions.
+[Per-chromosome counts and source hashes](atlas-composition/summary.json)
+
+| Annotation class | Reference positions | N | GC among called bases |
+| --- | ---: | ---: | ---: |
+| Coding sequence | 34,561,429 | 0 | 52.29% |
+| Exon outside coding sequence | 58,522,466 | 1 | 45.29% |
+| Transcript span outside exons | 1,328,191,871 | 720,427 | 41.18% |
+| Outside curated transcript spans | 1,667,010,635 | 149,910,292 | 40.16% |
+
+The same strict ordering of GC fractions holds within every one of the 24
+nuclear chromosomes. The two intermediate classes have zero width on chrM.
+Across all primaries, 149,910,292 of the 150,630,720 N positions (99.52%)
+fall outside curated transcript spans. The sole N in the exon union falls on
+chr21 outside CDS. These fractions describe the frozen reference and annotation.
+
+An independent Python implementation read the raw UCSC genePred file,
+constructed the transcript, exon and CDS unions, counted bases in each union,
+and subtracted cumulative counts. It reproduced all 500 chromosome, class
+and nucleotide counts. On one hosted runner the Rust command took 1.23 s
+and peaked at 95.75 MiB, including reference hashing and atlas loading after
+the reference file had been verified.
+[Independent replay](atlas-composition/verify.py) ·
+[Measured run](https://github.com/mingley/helix/actions/runs/44676686407/job/136090076363)
+
+The curated chrM transcript spans cover exactly the 11,341 positions in the
+GenBank CDS union. Of the 5,228 positions outside those spans, 4,017 (76.84%)
+belong to GenBank RNA features on NC_012920.1. The 22 tRNAs cover 1,504
+positions and the two rRNAs cover 2,513. The control checks interval membership
+base by base and matches all 16,569 nucleotides between the GenBank record and
+the retained UCSC sequence. This quantifies one omission of the curated track.
+[Mitochondrial source control](atlas-composition/mitochondrial-control.json) ·
+[Offline replay](atlas-composition/mitochondrial_control.py)
+
 ## HBB sits in a structured locus
 
 The atlas places HBB, NCBI Gene 3043, on the minus strand of chromosome 11 at
@@ -70,8 +111,8 @@ than predicting clinical labels directly from those same assertions.
 ## Known blind spots
 
 The primary reference is a coordinate system, not a representation of every human
-haplotype. Excluding 438 non-primary contigs removes alternate/fix/unplaced models
-from this counting exercise. Duplicated loci, structural variation, population
+haplotype. The raw annotation has models on 438 non-primary contigs. The hg38 twoBit
+image has 455 contigs, of which the sequence scan counts the 25 primaries. Duplicated loci, structural variation, population
 variation, chromatin state, tissue-specific expression, environment and
 interactions remain outside the atlas. The curated mitochondrial source contains
 13 protein models but omits its RNA genes. Annotation absence is an observation
