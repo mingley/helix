@@ -31,7 +31,8 @@ impl From<[BaseCounts; 4]> for ClassComposition {
         Self {
             cds: counts[AnnotationClass::Cds.index()],
             exon_outside_cds: counts[AnnotationClass::ExonOutsideCds.index()],
-            transcript_span_outside_exon: counts[AnnotationClass::TranscriptSpanOutsideExon.index()],
+            transcript_span_outside_exon: counts
+                [AnnotationClass::TranscriptSpanOutsideExon.index()],
             outside_transcript_span: counts[AnnotationClass::OutsideTranscriptSpan.index()],
         }
     }
