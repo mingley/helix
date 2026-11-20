@@ -1,0 +1,46 @@
+name: Verify primary atlas composition
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/atlas-composition.yml'
+      - 'crates/genome-atlas/**'
+      - 'crates/genome-cli/src/reference.rs'
+      - 'crates/genome-data/src/twobit.rs'
+      - 'datasets/genome-atlas/**'
+      - 'research/atlas-composition/**'
+      - 'research/context-reference/hg38-reference.json'
+      - 'research/context-reference/ucsc-api-chrM-0-16569.json'
+      - 'scripts/setup_reference.sh'
+      - 'scripts/twobit_reference.py'
+permissions:
+  contents: read
+jobs:
+  composition:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      HELIX_TOOLS_DIR: ${{ github.workspace }}/.ci-tools
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the Rust CLI
+        run: |
+          rustup toolchain install 1.90.0 --profile minimal
+          cargo +1.90.0 build --release --locked -p genome-cli --bin helix
+      - name: Verify the reference image
+        run: bash scripts/setup_reference.sh
+      - name: Compute primary chromosome composition
+        run: |
+          /usr/bin/time -f 'Atlas composition took %e s, max RSS %M KiB' \
+            target/release/helix reference --file "$HELIX_TOOLS_DIR/reference/hg38.2bit" \
+            --assembly GRCh38 --expect-sha256 1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0 \
+            atlas-composition --atlas datasets/genome-atlas > "$RUNNER_TEMP/atlas-composition.json"
+      - name: Verify all nucleotide counts against raw genePred and an independent reference reader
+        run: |
+          python3 research/atlas-composition/verify.py \
+            "$HELIX_TOOLS_DIR/reference/hg38.2bit" "$RUNNER_TEMP/atlas-composition.json"
+      - name: Reconcile the mitochondrial partition with GenBank and retained UCSC sequence
+        run: python3 research/atlas-composition/mitochondrial_control.py --report "$RUNNER_TEMP/atlas-composition.json"
+      - name: Report the verified primary composition
+        run: cat "$RUNNER_TEMP/atlas-composition.json"
