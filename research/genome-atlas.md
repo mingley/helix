@@ -62,14 +62,26 @@ boundaries are retained for replay.
 [NCBI RNA45SN2](https://www.ncbi.nlm.nih.gov/gene/109864279/) ·
 [NCBI RNA28SN2](https://www.ncbi.nlm.nih.gov/gene/109864282/)
 
+NCBI's GRCh38.p14 genomic FASTA for chromosome 21 (`NC_000021.9`) also
+records a literal N at this position. All 17 bases in the window centered on
+it agree between FASTA and twoBit. Across the full 46,709,983-base chromosome,
+the files differ at three positions. The FASTA records two M symbols (A or C)
+and one R (A or G), and UCSC represents each as N. All three are outside the
+curated exon union. The comparison uses the forward sequence with case folded.
+[Chromosome FASTA comparison and input hashes](atlas-composition/chr21-fasta-control.json) ·
+[Versioned NCBI genomic FASTA](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_assembly_structure/Primary_Assembly/assembled_chromosomes/FASTA/chr21.fna.gz) ·
+[UCSC ambiguity-code conventions](https://github.com/ucscGenomeBrowser/kent/blob/fa1ec8f7a7071301796d3050f7bb566679b55bbe/src/hg/makeDb/trackDb/human/hg38/gold.html)
+
 An independent Python implementation read the raw UCSC genePred file,
 constructed the transcript, exon and CDS unions, counted bases in each union,
 and subtracted cumulative counts. It reproduced all 500 chromosome, class
-and nucleotide counts. On one hosted runner the Rust command took 1.23 s
-and peaked at 95.75 MiB, including reference hashing and atlas loading after
-the reference file had been verified.
+and nucleotide counts. Three hosted runs of the Rust command took 1.21,
+1.23 and 1.25 seconds. Peak memory stayed below 96 MiB. The timer covered
+reference hashing, atlas loading and counting after the reference download.
 [Independent replay](atlas-composition/verify.py) ·
-[Measured run](https://github.com/mingley/helix/actions/runs/44676686407/job/136090076363)
+[1.21 s](https://github.com/mingley/helix/actions/runs/44679046007/job/136097757860) ·
+[1.23 s](https://github.com/mingley/helix/actions/runs/44676686407/job/136090076363) ·
+[1.25 s](https://github.com/mingley/helix/actions/runs/44677803852/job/136093712546)
 
 The curated chrM transcript spans cover exactly the 11,341 positions in the
 GenBank CDS union. Of the 5,228 positions outside those spans, 4,017 (76.84%)

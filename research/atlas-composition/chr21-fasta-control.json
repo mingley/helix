@@ -1,0 +1,50 @@
+{
+  "chromosome": "chr21",
+  "compared_bases": 46709983,
+  "differences_fasta_to_twobit": {
+    "M>N": 2,
+    "R>N": 1
+  },
+  "differing_bases": 3,
+  "exonic_n_site": {
+    "context_end0": 8217215,
+    "context_start0": 8217198,
+    "end0": 8217207,
+    "fasta_base": "N",
+    "fasta_context": "CCGGCGCGNCCCCCCCC",
+    "start0": 8217206,
+    "twobit_base": "N",
+    "twobit_context": "CCGGCGCGNCCCCCCCC"
+  },
+  "genomic_fasta": {
+    "accession": "NC_000021.9",
+    "alphabet_counts": {
+      "A": 11820664,
+      "B": 0,
+      "C": 8185244,
+      "D": 0,
+      "G": 8226381,
+      "H": 0,
+      "K": 0,
+      "M": 2,
+      "N": 6621361,
+      "R": 1,
+      "S": 0,
+      "T": 11856330,
+      "V": 0,
+      "W": 0,
+      "Y": 0
+    },
+    "gzip_bytes": 11119244,
+    "gzip_sha256": "429a0d270dae0481dd699b271b4cba369a90f1a9bef99379cc9f31e2fe6abb3a",
+    "non_acgtn_bases": 3,
+    "uppercase_sequence_sha256": "ff47a5bff4a148bc684e444e4c52eaceec1290cb6531b2d8c613becdebbad23c"
+  },
+  "identical_bases": 46709980,
+  "schema_version": 1,
+  "source_check_sha256": "13ae3ff487fc6c1891531ccbb99e05babf0138ae59b30e486a360f2a726b695a",
+  "twobit": {
+    "reference_sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0",
+    "uppercase_sequence_sha256": "fb084b31fdcfe8dc301d2fc213ce6e430fa7509385317d16373c2eefd8e60ad7"
+  }
+}

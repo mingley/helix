@@ -62,3 +62,4 @@ jobs:
             "$HELIX_TOOLS_DIR/reference/hg38.2bit" "$RUNNER_TEMP/atlas-source-check.json" \
             > "$RUNNER_TEMP/chr21-fasta-control.json"
           cat "$RUNNER_TEMP/chr21-fasta-control.json"
+          cmp research/atlas-composition/chr21-fasta-control.json "$RUNNER_TEMP/chr21-fasta-control.json"
