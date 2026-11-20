@@ -290,4 +290,22 @@ fn reference_catalog_fetch_and_summary_are_deterministic_and_hash_bound() {
     assert!(String::from_utf8_lossy(&rejected.stderr).contains("SHA-256 mismatch"));
     assert!(!check(&["fetch", "Z", "0", "7"]).status.success());
     assert!(!check(&["fetch", "chrZ", "0", "8"]).status.success());
+
+    let arguments = ["reference", "--file", path.to_str().unwrap()];
+    for (extra, reason) in [
+        (vec!["atlas-composition"], "declare --assembly GRCh38"),
+        (
+            vec!["--assembly", "GRCh37", "atlas-composition"],
+            "atlas uses GRCh38 coordinates",
+        ),
+        (
+            vec!["--assembly", "GRCh38", "atlas-composition"],
+            "reference lacks primary atlas contig",
+        ),
+    ] {
+        let rejected = invoke(&[arguments.as_slice(), extra.as_slice()].concat());
+        assert!(!rejected.status.success());
+        assert!(rejected.stdout.is_empty());
+        assert!(String::from_utf8_lossy(&rejected.stderr).contains(reason));
+    }
 }

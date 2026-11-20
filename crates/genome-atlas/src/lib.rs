@@ -12,6 +12,10 @@ use std::{
     path::Path,
 };
 
+pub mod composition;
+mod regions;
+pub use regions::AnnotationClass;
+
 const RNA_BIOTYPES: [&str; 16] = [
     "RNase_MRP_RNA",
     "RNase_P_RNA",
@@ -205,7 +209,10 @@ impl Atlas {
 
 /// Return a canonical union; overlapping isoforms contribute each base once.
 pub fn merge_intervals(intervals: &[[u64; 2]]) -> Result<Vec<[u64; 2]>> {
-    let mut sorted = intervals.to_vec();
+    merge_owned_intervals(intervals.to_vec())
+}
+
+fn merge_owned_intervals(mut sorted: Vec<[u64; 2]>) -> Result<Vec<[u64; 2]>> {
     sorted.sort_unstable();
     let mut result: Vec<[u64; 2]> = Vec::new();
     for [start, end] in sorted {
@@ -468,6 +475,27 @@ mod tests {
         assert_eq!(atlas.report()["hbb"]["gene_id"], "3043");
         assert!(atlas.genes().len() > 20_000);
         assert_eq!(atlas.manifest_sha256().len(), 64);
+        for row in atlas.report()["chromosomes"].as_array().unwrap() {
+            let name = row["name"].as_str().unwrap();
+            let mut widths = [0; 4];
+            let mut start = 0;
+            let mut previous = None;
+            for (end, class) in atlas.annotation_runs(name).unwrap() {
+                assert!(start < end);
+                assert_ne!(previous, Some(class));
+                widths[class] += end - start;
+                start = end;
+                previous = Some(class);
+            }
+            let length = row["length"].as_u64().unwrap();
+            let cds = row["cds_union_bases"].as_u64().unwrap();
+            let exon = row["exon_union_bases"].as_u64().unwrap();
+            let span = row["transcript_span_union_bases"].as_u64().unwrap();
+            assert_eq!(start, length);
+            let expected = [cds, exon - cds, span - exon, length - span];
+            assert_eq!(widths, expected, "{name}");
+        }
+        assert!(atlas.annotation_runs("1").is_err());
     }
     #[test]
     fn checksum_mismatch_fails_before_catalog_interpretation() {

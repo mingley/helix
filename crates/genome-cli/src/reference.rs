@@ -1,11 +1,16 @@
 //! Inspect an explicitly selected reference with deterministic JSON output.
 use anyhow::{ensure, Result};
+use genome_atlas::{composition::AtlasComposition, Atlas};
 use genome_data::twobit::{BaseCounts, ByteOrder, Contig, Strand, TwoBitReference};
 use serde::Serialize;
 use std::{
     io::{self, BufWriter, Write},
     path::PathBuf,
 };
+
+// The twoBit format has no assembly label. This digest identifies the
+// reference fetched by scripts/setup_reference.sh when no label is supplied.
+const FROZEN_HG38_SHA256: &str = "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0";
 
 #[derive(clap::Args)]
 pub struct ReferenceArgs {
@@ -69,6 +74,12 @@ enum ReferenceCommand {
     },
     /// Count A/C/G/T/N across every indexed contig.
     Summary,
+    /// Count bases by curated coding, exonic and transcript coverage on the GRCh38 primaries.
+    AtlasComposition {
+        /// Directory containing the verified RefSeq atlas.
+        #[arg(long, default_value = "datasets/genome-atlas")]
+        atlas: PathBuf,
+    },
 }
 
 #[derive(Serialize)]
@@ -107,6 +118,7 @@ enum ReferenceResult<'a> {
         contigs: Vec<ContigCounts>,
         total: BaseCounts,
     },
+    AtlasComposition(Box<AtlasComposition>),
 }
 
 #[derive(Serialize)]
@@ -126,12 +138,27 @@ fn parse_sha256(value: &str) -> Result<String, String> {
 
 pub fn run(args: &ReferenceArgs) -> Result<()> {
     let mut reference = TwoBitReference::open(&args.file)?;
-    let sha256 = if let Some(expected) = args.expect_sha256.as_deref() {
-        let actual = reference.sha256()?;
+    let uses_atlas = matches!(&args.command, ReferenceCommand::AtlasComposition { .. });
+    if uses_atlas {
         ensure!(
-            actual == expected,
-            "reference SHA-256 mismatch: expected {expected}, found {actual}"
+            !matches!(args.assembly, Some(AssemblyLabel::Grch37)),
+            "the primary RefSeq atlas uses GRCh38 coordinates"
         );
+    }
+    let sha256 = if uses_atlas || args.expect_sha256.is_some() {
+        let actual = reference.sha256()?;
+        if let Some(expected) = args.expect_sha256.as_deref() {
+            ensure!(
+                actual == expected,
+                "reference SHA-256 mismatch: expected {expected}, found {actual}"
+            );
+        }
+        if uses_atlas && args.assembly.is_none() {
+            ensure!(
+                actual == FROZEN_HG38_SHA256,
+                "declare --assembly GRCh38 for a compatible reference with a different digest"
+            );
+        }
         Some(actual)
     } else {
         None
@@ -168,20 +195,10 @@ pub fn run(args: &ReferenceArgs) -> Result<()> {
                 .map(|contig| (contig.name.to_owned(), contig.length))
                 .collect::<Vec<_>>();
             let mut results = Vec::with_capacity(contigs.len());
-            let mut total = BaseCounts {
-                a: 0,
-                c: 0,
-                g: 0,
-                t: 0,
-                n: 0,
-            };
+            let mut total = BaseCounts::default();
             for (name, length) in contigs {
                 let counts = reference.base_counts(&name)?;
-                total.a += counts.a;
-                total.c += counts.c;
-                total.g += counts.g;
-                total.t += counts.t;
-                total.n += counts.n;
+                total += counts;
                 results.push(ContigCounts {
                     name,
                     length,
@@ -192,6 +209,10 @@ pub fn run(args: &ReferenceArgs) -> Result<()> {
                 contigs: results,
                 total,
             }
+        }
+        ReferenceCommand::AtlasComposition { atlas } => {
+            let atlas = Atlas::open(atlas)?;
+            ReferenceResult::AtlasComposition(Box::new(atlas.sequence_composition(&mut reference)?))
         }
     };
     let report = Report {

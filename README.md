@@ -206,6 +206,29 @@ also compares the old and packed trimer feature kernels on the frozen panel,
 checks feature bits before timing, and verifies all hg38 base totals with the
 independent Python reader.
 
+### Count reference bases by annotation
+
+```bash
+cargo run --release --locked -- reference --file "$reference" --assembly GRCh38 \
+  --expect-sha256 1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0 \
+  atlas-composition --atlas datasets/genome-atlas
+```
+
+The command assigns each position on chr1–22, chrX, chrY and chrM to the
+highest-priority annotation at that coordinate across curated isoforms, genes
+and strands. The four classes, in order, are coding sequence, exonic sequence
+outside CDS, transcript-span sequence outside all exons, and sequence outside
+all curated transcript spans. It reports exact A/C/G/T/N counts per chromosome
+and overall, with hashes for the reference, atlas manifest and gene catalog.
+For GC among called bases, divide C + G by A + C + G + T where the denominator
+is positive.
+
+The atlas join checks all 25 reference names and lengths. It recognizes the
+frozen hg38 file by its digest. For another twoBit encoding in GRCh38
+coordinates, declare the assembly explicitly. Rust callers can reuse
+`Atlas::sequence_composition` or supply their own labeled coordinate runs to
+`TwoBitReference::partition_base_counts`.
+
 ## Explore the HBB mechanism map
 
 ```bash
