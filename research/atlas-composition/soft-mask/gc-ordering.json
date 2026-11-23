@@ -1,0 +1,349 @@
+{
+  "atlas": {
+    "annotation": "ncbiRefSeqCurated",
+    "assembly": "GRCh38/hg38",
+    "catalog_sha256": "e30baf38927184d6b4d940a335ecdda5075526f35b2ce224e52b0e97a1c78090",
+    "coordinate_system": "zero-based half-open",
+    "manifest_sha256": "99d300603abf04b678021b98c0c8b076186e939e85d98601f6da7abf8599444d"
+  },
+  "chromosome_masked_called_fraction": {
+    "chr1": {
+      "denominator": "76827004",
+      "numerator": "39736787"
+    },
+    "chr10": {
+      "denominator": "133262962",
+      "numerator": "66527395"
+    },
+    "chr11": {
+      "denominator": "67266871",
+      "numerator": "35390788"
+    },
+    "chr12": {
+      "denominator": "22189636",
+      "numerator": "11754011"
+    },
+    "chr13": {
+      "denominator": "97983125",
+      "numerator": "48202438"
+    },
+    "chr14": {
+      "denominator": "90568149",
+      "numerator": "46815523"
+    },
+    "chr15": {
+      "denominator": "84641325",
+      "numerator": "43490933"
+    },
+    "chr16": {
+      "denominator": "81805943",
+      "numerator": "42395053"
+    },
+    "chr17": {
+      "denominator": "13820034",
+      "numerator": "7188709"
+    },
+    "chr18": {
+      "denominator": "26696535",
+      "numerator": "13603159"
+    },
+    "chr19": {
+      "denominator": "29220379",
+      "numerator": "17449003"
+    },
+    "chr2": {
+      "denominator": "240548228",
+      "numerator": "118388559"
+    },
+    "chr20": {
+      "denominator": "63944257",
+      "numerator": "34199752"
+    },
+    "chr21": {
+      "denominator": "13362873",
+      "numerator": "6906226"
+    },
+    "chr22": {
+      "denominator": "13053259",
+      "numerator": "6982492"
+    },
+    "chr3": {
+      "denominator": "39620027",
+      "numerator": "20339400"
+    },
+    "chr4": {
+      "denominator": "63250889",
+      "numerator": "32718421"
+    },
+    "chr5": {
+      "denominator": "181265378",
+      "numerator": "93295241"
+    },
+    "chr6": {
+      "denominator": "85039261",
+      "numerator": "42556378"
+    },
+    "chr7": {
+      "denominator": "158970131",
+      "numerator": "81632870"
+    },
+    "chr8": {
+      "denominator": "144768136",
+      "numerator": "74291317"
+    },
+    "chr9": {
+      "denominator": "121790550",
+      "numerator": "62959037"
+    },
+    "chrX": {
+      "denominator": "154893029",
+      "numerator": "96337011"
+    },
+    "chrY": {
+      "denominator": "26415043",
+      "numerator": "16651944"
+    }
+  },
+  "class_order": [
+    "cds",
+    "exon_outside_cds",
+    "transcript_span_outside_exon",
+    "outside_transcript_span"
+  ],
+  "common_mask_fraction_range": {
+    "empty": false,
+    "individually_unsatisfiable": [],
+    "interior_crossings": [
+      {
+        "contrast": {
+          "chromosome": "chr2",
+          "first_class": "transcript_span_outside_exon",
+          "second_class": "outside_transcript_span"
+        },
+        "masked_fraction": {
+          "denominator": "84379416782036174696634946079",
+          "numerator": "27232067203240959105180470175"
+        },
+        "strict_above": true
+      },
+      {
+        "contrast": {
+          "chromosome": "chr10",
+          "first_class": "transcript_span_outside_exon",
+          "second_class": "outside_transcript_span"
+        },
+        "masked_fraction": {
+          "denominator": "46862514343545198633341029",
+          "numerator": "15947380573286765813770219"
+        },
+        "strict_above": true
+      },
+      {
+        "contrast": {
+          "chromosome": "chr15",
+          "first_class": "transcript_span_outside_exon",
+          "second_class": "outside_transcript_span"
+        },
+        "masked_fraction": {
+          "denominator": "56871738553971394227055705",
+          "numerator": "22789991452670779601245168"
+        },
+        "strict_above": true
+      },
+      {
+        "contrast": {
+          "chromosome": "chr19",
+          "first_class": "exon_outside_cds",
+          "second_class": "transcript_span_outside_exon"
+        },
+        "masked_fraction": {
+          "denominator": "2196146410005638053991123",
+          "numerator": "1197276169358066534958499"
+        },
+        "strict_above": false
+      },
+      {
+        "contrast": {
+          "chromosome": "chr22",
+          "first_class": "transcript_span_outside_exon",
+          "second_class": "outside_transcript_span"
+        },
+        "masked_fraction": {
+          "denominator": "4529017062272496853327",
+          "numerator": "323361957771772761627"
+        },
+        "strict_above": true
+      }
+    ],
+    "lower_bound": {
+      "inclusive": false,
+      "limiting_contrasts": [
+        {
+          "chromosome": "chr15",
+          "first_class": "transcript_span_outside_exon",
+          "second_class": "outside_transcript_span"
+        }
+      ],
+      "masked_fraction": {
+        "denominator": "56871738553971394227055705",
+        "numerator": "22789991452670779601245168"
+      }
+    },
+    "upper_bound": {
+      "inclusive": false,
+      "limiting_contrasts": [
+        {
+          "chromosome": "chr19",
+          "first_class": "exon_outside_cds",
+          "second_class": "transcript_span_outside_exon"
+        }
+      ],
+      "masked_fraction": {
+        "denominator": "2196146410005638053991123",
+        "numerator": "1197276169358066534958499"
+      }
+    }
+  },
+  "modes": {
+    "chromosome_common_mask_fraction": {
+      "adjacent": [
+        {
+          "first_class": "cds",
+          "greater": 24,
+          "reversed": [],
+          "second_class": "exon_outside_cds",
+          "tied": [],
+          "undefined": []
+        },
+        {
+          "first_class": "exon_outside_cds",
+          "greater": 23,
+          "reversed": [
+            "chr19"
+          ],
+          "second_class": "transcript_span_outside_exon",
+          "tied": [],
+          "undefined": []
+        },
+        {
+          "first_class": "transcript_span_outside_exon",
+          "greater": 24,
+          "reversed": [],
+          "second_class": "outside_transcript_span",
+          "tied": [],
+          "undefined": []
+        }
+      ],
+      "chromosomes_in_strict_order": 23,
+      "chromosomes_with_defined_order": 24
+    },
+    "combined": {
+      "adjacent": [
+        {
+          "first_class": "cds",
+          "greater": 24,
+          "reversed": [],
+          "second_class": "exon_outside_cds",
+          "tied": [],
+          "undefined": []
+        },
+        {
+          "first_class": "exon_outside_cds",
+          "greater": 24,
+          "reversed": [],
+          "second_class": "transcript_span_outside_exon",
+          "tied": [],
+          "undefined": []
+        },
+        {
+          "first_class": "transcript_span_outside_exon",
+          "greater": 24,
+          "reversed": [],
+          "second_class": "outside_transcript_span",
+          "tied": [],
+          "undefined": []
+        }
+      ],
+      "chromosomes_in_strict_order": 24,
+      "chromosomes_with_defined_order": 24
+    },
+    "masked": {
+      "adjacent": [
+        {
+          "first_class": "cds",
+          "greater": 24,
+          "reversed": [],
+          "second_class": "exon_outside_cds",
+          "tied": [],
+          "undefined": []
+        },
+        {
+          "first_class": "exon_outside_cds",
+          "greater": 23,
+          "reversed": [
+            "chr19"
+          ],
+          "second_class": "transcript_span_outside_exon",
+          "tied": [],
+          "undefined": []
+        },
+        {
+          "first_class": "transcript_span_outside_exon",
+          "greater": 24,
+          "reversed": [],
+          "second_class": "outside_transcript_span",
+          "tied": [],
+          "undefined": []
+        }
+      ],
+      "chromosomes_in_strict_order": 23,
+      "chromosomes_with_defined_order": 24
+    },
+    "unmasked": {
+      "adjacent": [
+        {
+          "first_class": "cds",
+          "greater": 24,
+          "reversed": [],
+          "second_class": "exon_outside_cds",
+          "tied": [],
+          "undefined": []
+        },
+        {
+          "first_class": "exon_outside_cds",
+          "greater": 24,
+          "reversed": [],
+          "second_class": "transcript_span_outside_exon",
+          "tied": [],
+          "undefined": []
+        },
+        {
+          "first_class": "transcript_span_outside_exon",
+          "greater": 20,
+          "reversed": [
+            "chr2",
+            "chr10",
+            "chr15",
+            "chr22"
+          ],
+          "second_class": "outside_transcript_span",
+          "tied": [],
+          "undefined": []
+        }
+      ],
+      "chromosomes_in_strict_order": 20,
+      "chromosomes_with_defined_order": 24
+    }
+  },
+  "nuclear_chromosomes": 24,
+  "operation": "soft_mask_gc_ordering",
+  "reference": {
+    "byte_order": "little",
+    "declared_assembly": "GRCh38",
+    "file_bytes": 835393456,
+    "format": "UCSC twoBit",
+    "format_version": 0,
+    "sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0"
+  },
+  "schema_version": 1
+}

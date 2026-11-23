@@ -14,7 +14,10 @@ coverage and evidence supporting a biological model are separate concerns.
 The [primary atlas scan](genome-atlas.md#reference-sequence-composition-by-annotation)
 connects this reader to curated RefSeq intervals and independently reconciles
 base composition on all 25 primary chromosomes.
-The [soft-mask study](atlas-soft-mask.md) tests that GC ordering across strata of the reference mask.
+The same ordering holds on 20 of 24 nuclear chromosomes within unmasked sequence
+and 23 of 24 within masked sequence. A shared masked fraction between approximately
+40.07% and 54.52% preserves all 72 adjacent comparisons.
+[Soft-mask study and exact bounds](atlas-soft-mask.md)
 
 ## Current result: predict a measured activity component
 

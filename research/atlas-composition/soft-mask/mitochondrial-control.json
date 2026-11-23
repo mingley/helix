@@ -1,0 +1,216 @@
+{
+  "accession": "NC_012920.1",
+  "chromosome": "chrM",
+  "classes": {
+    "cds": {
+      "masked": {
+        "a": 1,
+        "c": 0,
+        "g": 0,
+        "n": 0,
+        "t": 0
+      },
+      "unmasked": {
+        "a": 3368,
+        "c": 3770,
+        "g": 1332,
+        "n": 0,
+        "t": 2870
+      }
+    },
+    "exon_outside_cds": {
+      "masked": {
+        "a": 0,
+        "c": 0,
+        "g": 0,
+        "n": 0,
+        "t": 0
+      },
+      "unmasked": {
+        "a": 0,
+        "c": 0,
+        "g": 0,
+        "n": 0,
+        "t": 0
+      }
+    },
+    "outside_transcript_span": {
+      "masked": {
+        "a": 133,
+        "c": 113,
+        "g": 74,
+        "n": 0,
+        "t": 97
+      },
+      "unmasked": {
+        "a": 1622,
+        "c": 1298,
+        "g": 763,
+        "n": 1,
+        "t": 1127
+      }
+    },
+    "transcript_span_outside_exon": {
+      "masked": {
+        "a": 0,
+        "c": 0,
+        "g": 0,
+        "n": 0,
+        "t": 0
+      },
+      "unmasked": {
+        "a": 0,
+        "c": 0,
+        "g": 0,
+        "n": 0,
+        "t": 0
+      }
+    }
+  },
+  "length": 16569,
+  "masked_bases": 418,
+  "masked_feature_memberships_by_kind": {
+    "CDS": 1,
+    "rRNA": 156,
+    "tRNA": 217
+  },
+  "masked_genbank_features": [
+    {
+      "genbank_location_1based": "1671..3229",
+      "gene": "RNR2",
+      "kind": "rRNA",
+      "masked_intervals0": [
+        [
+          2589,
+          2745
+        ]
+      ]
+    },
+    {
+      "genbank_location_1based": "3230..3304",
+      "gene": "TRNL1",
+      "kind": "tRNA",
+      "masked_intervals0": [
+        [
+          3229,
+          3304
+        ]
+      ]
+    },
+    {
+      "genbank_location_1based": "3307..4262",
+      "gene": "ND1",
+      "kind": "CDS",
+      "masked_intervals0": [
+        [
+          3306,
+          3307
+        ]
+      ]
+    },
+    {
+      "genbank_location_1based": "4263..4331",
+      "gene": "TRNI",
+      "kind": "tRNA",
+      "masked_intervals0": [
+        [
+          4328,
+          4331
+        ]
+      ]
+    },
+    {
+      "genbank_location_1based": "complement(4329..4400)",
+      "gene": "TRNQ",
+      "kind": "tRNA",
+      "masked_intervals0": [
+        [
+          4328,
+          4400
+        ]
+      ]
+    },
+    {
+      "genbank_location_1based": "complement(7446..7514)",
+      "gene": "TRNS1",
+      "kind": "tRNA",
+      "masked_intervals0": [
+        [
+          7447,
+          7514
+        ]
+      ]
+    }
+  ],
+  "masked_genbank_rna_union_bases": 370,
+  "masked_intervals0": [
+    [
+      2589,
+      2745
+    ],
+    [
+      3229,
+      3307
+    ],
+    [
+      4328,
+      4400
+    ],
+    [
+      7447,
+      7514
+    ],
+    [
+      16204,
+      16249
+    ]
+  ],
+  "masked_outside_genbank_cds_and_rna": {
+    "d_loop_features": [
+      {
+        "genbank_location_1based": "complement(join(16024..16569,1..576))",
+        "masked_intervals0": [
+          [
+            16204,
+            16249
+          ]
+        ]
+      }
+    ],
+    "in_d_loop_bases": 45,
+    "outside_d_loop_intervals0": [
+      [
+        3304,
+        3306
+      ]
+    ],
+    "total_bases": 47
+  },
+  "masked_union_bases_by_kind": {
+    "CDS": 1,
+    "rRNA": 156,
+    "tRNA": 214
+  },
+  "reference_n_sites": [
+    {
+      "end0": 3107,
+      "genbank_base": "N",
+      "genbank_misc_features": [
+        {
+          "genbank_location_1based": "3107",
+          "notes": [
+            "preserves historical genome annotation numbering"
+          ]
+        }
+      ],
+      "start0": 3106,
+      "ucsc_base": "N"
+    }
+  ],
+  "schema_version": 1,
+  "source_sha256": {
+    "datasets/genome-atlas/mitochondrial-reference.xml": "a97065e862ae56799ca419378fea8acb4453c3cf3733bf88830f06573f7fe6f0",
+    "datasets/genome-atlas/ncbiRefSeqCurated.txt.gz": "67090326b606658bdabdfe5f8dcb97b7943ac802c7945399522be7174ec021ca",
+    "research/context-reference/ucsc-api-chrM-0-16569.json": "a1a66813ed710f745e032ba2ac4df685b50abdfee6e000402f12120bc26c2dec"
+  }
+}

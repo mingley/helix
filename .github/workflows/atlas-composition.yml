@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/atlas-composition.yml'
+      - 'Cargo.lock'
+      - 'Cargo.toml'
       - 'crates/genome-atlas/**'
       - 'crates/genome-cli/src/reference.rs'
       - 'crates/genome-data/src/twobit.rs'
@@ -41,19 +43,31 @@ jobs:
             --expect-sha256 1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0 summary --by-soft-mask \
             > "$RUNNER_TEMP/whole-image-mask.json"
           python3 -m json.tool --indent 2 "$RUNNER_TEMP/soft-mask-summary.json" "$RUNNER_TEMP/soft-mask-summary-pretty.json"
-          cat "$RUNNER_TEMP/soft-mask-summary-pretty.json"
+          cmp research/atlas-composition/soft-mask/summary.json "$RUNNER_TEMP/soft-mask-summary-pretty.json"
       - name: Reconcile the whole twoBit with the UCSC assembly build log
         run: |
           python3 research/atlas-composition/verify_ucsc_mask.py \
             "$RUNNER_TEMP/whole-image-mask.json" "$RUNNER_TEMP/soft-mask-summary.json" \
             > "$RUNNER_TEMP/soft-mask-ucsc-control.json"
-          cat "$RUNNER_TEMP/soft-mask-ucsc-control.json"
+          cmp research/atlas-composition/soft-mask/ucsc-control.json "$RUNNER_TEMP/soft-mask-ucsc-control.json"
       - name: Replay the masked annotation counts from raw genePred and case-preserved DNA
         run: |
           python3 research/atlas-composition/verify_soft_mask.py \
             "$HELIX_TOOLS_DIR/reference/hg38.2bit" "$RUNNER_TEMP/soft-mask-summary.json" \
             > "$RUNNER_TEMP/soft-mask-source-check.json"
-          cat "$RUNNER_TEMP/soft-mask-source-check.json"
+          cmp research/atlas-composition/soft-mask/source-check.json "$RUNNER_TEMP/soft-mask-source-check.json"
+      - name: Reconcile mitochondrial mask positions with UCSC sequence and GenBank features
+        run: |
+          python3 research/atlas-composition/mitochondrial_soft_mask.py \
+            --report "$RUNNER_TEMP/soft-mask-summary.json" > "$RUNNER_TEMP/mitochondrial-soft-mask.json"
+          cmp research/atlas-composition/soft-mask/mitochondrial-control.json "$RUNNER_TEMP/mitochondrial-soft-mask.json"
+      - name: Verify GC orderings and common mask fractions with exact rational arithmetic
+        run: |
+          cargo +1.90.0 run --release --locked -p genome-atlas --example soft_mask_ordering -- \
+            "$RUNNER_TEMP/soft-mask-summary.json" > "$RUNNER_TEMP/soft-mask-ordering.json"
+          python3 research/atlas-composition/verify_soft_mask_ordering.py \
+            "$RUNNER_TEMP/soft-mask-summary.json" "$RUNNER_TEMP/soft-mask-ordering.json"
+          cmp research/atlas-composition/soft-mask/gc-ordering.json "$RUNNER_TEMP/soft-mask-ordering.json"
       - name: Compute primary chromosome composition
         run: |
           /usr/bin/time -f 'Atlas composition took %e s, max RSS %M KiB' \

@@ -1,0 +1,27 @@
+{
+  "atlas_manifest_sha256": "99d300603abf04b678021b98c0c8b076186e939e85d98601f6da7abf8599444d",
+  "catalog_sha256": "e30baf38927184d6b4d940a335ecdda5075526f35b2ce224e52b0e97a1c78090",
+  "genepred_sha256": "67090326b606658bdabdfe5f8dcb97b7943ac802c7945399522be7174ec021ca",
+  "mask_totals": {
+    "masked": {
+      "called_bases": 1531174404,
+      "n_bases": 2413
+    },
+    "unmasked": {
+      "called_bases": 1406481277,
+      "n_bases": 150628307
+    }
+  },
+  "reference_sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0",
+  "retained_raw_models": 93455,
+  "schema_version": 1,
+  "unstratified_summary_sha256": "00fc30926bbc239096aa3918c9b2bd49c717da4eca16356a9a883a6e13204329",
+  "verified_bases": 3088286401,
+  "verified_cells": {
+    "aggregate_recombined": 20,
+    "aggregate_stratified": 40,
+    "chromosome_recombined": 500,
+    "chromosome_stratified": 1000
+  },
+  "verified_chromosomes": 25
+}

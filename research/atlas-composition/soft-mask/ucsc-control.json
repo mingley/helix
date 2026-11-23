@@ -1,0 +1,25 @@
+{
+  "catalog_sha256": "c1ddfe023cbb6cbe849b5e0a248f324b48c54c6d41c8229b5f9c3c0680e0045a",
+  "primary_chromosomes": {
+    "bases": 3088286401,
+    "masked_called": 1531174404,
+    "n": 150630720,
+    "sequences": 25,
+    "unmasked_called": 1406481277
+  },
+  "primary_mask_base_cells_reconciled": 250,
+  "primary_masked_n": 2413,
+  "reference_sha256": "1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0",
+  "schema_version": 1,
+  "ucsc_build_log": "https://github.com/ucscGenomeBrowser/kent/blob/fa1ec8f7a7071301796d3050f7bb566679b55bbe/src/hg/makeDb/doc/hg38/hg38.txt#L335-L380",
+  "ucsc_fasize_convention": "https://github.com/ucscGenomeBrowser/kent/blob/fa1ec8f7a7071301796d3050f7bb566679b55bbe/src/utils/faSize/faSize.c#L193-L213",
+  "ucsc_published_md5": "dcc3ea27079aa6dc3f9deccd7275e0f8",
+  "whole_image": {
+    "bases": 3209286105,
+    "masked_called": 1588630985,
+    "n": 159970322,
+    "sequences": 455,
+    "unmasked_called": 1460684798
+  },
+  "whole_image_masked_n": 3144
+}
