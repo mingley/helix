@@ -83,22 +83,24 @@ def read_genepred(path, sizes):
     return geometry, retained
 
 
-def add_counts(totals, sequence, left, right):
-    for i, base in enumerate(BASES):
+def add_counts(totals, sequence, left, right, alphabet=BASES):
+    for i, base in enumerate(alphabet):
         totals[i] += sequence.count(base, left, right)
 
 
-def chromosome_counts(reference, chrom, length, raw_layers, chunk_size=CHUNK_BASES):
+def chromosome_counts(reference, chrom, length, raw_layers, chunk_size=CHUNK_BASES,
+                      *, split_soft_mask=False):
     # Each union is counted independently, then nested cumulative counts are
     # subtracted per nucleotide. DNA is decoded once per bounded window.
+    alphabet = BASES + BASES.lower() if split_soft_mask else BASES
     layers = [merged(spans) for spans in raw_layers]
     cursors = [0, 0, 0]
-    counts = [[0] * len(BASES) for _ in layers]
-    whole = [0] * len(BASES)
+    counts = [[0] * len(alphabet) for _ in layers]
+    whole = [0] * len(alphabet)
     for start in range(0, length, chunk_size):
         end = min(length, start + chunk_size)
-        sequence = reference.fetch(chrom, start, end)
-        add_counts(whole, sequence, 0, len(sequence))
+        sequence = reference.fetch(chrom, start, end, masked=split_soft_mask)
+        add_counts(whole, sequence, 0, len(sequence), alphabet)
         for level, intervals in enumerate(layers):
             index = cursors[level]
             while index < len(intervals):
@@ -106,7 +108,7 @@ def chromosome_counts(reference, chrom, length, raw_layers, chunk_size=CHUNK_BAS
                 if left >= end:
                     break
                 add_counts(counts[level], sequence, max(start, left) - start,
-                           min(end, right) - start)
+                           min(end, right) - start, alphabet)
                 if right > end:
                     break
                 index += 1

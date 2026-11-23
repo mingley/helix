@@ -14,6 +14,7 @@ coverage and evidence supporting a biological model are separate concerns.
 The [primary atlas scan](genome-atlas.md#reference-sequence-composition-by-annotation)
 connects this reader to curated RefSeq intervals and independently reconciles
 base composition on all 25 primary chromosomes.
+The [soft-mask study](atlas-soft-mask.md) tests that GC ordering across strata of the reference mask.
 
 ## Current result: predict a measured activity component
 

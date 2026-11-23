@@ -230,6 +230,18 @@ coordinates, declare the assembly explicitly. Rust callers can reuse
 `TwoBitReference::partition_base_counts`.
 [Verified composition by chromosome](research/genome-atlas.md#reference-sequence-composition-by-annotation)
 
+Add `--by-soft-mask` to either `atlas-composition` or `summary` to count
+A/C/G/T/N separately inside and outside the selected twoBit file's mask
+blocks. A masked N contributes to the masked stratum. The atlas command
+covers the 25 primary chromosomes and `summary` covers every indexed contig.
+
+```bash
+cargo run --release --locked -- reference --file "$reference" --assembly GRCh38 \
+  atlas-composition --by-soft-mask > atlas-soft-mask.json
+```
+
+[Mask-stratified GC comparisons and sources](research/atlas-soft-mask.md)
+
 ## Explore the HBB mechanism map
 
 ```bash

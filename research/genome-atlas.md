@@ -50,6 +50,7 @@ chromosomes. The smallest adjacent difference is on chr2, where the transcript
 span outside exons exceeds the region outside transcript spans by 0.11436
 percentage points. The two intermediate classes have zero width on chrM.
 [Exact comparison from raw-source counts](atlas-composition/source-check.json)
+[Comparison within masked and unmasked sequence](atlas-soft-mask.md)
 
 Across all primaries, 149,910,292 of the 150,630,720 N positions (99.52%)
 fall outside curated transcript spans. The sole exonic N in the UCSC twoBit

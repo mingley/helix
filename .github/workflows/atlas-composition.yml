@@ -30,6 +30,30 @@ jobs:
           cargo +1.90.0 build --release --locked -p genome-cli --bin helix
       - name: Verify the reference image
         run: bash scripts/setup_reference.sh
+      - name: Count masked and unmasked bases on the primary chromosomes and across the full image
+        run: |
+          reference="$HELIX_TOOLS_DIR/reference/hg38.2bit"
+          /usr/bin/time -f 'Mask-stratified atlas took %e s, max RSS %M KiB' \
+            target/release/helix reference --file "$reference" --assembly GRCh38 \
+            --expect-sha256 1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0 atlas-composition --by-soft-mask \
+            > "$RUNNER_TEMP/soft-mask-summary.json"
+          target/release/helix reference --file "$reference" --assembly GRCh38 \
+            --expect-sha256 1f67aaa17a77b327738fe750ab37430a85dddf73c7d9189385ad1839259acec0 summary --by-soft-mask \
+            > "$RUNNER_TEMP/whole-image-mask.json"
+          python3 -m json.tool --indent 2 "$RUNNER_TEMP/soft-mask-summary.json" "$RUNNER_TEMP/soft-mask-summary-pretty.json"
+          cat "$RUNNER_TEMP/soft-mask-summary-pretty.json"
+      - name: Reconcile the whole twoBit with the UCSC assembly build log
+        run: |
+          python3 research/atlas-composition/verify_ucsc_mask.py \
+            "$RUNNER_TEMP/whole-image-mask.json" "$RUNNER_TEMP/soft-mask-summary.json" \
+            > "$RUNNER_TEMP/soft-mask-ucsc-control.json"
+          cat "$RUNNER_TEMP/soft-mask-ucsc-control.json"
+      - name: Replay the masked annotation counts from raw genePred and case-preserved DNA
+        run: |
+          python3 research/atlas-composition/verify_soft_mask.py \
+            "$HELIX_TOOLS_DIR/reference/hg38.2bit" "$RUNNER_TEMP/soft-mask-summary.json" \
+            > "$RUNNER_TEMP/soft-mask-source-check.json"
+          cat "$RUNNER_TEMP/soft-mask-source-check.json"
       - name: Compute primary chromosome composition
         run: |
           /usr/bin/time -f 'Atlas composition took %e s, max RSS %M KiB' \
