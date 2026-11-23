@@ -4,7 +4,7 @@
 //! The file carries no assembly identifier. Verify the file's digest against a
 //! trusted reference receipt before treating its coordinates as assembly-specific.
 use anyhow::{ensure, Context, Result};
-use serde::Serialize;
+use serde::{Deserialize, Serialize};
 use sha2::{Digest, Sha256};
 use std::{
     collections::BTreeMap,
@@ -85,7 +85,7 @@ pub struct Contig<'a> {
     pub mask_blocks: usize,
 }
 
-#[derive(Clone, Copy, Debug, Default, Eq, PartialEq, Serialize)]
+#[derive(Clone, Copy, Debug, Default, Deserialize, Eq, PartialEq, Serialize)]
 pub struct BaseCounts {
     pub a: u64,
     pub c: u64,
@@ -105,7 +105,7 @@ impl std::ops::AddAssign for BaseCounts {
 }
 
 /// Nucleotide counts inside and outside the reference's soft-mask intervals.
-#[derive(Clone, Copy, Debug, Default, Eq, PartialEq, Serialize)]
+#[derive(Clone, Copy, Debug, Default, Deserialize, Eq, PartialEq, Serialize)]
 pub struct MaskedBaseCounts {
     pub unmasked: BaseCounts,
     pub masked: BaseCounts,

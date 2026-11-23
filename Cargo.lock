@@ -294,6 +294,7 @@ dependencies = [
  "anyhow",
  "genome-data",
  "genome-types",
+ "num-rational",
  "serde",
  "serde_json",
  "sha2",

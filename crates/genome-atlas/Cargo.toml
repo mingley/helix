@@ -13,7 +13,12 @@ sha2.workspace = true
 genome-types = { path = "../genome-types" }
 
 [dev-dependencies]
+num-rational = "0.4.2"
 tempfile.workspace = true
+
+[[example]]
+name = "soft_mask_ordering"
+test = true
 
 [lints]
 workspace = true

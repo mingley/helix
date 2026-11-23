@@ -1,7 +1,9 @@
 //! Inspect an explicitly selected reference with deterministic JSON output.
 use anyhow::{ensure, Result};
 use genome_atlas::{composition::AtlasComposition, Atlas};
-use genome_data::twobit::{BaseCounts, ByteOrder, Contig, MaskedBaseCounts, Strand, TwoBitReference};
+use genome_data::twobit::{
+    BaseCounts, ByteOrder, Contig, MaskedBaseCounts, Strand, TwoBitReference,
+};
 use serde::Serialize;
 use std::{
     fs::File,

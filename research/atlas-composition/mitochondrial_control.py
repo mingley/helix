@@ -65,50 +65,72 @@ def curated_regions():
     return spans, exons, coding, models
 
 
-def genbank_regions():
+def genbank_features(extra_kinds=()):
     record = ET.fromstring(frozen_bytes(GENBANK)).find("GBSeq")
     if record is None or record.findtext("GBSeq_accession-version") != ACCESSION:
         raise ValueError("unexpected GenBank accession")
     sequence = record.findtext("GBSeq_sequence", "").upper()
-    regions = {kind: set() for kind in ("CDS", "rRNA", "tRNA")}
+    expected = {"CDS": 13, "rRNA": 2, "tRNA": 22}
+    kinds = expected.keys() | set(extra_kinds)
+    features = []
     counts = Counter()
     for feature in record.findall("GBSeq_feature-table/GBFeature"):
         kind = feature.findtext("GBFeature_key")
-        if kind not in regions:
+        if kind not in kinds:
             continue
         counts[kind] += 1
+        covered = set()
         for interval in feature.findall("GBFeature_intervals/GBInterval"):
             if interval.findtext("GBInterval_accession") != ACCESSION:
                 raise ValueError("GenBank feature refers to another accession")
-            first = int(interval.findtext("GBInterval_from"))
-            last = int(interval.findtext("GBInterval_to"))
-            if interval.find("GBInterval_iscomp[@value='true']") is not None:
-                first, last = last, first
+            point = interval.findtext("GBInterval_point")
+            if point is not None:
+                first = last = int(point)
+            else:
+                first = int(interval.findtext("GBInterval_from"))
+                last = int(interval.findtext("GBInterval_to"))
+                if interval.find("GBInterval_iscomp[@value='true']") is not None:
+                    first, last = last, first
             # GenBank range endpoints are 1-based, inclusive and strand-ordered.
-            regions[kind].update(positions(first - 1, last))
-    if counts != {"CDS": 13, "rRNA": 2, "tRNA": 22}:
+            covered.update(positions(first - 1, last))
+        features.append((kind, feature, covered))
+    if any(counts[kind] != count for kind, count in expected.items()):
         raise ValueError("unexpected GenBank feature counts")
+    return sequence, features, counts
+
+
+def genbank_regions():
+    sequence, features, counts = genbank_features()
+    regions = {kind: set() for kind in counts}
+    for kind, _, covered in features:
+        regions[kind].update(covered)
     return sequence, regions, counts
 
 
-def control():
+def checked_partition(genbank_sequence, genbank_cds):
+    """Return case-preserved UCSC DNA and curated regions checked against GenBank."""
     spans, exons, cds, models = curated_regions()
-    seq, genbank, feature_counts = genbank_regions()
     api = json.loads(frozen_bytes(UCSC_DNA))
     if (api["genome"], api["chrom"], api["start"], api["end"]) != ("hg38", "chrM", 0, LENGTH):
         raise ValueError("UCSC DNA has different coordinates")
-    if len(seq) != LENGTH or set(seq) - set("ACGTN") or seq != api["dna"].upper():
+    dna = api["dna"]
+    if len(dna) != LENGTH or set(dna) - set("ACGTNacgtn") or dna.upper() != genbank_sequence:
         raise ValueError("GenBank sequence differs from retained UCSC chrM")
-    if cds != genbank["CDS"] or spans != cds or exons != cds:
+    if cds != genbank_cds or spans != cds or exons != cds:
         raise ValueError("GenBank CDS and UCSC coding, exonic and transcript coverage disagree")
-
-    outside = set(range(LENGTH)) - spans
     regions = {
         "cds": cds,
         "exon_outside_cds": exons - cds,
         "transcript_span_outside_exon": spans - exons,
-        "outside_transcript_span": outside,
+        "outside_transcript_span": set(range(LENGTH)) - spans,
     }
+    return dna, regions, models
+
+
+def control():
+    seq, genbank, feature_counts = genbank_regions()
+    _, regions, models = checked_partition(seq, genbank["CDS"])
+    outside = regions["outside_transcript_span"]
     classes = {}
     for name, covered in regions.items():
         bases = Counter(seq[index].lower() for index in covered)
