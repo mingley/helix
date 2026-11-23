@@ -104,6 +104,39 @@ impl std::ops::AddAssign for BaseCounts {
     }
 }
 
+/// Nucleotide counts inside and outside the reference's soft-mask intervals.
+#[derive(Clone, Copy, Debug, Default, Eq, PartialEq, Serialize)]
+pub struct MaskedBaseCounts {
+    pub unmasked: BaseCounts,
+    pub masked: BaseCounts,
+}
+
+impl std::ops::AddAssign for MaskedBaseCounts {
+    fn add_assign(&mut self, other: Self) {
+        self.unmasked += other.unmasked;
+        self.masked += other.masked;
+    }
+}
+
+#[derive(Clone, Copy, Default)]
+struct PackedCounts {
+    tcag: [u64; 4],
+    n: u64,
+}
+
+impl From<PackedCounts> for BaseCounts {
+    fn from(counts: PackedCounts) -> Self {
+        let [t, c, a, g] = counts.tcag;
+        Self {
+            a,
+            c,
+            g,
+            t,
+            n: counts.n,
+        }
+    }
+}
+
 struct Block {
     start: u32,
     end: u32,
@@ -258,6 +291,16 @@ impl<R: Read + Seek> TwoBitReference<R> {
         Ok(counts)
     }
 
+    /// Count all bases in a contig, keeping the soft-mask strata separate.
+    pub fn base_counts_by_mask(&mut self, name: &str) -> Result<MaskedBaseCounts> {
+        let length = u64::from(find_record(&self.records, name)?.length);
+        if length == 0 {
+            return Ok(MaskedBaseCounts::default());
+        }
+        let [counts] = self.partition_base_counts_by_mask::<1>(name, &[(length, 0)])?;
+        Ok(counts)
+    }
+
     /// Count bases by class during one sequential scan of the contig.
     ///
     /// Each run gives its exclusive end coordinate and a class index below N.
@@ -270,6 +313,33 @@ impl<R: Read + Seek> TwoBitReference<R> {
         name: &str,
         runs: &[(u64, usize)],
     ) -> Result<[BaseCounts; N]> {
+        let counts = self.count_partition::<N, 1>(name, runs)?;
+        Ok(counts.map(|[total]| total.into()))
+    }
+
+    /// Count each class separately inside and outside twoBit soft-mask blocks.
+    ///
+    /// Runs follow the same contract as [`Self::partition_base_counts`]. An N
+    /// block overlapping a mask contributes to the masked N count. Both
+    /// strata are collected in one sequential scan of packed DNA.
+    pub fn partition_base_counts_by_mask<const N: usize>(
+        &mut self,
+        name: &str,
+        runs: &[(u64, usize)],
+    ) -> Result<[MaskedBaseCounts; N]> {
+        let counts = self.count_partition::<N, 2>(name, runs)?;
+        Ok(counts.map(|[unmasked, masked]| MaskedBaseCounts {
+            unmasked: unmasked.into(),
+            masked: masked.into(),
+        }))
+    }
+
+    // One stratum aggregates all bases. Two strata split on mask boundaries.
+    fn count_partition<const N: usize, const STRATA: usize>(
+        &mut self,
+        name: &str,
+        runs: &[(u64, usize)],
+    ) -> Result<[[PackedCounts; STRATA]; N]> {
         let record = find_record(&self.records, name)?;
         let length = u64::from(record.length);
         let mut previous_end = 0;
@@ -286,11 +356,10 @@ impl<R: Read + Seek> TwoBitReference<R> {
             "partition must cover the whole contig"
         );
 
-        let mut known = [[0; 4]; N];
-        let mut unknown = [0; N];
+        let mut totals = [[PackedCounts::default(); STRATA]; N];
         let mut run = 0;
-        let mut blocks = record.ns.iter();
-        let mut next_n = blocks.next();
+        let mut ns = record.ns.as_slice();
+        let mut masks = record.masks.as_slice();
         read_packed(
             &mut self.source,
             &mut self.scratch,
@@ -302,24 +371,18 @@ impl<R: Read + Seek> TwoBitReference<R> {
                 while position < chunk_end {
                     let (run_end, class) = runs[run];
                     let end = chunk_end.min(run_end);
-                    let (stop, is_n) = match next_n {
-                        Some(block) if position < u64::from(block.start) => {
-                            (end.min(u64::from(block.start)), false)
-                        }
-                        Some(block) => {
-                            let n_end = u64::from(block.end);
-                            if n_end <= end {
-                                next_n = blocks.next();
-                            }
-                            (end.min(n_end), true)
-                        }
-                        None => (end, false),
+                    let (end, masked) = if STRATA == 2 {
+                        block_span(&mut masks, position, end)
+                    } else {
+                        (end, false)
                     };
+                    let (stop, is_n) = block_span(&mut ns, position, end);
+                    let counts = &mut totals[class][usize::from(masked)];
                     if is_n {
-                        unknown[class] += stop - position;
+                        counts.n += stop - position;
                     } else {
                         let local = (position - base) as usize..(stop - base) as usize;
-                        tally_span(chunk, local, &mut known[class]);
+                        tally_span(chunk, local, &mut counts.tcag);
                     }
                     if stop == run_end {
                         run += 1;
@@ -328,17 +391,24 @@ impl<R: Read + Seek> TwoBitReference<R> {
                 }
             },
         )?;
-        Ok(std::array::from_fn(|class| {
-            let [t, c, a, g] = known[class];
-            BaseCounts {
-                a,
-                c,
-                g,
-                t,
-                n: unknown[class],
-            }
-        }))
+        Ok(totals)
     }
+}
+
+/// Return the next boundary and whether the current position is in a block.
+/// The other interval layers can cut the span short. Retire a block only
+/// once the caller actually reaches its end.
+fn block_span(blocks: &mut &[Block], position: u64, limit: u64) -> (u64, bool) {
+    while let Some((block, rest)) = blocks.split_first() {
+        if position < u64::from(block.start) {
+            return (limit.min(u64::from(block.start)), false);
+        }
+        if position < u64::from(block.end) {
+            return (limit.min(u64::from(block.end)), true);
+        }
+        *blocks = rest;
+    }
+    (limit, false)
 }
 
 fn find_record<'a>(records: &'a BTreeMap<String, Record>, name: &str) -> Result<&'a Record> {

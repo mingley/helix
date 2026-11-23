@@ -1,4 +1,4 @@
-use genome_data::twobit::{BaseCounts, ByteOrder, Strand, TwoBitReference};
+use genome_data::twobit::{BaseCounts, ByteOrder, MaskedBaseCounts, Strand, TwoBitReference};
 use std::{
     cell::Cell,
     io::{self, Cursor, Read, Seek, SeekFrom},
@@ -90,6 +90,52 @@ fn every_small_interval_matches_both_endian_encodings() {
         );
         let empty = reference.fetch("z", 0, 0, Strand::Reverse, false).unwrap();
         assert!(empty.is_empty());
+    }
+}
+
+fn scalar_masked_counts<const N: usize>(
+    sequence: &[u8],
+    runs: &[(u64, usize)],
+) -> [MaskedBaseCounts; N] {
+    let mut classes = [MaskedBaseCounts::default(); N];
+    let mut start = 0;
+    for &(end, class) in runs {
+        for &base in &sequence[start..end as usize] {
+            let counts = if base.is_ascii_lowercase() {
+                &mut classes[class].masked
+            } else {
+                &mut classes[class].unmasked
+            };
+            match base.to_ascii_uppercase() {
+                b'A' => counts.a += 1,
+                b'C' => counts.c += 1,
+                b'G' => counts.g += 1,
+                b'T' => counts.t += 1,
+                b'N' => counts.n += 1,
+                _ => panic!("invalid twoBit base"),
+            }
+        }
+        start = end as usize;
+    }
+    classes
+}
+
+#[test]
+fn masked_counts_match_all_small_class_boundaries_in_both_byte_orders() {
+    for order in [FixtureOrder::Big, FixtureOrder::Little] {
+        let mut reference = TwoBitReference::new(Cursor::new(fixture(order))).unwrap();
+        for cuts in 0..256 {
+            let mut runs = Vec::new();
+            for end in 1..=9 {
+                if end == 9 || cuts & (1 << (end - 1)) != 0 {
+                    runs.push((end, runs.len() % 3));
+                }
+            }
+            let counts = reference.partition_base_counts_by_mask::<3>("a", &runs);
+            assert_eq!(counts.unwrap(), scalar_masked_counts(b"TcnnnCGtn", &runs));
+        }
+        let counts = reference.partition_base_counts_by_mask::<1>("b", &[(5, 0)]);
+        assert_eq!(counts.unwrap(), scalar_masked_counts(b"AAAAA", &[(5, 0)]));
     }
 }
 
@@ -187,7 +233,7 @@ fn short_queries_read_only_their_packed_span() {
 }
 
 #[test]
-fn partitioned_counts_match_scalar_oracle_across_packed_chunks() {
+fn partitioned_counts_match_scalar_oracle_across_packed_chunks() -> anyhow::Result<()> {
     let edge = 4 * 64 * 1024u64;
     let length = 2 * edge + 5;
     let mut raw = [0x1a41_2743u32, 0, 1, 0]
@@ -196,20 +242,26 @@ fn partitioned_counts_match_scalar_oracle_across_packed_chunks() {
         .collect::<Vec<_>>();
     raw.extend([1, b'x']);
     let n_blocks = [edge - 5..edge + 9, 2 * edge - 2..2 * edge + 2];
+    // Touching masks and N blocks cross class, byte, and chunk boundaries.
+    let masks = [
+        0..2,
+        edge - 4..edge + 12,
+        edge + 12..edge + 16,
+        2 * edge - 2..length,
+    ];
     raw.extend(22u32.to_le_bytes());
     raw.extend((length as u32).to_le_bytes());
-    raw.extend(2u32.to_le_bytes());
-    for block in &n_blocks {
-        raw.extend((block.start as u32).to_le_bytes());
+    for blocks in [n_blocks.as_slice(), masks.as_slice()] {
+        raw.extend((blocks.len() as u32).to_le_bytes());
+        for block in blocks {
+            raw.extend((block.start as u32).to_le_bytes());
+        }
+        for block in blocks {
+            raw.extend(((block.end - block.start) as u32).to_le_bytes());
+        }
     }
-    for block in &n_blocks {
-        raw.extend(((block.end - block.start) as u32).to_le_bytes());
-    }
-    // The soft mask intersects an N block. Packed 0x1b spells TCAG and the
-    // final byte has three nonzero padding symbols.
-    for word in [1, edge as u32 - 4, 16, 0] {
-        raw.extend(word.to_le_bytes());
-    }
+    raw.extend(0u32.to_le_bytes());
+    // Packed 0x1b spells TCAG and ends with three nonzero padding symbols.
     let packed_bytes = length.div_ceil(4) as usize;
     raw.resize(raw.len() + packed_bytes, 0x1b);
 
@@ -248,20 +300,35 @@ fn partitioned_counts_match_scalar_oracle_across_packed_chunks() {
         inner: Cursor::new(raw),
         bytes_read: Rc::clone(&bytes_read),
         seeks: Rc::clone(&seeks),
-    })
-    .unwrap();
+    })?;
     bytes_read.set(0);
     seeks.set(0);
-    let observed = reference.partition_base_counts::<4>("x", &runs).unwrap();
+    let observed = reference.partition_base_counts::<4>("x", &runs)?;
     assert_eq!(observed, expected);
     assert_eq!(bytes_read.get(), packed_bytes);
     assert_eq!(seeks.get(), 1);
 
+    let sequence = reference.fetch("x", 0, length, Strand::Forward, true)?;
+    let expected_by_mask = scalar_masked_counts::<4>(sequence.as_bytes(), &runs);
+    bytes_read.set(0);
+    seeks.set(0);
+    let masked = reference.partition_base_counts_by_mask::<4>("x", &runs)?;
+    assert_eq!(masked, expected_by_mask);
+    assert_eq!(bytes_read.get(), packed_bytes);
+    assert_eq!(seeks.get(), 1);
+
     let mut combined = BaseCounts::default();
-    for counts in observed {
+    let mut combined_by_mask = MaskedBaseCounts::default();
+    for (counts, split) in observed.into_iter().zip(masked) {
+        combined_by_mask += split;
+        let mut merged = split.unmasked;
+        merged += split.masked;
+        assert_eq!(counts, merged);
         combined += counts;
     }
-    assert_eq!(combined, reference.base_counts("x").unwrap());
+    assert_eq!(combined, reference.base_counts("x")?);
+    assert_eq!(combined_by_mask, reference.base_counts_by_mask("x")?);
+    Ok(())
 }
 
 #[test]
@@ -287,6 +354,8 @@ fn partition_validation_precedes_io_and_accepts_empty_contigs() {
     ];
     for runs in invalid {
         assert!(reference.partition_base_counts::<2>("a", runs).is_err());
+        let masked = reference.partition_base_counts_by_mask::<2>("a", runs);
+        assert!(masked.is_err());
     }
     let absent = reference.partition_base_counts::<2>("absent", &[]);
     assert!(absent.is_err());
@@ -294,6 +363,15 @@ fn partition_validation_precedes_io_and_accepts_empty_contigs() {
     assert!(zero_width.is_err());
     let empty = reference.partition_base_counts::<2>("z", &[]).unwrap();
     assert_eq!(empty, [BaseCounts::default(); 2]);
+    let absent = reference.partition_base_counts_by_mask::<2>("absent", &[]);
+    assert!(absent.is_err());
+    let empty = reference.partition_base_counts_by_mask::<2>("z", &[]);
+    assert_eq!(empty.unwrap(), [MaskedBaseCounts::default(); 2]);
+    let no_classes = reference.partition_base_counts_by_mask::<0>("z", &[]);
+    assert!(no_classes.is_ok());
+    let empty_contig = reference.base_counts_by_mask("z").unwrap();
+    assert_eq!(empty_contig, MaskedBaseCounts::default());
+    assert!(reference.base_counts_by_mask("absent").is_err());
     assert_eq!(bytes_read.get(), 0);
     assert_eq!(seeks.get(), 0);
 }

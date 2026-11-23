@@ -284,6 +284,23 @@ fn reference_catalog_fetch_and_summary_are_deterministic_and_hash_bound() {
         summary["total"],
         serde_json::json!({"a": 3, "c": 3, "g": 1, "t": 2, "n": 2})
     );
+    let split = report(&["summary", "--by-soft-mask"]);
+    let counts = |a, c, g, t, n| serde_json::json!({"a": a, "c": c, "g": g, "t": t, "n": n});
+    assert_eq!(split["operation"], "summary_by_soft_mask");
+    assert_eq!(
+        split["contigs"],
+        serde_json::json!([
+            {"name": "chrA", "length": 4, "counts": {
+                "unmasked": counts(1, 0, 1, 2, 0), "masked": counts(0, 0, 0, 0, 0)
+            }},
+            {"name": "chrZ", "length": 7, "counts": {
+                "unmasked": counts(2, 1, 0, 0, 0), "masked": counts(0, 2, 0, 0, 2)
+            }}
+        ])
+    );
+    assert_eq!(split["total"]["unmasked"], counts(3, 1, 1, 2, 0));
+    assert_eq!(split["total"]["masked"], counts(0, 2, 0, 0, 2));
+
     let rejected = check(&["--expect-sha256", &"0".repeat(64), "catalog"]);
     assert!(!rejected.status.success());
     assert!(rejected.stdout.is_empty());
@@ -294,6 +311,10 @@ fn reference_catalog_fetch_and_summary_are_deterministic_and_hash_bound() {
     let arguments = ["reference", "--file", path.to_str().unwrap()];
     for (extra, reason) in [
         (vec!["atlas-composition"], "declare --assembly GRCh38"),
+        (
+            vec!["atlas-composition", "--by-soft-mask"],
+            "declare --assembly GRCh38",
+        ),
         (
             vec!["--assembly", "GRCh37", "atlas-composition"],
             "atlas uses GRCh38 coordinates",

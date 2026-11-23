@@ -1,10 +1,12 @@
 //! Inspect an explicitly selected reference with deterministic JSON output.
 use anyhow::{ensure, Result};
 use genome_atlas::{composition::AtlasComposition, Atlas};
-use genome_data::twobit::{BaseCounts, ByteOrder, Contig, Strand, TwoBitReference};
+use genome_data::twobit::{BaseCounts, ByteOrder, Contig, MaskedBaseCounts, Strand, TwoBitReference};
 use serde::Serialize;
 use std::{
+    fs::File,
     io::{self, BufWriter, Write},
+    ops::AddAssign,
     path::PathBuf,
 };
 
@@ -73,12 +75,19 @@ enum ReferenceCommand {
         masked: bool,
     },
     /// Count A/C/G/T/N across every indexed contig.
-    Summary,
+    Summary {
+        /// Report masked and unmasked A/C/G/T/N counts on each contig.
+        #[arg(long)]
+        by_soft_mask: bool,
+    },
     /// Count bases by curated coding, exonic and transcript coverage on the GRCh38 primaries.
     AtlasComposition {
         /// Directory containing the verified RefSeq atlas.
         #[arg(long, default_value = "datasets/genome-atlas")]
         atlas: PathBuf,
+        /// Report masked and unmasked A/C/G/T/N counts within each annotation class.
+        #[arg(long)]
+        by_soft_mask: bool,
     },
 }
 
@@ -114,18 +123,48 @@ enum ReferenceResult<'a> {
         masked: bool,
         sequence: String,
     },
-    Summary {
-        contigs: Vec<ContigCounts>,
-        total: BaseCounts,
-    },
+    Summary(ReferenceSummary<BaseCounts>),
+    SummaryBySoftMask(ReferenceSummary<MaskedBaseCounts>),
     AtlasComposition(Box<AtlasComposition>),
+    AtlasCompositionBySoftMask(Box<AtlasComposition<MaskedBaseCounts>>),
 }
 
 #[derive(Serialize)]
-struct ContigCounts {
+struct ContigCounts<C> {
     name: String,
     length: u64,
-    counts: BaseCounts,
+    counts: C,
+}
+
+#[derive(Serialize)]
+struct ReferenceSummary<C> {
+    contigs: Vec<ContigCounts<C>>,
+    total: C,
+}
+
+fn summarize<C: Copy + Default + AddAssign>(
+    reference: &mut TwoBitReference<File>,
+    count: impl Fn(&mut TwoBitReference<File>, &str) -> Result<C>,
+) -> Result<ReferenceSummary<C>> {
+    let contigs = reference
+        .contigs()
+        .map(|contig| (contig.name.to_owned(), contig.length))
+        .collect::<Vec<_>>();
+    let mut results = Vec::with_capacity(contigs.len());
+    let mut total = C::default();
+    for (name, length) in contigs {
+        let counts = count(reference, &name)?;
+        total += counts;
+        results.push(ContigCounts {
+            name,
+            length,
+            counts,
+        });
+    }
+    Ok(ReferenceSummary {
+        contigs: results,
+        total,
+    })
 }
 
 fn parse_sha256(value: &str) -> Result<String, String> {
@@ -189,30 +228,27 @@ pub fn run(args: &ReferenceArgs) -> Result<()> {
             masked: *masked,
             sequence: reference.fetch(contig, *start0, *end0, (*strand).into(), *masked)?,
         },
-        ReferenceCommand::Summary => {
-            let contigs = reference
-                .contigs()
-                .map(|contig| (contig.name.to_owned(), contig.length))
-                .collect::<Vec<_>>();
-            let mut results = Vec::with_capacity(contigs.len());
-            let mut total = BaseCounts::default();
-            for (name, length) in contigs {
-                let counts = reference.base_counts(&name)?;
-                total += counts;
-                results.push(ContigCounts {
-                    name,
-                    length,
-                    counts,
-                });
-            }
-            ReferenceResult::Summary {
-                contigs: results,
-                total,
+        ReferenceCommand::Summary { by_soft_mask } => {
+            if *by_soft_mask {
+                let result = summarize(&mut reference, TwoBitReference::base_counts_by_mask)?;
+                ReferenceResult::SummaryBySoftMask(result)
+            } else {
+                let result = summarize(&mut reference, TwoBitReference::base_counts)?;
+                ReferenceResult::Summary(result)
             }
         }
-        ReferenceCommand::AtlasComposition { atlas } => {
+        ReferenceCommand::AtlasComposition {
+            atlas,
+            by_soft_mask,
+        } => {
             let atlas = Atlas::open(atlas)?;
-            ReferenceResult::AtlasComposition(Box::new(atlas.sequence_composition(&mut reference)?))
+            if *by_soft_mask {
+                let result = atlas.sequence_composition_by_mask(&mut reference)?;
+                ReferenceResult::AtlasCompositionBySoftMask(Box::new(result))
+            } else {
+                let result = atlas.sequence_composition(&mut reference)?;
+                ReferenceResult::AtlasComposition(Box::new(result))
+            }
         }
     };
     let report = Report {

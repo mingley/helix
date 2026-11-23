@@ -1,11 +1,12 @@
 //! Forward-reference nucleotide composition across the curated primary atlas.
 use crate::{AnnotationClass, Atlas};
 use anyhow::{ensure, Context, Result};
-use genome_data::twobit::{BaseCounts, TwoBitReference};
+use genome_data::twobit::{BaseCounts, MaskedBaseCounts, TwoBitReference};
 use serde::Serialize;
 use std::{
     collections::BTreeMap,
     io::{Read, Seek},
+    ops::AddAssign,
 };
 
 #[derive(Debug, Serialize)]
@@ -19,15 +20,15 @@ pub struct AtlasIdentity {
 
 /// All positions, including N, are assigned to exactly one of these classes.
 #[derive(Debug, Serialize)]
-pub struct ClassComposition {
-    pub cds: BaseCounts,
-    pub exon_outside_cds: BaseCounts,
-    pub transcript_span_outside_exon: BaseCounts,
-    pub outside_transcript_span: BaseCounts,
+pub struct ClassComposition<C = BaseCounts> {
+    pub cds: C,
+    pub exon_outside_cds: C,
+    pub transcript_span_outside_exon: C,
+    pub outside_transcript_span: C,
 }
 
-impl From<[BaseCounts; 4]> for ClassComposition {
-    fn from(counts: [BaseCounts; 4]) -> Self {
+impl<C: Copy> From<[C; 4]> for ClassComposition<C> {
+    fn from(counts: [C; 4]) -> Self {
         Self {
             cds: counts[AnnotationClass::Cds.index()],
             exon_outside_cds: counts[AnnotationClass::ExonOutsideCds.index()],
@@ -39,17 +40,17 @@ impl From<[BaseCounts; 4]> for ClassComposition {
 }
 
 #[derive(Debug, Serialize)]
-pub struct ChromosomeComposition {
+pub struct ChromosomeComposition<C = BaseCounts> {
     pub name: String,
     pub length: u64,
-    pub classes: ClassComposition,
+    pub classes: ClassComposition<C>,
 }
 
 #[derive(Debug, Serialize)]
-pub struct AtlasComposition {
+pub struct AtlasComposition<C = BaseCounts> {
     pub atlas: AtlasIdentity,
-    pub chromosomes: Vec<ChromosomeComposition>,
-    pub total: ClassComposition,
+    pub chromosomes: Vec<ChromosomeComposition<C>>,
+    pub total: ClassComposition<C>,
 }
 
 impl Atlas {
@@ -60,6 +61,30 @@ impl Atlas {
         &self,
         reference: &mut TwoBitReference<R>,
     ) -> Result<AtlasComposition> {
+        self.collect_composition(reference, TwoBitReference::partition_base_counts::<4>)
+    }
+
+    /// Count the same annotation classes separately inside and outside the
+    /// reference's soft-mask blocks, including N bases in each stratum.
+    pub fn sequence_composition_by_mask<R: Read + Seek>(
+        &self,
+        reference: &mut TwoBitReference<R>,
+    ) -> Result<AtlasComposition<MaskedBaseCounts>> {
+        self.collect_composition(
+            reference,
+            TwoBitReference::partition_base_counts_by_mask::<4>,
+        )
+    }
+
+    fn collect_composition<R, C>(
+        &self,
+        reference: &mut TwoBitReference<R>,
+        count: impl Fn(&mut TwoBitReference<R>, &str, &[(u64, usize)]) -> Result<[C; 4]>,
+    ) -> Result<AtlasComposition<C>>
+    where
+        R: Read + Seek,
+        C: Copy + Default + AddAssign,
+    {
         let sizes: BTreeMap<_, _> = reference.contigs().map(|c| (c.name, c.length)).collect();
         for chromosome in self.chromosomes() {
             let name = &chromosome.name;
@@ -74,10 +99,10 @@ impl Atlas {
         }
 
         let mut chromosomes = Vec::with_capacity(self.chromosomes().len());
-        let mut total = [BaseCounts::default(); 4];
+        let mut total = [C::default(); 4];
         for chromosome in self.chromosomes() {
             let runs = self.annotation_runs(&chromosome.name)?;
-            let counts = reference.partition_base_counts::<4>(&chromosome.name, &runs)?;
+            let counts = count(reference, &chromosome.name, &runs)?;
             for (sum, current) in total.iter_mut().zip(counts) {
                 *sum += current;
             }
